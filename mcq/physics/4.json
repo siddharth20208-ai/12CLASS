@@ -1,0 +1,112 @@
+[
+  {
+    "q": "The differential equation of SHM, d^2x/dt^2 = -omega^2 x, shows that acceleration is",
+    "o": [
+      "constant",
+      "directly proportional to displacement and in the same direction",
+      "directly proportional to displacement and opposite in direction",
+      "independent of displacement"
+    ],
+    "a": 2,
+    "why": "The negative sign shows acceleration is proportional to x but directed opposite to displacement (restoring)"
+  },
+  {
+    "q": "For a particle in SHM with x = A sin(omega t), the velocity is given by",
+    "o": [
+      "v = sqrt(omega A^2 - x^2)",
+      "v = omega^2 sqrt(A^2 - x^2)",
+      "v = omega(A^2 - x^2)",
+      "v = omega sqrt(A^2 - x^2)"
+    ],
+    "a": 3,
+    "why": "Velocity in SHM: v = omega sqrt(A^2 - x^2)"
+  },
+  {
+    "q": "The velocity of a particle in SHM is maximum at",
+    "o": [
+      "the mean position",
+      "the extreme position",
+      "midway between mean and extreme position",
+      "it is constant everywhere"
+    ],
+    "a": 0,
+    "why": "At mean position x = 0, v = omega A, which is the maximum value"
+  },
+  {
+    "q": "The total energy of a particle executing SHM with amplitude A is",
+    "o": [
+      "E = (1/2) m omega^2 A",
+      "E = (1/2) m omega^2 A^2",
+      "E = m omega^2 A^2",
+      "E = (1/2) m omega A^2"
+    ],
+    "a": 1,
+    "why": "Total energy in SHM: E = (1/2) m omega^2 A^2, constant throughout the motion"
+  },
+  {
+    "q": "The time period of a simple pendulum of length L is given by",
+    "o": [
+      "T = 2 pi sqrt(g/L)",
+      "T = (1/2 pi) sqrt(L/g)",
+      "T = 2 pi sqrt(L/g)",
+      "T = 2 pi L/g"
+    ],
+    "a": 2,
+    "why": "Simple pendulum period: T = 2 pi sqrt(L/g)"
+  },
+  {
+    "q": "A simple pendulum has length 1 m. Taking g = 9.8 m/s^2, its time period is approximately",
+    "o": [
+      "1 s",
+      "0.5 s",
+      "6.28 s",
+      "2.01 s"
+    ],
+    "a": 3,
+    "why": "T = 2 pi sqrt(1/9.8) = 2 pi x 0.319 ≈ 2.01 s"
+  },
+  {
+    "q": "For a spring-mass system with spring constant k and mass m, the time period of oscillation is",
+    "o": [
+      "T = 2 pi sqrt(m/k)",
+      "T = 2 pi sqrt(k/m)",
+      "T = 2 pi (m/k)",
+      "T = (1/2 pi) sqrt(m/k)"
+    ],
+    "a": 0,
+    "why": "Spring-mass system period: T = 2 pi sqrt(m/k)"
+  },
+  {
+    "q": "The epoch of an SHM is defined as",
+    "o": [
+      "the total phase angle omega t + phi",
+      "the value of phase at t = 0, i.e. phi",
+      "the angular frequency omega",
+      "the amplitude A"
+    ],
+    "a": 1,
+    "why": "Epoch is the initial phase phi, the value of the phase angle at t = 0"
+  },
+  {
+    "q": "In damped oscillations, the amplitude of the oscillating system",
+    "o": [
+      "remains constant with time",
+      "increases exponentially with time",
+      "decreases exponentially with time",
+      "oscillates between zero and a maximum"
+    ],
+    "a": 2,
+    "why": "Damping forces dissipate energy, causing the amplitude to decay exponentially with time"
+  },
+  {
+    "q": "Resonance in forced oscillations occurs when",
+    "o": [
+      "damping is maximum",
+      "the driving frequency is much greater than natural frequency",
+      "the amplitude becomes zero",
+      "the driving frequency equals the natural frequency of the system"
+    ],
+    "a": 3,
+    "why": "At resonance, driving frequency = natural frequency, giving maximum amplitude of oscillation"
+  }
+]

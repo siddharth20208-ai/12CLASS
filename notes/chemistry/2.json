@@ -1,0 +1,109 @@
+[
+  {
+    "t": "Acid-base theories",
+    "def": "Different theories (Arrhenius, Bronsted-Lowry, Lewis) define acids and bases based on what particle they release, donate or accept.",
+    "points": [
+      "Arrhenius theory: acids give H+ ions in water, bases give OH- ions in water. Limited to aqueous solutions only.",
+      "Bronsted-Lowry theory: an acid is a proton (H+) donor, a base is a proton acceptor. Works in any solvent.",
+      "A conjugate acid-base pair differs by exactly one H+ (e.g. HCl/Cl-, NH3/NH4+).",
+      "Lewis theory: an acid is an electron pair acceptor, a base is an electron pair donor. This is the broadest definition (includes BF3, AlCl3 as acids even without H+).",
+      "A strong acid has a weak conjugate base and vice versa.",
+      "Bronsted-Lowry theory explains amphoteric substances like water, which can act as both acid and base."
+    ],
+    "formula": "Bronsted acid: HA -> H+ + A- (A- is conjugate base)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Arrhenius H+ or OH- in water\"] --> B[\"Bronsted Lowry proton donor acceptor\"]\n  B --> C[\"Lewis electron pair acceptor donor\"]"
+    },
+    "example": "In NH3 + H2O <-> NH4+ + OH-, NH3 is the base (accepts H+) and its conjugate acid is NH4+; H2O is the acid here and its conjugate base is OH-.",
+    "tip": "Give one example reaction and clearly label acid, base, conjugate acid, conjugate base — this is the standard 2-mark format."
+  },
+  {
+    "t": "Ionization constant (Ka, Kb)",
+    "def": "Ka and Kb are equilibrium constants that measure the extent of ionization (strength) of a weak acid and weak base respectively in water.",
+    "points": [
+      "For weak acid HA <-> H+ + A-, Ka = [H+][A-]/[HA]. Larger Ka means stronger acid.",
+      "For weak base BOH <-> B+ + OH-, Kb = [B+][OH-]/[BOH]. Larger Kb means stronger base.",
+      "Ka and Kb values are usually very small for weak acids/bases (typically less than 1).",
+      "For a conjugate acid-base pair, Ka x Kb = Kw (ionic product of water, 10^-14 at 298K).",
+      "pKa = -log(Ka) and pKb = -log(Kb); lower pKa means stronger acid.",
+      "Ka and Kb only apply to weak electrolytes; strong acids/bases are considered to ionize completely."
+    ],
+    "formula": "Ka x Kb = Kw = 10^-14 (at 298K)     pKa = -log Ka",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Weak acid HA\"] --> B[\"Ka = H+ A- over HA\"]\n  C[\"Weak base BOH\"] --> D[\"Kb = B+ OH- over BOH\"]\n  B --> E[\"Ka x Kb = Kw\"]\n  D --> E"
+    },
+    "example": "If Ka of a conjugate acid is 1.8x10^-5, then Kb of its conjugate base = Kw/Ka = 10^-14/1.8x10^-5 ≈ 5.6x10^-10.",
+    "tip": "Memorize Ka x Kb = Kw — it is used to quickly find one constant from the other in numericals."
+  },
+  {
+    "t": "pH and pOH calculations",
+    "def": "pH is the negative logarithm (base 10) of the hydrogen ion concentration, used to express the acidity or basicity of a solution on a simple numeric scale.",
+    "points": [
+      "pH = -log[H+]; pOH = -log[OH-]; at 298K, pH + pOH = 14.",
+      "For strong acid of concentration C: [H+] = C (complete ionization), so pH = -log C.",
+      "For weak acid of concentration C with ionization constant Ka: [H+] = sqrt(Ka x C) (using the approximation that α is small).",
+      "For strong base: [OH-] = C, pOH = -log C, then pH = 14 - pOH.",
+      "For weak base: [OH-] = sqrt(Kb x C).",
+      "pH < 7 is acidic, pH = 7 is neutral, pH > 7 is basic (at 298K)."
+    ],
+    "formula": "pH = -log[H+]   [H+] = sqrt(Ka.C) for weak acid   pH+pOH=14",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"pH scale 0 to 14\"] --> B[\"pH less than 7 acidic\"]\n  A --> C[\"pH equal 7 neutral\"]\n  A --> D[\"pH more than 7 basic\"]"
+    },
+    "example": "0.01 M acetic acid, Ka = 1.8x10^-5: [H+] = sqrt(1.8x10^-5 x 0.01) = sqrt(1.8x10^-7) = 4.24x10^-4 M. pH = -log(4.24x10^-4) = 3.37.",
+    "tip": "For weak acids/bases always use the sqrt(Ka.C) formula, not [H+]=C — using the strong-acid formula by mistake is the most common error."
+  },
+  {
+    "t": "Buffer solutions and Henderson equation",
+    "def": "A buffer solution resists changes in pH when small amounts of acid or base are added, and consists of a weak acid with its conjugate base (or a weak base with its conjugate acid).",
+    "points": [
+      "Acidic buffer: weak acid + its salt, e.g. CH3COOH + CH3COONa. Maintains pH below 7.",
+      "Basic buffer: weak base + its salt, e.g. NH4OH + NH4Cl. Maintains pH above 7.",
+      "Henderson-Hasselbalch equation for acidic buffer: pH = pKa + log([salt]/[acid]).",
+      "For basic buffer: pOH = pKb + log([salt]/[base]).",
+      "Buffer action works because added H+ reacts with the conjugate base (salt), and added OH- reacts with the weak acid, keeping [H+] nearly constant.",
+      "Buffers are used in blood (carbonic acid-bicarbonate buffer keeps blood pH close to 7.4)."
+    ],
+    "formula": "pH = pKa + log([salt]/[acid])",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Weak acid HA\"] --> C[\"Buffer resists pH change\"]\n  B[\"Conjugate base salt\"] --> C\n  C --> D[\"Add H+ reacts with salt\"]\n  C --> E[\"Add OH- reacts with acid\"]"
+    },
+    "example": "Buffer of 0.1 M CH3COOH and 0.1 M CH3COONa, with Ka = 1.8x10^-5 (pKa = 4.74): pH = 4.74 + log(0.1/0.1) = 4.74 + 0 = 4.74.",
+    "tip": "State the composition of the buffer (weak acid + salt / weak base + salt) before applying the Henderson equation — definition carries separate marks."
+  },
+  {
+    "t": "Common ion effect",
+    "def": "The common ion effect is the suppression of the ionization of a weak electrolyte when another electrolyte with a common ion is added, following Le Chatelier's principle.",
+    "points": [
+      "Adding a common ion shifts the equilibrium of a weak electrolyte backward, reducing its degree of ionization.",
+      "Example: adding CH3COONa (common ion CH3COO-) to CH3COOH solution decreases ionization of acetic acid.",
+      "This effect is used to control the pH of buffer solutions precisely.",
+      "It is also used to decrease the solubility of a sparingly soluble salt by adding a solution containing a common ion.",
+      "The common ion effect follows directly from Le Chatelier's principle: adding a product ion pushes equilibrium towards reactants."
+    ],
+    "formula": "Adding common ion -> equilibrium shifts backward -> ionization decreases",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"CH3COOH equilibrium\"] --> B[\"Add CH3COONa common ion\"]\n  B --> C[\"Equilibrium shifts left\"]\n  C --> D[\"Ionization of acid decreases\"]"
+    },
+    "example": "Adding NaCl to a saturated AgCl solution increases [Cl-], which (by common ion effect) decreases the solubility of AgCl by shifting its dissolution equilibrium backward.",
+    "tip": "Always connect your answer to Le Chatelier's principle explicitly — examiners want the reasoning, not just the conclusion."
+  },
+  {
+    "t": "Solubility product (Ksp)",
+    "def": "The solubility product (Ksp) is the equilibrium constant for the dissolution of a sparingly soluble salt, equal to the product of the molar concentrations of its ions raised to their stoichiometric powers.",
+    "points": [
+      "For salt AxBy that dissolves as AxBy <-> xA^(y+) + yB^(x-), Ksp = [A^(y+)]^x [B^(x-)]^y.",
+      "If ionic product (actual product of ion concentrations) exceeds Ksp, precipitation occurs.",
+      "If ionic product is less than Ksp, the solution is unsaturated and more salt can dissolve.",
+      "For salts like AgCl (1:1 type), if molar solubility is 's', Ksp = s^2, so s = sqrt(Ksp).",
+      "For salts like Ag2CrO4 (2:1 type), Ksp = (2s)^2(s) = 4s^3.",
+      "Solubility product is used to predict precipitation and to find molar solubility of sparingly soluble salts."
+    ],
+    "formula": "Ksp = [A+]^x [B-]^y     For AB type: s = sqrt(Ksp)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Sparingly soluble salt\"] --> B[\"Dissolves into ions\"]\n  B --> C[\"Ksp = product of ion concentrations\"]\n  C --> D[\"Ionic product more than Ksp precipitates\"]"
+    },
+    "example": "AgCl has Ksp = 1.8x10^-10. Solubility s = sqrt(1.8x10^-10) = 1.34x10^-5 mol/L.",
+    "tip": "Always write the correct balanced dissociation equation first — the powers in the Ksp expression come directly from the stoichiometric coefficients."
+  }
+]

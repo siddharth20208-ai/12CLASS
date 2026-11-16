@@ -1,0 +1,112 @@
+[
+  {
+    "q": "According to Biot-Savart law, the magnetic field dB due to a current element is proportional to",
+    "o": [
+      "cos(theta)/r",
+      "I/r^2",
+      "I dl/r",
+      "I dl sin(theta)/r^2"
+    ],
+    "a": 3,
+    "why": "dB = (mu0/4 pi) x I dl sin(theta)/r^2."
+  },
+  {
+    "q": "The Biot-Savart law is considered the magnetic analogue of which electrostatics law?",
+    "o": [
+      "Coulomb's law",
+      "Gauss's law",
+      "Ohm's law",
+      "Faraday's law"
+    ],
+    "a": 0,
+    "why": "Both give field as inverse-square law from a source element, with mu0/4pi playing the role of k."
+  },
+  {
+    "q": "The magnetic field at the centre of a circular current loop of radius r carrying current I is",
+    "o": [
+      "mu0 I / (2 pi r)",
+      "mu0 I / (2r)",
+      "mu0 I r / 2",
+      "mu0 I / (4 pi r)"
+    ],
+    "a": 1,
+    "why": "Standard result from integrating Biot-Savart law over the loop."
+  },
+  {
+    "q": "A circular loop of radius 0.1 m carries 5 A current. The magnetic field at its centre is approximately",
+    "o": [
+      "6.28 x 10^-7 T",
+      "3.14 x 10^-5 T",
+      "1.57 x 10^-5 T",
+      "1.57 x 10^-7 T"
+    ],
+    "a": 2,
+    "why": "B = mu0 I/(2r) = (4 pi x10^-7 x 5)/(0.2) ≈ 1.57 x 10^-5 T."
+  },
+  {
+    "q": "Ampere's circuital law relates the line integral of B around a closed loop to",
+    "o": [
+      "the total charge enclosed",
+      "the EMF induced",
+      "the area of the loop",
+      "mu0 times the current enclosed"
+    ],
+    "a": 3,
+    "why": "Integral of B.dl = mu0 I_enclosed."
+  },
+  {
+    "q": "Inside a long solenoid with n turns per unit length carrying current I, the magnetic field is",
+    "o": [
+      "mu0 n I",
+      "mu0 n I / 2",
+      "mu0 I / (2 pi n)",
+      "zero"
+    ],
+    "a": 0,
+    "why": "B = mu0 n I, uniform inside an ideal long solenoid."
+  },
+  {
+    "q": "A solenoid has 1000 turns/m carrying 2 A. The magnetic field inside it is approximately",
+    "o": [
+      "1.26 x 10^-3 T",
+      "2.51 x 10^-3 T",
+      "5.0 x 10^-3 T",
+      "6.28 x 10^-4 T"
+    ],
+    "a": 1,
+    "why": "B = mu0 n I = 4 pi x10^-7 x 1000 x 2 ≈ 2.51 x 10^-3 T."
+  },
+  {
+    "q": "A 0.5 m long wire carries a current of 4 A perpendicular to a magnetic field of 0.2 T. The force on it is",
+    "o": [
+      "0.1 N",
+      "0.8 N",
+      "0.4 N",
+      "4 N"
+    ],
+    "a": 2,
+    "why": "F = BIL = 0.2 x 4 x 0.5 = 0.4 N (sin90 deg = 1)."
+  },
+  {
+    "q": "In a moving coil galvanometer, the deflection theta is related to current I by",
+    "o": [
+      "theta is proportional to 1/I",
+      "theta is proportional to I^2",
+      "theta is independent of I",
+      "theta is proportional to I"
+    ],
+    "a": 3,
+    "why": "At equilibrium NIAB = k theta, so theta = (NAB/k) I, a linear relation."
+  },
+  {
+    "q": "To convert a galvanometer into an ammeter of larger range, one must connect",
+    "o": [
+      "a low resistance (shunt) in parallel",
+      "a high resistance in series",
+      "a capacitor in series",
+      "nothing extra"
+    ],
+    "a": 0,
+    "why": "A low shunt S = Ig G/(I - Ig) in parallel bypasses excess current, giving low net resistance suitable for an ammeter."
+  }
+]

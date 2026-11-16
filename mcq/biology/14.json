@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Variation in genes within a single species, as seen in many rice varieties, represents:",
+    "o": [
+      "Species diversity",
+      "Ecosystem diversity",
+      "Genetic diversity",
+      "Habitat loss"
+    ],
+    "a": 2,
+    "why": "Genetic diversity is variation within a species, e.g., different rice varieties."
+  },
+  {
+    "q": "The variety of habitats and ecological processes like forests, deserts and wetlands represents:",
+    "o": [
+      "Genetic diversity",
+      "Species diversity",
+      "None of these",
+      "Ecosystem diversity"
+    ],
+    "a": 3,
+    "why": "Ecosystem diversity covers the range of habitats/ecosystems on earth."
+  },
+  {
+    "q": "Which two regions in India are recognized as biodiversity hotspots?",
+    "o": [
+      "Western Ghats and Himalayas",
+      "Thar Desert and Ganga plains",
+      "Deccan plateau and Coromandel coast",
+      "Sunderbans and Rann of Kutch"
+    ],
+    "a": 0,
+    "why": "India has two officially recognized biodiversity hotspots: Western Ghats and Himalayas."
+  },
+  {
+    "q": "Protected areas like biosphere reserves and national parks are examples of:",
+    "o": [
+      "Ex-situ conservation",
+      "In-situ conservation",
+      "Habitat destruction",
+      "Global warming mitigation only"
+    ],
+    "a": 1,
+    "why": "In-situ conservation protects species within their natural habitat, e.g., national parks."
+  },
+  {
+    "q": "Conserving species outside their natural habitat, such as in zoos or seed banks, is called:",
+    "o": [
+      "In-situ conservation",
+      "Succession",
+      "Ex-situ conservation",
+      "Biomagnification"
+    ],
+    "a": 2,
+    "why": "Ex-situ conservation preserves species away from their natural habitat (zoos, seed banks, gene banks)."
+  },
+  {
+    "q": "The main cause of biodiversity loss worldwide is:",
+    "o": [
+      "Natural selection",
+      "Excess oxygen in atmosphere",
+      "Too much rainfall",
+      "Habitat destruction and human activities"
+    ],
+    "a": 3,
+    "why": "Habitat destruction, pollution, and overexploitation by humans are the primary drivers of biodiversity loss."
+  },
+  {
+    "q": "The greenhouse effect leading to global warming is primarily caused by increased atmospheric levels of:",
+    "o": [
+      "Carbon dioxide and other greenhouse gases",
+      "Oxygen",
+      "Nitrogen gas",
+      "Helium"
+    ],
+    "a": 0,
+    "why": "CO2, methane and other greenhouse gases trap heat, warming the atmosphere."
+  },
+  {
+    "q": "Depletion of the ozone layer is mainly caused by the release of:",
+    "o": [
+      "Carbon dioxide",
+      "Chlorofluorocarbons (CFCs)",
+      "Nitrogen gas",
+      "Water vapour"
+    ],
+    "a": 1,
+    "why": "CFCs released from refrigerants/aerosols break down ozone molecules in the stratosphere."
+  },
+  {
+    "q": "A thinner ozone layer allows more of which harmful radiation to reach Earth's surface?",
+    "o": [
+      "Infrared radiation",
+      "Radio waves",
+      "Ultraviolet (UV) radiation",
+      "Visible light only"
+    ],
+    "a": 2,
+    "why": "Ozone normally absorbs UV radiation; its depletion lets more harmful UV rays through."
+  },
+  {
+    "q": "India is classified among the world's mega-biodiversity countries, meaning it:",
+    "o": [
+      "Has very low species variety",
+      "Is located only in a desert region",
+      "Has no endemic species",
+      "Hosts an exceptionally high variety of species and ecosystems"
+    ],
+    "a": 3,
+    "why": "Mega-biodiversity countries like India harbor a very large share of the world's biological diversity."
+  }
+]

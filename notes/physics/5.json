@@ -1,0 +1,110 @@
+[
+  {
+    "t": "Principle of Superposition",
+    "def": "The principle of superposition states that when two or more waves overlap at a point, the resultant displacement at that point is the algebraic sum of the individual displacements due to each wave.",
+    "points": [
+      "Each wave behaves as if the others are not present — waves pass through each other without permanent change.",
+      "At any instant, the net displacement y = y1 + y2 + y3 + ... (vector/algebraic sum of all wave displacements).",
+      "If waves add in the same direction, we get constructive interference (larger displacement).",
+      "If waves add in opposite directions, we get destructive interference (smaller or zero displacement).",
+      "This principle is valid for small amplitude (linear) waves, which is true for sound and light under normal conditions.",
+      "It is the basis for explaining interference, beats, and stationary waves."
+    ],
+    "formula": "y(resultant) = y1 + y2 + y3 + ...",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Wave 1 at a point\"] --> C[\"Resultant displacement\"]\n  B[\"Wave 2 at same point\"] --> C\n  C --> D[\"y = y1 + y2 algebraic sum\"]"
+    },
+    "example": "Two waves give displacements y1 = 3 mm and y2 = -2 mm at a point at some instant: resultant y = 3 + (-2) = 1 mm.",
+    "tip": "State that superposition is simple algebraic addition and waves retain their individual identity after crossing — a key concept question."
+  },
+  {
+    "t": "Stationary Waves and Nodes/Antinodes",
+    "def": "Stationary (standing) waves are formed when two identical waves of the same frequency and amplitude travel in opposite directions and superpose, creating fixed points of zero and maximum displacement.",
+    "points": [
+      "Two waves, y1 = A sin(kx - ωt) and y2 = A sin(kx + ωt), travelling in opposite directions, superpose to form a stationary wave.",
+      "Resultant: y = 2A cos(ωt) sin(kx) — the wave pattern does not travel; it stays in place.",
+      "Points where sin(kx) = 0 have zero displacement always — called nodes.",
+      "Points where sin(kx) = ±1 have maximum displacement — called antinodes.",
+      "Distance between two consecutive nodes (or antinodes) is λ/2.",
+      "Unlike travelling waves, stationary waves do not transport energy from one point to another; energy stays confined between nodes."
+    ],
+    "formula": "y = 2A cos(ωt) sin(kx)     distance between nodes = λ/2",
+    "diagram": {
+      "draw": "Draw a horizontal line (string) with a wavy stationary-wave pattern showing 2 full loops. Mark the points where the curve crosses the axis as 'Node (N)' and the points of maximum bulge as 'Antinode (A)'. Label the distance between two consecutive nodes as lambda/2."
+    },
+    "example": "A string vibrates with nodes 0.25 m apart: wavelength λ = 2 x 0.25 = 0.5 m.",
+    "tip": "Clearly distinguish stationary waves (no energy transport, fixed nodes) from travelling waves (energy transport) — common differentiate-type question."
+  },
+  {
+    "t": "Vibrations of Strings and Harmonics",
+    "def": "A stretched string fixed at both ends vibrates in specific patterns called harmonics, each with nodes at the fixed ends and a frequency that is an integer multiple of the fundamental frequency.",
+    "points": [
+      "A string fixed at both ends must have a node at each end.",
+      "The simplest mode (1 loop, fundamental) has length L = λ/2, giving fundamental frequency n = (1/2L)√(T/m), where T is tension and m is mass per unit length.",
+      "Higher harmonics have more loops: for p loops, L = p(λ/2), giving frequency n_p = p x n (integer multiples of fundamental).",
+      "So a stretched string can vibrate at n, 2n, 3n, ... — all harmonics are present.",
+      "Frequency increases with tension (√T) and decreases with length and mass per unit length.",
+      "This principle explains how tightening a guitar or violin string raises its pitch."
+    ],
+    "formula": "n = (1/2L)√(T/m)     higher harmonics = p × n (p = 1,2,3,...)",
+    "diagram": {
+      "draw": "Draw a string fixed at both ends. Below it, draw three rows: row 1 shows one loop (fundamental, nodes only at ends), row 2 shows two loops (first overtone, one extra node in middle), row 3 shows three loops (second overtone, two extra nodes). Label frequencies n, 2n, 3n respectively."
+    },
+    "example": "String L = 0.5 m, T = 100 N, m = 0.01 kg/m: n = (1/(2x0.5))sqrt(100/0.01) = 1 x sqrt(10000) = 100 Hz.",
+    "tip": "Draw the loop patterns for fundamental and first two overtones — diagram marks are easy to score here."
+  },
+  {
+    "t": "Vibrations in Air Columns (Open/Closed Pipes)",
+    "def": "Air columns inside pipes also form stationary waves on reflection, and the harmonics produced depend on whether the pipe is open at both ends or closed at one end.",
+    "points": [
+      "In an open pipe (open at both ends), both ends must be antinodes.",
+      "Fundamental frequency of open pipe: n = v/2L, and it supports ALL harmonics: n, 2n, 3n, ...",
+      "In a closed pipe (closed at one end, open at the other), the closed end is a node and open end is an antinode.",
+      "Fundamental frequency of closed pipe: n = v/4L, and it supports only ODD harmonics: n, 3n, 5n, ...",
+      "For the same length, a closed pipe's fundamental frequency is half that of an open pipe.",
+      "v is the speed of sound in air; L is the length of the air column."
+    ],
+    "formula": "Open pipe: n = v/2L (all harmonics)     Closed pipe: n = v/4L (odd harmonics only)",
+    "diagram": {
+      "draw": "Draw two vertical pipes side by side. Left pipe: open at both top and bottom, show one loop of a stationary wave with antinodes (A) at both ends. Right pipe: closed at the bottom, open at top, show a quarter-wave pattern with a node (N) at the closed bottom end and antinode (A) at the open top end."
+    },
+    "example": "Closed pipe L = 0.5 m, v = 340 m/s: fundamental n = 340/(4x0.5) = 170 Hz.",
+    "tip": "Remember: OPEN pipe = ALL harmonics; CLOSED pipe = ODD harmonics only. This single fact is tested almost every year."
+  },
+  {
+    "t": "Beats and Beat Frequency",
+    "def": "Beats are the periodic rise and fall in loudness heard when two sound waves of slightly different frequencies superpose. Beat frequency is the number of beats heard per second, equal to the difference of the two frequencies.",
+    "points": [
+      "Two waves of close but different frequencies n1 and n2 periodically come in phase (loud) and out of phase (soft).",
+      "Mathematically, superposing y1 = a sin(2πn1t) and y2 = a sin(2πn2t) gives an amplitude that varies at frequency |n1-n2|/2, giving one beat per cycle of this envelope.",
+      "Beat frequency = |n1 - n2|.",
+      "Beats are used to tune musical instruments — the beat frequency reduces to zero as the two frequencies become equal.",
+      "The method only works well if n1 and n2 are close to each other (within about 10 Hz), otherwise beats are too fast to count.",
+      "This is a direct, simple application of the superposition principle."
+    ],
+    "formula": "Beat frequency = |n1 − n2|",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Wave 1 frequency n1\"] --> C[\"Superpose\"]\n  B[\"Wave 2 frequency n2\"] --> C\n  C --> D[\"Loudness rises and falls periodically\"]\n  D --> E[\"Beat frequency = n1 minus n2\"]"
+    },
+    "example": "Two tuning forks of 256 Hz and 260 Hz sounded together produce beat frequency = |260-256| = 4 beats per second.",
+    "tip": "If asked to derive, show the trig identity sum-to-product step — just stating the final answer |n1-n2| without derivation loses marks in a 'derive' question."
+  },
+  {
+    "t": "End Correction and Resonance",
+    "def": "End correction accounts for the small extra effective length beyond a pipe's open end where the antinode actually forms, slightly different from the geometric end. Resonance in air columns is used experimentally to measure the speed of sound.",
+    "points": [
+      "In a real pipe, the antinode at the open end forms slightly outside the pipe, not exactly at the rim — this extra length is the end correction (e), roughly e ≈ 0.3 x (diameter of pipe).",
+      "So effective length = L + e, and this correction improves the accuracy of frequency/speed calculations.",
+      "A resonance tube experiment uses a closed pipe of adjustable length (via water level) and a tuning fork of known frequency.",
+      "As the air column length increases, loud sound (resonance) is heard at specific lengths corresponding to odd harmonics.",
+      "Using two successive resonance lengths L1 and L2, speed of sound v = 2n(L2 - L1), where n is the tuning fork frequency (the end correction cancels out in this method).",
+      "This experimental method avoids needing to know end correction directly, since it cancels out when taking the difference of two resonance lengths."
+    ],
+    "formula": "v = 2n(L2 − L1)",
+    "diagram": {
+      "draw": "Draw a vertical glass tube partly filled with water, open at the top, with a tuning fork held above the open end. Mark two water levels corresponding to first resonance length L1 and second resonance length L2, with the air column length measured from the water surface to the open top."
+    },
+    "example": "Resonance tube: L1 = 0.17 m, L2 = 0.52 m, tuning fork n = 512 Hz: v = 2 x 512 x (0.52-0.17) = 2 x 512 x 0.35 = 358.4 m/s.",
+    "tip": "Remember the formula v = 2n(L2-L1) specifically cancels the end correction — mention this reasoning for full theory marks."
+  }
+]

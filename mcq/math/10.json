@@ -1,0 +1,112 @@
+[
+  {
+    "q": "By the fundamental theorem of calculus, if F'(x) = f(x), then ∫[a,b] f(x) dx equals",
+    "o": [
+      "F(a) - F(b)",
+      "F(b) - F(a)",
+      "F(a) + F(b)",
+      "F(b)/F(a)"
+    ],
+    "a": 1,
+    "why": "definite integral equals F(b) - F(a)"
+  },
+  {
+    "q": "The property ∫[a,b] f(x) dx = -∫[b,a] f(x) dx shows that reversing limits",
+    "o": [
+      "doubles the integral",
+      "has no effect",
+      "changes the sign of the integral",
+      "makes it zero"
+    ],
+    "a": 2,
+    "why": "reversing the limits of integration negates the value"
+  },
+  {
+    "q": "If f(x) is an odd function, then ∫[-a,a] f(x) dx equals",
+    "o": [
+      "2∫[0,a] f(x) dx",
+      "a f(a)",
+      "∫[0,a] f(x) dx",
+      "0"
+    ],
+    "a": 3,
+    "why": "odd function integral over symmetric limits cancels to zero"
+  },
+  {
+    "q": "If f(x) is an even function, then ∫[-a,a] f(x) dx equals",
+    "o": [
+      "2∫[0,a] f(x) dx",
+      "∫[0,a] f(x) dx",
+      "0",
+      "a^2 f(a)"
+    ],
+    "a": 0,
+    "why": "even function gives twice the integral over half the range"
+  },
+  {
+    "q": "The property ∫[0,a] f(x) dx = ∫[0,a] f(a-x) dx is known as",
+    "o": [
+      "additivity property",
+      "King's property",
+      "sign reversal property",
+      "linearity property"
+    ],
+    "a": 1,
+    "why": "this is the well-known King's property of definite integrals"
+  },
+  {
+    "q": "The value of ∫[0,2] x dx is",
+    "o": [
+      "1",
+      "4",
+      "2",
+      "0"
+    ],
+    "a": 2,
+    "why": "∫x dx = x^2/2, evaluated from 0 to 2 gives 4/2 = 2"
+  },
+  {
+    "q": "Definite integral as a limit of a sum is defined using",
+    "o": [
+      "Taylor series",
+      "L'Hospital's rule",
+      "Fourier series",
+      "Riemann sums with n subintervals as n -> infinity"
+    ],
+    "a": 3,
+    "why": "the definite integral is the limit of Riemann sums"
+  },
+  {
+    "q": "If limits a to b of a definite integral are changed after substitution x = g(t), the new limits must be found by",
+    "o": [
+      "solving g(t) = a and g(t) = b for t",
+      "keeping a and b unchanged",
+      "doubling the original limits",
+      "ignoring the limits"
+    ],
+    "a": 0,
+    "why": "new limits correspond to t values satisfying g(t)=a and g(t)=b"
+  },
+  {
+    "q": "The value of ∫[0, pi] sin(x) dx is",
+    "o": [
+      "0",
+      "2",
+      "1",
+      "pi"
+    ],
+    "a": 1,
+    "why": "-cos(x) from 0 to pi = -cos(pi)+cos(0) = 1+1 = 2"
+  },
+  {
+    "q": "∫[a,a] f(x) dx (same upper and lower limit) always equals",
+    "o": [
+      "1",
+      "f(a)",
+      "0",
+      "a"
+    ],
+    "a": 2,
+    "why": "integral over a single point (zero width) is zero"
+  }
+]

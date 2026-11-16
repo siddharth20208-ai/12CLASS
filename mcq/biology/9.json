@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Malaria is caused by which type of pathogen?",
+    "o": [
+      "Virus",
+      "Bacterium",
+      "Protozoan (Plasmodium)",
+      "Fungus"
+    ],
+    "a": 2,
+    "why": "Plasmodium, a protozoan, causes malaria and is transmitted by Anopheles mosquito."
+  },
+  {
+    "q": "Typhoid fever is caused by:",
+    "o": [
+      "Mycobacterium",
+      "Plasmodium vivax",
+      "HIV",
+      "Salmonella typhi"
+    ],
+    "a": 3,
+    "why": "Salmonella typhi bacterium causes typhoid, spread via contaminated food/water."
+  },
+  {
+    "q": "HIV mainly attacks which cells, weakening immunity?",
+    "o": [
+      "Helper T-lymphocytes",
+      "Red blood cells",
+      "Platelets",
+      "Neurons"
+    ],
+    "a": 0,
+    "why": "HIV destroys helper T-lymphocytes, crippling the immune response."
+  },
+  {
+    "q": "Which test is used to confirm typhoid?",
+    "o": [
+      "ELISA test",
+      "Widal test",
+      "PCR test",
+      "Blood smear test"
+    ],
+    "a": 1,
+    "why": "The Widal test detects antibodies against Salmonella typhi."
+  },
+  {
+    "q": "Immunity present from birth, without prior exposure to a pathogen, is called:",
+    "o": [
+      "Acquired immunity",
+      "Active immunity",
+      "Innate immunity",
+      "Passive immunity"
+    ],
+    "a": 2,
+    "why": "Innate immunity is the natural, non-specific defense present from birth."
+  },
+  {
+    "q": "Vaccination works by introducing a weakened or dead pathogen to stimulate:",
+    "o": [
+      "Red blood cell destruction",
+      "Direct disease symptoms",
+      "Permanent infection",
+      "Antibody memory production"
+    ],
+    "a": 3,
+    "why": "Vaccines trigger the immune system to produce memory cells and antibodies without causing full disease."
+  },
+  {
+    "q": "Uncontrolled and abnormal cell division leading to tumour formation describes:",
+    "o": [
+      "Cancer",
+      "Mutation only",
+      "Allergy",
+      "Immunity"
+    ],
+    "a": 0,
+    "why": "Cancer is characterized by uncontrolled, abnormal cell proliferation."
+  },
+  {
+    "q": "Long-term alcohol abuse is most strongly linked to damage of which organ?",
+    "o": [
+      "Skin",
+      "Liver",
+      "Bone",
+      "Eye lens"
+    ],
+    "a": 1,
+    "why": "Chronic alcohol abuse commonly causes liver cirrhosis and damage."
+  },
+  {
+    "q": "AIDS patients usually die due to:",
+    "o": [
+      "HIV directly destroying all organs",
+      "Excess antibody production",
+      "Opportunistic infections from lost immunity",
+      "Overactive immune response alone"
+    ],
+    "a": 2,
+    "why": "With immunity destroyed, other infections that a healthy body would resist become fatal."
+  },
+  {
+    "q": "Which of the following is NOT a common mode of HIV transmission?",
+    "o": [
+      "Unprotected sexual contact",
+      "Sharing contaminated needles",
+      "Mother to child during childbirth",
+      "Mosquito bite"
+    ],
+    "a": 3,
+    "why": "Unlike malaria, HIV is not transmitted by mosquito bites."
+  }
+]

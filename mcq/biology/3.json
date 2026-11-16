@@ -1,0 +1,112 @@
+[
+  {
+    "q": "In DNA base pairing, guanine (G) pairs with:",
+    "o": [
+      "Cytosine",
+      "Thymine",
+      "Adenine",
+      "Uracil"
+    ],
+    "a": 0,
+    "why": "G pairs with C via 3 hydrogen bonds, following Watson-Crick base pairing."
+  },
+  {
+    "q": "A nucleosome consists of DNA wrapped around a core of how many histone molecules?",
+    "o": [
+      "2",
+      "8",
+      "6",
+      "4"
+    ],
+    "a": 1,
+    "why": "A nucleosome has a histone octamer (8 histone molecules) as its core."
+  },
+  {
+    "q": "The Meselson-Stahl experiment, using heavy and light nitrogen isotopes, proved that DNA replication is:",
+    "o": [
+      "Conservative",
+      "Dispersive",
+      "Semiconservative",
+      "Random"
+    ],
+    "a": 2,
+    "why": "Hybrid-density DNA after one generation matched the semiconservative model."
+  },
+  {
+    "q": "Which codon acts as the start codon in translation and codes for methionine?",
+    "o": [
+      "UAA",
+      "UAG",
+      "UGA",
+      "AUG"
+    ],
+    "a": 3,
+    "why": "AUG signals the start of translation and codes for methionine."
+  },
+  {
+    "q": "Out of 64 possible codons, how many actually code for amino acids (non-stop codons)?",
+    "o": [
+      "61",
+      "58",
+      "63",
+      "64"
+    ],
+    "a": 0,
+    "why": "64 total codons minus 3 stop codons (UAA, UAG, UGA) leaves 61 coding codons."
+  },
+  {
+    "q": "During translation, the tRNA anticodon pairs specifically with the mRNA:",
+    "o": [
+      "Promoter",
+      "Codon",
+      "Operator",
+      "Terminator"
+    ],
+    "a": 1,
+    "why": "Each tRNA anticodon base-pairs with the complementary mRNA codon."
+  },
+  {
+    "q": "In the lac operon, when lactose is ABSENT, the repressor protein:",
+    "o": [
+      "Is degraded immediately",
+      "Binds RNA polymerase directly",
+      "Binds the operator, blocking transcription",
+      "Activates lacZ transcription"
+    ],
+    "a": 2,
+    "why": "Without lactose, the lacI repressor binds the operator and keeps the operon off."
+  },
+  {
+    "q": "In the presence of lactose, the molecule that binds the repressor and removes it from the operator is:",
+    "o": [
+      "Glucose",
+      "RNA polymerase",
+      "cAMP",
+      "Allolactose"
+    ],
+    "a": 3,
+    "why": "Allolactose binds the repressor, changing its shape so it releases the operator."
+  },
+  {
+    "q": "The Human Genome Project estimated the number of genes in the human genome to be approximately:",
+    "o": [
+      "20,000-25,000",
+      "2,000-5,000",
+      "100,000-120,000",
+      "500,000"
+    ],
+    "a": 0,
+    "why": "HGP findings put the human gene count at roughly 20,000-25,000 genes."
+  },
+  {
+    "q": "DNA fingerprinting for forensic identification relies mainly on analysing:",
+    "o": [
+      "Codons",
+      "VNTRs (Variable Number of Tandem Repeats)",
+      "Histone proteins",
+      "mRNA levels"
+    ],
+    "a": 1,
+    "why": "VNTR banding patterns, unique to individuals, form the basis of DNA fingerprinting."
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "q": "According to Huygens' principle, every point on a wavefront acts as a source of",
+    "o": [
+      "secondary wavelets",
+      "reflected rays",
+      "polarized light",
+      "diffraction fringes"
+    ],
+    "a": 0,
+    "why": "Huygens' principle states that each point on a wavefront emits secondary wavelets"
+  },
+  {
+    "q": "Rays of light are always directed",
+    "o": [
+      "parallel to the wavefront",
+      "perpendicular (normal) to the wavefront",
+      "at 45 degrees to the wavefront",
+      "opposite to the wavefront"
+    ],
+    "a": 1,
+    "why": "Rays represent the direction of energy propagation, always normal to the wavefront"
+  },
+  {
+    "q": "In Young's double slit experiment, the fringe width w is given by",
+    "o": [
+      "w = lambda d / D",
+      "w = d D / lambda",
+      "w = lambda D / d",
+      "w = D / (lambda d)"
+    ],
+    "a": 2,
+    "why": "Fringe width formula: w = lambda D / d, where D is slit-to-screen distance and d is slit separation"
+  },
+  {
+    "q": "In Young's double slit experiment, a bright fringe is obtained when the path difference between the two waves is",
+    "o": [
+      "n lambda/2",
+      "(n + 1/2) lambda",
+      "lambda/4",
+      "n lambda"
+    ],
+    "a": 3,
+    "why": "Constructive interference (bright fringe) occurs when path difference = n lambda (n = 0,1,2,...)"
+  },
+  {
+    "q": "In single slit diffraction of width a, the first minimum occurs at angle theta satisfying",
+    "o": [
+      "a sin(theta) = lambda",
+      "a sin(theta) = lambda/2",
+      "a cos(theta) = lambda",
+      "a sin(theta) = 2 lambda"
+    ],
+    "a": 0,
+    "why": "First minimum of single-slit diffraction: a sin(theta) = lambda"
+  },
+  {
+    "q": "If the wavelength of light used in Young's double slit experiment is increased, the fringe width",
+    "o": [
+      "decreases",
+      "increases",
+      "remains the same",
+      "becomes zero"
+    ],
+    "a": 1,
+    "why": "Since w = lambda D/d, increasing lambda increases fringe width w"
+  },
+  {
+    "q": "Polarization of light demonstrates that light waves are",
+    "o": [
+      "longitudinal waves",
+      "sound-like waves",
+      "transverse waves",
+      "non-wave phenomena"
+    ],
+    "a": 2,
+    "why": "Only transverse waves can be polarized, confirming light is a transverse wave"
+  },
+  {
+    "q": "Brewster's law relating the polarizing angle theta_B to refractive index n is",
+    "o": [
+      "sin(theta_B) = n",
+      "cos(theta_B) = n",
+      "tan(theta_B) = 1/n",
+      "tan(theta_B) = n"
+    ],
+    "a": 3,
+    "why": "Brewster's law: tan(theta_B) = n, the refractive index of the medium"
+  },
+  {
+    "q": "The resolving power of a telescope with aperture diameter D is",
+    "o": [
+      "directly proportional to D",
+      "inversely proportional to D",
+      "independent of D",
+      "proportional to D^2"
+    ],
+    "a": 0,
+    "why": "Since minimum resolvable angle theta = 1.22 lambda/D, resolving power = 1/theta is proportional to D"
+  },
+  {
+    "q": "Diffraction effects become more prominent when the size of the obstacle or aperture is",
+    "o": [
+      "much larger than the wavelength of light",
+      "comparable to the wavelength of light",
+      "exactly zero",
+      "independent of wavelength"
+    ],
+    "a": 1,
+    "why": "Diffraction is significant when obstacle/slit size is comparable to the wavelength of the wave"
+  }
+]

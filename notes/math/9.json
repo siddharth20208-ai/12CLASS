@@ -1,0 +1,110 @@
+[
+  {
+    "t": "Integration by substitution",
+    "def": "Integration by substitution changes the variable of integration to a simpler one so that the integral becomes easy to solve directly.",
+    "points": [
+      "Choose a part of the integrand (often inside a function or power) and call it t.",
+      "Differentiate t with respect to x to get dt in terms of dx.",
+      "Replace all x-terms and dx in the integral using t and dt.",
+      "Solve the simpler integral in terms of t using standard formulas.",
+      "Substitute back the original expression for t to get the answer in x.",
+      "Always add the constant of integration C at the end."
+    ],
+    "formula": "If t = g(x), then ∫f(g(x)) g'(x) dx = ∫f(t) dt",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Choose t = g x\"] --> B[\"Find dt = g prime x dx\"]\n  B --> C[\"Rewrite integral in t\"]\n  C --> D[\"Integrate using standard formula\"]\n  D --> E[\"Substitute back t = g x\"]"
+    },
+    "example": "∫2x (x^2+1)^3 dx. Let t = x^2+1, dt = 2x dx. Integral becomes ∫t^3 dt = t^4/4 + C = (x^2+1)^4/4 + C.",
+    "tip": "Always check that dt (after differentiating) actually matches a part present in the integral before proceeding."
+  },
+  {
+    "t": "Integration by parts",
+    "def": "Integration by parts is used to integrate a product of two functions using the formula derived from the product rule of differentiation.",
+    "points": [
+      "Identify the two functions in the product; call one 'u' (first function) and the other 'dv' (second function, which is easy to integrate).",
+      "Use the ILATE rule to choose u: Inverse trig, Log, Algebraic, Trig, Exponential — pick u in this order of priority.",
+      "Apply the formula: ∫u dv = uv - ∫v du.",
+      "Differentiate u to get du, and integrate dv to get v.",
+      "Solve the new integral ∫v du, which should be simpler than the original.",
+      "Add constant of integration C at the end."
+    ],
+    "formula": "∫u v dx = u ∫v dx - ∫[du/dx x ∫v dx] dx",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Identify u and dv using ILATE\"] --> B[\"Find du and v\"]\n  B --> C[\"Apply uv minus integral v du\"]\n  C --> D[\"Solve simpler integral\"]\n  D --> E[\"Add constant C\"]"
+    },
+    "example": "∫x e^x dx. Take u = x, dv = e^x dx. du = dx, v = e^x. Result: x e^x - ∫e^x dx = x e^x - e^x + C.",
+    "tip": "Remember ILATE to pick u correctly — wrong choice makes the new integral harder instead of easier."
+  },
+  {
+    "t": "Integration by partial fractions",
+    "def": "Partial fractions break a complicated rational expression (ratio of polynomials) into a sum of simpler fractions that can be integrated using standard formulas.",
+    "points": [
+      "Check the degree: if numerator degree is greater than or equal to denominator degree, first do division.",
+      "Factorise the denominator completely into linear and/or quadratic factors.",
+      "Write the fraction as a sum of simpler fractions with unknown constants (A, B, C...) over each factor.",
+      "Multiply through and compare coefficients, or substitute convenient x values, to find A, B, C.",
+      "Integrate each simple fraction separately using log or standard formulas.",
+      "Combine all results and add the constant of integration C."
+    ],
+    "formula": "(px+q)/[(x-a)(x-b)] = A/(x-a) + B/(x-b)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Factorise denominator\"] --> B[\"Write as sum of simple fractions\"]\n  B --> C[\"Find unknown constants A B\"]\n  C --> D[\"Integrate each term\"]\n  D --> E[\"Combine answer plus C\"]"
+    },
+    "example": "∫1/[(x-1)(x+1)] dx. Write as A/(x-1) + B/(x+1). Solving gives A = 1/2, B = -1/2. Integral = (1/2)ln|x-1| - (1/2)ln|x+1| + C.",
+    "tip": "Substitute x equal to each root of the denominator one by one — it gives the constants A, B instantly without comparing coefficients."
+  },
+  {
+    "t": "Standard integral forms (1/(x^2+a^2) etc.)",
+    "def": "Certain integrals involving x^2 plus or minus a^2, or square roots of such expressions, have fixed standard formulas that must be memorised and applied directly.",
+    "points": [
+      "Recognise the pattern of the denominator or expression: x^2+a^2, x^2-a^2, a^2-x^2, or their square roots.",
+      "Match the given integral to the correct standard formula from the list.",
+      "If the expression is not in exact standard form, complete the square first (for quadratics like x^2+bx+c).",
+      "Substitute the adjusted expression into the matching standard formula.",
+      "Write the final answer using tan inverse, log, or sin inverse as given by the formula.",
+      "Always add constant C."
+    ],
+    "formula": "∫dx/(x^2+a^2) = (1/a) tan^-1(x/a) + C     ∫dx/sqrt(a^2-x^2) = sin^-1(x/a) + C     ∫dx/(x^2-a^2) = (1/2a) ln|(x-a)/(x+a)| + C",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Identify pattern in integrand\"] --> B{\"Which standard form\"}\n  B -->|x2 + a2| C[\"Use tan inverse formula\"]\n  B -->|a2 - x2| D[\"Use sin inverse formula\"]\n  B -->|x2 - a2| E[\"Use log formula\"]"
+    },
+    "example": "∫dx/(x^2+9) = ∫dx/(x^2+3^2) = (1/3) tan^-1(x/3) + C.",
+    "tip": "Make a formula sheet of these 8-10 standard results and revise it daily; questions are a direct match-and-apply type."
+  },
+  {
+    "t": "Integrals of rational and irrational functions",
+    "def": "These are integrals where the integrand is a ratio of polynomials (rational) or contains square roots of polynomials (irrational), usually solved using partial fractions, substitution, or completing the square.",
+    "points": [
+      "For rational functions, simplify using partial fractions if the denominator factorises.",
+      "For irrational functions with sqrt(ax^2+bx+c), complete the square inside the root first.",
+      "After completing the square, match to a standard integral form (tan inverse, log, or sin inverse type).",
+      "For some irrational forms, a trigonometric substitution (like x = a sin θ) is used.",
+      "Simplify the resulting trig integral and convert back to x at the end.",
+      "Always check the domain (values of x for which the root is defined) while solving."
+    ],
+    "formula": "∫dx/sqrt(x^2+2x+5) : complete square to (x+1)^2+4, then use sqrt(t^2+a^2) type log formula",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Check rational or irrational\"] --> B[\"Simplify by partial fraction or complete square\"]\n  B --> C[\"Match standard form\"]\n  C --> D[\"Integrate and substitute back\"]"
+    },
+    "example": "∫dx/sqrt(x^2-6x+13) = ∫dx/sqrt((x-3)^2+4) = ln|(x-3) + sqrt((x-3)^2+4)| + C.",
+    "tip": "Practice completing the square quickly — this single step converts most irrational integrals into standard form."
+  },
+  {
+    "t": "Trigonometric integrals",
+    "def": "Trigonometric integrals involve integrating products or powers of sine, cosine, tangent and other trig functions, usually solved using identities to simplify before integrating.",
+    "points": [
+      "Use trig identities (like sin^2x = (1-cos2x)/2) to reduce powers before integrating.",
+      "For products like sin(mx)cos(nx), use product-to-sum formulas to split into a sum.",
+      "For odd powers of sine or cosine, separate one factor and substitute t = cos x or t = sin x.",
+      "For tan x and sec x combinations, remember ∫tan x dx = ln|sec x| + C and ∫sec x dx = ln|sec x + tan x| + C.",
+      "After simplifying with identities, integrate term by term using standard formulas.",
+      "Always add constant C at the end."
+    ],
+    "formula": "∫sin^2 x dx = x/2 - sin2x/4 + C     ∫tan x dx = ln|sec x| + C     ∫sec x dx = ln|sec x + tan x| + C",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Identify trig pattern\"] --> B[\"Apply suitable identity\"]\n  B --> C[\"Simplify to basic trig terms\"]\n  C --> D[\"Integrate term by term\"]\n  D --> E[\"Add constant C\"]"
+    },
+    "example": "∫sin^2 x dx = ∫(1-cos2x)/2 dx = x/2 - sin2x/4 + C.",
+    "tip": "Keep the common identities (double angle, product to sum) handy on a formula card — most marks are lost from forgetting these."
+  }
+]

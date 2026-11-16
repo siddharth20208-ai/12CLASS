@@ -1,0 +1,98 @@
+[
+  {
+    "t": "Magnetic moment of orbital electron",
+    "def": "An electron revolving around the nucleus acts like a tiny current loop, and this loop has a magnetic moment that is the microscopic origin of magnetism in materials.",
+    "points": [
+      "A revolving electron with frequency f constitutes a current I = e f (charge divided by time period).",
+      "This current loop has an orbital magnetic moment mu = I A = (e v r)/2, where r is orbit radius and v is speed.",
+      "The direction of mu is opposite to the orbital angular momentum direction, because electron charge is negative.",
+      "Angular momentum is quantized, L = n h/(2 pi), leading to quantized magnetic moments.",
+      "The smallest unit of this orbital magnetic moment is called the Bohr magneton, mu_B = eh/(4 pi m).",
+      "These orbital moments, along with electron spin, add up to give atoms their net magnetic moment."
+    ],
+    "formula": "mu = I A = e v r / 2     Bohr magneton: mu_B = e h / (4 pi m)",
+    "diagram": { "draw": "Draw a nucleus at the centre with a dashed circular orbit around it. Draw an electron (small circle with minus sign) moving along the orbit with velocity v arrow. Draw the equivalent current loop direction (opposite to electron motion since charge is negative) and the resulting magnetic moment mu arrow perpendicular to the orbit plane." },
+    "example": "The Bohr magneton value is mu_B = 9.27 x 10^-24 A m^2 — the natural smallest unit of atomic magnetism.",
+    "tip": "Clearly state that the magnetic moment direction is opposite to orbital angular momentum because the electron's charge is negative — a common conceptual question."
+  },
+  {
+    "t": "Magnetization and magnetic intensity",
+    "def": "Magnetization (M) is the net magnetic moment per unit volume of a material, while magnetic intensity (H) is the external magnetizing field applied by a current-carrying coil.",
+    "points": [
+      "Magnetization M = (net magnetic moment) / volume, and tells how strongly a material responds to a field.",
+      "Magnetic intensity H is produced only by the external current/coil, independent of the material placed inside.",
+      "The total magnetic field inside the material is B = mu0 (H + M).",
+      "H and M both have the same SI unit, ampere per metre (A/m).",
+      "Different materials (dia-, para-, ferro-) show very different M for the same applied H.",
+      "This difference in response is what distinguishes the three classes of magnetic materials."
+    ],
+    "formula": "B = mu0 (H + M)",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"External coil current\"] --> B[\"Produces magnetizing field H\"]\n  B --> C[\"Material responds with magnetization M\"]\n  C --> D[\"Total field B = mu0 times H plus M\"]" },
+    "example": "If H = 1000 A/m and M = 2000 A/m, then B = mu0(1000+2000) = 4 pi x10^-7 x 3000 ≈ 3.77 x 10^-3 T.",
+    "tip": "Remember H depends only on current/coil; M depends on the material. Keep these two separate in the answer."
+  },
+  {
+    "t": "Magnetic susceptibility and permeability",
+    "def": "Magnetic susceptibility (chi) is the ratio of magnetization to the applied field, showing how easily a material gets magnetized; relative permeability (mu_r) tells how much the material concentrates magnetic field lines.",
+    "points": [
+      "Susceptibility chi = M / H.",
+      "Relative permeability is related to susceptibility as mu_r = 1 + chi.",
+      "Absolute permeability mu = mu0 mu_r, giving B = mu H inside the material.",
+      "Diamagnetic materials: small negative chi, mu_r slightly less than 1.",
+      "Paramagnetic materials: small positive chi, mu_r slightly more than 1.",
+      "Ferromagnetic materials: large positive chi, mu_r much greater than 1."
+    ],
+    "formula": "chi = M / H     mu_r = 1 + chi     mu = mu0 mu_r",
+    "diagram": { "draw": "Draw three bar graphs side by side labelled Diamagnetic, Paramagnetic, Ferromagnetic. Show chi value as a small bar below zero for diamagnetic, small bar above zero for paramagnetic, and a tall bar above zero for ferromagnetic." },
+    "example": "A material has chi = 499. Then mu_r = 1 + 499 = 500, meaning it concentrates the magnetic field 500 times more than vacuum — typical of a ferromagnetic material.",
+    "tip": "Memorise mu_r = 1 + chi — this single-line formula is a guaranteed numerical in many papers."
+  },
+  {
+    "t": "Dia-, para- and ferromagnetism",
+    "def": "Materials are classified as diamagnetic, paramagnetic or ferromagnetic based on how their atomic magnetic dipoles respond to an external magnetic field.",
+    "points": [
+      "Diamagnetic materials (copper, bismuth, water): no permanent dipoles; field induces a weak opposing moment, so they are weakly repelled.",
+      "Paramagnetic materials (aluminium, platinum, oxygen): have weak permanent dipoles randomly oriented; field partially aligns them, giving weak attraction.",
+      "Ferromagnetic materials (iron, nickel, cobalt): strong interactions align dipoles into domains, giving strong attraction and large magnetization.",
+      "Ferromagnetic materials retain magnetism after the field is removed, showing hysteresis; the other two do not.",
+      "Diamagnetism is present in all materials but is very weak and masked by para/ferro effects when present.",
+      "The underlying cause in all cases is electron orbital and spin magnetic moments and how they interact."
+    ],
+    "formula": "Susceptibility: dia (small, negative), para (small, positive), ferro (large, positive)",
+    "diagram": { "mermaid": "flowchart TD\n  A[\"Magnetic materials\"] --> B[\"Diamagnetic: weakly repelled\"]\n  A --> C[\"Paramagnetic: weakly attracted\"]\n  A --> D[\"Ferromagnetic: strongly attracted domains\"]" },
+    "example": "A bismuth rod placed near a strong magnet is pushed away slightly (diamagnetic), while an iron nail is pulled in strongly (ferromagnetic).",
+    "tip": "Make a 3-column table (property, susceptibility sign, example) — this scores full marks fast for 'distinguish between' questions."
+  },
+  {
+    "t": "Curie's law",
+    "def": "Curie's law states that the magnetic susceptibility of a paramagnetic material is inversely proportional to its absolute temperature.",
+    "points": [
+      "Higher temperature causes more thermal agitation, which randomizes the atomic dipoles.",
+      "This randomization reduces the net alignment and hence magnetization for a given field.",
+      "So susceptibility decreases as temperature increases: chi = C/T, where C is the Curie constant.",
+      "As temperature decreases, dipoles align more easily, so susceptibility increases.",
+      "Ferromagnetic materials follow a related Curie-Weiss law above a critical Curie temperature, beyond which they become paramagnetic.",
+      "This law is verified by measuring susceptibility of paramagnetic salts at different temperatures."
+    ],
+    "formula": "chi = C / T     (Curie's law for paramagnetic materials)",
+    "diagram": { "draw": "Draw a graph with temperature T on the x-axis and susceptibility chi on the y-axis. Draw a curve that falls steeply as T increases, showing chi is inversely proportional to T (hyperbola shape)." },
+    "example": "If chi = 0.004 at T = 300 K, then C = chi x T = 1.2. At T = 600 K, new chi = C/T = 1.2/600 = 0.002 (half the value).",
+    "tip": "State clearly that this law applies ONLY to paramagnetic materials, and mention the Curie temperature concept for ferromagnets as a bonus point."
+  },
+  {
+    "t": "Hysteresis loop",
+    "def": "A hysteresis loop is the closed B-H curve obtained when a ferromagnetic material is taken through a full cycle of magnetization and demagnetization, showing that B lags behind H.",
+    "points": [
+      "As H is increased from zero, B increases and reaches saturation.",
+      "When H is reduced to zero, B does not become zero — this leftover magnetism is called retentivity.",
+      "A reverse field is needed to bring B back to zero — this reverse field strength is called coercivity.",
+      "Continuing the reverse cycle and then returning completes the closed loop.",
+      "The area enclosed by the loop equals the energy lost as heat per unit volume per cycle.",
+      "Materials with large loop area (steel) suit permanent magnets; materials with thin loops (soft iron) suit transformer cores."
+    ],
+    "formula": "Loop area (proportional to) energy dissipated per unit volume per cycle",
+    "diagram": { "draw": "Draw a B (vertical axis) vs H (horizontal axis) graph. Draw an S-shaped closed loop: starting at origin, rising to saturation in first quadrant, then curving back through the B-axis at a positive value labelled 'Retentivity', crossing the H-axis at a negative value labelled 'Coercivity', continuing to negative saturation, and back to origin through the fourth quadrant similarly." },
+    "example": "Steel has a wide hysteresis loop (good for permanent magnets); soft iron has a thin loop (good for transformer cores to reduce energy loss).",
+    "tip": "Label retentivity and coercivity precisely on the B-H axes in your diagram — these two labels are compulsory for full diagram marks."
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "q": "In a pure inductor connected to AC, the current",
+    "o": [
+      "lags voltage by 90 degrees",
+      "is in phase with voltage",
+      "leads voltage by 90 degrees",
+      "lags voltage by 180 degrees"
+    ],
+    "a": 0,
+    "why": "Back-EMF -L di/dt opposes rapid current change, so current lags voltage by 90 degrees in a pure inductor."
+  },
+  {
+    "q": "In a pure capacitor connected to AC, the current",
+    "o": [
+      "lags voltage by 90 degrees",
+      "leads voltage by 90 degrees",
+      "is in phase with voltage",
+      "leads voltage by 180 degrees"
+    ],
+    "a": 1,
+    "why": "Charge must build up before voltage appears, so current leads voltage by 90 degrees in a pure capacitor."
+  },
+  {
+    "q": "Inductive reactance XL of a coil of inductance L at frequency f is given by",
+    "o": [
+      "1/(2 pi f L)",
+      "2 pi f / L",
+      "2 pi f L",
+      "L/(2 pi f)"
+    ],
+    "a": 2,
+    "why": "XL = w L = 2 pi f L, increasing with frequency."
+  },
+  {
+    "q": "For L = 0.1 H at f = 50 Hz, the inductive reactance XL is approximately",
+    "o": [
+      "15.7 ohm",
+      "5 ohm",
+      "62.8 ohm",
+      "31.4 ohm"
+    ],
+    "a": 3,
+    "why": "XL = 2 pi f L = 2 x 3.14 x 50 x 0.1 ≈ 31.4 ohm."
+  },
+  {
+    "q": "In a series LCR circuit, the impedance Z is given by",
+    "o": [
+      "sqrt(R^2 + (XL-XC)^2)",
+      "R + XL + XC",
+      "sqrt(R^2 + XL^2 + XC^2)",
+      "R x (XL - XC)"
+    ],
+    "a": 0,
+    "why": "Z = sqrt(R^2 + (XL - XC)^2), from the phasor sum of VR and (VL - VC)."
+  },
+  {
+    "q": "In a series LCR circuit, if VR = 30 V, VL = 80 V, VC = 40 V, the resultant applied voltage V is",
+    "o": [
+      "150 V",
+      "50 V",
+      "70 V",
+      "110 V"
+    ],
+    "a": 1,
+    "why": "V = sqrt(VR^2 + (VL-VC)^2) = sqrt(900 + 1600) = sqrt(2500) = 50 V."
+  },
+  {
+    "q": "Resonance in a series LCR circuit occurs when",
+    "o": [
+      "R equals zero",
+      "XL equals R",
+      "XL equals XC",
+      "XC equals zero"
+    ],
+    "a": 2,
+    "why": "At resonance XL = XC, so impedance becomes minimum (Z = R) and current is maximum."
+  },
+  {
+    "q": "The resonant frequency of a series LCR circuit with L = 2 H and C = 8 microfarad is approximately",
+    "o": [
+      "159 Hz",
+      "79.6 Hz",
+      "19.9 Hz",
+      "39.8 Hz"
+    ],
+    "a": 3,
+    "why": "f0 = 1/(2 pi sqrt(LC)) = 1/(2 pi sqrt(2 x 8e-6)) ≈ 39.8 Hz."
+  },
+  {
+    "q": "The average power in an AC circuit is given by Pavg = Vrms Irms cos(phi), where cos(phi) is called the",
+    "o": [
+      "power factor",
+      "phase angle",
+      "reactance factor",
+      "quality factor"
+    ],
+    "a": 0,
+    "why": "cos(phi) is the power factor, indicating the fraction of apparent power actually consumed."
+  },
+  {
+    "q": "If the peak voltage of mains AC is 325 V, the RMS voltage is approximately",
+    "o": [
+      "162.5 V",
+      "230 V",
+      "460 V",
+      "325 V"
+    ],
+    "a": 1,
+    "why": "Vrms = v0/sqrt(2) = 325/1.414 ≈ 230 V."
+  }
+]

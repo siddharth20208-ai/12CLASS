@@ -1,0 +1,210 @@
+{
+  "solved": [
+    {
+      "topic": "Order and degree",
+      "marks": 2,
+      "q": "Find the order and degree of the differential equation: d^2y/dx^2 + (dy/dx)^3 = 0",
+      "steps": [
+        "The equation is already a polynomial in derivatives, so no squaring/removal of radicals is needed.",
+        "Highest derivative present is d^2y/dx^2, so order = 2.",
+        "Power of the highest order derivative d^2y/dx^2 is 1, so degree = 1."
+      ],
+      "ans": "Order = 2, Degree = 1"
+    },
+    {
+      "topic": "Order and degree",
+      "marks": 2,
+      "q": "Find the order and degree of the differential equation: sqrt(1 + (dy/dx)^2) = d^2y/dx^2",
+      "steps": [
+        "The equation has a radical, so first remove it by squaring both sides.",
+        "Squaring: 1 + (dy/dx)^2 = (d^2y/dx^2)^2",
+        "Now it is a polynomial in derivatives.",
+        "Highest derivative present is d^2y/dx^2, so order = 2.",
+        "Power of the highest order derivative is 2, so degree = 2."
+      ],
+      "ans": "Order = 2, Degree = 2"
+    },
+    {
+      "topic": "Variable separable method",
+      "marks": 3,
+      "q": "Solve the differential equation: dy/dx = x^2 y",
+      "steps": [
+        "Using variable separable method, separate the variables y and x on opposite sides.",
+        "dy/y = x^2 dx",
+        "Integrating both sides: integral of (1/y) dy = integral of x^2 dx",
+        "ln|y| = x^3/3 + c",
+        "Taking exponential on both sides: y = e^(x^3/3 + c) = A e^(x^3/3), where A = e^c"
+      ],
+      "ans": "y = A e^(x^3/3)"
+    },
+    {
+      "topic": "Variable separable method",
+      "marks": 3,
+      "q": "Solve the differential equation: dy/dx = (1 + y^2)/(1 + x^2)",
+      "steps": [
+        "Using variable separable method, separate the variables.",
+        "dy/(1+y^2) = dx/(1+x^2)",
+        "Integrating both sides using the standard formula integral of 1/(1+t^2) dt = tan^-1(t) + c",
+        "tan^-1(y) = tan^-1(x) + c"
+      ],
+      "ans": "tan^-1(y) = tan^-1(x) + c"
+    },
+    {
+      "topic": "Homogeneous differential equations",
+      "marks": 4,
+      "q": "Solve the homogeneous differential equation: dy/dx = (x^2 + y^2)/(xy)",
+      "steps": [
+        "Since the equation is homogeneous of degree 0, put y = vx, so dy/dx = v + x(dv/dx).",
+        "RHS = (x^2 + v^2x^2)/(x . vx) = (1 + v^2)/v",
+        "So v + x(dv/dx) = (1 + v^2)/v",
+        "x(dv/dx) = (1 + v^2)/v - v = (1 + v^2 - v^2)/v = 1/v",
+        "Separating variables: v dv = dx/x",
+        "Integrating both sides: v^2/2 = ln|x| + c",
+        "Substitute back v = y/x: (y/x)^2 / 2 = ln|x| + c",
+        "Multiply both sides by 2x^2: y^2 = 2x^2(ln|x| + c)"
+      ],
+      "ans": "y^2 = 2x^2(ln|x| + c)"
+    },
+    {
+      "topic": "Homogeneous differential equations",
+      "marks": 3,
+      "q": "Solve the homogeneous differential equation: dy/dx = (x + y)/x",
+      "steps": [
+        "RHS can be written as 1 + y/x, which is a function of y/x, so the equation is homogeneous.",
+        "Put y = vx, so dy/dx = v + x(dv/dx).",
+        "v + x(dv/dx) = 1 + v",
+        "x(dv/dx) = 1, so dv = dx/x",
+        "Integrating both sides: v = ln|x| + c",
+        "Substitute back v = y/x: y/x = ln|x| + c",
+        "Multiply both sides by x: y = x ln|x| + cx"
+      ],
+      "ans": "y = x ln|x| + cx"
+    },
+    {
+      "topic": "Linear differential equations and integrating factor",
+      "marks": 4,
+      "q": "Solve the linear differential equation: dy/dx + y/x = x^2",
+      "steps": [
+        "The equation is of the form dy/dx + Py = Q with P = 1/x, Q = x^2.",
+        "Integrating factor, I.F. = e^(integral of P dx) = e^(integral of 1/x dx) = e^(ln x) = x",
+        "General solution of linear DE: y . (I.F.) = integral of Q . (I.F.) dx + c",
+        "y . x = integral of x^2 . x dx + c = integral of x^3 dx + c",
+        "xy = x^4/4 + c"
+      ],
+      "ans": "xy = x^4/4 + c"
+    },
+    {
+      "topic": "Linear differential equations and integrating factor",
+      "marks": 4,
+      "q": "Solve the linear differential equation: dy/dx + 2y = e^(-x)",
+      "steps": [
+        "The equation is of the form dy/dx + Py = Q with P = 2, Q = e^(-x).",
+        "Integrating factor, I.F. = e^(integral of 2 dx) = e^(2x)",
+        "General solution: y . e^(2x) = integral of e^(-x) . e^(2x) dx + c",
+        "y . e^(2x) = integral of e^x dx + c = e^x + c",
+        "Dividing both sides by e^(2x): y = e^(-x) + c e^(-2x)"
+      ],
+      "ans": "y = e^(-x) + c e^(-2x)"
+    },
+    {
+      "topic": "Formation of differential equations",
+      "marks": 2,
+      "q": "Form the differential equation by eliminating the arbitrary constant A from y = A e^(2x)",
+      "steps": [
+        "Given y = A e^(2x) ... (1)",
+        "Differentiate both sides w.r.t. x: dy/dx = 2A e^(2x)",
+        "From (1), A e^(2x) = y, so dy/dx = 2y"
+      ],
+      "ans": "dy/dx = 2y"
+    },
+    {
+      "topic": "Formation of differential equations",
+      "marks": 3,
+      "q": "Form the differential equation representing the family of lines y = Ax + B, where A and B are arbitrary constants",
+      "steps": [
+        "Given y = Ax + B ... (1)",
+        "Differentiate w.r.t. x: dy/dx = A ... (2)",
+        "Differentiate (2) again w.r.t. x: d^2y/dx^2 = 0",
+        "This removes both arbitrary constants A and B."
+      ],
+      "ans": "d^2y/dx^2 = 0"
+    },
+    {
+      "topic": "Applications (growth and decay)",
+      "marks": 4,
+      "q": "The population of a town grows at a rate proportional to the population present (dP/dt = kP). If the population doubles in 5 years, find the population after 10 years, in terms of the initial population P0.",
+      "steps": [
+        "Using the law of growth, dP/dt = kP leads to P = P0 e^(kt) by variable separable method.",
+        "Given P doubles in 5 years: 2P0 = P0 e^(5k)",
+        "So e^(5k) = 2, giving k = (1/5) ln 2",
+        "After 10 years: P = P0 e^(10k) = P0 (e^(5k))^2",
+        "P = P0 (2)^2 = 4P0"
+      ],
+      "ans": "P = 4P0 (population becomes 4 times the initial population)"
+    },
+    {
+      "topic": "Applications (Newton's law of cooling)",
+      "marks": 4,
+      "q": "A body cools from 80 degree C to 60 degree C in 20 minutes in a surrounding of constant temperature 30 degree C. Using Newton's law of cooling, find the temperature of the body after a further 20 minutes (i.e., 40 minutes from the start).",
+      "steps": [
+        "By Newton's law of cooling, dT/dt = -k(T - Ts), whose solution is (T - Ts) = (T0 - Ts) e^(-kt)",
+        "Here T0 = 80, Ts = 30, so T - 30 = 50 e^(-kt)",
+        "At t = 20: 60 - 30 = 50 e^(-20k), so 30 = 50 e^(-20k), giving e^(-20k) = 0.6",
+        "At t = 40: T - 30 = 50 e^(-40k) = 50 (e^(-20k))^2 = 50 (0.6)^2",
+        "T - 30 = 50 (0.36) = 18",
+        "T = 30 + 18 = 48"
+      ],
+      "ans": "Temperature after 40 minutes = 48 degree C"
+    }
+  ],
+  "practice": [
+    {
+      "topic": "Order and degree",
+      "q": "Find the order and degree of: (d^3y/dx^3)^2 + (dy/dx)^5 = 7",
+      "hint": "No radicals/fractional powers present; order = power of highest derivative term index, degree = power of that highest derivative.",
+      "ans": "Order = 3, Degree = 2"
+    },
+    {
+      "topic": "Variable separable method",
+      "q": "Solve: dy/dx = y tan x",
+      "hint": "Separate variables as dy/y = tan x dx and integrate using integral of tan x dx = ln|sec x| + c.",
+      "ans": "y = A sec x"
+    },
+    {
+      "topic": "Homogeneous differential equations",
+      "q": "Solve: dy/dx = y/x + tan(y/x)",
+      "hint": "Put y = vx, dy/dx = v + x dv/dx; this reduces to cot v dv = dx/x.",
+      "ans": "sin(y/x) = Ax"
+    },
+    {
+      "topic": "Linear differential equations and integrating factor",
+      "q": "Solve: dy/dx + y cot x = cos x",
+      "hint": "Here P = cot x, so I.F. = e^(integral cot x dx) = sin x; multiply and integrate using integral of sin x cos x dx = sin^2(x)/2.",
+      "ans": "y sin x = (sin^2 x)/2 + c"
+    },
+    {
+      "topic": "Formation of differential equations",
+      "q": "Form the differential equation by eliminating the arbitrary constants A and B from y = A cos x + B sin x",
+      "hint": "Differentiate twice; note y'' = -(A cos x + B sin x) = -y.",
+      "ans": "d^2y/dx^2 + y = 0"
+    },
+    {
+      "topic": "Formation of differential equations",
+      "q": "Form the differential equation by eliminating the arbitrary constant c from xy = c",
+      "hint": "Differentiate using the product rule: d/dx(xy) = x(dy/dx) + y.",
+      "ans": "x(dy/dx) + y = 0"
+    },
+    {
+      "topic": "Applications (growth and decay)",
+      "q": "A radioactive substance decays according to dN/dt = -kN with half-life T. Find the time taken for the substance to reduce to one-fourth of its original amount.",
+      "hint": "Use N = N0 e^(-kt) with k = ln2 / T; one-fourth means two half-lives have passed.",
+      "ans": "t = 2T"
+    },
+    {
+      "topic": "Applications (growth and decay)",
+      "q": "A bacteria culture doubles every 3 hours. Find the time required for the culture to become 5 times its original size.",
+      "hint": "Use P = P0 e^(kt) with e^(3k) = 2, so k = (ln2)/3; solve e^(kt) = 5 for t.",
+      "ans": "t = 3 log2(5) is approximately 6.97 hours"
+    }
+  ]
+}

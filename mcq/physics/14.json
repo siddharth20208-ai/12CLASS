@@ -1,0 +1,112 @@
+[
+  {
+    "q": "According to Bohr's second postulate, the angular momentum of an electron in an allowed orbit is",
+    "o": [
+      "an integral multiple of h",
+      "always equal to h",
+      "an integral multiple of h/(2 pi)",
+      "a continuous (any) value"
+    ],
+    "a": 2,
+    "why": "L = n h/(2 pi), quantization condition for allowed orbits."
+  },
+  {
+    "q": "The energy of the nth orbit of a hydrogen atom is given by",
+    "o": [
+      "En = -13.6 n^2 eV",
+      "En = 13.6/n^2 eV",
+      "En = -13.6/n eV",
+      "En = -13.6/n^2 eV"
+    ],
+    "a": 3,
+    "why": "En = -13.6/n^2 eV, standard Bohr model result for hydrogen."
+  },
+  {
+    "q": "The spectral series of hydrogen corresponding to transitions ending at n = 1 is called the",
+    "o": [
+      "Lyman series",
+      "Paschen series",
+      "Balmer series",
+      "Brackett series"
+    ],
+    "a": 0,
+    "why": "Transitions ending at n=1 (ultraviolet region) form the Lyman series."
+  },
+  {
+    "q": "An electron transition from n=3 to n=2 in hydrogen releases energy equal to",
+    "o": [
+      "1.51 eV",
+      "1.89 eV",
+      "3.4 eV",
+      "0.66 eV"
+    ],
+    "a": 1,
+    "why": "E3 = -1.51 eV, E2 = -3.4 eV; released energy = (-1.51)-(-3.4) = 1.89 eV, a Balmer line."
+  },
+  {
+    "q": "The nuclear radius R depends on mass number A as",
+    "o": [
+      "R = R0 A",
+      "R = R0 A^2",
+      "R = R0 A^(1/3)",
+      "R = R0/A"
+    ],
+    "a": 2,
+    "why": "R = R0 A^(1/3), with R0 ≈ 1.2 fm, giving nearly constant nuclear density."
+  },
+  {
+    "q": "Nuclear density is approximately the same for all nuclei because",
+    "o": [
+      "nuclear volume is independent of A",
+      "R0 varies with A",
+      "nuclear mass is constant",
+      "nuclear volume (R^3) is proportional to A"
+    ],
+    "a": 3,
+    "why": "Since R proportional to A^(1/3), volume proportional to R^3 is proportional to A, keeping density nearly constant."
+  },
+  {
+    "q": "The binding energy per nucleon versus mass number A curve peaks (maximum stability) near",
+    "o": [
+      "A = 56 (iron region)",
+      "A = 1",
+      "A = 238",
+      "A = 500"
+    ],
+    "a": 0,
+    "why": "Iron-56 region has the maximum binding energy per nucleon (~8.8 MeV), the most stable nuclei."
+  },
+  {
+    "q": "Both nuclear fusion (light nuclei) and fission (heavy nuclei) release energy because they move",
+    "o": [
+      "away from the binding energy peak",
+      "towards the binding energy peak near A=56",
+      "towards zero binding energy",
+      "towards higher mass number only"
+    ],
+    "a": 1,
+    "why": "Both processes move nuclei towards the more stable middle region of the BE/A curve, releasing energy."
+  },
+  {
+    "q": "The radioactive decay law gives the number of undecayed nuclei at time t as",
+    "o": [
+      "N = N0 (1 - lambda t)",
+      "N = N0 e^(lambda t)",
+      "N = N0 e^(-lambda t)",
+      "N = N0 lambda t"
+    ],
+    "a": 2,
+    "why": "Solving -dN/dt = lambda N gives exponential decay N = N0 e^(-lambda t)."
+  },
+  {
+    "q": "A sample has half-life 10 days and initial count 1000 nuclei. After 30 days, the number remaining is",
+    "o": [
+      "500",
+      "250",
+      "62.5",
+      "125"
+    ],
+    "a": 3,
+    "why": "30 days = 3 half-lives; N = 1000 x (1/2)^3 = 125."
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Coulomb's law states that the force between two point charges q1 and q2 separated by distance r is",
+    "o": [
+      "F = k q1 q2 r^2",
+      "F = k q1 q2 / r^2",
+      "F = k (q1 + q2) / r^2",
+      "F = k q1 q2 / r"
+    ],
+    "a": 1,
+    "why": "Coulomb's law: F = k q1 q2 / r^2"
+  },
+  {
+    "q": "The value of Coulomb's constant k in vacuum is approximately",
+    "o": [
+      "6.67 x 10^-11 N m^2/C^2",
+      "8.85 x 10^-12 N m^2/C^2",
+      "9 x 10^9 N m^2/C^2",
+      "1.6 x 10^-19 N m^2/C^2"
+    ],
+    "a": 2,
+    "why": "k = 1/(4 pi epsilon0) = 9 x 10^9 N m^2/C^2"
+  },
+  {
+    "q": "Two point charges each of 2 x 10^-6 C are separated by 0.3 m. The force between them is approximately",
+    "o": [
+      "0.04 N",
+      "40 N",
+      "4 N",
+      "0.4 N"
+    ],
+    "a": 3,
+    "why": "F = k q1 q2/r^2 = 9x10^9 x (2e-6)^2 / 0.09 ≈ 0.4 N"
+  },
+  {
+    "q": "Gauss's law states that the electric flux through a closed surface equals",
+    "o": [
+      "Q_enclosed / epsilon0",
+      "Q_enclosed x epsilon0",
+      "epsilon0 / Q_enclosed",
+      "zero always"
+    ],
+    "a": 0,
+    "why": "Gauss's law: Phi = Q_enclosed / epsilon0"
+  },
+  {
+    "q": "Electric potential due to a point charge Q at a distance r is",
+    "o": [
+      "V = k Q r",
+      "V = k Q / r",
+      "V = k Q / r^2",
+      "V = k Q^2 / r"
+    ],
+    "a": 1,
+    "why": "Electric potential of a point charge: V = k Q / r"
+  },
+  {
+    "q": "The relation between electric field E and potential V along a line is",
+    "o": [
+      "E = dV/dr",
+      "E = V/dr",
+      "E = -dV/dr",
+      "E = -V dr"
+    ],
+    "a": 2,
+    "why": "Electric field is the negative gradient of potential: E = -dV/dr"
+  },
+  {
+    "q": "The capacitance of a parallel plate capacitor with plate area A, separation d and dielectric constant K is",
+    "o": [
+      "C = epsilon0 / (K A d)",
+      "C = K epsilon0 d / A",
+      "C = A d / (K epsilon0)",
+      "C = K epsilon0 A / d"
+    ],
+    "a": 3,
+    "why": "Parallel plate capacitor: C = K epsilon0 A / d"
+  },
+  {
+    "q": "For capacitors connected in series, the equivalent capacitance satisfies",
+    "o": [
+      "1/C_eq = sum(1/Ci)",
+      "C_eq = sum(Ci)",
+      "C_eq = product(Ci)",
+      "C_eq = average(Ci)"
+    ],
+    "a": 0,
+    "why": "In series combination, reciprocals add: 1/C_eq = sum(1/Ci)"
+  },
+  {
+    "q": "Two capacitors of 2 microF and 3 microF are connected in parallel. Their equivalent capacitance is",
+    "o": [
+      "1.2 microF",
+      "5 microF",
+      "6 microF",
+      "0.83 microF"
+    ],
+    "a": 1,
+    "why": "In parallel, C_eq = C1 + C2 = 2 + 3 = 5 microF"
+  },
+  {
+    "q": "The energy stored in a capacitor of capacitance C charged to potential V is",
+    "o": [
+      "U = C V",
+      "U = C V^2",
+      "U = (1/2) C V^2",
+      "U = (1/2) C^2 V"
+    ],
+    "a": 2,
+    "why": "Energy stored in a capacitor: U = (1/2) C V^2 = Q^2/(2C)"
+  }
+]

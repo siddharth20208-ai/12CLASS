@@ -1,0 +1,116 @@
+{
+  "solved": [
+    {
+      "topic": "SHM differential equation - finding omega, T, f",
+      "marks": 2,
+      "q": "A particle performs SHM such that its acceleration is given by a = -36x (SI units). Find its angular frequency, period and frequency.",
+      "steps": [
+        "Given: a = -36x.",
+        "Formula: for SHM, a = -omega^2 x.",
+        "Comparing, omega^2 = 36, so omega = 6 rad/s.",
+        "T = 2pi/omega = 2 x 3.14/6 = 6.28/6 = 1.047 s.",
+        "f = 1/T = omega/(2pi) = 6/6.28 = 0.955 Hz."
+      ],
+      "ans": "omega = 6 rad/s, T = 1.047 s, f = 0.955 Hz"
+    },
+    {
+      "topic": "Velocity in SHM at a given displacement",
+      "marks": 3,
+      "q": "A particle in SHM has amplitude 0.05 m and angular frequency 4 rad/s. Find its velocity when its displacement from mean position is 0.03 m.",
+      "steps": [
+        "Given: A = 0.05 m, omega = 4 rad/s, x = 0.03 m.",
+        "Formula: v = omega sqrt(A^2 - x^2).",
+        "A^2 - x^2 = (0.05)^2 - (0.03)^2 = 0.0025 - 0.0009 = 0.0016.",
+        "sqrt(0.0016) = 0.04 m.",
+        "v = 4 x 0.04 = 0.16 m/s."
+      ],
+      "ans": "v = 0.16 m/s"
+    },
+    {
+      "topic": "Energy in SHM - total, kinetic and potential energy",
+      "marks": 4,
+      "q": "A particle of mass 0.2 kg executes SHM with amplitude 0.1 m and angular frequency 10 rad/s. Find the total energy, and the kinetic and potential energy when displacement is 0.06 m.",
+      "steps": [
+        "Given: m = 0.2 kg, A = 0.1 m, omega = 10 rad/s, x = 0.06 m.",
+        "Formula: E = (1/2) m omega^2 A^2.",
+        "E = 0.5 x 0.2 x 100 x 0.01 = 0.1 J.",
+        "Formula: PE = (1/2) m omega^2 x^2 = 0.5 x 0.2 x 100 x 0.0036 = 0.036 J.",
+        "KE = E - PE = 0.1 - 0.036 = 0.064 J."
+      ],
+      "ans": "E = 0.1 J, PE = 0.036 J, KE = 0.064 J"
+    },
+    {
+      "topic": "Simple pendulum - finding g from L and T",
+      "marks": 3,
+      "q": "A simple pendulum of length 1.2 m has a time period of 2.2 s. Calculate the value of g at that place.",
+      "steps": [
+        "Given: L = 1.2 m, T = 2.2 s.",
+        "Formula: T = 2pi sqrt(L/g), so g = 4 pi^2 L / T^2.",
+        "T^2 = 2.2 x 2.2 = 4.84 s^2.",
+        "4 pi^2 = 4 x 9.87 = 39.48.",
+        "g = 39.48 x 1.2 / 4.84 = 47.38/4.84 = 9.79 m/s^2."
+      ],
+      "ans": "g = 9.79 m/s^2 (approx 9.8 m/s^2)"
+    },
+    {
+      "topic": "Mass-spring system - finding period",
+      "marks": 2,
+      "q": "A mass of 0.5 kg is attached to a spring of force constant 200 N/m and set into SHM. Find the period of oscillation.",
+      "steps": [
+        "Given: m = 0.5 kg, k = 200 N/m.",
+        "Formula: T = 2pi sqrt(m/k).",
+        "m/k = 0.5/200 = 0.0025.",
+        "sqrt(0.0025) = 0.05 s.",
+        "T = 2 x 3.14 x 0.05 = 0.314 s."
+      ],
+      "ans": "T = 0.314 s"
+    },
+    {
+      "topic": "Effect of amplitude on total energy in SHM",
+      "marks": 2,
+      "q": "A particle of mass 0.1 kg performs SHM with angular frequency 5 rad/s. Find the ratio of its total energy when amplitude is 0.04 m to that when amplitude is 0.02 m.",
+      "steps": [
+        "Given: m = 0.1 kg, omega = 5 rad/s, A1 = 0.02 m, A2 = 0.04 m.",
+        "Formula: E = (1/2) m omega^2 A^2, so E is proportional to A^2.",
+        "E1 = 0.5 x 0.1 x 25 x 0.0004 = 0.0005 J.",
+        "E2 = 0.5 x 0.1 x 25 x 0.0016 = 0.002 J.",
+        "E2/E1 = (A2/A1)^2 = (2)^2 = 4."
+      ],
+      "ans": "E2 : E1 = 4 : 1 (doubling amplitude quadruples total energy)"
+    },
+    {
+      "topic": "Maximum velocity and maximum acceleration in SHM",
+      "marks": 4,
+      "q": "A particle performs SHM with amplitude 0.02 m and frequency 5 Hz. Find its maximum velocity and maximum acceleration.",
+      "steps": [
+        "Given: A = 0.02 m, f = 5 Hz.",
+        "Formula: omega = 2 pi f.",
+        "omega = 2 x 3.14 x 5 = 31.4 rad/s.",
+        "Formula: vmax = omega A = 31.4 x 0.02 = 0.628 m/s.",
+        "Formula: amax = omega^2 A, omega^2 = (31.4)^2 = 986 (approx, using pi^2 = 9.87, omega^2 = 4 x 9.87 x 25 = 987).",
+        "amax = 987 x 0.02 = 19.74 m/s^2."
+      ],
+      "ans": "vmax = 0.628 m/s, amax = 19.74 m/s^2"
+    },
+    {
+      "topic": "Finding amplitude from total energy in SHM",
+      "marks": 3,
+      "q": "A particle of mass 1 kg performs SHM with angular frequency 2 rad/s and total energy 0.5 J. Find its amplitude.",
+      "steps": [
+        "Given: m = 1 kg, omega = 2 rad/s, E = 0.5 J.",
+        "Formula: E = (1/2) m omega^2 A^2, so A^2 = 2E/(m omega^2).",
+        "A^2 = (2 x 0.5)/(1 x 4) = 1/4.",
+        "A = sqrt(1/4) = 0.5 m."
+      ],
+      "ans": "A = 0.5 m"
+    }
+  ],
+  "practice": [
+    { "topic": "SHM equation - omega, T, f", "q": "A particle performs SHM with acceleration a = -25x (SI units). Find its angular frequency, period and frequency.", "hint": "Compare a = -25x with a = -omega^2 x; then use T = 2pi/omega and f = 1/T.", "ans": "omega = 5 rad/s, T = 1.257 s, f = 0.796 Hz" },
+    { "topic": "Velocity in SHM", "q": "A particle has amplitude 0.1 m and angular frequency 5 rad/s. Find its velocity at displacement 0.06 m.", "hint": "Use v = omega sqrt(A^2 - x^2).", "ans": "v = 0.4 m/s" },
+    { "topic": "KE : PE ratio in SHM", "q": "Find the ratio of kinetic energy to potential energy of a particle in SHM when its displacement is half the amplitude (x = A/2).", "hint": "KE = (1/2) m omega^2 (A^2 - x^2), PE = (1/2) m omega^2 x^2; substitute x = A/2 and simplify.", "ans": "KE : PE = 3 : 1" },
+    { "topic": "Simple pendulum - period", "q": "Find the period of a simple pendulum of length 2 m at a place where g = 9.8 m/s^2.", "hint": "Use T = 2pi sqrt(L/g).", "ans": "T = 2.84 s" },
+    { "topic": "Mass-spring system - period", "q": "A mass of 0.5 kg attached to a spring of force constant 8 N/m performs SHM. Find its period.", "hint": "Use T = 2pi sqrt(m/k).", "ans": "T = 1.57 s" },
+    { "topic": "Maximum velocity from amplitude and period", "q": "A particle performs SHM with amplitude 0.05 m and period 0.5 s. Find its maximum velocity.", "hint": "Find omega = 2pi/T, then use vmax = omega A.", "ans": "vmax = 0.628 m/s" }
+  ]
+}

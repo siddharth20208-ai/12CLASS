@@ -1,0 +1,110 @@
+[
+  {
+    "t": "Tangents and normals",
+    "def": "The tangent at a point on a curve is the line touching it with the same slope as the curve there; the normal is the line perpendicular to the tangent at that point.",
+    "points": [
+      "Find dy/dx at the given point; this is the slope m of the tangent.",
+      "Tangent equation: y - y1 = m(x - x1).",
+      "Normal is perpendicular to tangent, so its slope is -1/m.",
+      "Normal equation: y - y1 = (-1/m)(x - x1).",
+      "If dy/dx = 0, tangent is horizontal; normal is vertical (x = x1).",
+      "If dy/dx is undefined, tangent is vertical; normal is horizontal (y = y1)."
+    ],
+    "formula": "Tangent: y - y1 = (dy/dx)(x - x1)     Normal: y - y1 = -1/(dy/dx) (x - x1)",
+    "diagram": {
+      "draw": "Draw a smooth curve. Mark point P(x1, y1) on it. Draw a straight line just touching the curve at P, label it 'Tangent'. Draw another straight line through P at right angle to the tangent, label it 'Normal'."
+    },
+    "example": "Curve y = x^2 at (1,1): dy/dx = 2x = 2. Tangent: y - 1 = 2(x - 1) i.e. y = 2x - 1. Normal: y - 1 = -1/2(x - 1) i.e. x + 2y = 3.",
+    "tip": "Always substitute the point into dy/dx first to get a numeric slope before writing the line equations."
+  },
+  {
+    "t": "Rate of change (related rates)",
+    "def": "Rate of change tells how fast a quantity changes with respect to another, usually time, and is found using derivatives.",
+    "points": [
+      "Identify the quantity that is changing and write it as a function of time, e.g. V(t), A(t).",
+      "Differentiate both sides of the relation with respect to t using chain rule.",
+      "Substitute the given rate(s) and values at the required instant.",
+      "Solve the resulting equation for the unknown rate.",
+      "Keep units consistent (same time unit throughout).",
+      "Positive rate means increasing, negative rate means decreasing."
+    ],
+    "formula": "dV/dt = (dV/dr) x (dr/dt)   (chain rule for related rates)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Relation between quantities\"] --> B[\"Differentiate wrt time t\"]\n  B --> C[\"Apply chain rule\"]\n  C --> D[\"Substitute known rate and value\"]\n  D --> E[\"Find required rate\"]"
+    },
+    "example": "Radius of a circle increases at 2 cm/s. Find rate of increase of area when r = 5 cm. A = pi r^2, dA/dt = 2 pi r (dr/dt) = 2 pi(5)(2) = 20 pi cm^2/s.",
+    "tip": "Write down the given rate and the rate asked for clearly before differentiating; this avoids sign and substitution mistakes."
+  },
+  {
+    "t": "Increasing and decreasing functions",
+    "def": "A function is increasing on an interval if its value rises as x increases, and decreasing if its value falls as x increases; this is checked using the sign of the first derivative.",
+    "points": [
+      "Find f'(x) for the given function.",
+      "If f'(x) > 0 for all x in an interval, f is strictly increasing there.",
+      "If f'(x) < 0 for all x in an interval, f is strictly decreasing there.",
+      "Find critical points by solving f'(x) = 0.",
+      "Use these points to divide the number line into intervals and test the sign of f'(x) in each.",
+      "State the increasing and decreasing intervals clearly as the final answer."
+    ],
+    "formula": "f increasing if f'(x) > 0; f decreasing if f'(x) < 0",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Find f prime x\"] --> B[\"Solve f prime x = 0\"]\n  B --> C[\"Mark critical points on number line\"]\n  C --> D[\"Test sign of f prime in each interval\"]\n  D --> E[\"Write increasing / decreasing intervals\"]"
+    },
+    "example": "f(x) = x^2 - 4x + 3. f'(x) = 2x - 4 = 0 at x = 2. For x < 2, f'(x) < 0 so f decreases; for x > 2, f'(x) > 0 so f increases.",
+    "tip": "Always show the sign chart (number line with + and - marked) as it is directly awarded marks in board papers."
+  },
+  {
+    "t": "Maxima and minima",
+    "def": "A function has a maximum at a point if its value there is greater than nearby values, and a minimum if it is smaller; these are found using the first and second derivative tests.",
+    "points": [
+      "Find f'(x) and solve f'(x) = 0 to get critical (stationary) points.",
+      "Find f''(x) at each critical point.",
+      "If f''(x) < 0, the point is a point of maximum (maximum value = f(x) there).",
+      "If f''(x) > 0, the point is a point of minimum (minimum value = f(x) there).",
+      "If f''(x) = 0, the second derivative test fails; use the first derivative sign change instead.",
+      "For word problems, also check endpoints if the domain is restricted (closed interval)."
+    ],
+    "formula": "f'(x) = 0 gives critical points; f''(x) < 0 means maximum, f''(x) > 0 means minimum",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Find f prime x = 0\"] --> B[\"Get critical points\"]\n  B --> C[\"Find f double prime x\"]\n  C --> D{\"Sign of f double prime\"}\n  D -->|Negative| E[\"Maximum point\"]\n  D -->|Positive| F[\"Minimum point\"]"
+    },
+    "example": "f(x) = x^3 - 3x. f'(x) = 3x^2 - 3 = 0 gives x = 1, -1. f''(x) = 6x. At x = 1, f'' = 6 > 0, minimum value f(1) = -2. At x = -1, f'' = -6 < 0, maximum value f(-1) = 2.",
+    "tip": "State clearly whether it is a maximum or minimum point AND give the maximum/minimum value — both are separately awarded marks."
+  },
+  {
+    "t": "Approximations using differentials",
+    "def": "Differentials use dy = f'(x) dx to estimate a small change in a function's value without recalculating it fully.",
+    "points": [
+      "Let y = f(x). Small change in x is denoted dx (or delta x), small change in y is dy.",
+      "Formula: dy = f'(x) dx, found using the derivative at the known point.",
+      "Approximate new value: f(x + dx) ≈ f(x) + dy.",
+      "Choose x as a nearby value where f(x) and f'(x) are easy to compute.",
+      "This method avoids direct calculation of roots, powers, etc. for values close to a known point.",
+      "Smaller dx gives a more accurate approximation."
+    ],
+    "formula": "dy = f'(x) dx     f(x + dx) ≈ f(x) + f'(x) dx",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Choose known x and f x\"] --> B[\"Find f prime x\"]\n  B --> C[\"Compute dy = f prime x times dx\"]\n  C --> D[\"f x+dx is approx f x + dy\"]"
+    },
+    "example": "Find approximate value of sqrt(26). Take x = 25, f(x) = sqrt(x), f'(x) = 1/(2 sqrt(x)). dx = 1. dy = 1/(2x5) x 1 = 0.1. sqrt(26) ≈ 5 + 0.1 = 5.1.",
+    "tip": "Pick the nearest perfect square or simple value for x so f(x) and f'(x) are easy — this is key to solving fast."
+  },
+  {
+    "t": "Second derivative test",
+    "def": "The second derivative test uses the sign of f''(x) at a critical point to decide whether that point gives a maximum, a minimum, or is inconclusive.",
+    "points": [
+      "First find critical points by solving f'(x) = 0.",
+      "Compute f''(x) and evaluate it at each critical point.",
+      "f''(x) < 0 at that point means the curve is concave down there, so it is a local maximum.",
+      "f''(x) > 0 at that point means the curve is concave up there, so it is a local minimum.",
+      "f''(x) = 0 means the test fails; need another method (like first derivative sign change) to decide.",
+      "This test is faster than checking signs on both sides, when f'' is easy to compute."
+    ],
+    "formula": "If f'(x0) = 0: f''(x0) < 0 gives maximum; f''(x0) > 0 gives minimum",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Solve f prime x = 0 for x0\"] --> B[\"Find f double prime x\"]\n  B --> C[\"Evaluate f double prime at x0\"]\n  C --> D{\"Sign at x0\"}\n  D -->|Negative| E[\"Local maximum\"]\n  D -->|Positive| F[\"Local minimum\"]"
+    },
+    "example": "f(x) = -x^2 + 4x. f'(x) = -2x + 4 = 0 gives x = 2. f''(x) = -2, which is negative, so x = 2 is a maximum point with f(2) = 4.",
+    "tip": "Always compute f''(x) as a formula first, then substitute the critical point value — this reduces calculation errors."
+  }
+]

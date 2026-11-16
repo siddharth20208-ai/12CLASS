@@ -1,0 +1,110 @@
+[
+  {
+    "t": "Zeroth and First Law of Thermodynamics",
+    "def": "The zeroth law states that if two systems are each in thermal equilibrium with a third system, they are in thermal equilibrium with each other, defining temperature. The first law states that heat supplied to a system equals the increase in its internal energy plus the work done by it.",
+    "points": [
+      "Zeroth law lets us use a thermometer: all bodies at the same temperature are in thermal equilibrium with each other.",
+      "First law is energy conservation applied to heat: dQ = dU + dW.",
+      "dQ is heat supplied to the system, dU is change in internal energy, dW is work done BY the system.",
+      "Sign convention: heat absorbed is positive, heat given out is negative; work done by the gas is positive, work done on the gas is negative.",
+      "Internal energy U depends only on temperature for an ideal gas, not on the path taken.",
+      "The first law is simply the law of conservation of energy applied to thermodynamic processes."
+    ],
+    "formula": "dQ = dU + dW",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Heat supplied dQ\"] --> B[\"Splits into two parts\"]\n  B --> C[\"Increase in internal energy dU\"]\n  B --> D[\"Work done by system dW\"]"
+    },
+    "example": "A gas absorbs 500 J of heat and does 200 J of work on surroundings. By first law, dU = dQ - dW = 500 - 200 = 300 J increase in internal energy.",
+    "tip": "Always state the sign convention before substituting numbers — half the marks in first-law numericals are for correct signs."
+  },
+  {
+    "t": "Isothermal and Adiabatic Processes",
+    "def": "An isothermal process occurs at constant temperature, so internal energy does not change. An adiabatic process occurs with no heat exchange with surroundings.",
+    "points": [
+      "Isothermal: T is constant, so dU = 0; by first law, dQ = dW — all heat supplied converts to work.",
+      "For an ideal gas undergoing isothermal change, PV = constant (Boyle's law applies).",
+      "Work done in isothermal process: W = nRT ln(V2/V1).",
+      "Adiabatic: dQ = 0 (well-insulated system or very fast process); by first law, dU = -dW.",
+      "For adiabatic process, PV^γ = constant, where γ = Cp/Cv.",
+      "In adiabatic expansion the gas does work using its own internal energy, so its temperature falls; in adiabatic compression, temperature rises."
+    ],
+    "formula": "Isothermal: PV = constant, W = nRT ln(V2/V1)     Adiabatic: PV^γ = constant, dU = −dW",
+    "diagram": {
+      "draw": "Draw a P-V graph with two curves starting from the same point: label the gentler curve 'isothermal (PV=const)' and the steeper, more sharply falling curve 'adiabatic (PV^gamma=const)'. Mark axes P (pressure) vertical and V (volume) horizontal."
+    },
+    "example": "1 mole of gas expands isothermally at 300 K from 2 L to 4 L: W = nRT ln(V2/V1) = 1 x 8.314 x 300 x ln(2) = 1729 J.",
+    "tip": "On the P-V diagram the adiabatic curve is always steeper than the isothermal curve at any common point — markers check this."
+  },
+  {
+    "t": "Thermodynamic Work and PV Diagrams",
+    "def": "Thermodynamic work done by a gas during expansion or compression equals the area under the pressure-volume (P-V) curve for that process.",
+    "points": [
+      "For a small change in volume dV at pressure P, small work done dW = P dV.",
+      "Total work for a finite change = integral of P dV from initial to final volume.",
+      "On a P-V graph, this integral equals the area under the curve between the two volumes.",
+      "If volume increases (expansion), work done by gas is positive; if volume decreases (compression), work done by gas is negative.",
+      "The work done depends on the path taken (process), not just the initial and final states — unlike internal energy.",
+      "In a cyclic process, net work done equals the area enclosed by the closed loop on the P-V diagram."
+    ],
+    "formula": "W = ∫ P dV  (= area under the P-V curve)",
+    "diagram": {
+      "draw": "Draw a P-V diagram with a curve going from point A (P1,V1) to point B (P2,V2). Shade the region below the curve down to the V-axis between V1 and V2, and label it 'work done = shaded area'."
+    },
+    "example": "Gas at constant pressure 2 x 10^5 Pa expands from 1 L to 3 L: W = P(V2-V1) = 2e5 x 2e-3 = 400 J.",
+    "tip": "For a cyclic process, remember the enclosed loop area (not the area under one curve) gives the net work — a frequently tested distinction."
+  },
+  {
+    "t": "Heat Engines and Refrigerators",
+    "def": "A heat engine is a device that converts part of the heat absorbed from a hot reservoir into useful work, rejecting the rest to a cold reservoir. A refrigerator does the reverse — it removes heat from a cold body using external work.",
+    "points": [
+      "A heat engine works in a cycle: absorbs heat Q1 from a hot source, does work W, and rejects heat Q2 to a cold sink.",
+      "By energy conservation, Q1 = W + Q2, so W = Q1 - Q2.",
+      "Efficiency of a heat engine η = W/Q1 = 1 - Q2/Q1.",
+      "A refrigerator takes heat Q2 from a cold body, work W is done on it by a compressor, and it rejects heat Q1 = W + Q2 to the hot surroundings.",
+      "Coefficient of performance (COP) of refrigerator = Q2/W = Q2/(Q1 - Q2).",
+      "No real engine can have 100% efficiency — some heat must always be rejected (second law of thermodynamics)."
+    ],
+    "formula": "η = W/Q1 = 1 − Q2/Q1     COP = Q2/W",
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Hot reservoir at T1\"] -->|Q1 absorbed| B[\"Heat engine\"]\n  B -->|Work W done| C[\"Output work\"]\n  B -->|Q2 rejected| D[\"Cold reservoir at T2\"]"
+    },
+    "example": "An engine absorbs 800 J and rejects 500 J: W = 800-500 = 300 J, efficiency = 300/800 = 0.375 or 37.5%.",
+    "tip": "Draw the energy-flow block diagram with arrows for Q1 in, W out, Q2 out — this diagram alone often fetches 1 mark."
+  },
+  {
+    "t": "Second Law and Carnot Cycle",
+    "def": "The second law of thermodynamics states that heat cannot be completely converted into work in a cyclic process without some heat being rejected to a cold reservoir. The Carnot cycle is an ideal, reversible cycle that gives the maximum possible efficiency between two given temperatures.",
+    "points": [
+      "Second law (Kelvin-Planck statement): no engine can work in a cycle and convert all absorbed heat into work.",
+      "The Carnot cycle consists of 4 steps: isothermal expansion, adiabatic expansion, isothermal compression, adiabatic compression.",
+      "It operates between two fixed temperatures T1 (hot source) and T2 (cold sink).",
+      "Because it is fully reversible with no friction or heat loss, it has the maximum possible efficiency for those two temperatures.",
+      "No real engine can exceed Carnot efficiency, since real engines have friction, so they are irreversible.",
+      "The Carnot engine is a theoretical ideal used as a benchmark to judge real engines."
+    ],
+    "formula": "ηCarnot = 1 − T2/T1 (maximum possible efficiency)",
+    "diagram": {
+      "draw": "Draw a closed loop on a P-V diagram with 4 curved segments labelled in order: 1-2 isothermal expansion (at T1), 2-3 adiabatic expansion, 3-4 isothermal compression (at T2), 4-1 adiabatic compression. Arrows show the cycle direction."
+    },
+    "example": "A Carnot engine between 600 K and 300 K: η = 1 - 300/600 = 0.5 or 50% — the maximum possible for these two temperatures.",
+    "tip": "Name the four steps of the Carnot cycle in the correct order with the correct process type (isothermal/adiabatic) — this sequence is often asked directly."
+  },
+  {
+    "t": "Efficiency and Coefficient of Performance",
+    "def": "Efficiency of a heat engine is the fraction of absorbed heat converted to useful work. Coefficient of performance (COP) of a refrigerator is the ratio of heat removed from the cold body to the work done on it.",
+    "points": [
+      "Efficiency η = W/Q1 = (Q1 - Q2)/Q1 = 1 - Q2/Q1, always less than 1 (less than 100%).",
+      "For a Carnot engine, η = 1 - T2/T1, where T1, T2 are absolute temperatures of hot and cold reservoirs.",
+      "COP = Q2/W = Q2/(Q1 - Q2), can be greater than 1 (refrigerators can remove more heat than the work put in).",
+      "For a Carnot refrigerator, COP = T2/(T1 - T2).",
+      "Higher temperature difference between reservoirs reduces engine efficiency's practical limit... actually increases efficiency but reduces COP of refrigerator.",
+      "These formulas let us compare real engines/refrigerators against the ideal Carnot limit."
+    ],
+    "formula": "η = 1 − T2/T1     COP = T2/(T1 − T2)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Hot T1, Cold T2\"] --> B[\"Heat engine: eta = 1 minus T2 over T1\"]\n  A --> C[\"Refrigerator: COP = T2 over T1 minus T2\"]"
+    },
+    "example": "A refrigerator maintains 263 K (−10°C) inside while room is at 303 K: COP = 263/(303-263) = 263/40 = 6.575.",
+    "tip": "Do not confuse the two formulas — efficiency uses (T1-T2)/T1, while COP uses T2/(T1-T2). Write the reservoir temperatures in Kelvin, not Celsius."
+  }
+]

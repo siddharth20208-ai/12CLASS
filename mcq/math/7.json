@@ -1,0 +1,112 @@
+[
+  {
+    "q": "If y = sin(x^2), then dy/dx equals:",
+    "o": [
+      "cos(x^2)",
+      "cos(2x)",
+      "2x.sin(x^2)",
+      "2x.cos(x^2)"
+    ],
+    "a": 3,
+    "why": "By chain rule, dy/dx = cos(x^2).(2x) = 2x.cos(x^2)."
+  },
+  {
+    "q": "For an implicit function x^2 + y^2 = 25, dy/dx equals:",
+    "o": [
+      "-x/y",
+      "x/y",
+      "y/x",
+      "-y/x"
+    ],
+    "a": 0,
+    "why": "Differentiating: 2x + 2y(dy/dx) = 0, giving dy/dx = -x/y."
+  },
+  {
+    "q": "Logarithmic differentiation is most useful when differentiating functions of the form:",
+    "o": [
+      "y = x + a",
+      "y = [f(x)]^g(x)",
+      "y = sin(x)",
+      "y = x^2"
+    ],
+    "a": 1,
+    "why": "Taking log simplifies variable-exponent functions like [f(x)]^g(x) before differentiating."
+  },
+  {
+    "q": "If x = a.cos(t) and y = a.sin(t), then dy/dx equals:",
+    "o": [
+      "tan(t)",
+      "cot(t)",
+      "-cot(t)",
+      "-tan(t)"
+    ],
+    "a": 2,
+    "why": "dy/dt = a.cos(t), dx/dt = -a.sin(t), so dy/dx = -cot(t)."
+  },
+  {
+    "q": "The derivative of sin^-1(x) with respect to x is:",
+    "o": [
+      "1/sqrt(1+x^2)",
+      "-1/sqrt(1-x^2)",
+      "1/(1+x^2)",
+      "1/sqrt(1-x^2)"
+    ],
+    "a": 3,
+    "why": "Standard derivative: d/dx[sin^-1(x)] = 1/sqrt(1-x^2)."
+  },
+  {
+    "q": "The derivative of tan^-1(x) with respect to x is:",
+    "o": [
+      "1/(1+x^2)",
+      "1/sqrt(1-x^2)",
+      "-1/(1+x^2)",
+      "1/sqrt(1+x^2)"
+    ],
+    "a": 0,
+    "why": "Standard derivative: d/dx[tan^-1(x)] = 1/(1+x^2)."
+  },
+  {
+    "q": "If y = x^3, then the second order derivative d^2y/dx^2 equals:",
+    "o": [
+      "3x^2",
+      "6x",
+      "6",
+      "x^2"
+    ],
+    "a": 1,
+    "why": "dy/dx = 3x^2, and differentiating again gives d^2y/dx^2 = 6x."
+  },
+  {
+    "q": "To find the derivative of one function f(x) with respect to another function g(x), we compute:",
+    "o": [
+      "df/dx + dg/dx",
+      "df/dx . dg/dx",
+      "(df/dx)/(dg/dx)",
+      "df/dx - dg/dx"
+    ],
+    "a": 2,
+    "why": "The derivative of f with respect to g is (df/dx)/(dg/dx) by the chain rule."
+  },
+  {
+    "q": "If y = log(x) (natural log), then dy/dx equals:",
+    "o": [
+      "x",
+      "e^x",
+      "log(x)/x",
+      "1/x"
+    ],
+    "a": 3,
+    "why": "Standard derivative of natural logarithm: d/dx[log(x)] = 1/x."
+  },
+  {
+    "q": "If y = e^(3x), then dy/dx equals:",
+    "o": [
+      "3e^(3x)",
+      "e^(3x)",
+      "3x.e^(3x-1)",
+      "e^3"
+    ],
+    "a": 0,
+    "why": "By chain rule, dy/dx = e^(3x) . 3 = 3e^(3x)."
+  }
+]

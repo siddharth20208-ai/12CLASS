@@ -1,0 +1,98 @@
+[
+  {
+    "t": "Area under a curve",
+    "def": "The area under a curve y = f(x) between x = a and x = b, above the x-axis, is found by evaluating the definite integral of f(x) between those limits.",
+    "points": [
+      "Sketch the curve roughly to see the region clearly and check it lies above the x-axis.",
+      "Identify the limits a and b from the given boundaries.",
+      "Set up the integral: Area = ∫[a to b] y dx.",
+      "Integrate and apply the limits using the fundamental theorem of calculus.",
+      "If the curve dips below the x-axis in part of the interval, take the absolute value of that part separately.",
+      "State the final answer with correct square units."
+    ],
+    "formula": "Area = ∫[a to b] y dx (curve above x-axis, between x=a and x=b)",
+    "diagram": { "draw": "Draw x and y axes. Draw a curve rising from left to right above the x-axis. Shade the region between the curve, the x-axis, and two vertical lines at x=a and x=b. Label the shaded region 'Area'." },
+    "example": "Area under y = x^2 from x=0 to x=2: ∫[0 to 2] x^2 dx = [x^3/3] = 8/3 sq units.",
+    "tip": "Always draw a rough sketch first — it helps identify the correct limits and avoid sign errors in the area."
+  },
+  {
+    "t": "Area bounded by a curve and axis",
+    "def": "This is the area enclosed between a given curve and either the x-axis or y-axis, found by integrating with respect to the correct variable depending on the axis.",
+    "points": [
+      "For area with x-axis, integrate y (as a function of x) with respect to x: Area = ∫y dx.",
+      "For area with y-axis, integrate x (as a function of y) with respect to y: Area = ∫x dy.",
+      "Find the points where the curve meets the axis — these give the limits of integration.",
+      "Check if the curve crosses the axis within the given interval; if so, split the integral at the crossing point.",
+      "Take the absolute value of any part of the area that comes out negative.",
+      "Add up all the positive area parts to get the total area."
+    ],
+    "formula": "With x-axis: Area = ∫[a to b] y dx     With y-axis: Area = ∫[c to d] x dy",
+    "diagram": { "draw": "Draw x and y axes. Draw a curve that touches the x-axis at two points, a and b. Shade the enclosed region between the curve and the x-axis from a to b." },
+    "example": "Area bounded by y = 4 - x^2 and x-axis: curve meets x-axis at x = -2, 2. Area = ∫[-2 to 2] (4-x^2)dx = [4x - x^3/3] from -2 to 2 = 32/3 sq units.",
+    "tip": "Find the x-axis (or y-axis) intercepts first — these become your integration limits automatically."
+  },
+  {
+    "t": "Area between two curves",
+    "def": "The area between two curves is found by integrating the difference of their y-values (upper curve minus lower curve) between their points of intersection.",
+    "points": [
+      "Find the points of intersection of the two curves by solving them simultaneously; these give the limits a and b.",
+      "Determine which curve is on top (greater y-value) in the given interval, often by checking a middle point.",
+      "Set up the integral: Area = ∫[a to b] (upper curve - lower curve) dx.",
+      "Integrate the difference function and apply limits a and b.",
+      "If the curves cross each other within the interval, split the integral at the crossing point and take absolute values.",
+      "Add the parts to get the total enclosed area."
+    ],
+    "formula": "Area = ∫[a to b] [f(x) - g(x)] dx, where f(x) ≥ g(x) on [a,b]",
+    "diagram": { "draw": "Draw two curves that cross at two points. Shade the lens-shaped region enclosed between them. Label the intersection points as x=a and x=b, and mark which curve is upper and which is lower." },
+    "example": "Area between y = x^2 and y = x from x=0 to x=1: Area = ∫[0 to 1] (x - x^2)dx = [x^2/2 - x^3/3] = 1/2 - 1/3 = 1/6 sq units.",
+    "tip": "Always check which curve is higher by testing one point between the limits — this avoids getting a negative area answer."
+  },
+  {
+    "t": "Area using horizontal/vertical strips",
+    "def": "Areas can be calculated using either thin vertical strips (integrating with respect to x) or thin horizontal strips (integrating with respect to y), chosen based on which is simpler for the given region.",
+    "points": [
+      "A vertical strip has width dx and height equal to (y of upper curve - y of lower curve); integrate with respect to x.",
+      "A horizontal strip has width dy and height equal to (x of right curve - x of left curve); integrate with respect to y.",
+      "Choose vertical strips when functions are easily written as y = f(x).",
+      "Choose horizontal strips when functions are easily written as x = f(y), or when vertical strips would need splitting.",
+      "Set the correct limits for whichever variable is chosen (x-limits for vertical, y-limits for horizontal).",
+      "Carefully express both boundary curves in the chosen variable before integrating."
+    ],
+    "formula": "Vertical strip: Area = ∫(y_upper - y_lower) dx     Horizontal strip: Area = ∫(x_right - x_left) dy",
+    "diagram": { "draw": "Draw a bounded region between two curves. On one side, draw a thin vertical rectangle inside the region, label its height and width 'dx'. On the other, draw a thin horizontal rectangle, label its width and height 'dy'." },
+    "example": "For region bounded by y^2 = x and y = x-2, using horizontal strips (x in terms of y) is easier: x_right = y+2, x_left = y^2, integrate (y+2-y^2) dy over suitable y-limits.",
+    "tip": "If a vertical strip calculation needs the region split into two or more parts, switch to horizontal strips to simplify the problem."
+  },
+  {
+    "t": "Areas with symmetry",
+    "def": "When a region has symmetry (about the x-axis, y-axis, or origin), the area can be found by calculating just one symmetric half and doubling it, saving calculation time.",
+    "points": [
+      "Check if the curve or region is symmetric about the x-axis, y-axis, or both.",
+      "Symmetry about x-axis: if (x,y) on curve implies (x,-y) also on curve, e.g., y^2 = 4ax.",
+      "Symmetry about y-axis: if (x,y) on curve implies (-x,y) also on curve, e.g., even power of x only.",
+      "Calculate the area of just one symmetric portion (e.g., above the x-axis, or right of the y-axis).",
+      "Multiply that area by 2 (or by 4 for symmetry in all four quadrants) to get the total area.",
+      "Always verify the symmetry algebraically before applying this shortcut."
+    ],
+    "formula": "If region symmetric about x-axis: Total Area = 2 x (Area above x-axis)",
+    "diagram": { "draw": "Draw a curve like a parabola y^2 = 4ax, symmetric about the x-axis, opening to the right. Shade the top half between the curve and x-axis up to x=a. Mark the bottom half as a mirror image and note 'equal area'." },
+    "example": "Area of circle x^2+y^2 = r^2 in first quadrant quarter is (pi r^2)/4; by symmetry, total circle area = 4 x (pi r^2 / 4) = pi r^2.",
+    "tip": "Always state the symmetry reason in your answer ('by symmetry about x-axis') — examiners award marks for this justification."
+  },
+  {
+    "t": "Region identification and limits",
+    "def": "Before setting up any area integral, the exact bounded region must be identified correctly by finding where the given curves intersect each other and the axes, which fixes the integration limits.",
+    "points": [
+      "List all the given curves/lines and find their equations clearly.",
+      "Solve pairs of equations simultaneously to find all intersection points.",
+      "Sketch a rough diagram showing all curves and mark the intersection points.",
+      "Identify the enclosed region visually — shade it to avoid confusion about which part to integrate.",
+      "Decide the correct lower and upper limits (in x or y) based on the shaded region's boundaries.",
+      "Re-check the sketch against the equations before writing the final integral setup."
+    ],
+    "formula": "Limits come from solving: curve1 = curve2 (or curve = axis) for intersection points",
+    "diagram": { "draw": "Draw a coordinate plane with 2-3 given curves/lines plotted. Mark every intersection point with a dot and its coordinates. Shade the final bounded region clearly." },
+    "example": "Region bounded by y = x and y = x^2: solve x = x^2, giving x = 0, 1. These are the limits for the area integral between the two curves.",
+    "tip": "A wrong or missing sketch is the biggest reason students lose marks here — always draw and shade before integrating."
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "t": "Huygens' Principle and Wavefronts",
+    "def": "A wavefront is the locus of all points vibrating in the same phase. Huygens' principle says every point on a wavefront acts as a source of secondary wavelets, and the new wavefront is the envelope of these wavelets at a later time.",
+    "points": [
+      "Wavefronts can be spherical (point source), cylindrical (line source) or plane (source at infinity).",
+      "Rays of light are always perpendicular (normal) to the wavefront.",
+      "Each point on an existing wavefront sends out secondary wavelets in the forward direction.",
+      "The common tangent (envelope) to all these wavelets gives the new wavefront.",
+      "This principle is used to explain reflection, refraction, interference and diffraction geometrically.",
+      "Far from a point source, a small part of a spherical wavefront looks like a plane wavefront."
+    ],
+    "formula": "New wavefront = envelope of secondary wavelets; velocity of wave v = distance/time taken for wavelet to spread",
+    "diagram": {
+      "draw": "Draw a point source S on the left. Draw a set of concentric circular arcs (wavefronts) spreading from S. Pick one arc and mark several points on it; from each point draw a small circle (secondary wavelet) of radius vt. Draw a new arc touching all these small circles as the common tangent and label it 'new wavefront'. Draw arrows (rays) from S outward, perpendicular to each wavefront."
+    },
+    "example": "Using Huygens' construction, Snell's law of refraction (n1 sin i = n2 sin r) can be derived by comparing the distances travelled by wavelets in two media in the same time.",
+    "tip": "Draw the secondary wavelets and the tangent envelope clearly with arrows; this diagram alone carries 2 marks."
+  },
+  {
+    "t": "Young's Double Slit Experiment and Fringe Width",
+    "def": "Young's double slit experiment shows interference of light: two coherent light waves from two narrow slits overlap on a screen and produce alternate bright and dark bands called fringes.",
+    "points": [
+      "A monochromatic source illuminates a single slit, which illuminates two narrow slits S1 and S2 close together.",
+      "S1 and S2 act as coherent sources (same frequency, constant phase difference) and send out light that overlaps on a screen.",
+      "Where the waves meet in phase, a bright fringe forms; where they meet out of phase, a dark fringe forms.",
+      "Fringe width (distance between two consecutive bright or dark fringes) is given by w = lambda D / d.",
+      "D is the distance between slits and screen, d is the separation between the two slits, lambda is the wavelength.",
+      "Fringe width increases if wavelength increases, or if D increases, or if d decreases."
+    ],
+    "formula": "Fringe width w = lambda D / d",
+    "diagram": {
+      "draw": "Draw a source S on the left sending light to a single slit, then to a double slit with slits S1 and S2 separated by distance d. Draw lines from S1 and S2 crossing and reaching a screen at distance D. On the screen mark alternating bright (bold) and dark lines and label the fringe width w between two bright fringes."
+    },
+    "example": "If lambda = 600 nm = 6 x 10^-7 m, D = 1 m, d = 1 mm = 10^-3 m, fringe width w = (6x10^-7 x 1)/10^-3 = 6 x 10^-4 m = 0.6 mm.",
+    "tip": "Always write the formula w = lambda D/d and show units conversion (nm to m, mm to m) in the numerical."
+  },
+  {
+    "t": "Conditions for Constructive and Destructive Interference",
+    "def": "Interference is the modification in intensity when two coherent light waves overlap; constructive interference gives bright fringes (maximum intensity) and destructive interference gives dark fringes (minimum intensity).",
+    "points": [
+      "Two sources must be coherent: same frequency and a constant phase difference.",
+      "Path difference is the extra distance travelled by one wave compared to the other, delta = d sin(theta) approx = (x d)/D at the screen.",
+      "Constructive interference (bright fringe) occurs when path difference = n lambda (n = 0, 1, 2, ...), i.e. waves meet in phase.",
+      "Destructive interference (dark fringe) occurs when path difference = (n + 1/2) lambda, i.e. waves meet exactly out of phase.",
+      "At points of constructive interference, resultant amplitude and intensity are maximum; at destructive points, they are minimum (ideally zero for equal amplitudes).",
+      "The pattern of alternating bright and dark fringes repeats because path difference changes smoothly across the screen."
+    ],
+    "formula": "Bright fringe: path difference = n lambda     Dark fringe: path difference = (n + 1/2) lambda",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Two coherent waves overlap\"] --> B{\"Path difference\"}\n  B -->|n lambda| C[\"Constructive: bright fringe\"]\n  B -->|n plus half lambda| D[\"Destructive: dark fringe\"]"
+    },
+    "example": "For lambda = 500 nm, the second bright fringe (n=2) occurs where path difference = 2 x 500 nm = 1000 nm = 1 micrometre.",
+    "tip": "Clearly separate the two conditions with the integer n and state that n is 0, 1, 2, ... for both central and higher order fringes."
+  },
+  {
+    "t": "Diffraction at a Single Slit",
+    "def": "Diffraction is the bending and spreading of light waves around obstacles or through narrow slits; a single slit produces a central bright band flanked by alternating dark and weaker bright bands.",
+    "points": [
+      "Diffraction occurs when the slit width is comparable to the wavelength of light.",
+      "Each point inside the slit acts as a secondary source (Huygens' wavelets) and these interfere with each other.",
+      "The central maximum is the brightest and widest band, found straight ahead of the slit.",
+      "The first minimum (dark band) occurs at angle theta given by a sin(theta) = lambda, where a is the slit width.",
+      "Secondary (weaker) maxima occur between successive minima, decreasing rapidly in intensity.",
+      "A narrower slit gives a wider central maximum (more spreading)."
+    ],
+    "formula": "First minimum: a sin(theta) = lambda     nth minimum: a sin(theta) = n lambda",
+    "diagram": {
+      "draw": "Draw a narrow vertical slit of width a on the left with plane wavefronts approaching it. Beyond the slit draw diverging rays spreading out. On a screen on the right, draw an intensity graph with a tall central peak and smaller peaks on either side, separated by minima; label the central maximum and first minimum."
+    },
+    "example": "If a = 0.2 mm and lambda = 500 nm, first minimum angle: sin(theta) = lambda/a = 5x10^-7/2x10^-4 = 2.5x10^-3, so theta approx 2.5x10^-3 rad (very small angle).",
+    "tip": "Do not confuse interference (double slit, equally spaced bright fringes) with diffraction (single slit, wide central band with weaker side bands) — examiners test this difference directly."
+  },
+  {
+    "t": "Polarization and Brewster's Law",
+    "def": "Polarization is the process of restricting the vibrations of light waves (transverse waves) to a single plane. Brewster's law gives the angle of incidence at which reflected light becomes completely plane polarized.",
+    "points": [
+      "Ordinary light has vibrations in all directions perpendicular to its direction of travel (unpolarized).",
+      "A polaroid or polarizing filter allows vibrations in only one plane to pass through, producing plane polarized light.",
+      "When unpolarized light hits a transparent surface at a particular angle (Brewster's angle), the reflected ray is completely plane polarized.",
+      "At Brewster's angle, the reflected ray and refracted ray are perpendicular to each other.",
+      "Brewster's law: tan(theta_B) = n, where n is the refractive index of the second medium with respect to the first.",
+      "Polarization confirms that light is a transverse wave, since only transverse waves can be polarized."
+    ],
+    "formula": "Brewster's law: tan(theta_B) = n (refractive index)",
+    "diagram": {
+      "draw": "Draw an interface between air and glass as a horizontal line. Draw an incident unpolarized ray hitting the interface at angle theta_B from the normal. Draw the reflected ray (completely polarized, show vibration dots in the plane of the page) going up at the same angle, and the refracted ray going into the glass. Mark the right angle between the reflected and refracted rays and label theta_B."
+    },
+    "example": "If refractive index of glass n = 1.5, Brewster's angle theta_B = tan^-1(1.5) = 56.3 degrees approximately.",
+    "tip": "State both results together: tan(theta_B) = n AND reflected ray perpendicular to refracted ray — both are commonly asked."
+  },
+  {
+    "t": "Resolving Power",
+    "def": "Resolving power of an optical instrument is its ability to distinguish between two closely spaced objects or points as separate, rather than seeing them as one blurred image, due to diffraction effects.",
+    "points": [
+      "Due to diffraction, the image of a point source is not a point but a small diffraction pattern (central bright disc with faint rings).",
+      "Two point objects are said to be just resolved when the central maximum of one diffraction pattern falls on the first minimum of the other (Rayleigh's criterion).",
+      "Resolving power of a microscope depends on the wavelength of light used and the numerical aperture of the objective lens.",
+      "Resolving power of a telescope depends on the wavelength of light and the diameter of the objective (aperture) — larger aperture gives better resolving power.",
+      "Resolving power is defined as the reciprocal of the minimum angular separation (or minimum distance) that can be resolved.",
+      "Using shorter wavelength light or a larger aperture improves (increases) resolving power."
+    ],
+    "formula": "Telescope: minimum resolvable angle theta = 1.22 lambda / D; Resolving power = 1/theta (D = aperture diameter)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Point source\"] --> B[\"Diffraction pattern formed\"]\n  B --> C{\"Two sources close together\"}\n  C -->|Patterns overlap too much| D[\"Not resolved\"]\n  C -->|First minimum of one meets central max of other| E[\"Just resolved: Rayleigh criterion\"]"
+    },
+    "example": "A telescope with aperture D = 0.1 m observing light of lambda = 550 nm has minimum resolvable angle theta = 1.22 x 550x10^-9/0.1 approx 6.7x10^-6 rad.",
+    "tip": "Mention Rayleigh's criterion by name and state that larger aperture or shorter wavelength improves resolving power — this is frequently asked as a 2-mark theory question."
+  }
+]

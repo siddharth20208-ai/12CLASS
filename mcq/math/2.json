@@ -1,0 +1,112 @@
+[
+  {
+    "q": "By the sine rule, in triangle ABC, a/sin A equals:",
+    "o": [
+      "sin B / b",
+      "b.sin B = c.sin C",
+      "b/sin B = c/sin C",
+      "a.sin A"
+    ],
+    "a": 2,
+    "why": "Sine rule: a/sin A = b/sin B = c/sin C."
+  },
+  {
+    "q": "The cosine rule for angle A in triangle ABC is:",
+    "o": [
+      "a^2 = b^2 + c^2 + 2bc.cos A",
+      "a^2 = b^2 - c^2",
+      "cos A = (a^2 - b^2 - c^2)/(2bc)",
+      "cos A = (b^2 + c^2 - a^2)/(2bc)"
+    ],
+    "a": 3,
+    "why": "Rearranging a^2 = b^2+c^2-2bc.cos A gives cos A = (b^2+c^2-a^2)/(2bc)."
+  },
+  {
+    "q": "The principal value branch of sin^-1(x) is:",
+    "o": [
+      "[-pi/2, pi/2]",
+      "[0, pi]",
+      "(0, pi)",
+      "[-pi, pi]"
+    ],
+    "a": 0,
+    "why": "sin^-1(x) has principal values restricted to [-pi/2, pi/2]."
+  },
+  {
+    "q": "The value of tan^-1(1) + tan^-1(1) equals (using tan^-1 addition where valid):",
+    "o": [
+      "pi/4",
+      "pi/2",
+      "pi",
+      "3pi/4"
+    ],
+    "a": 1,
+    "why": "tan^-1(1) = pi/4, and since product of the two values is 1 (boundary case), sum simplifies to pi/2."
+  },
+  {
+    "q": "The projection formula states a equals:",
+    "o": [
+      "b.cos A + c.cos A",
+      "b.sin C + c.sin B",
+      "b.cos C + c.cos B",
+      "a.cos A"
+    ],
+    "a": 2,
+    "why": "Projection rule: a = b.cos C + c.cos B."
+  },
+  {
+    "q": "The principal value branch of cos^-1(x) is:",
+    "o": [
+      "[-pi/2, pi/2]",
+      "[-pi, pi]",
+      "(-pi, 0)",
+      "[0, pi]"
+    ],
+    "a": 3,
+    "why": "cos^-1(x) has principal values in [0, pi]."
+  },
+  {
+    "q": "A trigonometric equation of the form sin(theta) = 0 has general solution:",
+    "o": [
+      "theta = npi, n in Z",
+      "theta = (2n+1)pi/2",
+      "theta = npi/2",
+      "theta = 2npi"
+    ],
+    "a": 0,
+    "why": "sin(theta) = 0 occurs at all integer multiples of pi."
+  },
+  {
+    "q": "The area of a triangle with sides a, b and included angle C is given by:",
+    "o": [
+      "(1/2)ab.cos C",
+      "(1/2)ab.sin C",
+      "ab.sin C",
+      "(1/2)(a+b).sin C"
+    ],
+    "a": 1,
+    "why": "Area formula using two sides and the included angle: (1/2)ab.sin C."
+  },
+  {
+    "q": "tan^-1(x) + cot^-1(x) equals:",
+    "o": [
+      "pi",
+      "0",
+      "pi/2",
+      "2pi"
+    ],
+    "a": 2,
+    "why": "tan^-1(x) and cot^-1(x) are complementary, summing to pi/2 for all real x."
+  },
+  {
+    "q": "In solving a triangle given two sides and the included angle (SAS case), the first step uses:",
+    "o": [
+      "Sine rule",
+      "Projection formula only",
+      "Area formula only",
+      "Cosine rule to find the third side"
+    ],
+    "a": 3,
+    "why": "With two sides and included angle known, cosine rule gives the third side directly."
+  }
+]

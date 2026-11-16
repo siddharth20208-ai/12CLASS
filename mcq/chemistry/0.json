@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Which property is true for amorphous solids but NOT for crystalline solids?",
+    "o": [
+      "Isotropic behaviour",
+      "Anisotropic behaviour",
+      "Sharp melting point",
+      "Long-range order"
+    ],
+    "a": 0,
+    "why": "Amorphous solids have only short-range order and are isotropic, unlike crystalline solids."
+  },
+  {
+    "q": "In a body-centred cubic (BCC) unit cell, the number of atoms per unit cell (Z) is:",
+    "o": [
+      "1",
+      "2",
+      "4",
+      "6"
+    ],
+    "a": 1,
+    "why": "Z(BCC) = 8 x 1/8 (corners) + 1 (body centre) = 2."
+  },
+  {
+    "q": "The coordination number in a face-centred cubic (FCC) lattice is:",
+    "o": [
+      "8",
+      "6",
+      "12",
+      "4"
+    ],
+    "a": 2,
+    "why": "FCC has the highest coordination number of 12 among SCC, BCC, FCC."
+  },
+  {
+    "q": "Packing efficiency of a simple cubic unit cell is approximately:",
+    "o": [
+      "68%",
+      "74%",
+      "90%",
+      "52.4%"
+    ],
+    "a": 3,
+    "why": "In SCC, a = 2r, giving packing efficiency = 52.4%."
+  },
+  {
+    "q": "Which structure has the highest packing efficiency of 74%?",
+    "o": [
+      "Face-centred cubic",
+      "Body-centred cubic",
+      "Simple cubic",
+      "None of these"
+    ],
+    "a": 0,
+    "why": "FCC (close packing) has packing efficiency 74%, the highest among SCC, BCC, FCC."
+  },
+  {
+    "q": "For a metal crystallizing in FCC with edge length 'a' and radius 'r', the correct relation is:",
+    "o": [
+      "a = 2r",
+      "a = 2*sqrt(2)*r",
+      "a = 4r/sqrt(3)",
+      "a = r"
+    ],
+    "a": 1,
+    "why": "In FCC, atoms touch along the face diagonal, giving a = 2*sqrt(2)*r."
+  },
+  {
+    "q": "Silver crystallizes in FCC (Z=4) with edge length a = 4.09x10^-8 cm and density 10.5 g/cm^3. The molar mass is approximately:",
+    "o": [
+      "65 g/mol",
+      "196 g/mol",
+      "108 g/mol",
+      "32 g/mol"
+    ],
+    "a": 2,
+    "why": "M = d.a^3.N_A/Z = (10.5 x 6.84x10^-23 x 6.022x10^23)/4 ≈ 108 g/mol, matching silver."
+  },
+  {
+    "q": "A Frenkel defect is best described as:",
+    "o": [
+      "Equal number of cation and anion vacancies",
+      "A missing atom with no compensation",
+      "Extra atoms occupying interstitial sites only",
+      "A smaller ion displaced to an interstitial site leaving a vacancy"
+    ],
+    "a": 3,
+    "why": "Frenkel defect occurs when a smaller ion (like Ag+) leaves its site and occupies an interstitial site, creating a vacancy-interstitial pair."
+  },
+  {
+    "q": "Which defect is shown by NaCl, decreasing the density of the crystal?",
+    "o": [
+      "Schottky defect",
+      "Interstitial defect",
+      "Frenkel defect",
+      "Metal excess defect"
+    ],
+    "a": 0,
+    "why": "NaCl shows Schottky defect: equal numbers of cation and anion vacancies, which lowers density."
+  },
+  {
+    "q": "In band theory, a semiconductor like silicon differs from an insulator because it has:",
+    "o": [
+      "Overlapping valence and conduction bands",
+      "A small energy gap allowing few electrons to jump on heating",
+      "A very large energy gap",
+      "No conduction band at all"
+    ],
+    "a": 1,
+    "why": "Semiconductors have a small energy gap, so some electrons can be excited to the conduction band on heating, unlike insulators with a large gap."
+  }
+]

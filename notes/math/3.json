@@ -1,0 +1,98 @@
+[
+  {
+    "t": "Combined equation of a pair of lines",
+    "def": "A single second-degree homogeneous equation ax^2 + 2hxy + by^2 = 0 represents two straight lines that both pass through the origin.",
+    "points": [
+      "Every term in the equation has degree exactly 2 (x^2, xy, y^2).",
+      "This single equation can be factored into two linear equations, each a line.",
+      "Both lines always pass through the origin because there is no constant term.",
+      "The equation is written as ax^2 + 2hxy + by^2 = 0 using constants a, h, b.",
+      "To get the lines, treat it as a quadratic in (x/y) or (y/x) and factor.",
+      "a, h, b are used directly in the angle and perpendicularity formulas."
+    ],
+    "formula": "ax^2 + 2hxy + by^2 = 0 represents a pair of lines through origin",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Second degree homogeneous equation\"] --> B[\"Factor into two linear factors\"]\n  B --> C[\"Line 1 through origin\"]\n  B --> D[\"Line 2 through origin\"]" },
+    "example": "x^2 - 5xy + 4y^2 = 0 factors as (x-y)(x-4y) = 0, giving lines x=y and x=4y, both through origin.",
+    "tip": "Identify a, h, b (2h is the xy coefficient, so h is half of it) correctly before using any formula — sign errors in h are common."
+  },
+  {
+    "t": "Angle between the pair of lines",
+    "def": "The acute angle theta between the two lines given by ax^2 + 2hxy + by^2 = 0 is found using a formula involving a, h, b.",
+    "points": [
+      "Identify a, b directly as coefficients of x^2 and y^2.",
+      "Identify h as half the coefficient of xy.",
+      "Use the formula tan theta = |2 sqrt(h^2-ab) / (a+b)|.",
+      "If a+b = 0, the lines are perpendicular (theta = 90 degrees) and the formula is undefined.",
+      "Always take the acute angle (positive value) as the final answer.",
+      "This single formula works for any pair of lines through the origin."
+    ],
+    "formula": "tan(theta) = |2 sqrt(h^2-ab)/(a+b)|",
+    "diagram": { "draw": "Draw two straight lines crossing at the origin. Mark the acute angle between them as theta with a small arc." },
+    "example": "2x^2+7xy+3y^2=0: a=2,h=3.5,b=3. tan theta = |2 sqrt(12.25-6)/5| = |2(2.5)/5| = 1, theta = 45 degrees.",
+    "tip": "Double check h = (coefficient of xy)/2, not the full coefficient — this is the most common slip."
+  },
+  {
+    "t": "Condition for parallel/perpendicular lines",
+    "def": "For the pair of lines ax^2+2hxy+by^2=0, the lines are perpendicular when a+b=0, and coincident (same line) when h^2=ab.",
+    "points": [
+      "Perpendicular condition: a + b = 0 (coefficient of x^2 plus coefficient of y^2 equals zero).",
+      "Coincident condition: h^2 = ab, meaning both factors give the same line.",
+      "If h^2 > ab, the lines are real and distinct.",
+      "If h^2 < ab, the lines are imaginary (no real lines satisfy the equation).",
+      "These conditions are tested directly without finding the actual lines.",
+      "Useful for quick multiple-choice-style verification before full factoring."
+    ],
+    "formula": "Perpendicular: a+b=0     Coincident: h^2=ab",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Pair of lines equation\"] --> B{\"Check a+b\"}\n  B -->|\"=0\"| C[\"Lines perpendicular\"]\n  A --> D{\"Check h^2 vs ab\"}\n  D -->|\"equal\"| E[\"Lines coincident\"]" },
+    "example": "3x^2+kxy-3y^2=0 is always perpendicular since a+b = 3+(-3) = 0, for any value of k.",
+    "tip": "State both conditions by name when asked a theory question; many students only remember one."
+  },
+  {
+    "t": "Homogeneous equation of degree two",
+    "def": "A homogeneous equation of degree two has every term of total degree 2 (only x^2, xy, y^2 terms, no linear or constant terms), which forces both represented lines through the origin.",
+    "points": [
+      "Each term's total power of x and y together equals 2.",
+      "No x, y (degree 1) or constant (degree 0) terms are allowed.",
+      "Because there is no constant term, (0,0) always satisfies the equation.",
+      "This is exactly why both lines pass through the origin.",
+      "General second-degree equations add linear/constant terms, shifting lines away from origin.",
+      "Recognize homogeneity by checking that all terms are exactly degree 2."
+    ],
+    "formula": "ax^2+2hxy+by^2=0 (no x, y, constant terms)",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Only degree 2 terms present\"] --> B[\"Origin satisfies equation\"]\n  B --> C[\"Both lines pass through origin\"]" },
+    "example": "3x^2 - 4xy + y^2 = 0 is homogeneous of degree two since each term (x^2, xy, y^2) has degree 2.",
+    "tip": "Quickly scan for any lone x, y, or constant term — their presence means it is NOT this type of equation."
+  },
+  {
+    "t": "General second-degree equation condition",
+    "def": "For ax^2+2hxy+by^2+2gx+2fy+c=0 to represent a pair of straight lines (not necessarily through the origin), a special determinant condition must be satisfied.",
+    "points": [
+      "The general equation includes extra linear terms (2gx, 2fy) and a constant c.",
+      "This represents a pair of lines only if abc + 2fgh - af^2 - bg^2 - ch^2 = 0.",
+      "This condition comes from treating the 3x3 matrix of coefficients and setting its determinant to zero.",
+      "If the condition fails, the equation represents a conic (like a circle, ellipse) instead.",
+      "After confirming the condition, the lines can be found by factoring as usual.",
+      "This condition question is common as a short theory/verification question."
+    ],
+    "formula": "abc + 2fgh - af^2 - bg^2 - ch^2 = 0",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"General second degree equation\"] --> B[\"Compute abc + 2fgh - af2 - bg2 - ch2\"]\n  B --> C{\"Equals zero\"}\n  C -->|\"yes\"| D[\"Represents pair of lines\"]" },
+    "example": "For x^2-y^2+x+y=0 (a=1,b=-1,c=0,g=1/2,f=1/2,h=0): abc+2fgh-af^2-bg^2-ch^2 = 0+0-1(1/4)-(-1)(1/4)-0 = -1/4+1/4=0, confirming pair of lines.",
+    "tip": "Clearly identify a,b,c,f,g,h from the equation (remember the 2x, 2y, 2h coefficients) before substituting into the determinant."
+  },
+  {
+    "t": "Separate equations from combined form",
+    "def": "The two individual line equations are found by factoring the homogeneous second-degree expression into two linear factors.",
+    "points": [
+      "Write the equation as ax^2+2hxy+by^2=0.",
+      "Treat it as a quadratic in x (or x/y) and factor using standard splitting of the middle term.",
+      "Each factor set to zero gives one line's equation.",
+      "Check both factors multiply back to give the original expression.",
+      "Sometimes easier to divide through by y^2 and solve the quadratic in (x/y).",
+      "Write final answer as two separate linear equations, e.g. line1=0 and line2=0."
+    ],
+    "formula": "Factor ax^2+2hxy+by^2 into (l1x+m1y)(l2x+m2y)=0",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Homogeneous quadratic\"] --> B[\"Split middle term\"]\n  B --> C[\"Factor into two linear terms\"]\n  C --> D[\"Line 1 equation\"]\n  C --> E[\"Line 2 equation\"]" },
+    "example": "x^2-5xy+4y^2=0: factors as (x-y)(x-4y)=0, giving separate lines x-y=0 and x-4y=0.",
+    "tip": "Always verify by multiplying the two factors back out to check you get the original equation — avoids sign mistakes."
+  }
+]

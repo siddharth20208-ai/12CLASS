@@ -1,0 +1,93 @@
+[
+  {
+    "t": "Plant breeding methods",
+    "def": "Plant breeding is the science of improving crop plants by selecting and combining desirable traits to develop new, superior varieties with higher yield, disease resistance or better quality.",
+    "points": [
+      "Selection: choosing naturally occurring superior plants and propagating them further.",
+      "Hybridization: crossing two genetically different plants to combine desirable traits of both parents in the offspring.",
+      "Mutation breeding: using radiation or chemicals to induce useful mutations for new traits.",
+      "Breeders aim for traits like higher yield, disease resistance, drought tolerance and better nutritional quality.",
+      "New varieties are tested over several generations before being released for farming.",
+      "Plant breeding has given high-yielding varieties (HYV) of wheat and rice, central to the Green Revolution."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Select parent plants with good traits\"] --> B[\"Hybridization or mutation\"]\n  B --> C[\"Select best offspring\"]\n  C --> D[\"Test over generations\"]\n  D --> E[\"Release new variety\"]" },
+    "example": "Dwarf wheat varieties developed through plant breeding resist lodging (falling over) and gave much higher yields during the Green Revolution.",
+    "tip": "Name all three methods (selection, hybridization, mutation breeding) with one line each — questions often ask to 'enlist' methods."
+  },
+  {
+    "t": "Green revolution",
+    "def": "The Green Revolution was a period of major increase in agricultural production in India (1960s-70s) achieved through high-yielding variety (HYV) seeds, fertilizers, irrigation and modern farming techniques.",
+    "points": [
+      "It was led by scientists like Dr. M.S. Swaminathan, using HYV seeds of wheat and rice developed from dwarf varieties.",
+      "Key inputs were: HYV seeds, chemical fertilizers, pesticides, assured irrigation, and better farm machinery.",
+      "It made India self-sufficient in food grain production, turning it from a food-importing to food-exporting nation.",
+      "Dwarf varieties resisted lodging (falling due to heavy grain) and gave higher yields per acre.",
+      "Negative effects included soil degradation, loss of soil fertility over time, and reduced crop diversity.",
+      "Overuse of chemical fertilizers and pesticides also caused water pollution and health issues."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"HYV seeds introduced\"] --> B[\"Fertilizers and irrigation added\"]\n  B --> C[\"Crop yield increases sharply\"]\n  C --> D[\"India becomes food self-sufficient\"]" },
+    "example": "India's wheat production increased several times after introducing dwarf HYV wheat varieties in Punjab and Haryana during the 1960s.",
+    "tip": "Mention one benefit and one drawback of the Green Revolution — balanced answers score full marks in evaluative questions."
+  },
+  {
+    "t": "Animal husbandry and dairy management",
+    "def": "Animal husbandry is the scientific management and breeding of livestock (cattle, poultry, fish) for improved production of milk, meat and other products; dairy management specifically focuses on improving milk yield and quality from cattle.",
+    "points": [
+      "Dairy management includes selecting high-yielding breeds, proper feeding, housing, and disease control.",
+      "Cross-breeding of local cattle with exotic breeds (like Jersey, Holstein-Friesian) improves milk yield while retaining disease resistance of local breeds.",
+      "Artificial insemination (AI) is used to breed cows with semen from superior bulls without natural mating.",
+      "Proper nutrition (balanced fodder with proteins, minerals) is essential for high milk production.",
+      "Regular health checks and vaccination prevent diseases that reduce productivity.",
+      "Clean housing and milking hygiene prevent contamination and increase milk quality."
+    ],
+    "diagram": { "mermaid": "flowchart TD\n  A[\"Select high yielding breed\"] --> B[\"Cross breeding or AI\"]\n  B --> C[\"Balanced feed and housing\"]\n  C --> D[\"Health care and vaccination\"]\n  D --> E[\"Higher quality milk yield\"]" },
+    "example": "Crossing local Indian cattle with Holstein-Friesian bulls through artificial insemination has significantly increased milk yield in India's dairy farms.",
+    "tip": "Mention artificial insemination specifically — it is a commonly tested keyword in animal husbandry questions."
+  },
+  {
+    "t": "Poultry farming",
+    "def": "Poultry farming is the practice of raising domesticated birds like chickens, ducks and turkeys for egg and meat production through scientific management of breeding, feeding and disease control.",
+    "points": [
+      "Poultry birds are classified as layers (for egg production) and broilers (for meat production).",
+      "Cross-breeding of local and foreign breeds increases both egg-laying capacity and meat quality.",
+      "Proper housing with ventilation and controlled temperature improves bird health and productivity.",
+      "Balanced feed with proteins and vitamins improves growth rate and egg quality.",
+      "Vaccination programs protect poultry from diseases like Ranikhet disease and fowl pox.",
+      "Hygienic management of the poultry farm reduces disease spread and improves overall yield."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Select layer or broiler breed\"] --> B[\"Balanced feed and housing\"]\n  B --> C[\"Vaccination against disease\"]\n  C --> D[\"Increased egg or meat yield\"]" },
+    "example": "Broiler chickens are bred and managed to reach market weight in just 6-7 weeks due to optimized feed and breeding practices.",
+    "tip": "Clearly differentiate 'layers' (eggs) from 'broilers' (meat) — this basic distinction is commonly asked."
+  },
+  {
+    "t": "Single cell protein (SCP)",
+    "def": "Single Cell Protein (SCP) refers to protein-rich biomass obtained from microorganisms (bacteria, yeast, algae, fungi) cultured on cheap substrates, used as an alternative protein source for humans and animals.",
+    "points": [
+      "SCP is produced by growing microorganisms like Spirulina (algae) or yeast on substrates such as molasses, whey or agricultural waste.",
+      "It is rich in protein, vitamins and minerals, making it a good food/feed supplement.",
+      "SCP production requires less land and water compared to conventional livestock farming.",
+      "Microorganisms multiply very fast, so SCP can be produced in large quantities quickly.",
+      "It helps solve food and protein shortage problems, especially in protein-deficient regions.",
+      "SCP is used as cattle feed supplement and sometimes as a human food additive."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Cheap substrate: molasses or whey\"] --> B[\"Microorganism grown: yeast, algae, bacteria\"]\n  B --> C[\"Biomass harvested and processed\"]\n  C --> D[\"Protein-rich SCP food/feed\"]" },
+    "example": "Spirulina, a blue-green alga, is commercially cultured and sold as a protein and vitamin supplement for both humans and animal feed.",
+    "tip": "Give one example organism (Spirulina or yeast) with its use — examiners expect a concrete example, not just the definition."
+  },
+  {
+    "t": "Tissue culture (micropropagation)",
+    "def": "Tissue culture (micropropagation) is a technique of growing a large number of genetically identical plants from a small piece of plant tissue (explant) under sterile, controlled laboratory conditions.",
+    "points": [
+      "A small piece of plant tissue (explant) is placed on a nutrient medium containing hormones, sugars and minerals.",
+      "This medium induces the explant cells to divide and form an unorganized mass of cells called callus.",
+      "The callus is then treated with specific hormones to differentiate into shoots and roots, forming a complete plantlet.",
+      "The whole process is carried out under sterile (aseptic) conditions to avoid contamination.",
+      "Plantlets produced are genetically identical to the parent plant (clones).",
+      "This method allows rapid, large-scale multiplication of disease-free, high-quality plants (e.g., orchids, bananas)."
+    ],
+    "formula": "Explant -> Callus -> Shoot and root differentiation -> Plantlet",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Explant from parent plant\"] --> B[\"Placed on nutrient medium\"]\n  B --> C[\"Callus forms\"]\n  C --> D[\"Shoots and roots differentiate\"]\n  D --> E[\"New plantlet, genetically identical\"]" },
+    "example": "Banana plants are commercially micropropagated through tissue culture to produce thousands of disease-free, uniform plantlets from a single parent plant.",
+    "tip": "Use the keyword 'callus' and mention 'aseptic/sterile conditions' — these two terms are essential for full marks."
+  }
+]

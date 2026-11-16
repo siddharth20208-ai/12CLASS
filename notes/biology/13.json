@@ -1,0 +1,104 @@
+[
+  {
+    "t": "Food chain and food web",
+    "def": "A food chain is a straight-line sequence of organisms in which each one is eaten by the next, transferring food energy. A food web is the natural interconnection of many overlapping food chains in an ecosystem.",
+    "points": [
+      "Every food chain starts with producers (green plants) that trap solar energy by photosynthesis.",
+      "Primary consumers (herbivores) eat producers; secondary consumers (carnivores) eat herbivores; tertiary consumers eat secondary consumers.",
+      "Decomposers (bacteria, fungi) break down dead matter and return nutrients to soil.",
+      "Grazing food chain starts from living green plants; detritus food chain starts from dead organic matter.",
+      "A food web shows many chains linked together, giving stability — if one species is lost, others can still get food from alternate links.",
+      "Each level in the chain is called a trophic level."
+    ],
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Sun\"] --> B[\"Producers Green plants\"]\n  B --> C[\"Herbivores\"]\n  C --> D[\"Carnivores\"]\n  D --> E[\"Top carnivores\"]\n  B --> F[\"Decomposers\"]"
+    },
+    "example": "Grass to Grasshopper to Frog to Snake to Hawk is one food chain. Many such chains linked together form a food web in a grassland ecosystem.",
+    "tip": "Draw a simple food chain with arrows showing direction of energy flow, and mention that a food web is many chains interconnected."
+  },
+  {
+    "t": "Energy flow (10% law)",
+    "def": "Energy flow is the one-way, non-cyclic movement of energy through the trophic levels of an ecosystem, and the ten percent law states that only about ten percent of the energy is transferred from one trophic level to the next.",
+    "points": [
+      "Energy enters the ecosystem through sunlight and is fixed by producers during photosynthesis.",
+      "At each trophic level, about 90% of energy is lost as heat during respiration, movement and other life activities.",
+      "Only about 10% of the energy passes on to the next higher trophic level — this is Lindeman's ten percent law.",
+      "Because of this loss, the amount of usable energy decreases sharply at higher trophic levels.",
+      "This is why food chains rarely have more than 4 to 5 trophic levels.",
+      "Unlike nutrients, energy flow is unidirectional (one-way), not cyclic."
+    ],
+    "formula": "Energy transferred to next level = 10% of energy received",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Producers 100 percent\"] --> B[\"Herbivores 10 percent\"]\n  B --> C[\"Carnivores 1 percent\"]\n  C --> D[\"Top carnivores 0.1 percent\"]"
+    },
+    "example": "If producers fix 10000 kcal of energy, herbivores get about 1000 kcal (10%), carnivores get about 100 kcal, and top carnivores get about 10 kcal.",
+    "tip": "State Lindeman's ten percent law clearly with the pyramid of energy diagram — it is a frequently asked 2-mark question."
+  },
+  {
+    "t": "Ecological pyramids",
+    "def": "An ecological pyramid is a graphic representation showing the number, biomass or energy of organisms present at each trophic level of an ecosystem.",
+    "points": [
+      "Pyramid of numbers shows the number of individuals at each trophic level; it is usually upright in a grassland ecosystem but can be inverted in a tree ecosystem.",
+      "Pyramid of biomass shows the total mass of living organisms at each level; usually upright on land, but may be inverted in a pond/aquatic ecosystem.",
+      "Pyramid of energy is always upright, because energy always decreases at higher trophic levels (never reversed).",
+      "Producers always form the base (bottom) of every pyramid.",
+      "The shape depends on the type of ecosystem and the parameter chosen (number, biomass or energy)."
+    ],
+    "diagram": {
+      "draw": "Draw a triangle divided into four horizontal bands. Label from bottom to top: Producers, Herbivores, Carnivores, Top carnivores. Draw this once as 'upright pyramid' and a second inverted triangle with the same labels reversed in width, labelled 'inverted pyramid (example: pond biomass)'."
+    },
+    "example": "In a pond ecosystem, the pyramid of biomass can be inverted because the biomass of producers (phytoplankton) is less than that of consumers (fish) at a given time.",
+    "tip": "Mention all three types (number, biomass, energy) and specifically note that the pyramid of energy is always upright — this exception is commonly tested."
+  },
+  {
+    "t": "Ecological succession",
+    "def": "Ecological succession is the natural, gradual and sequential process by which one community of organisms is replaced by another over time, until a stable climax community is formed.",
+    "points": [
+      "Primary succession occurs on a bare, newly exposed area with no prior life, such as a rock or sand dune.",
+      "Secondary succession occurs on an area where vegetation existed before but was destroyed, such as after fire or flood; it is faster than primary succession.",
+      "The first species to colonise bare land are called pioneer species (e.g., lichens on rocks).",
+      "Successive communities (seres) replace one another, each changing the environment to suit the next community.",
+      "The process ends in a stable, self-perpetuating community called the climax community, which is in equilibrium with the climate.",
+      "Hydrarch succession starts in water; xerarch succession starts in dry areas."
+    ],
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Bare rock\"] --> B[\"Lichens pioneer species\"]\n  B --> C[\"Mosses and herbs\"]\n  C --> D[\"Shrubs\"]\n  D --> E[\"Trees\"]\n  E --> F[\"Climax community\"]"
+    },
+    "example": "On a bare rock, lichens grow first, then mosses, then herbs and grasses, then shrubs, and finally a forest of trees forms the climax community.",
+    "tip": "Distinguish clearly between primary succession (no soil/life before) and secondary succession (soil present, faster) — this comparison is often asked."
+  },
+  {
+    "t": "Carbon cycle",
+    "def": "The carbon cycle is the biogeochemical cycle by which carbon is exchanged between the atmosphere, living organisms, oceans and the earth's crust.",
+    "points": [
+      "Atmospheric carbon dioxide is fixed by green plants through photosynthesis into organic compounds.",
+      "Carbon moves through the food chain as herbivores eat plants and carnivores eat herbivores.",
+      "Respiration by plants, animals and decomposers releases carbon dioxide back into the atmosphere.",
+      "Decomposers break down dead organisms, releasing carbon dioxide back into the air and soil.",
+      "Combustion of fossil fuels (coal, petroleum) and forest fires also release large amounts of carbon dioxide.",
+      "Oceans absorb and release carbon dioxide, acting as a major carbon reservoir."
+    ],
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Atmospheric CO2\"] --> B[\"Photosynthesis by plants\"]\n  B --> C[\"Organic carbon in food chain\"]\n  C --> D[\"Respiration and decomposition\"]\n  D --> A\n  E[\"Burning of fossil fuels\"] --> A"
+    },
+    "example": "Carbon dioxide fixed by a tree during photosynthesis becomes wood (organic carbon); when the wood is burnt, the carbon dioxide is released back into the atmosphere.",
+    "tip": "Draw the cycle showing both fixation (photosynthesis) and release (respiration, decomposition, combustion) of CO2 for full marks."
+  },
+  {
+    "t": "Nitrogen cycle",
+    "def": "The nitrogen cycle is the biogeochemical cycle by which nitrogen is converted between its various chemical forms as it circulates among the atmosphere, soil and living organisms.",
+    "points": [
+      "Nitrogen fixation converts atmospheric nitrogen gas into usable forms (ammonia/nitrates) by nitrogen-fixing bacteria (e.g., Rhizobium) and by lightning.",
+      "Ammonification: decomposers break down dead organic matter and release ammonia into the soil.",
+      "Nitrification: nitrifying bacteria convert ammonia into nitrites and then into nitrates, which plants can absorb.",
+      "Plants absorb nitrates through roots and use them to build proteins and nucleic acids; these pass to animals through the food chain.",
+      "Denitrification: denitrifying bacteria convert nitrates back into nitrogen gas, which returns to the atmosphere.",
+      "This cycle keeps the nitrogen supply in soil and atmosphere balanced."
+    ],
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Atmospheric N2\"] --> B[\"Nitrogen fixation\"]\n  B --> C[\"Ammonia in soil\"]\n  C --> D[\"Nitrification to nitrates\"]\n  D --> E[\"Absorbed by plants\"]\n  E --> F[\"Denitrification back to N2\"]\n  F --> A"
+    },
+    "example": "Rhizobium bacteria in root nodules of legumes fix atmospheric nitrogen into ammonia, which the plant converts into proteins.",
+    "tip": "List the four key steps in order — fixation, ammonification, nitrification, denitrification — examiners check this sequence carefully."
+  }
+]

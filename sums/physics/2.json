@@ -1,0 +1,122 @@
+{
+  "solved": [
+    {
+      "topic": "RMS speed of gas molecules",
+      "marks": 3,
+      "q": "Calculate the rms speed of oxygen molecules at 27 degree C. Given molar mass of oxygen M = 32 x 10^-3 kg/mol, R = 8.314 J/mol K.",
+      "steps": [
+        "Given: T = 27 + 273 = 300 K, M = 32 x 10^-3 kg/mol, R = 8.314 J/mol K.",
+        "Formula: vrms = sqrt(3RT/M).",
+        "Substitute: vrms = sqrt(3 x 8.314 x 300 / 32 x 10^-3).",
+        "Numerator: 3 x 8.314 x 300 = 7482.6.",
+        "Divide: 7482.6 / 0.032 = 233831.25.",
+        "Take square root: sqrt(233831.25) = 483.56 m/s (since 483^2 = 233289 and 484^2 = 234256).",
+        "Answer: vrms = 483.56 m/s."
+      ],
+      "ans": "vrms ≈ 483.56 m/s"
+    },
+    {
+      "topic": "Average kinetic energy / internal energy of monatomic gas",
+      "marks": 2,
+      "q": "Find the total internal energy of 1 mole of an ideal monatomic gas at 127 degree C. (R = 8.314 J/mol K)",
+      "steps": [
+        "Given: n = 1 mol, T = 127 + 273 = 400 K, f = 3 (monatomic gas).",
+        "Formula: U = (f/2) n R T = (3/2) n R T.",
+        "Substitute: U = 1.5 x 1 x 8.314 x 400.",
+        "Calculate: 1.5 x 8.314 = 12.471; 12.471 x 400 = 4988.4.",
+        "Answer: U = 4988.4 J."
+      ],
+      "ans": "U = 4988.4 J"
+    },
+    {
+      "topic": "Internal energy of diatomic gas (degrees of freedom)",
+      "marks": 3,
+      "q": "Calculate the internal energy of 2 moles of a diatomic gas (such as N2) at 500 K, neglecting vibrational energy. (R = 8.314 J/mol K)",
+      "steps": [
+        "Given: n = 2 mol, T = 500 K, diatomic gas has f = 5 (3 translational + 2 rotational).",
+        "Formula: U = (f/2) n R T = (5/2) n R T.",
+        "Substitute: U = 2.5 x 2 x 8.314 x 500.",
+        "Calculate: 2.5 x 2 = 5; 5 x 8.314 = 41.57; 41.57 x 500 = 20785.",
+        "Answer: U = 20785 J."
+      ],
+      "ans": "U = 20785 J (= 20.785 kJ)"
+    },
+    {
+      "topic": "Mean free path and number density",
+      "marks": 2,
+      "q": "A gas is compressed isothermally to half its original volume. Find the ratio of the new mean free path to the original mean free path.",
+      "steps": [
+        "Given: V2 = V1/2 at constant T and constant number of molecules N.",
+        "Formula: mean free path lambda = 1/(sqrt(2) pi n d^2), so lambda is inversely proportional to number density n = N/V.",
+        "Since V2 = V1/2 and N is unchanged, n2 = N/V2 = N/(V1/2) = 2(N/V1) = 2 n1.",
+        "So lambda2/lambda1 = n1/n2 = n1/(2n1) = 1/2.",
+        "Answer: the new mean free path is half the original mean free path."
+      ],
+      "ans": "lambda2 : lambda1 = 1 : 2"
+    },
+    {
+      "topic": "Pressure of a gas in terms of density and rms speed",
+      "marks": 3,
+      "q": "The density of a gas is 1.2 kg/m^3 and the rms speed of its molecules is 500 m/s. Find the pressure exerted by the gas.",
+      "steps": [
+        "Given: rho = 1.2 kg/m^3, vrms = 500 m/s.",
+        "Formula: P = (1/3) rho vrms^2.",
+        "Substitute: P = (1/3) x 1.2 x (500)^2.",
+        "Calculate vrms^2 = 500 x 500 = 250000.",
+        "(1/3) x 1.2 = 0.4; 0.4 x 250000 = 100000.",
+        "Answer: P = 1 x 10^5 Pa."
+      ],
+      "ans": "P = 1 x 10^5 Pa (1 x 10^5 N/m^2)"
+    },
+    {
+      "topic": "Stefan-Boltzmann law - ratio of radiated power",
+      "marks": 2,
+      "q": "A blackbody at temperature 500 K radiates energy at a certain rate. If its temperature is raised to 1000 K, find the ratio of the new rate of radiation to the original rate.",
+      "steps": [
+        "Given: T1 = 500 K, T2 = 1000 K.",
+        "Formula: E = sigma T^4, so E2/E1 = (T2/T1)^4.",
+        "Substitute: T2/T1 = 1000/500 = 2.",
+        "Calculate: (2)^4 = 16.",
+        "Answer: E2/E1 = 16."
+      ],
+      "ans": "E2/E1 = 16 (power becomes 16 times)"
+    },
+    {
+      "topic": "Wien's displacement law",
+      "marks": 2,
+      "q": "The surface temperature of a star is 5800 K. Find the wavelength at which it radiates maximum energy. (Wien's constant b = 2.9 x 10^-3 m K)",
+      "steps": [
+        "Given: T = 5800 K, b = 2.9 x 10^-3 m K.",
+        "Formula: lambda max x T = b, so lambda max = b/T.",
+        "Substitute: lambda max = 2.9 x 10^-3 / 5800.",
+        "Calculate: 2.9 x 10^-3 / 5800 = 5 x 10^-7 m.",
+        "Answer: lambda max = 5 x 10^-7 m = 500 nm."
+      ],
+      "ans": "lambda max = 5 x 10^-7 m (500 nm)"
+    },
+    {
+      "topic": "Net power radiated using emissivity (Stefan's law)",
+      "marks": 4,
+      "q": "A metal sphere of surface area 0.01 m^2 and emissivity 0.6 is at a temperature of 600 K in surroundings at 300 K. Find the net power radiated by the sphere. (sigma = 5.67 x 10^-8 W/m^2 K^4)",
+      "steps": [
+        "Given: A = 0.01 m^2, e = 0.6, T = 600 K, T0 = 300 K, sigma = 5.67 x 10^-8 W/m^2 K^4.",
+        "Formula: net power P = e sigma A (T^4 - T0^4).",
+        "Calculate T^4: 600^2 = 360000, so 600^4 = 360000^2 = 1.296 x 10^11.",
+        "Calculate T0^4: 300^2 = 90000, so 300^4 = 90000^2 = 8.1 x 10^9.",
+        "Difference: T^4 - T0^4 = 1.296 x 10^11 - 0.081 x 10^11 = 1.215 x 10^11.",
+        "Substitute: P = 0.6 x 5.67 x 10^-8 x 0.01 x 1.215 x 10^11.",
+        "Calculate: 0.6 x 5.67 x 10^-8 = 3.402 x 10^-8; x 0.01 = 3.402 x 10^-10; x 1.215 x 10^11 = 41.33.",
+        "Answer: P ≈ 41.33 W."
+      ],
+      "ans": "P ≈ 41.33 W"
+    }
+  ],
+  "practice": [
+    { "topic": "RMS speed of gas molecules", "q": "Find the rms speed of helium molecules at 400 K. (M = 4 x 10^-3 kg/mol, R = 8.314 J/mol K)", "hint": "vrms = sqrt(3RT/M).", "ans": "vrms ≈ 1579.3 m/s" },
+    { "topic": "Internal energy of monatomic gas", "q": "Find the internal energy of 3 moles of a monatomic ideal gas at 300 K. (R = 8.314 J/mol K)", "hint": "U = (3/2) n R T for monatomic gas.", "ans": "U = 11223.9 J" },
+    { "topic": "Internal energy of diatomic gas", "q": "Find the internal energy of 1 mole of a diatomic gas at 400 K, neglecting vibration. (R = 8.314 J/mol K)", "hint": "U = (5/2) n R T for diatomic gas (f = 5).", "ans": "U = 8314 J" },
+    { "topic": "Mean free path", "q": "At constant temperature, the pressure of a gas is doubled. Find the ratio of the new mean free path to the original mean free path.", "hint": "lambda is inversely proportional to number density n, and n is directly proportional to pressure at constant T.", "ans": "lambda2 : lambda1 = 1 : 2" },
+    { "topic": "Stefan-Boltzmann law", "q": "Find the energy radiated per second per unit area by a blackbody at 1000 K. (sigma = 5.67 x 10^-8 W/m^2 K^4)", "hint": "E = sigma T^4.", "ans": "E = 56700 W/m^2" },
+    { "topic": "Wien's displacement law", "q": "A star emits maximum radiation at a wavelength of 2.9 x 10^-7 m. Find its surface temperature. (b = 2.9 x 10^-3 m K)", "hint": "T = b / lambda max.", "ans": "T = 10000 K" }
+  ]
+}

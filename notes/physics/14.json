@@ -1,0 +1,109 @@
+[
+  {
+    "t": "Bohr's atomic model and postulates",
+    "def": "Bohr's model explains the stability and spectrum of the hydrogen atom by assuming that electrons revolve around the nucleus only in certain fixed orbits with quantised angular momentum.",
+    "points": [
+      "Postulate 1: Electrons revolve around the nucleus in circular orbits; the centripetal force is provided by electrostatic attraction between electron and nucleus.",
+      "Postulate 2: Only those orbits are allowed for which angular momentum is an integral multiple of h/2pi, i.e. L = n h / (2 pi), where n = 1, 2, 3...",
+      "Postulate 3: While in these allowed (stationary) orbits, the electron does not radiate energy, so the atom is stable.",
+      "Postulate 4: The atom emits or absorbs a photon only when an electron jumps from one allowed orbit to another; the photon energy equals the energy difference between the orbits.",
+      "This model successfully explained the discrete line spectrum of hydrogen."
+    ],
+    "formula": "L = m v r = n h / (2 pi);  h v = Ei - Ef",
+    "diagram": {
+      "draw": "Draw a small nucleus at the centre. Draw three concentric circular orbits around it labelled n=1, n=2, n=3. Show an electron on orbit n=3 with an arrow jumping inward to orbit n=1, and label the emitted photon arrow 'hv'."
+    },
+    "example": "For hydrogen in n=1 orbit, angular momentum L = h/(2 pi) = 1.05 x 10^-34 kg m^2/s.",
+    "tip": "List all four postulates in order — this is a standard 'state Bohr's postulates' question worth full marks for correct sequencing."
+  },
+  {
+    "t": "Energy levels and spectral series of hydrogen",
+    "def": "In the Bohr model, the hydrogen atom has discrete (quantised) energy levels, and transitions of the electron between these levels produce distinct spectral lines grouped into series.",
+    "points": [
+      "Energy of the nth orbit is En = -13.6 / n^2 eV (negative sign shows the electron is bound).",
+      "n = 1 is the ground state (lowest, most negative energy); higher n means higher (less negative) energy.",
+      "When an electron jumps from a higher level ni to a lower level nf, a photon of energy Ei - Ef is emitted.",
+      "Lyman series: transitions ending at n=1 (ultraviolet region).",
+      "Balmer series: transitions ending at n=2 (visible region).",
+      "Paschen, Brackett and Pfund series: transitions ending at n=3, 4, 5 respectively (infrared region)."
+    ],
+    "formula": "En = -13.6/n^2 eV;  1/lambda = R (1/nf^2 - 1/ni^2)",
+    "diagram": {
+      "draw": "Draw horizontal lines stacked with increasing spacing getting closer together, labelled n=1 (bottom) up to n=infinity (top). Draw downward arrows between levels showing transitions to n=1 labelled 'Lyman series' and transitions to n=2 labelled 'Balmer series'."
+    },
+    "example": "Energy of n=2 level: E2 = -13.6/4 = -3.4 eV. Transition from n=3 to n=2 releases energy = (-1.51) - (-3.4) = 1.89 eV, a Balmer line.",
+    "tip": "Remember the series names in order (Lyman, Balmer, Paschen) with their final energy level — a common one-mark question."
+  },
+  {
+    "t": "Nuclear size, density and mass defect",
+    "def": "The atomic nucleus is an extremely small, dense core of an atom, and mass defect is the small reduction in mass when nucleons combine to form a nucleus, converted into binding energy.",
+    "points": [
+      "Nuclear radius R depends on mass number A as R = R0 A^(1/3), where R0 = 1.2 x 10^-15 m (1.2 fm).",
+      "Nuclear volume is proportional to A (since R^3 is proportional to A), so nuclear density is nearly the same for all nuclei.",
+      "Nuclear density is enormous, about 2.3 x 10^17 kg/m^3, independent of the element.",
+      "Mass defect (delta m) is the difference between the sum of masses of free protons and neutrons and the actual mass of the nucleus.",
+      "delta m = [Z mp + (A-Z) mn] - M(nucleus), where Z is atomic number, A is mass number.",
+      "This 'missing' mass is released as binding energy when the nucleus forms, as per E = delta m c^2."
+    ],
+    "formula": "R = R0 A^(1/3);  delta m = [Z mp + (A-Z) mn] - M;  E = delta m c^2",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Z protons and N neutrons separate\"] --> B[\"Sum of individual masses\"]\n  B --> C[\"Nucleus forms, mass decreases by delta m\"]\n  C --> D[\"Binding energy released E = delta m c squared\"]"
+    },
+    "example": "For helium-4 (Z=2, A=4): sum of nucleon masses = 4.0330 u, actual nucleus mass = 4.0015 u, so delta m = 0.0315 u, giving binding energy about 29.3 MeV.",
+    "tip": "Always convert mass defect from atomic mass units to energy using 1 u = 931.5 MeV in numericals."
+  },
+  {
+    "t": "Binding energy per nucleon",
+    "def": "Binding energy per nucleon is the binding energy of a nucleus divided by its number of nucleons; it measures how tightly nucleons are bound and indicates nuclear stability.",
+    "points": [
+      "Binding energy per nucleon = total binding energy / mass number A.",
+      "A graph of binding energy per nucleon versus mass number A rises steeply for light nuclei, peaks near A = 56 (iron region), then slowly decreases for heavy nuclei.",
+      "Nuclei near the peak (iron, nickel) are the most stable.",
+      "Fusion of light nuclei (like hydrogen into helium) releases energy because binding energy per nucleon increases.",
+      "Fission of heavy nuclei (like uranium) also releases energy for the same reason — moving towards the stable middle region.",
+      "This curve explains why both fusion and fission can release nuclear energy."
+    ],
+    "formula": "Binding energy per nucleon = (delta m c^2) / A",
+    "diagram": {
+      "draw": "Draw a graph with mass number A on the x-axis and binding energy per nucleon (MeV) on the y-axis. Show the curve rising steeply from A=1, peaking around A=56 (label 'Fe, most stable'), then gradually decreasing towards A=240. Mark arrows showing 'fusion' region on the left and 'fission' region on the right, both pointing towards the peak."
+    },
+    "example": "Iron-56 has binding energy per nucleon about 8.8 MeV, near the maximum, which is why iron nuclei are extremely stable.",
+    "tip": "Draw the BE/A vs A graph with the peak at A=56 clearly marked — this diagram is asked very frequently."
+  },
+  {
+    "t": "Radioactive decay law and half life",
+    "def": "The radioactive decay law states that the number of radioactive nuclei decreasing per unit time is proportional to the number of nuclei present at that time, leading to exponential decay.",
+    "points": [
+      "Rate of decay: -dN/dt = lambda N, where lambda is the decay constant (characteristic of the isotope).",
+      "Solving this gives N = N0 e^(-lambda t), where N0 is the initial number of nuclei.",
+      "Half-life (T1/2) is the time in which half the radioactive nuclei decay; T1/2 = 0.693 / lambda.",
+      "Activity (A = lambda N) also decreases exponentially in the same way as N.",
+      "After n half-lives, the remaining fraction is (1/2)^n of the original amount.",
+      "SI unit of activity is becquerel (Bq); older unit is curie (Ci)."
+    ],
+    "formula": "N = N0 e^(-lambda t);  T1/2 = 0.693/lambda;  N = N0 (1/2)^(t/T1/2)",
+    "diagram": {
+      "draw": "Draw a graph with time t on the x-axis and number of undecayed nuclei N on the y-axis. Draw a smooth curve starting at N0 and decreasing exponentially, never touching the x-axis. Mark the time T1/2 on the x-axis where N falls to N0/2, and 2T1/2 where it falls to N0/4."
+    },
+    "example": "A sample with N0 = 1000 nuclei and half-life 10 days: after 30 days (3 half-lives), N = 1000 x (1/2)^3 = 125 nuclei remaining.",
+    "tip": "For numericals, use N = N0 (1/2)^(t/T) when t is a whole multiple of half-life; otherwise use the exponential form with lambda."
+  },
+  {
+    "t": "Alpha, beta and gamma decay",
+    "def": "Radioactive nuclei become stable by spontaneously emitting alpha particles, beta particles, or gamma rays, each changing the nucleus in a different way.",
+    "points": [
+      "Alpha decay: nucleus emits an alpha particle (helium nucleus, 2 protons + 2 neutrons); mass number decreases by 4 and atomic number by 2.",
+      "Beta-minus decay: a neutron converts into a proton, emitting an electron and an antineutrino; atomic number increases by 1, mass number unchanged.",
+      "Beta-plus decay: a proton converts into a neutron, emitting a positron and a neutrino; atomic number decreases by 1, mass number unchanged.",
+      "Gamma decay: an excited nucleus (after alpha or beta decay) emits high-energy gamma photons to reach its ground state; both A and Z remain unchanged.",
+      "Alpha particles have the least penetration power but most ionising power; gamma rays have the most penetration but least ionising power.",
+      "These decays follow conservation of mass number, charge, and energy in each nuclear reaction."
+    ],
+    "formula": "Alpha: ZX^A -> (Z-2)Y^(A-4) + alpha;  Beta-minus: n -> p + e- + antineutrino",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Unstable nucleus\"] --> B[\"Alpha decay: emits He nucleus\"]\n  A --> C[\"Beta decay: emits electron or positron\"]\n  A --> D[\"Gamma decay: emits high energy photon\"]\n  B --> E[\"Daughter nucleus, A down by 4, Z down by 2\"]\n  C --> F[\"Daughter nucleus, Z changes by 1, A same\"]\n  D --> G[\"Same nucleus, lower energy state\"]"
+    },
+    "example": "Uranium-238 undergoes alpha decay: U-238 (Z=92) -> Th-234 (Z=90) + alpha particle (He-4).",
+    "tip": "Practise writing balanced nuclear equations showing conservation of both mass number and atomic number on both sides."
+  }
+]

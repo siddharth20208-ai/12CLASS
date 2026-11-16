@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Faraday's second law of electromagnetic induction states that induced EMF equals",
+    "o": [
+      "N times the flux",
+      "N times the current",
+      "flux divided by resistance",
+      "-N d(phi)/dt"
+    ],
+    "a": 3,
+    "why": "e = -N d(phi)/dt, induced EMF is proportional to the rate of change of flux."
+  },
+  {
+    "q": "A coil of 500 turns has flux changing from 2 x10^-3 Wb to 6 x10^-3 Wb in 0.1 s. The induced EMF is",
+    "o": [
+      "20 V",
+      "10 V",
+      "40 V",
+      "2 V"
+    ],
+    "a": 0,
+    "why": "e = N dphi/dt = 500 x (4e-3/0.1) = 20 V."
+  },
+  {
+    "q": "Lenz's law for induced current direction is a consequence of",
+    "o": [
+      "conservation of charge",
+      "conservation of energy",
+      "conservation of momentum",
+      "conservation of mass"
+    ],
+    "a": 1,
+    "why": "Induced current opposes the change producing it, consistent with energy conservation (no free energy)."
+  },
+  {
+    "q": "A conducting rod of length L moves with velocity v perpendicular to a magnetic field B. The motional EMF induced is",
+    "o": [
+      "BL/v",
+      "BL^2v",
+      "BLv",
+      "Bv/L"
+    ],
+    "a": 2,
+    "why": "e = BLv, derived from the magnetic force on free charges, F = qv x B."
+  },
+  {
+    "q": "A rod of length 0.5 m moves at 4 m/s perpendicular to a 0.2 T field. The motional EMF is",
+    "o": [
+      "0.1 V",
+      "0.8 V",
+      "4 V",
+      "0.4 V"
+    ],
+    "a": 3,
+    "why": "e = BLv = 0.2 x 0.5 x 4 = 0.4 V."
+  },
+  {
+    "q": "The self-induced EMF in a coil is given by",
+    "o": [
+      "e = -L dI/dt",
+      "e = L dI/dt (no sign)",
+      "e = L/I",
+      "e = -L I"
+    ],
+    "a": 0,
+    "why": "Self-induced EMF opposes change of current, e = -L dI/dt."
+  },
+  {
+    "q": "For a long solenoid of n turns per unit length, area A and length l, the self inductance is",
+    "o": [
+      "mu0 n A l",
+      "mu0 n^2 A l",
+      "mu0 n A l^2",
+      "mu0 n^2 A / l"
+    ],
+    "a": 1,
+    "why": "L = mu0 n^2 A l depends on turns density squared, area, and length."
+  },
+  {
+    "q": "The energy stored in an inductor L carrying current I is",
+    "o": [
+      "L I^2",
+      "(1/2) L I",
+      "(1/2) L I^2",
+      "L I"
+    ],
+    "a": 2,
+    "why": "U = (1/2) L I^2, analogous to (1/2)CV^2 and (1/2)mv^2."
+  },
+  {
+    "q": "An inductor of L = 2 H carries a current of 3 A. The energy stored in it is",
+    "o": [
+      "6 J",
+      "18 J",
+      "4.5 J",
+      "9 J"
+    ],
+    "a": 3,
+    "why": "U = 0.5 x 2 x 3^2 = 0.5 x 2 x 9 = 9 J."
+  },
+  {
+    "q": "Laminating the core of a transformer helps to reduce",
+    "o": [
+      "eddy current losses",
+      "self inductance of the coil",
+      "hysteresis of the winding wire",
+      "mutual inductance between coils"
+    ],
+    "a": 0,
+    "why": "Thin insulated laminations increase resistance to eddy current loops, reducing heat loss."
+  }
+]

@@ -1,0 +1,121 @@
+{
+  "solved": [
+    {
+      "topic": "Magnetic field at the centre of a circular loop (Biot-Savart)",
+      "marks": 2,
+      "q": "A circular coil of radius 5 cm carries a current of 5 A. Find the magnetic field at the centre of the coil. (mu0 = 4 pi x 10^-7 T m/A)",
+      "steps": [
+        "Given: I = 5 A, r = 5 cm = 0.05 m.",
+        "Formula: B = mu0*I/(2r).",
+        "Substitute: B = (4*pi*1e-7 x 5)/(2 x 0.05) = (2*pi*1e-7 x 5)/0.05.",
+        "Numerator = 2 x 3.14 x 1e-7 x 5 = 31.4e-7 = 3.14e-6.",
+        "B = 3.14e-6/0.05 = 6.28e-5 T.",
+        "Final answer: B = 6.28 x 10^-5 T."
+      ],
+      "ans": "6.28 x 10^-5 T"
+    },
+    {
+      "topic": "Magnetic field due to a long straight current-carrying wire",
+      "marks": 2,
+      "q": "A long straight wire carries a current of 10 A. Find the magnetic field at a perpendicular distance of 2 cm from the wire. (mu0 = 4 pi x 10^-7 T m/A)",
+      "steps": [
+        "Given: I = 10 A, r = 2 cm = 0.02 m.",
+        "Formula: B = mu0*I/(2*pi*r).",
+        "Substitute: B = (4*pi*1e-7 x 10)/(2*pi x 0.02) = (2*1e-7 x 10)/0.02.",
+        "Numerator = 2 x 10 x 1e-7 = 20e-7 = 2e-6.",
+        "B = 2e-6/0.02 = 1e-4 T.",
+        "Final answer: B = 1 x 10^-4 T."
+      ],
+      "ans": "1 x 10^-4 T"
+    },
+    {
+      "topic": "Magnetic field inside a solenoid (Ampere's law)",
+      "marks": 3,
+      "q": "A long solenoid has 2000 turns per metre and carries a current of 5 A. Find the magnetic field inside the solenoid. (mu0 = 4 pi x 10^-7 T m/A)",
+      "steps": [
+        "Given: n = 2000 turns/m, I = 5 A.",
+        "Formula (from Ampere's circuital law): B = mu0*n*I.",
+        "Substitute: B = 4 x 3.14 x 1e-7 x 2000 x 5.",
+        "4 x 3.14 = 12.56; 12.56 x 2000 = 25120; 25120 x 5 = 125600.",
+        "B = 125600 x 1e-7 = 1.256e-2 T.",
+        "Final answer: B = 1.256 x 10^-2 T (uniform, directed along the axis)."
+      ],
+      "ans": "1.256 x 10^-2 T"
+    },
+    {
+      "topic": "Force on a current-carrying conductor in a magnetic field",
+      "marks": 2,
+      "q": "A straight conductor of length 0.3 m carries a current of 4 A and is placed perpendicular to a uniform magnetic field of 0.5 T. Find the force on the conductor.",
+      "steps": [
+        "Given: I = 4 A, L = 0.3 m, B = 0.5 T, theta = 90 degrees so sin(theta) = 1.",
+        "Formula: F = B*I*L*sin(theta).",
+        "Substitute: F = 0.5 x 4 x 0.3 x 1.",
+        "F = 0.5 x 4 = 2.0; 2.0 x 0.3 = 0.6.",
+        "Final answer: F = 0.6 N."
+      ],
+      "ans": "0.6 N"
+    },
+    {
+      "topic": "Force per unit length between two parallel current-carrying wires",
+      "marks": 3,
+      "q": "Two long parallel wires carrying currents of 10 A each in the same direction are separated by 5 cm. Find the force per unit length between them and state its nature.",
+      "steps": [
+        "Given: I1 = I2 = 10 A, d = 5 cm = 0.05 m.",
+        "Formula: F/L = mu0*I1*I2/(2*pi*d).",
+        "Substitute: F/L = (4*pi*1e-7 x 10 x 10)/(2*pi x 0.05) = (2*1e-7 x 100)/0.05.",
+        "Numerator = 2 x 100 x 1e-7 = 200e-7 = 2e-5.",
+        "F/L = 2e-5/0.05 = 4e-4 N/m.",
+        "Since the currents are in the same direction, the force is attractive.",
+        "Final answer: F/L = 4 x 10^-4 N/m, attractive."
+      ],
+      "ans": "4 x 10^-4 N/m, attractive"
+    },
+    {
+      "topic": "Deflection of a moving coil galvanometer",
+      "marks": 3,
+      "q": "A moving coil galvanometer has a coil of 100 turns, each of area 2 x 10^-4 m^2, placed in a radial magnetic field of 0.2 T. The spring constant is 1 x 10^-5 N m/rad. Find the deflection produced by a current of 2 mA.",
+      "steps": [
+        "Given: N = 100, A = 2e-4 m^2, B = 0.2 T, k = 1e-5 N m/rad, I = 2e-3 A.",
+        "Formula: theta = (N*A*B/k)*I.",
+        "Substitute: N*A = 100 x 2e-4 = 0.02; (N*A)*B = 0.02 x 0.2 = 4e-3.",
+        "(N*A*B)/k = 4e-3/1e-5 = 400.",
+        "theta = 400 x 2e-3 = 0.8 rad.",
+        "Final answer: theta = 0.8 rad."
+      ],
+      "ans": "0.8 rad"
+    },
+    {
+      "topic": "Conversion of galvanometer to ammeter (shunt resistance)",
+      "marks": 3,
+      "q": "A galvanometer of resistance 99 ohm gives full-scale deflection for a current of 10 mA. Find the shunt resistance required to convert it into an ammeter reading up to 1 A.",
+      "steps": [
+        "Given: G = 99 ohm, Ig = 10 mA = 0.01 A, I = 1 A.",
+        "Formula: S = Ig*G/(I - Ig).",
+        "Substitute: S = (0.01 x 99)/(1 - 0.01) = 0.99/0.99.",
+        "Final answer: S = 1 ohm (connected in parallel with the galvanometer)."
+      ],
+      "ans": "1 ohm"
+    },
+    {
+      "topic": "Conversion of galvanometer to voltmeter (series resistance)",
+      "marks": 3,
+      "q": "A galvanometer of resistance 100 ohm gives full-scale deflection for a current of 1 mA. Find the series resistance needed to convert it into a voltmeter of range 10 V.",
+      "steps": [
+        "Given: G = 100 ohm, Ig = 1 mA = 1e-3 A, V = 10 V.",
+        "Formula: R = (V/Ig) - G.",
+        "Substitute: V/Ig = 10/1e-3 = 10000.",
+        "R = 10000 - 100 = 9900.",
+        "Final answer: R = 9900 ohm (connected in series with the galvanometer)."
+      ],
+      "ans": "9900 ohm"
+    }
+  ],
+  "practice": [
+    { "topic": "Magnetic field at centre of a loop", "q": "A circular coil of radius 10 cm carries a current of 2 A. Find the magnetic field at its centre.", "hint": "B = mu0*I/(2r), mu0 = 4 pi x 10^-7 T m/A.", "ans": "1.256 x 10^-5 T" },
+    { "topic": "Magnetic field of a toroid (Ampere's law)", "q": "A toroid has 500 turns, core radius 0.1 m, and carries a current of 2 A. Find the magnetic field inside the core.", "hint": "B = mu0*N*I/(2*pi*r).", "ans": "2 x 10^-3 T" },
+    { "topic": "Force on a conductor at an angle", "q": "A conductor of length 0.4 m carrying 5 A current is placed at 30 degrees to a magnetic field of 0.4 T. Find the force on it.", "hint": "F = B*I*L*sin(theta), sin30 = 0.5.", "ans": "0.4 N" },
+    { "topic": "Force between parallel wires carrying opposite currents", "q": "Two parallel wires 10 cm apart carry currents of 5 A each in opposite directions. Find the force per unit length and its nature.", "hint": "F/L = mu0*I1*I2/(2*pi*d); opposite currents repel.", "ans": "5 x 10^-5 N/m, repulsive" },
+    { "topic": "Galvanometer sensitivity", "q": "A galvanometer coil has N = 50, A = 1 x 10^-4 m^2, B = 0.25 T, k = 2.5 x 10^-6 N m/rad. Find the deflection for a current of 1 mA.", "hint": "theta = (N*A*B/k)*I.", "ans": "0.5 rad" },
+    { "topic": "Voltmeter conversion", "q": "A galvanometer of resistance 50 ohm gives full-scale deflection for 5 mA. Find the series resistance needed for a voltmeter range of 5 V.", "hint": "R = (V/Ig) - G.", "ans": "950 ohm" }
+  ]
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "q": "The dot product of two vectors a and b is defined as:",
+    "o": [
+      "|a||b|cos(theta)",
+      "|a||b|sin(theta)",
+      "|a| + |b|",
+      "|a x b|"
+    ],
+    "a": 0,
+    "why": "a.b = |a||b|cos(theta), where theta is the angle between them."
+  },
+  {
+    "q": "If vectors a and b are perpendicular, then a.b equals:",
+    "o": [
+      "1",
+      "0",
+      "|a||b|",
+      "-1"
+    ],
+    "a": 1,
+    "why": "cos(90) = 0, so the dot product of perpendicular vectors is zero."
+  },
+  {
+    "q": "The magnitude of the cross product a x b equals:",
+    "o": [
+      "|a||b|cos(theta)",
+      "|a| - |b|",
+      "|a||b|sin(theta)",
+      "|a||b|"
+    ],
+    "a": 2,
+    "why": "|a x b| = |a||b|sin(theta), giving the area of the parallelogram formed by a and b."
+  },
+  {
+    "q": "Three vectors a, b, c are coplanar if their scalar triple product [a b c] equals:",
+    "o": [
+      "1",
+      "-1",
+      "|a||b||c|",
+      "0"
+    ],
+    "a": 3,
+    "why": "Vectors are coplanar exactly when the scalar triple product is zero."
+  },
+  {
+    "q": "The position vector of the point dividing segment AB in ratio m:n internally is:",
+    "o": [
+      "(n.a + m.b)/(m+n)",
+      "(m.a + n.b)/(m+n)",
+      "(m.a - n.b)/(m+n)",
+      "(a+b)/2"
+    ],
+    "a": 0,
+    "why": "Section formula (internal division): r = (n.a + m.b)/(m+n)."
+  },
+  {
+    "q": "The scalar projection of vector a on vector b is given by:",
+    "o": [
+      "(a.b)/|a|",
+      "(a.b)/|b|",
+      "a x b/|b|",
+      "|a||b|"
+    ],
+    "a": 1,
+    "why": "Scalar projection of a on b equals (a.b)/|b|."
+  },
+  {
+    "q": "The area of a triangle with adjacent sides represented by vectors a and b is:",
+    "o": [
+      "|a x b|",
+      "a.b",
+      "(1/2)|a x b|",
+      "(1/2)a.b"
+    ],
+    "a": 2,
+    "why": "Triangle area formed by two side vectors is half the magnitude of their cross product."
+  },
+  {
+    "q": "Points A, B, C with position vectors a, b, c are collinear if:",
+    "o": [
+      "a + b + c = 0",
+      "a.b = 0",
+      "a x b = 0",
+      "(b-a) is parallel to (c-a)"
+    ],
+    "a": 3,
+    "why": "Collinearity requires the vectors joining the points to be parallel (scalar multiples of each other)."
+  },
+  {
+    "q": "The area of a parallelogram with adjacent sides a and b equals:",
+    "o": [
+      "|a x b|",
+      "(1/2)|a x b|",
+      "a.b",
+      "|a||b|"
+    ],
+    "a": 0,
+    "why": "Parallelogram area is the full magnitude of the cross product of adjacent side vectors."
+  },
+  {
+    "q": "If a = 2i + 3j and b = i - j, then a.b equals:",
+    "o": [
+      "5",
+      "-1",
+      "-5",
+      "1"
+    ],
+    "a": 1,
+    "why": "a.b = (2)(1) + (3)(-1) = 2 - 3 = -1."
+  }
+]

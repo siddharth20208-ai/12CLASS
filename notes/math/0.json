@@ -1,0 +1,99 @@
+[
+  {
+    "t": "Truth tables and logical connectives",
+    "def": "A truth table lists all possible truth values (T or F) of statements, and shows the result of combining them with connectives like and, or, not, implies, iff.",
+    "points": [
+      "A simple statement is either True (T) or False (F), never both.",
+      "and (^) is true only when both parts are true.",
+      "or (v) is true when at least one part is true.",
+      "not (~) flips the truth value: ~T = F, ~T = F.",
+      "implies (->) is false only when the first part is T and second is F; otherwise true.",
+      "iff (<->) is true when both parts have the same truth value.",
+      "For n statements, a truth table has 2^n rows."
+    ],
+    "formula": "p -> q is false only when p = T and q = F",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"List all T F combos\"] --> B[\"Apply connective\"]\n  B --> C[\"Fill result column\"]\n  C --> D[\"Read truth values row by row\"]" },
+    "example": "For p = T, q = F: p^q = F, p v q = T, ~p = F, p -> q = F, p <-> q = F.",
+    "tip": "Always write the full table with all rows; examiners give marks for each correct row, not just the final answer."
+  },
+  {
+    "t": "Tautology, contradiction, contingency",
+    "def": "A statement pattern is a tautology if always true, a contradiction if always false, and a contingency if it is sometimes true and sometimes false.",
+    "points": [
+      "Build the complete truth table for the statement pattern.",
+      "Look at the final result column only.",
+      "If every entry is T, it is a tautology.",
+      "If every entry is F, it is a contradiction.",
+      "If the column has a mix of T and F, it is a contingency.",
+      "Tautologies are useful to prove logical laws are always valid."
+    ],
+    "formula": "All T = tautology; all F = contradiction; mixed = contingency",
+    "diagram": { "mermaid": "flowchart TD\n  A[\"Final column of truth table\"] --> B[\"All T\"]\n  A --> C[\"All F\"]\n  A --> D[\"Mixed T and F\"]\n  B --> E[\"Tautology\"]\n  C --> F[\"Contradiction\"]\n  D --> G[\"Contingency\"]" },
+    "example": "p v ~p: for p=T, ~p=F, p v ~p=T. For p=F, ~p=T, p v ~p=T. All T, so it is a tautology.",
+    "tip": "State the name clearly (tautology/contradiction/contingency) in your final line — this is a separate mark."
+  },
+  {
+    "t": "Logical equivalence and De Morgan's laws",
+    "def": "Two statements are logically equivalent if their truth tables give identical results in every row. De Morgan's laws relate negation of and/or statements.",
+    "points": [
+      "Make truth tables of both statements side by side.",
+      "Compare the final columns row by row.",
+      "If every row matches, the statements are equivalent, written p === q.",
+      "De Morgan's law 1: ~(p ^ q) = ~p v ~q.",
+      "De Morgan's law 2: ~(p v q) = ~p ^ ~q.",
+      "These laws let you simplify complicated negated statements."
+    ],
+    "formula": "~(p^q) = ~p v ~q     ~(p v q) = ~p ^ ~q",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Statement 1 table\"] --> C[\"Compare columns\"]\n  B[\"Statement 2 table\"] --> C\n  C --> D[\"Match every row\"]\n  D --> E[\"Logically equivalent\"]" },
+    "example": "Check ~(p^q) and ~p v ~q for p=T,q=F: p^q=F so ~(p^q)=T. ~p=F, ~q=T so ~p v ~q=T. Both T, matches De Morgan's law.",
+    "tip": "Write out both tables fully side by side before concluding equivalence — partial checking loses marks."
+  },
+  {
+    "t": "Converse, inverse, contrapositive",
+    "def": "For a conditional statement p -> q, the converse swaps the parts, the inverse negates both parts, and the contrapositive negates and swaps both parts.",
+    "points": [
+      "Original statement: p -> q.",
+      "Converse: q -> p (swap only).",
+      "Inverse: ~p -> ~q (negate only).",
+      "Contrapositive: ~q -> ~p (negate and swap).",
+      "The contrapositive is always logically equivalent to the original statement.",
+      "The converse and inverse are logically equivalent to each other but not to the original."
+    ],
+    "formula": "p -> q  ;  converse q -> p  ;  inverse ~p -> ~q  ;  contrapositive ~q -> ~p",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"p implies q\"] --> B[\"Converse: q implies p\"]\n  A --> C[\"Inverse: not p implies not q\"]\n  A --> D[\"Contrapositive: not q implies not p\"]" },
+    "example": "p: it rains, q: ground is wet. Converse: if ground is wet, it rains. Inverse: if it does not rain, ground is not wet. Contrapositive: if ground is not wet, it did not rain.",
+    "tip": "Clearly label each of the three statements separately — this is a standard 2-mark question."
+  },
+  {
+    "t": "Quantifiers and duality",
+    "def": "Quantifiers state whether a condition holds for all elements (universal) or for at least one element (existential). Duality swaps ^ with v and T with F in a statement pattern.",
+    "points": [
+      "Universal quantifier: for all x, written (for all x).",
+      "Existential quantifier: there exists x, written (there exists x).",
+      "Negation of 'for all x, p(x)' is 'there exists x, ~p(x)'.",
+      "Negation of 'there exists x, p(x)' is 'for all x, ~p(x)'.",
+      "Dual of a statement is formed by replacing ^ with v, v with ^, T with F, and F with T.",
+      "Duality is used to quickly derive a related true statement."
+    ],
+    "formula": "~(for all x, p(x)) = there exists x, ~p(x)",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"For all x p of x\"] -->|negate| B[\"There exists x not p of x\"]\n  C[\"There exists x p of x\"] -->|negate| D[\"For all x not p of x\"]" },
+    "example": "Negate 'for all x in N, x > 0': result is 'there exists x in N such that x is not greater than 0' i.e. x <= 0.",
+    "tip": "Remember quantifier negation flips the quantifier type AND negates the inner statement, both steps are needed for marks."
+  },
+  {
+    "t": "Switching circuits",
+    "def": "A switching circuit can be represented by a logical statement: switches in series behave like AND (^), switches in parallel behave like OR (v).",
+    "points": [
+      "Each switch is either closed (T, current flows) or open (F, no current).",
+      "Series connection: current flows only if both switches are closed, so it is p ^ q.",
+      "Parallel connection: current flows if either switch is closed, so it is p v q.",
+      "Write the circuit as a logical expression using ^ and v.",
+      "Simplify the expression using logical laws to design an equivalent simpler circuit.",
+      "The simplified expression tells you the minimum switches needed."
+    ],
+    "formula": "Series = p ^ q (AND)     Parallel = p v q (OR)",
+    "diagram": { "draw": "Draw a battery on the left connected by wires. For series: draw two switches p and q one after another on a single wire path to the bulb. For parallel: draw two separate wire branches, each with one switch (p and q), both branches meeting at the bulb." },
+    "example": "Circuit with switches p, (p ^ q) v (p ^ ~q) simplifies using distributive law to p ^ (q v ~q) = p ^ T = p, meaning only switch p is needed.",
+    "tip": "Draw the circuit diagram neatly with labelled switches — the diagram itself usually carries a separate mark."
+  }
+]

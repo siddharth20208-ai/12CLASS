@@ -1,0 +1,177 @@
+{
+  "solved": [
+    {
+      "topic": "Formulation of LPP",
+      "marks": 3,
+      "q": "A manufacturer produces chairs and tables. A chair requires 2 hours and a table requires 4 hours of labour. The workshop has at most 60 hours of labour available per day. Profit on a chair is Rs.20 and on a table is Rs.30. Formulate this as an LPP to maximise profit.",
+      "steps": [
+        "Let x = number of chairs produced, y = number of tables produced (decision variables).",
+        "Objective function (profit to maximise): Z = 20x + 30y.",
+        "Labour used: 2 hours per chair and 4 hours per table, available at most 60 hours, so constraint is 2x + 4y <= 60.",
+        "Since number of chairs and tables cannot be negative, add non-negativity constraints x >= 0, y >= 0.",
+        "Final LPP: Maximise Z = 20x + 30y subject to 2x + 4y <= 60, x >= 0, y >= 0."
+      ],
+      "ans": "Maximise Z = 20x + 30y subject to 2x + 4y <= 60, x >= 0, y >= 0."
+    },
+    {
+      "topic": "Graphical solution and feasible region",
+      "marks": 3,
+      "q": "Determine the feasible region graphically for the constraints x + y <= 4, x >= 0, y >= 0.",
+      "steps": [
+        "Convert x + y <= 4 to the equation x + y = 4 and plot this straight line.",
+        "Find intercepts of the line: put x = 0, get y = 4, giving point (0,4); put y = 0, get x = 4, giving point (4,0).",
+        "Test the origin (0,0) in the inequality x + y <= 4: 0 + 0 = 0 <= 4 is true, so the origin lies in the required region.",
+        "Shade the side of the line containing the origin, bounded also by x >= 0 and y >= 0 (first quadrant).",
+        "The feasible region is the triangle with vertices (0,0), (4,0) and (0,4), and it is a closed (bounded) region."
+      ],
+      "ans": "Feasible region is the triangle with vertices (0,0), (4,0), (0,4); it is bounded."
+    },
+    {
+      "topic": "Corner point method - maximisation",
+      "marks": 4,
+      "q": "Maximise Z = 3x + 4y subject to x + y <= 4, x >= 0, y >= 0.",
+      "steps": [
+        "Plot the line x + y = 4 with intercepts (4,0) and (0,4); test origin: 0 <= 4 true, so feasible region is the triangle (0,0), (4,0), (0,4).",
+        "List all corner points of the bounded feasible region: (0,0), (4,0), (0,4).",
+        "Evaluate Z = 3x + 4y at (0,0): Z = 3(0) + 4(0) = 0.",
+        "Evaluate Z at (4,0): Z = 3(4) + 4(0) = 12.",
+        "Evaluate Z at (0,4): Z = 3(0) + 4(4) = 16.",
+        "Compare the values 0, 12, 16: the maximum value of Z is 16, attained at (0,4)."
+      ],
+      "ans": "Maximum Z = 16 at x = 0, y = 4."
+    },
+    {
+      "topic": "Corner point method - maximisation with two constraints",
+      "marks": 4,
+      "q": "Maximise Z = 40x + 50y subject to 2x + y <= 18, x + 2y <= 12, x >= 0, y >= 0.",
+      "steps": [
+        "Find intercepts of 2x + y = 18: (9,0) and (0,18). Find intercepts of x + 2y = 12: (12,0) and (0,6).",
+        "Since both constraints must hold together, the usable x-intercept is the smaller value min(9,12) = 9, giving corner (9,0); the usable y-intercept is min(18,6) = 6, giving corner (0,6).",
+        "Find the point of intersection of 2x + y = 18 and x + 2y = 12 by solving simultaneously: multiply first by 2: 4x + 2y = 36; subtract second: 3x = 24, so x = 8, then y = 18 - 2(8) = 2, giving (8,2).",
+        "Corner points of the feasible region are (0,0), (9,0), (8,2), (0,6).",
+        "Evaluate Z = 40x + 50y: at (0,0) Z = 0; at (9,0) Z = 360; at (8,2) Z = 320 + 100 = 420; at (0,6) Z = 300.",
+        "Compare 0, 360, 420, 300: the maximum value is 420, attained at (8,2)."
+      ],
+      "ans": "Maximum Z = 420 at x = 8, y = 2."
+    },
+    {
+      "topic": "Corner point method - maximisation with two constraints (2)",
+      "marks": 4,
+      "q": "Maximise Z = 50x + 40y subject to 3x + 2y <= 12, x + 2y <= 8, x >= 0, y >= 0.",
+      "steps": [
+        "Find intercepts of 3x + 2y = 12: (4,0) and (0,6). Find intercepts of x + 2y = 8: (8,0) and (0,4).",
+        "Usable x-intercept is min(4,8) = 4, giving corner (4,0); usable y-intercept is min(6,4) = 4, giving corner (0,4).",
+        "Find intersection of 3x + 2y = 12 and x + 2y = 8 by subtracting: (3x+2y) - (x+2y) = 12 - 8, so 2x = 4, x = 2, then y = (8 - 2)/2 = 3, giving (2,3).",
+        "Corner points are (0,0), (4,0), (2,3), (0,4).",
+        "Evaluate Z = 50x + 40y: at (0,0) Z = 0; at (4,0) Z = 200; at (2,3) Z = 100 + 120 = 220; at (0,4) Z = 160.",
+        "Compare 0, 200, 220, 160: maximum Z = 220 is attained at (2,3)."
+      ],
+      "ans": "Maximum Z = 220 at x = 2, y = 3."
+    },
+    {
+      "topic": "Corner point method - minimisation (diet problem)",
+      "marks": 4,
+      "q": "A diet is to contain nutrients from two foods costing Rs.20 and Rs.10 per unit respectively. The mixture must satisfy x + 2y >= 40 and 3x + y >= 30, with x >= 0, y >= 0. Minimise the cost Z = 20x + 10y.",
+      "steps": [
+        "Find intercepts of x + 2y = 40: (40,0) and (0,20). Find intercepts of 3x + y = 30: (10,0) and (0,30).",
+        "Since both constraints are of type >=, the usable y-intercept is the larger value max(20,30) = 30, giving corner (0,30); checking (40,0): 3(40)+0 = 120 >= 30 holds, so (40,0) is also a feasible corner.",
+        "Find intersection of x + 2y = 40 and 3x + y = 30: from the second, y = 30 - 3x; substituting, x + 2(30-3x) = 40 gives x + 60 - 6x = 40, so -5x = -20, x = 4, y = 30 - 12 = 18, giving (4,18).",
+        "Corner points of the unbounded feasible region are (0,30), (4,18), (40,0).",
+        "Evaluate Z = 20x + 10y: at (0,30) Z = 300; at (4,18) Z = 80 + 180 = 260; at (40,0) Z = 800.",
+        "Since the region is unbounded above, compare only these corner values for the minimum: the least value is 260 at (4,18)."
+      ],
+      "ans": "Minimum Z = 260 at x = 4, y = 18."
+    },
+    {
+      "topic": "Corner point method - minimisation (2)",
+      "marks": 4,
+      "q": "Minimise Z = 50x + 70y subject to x + 2y >= 10, 2x + y >= 8, x >= 0, y >= 0.",
+      "steps": [
+        "Find intercepts of x + 2y = 10: (10,0) and (0,5). Find intercepts of 2x + y = 8: (4,0) and (0,8).",
+        "For the region satisfying both >= constraints, the usable x-intercept is max(10,4) = 10, giving (10,0); the usable y-intercept is max(5,8) = 8, giving (0,8).",
+        "Find intersection of x + 2y = 10 and 2x + y = 8: multiply second by 2: 4x + 2y = 16; subtract first: 3x = 6, x = 2, then y = (10 - 2)/2 = 4, giving (2,4).",
+        "Corner points of the unbounded feasible region are (10,0), (2,4), (0,8).",
+        "Evaluate Z = 50x + 70y: at (10,0) Z = 500; at (2,4) Z = 100 + 280 = 380; at (0,8) Z = 560.",
+        "The minimum of these values is 380, attained at (2,4)."
+      ],
+      "ans": "Minimum Z = 380 at x = 2, y = 4."
+    },
+    {
+      "topic": "Bounded vs unbounded feasible region",
+      "marks": 3,
+      "q": "Minimise Z = 3x + 2y subject to x + y >= 2, x >= 0, y >= 0. Discuss whether a maximum value of Z also exists.",
+      "steps": [
+        "Plot x + y = 2 with intercepts (2,0) and (0,2); testing (0,0): 0 >= 2 is false, so the origin is not in the feasible region.",
+        "The feasible region lies on the far side of the line from the origin and extends infinitely in the first quadrant, so it is unbounded.",
+        "Corner points of the feasible region are (2,0) and (0,2) (the line x+y=2 itself, plus the region above it).",
+        "Evaluate Z = 3x + 2y: at (2,0) Z = 6; at (0,2) Z = 4.",
+        "Since the region is unbounded and Z = 3x + 2y increases without limit as x or y increase further into the region, Z has no maximum, only a minimum at a corner point.",
+        "The minimum of the corner values 6 and 4 is 4, attained at (0,2)."
+      ],
+      "ans": "Minimum Z = 4 at (0,2); since the feasible region is unbounded, Z has no maximum value."
+    },
+    {
+      "topic": "Multiple optimal solutions",
+      "marks": 3,
+      "q": "Maximise Z = 4x + 4y subject to x + y <= 4, x >= 0, y >= 0, and comment on the number of optimal solutions.",
+      "steps": [
+        "Corner points of the feasible triangle (0,0), (4,0), (0,4) as the constraint line is x + y = 4.",
+        "Evaluate Z = 4x + 4y: at (0,0) Z = 0; at (4,0) Z = 16; at (0,4) Z = 16.",
+        "Both (4,0) and (0,4) give the same maximum value 16, because Z = 4x + 4y = 4(x+y) is a constant multiple of the binding constraint x + y = 4.",
+        "Since Z is parallel to the constraint line x + y = 4, every point on the segment joining (4,0) and (0,4) also gives Z = 4(x+y) = 4(4) = 16.",
+        "Hence the LPP has infinitely many optimal solutions, all lying on the line segment from (4,0) to (0,4)."
+      ],
+      "ans": "Maximum Z = 16, attained at every point on the segment joining (4,0) and (0,4) (infinitely many optimal solutions)."
+    },
+    {
+      "topic": "Formulation and solution combined",
+      "marks": 4,
+      "q": "A dealer deals in two items A and B. Item A needs Rs.1000 capital and occupies 1 sq.m, item B needs Rs.2000 capital and occupies 2 sq.m. Dealer has at most Rs.10000 capital and 10 sq.m of storage space. Profit on A is Rs.80 and on B is Rs.150 per unit. Formulate and solve the LPP to maximise profit.",
+      "steps": [
+        "Let x = number of units of A, y = number of units of B. Objective: Maximise Z = 80x + 150y.",
+        "Capital constraint: 1000x + 2000y <= 10000, i.e. x + 2y <= 10. Space constraint: x + 2y <= 10 (same ratio, since 1x+2y occupies capital 1000+2000 and space 1x+2y matches).",
+        "Note both constraints reduce to the same line x + 2y <= 10, together with x >= 0, y >= 0.",
+        "Corner points of the feasible triangle are (0,0), (10,0), (0,5) (intercepts of x + 2y = 10).",
+        "Evaluate Z = 80x + 150y: at (0,0) Z = 0; at (10,0) Z = 800; at (0,5) Z = 750.",
+        "Maximum of 0, 800, 750 is 800, attained at (10,0), so the dealer should stock only item A."
+      ],
+      "ans": "Maximise Z = 80x + 150y subject to x + 2y <= 10, x>=0, y>=0; maximum profit Z = Rs.800 at x = 10, y = 0."
+    },
+    {
+      "topic": "Translating 'at least' / 'at most' into constraints",
+      "marks": 3,
+      "q": "A company makes two products using two machines. Machine I is available for at most 12 hours and machine II for at least 4 hours per day. Each unit of product x needs 2 hours on machine I and 1 hour on machine II; each unit of product y needs 1 hour on machine I and 1 hour on machine II. Write the constraints and non-negativity conditions for this LPP.",
+      "steps": [
+        "Let x, y be the units of the two products made per day.",
+        "'At most 12 hours' on machine I translates to the inequality using <=: 2x + y <= 12.",
+        "'At least 4 hours' on machine II translates to the inequality using >=: x + y >= 4.",
+        "Add non-negativity constraints since production quantities cannot be negative: x >= 0, y >= 0.",
+        "Final set of constraints: 2x + y <= 12, x + y >= 4, x >= 0, y >= 0."
+      ],
+      "ans": "Constraints: 2x + y <= 12, x + y >= 4, x >= 0, y >= 0."
+    },
+    {
+      "topic": "Infeasible LPP (empty feasible region)",
+      "marks": 3,
+      "q": "Examine whether the LPP: Maximise Z = x + y subject to x + y <= 2, x + y >= 6, x >= 0, y >= 0 has a feasible solution.",
+      "steps": [
+        "Constraint 1 requires x + y to be at most 2; constraint 2 requires x + y to be at least 6.",
+        "For any non-negative x, y, the sum x + y cannot simultaneously be <= 2 and >= 6, since 2 < 6.",
+        "Plotting both lines x+y=2 and x+y=6 shows the two shaded half-planes (below the first line, above the second line) never overlap.",
+        "Hence there is no point (x,y) satisfying both constraints together with x >= 0, y >= 0.",
+        "The feasible region is empty, so the LPP has no feasible solution and Z cannot be optimised."
+      ],
+      "ans": "The feasible region is empty; the LPP has no feasible (hence no optimal) solution."
+    }
+  ],
+  "practice": [
+    { "topic": "Corner point method - maximisation", "q": "Maximise Z = x + 2y subject to x + y <= 6, x >= 0, y >= 0.", "hint": "Find corners (0,0), (6,0), (0,6) and compare Z values.", "ans": "Maximum Z = 12 at x = 0, y = 6." },
+    { "topic": "Corner point method - minimisation", "q": "Minimise Z = 5x + 4y subject to x + y >= 4, 2x + y >= 6, x >= 0, y >= 0.", "hint": "Find intersection of the two lines by elimination, then compare Z at the corners (4,0), (2,2), (0,6).", "ans": "Minimum Z = 18 at x = 2, y = 2." },
+    { "topic": "Corner point method - maximisation (simple)", "q": "Maximise Z = 2x + 3y subject to x + y <= 5, x >= 0, y >= 0.", "hint": "Corners are (0,0), (5,0), (0,5); substitute each into Z.", "ans": "Maximum Z = 15 at x = 0, y = 5." },
+    { "topic": "Formulation of LPP", "q": "A toy company makes cars and trucks. A car needs 3 hours and a truck needs 5 hours of assembly, with at most 45 hours available. Profit is Rs.60 per car and Rs.90 per truck. Formulate the LPP to maximise profit.", "hint": "Let x = cars, y = trucks; objective Z=60x+90y; constraint from assembly hours; add non-negativity.", "ans": "Maximise Z = 60x + 90y subject to 3x + 5y <= 45, x >= 0, y >= 0." },
+    { "topic": "Translating word constraints", "q": "A farmer needs at least 20 kg of nitrogen and at most 30 kg of phosphate from two fertilisers x and y, where x contributes 2 kg nitrogen and 1 kg phosphate per unit, and y contributes 1 kg nitrogen and 2 kg phosphate per unit. Write the constraints.", "hint": "'At least' uses >=, 'at most' uses <=; write one inequality for each nutrient plus non-negativity.", "ans": "2x + y >= 20, x + 2y <= 30, x >= 0, y >= 0." },
+    { "topic": "Bounded vs unbounded region", "q": "State whether the feasible region of x + y >= 3, x >= 0, y >= 0 is bounded or unbounded, and whether Z = 2x + 3y has a maximum.", "hint": "Check if the shaded region (away from origin) extends infinitely.", "ans": "The region is unbounded; Z = 2x + 3y has no maximum, only a minimum at a corner point." },
+    { "topic": "Multiple optimal solutions", "q": "For Maximise Z = 2x + 2y subject to x + y <= 5, x >= 0, y >= 0, state the nature of the optimal solution.", "hint": "Check if Z is a constant multiple of the binding constraint x + y = 5.", "ans": "Infinitely many optimal solutions, all on the segment joining (5,0) and (0,5), each giving Z = 10." },
+    { "topic": "Infeasible LPP", "q": "Check whether the constraints x + y <= 1, x + y >= 5, x >= 0, y >= 0 give a feasible region.", "hint": "Compare the two bounds on x + y; see if any non-negative x, y can satisfy both.", "ans": "No feasible region exists since x + y cannot be both <= 1 and >= 5 simultaneously." }
+  ]
+}

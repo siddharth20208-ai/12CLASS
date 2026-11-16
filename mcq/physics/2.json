@@ -1,0 +1,112 @@
+[
+  {
+    "q": "According to kinetic theory, the pressure of a gas is given by P equal to",
+    "o": [
+      "(1/3)(N/V) m v-bar^2",
+      "(2/3)(N/V) m v-bar^2",
+      "(N/V) m v-bar^2",
+      "(1/2)(N/V) m v-bar^2"
+    ],
+    "a": 0,
+    "why": "Kinetic theory gives P = (1/3)(N/V) m v-bar^2"
+  },
+  {
+    "q": "The rms speed of oxygen (M = 32 x 10^-3 kg/mol) at 300 K is closest to",
+    "o": [
+      "48 m/s",
+      "483 m/s",
+      "4830 m/s",
+      "150 m/s"
+    ],
+    "a": 1,
+    "why": "vrms = sqrt(3RT/M) = sqrt(3x8.314x300/0.032) ≈ 483.6 m/s"
+  },
+  {
+    "q": "If temperature of a gas is doubled (and molar mass unchanged), its rms speed becomes",
+    "o": [
+      "2 times",
+      "4 times",
+      "sqrt(2) times",
+      "unchanged"
+    ],
+    "a": 2,
+    "why": "vrms is proportional to sqrt(T), so doubling T multiplies vrms by sqrt(2)"
+  },
+  {
+    "q": "The law of equipartition of energy states that the average energy per degree of freedom of a molecule is",
+    "o": [
+      "kT",
+      "2kT",
+      "(3/2)kT",
+      "(1/2)kT"
+    ],
+    "a": 3,
+    "why": "Each degree of freedom contributes (1/2)kT of average energy"
+  },
+  {
+    "q": "The mean free path of gas molecules is given by",
+    "o": [
+      "lambda = 1/(sqrt(2) pi n d^2)",
+      "lambda = sqrt(2) pi n d^2",
+      "lambda = n d^2 / sqrt(2) pi",
+      "lambda = pi n d^2"
+    ],
+    "a": 0,
+    "why": "Mean free path formula: lambda = 1/(sqrt(2) pi n d^2)"
+  },
+  {
+    "q": "If the number density n of gas molecules is increased while diameter d stays the same, the mean free path",
+    "o": [
+      "increases",
+      "decreases",
+      "stays the same",
+      "becomes zero"
+    ],
+    "a": 1,
+    "why": "lambda is inversely proportional to n, so increasing n decreases lambda"
+  },
+  {
+    "q": "The emissivity e of a body is defined as the ratio of",
+    "o": [
+      "its temperature to that of a blackbody",
+      "its absorptive power to its emissive power",
+      "its emissive power to that of a blackbody at the same temperature",
+      "its emissive power to its absorptive power"
+    ],
+    "a": 2,
+    "why": "e = emissive power of body / emissive power of blackbody at same temperature"
+  },
+  {
+    "q": "According to Stefan-Boltzmann law, the energy radiated per unit area per unit time by a blackbody is proportional to",
+    "o": [
+      "T",
+      "T^2",
+      "T^3",
+      "T^4"
+    ],
+    "a": 3,
+    "why": "Stefan-Boltzmann law: E = sigma T^4"
+  },
+  {
+    "q": "Wien's displacement law states that lambda(max) T equals",
+    "o": [
+      "a universal constant b",
+      "zero",
+      "the Stefan constant sigma",
+      "a value that depends on the material"
+    ],
+    "a": 0,
+    "why": "Wien's law: lambda(max) T = b, a universal constant ≈ 2.9 x 10^-3 m K"
+  },
+  {
+    "q": "If the surface temperature of a star increases, the wavelength at which it emits maximum intensity",
+    "o": [
+      "increases",
+      "decreases",
+      "stays the same",
+      "becomes infinite"
+    ],
+    "a": 1,
+    "why": "By Wien's law, lambda(max) is inversely proportional to T, so lambda(max) decreases as T increases"
+  }
+]

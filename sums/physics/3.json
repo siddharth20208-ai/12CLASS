@@ -1,0 +1,118 @@
+{
+  "solved": [
+    {
+      "topic": "First law of thermodynamics",
+      "marks": 2,
+      "q": "A system absorbs 2000 J of heat and does 800 J of work on its surroundings. Find the change in internal energy of the system.",
+      "steps": [
+        "Given: dQ = 2000 J, dW = 800 J.",
+        "Formula (first law): dQ = dU + dW.",
+        "Rearranging: dU = dQ - dW.",
+        "Substitution: dU = 2000 - 800.",
+        "Calculation: dU = 1200 J."
+      ],
+      "ans": "dU = 1200 J (internal energy increases by 1200 J)"
+    },
+    {
+      "topic": "Isothermal work done by gas",
+      "marks": 3,
+      "q": "2 moles of an ideal gas expand isothermally at 300 K from volume V to 2V. Find the work done by the gas. (R = 8.314 J/mol K, ln2 = 0.6931)",
+      "steps": [
+        "Given: n = 2 mol, T = 300 K, V2/V1 = 2, R = 8.314 J/mol K.",
+        "Formula (isothermal work): W = nRT ln(V2/V1).",
+        "Substitution: W = 2 x 8.314 x 300 x ln(2).",
+        "Calculation: 2 x 8.314 x 300 = 4988.4; W = 4988.4 x 0.6931.",
+        "Calculation: W = 3457.7 J (approx 3.46 x 10^3 J)."
+      ],
+      "ans": "W = 3.46 x 10^3 J"
+    },
+    {
+      "topic": "Adiabatic process",
+      "marks": 2,
+      "q": "In an adiabatic process a gas does 150 J of work on its surroundings. Find the change in its internal energy.",
+      "steps": [
+        "Given: dW = 150 J (work done by gas), dQ = 0 (adiabatic).",
+        "Formula (first law for adiabatic process): dQ = dU + dW, with dQ = 0, so dU = -dW.",
+        "Substitution: dU = -150 J.",
+        "Calculation: dU = -150 J, i.e. internal energy decreases."
+      ],
+      "ans": "dU = -150 J (decrease of 150 J; temperature of gas falls)"
+    },
+    {
+      "topic": "Work done at constant pressure (area under P-V curve)",
+      "marks": 2,
+      "q": "A gas at a constant pressure of 1.5 x 10^5 Pa expands so that its volume changes from 1 x 10^-3 m^3 to 2.5 x 10^-3 m^3. Find the work done by the gas.",
+      "steps": [
+        "Given: P = 1.5 x 10^5 Pa, V1 = 1 x 10^-3 m^3, V2 = 2.5 x 10^-3 m^3.",
+        "Formula (isobaric work = area under P-V curve): W = P(V2 - V1).",
+        "Substitution: V2 - V1 = 2.5 x 10^-3 - 1 x 10^-3 = 1.5 x 10^-3 m^3.",
+        "Calculation: W = 1.5 x 10^5 x 1.5 x 10^-3.",
+        "Calculation: W = 225 J."
+      ],
+      "ans": "W = 225 J"
+    },
+    {
+      "topic": "Efficiency of a heat engine",
+      "marks": 2,
+      "q": "A heat engine absorbs 600 J of heat from the source and rejects 400 J to the sink in each cycle. Find the work done per cycle and the efficiency of the engine.",
+      "steps": [
+        "Given: Q1 = 600 J (absorbed), Q2 = 400 J (rejected).",
+        "Formula: W = Q1 - Q2 and efficiency eta = W/Q1.",
+        "Substitution: W = 600 - 400 = 200 J.",
+        "Calculation: eta = 200/600 = 1/3 = 0.333.",
+        "Calculation: eta = 33.3 percent."
+      ],
+      "ans": "W = 200 J, eta = 33.3 percent"
+    },
+    {
+      "topic": "Carnot engine efficiency",
+      "marks": 3,
+      "q": "A Carnot engine operates between a source at 500 K and a sink at 300 K. If it absorbs 2000 J of heat from the source, find (i) its efficiency and (ii) the heat rejected to the sink.",
+      "steps": [
+        "Given: T1 = 500 K, T2 = 300 K, Q1 = 2000 J.",
+        "Formula (Carnot efficiency): eta = 1 - T2/T1.",
+        "Substitution: eta = 1 - 300/500 = 1 - 0.6 = 0.4, i.e. 40 percent.",
+        "Formula: eta = 1 - Q2/Q1, so Q2 = Q1(1 - eta).",
+        "Substitution: Q2 = 2000 x (1 - 0.4) = 2000 x 0.6.",
+        "Calculation: Q2 = 1200 J."
+      ],
+      "ans": "eta = 40 percent, Q2 = 1200 J"
+    },
+    {
+      "topic": "Coefficient of performance of a Carnot refrigerator",
+      "marks": 3,
+      "q": "A Carnot refrigerator maintains the temperature inside at 270 K while the room temperature outside is 300 K. Find its coefficient of performance.",
+      "steps": [
+        "Given: T2 (cold, inside) = 270 K, T1 (hot, room) = 300 K.",
+        "Formula (Carnot refrigerator COP): COP = T2/(T1 - T2).",
+        "Substitution: T1 - T2 = 300 - 270 = 30 K.",
+        "Calculation: COP = 270/30.",
+        "Calculation: COP = 9 (a dimensionless number, no units)."
+      ],
+      "ans": "COP = 9"
+    },
+    {
+      "topic": "Coefficient of performance from heat and work (general refrigerator)",
+      "marks": 4,
+      "q": "A refrigerator removes 263 J of heat from the cold chamber for every 40 J of work done on it by the compressor in one cycle. Find (i) the coefficient of performance and (ii) the heat rejected to the surroundings per cycle.",
+      "steps": [
+        "Given: Q2 = 263 J (heat removed from cold body), W = 40 J (work done on refrigerator).",
+        "Formula: COP = Q2/W.",
+        "Substitution: COP = 263/40.",
+        "Calculation: COP = 6.575.",
+        "Formula (energy conservation for refrigerator): Q1 = W + Q2.",
+        "Substitution: Q1 = 40 + 263.",
+        "Calculation: Q1 = 303 J (heat rejected to surroundings)."
+      ],
+      "ans": "COP = 6.575, Q1 = 303 J"
+    }
+  ],
+  "practice": [
+    { "topic": "First law of thermodynamics", "q": "A gas releases 300 J of heat while 500 J of work is done on it. Find the change in its internal energy.", "hint": "dU = dQ - dW; take dQ = -300 J (heat released), dW = -500 J (work done on gas).", "ans": "dU = 200 J (increase)" },
+    { "topic": "Isothermal work done by gas", "q": "1 mole of an ideal gas is compressed isothermally at 400 K so that its volume is halved. Find the work done by the gas. (R = 8.314 J/mol K, ln2 = 0.6931)", "hint": "W = nRT ln(V2/V1) with V2/V1 = 1/2, so W = -nRT ln2.", "ans": "W = -2305 J (work done ON the gas by surroundings)" },
+    { "topic": "Adiabatic compression", "q": "A gas is compressed adiabatically and 250 J of work is done on it. Find the change in internal energy.", "hint": "dQ = 0, so dU = -dW; work done BY gas is -250 J here.", "ans": "dU = 250 J (increase)" },
+    { "topic": "Isobaric work from P-V graph", "q": "A gas at constant pressure 2 x 10^5 Pa is compressed from 5 x 10^-3 m^3 to 3 x 10^-3 m^3. Find the work done by the gas.", "hint": "W = P(V2 - V1); V2 < V1 gives negative work.", "ans": "W = -400 J" },
+    { "topic": "Efficiency and heat rejected", "q": "An engine with efficiency 25 percent absorbs 1600 J of heat from the source per cycle. Find the heat rejected and the work done per cycle.", "hint": "eta = W/Q1 gives W; then Q2 = Q1 - W.", "ans": "W = 400 J, Q2 = 1200 J" },
+    { "topic": "Carnot efficiency and sink temperature", "q": "A Carnot engine has an efficiency of 60 percent when the source is at 750 K. Find the temperature of the sink.", "hint": "eta = 1 - T2/T1, solve for T2.", "ans": "T2 = 300 K" }
+  ]
+}

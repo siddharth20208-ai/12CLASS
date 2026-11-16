@@ -1,0 +1,214 @@
+{
+  "solved": [
+    {
+      "topic": "Probability Mass Function (p.m.f.)",
+      "marks": 2,
+      "q": "Check whether the following is a valid probability distribution: X: 0, 1, 2, 3 and P(X): 0.1, 0.3, 0.4, 0.2",
+      "steps": [
+        "A probability distribution is valid if every P(X) >= 0 and the sum of all P(X) equals 1.",
+        "Each value 0.1, 0.3, 0.4, 0.2 is non-negative.",
+        "Sum = 0.1 + 0.3 + 0.4 + 0.2 = 1"
+      ],
+      "ans": "Valid probability distribution, since all probabilities are non-negative and their sum is 1"
+    },
+    {
+      "topic": "Finding the Constant k in a Distribution",
+      "marks": 3,
+      "q": "If X is a discrete random variable with p.m.f. P(X = x) = kx for x = 1, 2, 3, 4, find the value of k",
+      "steps": [
+        "Using the property that total probability must be 1: sum of P(X=x) for all x = 1",
+        "k(1) + k(2) + k(3) + k(4) = 1",
+        "k(1 + 2 + 3 + 4) = 1",
+        "10k = 1",
+        "k = 1/10 = 0.1"
+      ],
+      "ans": "k = 0.1"
+    },
+    {
+      "topic": "Finding the Constant k in a Distribution",
+      "marks": 3,
+      "q": "If f(x) = kx for 0 <= x <= 2 and f(x) = 0 otherwise is the p.d.f. of a continuous random variable X, find k",
+      "steps": [
+        "Using the property that total probability for a p.d.f. is 1: integral of f(x) dx over the whole range = 1",
+        "integral of kx dx from 0 to 2 = 1",
+        "k [x^2/2] from 0 to 2 = 1",
+        "k (4/2 - 0) = 1",
+        "2k = 1",
+        "k = 1/2"
+      ],
+      "ans": "k = 1/2"
+    },
+    {
+      "topic": "Expectation (Mean) and Variance",
+      "marks": 4,
+      "q": "For the discrete random variable X with P(X=0) = 0.2, P(X=1) = 0.5, P(X=2) = 0.3, find Mean E(X) and Variance V(X)",
+      "steps": [
+        "Using the formula for mean: E(X) = sum of x . P(x)",
+        "E(X) = 0(0.2) + 1(0.5) + 2(0.3) = 0 + 0.5 + 0.6 = 1.1",
+        "Using the formula E(X^2) = sum of x^2 . P(x)",
+        "E(X^2) = 0(0.2) + 1(0.5) + 4(0.3) = 0 + 0.5 + 1.2 = 1.7",
+        "Using the variance formula: V(X) = E(X^2) - [E(X)]^2",
+        "V(X) = 1.7 - (1.1)^2 = 1.7 - 1.21 = 0.49"
+      ],
+      "ans": "E(X) = 1.1, V(X) = 0.49"
+    },
+    {
+      "topic": "Expectation (Mean) and Variance",
+      "marks": 3,
+      "q": "For the discrete random variable X with P(X=-1) = 0.3, P(X=0) = 0.4, P(X=1) = 0.3, find Mean E(X) and Variance V(X)",
+      "steps": [
+        "Using the formula for mean: E(X) = sum of x . P(x)",
+        "E(X) = (-1)(0.3) + 0(0.4) + 1(0.3) = -0.3 + 0 + 0.3 = 0",
+        "Using the formula E(X^2) = sum of x^2 . P(x)",
+        "E(X^2) = 1(0.3) + 0(0.4) + 1(0.3) = 0.3 + 0 + 0.3 = 0.6",
+        "Using the variance formula: V(X) = E(X^2) - [E(X)]^2",
+        "V(X) = 0.6 - 0^2 = 0.6"
+      ],
+      "ans": "E(X) = 0, V(X) = 0.6"
+    },
+    {
+      "topic": "Cumulative Distribution Function",
+      "marks": 3,
+      "q": "For the discrete random variable X with P(X=1) = 0.2, P(X=2) = 0.5, P(X=3) = 0.3, find the cumulative distribution function value F(2) and hence find P(X >= 2)",
+      "steps": [
+        "Using the definition of c.d.f.: F(x) = P(X <= x) = sum of all probabilities up to x",
+        "F(2) = P(X=1) + P(X=2) = 0.2 + 0.5 = 0.7",
+        "Using the complement rule: P(X >= 2) = 1 - P(X < 2) = 1 - P(X=1)",
+        "P(X >= 2) = 1 - 0.2 = 0.8"
+      ],
+      "ans": "F(2) = 0.7, P(X >= 2) = 0.8"
+    },
+    {
+      "topic": "Cumulative Distribution Function",
+      "marks": 4,
+      "q": "If the p.d.f. of a continuous random variable X is f(x) = 2x for 0 <= x <= 1 and f(x) = 0 otherwise, find the c.d.f. F(x) and hence find P(0.2 <= X <= 0.5)",
+      "steps": [
+        "Using the definition of c.d.f.: F(x) = integral of f(t) dt from 0 to x",
+        "F(x) = integral of 2t dt from 0 to x = [t^2] from 0 to x = x^2",
+        "So F(x) = x^2 for 0 <= x <= 1",
+        "Using P(a <= X <= b) = F(b) - F(a)",
+        "P(0.2 <= X <= 0.5) = F(0.5) - F(0.2) = (0.5)^2 - (0.2)^2",
+        "P(0.2 <= X <= 0.5) = 0.25 - 0.04 = 0.21"
+      ],
+      "ans": "F(x) = x^2, P(0.2 <= X <= 0.5) = 0.21"
+    },
+    {
+      "topic": "Probability Density Function (p.d.f.)",
+      "marks": 4,
+      "q": "Show that f(x) = (3/8)x^2 for 0 <= x <= 2 and f(x) = 0 otherwise is a valid p.d.f., and find P(X > 1)",
+      "steps": [
+        "A function is a valid p.d.f. if f(x) >= 0 everywhere and the total integral over its range is 1.",
+        "f(x) = (3/8)x^2 >= 0 for all x in [0, 2]",
+        "Check total probability: integral of (3/8)x^2 dx from 0 to 2 = (3/8)[x^3/3] from 0 to 2",
+        "= (1/8)[x^3] from 0 to 2 = (1/8)(8 - 0) = 1, so f(x) is a valid p.d.f.",
+        "Using P(X > 1) = integral of f(x) dx from 1 to 2",
+        "P(X > 1) = (1/8)[x^3] from 1 to 2 = (1/8)(8 - 1) = 7/8"
+      ],
+      "ans": "f(x) is a valid p.d.f., and P(X > 1) = 7/8"
+    },
+    {
+      "topic": "Expectation (Mean) and Variance",
+      "marks": 3,
+      "q": "If the p.d.f. of a continuous random variable X is f(x) = 2x for 0 <= x <= 1 and f(x) = 0 otherwise, find E(X)",
+      "steps": [
+        "Using the formula for mean of a continuous random variable: E(X) = integral of x . f(x) dx over the range",
+        "E(X) = integral of x . 2x dx from 0 to 1 = integral of 2x^2 dx from 0 to 1",
+        "E(X) = [2x^3/3] from 0 to 1",
+        "E(X) = 2/3 - 0 = 2/3"
+      ],
+      "ans": "E(X) = 2/3"
+    },
+    {
+      "topic": "Expectation (Mean) and Variance",
+      "marks": 4,
+      "q": "If the p.d.f. of a continuous random variable X is f(x) = 2x for 0 <= x <= 1 and f(x) = 0 otherwise, find the variance V(X)",
+      "steps": [
+        "From the earlier result, E(X) = 2/3",
+        "Using the formula E(X^2) = integral of x^2 . f(x) dx over the range",
+        "E(X^2) = integral of x^2 . 2x dx from 0 to 1 = integral of 2x^3 dx from 0 to 1",
+        "E(X^2) = [2x^4/4] from 0 to 1 = 1/2",
+        "Using the variance formula: V(X) = E(X^2) - [E(X)]^2",
+        "V(X) = 1/2 - (2/3)^2 = 1/2 - 4/9 = (9 - 8)/18 = 1/18"
+      ],
+      "ans": "V(X) = 1/18"
+    },
+    {
+      "topic": "Discrete and Continuous Random Variables",
+      "marks": 3,
+      "q": "Two fair coins are tossed simultaneously. If X denotes the number of heads obtained, construct the probability distribution table of X and verify it is a valid p.m.f.",
+      "steps": [
+        "Sample space when two coins are tossed: {HH, HT, TH, TT}, each with probability 1/4.",
+        "X = number of heads, so X can take values 0, 1, 2.",
+        "P(X=0) = P(TT) = 1/4; P(X=1) = P(HT) + P(TH) = 1/4 + 1/4 = 2/4 = 1/2; P(X=2) = P(HH) = 1/4",
+        "Distribution table: X: 0, 1, 2 and P(X): 1/4, 1/2, 1/4",
+        "Check: sum of probabilities = 1/4 + 1/2 + 1/4 = 1, so it is a valid p.m.f."
+      ],
+      "ans": "P(X=0)=1/4, P(X=1)=1/2, P(X=2)=1/4; valid p.m.f. since sum = 1"
+    },
+    {
+      "topic": "Finding the Constant k in a Distribution",
+      "marks": 4,
+      "q": "A discrete random variable X has p.m.f. P(X=x) = kx^2 for x = 1, 2, 3. Find k and hence find E(X)",
+      "steps": [
+        "Using the property that total probability must be 1: sum of P(X=x) for all x = 1",
+        "k(1)^2 + k(2)^2 + k(3)^2 = 1",
+        "k(1 + 4 + 9) = 1",
+        "14k = 1, so k = 1/14",
+        "Using the formula for mean: E(X) = sum of x . P(x)",
+        "E(X) = 1.k(1) + 2.k(4) + 3.k(9) = k(1 + 8 + 27) = 36k",
+        "E(X) = 36/14 = 18/7"
+      ],
+      "ans": "k = 1/14, E(X) = 18/7"
+    }
+  ],
+  "practice": [
+    {
+      "topic": "Probability Mass Function (p.m.f.)",
+      "q": "Check whether X: 1, 2, 3 and P(X): 0.3, 0.5, 0.4 is a valid probability distribution",
+      "hint": "Check that all probabilities are non-negative and that their sum equals 1.",
+      "ans": "Not valid, since 0.3 + 0.5 + 0.4 = 1.2, which is greater than 1"
+    },
+    {
+      "topic": "Finding the Constant k in a Distribution",
+      "q": "A discrete random variable X has p.m.f. P(X=x) = kx for x = 1, 2, 3, 5 (sum of the x values is 11). Find k",
+      "hint": "Use sum of P(x) = 1, so k(1+2+3+5) = 1.",
+      "ans": "k = 1/11"
+    },
+    {
+      "topic": "Finding the Constant k in a Distribution",
+      "q": "If f(x) = k(1-x) for 0 <= x <= 1 and f(x) = 0 otherwise is a p.d.f., find k",
+      "hint": "Set integral of f(x) dx from 0 to 1 equal to 1 and solve for k.",
+      "ans": "k = 2"
+    },
+    {
+      "topic": "Expectation (Mean) and Variance",
+      "q": "For X with P(X=1)=0.4, P(X=2)=0.1, P(X=3)=0.5, find E(X) and V(X)",
+      "hint": "Find E(X) = sum x.P(x) and E(X^2) = sum x^2.P(x), then use V(X) = E(X^2) - [E(X)]^2.",
+      "ans": "E(X) = 2.1, V(X) = 0.89"
+    },
+    {
+      "topic": "Cumulative Distribution Function",
+      "q": "For X with P(X=1)=0.25, P(X=2)=0.35, P(X=3)=0.4, find F(1) and P(X > 1)",
+      "hint": "F(1) = P(X=1); use P(X>1) = 1 - F(1).",
+      "ans": "F(1) = 0.25, P(X > 1) = 0.75"
+    },
+    {
+      "topic": "Cumulative Distribution Function",
+      "q": "If f(x) = 3x^2 for 0 <= x <= 1 and f(x) = 0 otherwise, find F(x) and P(X <= 0.5)",
+      "hint": "Integrate f(t) from 0 to x to get F(x) = x^3, then substitute x = 0.5.",
+      "ans": "F(x) = x^3, P(X <= 0.5) = 0.125"
+    },
+    {
+      "topic": "Probability Density Function (p.d.f.)",
+      "q": "Verify that f(x) = (1/4) for 0 <= x <= 4 and f(x) = 0 otherwise is a valid p.d.f., and find P(1 <= X <= 3)",
+      "hint": "Integrate f(x) over [0,4] to check it equals 1, then integrate over [1,3] for the probability.",
+      "ans": "Valid p.d.f. since total integral = 1; P(1 <= X <= 3) = 1/2"
+    },
+    {
+      "topic": "Expectation (Mean) and Variance",
+      "q": "If f(x) = 3x^2 for 0 <= x <= 1 and f(x) = 0 otherwise, find E(X)",
+      "hint": "Use E(X) = integral of x.f(x) dx from 0 to 1.",
+      "ans": "E(X) = 3/4"
+    }
+  ]
+}

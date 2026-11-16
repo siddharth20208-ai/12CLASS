@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Glycerol, which has three -OH groups, is classified as",
+    "o": [
+      "Monohydric alcohol",
+      "Dihydric alcohol",
+      "Trihydric alcohol",
+      "Phenol"
+    ],
+    "a": 2,
+    "why": "Glycerol has three hydroxyl groups, making it a trihydric alcohol."
+  },
+  {
+    "q": "The IUPAC name of CH3-O-CH3 is",
+    "o": [
+      "Dimethyl ether",
+      "Methoxyethane",
+      "Ethanol",
+      "Methoxymethane"
+    ],
+    "a": 3,
+    "why": "Ethers are named as alkoxyalkanes in IUPAC; CH3-O-CH3 is methoxymethane."
+  },
+  {
+    "q": "The industrial cumene process converts cumene into phenol and which useful by-product?",
+    "o": [
+      "Acetone",
+      "Formaldehyde",
+      "Acetic acid",
+      "Ethanol"
+    ],
+    "a": 0,
+    "why": "Cumene hydroperoxide, on acid hydrolysis, gives phenol and acetone as a valuable by-product."
+  },
+  {
+    "q": "Phenol is more acidic than ethanol mainly because",
+    "o": [
+      "Phenol has a lower molecular mass",
+      "The phenoxide ion is stabilised by resonance with the ring",
+      "Phenol has more hydrogen bonding",
+      "Ethanol is a stronger base"
+    ],
+    "a": 1,
+    "why": "Resonance delocalises the negative charge of phenoxide into the benzene ring, stabilising it, unlike the alkoxide ion."
+  },
+  {
+    "q": "A nitro (-NO2) substituent on the phenol ring, compared to unsubstituted phenol, will",
+    "o": [
+      "Decrease acidity",
+      "Have no effect on acidity",
+      "Increase acidity",
+      "Convert phenol into an alcohol"
+    ],
+    "a": 2,
+    "why": "Electron-withdrawing -NO2 further stabilises the phenoxide ion by resonance/induction, increasing acidity."
+  },
+  {
+    "q": "In Williamson's ether synthesis, R-O-Na reacts with R'-X mainly via",
+    "o": [
+      "SN1 mechanism",
+      "Electrophilic addition",
+      "Free radical mechanism",
+      "SN2 mechanism"
+    ],
+    "a": 3,
+    "why": "The alkoxide nucleophile attacks a primary alkyl halide in a single-step SN2 displacement."
+  },
+  {
+    "q": "In the Lucas test, which alcohol gives turbidity immediately at room temperature?",
+    "o": [
+      "Tertiary alcohol",
+      "Secondary alcohol",
+      "Primary alcohol",
+      "None react with Lucas reagent"
+    ],
+    "a": 0,
+    "why": "Tertiary alcohols form the most stable carbocation fastest via SN1, giving immediate turbidity with Lucas reagent."
+  },
+  {
+    "q": "A neutral FeCl3 solution added to phenol gives",
+    "o": [
+      "No colour change",
+      "A violet/purple colouration",
+      "A white precipitate",
+      "Effervescence of CO2"
+    ],
+    "a": 1,
+    "why": "Phenols form a coloured complex with neutral FeCl3, giving a characteristic violet/purple colour; alcohols do not react."
+  },
+  {
+    "q": "Dehydration of an alcohol with conc. H2SO4 at about 413 K with excess alcohol mainly gives",
+    "o": [
+      "An alkene",
+      "A carboxylic acid",
+      "An ether",
+      "An aldehyde"
+    ],
+    "a": 2,
+    "why": "At the lower temperature of about 413 K (140 C), intermolecular dehydration dominates, forming an ether."
+  },
+  {
+    "q": "Ethanol + acetic acid with conc. H2SO4 catalyst undergoes Fischer esterification to give",
+    "o": [
+      "Diethyl ether and acetic acid",
+      "Acetaldehyde and water",
+      "Methyl acetate and water",
+      "Ethyl acetate and water"
+    ],
+    "a": 3,
+    "why": "Acid-catalysed esterification of ethanol with acetic acid produces ethyl acetate and water."
+  }
+]

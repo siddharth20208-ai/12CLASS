@@ -1,0 +1,112 @@
+[
+  {
+    "q": "The Oparin-Haldane theory proposes that early earth's atmosphere was:",
+    "o": [
+      "Oxidizing, rich in O2",
+      "Reducing, with no free oxygen",
+      "Mostly nitrogen and oxygen",
+      "Identical to today's atmosphere"
+    ],
+    "a": 1,
+    "why": "Chemical evolution theory requires a reducing atmosphere (CH4, NH3, H2, H2O) with no free O2."
+  },
+  {
+    "q": "The Miller-Urey experiment used electric sparks to simulate which natural energy source?",
+    "o": [
+      "Sunlight",
+      "Volcanic heat",
+      "Lightning",
+      "Cosmic rays"
+    ],
+    "a": 2,
+    "why": "Sparks passed through the gas mixture simulated lightning on early earth."
+  },
+  {
+    "q": "The product detected after running the Miller-Urey apparatus for about a week was mainly:",
+    "o": [
+      "DNA",
+      "Proteins",
+      "Chlorophyll",
+      "Amino acids"
+    ],
+    "a": 3,
+    "why": "Analysis of the collected liquid showed formation of simple amino acids like glycine."
+  },
+  {
+    "q": "The phrase 'survival of the fittest' is most closely associated with:",
+    "o": [
+      "Darwin's natural selection",
+      "Hardy-Weinberg principle",
+      "Oparin-Haldane theory",
+      "Mendel's laws"
+    ],
+    "a": 0,
+    "why": "Darwin's theory of natural selection describes differential survival of fitter individuals."
+  },
+  {
+    "q": "In Hardy-Weinberg equilibrium with alleles of frequency p and q, which equation is correct?",
+    "o": [
+      "p + q = 2",
+      "p^2 + 2pq + q^2 = 1",
+      "p^2 + q^2 = 1",
+      "p x q = 1"
+    ],
+    "a": 1,
+    "why": "Genotype frequencies of a two-allele locus sum to 1: p^2 + 2pq + q^2 = 1."
+  },
+  {
+    "q": "If the recessive allele frequency q = 0.2 in a Hardy-Weinberg population, the heterozygote frequency (2pq) is:",
+    "o": [
+      "0.04",
+      "0.16",
+      "0.32",
+      "0.64"
+    ],
+    "a": 2,
+    "why": "p = 0.8, q = 0.2, so 2pq = 2 x 0.8 x 0.2 = 0.32."
+  },
+  {
+    "q": "Forelimbs of frog, bird and human, similar in basic bone structure but different in function, are an example of:",
+    "o": [
+      "Analogous organs",
+      "Connecting links",
+      "Vestigial organs",
+      "Homologous organs"
+    ],
+    "a": 3,
+    "why": "Same structure/origin but different function defines homologous organs."
+  },
+  {
+    "q": "Wings of birds and insects, similar in function but different in structural origin, illustrate:",
+    "o": [
+      "Analogy",
+      "Vestigial structures",
+      "Homology",
+      "Linkage"
+    ],
+    "a": 0,
+    "why": "Same function but different structural origin is the definition of analogous organs."
+  },
+  {
+    "q": "Stabilizing selection in human birth weight favours:",
+    "o": [
+      "Both extreme weights",
+      "The average (intermediate) birth weight",
+      "The heaviest babies only",
+      "The lightest babies only"
+    ],
+    "a": 1,
+    "why": "Stabilizing selection favours the intermediate phenotype and removes both extremes."
+  },
+  {
+    "q": "Directional selection, as seen in antibiotic resistance in bacteria, shifts the population:",
+    "o": [
+      "Towards the average phenotype",
+      "Towards both extremes simultaneously",
+      "Towards one extreme phenotype over time",
+      "Does not change allele frequency"
+    ],
+    "a": 2,
+    "why": "Directional selection favours one extreme, progressively shifting the population mean that way."
+  }
+]

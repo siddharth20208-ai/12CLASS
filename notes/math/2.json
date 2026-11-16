@@ -1,0 +1,98 @@
+[
+  {
+    "t": "Sine rule, cosine rule, projection formulae",
+    "def": "The sine rule relates the sides of a triangle to the sine of opposite angles; the cosine rule gives any angle from all three sides; the projection formula writes each side as the sum of projections of the other two.",
+    "points": [
+      "Sine rule: a/sin A = b/sin B = c/sin C.",
+      "Use sine rule when you know two angles and one side, or two sides and a non-included angle.",
+      "Cosine rule: cos A = (b^2+c^2-a^2)/(2bc), similarly for cos B and cos C.",
+      "Use cosine rule when all three sides are known, or two sides with included angle.",
+      "Projection formula: a = b cos C + c cos B (and similarly for b, c).",
+      "Choose the rule based on which sides/angles are already known."
+    ],
+    "formula": "a/sinA = b/sinB = c/sinC    cosA = (b^2+c^2-a^2)/(2bc)",
+    "diagram": { "draw": "Draw triangle ABC with vertices labelled A, B, C. Label the sides opposite to each vertex as a (opposite A), b (opposite B), c (opposite C)." },
+    "example": "a=7,b=8,c=5: cos C = (49+64-25)/(2*7*8) = 88/112 = 11/14, so C = cos^-1(11/14) approx 38 degrees.",
+    "tip": "Write which rule you are using by name before applying it — this shows clear method to the examiner."
+  },
+  {
+    "t": "Inverse trig functions and principal values",
+    "def": "Inverse trig functions give the unique angle, called the principal value, lying in a fixed restricted range that produces the given ratio.",
+    "points": [
+      "sin^-1 x has range [-pi/2, pi/2].",
+      "cos^-1 x has range [0, pi].",
+      "tan^-1 x has range (-pi/2, pi/2).",
+      "Principal value must always lie in these ranges, even if other angles give the same ratio.",
+      "Domain restrictions: sin^-1 and cos^-1 need -1<=x<=1; tan^-1 is defined for all real x.",
+      "Always check the sign and range before stating the final answer."
+    ],
+    "formula": "sin^-1: [-pi/2,pi/2]  cos^-1: [0,pi]  tan^-1: (-pi/2,pi/2)",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Given ratio value\"] --> B[\"Check function domain\"]\n  B --> C[\"Pick angle in principal range\"]\n  C --> D[\"State principal value\"]" },
+    "example": "sin^-1(1/2) = pi/6, not 5pi/6, because pi/6 lies in the principal range [-pi/2, pi/2].",
+    "tip": "Always mention 'principal value' in your final answer line to show you checked the range."
+  },
+  {
+    "t": "Properties of inverse trig functions",
+    "def": "Standard identities simplify sums, differences and compositions of inverse trig functions, such as sin^-1 x + cos^-1 x = pi/2.",
+    "points": [
+      "sin^-1 x + cos^-1 x = pi/2 for -1<=x<=1.",
+      "tan^-1 x + cot^-1 x = pi/2 for all real x.",
+      "tan^-1 x + tan^-1 y = tan^-1((x+y)/(1-xy)) when xy < 1.",
+      "If xy > 1 and both x, y positive, add pi to the result above.",
+      "2 tan^-1 x = sin^-1(2x/(1+x^2)) for |x| <= 1.",
+      "Use substitution x = tan theta or x = sin theta to simplify complex expressions."
+    ],
+    "formula": "tan^-1 x + tan^-1 y = tan^-1((x+y)/(1-xy))",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Identify identity needed\"] --> B[\"Apply formula\"]\n  B --> C[\"Check xy less than 1 condition\"]\n  C --> D[\"Add pi if needed\"]" },
+    "example": "tan^-1 2 + tan^-1 3, xy=6>1: sum = pi + tan^-1((5)/(-5)) = pi + tan^-1(-1) = pi - pi/4 = 3pi/4.",
+    "tip": "Always check the xy<1 or xy>1 condition before using the addition formula; this is a common mistake examiners penalize."
+  },
+  {
+    "t": "Solution of triangles",
+    "def": "Solving a triangle means finding all unknown sides and angles using the sine rule, cosine rule, or both, given some known parts.",
+    "points": [
+      "Identify which sides/angles are given (SSS, SAS, or ASA type).",
+      "If all three sides given (SSS), use cosine rule to find any angle.",
+      "If two sides and included angle given (SAS), use cosine rule to find the third side first.",
+      "If two angles and a side given (ASA), find the third angle (sum = 180), then use sine rule.",
+      "Always check angle sum A+B+C = 180 degrees as a final check.",
+      "State all final values clearly with correct units (degrees)."
+    ],
+    "formula": "A + B + C = 180 degrees",
+    "diagram": { "draw": "Draw triangle ABC with given sides/angles labelled clearly, mark unknowns with a question mark to show what must be found." },
+    "example": "a=5,b=6,angle C=60°: c^2 = 25+36-2(5)(6)cos60 = 61-30 = 31, so c = sqrt(31).",
+    "tip": "Always double check angle sum equals 180 degrees at the end to catch calculation errors."
+  },
+  {
+    "t": "Trigonometric equations",
+    "def": "A trigonometric equation is solved by reducing it to a standard sin, cos, or tan form and writing the complete general solution.",
+    "points": [
+      "Rearrange the equation into a standard form like sin x = k or cos x = k.",
+      "Find the principal solution (basic angle) first.",
+      "General solution for sin x = sin a is x = n*pi + (-1)^n * a.",
+      "General solution for cos x = cos a is x = 2n*pi +- a.",
+      "General solution for tan x = tan a is x = n*pi + a.",
+      "n is any integer; include it explicitly in the final answer."
+    ],
+    "formula": "sinx=sina: x=n*pi+(-1)^n a   cosx=cosa: x=2n*pi +- a   tanx=tana: x=n*pi+a",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Reduce to sin, cos or tan form\"] --> B[\"Find basic angle a\"]\n  B --> C[\"Apply general solution formula\"]\n  C --> D[\"Write answer with n integer\"]" },
+    "example": "sin x = 1/2: basic angle a = pi/6, general solution x = n*pi + (-1)^n (pi/6).",
+    "tip": "Always write 'where n is an integer' with the general solution — missing this loses a mark."
+  },
+  {
+    "t": "Area of a triangle",
+    "def": "The area of a triangle can be found using two sides and the included angle, without needing the height.",
+    "points": [
+      "Formula: Area = (1/2) * b * c * sin A (using sides b, c and included angle A).",
+      "Similarly Area = (1/2) a c sin B or (1/2) a b sin C.",
+      "Use whichever two sides and their included angle are known.",
+      "This is useful when the height of the triangle is not directly given.",
+      "Can be combined with sine/cosine rule problems to find area after finding missing parts.",
+      "Units of area are always squared (like cm^2 or m^2)."
+    ],
+    "formula": "Area = (1/2) b c sinA",
+    "diagram": { "draw": "Draw triangle ABC, mark sides b and c meeting at vertex A, and mark the included angle A between them." },
+    "example": "b=6, c=8, angle A=30°: Area = (1/2)(6)(8)sin30 = (1/2)(48)(0.5) = 12 square units.",
+    "tip": "Always pick the angle that is included BETWEEN the two given sides, not any random angle."
+  }
+]

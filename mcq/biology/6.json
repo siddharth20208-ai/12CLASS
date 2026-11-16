@@ -1,0 +1,112 @@
+[
+  {
+    "q": "The phase of plant growth marked by active cell division with small, thin-walled cells is the:",
+    "o": [
+      "Maturation phase",
+      "Elongation phase",
+      "Senescence phase",
+      "Meristematic phase"
+    ],
+    "a": 3,
+    "why": "Meristematic cells divide actively by mitosis and are small with dense cytoplasm."
+  },
+  {
+    "q": "When growth is plotted against time, plants typically show a curve of the shape:",
+    "o": [
+      "Sigmoid (S-shaped)",
+      "Straight line",
+      "Parabolic",
+      "Exponential only, no plateau"
+    ],
+    "a": 0,
+    "why": "Growth shows lag, log and stationary phases, giving a sigmoid curve."
+  },
+  {
+    "q": "Which plant hormone is best known for promoting apical dominance and cell elongation?",
+    "o": [
+      "Cytokinin",
+      "Auxin",
+      "Ethylene",
+      "Abscisic acid"
+    ],
+    "a": 1,
+    "why": "Auxins (e.g. IAA) promote cell elongation and suppress lateral bud growth (apical dominance)."
+  },
+  {
+    "q": "Spraying GA3 (gibberellin) on sugarcane mainly increases:",
+    "o": [
+      "Root branching",
+      "Fruit ripening",
+      "Internode length and plant height",
+      "Stomatal closure"
+    ],
+    "a": 2,
+    "why": "Gibberellins promote stem/internode elongation, increasing crop height."
+  },
+  {
+    "q": "A hormone that promotes fruit ripening and leaf abscission is:",
+    "o": [
+      "Auxin",
+      "Cytokinin",
+      "Gibberellin",
+      "Ethylene"
+    ],
+    "a": 3,
+    "why": "Ethylene is the gaseous hormone responsible for ripening and abscission."
+  },
+  {
+    "q": "A chrysanthemum that flowers only when day length is less than a critical value is classified as a:",
+    "o": [
+      "Short day plant",
+      "Long day plant",
+      "Day-neutral plant",
+      "Vernalized plant"
+    ],
+    "a": 0,
+    "why": "Short day plants flower when day length falls below a critical value, e.g. chrysanthemum."
+  },
+  {
+    "q": "Winter wheat flowering earlier after cold treatment of seeds is an example of:",
+    "o": [
+      "Photoperiodism",
+      "Vernalization",
+      "Phototropism",
+      "Apomixis"
+    ],
+    "a": 1,
+    "why": "Vernalization is flowering promotion through exposure to low temperature."
+  },
+  {
+    "q": "Which of the following is classified as a plant micronutrient (needed in trace amounts)?",
+    "o": [
+      "Nitrogen",
+      "Potassium",
+      "Iron",
+      "Calcium"
+    ],
+    "a": 2,
+    "why": "Iron is a micronutrient needed in trace amounts, unlike the macronutrients N, K, Ca."
+  },
+  {
+    "q": "Interveinal chlorosis in leaves is a classic deficiency symptom of which element, since it is part of the chlorophyll molecule?",
+    "o": [
+      "Nitrogen",
+      "Calcium",
+      "Potassium",
+      "Magnesium"
+    ],
+    "a": 3,
+    "why": "Magnesium is a core component of chlorophyll; its deficiency causes interveinal chlorosis."
+  },
+  {
+    "q": "Biological nitrogen fixation, converting N2 to NH3, is catalysed by the enzyme:",
+    "o": [
+      "Nitrogenase",
+      "Carbonic anhydrase",
+      "RNA polymerase",
+      "DNA polymerase"
+    ],
+    "a": 0,
+    "why": "The enzyme nitrogenase (in Rhizobium/Azotobacter) converts atmospheric N2 into ammonia."
+  }
+]

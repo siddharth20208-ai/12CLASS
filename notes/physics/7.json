@@ -1,0 +1,113 @@
+[
+  {
+    "t": "Coulomb's Law and Electric Field",
+    "def": "Coulomb's law gives the force between two point charges: it is directly proportional to the product of the charges and inversely proportional to the square of the distance between them. Electric field at a point is the force experienced per unit positive test charge placed there.",
+    "points": [
+      "Coulomb's law: F = k q1 q2 / r^2, where k = 1/(4 pi epsilon0) in vacuum/air.",
+      "The force acts along the line joining the two charges; like charges repel, unlike charges attract.",
+      "k = 9 x 10^9 N m^2/C^2 in vacuum, and epsilon0 = 8.85 x 10^-12 C^2/N m^2 is the permittivity of free space.",
+      "Electric field E at a point due to charge Q at distance r is E = k Q / r^2, directed away from a positive charge and towards a negative charge.",
+      "Electric field is a vector quantity; its SI unit is N/C (or V/m).",
+      "Electric field lines start from positive charges and end on negative charges, and they never cross each other.",
+      "Force on a test charge q0 placed in field E is F = q0 E."
+    ],
+    "formula": "F = k q1 q2 / r^2     E = F/q0 = k Q / r^2     k = 1/(4 pi epsilon0)",
+    "diagram": {
+      "draw": "Draw a positive point charge Q at the centre. Draw several straight arrows radiating outward in all directions from Q, representing the electric field lines, with arrowheads pointing away from Q. Mark a test point P on one line at distance r from Q and label the field vector E at P pointing away from Q."
+    },
+    "example": "Two charges q1 = 2 microC and q2 = 3 microC are 0.3 m apart. F = (9x10^9 x 2x10^-6 x 3x10^-6)/0.3^2 = (9x10^9 x 6x10^-12)/0.09 = 0.054/0.09 = 0.6 N.",
+    "tip": "Always convert micro/nano Coulombs to SI units before substituting, and state the direction (attraction or repulsion) along with the magnitude."
+  },
+  {
+    "t": "Gauss's Law and Applications",
+    "def": "Gauss's law states that the total electric flux through any closed surface (Gaussian surface) is equal to 1/epsilon0 times the total charge enclosed within that surface.",
+    "points": [
+      "Electric flux through a surface is phi = E . A (dot product of electric field and area vector); it measures field lines passing through the surface.",
+      "Gauss's law: phi = Q_enclosed / epsilon0, independent of the shape of the surface or position of charge inside it.",
+      "A Gaussian surface is an imaginary closed surface chosen with symmetry to make the calculation of E easy.",
+      "For a point charge, choosing a sphere around it gives E = Q/(4 pi epsilon0 r^2), matching Coulomb's law.",
+      "For an infinite line charge, a cylindrical Gaussian surface gives E = lambda/(2 pi epsilon0 r), where lambda is linear charge density.",
+      "For an infinite charged plane sheet, E = sigma/(2 epsilon0), where sigma is surface charge density, and E is independent of distance from the sheet."
+    ],
+    "formula": "Gauss's law: Phi = Q_enclosed / epsilon0     Point charge: E = Q/(4 pi epsilon0 r^2)",
+    "diagram": {
+      "draw": "Draw a point charge Q at the centre and a dashed sphere of radius r around it as the Gaussian surface. Draw several field lines radiating outward from Q through the sphere's surface, each with an arrow. Label the Gaussian surface, radius r, and the charge Q at the centre."
+    },
+    "example": "A sphere of radius 0.1 m encloses charge Q = 1 microC. Flux through the sphere = Q/epsilon0 = 1x10^-6/8.85x10^-12 approx 1.13 x 10^5 N m^2/C, regardless of the exact radius.",
+    "tip": "State clearly that flux depends only on enclosed charge, not on the size or shape of the Gaussian surface or on charges outside it."
+  },
+  {
+    "t": "Electric Potential and Potential Energy",
+    "def": "Electric potential at a point is the work done per unit positive charge in bringing it from infinity to that point without acceleration. Electric potential energy of a system of charges is the work done in assembling the charges from infinity.",
+    "points": [
+      "Potential due to a point charge Q at distance r is V = k Q / r = Q/(4 pi epsilon0 r).",
+      "Potential is a scalar quantity; its SI unit is the volt (V), where 1 V = 1 J/C.",
+      "Potential decreases as distance from a positive charge increases, and increases (becomes less negative) near a negative charge.",
+      "Potential difference between two points equals the work done per unit charge moving a charge between them: V_AB = W/q.",
+      "Potential energy of two point charges separated by distance r is U = k q1 q2 / r.",
+      "Electric field is related to potential by E = -dV/dr (field points in the direction of decreasing potential).",
+      "Equipotential surfaces are surfaces where potential is the same everywhere; electric field is always perpendicular to them."
+    ],
+    "formula": "V = k Q/r     U = k q1 q2/r     E = -dV/dr",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Point charge Q\"] --> B[\"Potential V = kQ over r\"]\n  B --> C[\"Move test charge q0\"]\n  C --> D[\"Potential energy U = k q1 q2 over r\"]\n  D --> E[\"Work done W = q times potential difference\"]"
+    },
+    "example": "Charge Q = 5 microC, find potential at r = 0.5 m: V = (9x10^9 x 5x10^-6)/0.5 = 45000/0.5 = 90000 V = 9 x 10^4 V.",
+    "tip": "Remember potential is a scalar (add algebraically with sign) while electric field is a vector (add using vector/component rules) — this distinction is often tested."
+  },
+  {
+    "t": "Capacitors and Capacitance",
+    "def": "A capacitor is a device that stores electric charge and energy using two conductors separated by an insulator (dielectric). Capacitance is the ratio of charge stored to the potential difference applied across it.",
+    "points": [
+      "Capacitance C = Q/V, where Q is charge on each plate and V is potential difference between the plates.",
+      "SI unit of capacitance is the farad (F); practical capacitors are measured in microfarad or picofarad.",
+      "For a parallel plate capacitor (vacuum/air), C = epsilon0 A/d, where A is plate area and d is the separation.",
+      "Inserting a dielectric of dielectric constant K between the plates increases capacitance to C = K epsilon0 A/d.",
+      "Capacitance depends only on the geometry (shape, size, separation) and the medium between the plates, not on the charge or voltage applied.",
+      "A capacitor stores energy in the electric field between its plates; it blocks DC in steady state but allows AC to pass."
+    ],
+    "formula": "C = Q/V     Parallel plate: C = K epsilon0 A/d",
+    "diagram": {
+      "draw": "Draw two parallel horizontal plates separated by a gap d, with the top plate labelled +Q and the bottom plate labelled -Q. Draw vertical field lines from the top plate to the bottom plate inside the gap. Label the plate area A, the separation d, and if used, shade the region between plates and label it 'dielectric K'."
+    },
+    "example": "A parallel plate capacitor has A = 0.02 m^2, d = 1 mm = 10^-3 m, air between plates: C = (8.85x10^-12 x 0.02)/10^-3 = 1.77 x 10^-10 F = 177 pF.",
+    "tip": "Remember that adding a dielectric always increases capacitance by factor K; write the formula with and without dielectric to show understanding."
+  },
+  {
+    "t": "Combination of Capacitors",
+    "def": "Capacitors can be connected in series or parallel to get an equivalent (resultant) capacitance different from the individual capacitances.",
+    "points": [
+      "In series connection, the same charge Q flows through each capacitor, but the potential difference divides among them.",
+      "For series: 1/C_eq = 1/C1 + 1/C2 + 1/C3 + ... ; equivalent capacitance is always smaller than the smallest individual capacitance.",
+      "In parallel connection, the potential difference V across each capacitor is the same, but the total charge divides among them.",
+      "For parallel: C_eq = C1 + C2 + C3 + ...; equivalent capacitance is always larger than the largest individual capacitance.",
+      "Series combination is used to reduce effective capacitance or share high voltage; parallel combination is used to increase effective capacitance.",
+      "For two equal capacitors C in series, C_eq = C/2; in parallel, C_eq = 2C."
+    ],
+    "formula": "Series: 1/C_eq = sum(1/Ci)     Parallel: C_eq = sum(Ci)",
+    "diagram": {
+      "draw": "Draw two circuit diagrams side by side. Left: battery connected to two capacitors C1 and C2 drawn one after another in a single loop (series), with the same charge Q shown on both. Right: battery connected to C1 and C2 drawn as two separate parallel branches between the same two nodes (parallel), with the same voltage V across both and separate charges Q1 and Q2 marked."
+    },
+    "example": "Two capacitors C1 = 2 microF and C2 = 3 microF: in series, 1/C_eq = 1/2 + 1/3 = 5/6, so C_eq = 6/5 = 1.2 microF. In parallel, C_eq = 2 + 3 = 5 microF.",
+    "tip": "Remember the memory trick: series capacitance behaves like parallel resistance formula, and parallel capacitance behaves like series resistance formula."
+  },
+  {
+    "t": "Energy Stored in a Capacitor and Dielectrics",
+    "def": "A charged capacitor stores energy in the electric field between its plates; this energy can be calculated from the charge, voltage and capacitance. A dielectric is an insulating material that, when placed between the plates, increases the capacitance.",
+    "points": [
+      "Energy stored in a capacitor: U = (1/2) C V^2 = Q^2/(2C) = (1/2) Q V.",
+      "This energy comes from the work done by the battery in charging the capacitor against the growing potential difference.",
+      "A dielectric placed between the plates gets polarized by the electric field, producing an internal field opposite to the applied field.",
+      "This reduces the net electric field inside, which increases the capacitance by a factor K (dielectric constant) for the same charge.",
+      "If the capacitor is charged first and then isolated (charge Q constant) and a dielectric is inserted, voltage decreases and energy decreases.",
+      "If voltage is kept constant (connected to battery) and dielectric is inserted, charge increases and capacitance increases.",
+      "Energy density (energy per unit volume) in the field between parallel plates is u = (1/2) epsilon0 E^2 (in vacuum)."
+    ],
+    "formula": "U = (1/2) C V^2 = Q^2/(2C)     Energy density u = (1/2) epsilon0 E^2",
+    "diagram": {
+      "draw": "Draw a parallel plate capacitor with plates labelled +Q and -Q. Inside the gap, draw a slab labelled 'dielectric' with small arrows inside it showing induced dipoles (small + and - pairs) aligned opposite to the main field arrows. Label the main field E between the plates and the reduced net field inside the dielectric."
+    },
+    "example": "A capacitor of C = 4 microF is charged to V = 100 V: U = 0.5 x 4x10^-6 x 100^2 = 0.5 x 4x10^-6 x 10000 = 0.02 J.",
+    "tip": "Clearly distinguish the two cases: battery connected (V constant) versus battery disconnected (Q constant) when a dielectric is inserted — a classic exam trick question."
+  }
+]

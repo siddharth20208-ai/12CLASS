@@ -1,0 +1,107 @@
+[
+  {
+    "t": "Galvanic cells and EMF",
+    "def": "A galvanic cell converts chemical energy released in a spontaneous redox reaction into electrical energy, using two electrodes (anode and cathode) connected by a salt bridge.",
+    "points": [
+      "Oxidation occurs at the anode (negative electrode); reduction occurs at the cathode (positive electrode).",
+      "Electrons flow through the external wire from anode to cathode; conventional current flows from cathode to anode outside the cell.",
+      "The salt bridge completes the internal circuit and maintains electrical neutrality in both half-cells.",
+      "EMF (electromotive force) is the potential difference between the two electrodes when no current flows.",
+      "EMF = E(cathode) - E(anode), using reduction potentials for both electrodes.",
+      "A positive EMF means the cell reaction is spontaneous as written."
+    ],
+    "formula": "EMF = E(cathode) - E(anode)",
+    "diagram": {
+      "draw": "Draw two beakers connected by a U-tube (salt bridge) filled with KCl solution. Left beaker: Zn rod in ZnSO4 solution, label 'Anode, oxidation'. Right beaker: Cu rod in CuSO4 solution, label 'Cathode, reduction'. Connect the two rods with a wire through a voltmeter on top. Show electron flow arrow from Zn to Cu through the wire."
+    },
+    "example": "Daniel cell: Zn | Zn2+ || Cu2+ | Cu. EMF = E°Cu - E°Zn = 0.34 - (-0.76) = 1.10 V.",
+    "tip": "Draw the full labelled cell diagram with salt bridge, electrodes and electron flow direction — this is a guaranteed diagram question."
+  },
+  {
+    "t": "Standard electrode potential",
+    "def": "Standard electrode potential is the potential of an electrode measured under standard conditions (1M concentration, 1 atm pressure, 298K) relative to the standard hydrogen electrode (SHE), whose potential is fixed at zero.",
+    "points": [
+      "SHE consists of a platinum electrode in 1M H+ solution with H2 gas bubbled at 1 atm; its potential is defined as 0.00 V.",
+      "Electrodes with E° more positive than SHE are better reducing agents for the reverse reaction (stronger oxidizing agents, e.g. F2, Cl2).",
+      "Electrodes with E° more negative than SHE are easily oxidized (strong reducing agents, e.g. Li, Na, Zn).",
+      "The electrochemical series lists elements in order of increasing/decreasing standard reduction potential.",
+      "A metal higher in the series (more negative E°) can displace a metal lower in the series (more positive E°) from its salt solution."
+    ],
+    "formula": "E°(SHE) = 0.00 V (reference)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Strong reducing agents very negative E\"] --> B[\"Electrochemical series\"]\n  B --> C[\"Strong oxidizing agents very positive E\"]"
+    },
+    "example": "Since E°(Zn2+/Zn) = -0.76V is more negative than E°(Cu2+/Cu) = +0.34V, zinc metal can displace copper from CuSO4 solution.",
+    "tip": "Remember SHE potential is exactly 0.00V by definition — this fact is often asked directly as a 1-mark question."
+  },
+  {
+    "t": "Nernst equation",
+    "def": "The Nernst equation gives the EMF (or electrode potential) of a cell at any concentration and temperature, not just at standard conditions.",
+    "points": [
+      "For an electrode reaction M^n+ + ne- -> M: E = E° - (RT/nF) ln[1/M^n+... ] which simplifies using concentration of the ion.",
+      "For a complete cell: Ecell = E°cell - (0.0591/n) log Q at 298K, where Q is the reaction quotient.",
+      "As concentration of reactant ions increases, cell EMF changes according to the log term.",
+      "At equilibrium, Ecell = 0, and the equation reduces to ΔG° = -RT ln K = -nFE°cell.",
+      "The Nernst equation explains why a concentration cell (same electrodes, different concentrations) can still generate an EMF."
+    ],
+    "formula": "Ecell = E°cell - (0.0591/n) log Q (at 298K)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Standard EMF Ecell0\"] --> C[\"Nernst equation\"]\n  B[\"Concentration term log Q\"] --> C\n  C --> D[\"Actual Ecell at given conditions\"]"
+    },
+    "example": "For Zn | Zn2+(0.1M) || Cu2+(1M) | Cu, n=2: Ecell = 1.10 - (0.0591/2) log(0.1/1) = 1.10 - (0.02955)(-1) = 1.10+0.0296 ≈ 1.13 V.",
+    "tip": "Use 0.0591 (not 0.059 or 2.303RT/F unexpanded) at 298K — examiners check this constant value closely."
+  },
+  {
+    "t": "Conductance and molar conductivity",
+    "def": "Conductance is the ability of a solution to allow electric current to flow; molar conductivity is the conducting power of all the ions produced by one mole of electrolyte.",
+    "points": [
+      "Specific conductance (κ) = conductance per unit length per unit area = 1/resistivity, measured in S/m or S/cm.",
+      "Molar conductivity Λm = κ x 1000 / C (where C is molar concentration), measured in S cm^2 mol^-1.",
+      "For strong electrolytes, molar conductivity increases slightly with dilution (due to reduced ionic interactions) and reaches a limiting value Λm° at infinite dilution.",
+      "For weak electrolytes, molar conductivity increases sharply with dilution because degree of ionization increases significantly.",
+      "Degree of ionization of a weak electrolyte α = Λm / Λm° (at a given concentration compared to infinite dilution value).",
+      "Molar conductivity of strong electrolytes can be extrapolated to Λm° by plotting Λm vs sqrt(C); weak electrolytes cannot be extrapolated this way (curve is too steep), so Kohlrausch's law is used instead."
+    ],
+    "formula": "Λm = κ x 1000 / C     α = Λm / Λm°",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Dilute solution\"] --> B[\"Strong electrolyte Λm rises slightly\"]\n  A --> C[\"Weak electrolyte Λm rises sharply\"]\n  B --> D[\"Limiting value Λm infinite dilution\"]\n  C --> D"
+    },
+    "example": "If κ = 0.0248 S/cm for 0.1M KCl solution, Λm = 0.0248 x 1000/0.1 = 248 S cm^2 mol^-1.",
+    "tip": "Do not confuse specific conductance (κ) with molar conductivity (Λm) — always include the x1000/C conversion in your working."
+  },
+  {
+    "t": "Kohlrausch's law",
+    "def": "Kohlrausch's law of independent migration of ions states that the limiting molar conductivity of an electrolyte at infinite dilution is the sum of the independent contributions of its constituent cations and anions.",
+    "points": [
+      "Λm°(electrolyte) = ν+ x λ°(cation) + ν- x λ°(anion), where ν+ and ν- are the number of cations and anions per formula unit.",
+      "Each ion contributes a fixed value to the total conductivity regardless of the other ion present (independent migration).",
+      "This law is especially useful for weak electrolytes, since their Λm° cannot be found by direct extrapolation of the Λm vs sqrt(C) graph.",
+      "Λm° of a weak electrolyte can be calculated by combining Λm° values of related strong electrolytes.",
+      "Kohlrausch's law is also used to calculate the degree of dissociation and dissociation constant of weak electrolytes."
+    ],
+    "formula": "Λm°(AB) = λ°(A+) + λ°(B-)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Lambda cation\"] --> C[\"Lambda m infinite dilution\"]\n  B[\"Lambda anion\"] --> C\n  C --> D[\"Sum gives Lambda m for electrolyte\"]"
+    },
+    "example": "Λm°(CH3COOH) = Λm°(CH3COONa) + Λm°(HCl) - Λm°(NaCl), using known strong-electrolyte values, since CH3COOH itself cannot be extrapolated directly.",
+    "tip": "State the law in words first ('independent migration of ions') before writing the formula — pure formula without the statement loses marks."
+  },
+  {
+    "t": "Faraday's laws of electrolysis",
+    "def": "Faraday's laws of electrolysis relate the amount of substance deposited or liberated at an electrode to the quantity of electric charge passed through the electrolyte.",
+    "points": [
+      "First law: mass deposited (m) is directly proportional to the quantity of charge (Q) passed: m = Z x Q = Z x I x t, where Z is the electrochemical equivalent.",
+      "Second law: when the same charge is passed through different electrolytes, the masses of substances deposited are proportional to their equivalent weights.",
+      "1 Faraday (F) = 96500 coulombs = charge carried by 1 mole of electrons.",
+      "Moles of electrons passed = Q/F = (I x t)/96500.",
+      "For a metal ion M^n+ + ne- -> M, moles of metal deposited = (moles of electrons)/n.",
+      "These laws are used to calculate mass deposited, time required, or current needed in electroplating and metal extraction."
+    ],
+    "formula": "m = Z I t     Q = I t = n(electrons) x F     F = 96500 C/mol",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Current I for time t\"] --> B[\"Charge Q = I t\"]\n  B --> C[\"Moles electrons = Q over F\"]\n  C --> D[\"Mass deposited = moles times atomic mass over n\"]"
+    },
+    "example": "To deposit 5.4g Al (atomic mass 27) from Al3+: moles Al = 5.4/27 = 0.2 mol; electrons needed = 3x0.2 = 0.6 mol; Q = 0.6 x 96500 = 57900 C.",
+    "tip": "Always identify 'n' (number of electrons in the half-reaction) correctly for the specific ion — this is the most common mistake in Faraday's law numericals."
+  }
+]

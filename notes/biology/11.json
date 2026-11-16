@@ -1,0 +1,94 @@
+[
+  {
+    "t": "Restriction enzymes and vectors",
+    "def": "Restriction enzymes are molecular scissors that cut DNA at specific sequences, and vectors are DNA molecules (like plasmids) used to carry and insert a desired gene into a host cell — both are essential tools of genetic engineering.",
+    "points": [
+      "Restriction enzymes (restriction endonucleases) recognize specific short DNA sequences and cut both strands at that point.",
+      "This cutting creates DNA fragments with 'sticky ends' that can join with other DNA cut by the same enzyme.",
+      "Example: EcoRI is a commonly used restriction enzyme in recombinant DNA technology.",
+      "Vectors are carrier DNA molecules (commonly plasmids or bacteriophages) that transport the foreign gene into a host cell.",
+      "A good vector must be able to replicate independently inside the host and should have a marker gene (e.g., antibiotic resistance) to identify successfully transformed cells.",
+      "The foreign gene is inserted into the vector using the same restriction enzyme, so their sticky ends match."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Restriction enzyme cuts DNA\"] --> B[\"Sticky ends formed\"]\n  B --> C[\"Gene inserted into vector plasmid\"]\n  C --> D[\"Recombinant DNA vector ready\"]" },
+    "example": "The enzyme EcoRI is used to cut both the foreign gene and the plasmid vector at the same recognition sequence, so their matching sticky ends can join together.",
+    "tip": "Mention 'sticky ends' and a specific enzyme/vector example by name (EcoRI, plasmid) — naming specifics earns extra marks."
+  },
+  {
+    "t": "Steps of recombinant DNA technology",
+    "def": "Recombinant DNA technology is the process of isolating a gene of interest, combining it with a vector, and introducing it into a host organism so that the host produces the desired protein or trait.",
+    "points": [
+      "Isolation of DNA: the desired gene (DNA of interest) is isolated from the source organism.",
+      "Cutting: restriction enzymes cut both the gene and the vector plasmid to create matching sticky ends.",
+      "Ligation: the gene is joined to the vector using the enzyme DNA ligase, forming recombinant DNA.",
+      "Transformation: the recombinant DNA (vector + gene) is introduced into a host cell (e.g., bacteria).",
+      "Selection: host cells that successfully took up the recombinant DNA are identified using marker genes.",
+      "Expression and multiplication: the host cell multiplies and expresses the foreign gene, producing the desired protein in bulk."
+    ],
+    "formula": "Isolate gene -> Cut with restriction enzyme -> Ligate into vector -> Transform host -> Select -> Express product",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Isolate gene of interest\"] --> B[\"Cut gene and vector\"]\n  B --> C[\"Ligate into recombinant DNA\"]\n  C --> D[\"Transform into host cell\"]\n  D --> E[\"Select and express product\"]" },
+    "example": "Human insulin gene inserted into E. coli bacteria using this technology allows bacteria to mass-produce human insulin for diabetic patients.",
+    "tip": "Write the steps strictly in order (isolate, cut, ligate, transform, select, express) — sequence matters for full marks in this process-based question."
+  },
+  {
+    "t": "PCR (Polymerase Chain Reaction)",
+    "def": "PCR is a laboratory technique used to make millions of copies of a specific DNA segment in a short time, using repeated cycles of heating and cooling with a heat-stable DNA polymerase enzyme.",
+    "points": [
+      "PCR needs: template DNA, primers (short DNA sequences that mark the start points), DNA polymerase (usually Taq polymerase), and nucleotides.",
+      "Denaturation: the DNA is heated (around 95°C) to separate the two strands.",
+      "Annealing: the mixture is cooled so primers bind (anneal) to the complementary sequences on each strand.",
+      "Extension: Taq polymerase extends the primers, synthesizing new complementary DNA strands.",
+      "Each cycle doubles the amount of target DNA, so after 'n' cycles the DNA increases exponentially (2^n copies).",
+      "PCR is used in DNA fingerprinting, diagnosis of genetic and infectious diseases, and forensic analysis."
+    ],
+    "formula": "Amount of DNA after n cycles = original amount x 2^n",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Denaturation: heat to separate strands\"] --> B[\"Annealing: primers bind\"]\n  B --> C[\"Extension: Taq polymerase copies DNA\"]\n  C --> D[\"Cycle repeats, DNA doubles each time\"]" },
+    "example": "Starting with one DNA molecule, after 10 PCR cycles the DNA amount becomes 2^10 = 1024 copies, enough for further analysis.",
+    "tip": "Write the three steps (denaturation, annealing, extension) with approximate temperatures — examiners check for correct sequence and terms."
+  },
+  {
+    "t": "Gel electrophoresis",
+    "def": "Gel electrophoresis is a laboratory technique used to separate DNA fragments (or proteins) of different sizes by making them move through a gel under an electric field.",
+    "points": [
+      "DNA fragments are loaded into wells at one end of an agarose gel.",
+      "An electric current is applied; since DNA is negatively charged (due to phosphate groups), it moves toward the positive electrode.",
+      "Smaller DNA fragments move faster and travel farther through the gel pores; larger fragments move slower.",
+      "This separates DNA fragments by size, forming distinct bands.",
+      "The separated DNA bands are visualized using staining (e.g., ethidium bromide) under UV light.",
+      "This technique is a key step after PCR or restriction digestion to check the size and purity of DNA fragments."
+    ],
+    "diagram": { "draw": "Draw a rectangular gel tray with wells at the top (negative electrode side) and the gel body leading to the bottom (positive electrode side). Show sample lanes with bands at different positions: smaller fragments shown as bands nearer the bottom (moved farther), larger fragments as bands near the top (moved less). Label wells, direction of DNA movement, negative and positive electrodes." },
+    "example": "After a PCR reaction, running the product on gel electrophoresis and comparing it with a DNA ladder confirms the size of the amplified gene fragment.",
+    "tip": "Clearly state that DNA moves towards the positive electrode because DNA is negatively charged — this reasoning is often specifically asked."
+  },
+  {
+    "t": "Bt cotton and GM crops",
+    "def": "Genetically Modified (GM) crops are plants whose genes have been altered using genetic engineering to introduce desirable traits; Bt cotton is a GM crop containing a bacterial gene that makes it resistant to certain insect pests.",
+    "points": [
+      "Bt cotton contains a gene from the bacterium Bacillus thuringiensis that produces a toxin protein (Cry protein) toxic to specific insect larvae like the cotton bollworm.",
+      "When the pest insect eats the plant, the toxin damages its gut, killing the insect, while being harmless to humans and other animals.",
+      "This reduces the need for chemical pesticides, lowering cost and environmental damage.",
+      "Other GM crop examples include Bt brinjal and golden rice (enriched with vitamin A precursor).",
+      "GM crops can also be engineered for herbicide tolerance, drought resistance, or improved nutrition.",
+      "Concerns about GM crops include possible effects on biodiversity, allergenicity, and need for regulatory approval before release."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Bt gene from Bacillus thuringiensis\"] --> B[\"Inserted into cotton plant genome\"]\n  B --> C[\"Plant produces Cry toxin protein\"]\n  C --> D[\"Pest insect dies after feeding on plant\"]" },
+    "example": "Bt cotton has significantly reduced bollworm damage in Indian cotton fields, cutting down pesticide use and increasing yield.",
+    "tip": "Name the specific bacterium (Bacillus thuringiensis) and the toxin (Cry protein) — these exact terms are commonly checked."
+  },
+  {
+    "t": "Gene therapy and applications",
+    "def": "Gene therapy is a technique of correcting a genetic disorder by inserting a normal, functional gene into a patient's cells to replace or supplement a missing or defective gene.",
+    "points": [
+      "It is used to treat genetic disorders caused by a single defective gene, such as ADA deficiency (Severe Combined Immunodeficiency, SCID).",
+      "A normal copy of the gene is delivered into the patient's cells, often using a modified virus (viral vector) as the carrier.",
+      "The inserted gene produces the missing protein or enzyme, correcting the disorder.",
+      "Gene therapy can be done ex vivo (cells removed, treated, and reinserted into the body) or in vivo (gene delivered directly into the body).",
+      "Besides treating genetic disorders, biotechnology applications include producing hormones (insulin), vaccines, and diagnostic kits.",
+      "Gene therapy raises ethical questions and requires careful testing because of safety and long-term effect concerns."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Identify defective gene in patient\"] --> B[\"Normal gene inserted via viral vector\"]\n  B --> C[\"Gene enters patient cells\"]\n  C --> D[\"Normal protein produced, disorder corrected\"]" },
+    "example": "The first approved gene therapy case treated a child with ADA deficiency (SCID) by inserting a functional ADA gene into her blood cells, restoring her immune function.",
+    "tip": "Give the ADA deficiency/SCID example by name — it is the classic textbook case examiners expect in this topic."
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "t": "Pathogens and diseases (malaria, typhoid, AIDS)",
+    "def": "A pathogen is a disease-causing organism; different pathogens (protozoa, bacteria, virus) cause diseases like malaria, typhoid and AIDS through different modes of transmission.",
+    "points": [
+      "Malaria is caused by Plasmodium (a protozoan), transmitted by the bite of female Anopheles mosquito.",
+      "Plasmodium multiplies inside red blood cells and causes cyclical fever with chills, due to rupture of RBCs releasing toxins.",
+      "Typhoid is caused by the bacterium Salmonella typhi, spread through contaminated food and water.",
+      "Typhoid symptoms include sustained high fever, weakness, abdominal pain and headache.",
+      "AIDS (Acquired Immuno Deficiency Syndrome) is caused by HIV (Human Immunodeficiency Virus), which attacks helper T-lymphocytes, weakening immunity.",
+      "HIV spreads through unprotected sex, blood transfusion with infected blood, sharing needles, or from mother to child.",
+      "Because immunity is destroyed, AIDS patients die from other infections (opportunistic infections), not HIV itself."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Plasmodium in Anopheles bite\"] --> B[\"Enters RBC and multiplies\"]\n  B --> C[\"RBC ruptures releasing toxins\"]\n  C --> D[\"Cyclical fever with chills\"]" },
+    "example": "The Widal test is used to confirm typhoid by detecting antibodies against Salmonella typhi in the patient's blood.",
+    "tip": "For each disease, write: causative agent, mode of transmission, and one key symptom — this three-point pattern matches most board answers."
+  },
+  {
+    "t": "Types of immunity (innate, acquired)",
+    "def": "Immunity is the body's ability to resist pathogens; it is of two broad types — innate (present from birth, non-specific) and acquired (develops after exposure, specific).",
+    "points": [
+      "Innate immunity includes physical barriers (skin, mucus), physiological barriers (acid in stomach), and cellular barriers (WBCs like neutrophils, macrophages).",
+      "Innate immunity acts immediately but is not specific to a particular pathogen.",
+      "Acquired immunity is specific and has memory — it recognises a pathogen it has met before and responds faster the second time.",
+      "Acquired immunity is of two types: humoral (B-lymphocytes producing antibodies) and cell-mediated (T-lymphocytes destroying infected cells).",
+      "Active immunity develops when the body itself produces antibodies (after infection or vaccination).",
+      "Passive immunity is when ready-made antibodies are given directly (e.g., through mother's milk or injection)."
+    ],
+    "diagram": { "mermaid": "flowchart TD\n  A[\"Immunity\"] --> B[\"Innate: skin, mucus, WBCs\"]\n  A --> C[\"Acquired: specific and has memory\"]\n  C --> D[\"Humoral: B cells make antibodies\"]\n  C --> E[\"Cell mediated: T cells kill infected cells\"]" },
+    "example": "A baby gets passive immunity from antibodies in mother's milk (colostrum), protecting it until its own immune system matures.",
+    "tip": "Draw the branching chart of immunity types — examiners award marks for correctly classifying innate vs acquired, active vs passive."
+  },
+  {
+    "t": "Vaccination and immunization",
+    "def": "Vaccination is the process of introducing a weakened, killed or inactivated form of a pathogen (or its antigen) into the body to stimulate the immune system to produce memory cells, giving protection against future infection.",
+    "points": [
+      "A vaccine contains antigens that trigger the immune system without causing the actual disease.",
+      "The body produces antibodies and memory B and T cells in response.",
+      "On future exposure to the real pathogen, memory cells respond rapidly and strongly, preventing disease.",
+      "This principle is called immunological memory, the basis of all vaccination programs.",
+      "Examples of vaccines: BCG (for tuberculosis), OPV (oral polio vaccine), DPT (diphtheria, pertussis, tetanus).",
+      "Mass vaccination can eliminate a disease from a population, as achieved with smallpox."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Vaccine with antigen given\"] --> B[\"Immune system makes antibodies\"]\n  B --> C[\"Memory cells form\"]\n  C --> D[\"Faster response on real infection\"]" },
+    "example": "Smallpox was completely eradicated worldwide through a global vaccination campaign, showing the power of immunization.",
+    "tip": "Explain the term 'memory cells' clearly — this is the key scientific concept examiners check for in vaccination questions."
+  },
+  {
+    "t": "Cancer and its causes",
+    "def": "Cancer is a disease in which cells divide uncontrollably and abnormally, invading and damaging surrounding tissues, caused by mutations in genes that control cell growth.",
+    "points": [
+      "Normal cells follow controlled cell division; cancer cells lose this control and divide continuously.",
+      "Agents causing cancer are called carcinogens — they can be physical (radiation), chemical (tobacco, certain dyes), or biological (some viruses).",
+      "Proto-oncogenes are normal genes that, when mutated, become oncogenes and promote cancer.",
+      "Tumour suppressor genes normally stop abnormal division; their loss also leads to cancer.",
+      "A benign tumour stays localized; a malignant tumour invades other tissues and can spread (metastasis).",
+      "Metastasis is the spread of cancer cells from the original site to other parts of the body via blood or lymph."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Carcinogen exposure\"] --> B[\"Mutation in genes\"]\n  B --> C[\"Uncontrolled cell division\"]\n  C --> D[\"Tumour formation\"]\n  D --> E[\"Metastasis to other organs\"]" },
+    "example": "Prolonged tobacco chewing is a major cause of oral cancer, acting as a chemical carcinogen damaging mouth tissue cells.",
+    "tip": "Clearly differentiate benign from malignant tumour — this comparison is a favourite 2-mark question."
+  },
+  {
+    "t": "Drug and alcohol abuse",
+    "def": "Drug and alcohol abuse is the habitual, excessive use of substances like narcotics, alcohol or tobacco that harm physical and mental health and can cause addiction and dependence.",
+    "points": [
+      "Addiction is a psychological attachment to a substance for its pleasurable effects.",
+      "Dependence means the body needs the substance to function normally; stopping causes withdrawal symptoms.",
+      "Common abused substances: opioids (heroin, morphine), cannabinoids (marijuana), and alcohol.",
+      "Alcohol abuse damages the liver (causing cirrhosis) and impairs judgement and coordination.",
+      "Tobacco use (smoking) causes lung cancer, bronchitis and cardiovascular disease due to nicotine and tar.",
+      "Peer pressure, curiosity and stress are common reasons adolescents start substance abuse.",
+      "Awareness, counselling, family support and avoiding peer pressure help in prevention."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Curiosity or peer pressure\"] --> B[\"Substance use begins\"]\n  B --> C[\"Tolerance develops\"]\n  C --> D[\"Addiction and dependence\"]\n  D --> E[\"Health damage: liver, lungs, brain\"]" },
+    "example": "Chronic alcohol abuse leads to cirrhosis of the liver, where liver tissue is permanently scarred and loses normal function.",
+    "tip": "Mention at least one prevention measure (counselling, family support, avoiding peer pressure) — value-based points earn extra marks."
+  },
+  {
+    "t": "Immune system disorders",
+    "def": "Immune system disorders occur when the immune system either fails to work properly, overreacts, or attacks the body's own cells, leading to conditions like allergies, autoimmune disease, and immunodeficiency.",
+    "points": [
+      "Allergy is an exaggerated immune response to otherwise harmless substances (allergens) like dust or pollen.",
+      "In allergy, IgE antibodies trigger release of histamine from mast cells, causing symptoms like sneezing, itching or swelling.",
+      "Autoimmune disorders occur when the immune system mistakenly attacks the body's own cells, as in rheumatoid arthritis.",
+      "Immunodeficiency disorders occur when the immune system is weak or absent, making the person prone to infections.",
+      "AIDS is an example of an acquired immunodeficiency disorder, caused by HIV destroying helper T-cells.",
+      "Some immunodeficiencies are inherited (congenital), present from birth."
+    ],
+    "diagram": { "mermaid": "flowchart TD\n  A[\"Immune disorders\"] --> B[\"Allergy: overreaction to allergen\"]\n  A --> C[\"Autoimmune: attacks own cells\"]\n  A --> D[\"Immunodeficiency: weak immune response\"]" },
+    "example": "In rheumatoid arthritis, the immune system attacks the joints' own tissue, causing inflammation, pain and stiffness.",
+    "tip": "Give one example disorder under each category (allergy, autoimmune, immunodeficiency) for a complete, well-structured answer."
+  }
+]

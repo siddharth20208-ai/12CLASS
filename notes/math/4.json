@@ -1,0 +1,98 @@
+[
+  {
+    "t": "Scalar (dot) and vector (cross) products",
+    "def": "The dot product of two vectors gives a scalar related to the angle between them; the cross product gives a new vector perpendicular to both, used for areas.",
+    "points": [
+      "Dot product: a.b = |a||b| cos(theta), a scalar number.",
+      "Dot product in components: a.b = a1b1 + a2b2 + a3b3.",
+      "Cross product: a x b = |a||b| sin(theta) n-hat, a vector perpendicular to both a and b.",
+      "Cross product is computed using the 3x3 determinant with i, j, k in the first row.",
+      "Dot product is used for angles and projections; cross product is used for areas and perpendicular directions.",
+      "a.b = 0 means vectors are perpendicular; a x b = 0 means vectors are parallel."
+    ],
+    "formula": "a.b = |a||b|cos(theta)     a x b = |a||b|sin(theta) n-hat",
+    "diagram": { "draw": "Draw two vectors a and b starting from the same point, with the angle theta marked between them. For cross product, draw a third vector perpendicular to the plane of a and b using the right-hand rule." },
+    "example": "a=i+2j+3k, b=3i-2j+k: a x b = i(2*1-3*(-2)) - j(1*1-3*3) + k(1*(-2)-2*3) = 8i+8j-8k.",
+    "tip": "Set up the determinant carefully with i, j, k on top row and a, b components below — sign errors in the j term are common."
+  },
+  {
+    "t": "Scalar triple product and coplanarity",
+    "def": "The scalar triple product [a b c] is the determinant formed from the components of three vectors; it equals zero exactly when the three vectors are coplanar.",
+    "points": [
+      "Write the components of a, b, c as three rows of a 3x3 determinant.",
+      "Evaluate the determinant to get the scalar triple product value.",
+      "The value also equals the volume of the parallelepiped formed by the three vectors.",
+      "If the value is zero, the three vectors lie in the same plane (coplanar).",
+      "If nonzero, the vectors are not coplanar and form a genuine 3D parallelepiped.",
+      "Order of vectors in the determinant can change the sign but not whether it is zero."
+    ],
+    "formula": "[a b c] = determinant of a,b,c components; coplanar if [a b c]=0",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Write a, b, c as rows\"] --> B[\"Compute 3x3 determinant\"]\n  B --> C{\"Value is zero\"}\n  C -->|\"yes\"| D[\"Vectors coplanar\"]\n  C -->|\"no\"| E[\"Not coplanar, forms volume\"]" },
+    "example": "a=i+2j+3k,b=2i+3j+4k,c=3i+4j+5k: determinant = 1(15-16)-2(10-12)+3(8-9) = -1+4-3=0, so coplanar.",
+    "tip": "Expand the determinant along the first row consistently; keep signs (+,-,+) in order to avoid errors."
+  },
+  {
+    "t": "Section formula and collinearity",
+    "def": "The section formula gives the position vector of a point dividing a line segment in a given ratio; collinearity of points is checked by showing one vector is a scalar multiple of another.",
+    "points": [
+      "For point P dividing AB internally in ratio m:n, position vector = (m*b + n*a)/(m+n).",
+      "For external division, use (m*b - n*a)/(m-n).",
+      "Midpoint is the special case m=n=1: (a+b)/2.",
+      "Three points A, B, C are collinear if vector AB = k * vector AC for some scalar k.",
+      "Alternatively check if vector AB x vector AC = 0 (cross product zero means parallel, hence collinear).",
+      "Always express points as position vectors from a common origin before applying the formula."
+    ],
+    "formula": "Section formula: (m*b+n*a)/(m+n)     Midpoint: (a+b)/2",
+    "diagram": { "draw": "Draw a line segment from point A to point B. Mark point P between them dividing AB in ratio m:n, with m on the A side and n on the B side." },
+    "example": "A=(1,2,3), B=(4,5,6), P divides AB in ratio 2:1: P = (2*(4,5,6)+1*(1,2,3))/3 = (9,12,15)/3 = (3,4,5).",
+    "tip": "Clearly state which end the ratio m:n starts from (A to B) — reversing it gives a wrong point."
+  },
+  {
+    "t": "Angle between vectors and projections",
+    "def": "The angle between two vectors is found from their dot product; the projection of one vector on another gives its component along that direction.",
+    "points": [
+      "cos(theta) = (a.b) / (|a||b|) gives the angle between vectors a and b.",
+      "Compute a.b and the magnitudes |a|, |b| separately first.",
+      "Projection of a on b = (a.b)/|b|, a scalar length.",
+      "Vector projection of a on b = [(a.b)/|b|^2] * b, a full vector in the direction of b.",
+      "If a.b = 0, vectors are perpendicular (theta = 90 degrees).",
+      "Always simplify the final angle using inverse cosine if an exact value is not standard."
+    ],
+    "formula": "cos(theta)=(a.b)/(|a||b|)     Projection of a on b = (a.b)/|b|",
+    "diagram": { "draw": "Draw vector b along a horizontal line. Draw vector a starting from the same point at an angle. Drop a perpendicular from the tip of a onto line b, marking the projected length on b." },
+    "example": "a=(1,0,0), b=(1,1,0): a.b=1, |a|=1, |b|=sqrt2. cos(theta)=1/sqrt2, so theta=45 degrees.",
+    "tip": "Do not confuse scalar projection (a number) with vector projection (a vector) — state which one is asked."
+  },
+  {
+    "t": "Area of triangle/parallelogram",
+    "def": "The cross product magnitude gives the area of the parallelogram formed by two vectors; half of that gives the area of the triangle formed by them.",
+    "points": [
+      "For vectors a and b as adjacent sides, parallelogram area = |a x b|.",
+      "Triangle area (with a and b as two sides from a common vertex) = (1/2)|a x b|.",
+      "First compute a x b using the determinant method.",
+      "Then find its magnitude using sqrt of sum of squares of components.",
+      "For a triangle given by three points, use two side vectors from one vertex.",
+      "Units of area are always squared units."
+    ],
+    "formula": "Parallelogram area = |a x b|     Triangle area = (1/2)|a x b|",
+    "diagram": { "draw": "Draw a parallelogram with two adjacent sides as vectors a and b from the same vertex. Draw the diagonal to show the triangle is exactly half the parallelogram." },
+    "example": "a=i+2j+3k, b=3i-2j+k: a x b = 8i+8j-8k, |a x b| = sqrt(64+64+64) = 8sqrt3. Parallelogram area = 8sqrt3, triangle area = 4sqrt3.",
+    "tip": "Remember the factor of 1/2 for triangle area — a very common point lost by forgetting it."
+  },
+  {
+    "t": "Vector equations and applications",
+    "def": "Lines and geometric relations can be expressed in vector form using a position vector and a direction vector, which simplifies solving applied geometry problems.",
+    "points": [
+      "Vector equation of a line through point A with direction b: r = a + t*b, t is a scalar parameter.",
+      "Different values of t give different points on the line.",
+      "Vector equations can represent motion, forces, or geometric conditions compactly.",
+      "To check if a point lies on the line, see if it fits r = a + t*b for some real t.",
+      "Vector equations are converted to Cartesian form by equating i, j, k components.",
+      "Many geometry proofs (medians, diagonals) become simple algebra using position vectors."
+    ],
+    "formula": "r = a + t*b (vector equation of a line)",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Point A with position vector a\"] --> B[\"Add t times direction vector b\"]\n  B --> C[\"Get general point r on line\"]" },
+    "example": "Line through (1,0,0) with direction (2,1,1): r = (1,0,0) + t(2,1,1) = (1+2t, t, t).",
+    "tip": "Always define the parameter (commonly t or lambda) explicitly when writing the vector equation."
+  }
+]

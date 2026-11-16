@@ -1,0 +1,112 @@
+[
+  {
+    "q": "According to Bronsted-Lowry theory, an acid is defined as:",
+    "o": [
+      "A proton donor",
+      "A substance giving OH- in water",
+      "A proton acceptor",
+      "An electron pair acceptor"
+    ],
+    "a": 0,
+    "why": "Bronsted-Lowry theory defines an acid as a species that donates a proton (H+)."
+  },
+  {
+    "q": "The broadest acid-base theory, which includes species like BF3 as acids without any H+, is:",
+    "o": [
+      "Arrhenius theory",
+      "Lewis theory",
+      "Bronsted-Lowry theory",
+      "Ostwald's theory"
+    ],
+    "a": 1,
+    "why": "Lewis theory defines acids as electron pair acceptors, covering species like BF3 that have no H+."
+  },
+  {
+    "q": "The relation between Ka, Kb of a conjugate acid-base pair and Kw at 298K is:",
+    "o": [
+      "Ka + Kb = Kw",
+      "Ka/Kb = Kw",
+      "Ka x Kb = Kw",
+      "Ka - Kb = Kw"
+    ],
+    "a": 2,
+    "why": "For a conjugate acid-base pair, Ka x Kb = Kw = 10^-14 at 298K."
+  },
+  {
+    "q": "For a weak acid of concentration C with ionization constant Ka, the [H+] is approximately:",
+    "o": [
+      "C",
+      "Ka x C^2",
+      "Ka/C",
+      "sqrt(Ka x C)"
+    ],
+    "a": 3,
+    "why": "For a weak acid, assuming small degree of ionization, [H+] = sqrt(Ka.C)."
+  },
+  {
+    "q": "0.01 M acetic acid has Ka = 1.8x10^-5. The pH of the solution is closest to:",
+    "o": [
+      "3.37",
+      "7.00",
+      "5.00",
+      "2.00"
+    ],
+    "a": 0,
+    "why": "[H+] = sqrt(1.8x10^-5 x 0.01) = 4.24x10^-4 M; pH = -log(4.24x10^-4) ≈ 3.37."
+  },
+  {
+    "q": "The Henderson-Hasselbalch equation for an acidic buffer is:",
+    "o": [
+      "pH = pKa - log([salt]/[acid])",
+      "pH = pKa + log([salt]/[acid])",
+      "pH = pKb + log([acid]/[salt])",
+      "pH = 14 - pKa"
+    ],
+    "a": 1,
+    "why": "The Henderson equation for an acidic buffer gives pH = pKa + log([salt]/[acid])."
+  },
+  {
+    "q": "A buffer of 0.1 M CH3COOH and 0.1 M CH3COONa (Ka = 1.8x10^-5, pKa = 4.74) has pH equal to:",
+    "o": [
+      "0",
+      "9.26",
+      "4.74",
+      "7.00"
+    ],
+    "a": 2,
+    "why": "pH = pKa + log([salt]/[acid]) = 4.74 + log(1) = 4.74 since salt and acid concentrations are equal."
+  },
+  {
+    "q": "Adding CH3COONa to a solution of CH3COOH decreases the ionization of acetic acid. This is an example of:",
+    "o": [
+      "Buffer action only",
+      "Hydrolysis",
+      "Lewis acid-base reaction",
+      "Common ion effect"
+    ],
+    "a": 3,
+    "why": "The common ion CH3COO- shifts the ionization equilibrium of acetic acid backward, decreasing its ionization (common ion effect)."
+  },
+  {
+    "q": "For a salt AB (1:1 type) with solubility 's', the solubility product Ksp is given by:",
+    "o": [
+      "Ksp = s^2",
+      "Ksp = 2s",
+      "Ksp = s",
+      "Ksp = 4s^3"
+    ],
+    "a": 0,
+    "why": "For AB type salt, AB <-> A+ + B-, so Ksp = [A+][B-] = s x s = s^2."
+  },
+  {
+    "q": "AgCl has Ksp = 1.8x10^-10. Its molar solubility is approximately:",
+    "o": [
+      "1.8x10^-10 mol/L",
+      "1.34x10^-5 mol/L",
+      "9x10^-11 mol/L",
+      "4.24x10^-4 mol/L"
+    ],
+    "a": 1,
+    "why": "s = sqrt(Ksp) = sqrt(1.8x10^-10) ≈ 1.34x10^-5 mol/L."
+  }
+]

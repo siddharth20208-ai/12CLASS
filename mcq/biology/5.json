@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Osmosis differs from simple diffusion mainly because osmosis:",
+    "o": [
+      "Requires no membrane at all",
+      "Needs ATP energy always",
+      "Occurs only across a semi-permeable membrane for water",
+      "Moves solute, not water"
+    ],
+    "a": 2,
+    "why": "Osmosis is water movement specifically across a semi-permeable membrane."
+  },
+  {
+    "q": "A cell placed in a hypotonic solution swells due to:",
+    "o": [
+      "Exosmosis",
+      "Active transport",
+      "Plasmolysis",
+      "Endosmosis"
+    ],
+    "a": 3,
+    "why": "Water enters the cell by endosmosis when the outside solution is hypotonic."
+  },
+  {
+    "q": "Water potential is the sum of solute potential and pressure potential, written as:",
+    "o": [
+      "Psi(w) = Psi(s) + Psi(p)",
+      "Psi(w) = Psi(s) - Psi(p)",
+      "Psi(w) = Psi(s) x Psi(p)",
+      "Psi(w) = Psi(p) - Psi(s)"
+    ],
+    "a": 0,
+    "why": "Water potential equation: Psi(w) = Psi(s) + Psi(p)."
+  },
+  {
+    "q": "If a cell has solute potential Psi(s) = -8 bar and pressure potential Psi(p) = +5 bar, its water potential Psi(w) is:",
+    "o": [
+      "+13 bar",
+      "-3 bar",
+      "-13 bar",
+      "+3 bar"
+    ],
+    "a": 1,
+    "why": "Psi(w) = Psi(s) + Psi(p) = -8 + 5 = -3 bar."
+  },
+  {
+    "q": "Shrinking of the protoplast away from the cell wall in a hypertonic solution is called:",
+    "o": [
+      "Deplasmolysis",
+      "Turgidity",
+      "Plasmolysis",
+      "Imbibition"
+    ],
+    "a": 2,
+    "why": "Water loss by exosmosis causes the protoplast to shrink from the wall: plasmolysis."
+  },
+  {
+    "q": "At the endodermis of a root, the apoplast water pathway is blocked by the:",
+    "o": [
+      "Cuticle",
+      "Tonoplast",
+      "Xylem vessel wall",
+      "Casparian strip"
+    ],
+    "a": 3,
+    "why": "The Casparian strip forces water through the symplast (membrane) path at the endodermis."
+  },
+  {
+    "q": "The cohesion-tension theory explains ascent of sap mainly through:",
+    "o": [
+      "Transpiration pull plus cohesion of water molecules",
+      "Root pressure in tall trees",
+      "Active pumping by root cells",
+      "Diffusion of CO2 in xylem"
+    ],
+    "a": 0,
+    "why": "Transpiration creates tension; cohesion keeps the water column unbroken, pulling water up."
+  },
+  {
+    "q": "According to the K+ ion theory, stomata open when guard cells:",
+    "o": [
+      "Lose K+ ions and become flaccid",
+      "Accumulate K+ ions and become turgid",
+      "Accumulate starch and shrink",
+      "Lose water by exosmosis"
+    ],
+    "a": 1,
+    "why": "K+ accumulation lowers water potential, water enters, guard cells turn turgid, pore opens."
+  },
+  {
+    "q": "Which pathway of water movement through the root cortex passes through cell walls and intercellular spaces without crossing membranes?",
+    "o": [
+      "Symplast pathway",
+      "Vacuolar pathway",
+      "Apoplast pathway",
+      "Phloem pathway"
+    ],
+    "a": 2,
+    "why": "The apoplast pathway moves water through walls/intercellular spaces, not across membranes."
+  },
+  {
+    "q": "A raisin placed in plain water swells because of:",
+    "o": [
+      "Exosmosis making it hypertonic",
+      "Plasmolysis",
+      "Active transport of water",
+      "Endosmosis as the raisin is hypertonic to water"
+    ],
+    "a": 3,
+    "why": "The raisin's concentrated cell contents draw in water by endosmosis, causing swelling."
+  }
+]

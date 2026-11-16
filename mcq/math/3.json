@@ -1,0 +1,112 @@
+[
+  {
+    "q": "The combined equation ax^2 + 2hxy + by^2 = 0 represents:",
+    "o": [
+      "A single line through origin",
+      "A parabola",
+      "A circle",
+      "A pair of lines through the origin"
+    ],
+    "a": 3,
+    "why": "A homogeneous second-degree equation in x, y represents a pair of straight lines through the origin."
+  },
+  {
+    "q": "The pair of lines ax^2 + 2hxy + by^2 = 0 are real and distinct when:",
+    "o": [
+      "h^2 - ab > 0",
+      "h^2 - ab = 0",
+      "h^2 - ab < 0",
+      "h^2 + ab = 0"
+    ],
+    "a": 0,
+    "why": "Lines are real and distinct when h^2 > ab, i.e., h^2 - ab > 0."
+  },
+  {
+    "q": "The two lines represented by ax^2 + 2hxy + by^2 = 0 are coincident when:",
+    "o": [
+      "h^2 > ab",
+      "h^2 = ab",
+      "h^2 < ab",
+      "a = b"
+    ],
+    "a": 1,
+    "why": "Coincident lines occur when the discriminant condition h^2 - ab = 0."
+  },
+  {
+    "q": "The angle theta between the pair of lines ax^2 + 2hxy + by^2 = 0 satisfies tan(theta) =",
+    "o": [
+      "2h/(a-b)",
+      "(a+b)/2h",
+      "2sqrt(h^2-ab)/(a+b)",
+      "sqrt(a^2-b^2)/h"
+    ],
+    "a": 2,
+    "why": "Standard formula: tan(theta) = 2sqrt(h^2-ab)/(a+b)."
+  },
+  {
+    "q": "The pair of lines ax^2 + 2hxy + by^2 = 0 are perpendicular to each other when:",
+    "o": [
+      "h = 0",
+      "a = b",
+      "h^2 = ab",
+      "a + b = 0"
+    ],
+    "a": 3,
+    "why": "Lines are perpendicular when the sum of coefficients of x^2 and y^2 is zero, i.e., a+b = 0."
+  },
+  {
+    "q": "The pair of lines represented by ax^2 + 2hxy + by^2 = 0 are coincident (parallel, same line) when, in addition to h^2 = ab:",
+    "o": [
+      "they must pass through origin",
+      "a and b must be negative",
+      "h must be zero",
+      "a must equal zero"
+    ],
+    "a": 0,
+    "why": "Since the homogeneous equation always passes through the origin, coincident lines also pass through origin."
+  },
+  {
+    "q": "The general second-degree equation ax^2 + 2hxy + by^2 + 2gx + 2fy + c = 0 represents a pair of straight lines when:",
+    "o": [
+      "a + b + c = 0",
+      "abc + 2fgh - af^2 - bg^2 - ch^2 = 0",
+      "h^2 = ab only",
+      "g = f = 0"
+    ],
+    "a": 1,
+    "why": "This is the standard determinant condition for the general second-degree equation to represent a pair of lines."
+  },
+  {
+    "q": "To separate the two lines from ax^2 + 2hxy + by^2 = 0, we treat the equation as quadratic in:",
+    "o": [
+      "x alone",
+      "y alone",
+      "the ratio x/y or y/x",
+      "a constant"
+    ],
+    "a": 2,
+    "why": "Dividing by x^2 or y^2 gives a quadratic in the ratio y/x (or x/y) which factors into two linear equations."
+  },
+  {
+    "q": "For the pair of lines x^2 - y^2 = 0, the two separate lines are:",
+    "o": [
+      "x = 0 and y = 0",
+      "x = 2y and x = -2y",
+      "x + y = 1 and x - y = 1",
+      "x = y and x = -y"
+    ],
+    "a": 3,
+    "why": "x^2 - y^2 = (x-y)(x+y) = 0 gives lines x = y and x = -y."
+  },
+  {
+    "q": "If the lines represented by ax^2 + 2hxy + by^2 = 0 are parallel to each other (i.e. they coincide), the single line obtained is given by:",
+    "o": [
+      "ax + hy = 0 (using h^2 = ab)",
+      "ax - by = 0",
+      "hx + by = 0",
+      "x + y = 0 always"
+    ],
+    "a": 0,
+    "why": "When h^2 = ab, the pair reduces to the repeated line sqrt(a)x + sqrt(b)y = 0, consistent with ax + hy = 0 form."
+  }
+]

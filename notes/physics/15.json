@@ -1,0 +1,110 @@
+[
+  {
+    "t": "Intrinsic and extrinsic semiconductors",
+    "def": "An intrinsic semiconductor is a pure semiconductor (like pure silicon or germanium) with equal numbers of electrons and holes; an extrinsic semiconductor is one that has been deliberately doped with impurity atoms to increase its conductivity.",
+    "points": [
+      "In intrinsic semiconductors, electron-hole pairs are created only by thermal energy, so conductivity is low at room temperature.",
+      "Doping means adding a small, controlled amount of impurity atoms to the pure semiconductor crystal.",
+      "n-type semiconductor: formed by doping with pentavalent impurities (like phosphorus or arsenic) which donate extra free electrons; electrons are majority carriers.",
+      "p-type semiconductor: formed by doping with trivalent impurities (like boron or aluminium) which create holes (missing electrons); holes are majority carriers.",
+      "In both n-type and p-type, the minority carrier is present in a very small number compared to the majority carrier.",
+      "Doping greatly increases conductivity compared to the pure intrinsic semiconductor."
+    ],
+    "formula": "n-type: donor impurity gives extra electron; p-type: acceptor impurity gives extra hole",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Pure silicon crystal\"] --> B[\"Add pentavalent impurity\"]\n  A --> C[\"Add trivalent impurity\"]\n  B --> D[\"n-type: extra free electrons\"]\n  C --> E[\"p-type: extra holes\"]"
+    },
+    "example": "Adding phosphorus (5 valence electrons) to silicon (4 valence electrons): 4 electrons form covalent bonds, the 5th electron is free, giving an n-type semiconductor.",
+    "tip": "Clearly state which impurity (pentavalent/trivalent) gives which type (n/p) and which carrier is majority — a very common one-mark question."
+  },
+  {
+    "t": "p-n junction and biasing",
+    "def": "A p-n junction is formed when a p-type and an n-type semiconductor are joined together; biasing means connecting an external voltage across this junction to control current flow.",
+    "points": [
+      "At the junction, electrons from the n-side diffuse into the p-side and holes diffuse from p-side to n-side, creating a thin 'depletion region' with no free carriers.",
+      "This diffusion sets up a small internal potential difference called the barrier potential (about 0.7 V for silicon, 0.3 V for germanium).",
+      "Forward biasing: positive terminal of battery connected to p-side, negative to n-side; this reduces the barrier and allows large current flow.",
+      "Reverse biasing: positive terminal connected to n-side, negative to p-side; this increases the barrier width and allows only a very small leakage current.",
+      "A p-n junction thus acts as a one-way valve for current, which is the basis of a diode.",
+      "The V-I characteristic shows almost zero current in reverse bias and a sharp rise in current after a threshold voltage in forward bias."
+    ],
+    "formula": "Forward bias: low resistance, large current;  Reverse bias: high resistance, negligible current",
+    "diagram": {
+      "draw": "Draw a p-n junction diode symbol (triangle with a bar). For forward bias, show the battery's positive terminal connected to the p-side (triangle end) and negative to n-side (bar end), with current flowing through. For reverse bias, draw the connections swapped. Label 'depletion region', 'p-side', 'n-side', 'forward bias', 'reverse bias'."
+    },
+    "example": "A silicon diode in forward bias with applied voltage above 0.7 V conducts strongly; the same diode in reverse bias conducts almost no current even at several volts.",
+    "tip": "Draw both the forward-bias and reverse-bias circuit diagrams with correct polarity — polarity mistakes are the most common error."
+  },
+  {
+    "t": "Rectifiers (half and full wave)",
+    "def": "A rectifier is a circuit using diodes that converts alternating current (AC) into direct current (DC) by allowing current to flow in only one direction.",
+    "points": [
+      "Half-wave rectifier uses a single diode; it conducts only during one half-cycle (positive or negative) of the AC input, so output is obtained for only half the input cycle.",
+      "Output of a half-wave rectifier is a series of pulses with gaps, so it is pulsating and has low efficiency.",
+      "Full-wave rectifier uses two diodes (with a centre-tapped transformer) or four diodes (bridge rectifier), so current flows during both halves of the AC cycle.",
+      "In a full-wave rectifier, both the positive and negative half cycles of AC are converted to current in the same direction in the load.",
+      "Full-wave rectification gives a higher and smoother output than half-wave rectification, and is more efficient.",
+      "A capacitor filter is often added after rectification to smooth out the pulsating output into nearly steady DC."
+    ],
+    "formula": "Half-wave: output only for half the AC cycle; Full-wave: output for the complete AC cycle",
+    "diagram": {
+      "draw": "Draw a centre-tapped transformer secondary connected to two diodes D1 and D2, both feeding into a common load resistor RL, with the centre tap grounded. Below it, draw the AC input waveform (sine wave) and the resulting full-wave rectified output waveform (all positive humps) on the load."
+    },
+    "example": "For 50 Hz AC input, a half-wave rectifier gives output pulses at 50 Hz, while a full-wave rectifier gives output pulses at 100 Hz (twice the input frequency), which is smoother.",
+    "tip": "Always draw the input and output waveforms side by side — examiners award separate marks for correct waveform shapes."
+  },
+  {
+    "t": "Zener diode and voltage regulation",
+    "def": "A Zener diode is a specially designed p-n junction diode that is operated in reverse breakdown, and is used to maintain (regulate) a constant voltage across a load.",
+    "points": [
+      "When reverse voltage reaches a specific value called the Zener voltage (Vz), the diode suddenly conducts heavily without being damaged.",
+      "Beyond this breakdown point, the voltage across the Zener diode stays almost constant even if the current through it changes.",
+      "This constant-voltage property is used to build a simple voltage regulator circuit.",
+      "In a voltage regulator, the Zener diode is connected in reverse bias in parallel with the load, with a series resistor to limit current.",
+      "Any extra current from a varying input is absorbed by the Zener diode, keeping the load voltage fixed at Vz.",
+      "Zener diodes are marked with their breakdown (Zener) voltage rating, such as 5.1 V, 6.8 V, 9 V."
+    ],
+    "formula": "Output voltage across load = Vz (constant), as long as input voltage stays above Vz",
+    "diagram": {
+      "draw": "Draw an unregulated DC input source connected through a series resistor Rs to a Zener diode and a load resistor RL connected in parallel, with the Zener diode in reverse bias (cathode to positive side). Label 'input voltage', 'Rs', 'Zener diode Vz', 'load RL', and show output voltage taken across RL."
+    },
+    "example": "A 6 V Zener diode keeps the output at 6 V even when the unregulated input varies between 9 V and 12 V, because the series resistor absorbs the extra voltage drop.",
+    "tip": "Remember the Zener diode is used in reverse bias (opposite to a normal diode application) — this is a frequently confused point."
+  },
+  {
+    "t": "Transistor action and configurations",
+    "def": "A transistor is a three-terminal semiconductor device (emitter, base, collector) that can amplify weak signals or act as a switch by controlling a large current with a small current.",
+    "points": [
+      "A transistor has three regions: emitter (heavily doped, emits carriers), base (very thin, lightly doped), and collector (moderately doped, collects carriers).",
+      "In normal (active) operation, the emitter-base junction is forward biased and the collector-base junction is reverse biased.",
+      "Most charge carriers from the emitter cross the thin base and reach the collector, so collector current is almost equal to emitter current.",
+      "A small change in base current produces a large change in collector current — this is the basis of amplification.",
+      "Common Emitter (CE) configuration is most widely used for amplifiers because it gives high voltage, current, and power gain.",
+      "Current relation: IE = IB + IC, and current gain beta = IC / IB (for CE configuration)."
+    ],
+    "formula": "IE = IB + IC;  beta = IC / IB (current amplification factor, CE mode)",
+    "diagram": {
+      "draw": "Draw an n-p-n transistor symbol with emitter (arrow pointing out), base, and collector terminals labelled. Show the emitter-base junction forward biased with a battery and the base-collector junction reverse biased with another battery, in common emitter configuration, with input signal applied at base and output taken at collector through a load resistor."
+    },
+    "example": "If IB = 0.1 mA and beta = 100, then IC = beta x IB = 10 mA, and IE = IB + IC = 10.1 mA.",
+    "tip": "Clearly state the biasing condition (emitter-base forward, base-collector reverse) — this is essential and often missed."
+  },
+  {
+    "t": "Logic gates",
+    "def": "Logic gates are basic electronic circuits that perform simple logical operations on one or more binary inputs (0 or 1) to produce a single binary output, forming the building blocks of digital electronics.",
+    "points": [
+      "AND gate: output is 1 only when all inputs are 1 (Y = A.B).",
+      "OR gate: output is 1 when at least one input is 1 (Y = A+B).",
+      "NOT gate: output is the inverse of the single input (Y = A bar), also called an inverter.",
+      "NAND gate: output is the inverse of AND gate output; it is a 'universal gate' as any other gate can be built using only NAND gates.",
+      "NOR gate: output is the inverse of OR gate output; it is also a universal gate.",
+      "Each gate's behaviour is summarised using a truth table listing output for every possible combination of inputs."
+    ],
+    "formula": "AND: Y = A.B;  OR: Y = A+B;  NOT: Y = A bar;  NAND: Y = (A.B) bar;  NOR: Y = (A+B) bar",
+    "diagram": {
+      "draw": "Draw the standard IEC/ANSI symbols for AND gate (D-shape), OR gate (curved shape), and NOT gate (triangle with small circle at output) side by side, each with two input lines (one for NOT) and one output line, labelled A, B and Y."
+    },
+    "example": "For an AND gate with inputs A=1, B=0, output Y = A.B = 0. For an OR gate with the same inputs, Y = A+B = 1.",
+    "tip": "Practise drawing the truth table alongside the symbol for each gate — questions often ask for both symbol and truth table together."
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Using substitution t = x^2+1, the integral of 2x(x^2+1)^3 dx equals",
+    "o": [
+      "(x^2+1)^3/3 + C",
+      "(x^2+1)^4/4 + C",
+      "2(x^2+1)^4 + C",
+      "(x^2+1)^4 + C"
+    ],
+    "a": 1,
+    "why": "integral becomes t^3 dt = t^4/4 + C"
+  },
+  {
+    "q": "For integration by parts, the correct order of priority to choose u by ILATE is",
+    "o": [
+      "Exponential, Trig, Algebraic, Log, Inverse trig",
+      "Algebraic, Log, Trig, Inverse trig, Exponential",
+      "Inverse trig, Log, Algebraic, Trig, Exponential",
+      "Log, Inverse trig, Trig, Algebraic, Exponential"
+    ],
+    "a": 2,
+    "why": "ILATE: Inverse, Log, Algebraic, Trig, Exponential"
+  },
+  {
+    "q": "The formula for integration by parts is",
+    "o": [
+      "∫u dv = uv + ∫v du",
+      "∫u dv = vu' - ∫u dv",
+      "∫u dv = u'v - ∫v du",
+      "∫u dv = uv - ∫v du"
+    ],
+    "a": 3,
+    "why": "standard integration by parts formula from product rule"
+  },
+  {
+    "q": "Partial fraction decomposition is used mainly to integrate",
+    "o": [
+      "rational functions with factorable denominators",
+      "trigonometric products",
+      "exponential functions",
+      "inverse trig functions"
+    ],
+    "a": 0,
+    "why": "partial fractions break rational expressions into simpler fractions"
+  },
+  {
+    "q": "The standard integral ∫ dx/(x^2+a^2) equals",
+    "o": [
+      "(1/a) log|x+a| + C",
+      "(1/a) tan^-1(x/a) + C",
+      "tan^-1(x) + C",
+      "(1/(2a)) log|(x-a)/(x+a)| + C"
+    ],
+    "a": 1,
+    "why": "standard formula for 1/(x^2+a^2)"
+  },
+  {
+    "q": "The integral ∫ dx/(x^2-a^2) equals",
+    "o": [
+      "(1/a) tan^-1(x/a) + C",
+      "(1/(2a)) log|(x+a)/(x-a)| + C",
+      "(1/(2a)) log|(x-a)/(x+a)| + C",
+      "(1/a) sin^-1(x/a) + C"
+    ],
+    "a": 2,
+    "why": "standard result derived using partial fractions"
+  },
+  {
+    "q": "The integral ∫ dx/sqrt(a^2-x^2) equals",
+    "o": [
+      "log|x+sqrt(a^2-x^2)| + C",
+      "cos^-1(x/a) + C",
+      "(1/a) tan^-1(x/a) + C",
+      "sin^-1(x/a) + C"
+    ],
+    "a": 3,
+    "why": "standard inverse trig integral form"
+  },
+  {
+    "q": "∫ sin^2(x) dx is best evaluated using",
+    "o": [
+      "the identity sin^2x = (1-cos2x)/2",
+      "integration by parts",
+      "substitution t = sin x",
+      "partial fractions"
+    ],
+    "a": 0,
+    "why": "power reduction identity simplifies the integral"
+  },
+  {
+    "q": "The value of ∫ tan(x) dx equals",
+    "o": [
+      "log|sec x| + C",
+      "both (a) and (c) are equivalent",
+      "-log|cos x| + C",
+      "log|sin x| + C"
+    ],
+    "a": 1,
+    "why": "log|sec x| = -log|cos x|, both forms are correct and equivalent"
+  },
+  {
+    "q": "For ∫ x e^x dx using integration by parts with u = x, dv = e^x dx, the result is",
+    "o": [
+      "e^x + C",
+      "x e^x + e^x + C",
+      "x e^x - e^x + C",
+      "x^2 e^x/2 + C"
+    ],
+    "a": 2,
+    "why": "uv - ∫v du = x e^x - ∫e^x dx = x e^x - e^x + C"
+  }
+]

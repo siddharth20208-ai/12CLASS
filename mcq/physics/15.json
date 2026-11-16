@@ -1,0 +1,112 @@
+[
+  {
+    "q": "In an n-type semiconductor, the majority charge carriers are",
+    "o": [
+      "holes",
+      "ions",
+      "protons",
+      "electrons"
+    ],
+    "a": 3,
+    "why": "Pentavalent donor impurities contribute extra free electrons, making electrons the majority carriers."
+  },
+  {
+    "q": "A p-type semiconductor is formed by doping silicon with",
+    "o": [
+      "trivalent impurity",
+      "pentavalent impurity",
+      "tetravalent impurity",
+      "no impurity"
+    ],
+    "a": 0,
+    "why": "Trivalent (acceptor) impurities like boron create holes, giving a p-type semiconductor."
+  },
+  {
+    "q": "In forward biasing of a p-n junction, the positive terminal of the battery is connected to the",
+    "o": [
+      "n-side",
+      "p-side",
+      "depletion region",
+      "either side equally"
+    ],
+    "a": 1,
+    "why": "Forward bias connects positive terminal to p-side, reducing the barrier potential and allowing current flow."
+  },
+  {
+    "q": "In reverse bias, the width of the depletion region of a p-n junction",
+    "o": [
+      "decreases",
+      "remains unchanged",
+      "increases",
+      "becomes zero"
+    ],
+    "a": 2,
+    "why": "Reverse bias widens the depletion region, increasing resistance and allowing only tiny leakage current."
+  },
+  {
+    "q": "A full-wave rectifier using a centre-tapped transformer and two diodes produces output pulses at a frequency (compared to 50 Hz AC input) of",
+    "o": [
+      "25 Hz",
+      "50 Hz",
+      "200 Hz",
+      "100 Hz"
+    ],
+    "a": 3,
+    "why": "Full-wave rectification uses both half cycles, doubling the output pulse frequency to 100 Hz."
+  },
+  {
+    "q": "A Zener diode used for voltage regulation is operated in",
+    "o": [
+      "reverse bias, breakdown region",
+      "forward bias, normal conduction",
+      "zero bias",
+      "forward bias, cutoff region"
+    ],
+    "a": 0,
+    "why": "Zener diodes regulate voltage by operating in reverse breakdown, where voltage stays nearly constant."
+  },
+  {
+    "q": "In a transistor's active (normal) operation, the biasing condition is",
+    "o": [
+      "both junctions forward biased",
+      "emitter-base forward, collector-base reverse biased",
+      "both junctions reverse biased",
+      "emitter-base reverse, collector-base forward biased"
+    ],
+    "a": 1,
+    "why": "Normal active-mode transistor operation requires emitter-base forward bias and collector-base reverse bias."
+  },
+  {
+    "q": "For a transistor in CE configuration, if IB = 0.1 mA and current gain beta = 100, the collector current IC is",
+    "o": [
+      "1 mA",
+      "0.1 mA",
+      "10 mA",
+      "100 mA"
+    ],
+    "a": 2,
+    "why": "IC = beta x IB = 100 x 0.1 mA = 10 mA."
+  },
+  {
+    "q": "The output of a logic AND gate is 1 only when",
+    "o": [
+      "at least one input is 1",
+      "inputs are different",
+      "all inputs are 0",
+      "all inputs are 1"
+    ],
+    "a": 3,
+    "why": "AND gate: Y = A.B, output is 1 only when every input is 1."
+  },
+  {
+    "q": "Which logic gate is called a 'universal gate' because any other gate can be built using only it?",
+    "o": [
+      "NAND gate",
+      "AND gate",
+      "OR gate",
+      "NOT gate"
+    ],
+    "a": 0,
+    "why": "NAND (and also NOR) gates are universal gates, able to construct all other basic logic gates."
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Which part of the neuron receives nerve impulses?",
+    "o": [
+      "Axon",
+      "Dendrite",
+      "Cell body",
+      "Myelin sheath"
+    ],
+    "a": 1,
+    "why": "Dendrites receive incoming signals from other neurons."
+  },
+  {
+    "q": "The resting potential of a neuron is approximately:",
+    "o": [
+      "+30 mV",
+      "0 mV",
+      "-70 mV",
+      "-150 mV"
+    ],
+    "a": 2,
+    "why": "At rest the inside of the axon is about -70 mV relative to outside."
+  },
+  {
+    "q": "Saltatory conduction occurs because of:",
+    "o": [
+      "Dendrite branching",
+      "Cell body size",
+      "Synaptic vesicles",
+      "Nodes of Ranvier in myelin sheath"
+    ],
+    "a": 3,
+    "why": "Impulse jumps between nodes of Ranvier, speeding up conduction."
+  },
+  {
+    "q": "A reflex arc allows a response to occur without involving the:",
+    "o": [
+      "Brain (conscious thought)",
+      "Receptor",
+      "Effector",
+      "Spinal cord"
+    ],
+    "a": 0,
+    "why": "Reflex actions bypass conscious brain processing for speed."
+  },
+  {
+    "q": "Which part of the brain controls heartbeat and breathing rate?",
+    "o": [
+      "Cerebrum",
+      "Medulla oblongata (hindbrain)",
+      "Cerebellum",
+      "Thalamus"
+    ],
+    "a": 1,
+    "why": "Medulla in the hindbrain regulates involuntary vital functions."
+  },
+  {
+    "q": "Which gland is called the 'master gland' of the endocrine system?",
+    "o": [
+      "Thyroid",
+      "Adrenal",
+      "Pituitary",
+      "Pancreas"
+    ],
+    "a": 2,
+    "why": "Pituitary gland controls secretion of many other endocrine glands."
+  },
+  {
+    "q": "The light-sensitive layer at the back of the eye is the:",
+    "o": [
+      "Cornea",
+      "Lens",
+      "Iris",
+      "Retina"
+    ],
+    "a": 3,
+    "why": "Retina contains photoreceptor cells that detect light."
+  },
+  {
+    "q": "Which part of the ear is responsible for maintaining balance?",
+    "o": [
+      "Semicircular canals",
+      "Eardrum",
+      "Cochlea",
+      "Pinna"
+    ],
+    "a": 0,
+    "why": "Semicircular canals in the inner ear detect body balance and position."
+  },
+  {
+    "q": "At a synapse, the signal is chemically transmitted by:",
+    "o": [
+      "Myelin",
+      "Neurotransmitters",
+      "Hemoglobin",
+      "Hormones only"
+    ],
+    "a": 1,
+    "why": "Neurotransmitters released from vesicles cross the synaptic cleft to the next neuron."
+  },
+  {
+    "q": "Depolarization of a neuron's axon membrane is caused by sudden influx of:",
+    "o": [
+      "K+ ions",
+      "Ca2+ ions",
+      "Na+ ions",
+      "Cl- ions"
+    ],
+    "a": 2,
+    "why": "Opening of Na+ channels lets Na+ rush in, making the inside positive."
+  }
+]

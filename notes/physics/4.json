@@ -1,0 +1,110 @@
+[
+  {
+    "t": "SHM and its Differential Equation",
+    "def": "Simple harmonic motion (SHM) is an oscillatory motion in which the restoring acceleration is always directly proportional to the displacement and directed opposite to it.",
+    "points": [
+      "Restoring force F = -kx, so acceleration a = -(k/m)x = -ω²x, where ω² = k/m.",
+      "This gives the SHM differential equation: d²x/dt² = -ω²x.",
+      "The negative sign shows the acceleration always points back toward the mean (equilibrium) position.",
+      "The general solution of this equation is x = A sin(ωt + φ), where A is amplitude and φ is initial phase.",
+      "ω is called angular frequency, related to period by ω = 2π/T.",
+      "Any motion satisfying this differential equation is, by definition, SHM — this is used to identify SHM in problems."
+    ],
+    "formula": "d²x/dt² = -ω²x     x = A sin(ωt + φ)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Displacement x from mean position\"] --> B[\"Restoring force F = -kx\"]\n  B --> C[\"Acceleration a = -omega squared x\"]\n  C --> D[\"Body accelerates back to mean position\"]\n  D --> A"
+    },
+    "example": "A particle has acceleration a = -16x (SI units). Comparing with a = -ω²x, ω² = 16, so ω = 4 rad/s, and T = 2π/4 = 1.57 s.",
+    "tip": "To prove a motion is SHM, show F or a is proportional to -x; just saying 'it oscillates' is not enough for full marks."
+  },
+  {
+    "t": "Displacement, Velocity and Acceleration in SHM",
+    "def": "In SHM, displacement, velocity and acceleration all vary sinusoidally with time but have different phases relative to each other.",
+    "points": [
+      "Displacement: x = A sin(ωt), where A is amplitude.",
+      "Velocity: v = dx/dt = Aω cos(ωt), which can also be written as v = ω√(A² − x²).",
+      "Acceleration: a = dv/dt = -Aω² sin(ωt) = -ω²x.",
+      "Velocity is maximum (= Aω) at the mean position (x = 0) and zero at extreme positions (x = ±A).",
+      "Acceleration is zero at the mean position and maximum (= Aω²) at the extreme positions.",
+      "Velocity leads displacement by 90°, and acceleration leads velocity by 90° (or is 180° out of phase with displacement)."
+    ],
+    "formula": "x = A sin(ωt)   v = ω√(A² − x²)   a = -ω²x",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"At mean position x=0\"] --> B[\"v is maximum, a is zero\"]\n  C[\"At extreme position x=A\"] --> D[\"v is zero, a is maximum\"]"
+    },
+    "example": "A = 0.1 m, ω = 10 rad/s, at x = 0.06 m: v = 10 x sqrt(0.01 - 0.0036) = 10 x sqrt(0.0064) = 10 x 0.08 = 0.8 m/s.",
+    "tip": "Remember the two extreme cases: v is max & a is zero at mean position; v is zero & a is max at extreme position — asked almost every year."
+  },
+  {
+    "t": "Energy in SHM",
+    "def": "A particle in SHM continuously exchanges energy between kinetic and potential forms, but the total mechanical energy remains constant.",
+    "points": [
+      "Kinetic energy: KE = (1/2)mv² = (1/2)mω²(A² − x²), maximum at mean position.",
+      "Potential energy: PE = (1/2)kx² = (1/2)mω²x², maximum at extreme positions.",
+      "Total energy: E = KE + PE = (1/2)mω²A², which stays constant throughout the motion.",
+      "At the mean position (x=0), all energy is kinetic; at extreme positions (x=±A), all energy is potential.",
+      "The total energy depends on amplitude squared — doubling amplitude quadruples total energy.",
+      "This conservation follows directly from the fact that the restoring force is conservative."
+    ],
+    "formula": "E = (1/2)mω²A² = KE + PE = (1/2)mω²(A²-x²) + (1/2)mω²x²",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"At mean position\"] --> B[\"KE = maximum, PE = zero\"]\n  C[\"At extreme position\"] --> D[\"KE = zero, PE = maximum\"]\n  B --> E[\"Total energy E constant throughout\"]\n  D --> E"
+    },
+    "example": "m = 0.5 kg, ω = 4 rad/s, A = 0.2 m: E = (1/2) x 0.5 x 16 x 0.04 = 0.16 J (constant at every point of oscillation).",
+    "tip": "Draw/describe how KE and PE graphs (vs displacement x) are parabolas that add up to a constant horizontal line — a good diagram-based answer."
+  },
+  {
+    "t": "Simple Pendulum and Spring Systems",
+    "def": "A simple pendulum and a mass-spring system are two common mechanical examples of SHM, each with its own period formula based on its restoring force.",
+    "points": [
+      "A simple pendulum is a point mass suspended from a light, inextensible string, oscillating with small angular displacement.",
+      "For small angles, the restoring force component is -mg sinθ ≈ -mgθ, giving SHM with period T = 2π√(L/g).",
+      "The period of a simple pendulum does not depend on mass, only on length L and gravity g.",
+      "A mass-spring system has restoring force F = -kx (Hooke's law), giving period T = 2π√(m/k).",
+      "Here k is the spring's force constant (stiffness); stiffer springs (larger k) give shorter period (faster oscillation).",
+      "Both systems are SHM because their equations of motion reduce to d²x/dt² = -ω²x."
+    ],
+    "formula": "Pendulum: T = 2π√(L/g)     Spring-mass: T = 2π√(m/k)",
+    "diagram": {
+      "draw": "Draw two setups side by side. Left: a pendulum — a string of length L fixed at top, with a bob at the bottom shown displaced through small angle θ from the vertical, restoring force arrow shown. Right: a mass hanging from a vertical spring of constant k, displaced by x from equilibrium, with restoring force arrow pointing back toward equilibrium."
+    },
+    "example": "A pendulum of length 1 m on Earth (g=9.8): T = 2π sqrt(1/9.8) = 2π x 0.319 = 2.01 s.",
+    "tip": "State clearly that pendulum period is independent of mass and amplitude (for small angles) — this is a frequently asked conceptual point."
+  },
+  {
+    "t": "Phase and Epoch",
+    "def": "Phase describes the state (position and direction of motion) of a particle in SHM at any instant, while epoch is the initial phase angle at time t = 0.",
+    "points": [
+      "In x = A sin(ωt + φ), the quantity (ωt + φ) is called the phase at time t.",
+      "Phase tells us both where the particle is in its cycle and which direction it is moving.",
+      "Epoch (φ) is the value of phase at t = 0, i.e., the starting condition of the motion.",
+      "If φ = 0, the particle starts from the mean position moving in positive direction.",
+      "If φ = π/2, the particle starts from the extreme position (x = A) with zero velocity.",
+      "Two particles with the same ω but different φ are said to have a phase difference, which determines how 'out of step' they are."
+    ],
+    "formula": "Phase = ωt + φ     Epoch = φ (value of phase at t = 0)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"phi = 0\"] --> B[\"starts at mean position\"]\n  C[\"phi = pi over 2\"] --> D[\"starts at extreme position\"]\n  B --> E[\"Phase = omega t + phi tracks motion over time\"]\n  D --> E"
+    },
+    "example": "If x = 0.05 sin(10t + π/2), epoch = π/2 rad, meaning the particle starts at its extreme position x = 0.05 m at t = 0.",
+    "tip": "Phase difference between two SHMs of π means they are exactly out of step (one at max when other is at min) — useful for comparing two oscillators."
+  },
+  {
+    "t": "Damped and Forced Oscillations, Resonance",
+    "def": "Damped oscillations lose energy and amplitude over time due to resistive (friction/drag) forces. Forced oscillations are driven by an external periodic force, and resonance occurs when the driving frequency equals the natural frequency, giving maximum amplitude.",
+    "points": [
+      "In damped SHM, a resistive force (like air drag) removes energy each cycle, so amplitude decreases exponentially with time.",
+      "Damped oscillations can be underdamped (oscillates with decreasing amplitude), critically damped, or overdamped (no oscillation, returns slowly).",
+      "Forced oscillation happens when an external periodic driving force is continuously applied to a system, replacing lost energy.",
+      "The system eventually oscillates at the driving frequency, not necessarily its own natural frequency.",
+      "Resonance occurs when the driving frequency matches the system's natural frequency, producing very large amplitude.",
+      "Examples: pushing a swing at its natural rhythm (resonance), shock absorbers in cars (damping) to quickly kill unwanted oscillations."
+    ],
+    "formula": "At resonance: driving frequency = natural frequency → amplitude is maximum",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Driving frequency far from natural frequency\"] --> B[\"Small amplitude\"]\n  C[\"Driving frequency equals natural frequency\"] --> D[\"Resonance: amplitude is maximum\"]"
+    },
+    "example": "Soldiers marching in step across a bridge at a frequency matching the bridge's natural frequency can cause resonance and dangerous large oscillations — hence the command to break step on bridges.",
+    "tip": "Give one damping example (shock absorber) and one resonance example (swing or bridge) — examiners look for real-life application, not just definitions."
+  }
+]

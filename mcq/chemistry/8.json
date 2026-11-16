@@ -1,0 +1,112 @@
+[
+  {
+    "q": "The number of donor atoms directly bonded to the central metal atom in a complex is called",
+    "o": [
+      "Oxidation number",
+      "Valence number",
+      "Coordination number",
+      "Denticity"
+    ],
+    "a": 2,
+    "why": "Coordination number counts the sigma bonds from donor atoms to the central metal."
+  },
+  {
+    "q": "Which of the following is an ambidentate ligand?",
+    "o": [
+      "NH3",
+      "en (ethylenediamine)",
+      "EDTA",
+      "SCN-"
+    ],
+    "a": 3,
+    "why": "SCN- can coordinate through either S or N, making it ambidentate."
+  },
+  {
+    "q": "The coordination number of Ni in [Ni(CO)4] is",
+    "o": [
+      "4",
+      "6",
+      "8",
+      "2"
+    ],
+    "a": 0,
+    "why": "Four CO ligands each donate through one C atom, giving CN = 4 (tetrahedral)."
+  },
+  {
+    "q": "In IUPAC naming of coordination compounds, if the complex ion is an anion, the metal name ends in",
+    "o": [
+      "-ium",
+      "-ate",
+      "-ic",
+      "-ous"
+    ],
+    "a": 1,
+    "why": "Anionic complexes have the metal name suffixed with '-ate', e.g. ferrate, cobaltate."
+  },
+  {
+    "q": "[Co(NH3)4Cl2]Cl is correctly named as",
+    "o": [
+      "cobalt tetraammine dichloride",
+      "dichlorotetraamminecobaltate",
+      "tetraamminedichloridocobalt(III) chloride",
+      "tetrachloroamminecobalt(II) chloride"
+    ],
+    "a": 2,
+    "why": "Ligands are named alphabetically (ammine before chlorido) followed by metal and oxidation state III in brackets."
+  },
+  {
+    "q": "[Pt(NH3)2Cl2] shows cis and trans forms; this is an example of",
+    "o": [
+      "Linkage isomerism",
+      "Ionisation isomerism",
+      "Coordination isomerism",
+      "Geometrical isomerism"
+    ],
+    "a": 3,
+    "why": "Cis and trans arrangements of the same ligands around a square planar metal is geometrical (stereo) isomerism."
+  },
+  {
+    "q": "In Valence Bond Theory, dsp2 hybridisation of the central metal gives a complex with geometry",
+    "o": [
+      "Square planar",
+      "Octahedral",
+      "Tetrahedral",
+      "Trigonal bipyramidal"
+    ],
+    "a": 0,
+    "why": "dsp2 hybridisation uses one d, one s and two p orbitals, giving square planar geometry, e.g. [Ni(CN)4]2-."
+  },
+  {
+    "q": "According to Crystal Field Theory, in an octahedral complex the d-orbitals split into",
+    "o": [
+      "eg (lower) and t2g (higher)",
+      "t2g (lower) and eg (higher)",
+      "e and t2 sets only",
+      "a single degenerate set"
+    ],
+    "a": 1,
+    "why": "In octahedral field, three t2g orbitals are lower in energy and two eg orbitals are higher, separated by delta-o."
+  },
+  {
+    "q": "Which ligand causes a strong field and favours a low spin octahedral complex?",
+    "o": [
+      "F-",
+      "H2O",
+      "CN-",
+      "Cl-"
+    ],
+    "a": 2,
+    "why": "CN- is a strong field ligand causing large delta-o, forcing electrons to pair in t2g (low spin)."
+  },
+  {
+    "q": "Cisplatin, used as an anti-cancer drug, has the formula",
+    "o": [
+      "K4[Fe(CN)6]",
+      "[Co(NH3)6]Cl3",
+      "[Ag(CN)2]-",
+      "[Pt(NH3)2Cl2] (cis isomer)"
+    ],
+    "a": 3,
+    "why": "Cisplatin is the cis isomer of diamminedichloridoplatinum(II), used in chemotherapy."
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Crossing two genetically different plants to combine desirable traits is called:",
+    "o": [
+      "Mutation breeding",
+      "Selection",
+      "Hybridization",
+      "Tissue culture"
+    ],
+    "a": 2,
+    "why": "Hybridization combines desirable traits of two different parent plants."
+  },
+  {
+    "q": "Inducing useful variation using radiation or chemicals is known as:",
+    "o": [
+      "Selection",
+      "Micropropagation",
+      "Hybridization",
+      "Mutation breeding"
+    ],
+    "a": 3,
+    "why": "Mutation breeding deliberately induces mutations using radiation/chemicals."
+  },
+  {
+    "q": "The Green Revolution mainly increased yields of:",
+    "o": [
+      "Wheat and rice",
+      "Cotton and jute",
+      "Tea and coffee",
+      "Fruits only"
+    ],
+    "a": 0,
+    "why": "High-yielding dwarf varieties of wheat and rice drove the Green Revolution."
+  },
+  {
+    "q": "Dwarf wheat varieties were valuable in the Green Revolution mainly because they:",
+    "o": [
+      "Grew only in winter",
+      "Resisted lodging (falling over) and gave higher yield",
+      "Needed no water",
+      "Had no grains"
+    ],
+    "a": 1,
+    "why": "Dwarf stems resist lodging, allowing higher yields to be supported."
+  },
+  {
+    "q": "The scientific management of dairy animals for improved milk production is called:",
+    "o": [
+      "Poultry farming",
+      "Apiculture",
+      "Animal husbandry / dairy management",
+      "Pisciculture"
+    ],
+    "a": 2,
+    "why": "Animal husbandry includes breeding and managing dairy animals for better milk yield."
+  },
+  {
+    "q": "Rearing of domestic fowl for eggs and meat is called:",
+    "o": [
+      "Tissue culture",
+      "Sericulture",
+      "Aquaculture",
+      "Poultry farming"
+    ],
+    "a": 3,
+    "why": "Poultry farming is the practice of raising birds like chickens for eggs and meat."
+  },
+  {
+    "q": "Single Cell Protein (SCP) refers to protein-rich biomass obtained mainly from:",
+    "o": [
+      "Microorganisms like algae, yeast, bacteria",
+      "Large mammals",
+      "Only plants",
+      "Insects only"
+    ],
+    "a": 0,
+    "why": "SCP is protein derived from cultured microorganisms, used as a food/feed supplement."
+  },
+  {
+    "q": "Tissue culture technique used to produce many identical plantlets from a small plant part is called:",
+    "o": [
+      "Hybridization",
+      "Micropropagation",
+      "Selection",
+      "Mutation breeding"
+    ],
+    "a": 1,
+    "why": "Micropropagation (tissue culture) multiplies plants rapidly from small tissue explants."
+  },
+  {
+    "q": "Choosing naturally superior plants from an existing population and propagating them is called:",
+    "o": [
+      "Hybridization",
+      "Mutation breeding",
+      "Selection",
+      "Cloning"
+    ],
+    "a": 2,
+    "why": "Selection is picking already superior plants rather than creating new combinations."
+  },
+  {
+    "q": "A key advantage of micropropagation over seed propagation is:",
+    "o": [
+      "It is slower",
+      "It requires no laboratory",
+      "It always produces new varieties",
+      "It produces genetically identical disease-free plants quickly"
+    ],
+    "a": 3,
+    "why": "Micropropagation rapidly multiplies genetically uniform, disease-free plantlets."
+  }
+]

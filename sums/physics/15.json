@@ -1,0 +1,128 @@
+{
+  "solved": [
+    {
+      "topic": "Transistor Ie, Ib, Ic and beta, alpha (CE)",
+      "marks": 2,
+      "q": "In a common emitter transistor circuit the emitter current is 1 mA and the base current is 0.02 mA. Find the collector current, current gain beta and alpha.",
+      "steps": [
+        "Given: Ie = 1 mA, Ib = 0.02 mA.",
+        "Formula: Ie = Ib + Ic, so Ic = Ie - Ib.",
+        "Substitution: Ic = 1 - 0.02 = 0.98 mA.",
+        "beta = Ic/Ib = 0.98/0.02 = 49.",
+        "alpha = Ic/Ie = 0.98/1 = 0.98.",
+        "Check: beta = alpha/(1 - alpha) = 0.98/0.02 = 49, matches.",
+        "Final answer: Ic = 0.98 mA, beta = 49, alpha = 0.98."
+      ],
+      "ans": "Ic = 0.98 mA, beta = 49, alpha = 0.98"
+    },
+    {
+      "topic": "Given alpha, find beta and Ic",
+      "marks": 3,
+      "q": "A transistor has alpha = 0.99 and emitter current 5 mA. Find the current gain beta and the collector current Ic.",
+      "steps": [
+        "Given: alpha = 0.99, Ie = 5 mA.",
+        "Formula: beta = alpha/(1 - alpha).",
+        "Substitution: beta = 0.99/(1 - 0.99) = 0.99/0.01 = 99.",
+        "Formula: Ic = alpha x Ie.",
+        "Substitution: Ic = 0.99 x 5 = 4.95 mA.",
+        "Final answer: beta = 99, Ic = 4.95 mA."
+      ],
+      "ans": "beta = 99, Ic = 4.95 mA"
+    },
+    {
+      "topic": "Given beta and Ib, find Ic, Ie and alpha",
+      "marks": 3,
+      "q": "A transistor has current gain beta = 99 and base current Ib = 0.1 mA. Find the collector current, emitter current and alpha.",
+      "steps": [
+        "Given: beta = 99, Ib = 0.1 mA.",
+        "Formula: Ic = beta x Ib.",
+        "Substitution: Ic = 99 x 0.1 = 9.9 mA.",
+        "Formula: Ie = Ic + Ib.",
+        "Substitution: Ie = 9.9 + 0.1 = 10 mA.",
+        "Formula: alpha = Ic/Ie.",
+        "Substitution: alpha = 9.9/10 = 0.99.",
+        "Final answer: Ic = 9.9 mA, Ie = 10 mA, alpha = 0.99."
+      ],
+      "ans": "Ic = 9.9 mA, Ie = 10 mA, alpha = 0.99"
+    },
+    {
+      "topic": "Dynamic (AC) resistance of a p-n junction diode",
+      "marks": 2,
+      "q": "From the forward characteristics of a p-n junction diode, the forward voltage changes from 0.5 V to 0.6 V when the forward current changes from 10 mA to 30 mA. Find the dynamic resistance of the diode.",
+      "steps": [
+        "Given: deltaV = 0.6 - 0.5 = 0.1 V, deltaI = 30 - 10 = 20 mA = 0.02 A.",
+        "Formula: dynamic resistance rac = deltaV/deltaI.",
+        "Substitution: rac = 0.1/0.02.",
+        "Calculation: rac = 5 ohm.",
+        "Final answer: 5 ohm."
+      ],
+      "ans": "5 ohm"
+    },
+    {
+      "topic": "Zener diode as a voltage regulator",
+      "marks": 4,
+      "q": "A Zener diode with breakdown voltage 10 V is used to regulate a 20 V unregulated supply with a series resistor of 1 kOhm, to a load resistor of 2 kOhm. Find the series current Is, load current Il, Zener current Iz and power dissipated in the Zener diode.",
+      "steps": [
+        "Given: Vin = 20 V, Vz = 10 V, Rs = 1 kOhm, Rl = 2 kOhm.",
+        "Formula: Is = (Vin - Vz)/Rs (current through series resistor).",
+        "Substitution: Is = (20 - 10)/1000 = 10/1000 = 0.01 A = 10 mA.",
+        "Formula: Il = Vz/Rl (current through load, since load sees constant Vz).",
+        "Substitution: Il = 10/2000 = 0.005 A = 5 mA.",
+        "Formula: Iz = Is - Il (Zener diverts the extra current).",
+        "Substitution: Iz = 10 - 5 = 5 mA.",
+        "Power in Zener Pz = Vz x Iz = 10 x 0.005 = 0.05 W = 50 mW.",
+        "Final answer: Is = 10 mA, Il = 5 mA, Iz = 5 mA, Pz = 50 mW."
+      ],
+      "ans": "Is = 10 mA, Il = 5 mA, Iz = 5 mA, Pz = 50 mW"
+    },
+    {
+      "topic": "Half wave rectifier output voltage and ripple frequency",
+      "marks": 3,
+      "q": "A half wave rectifier is fed with an AC input of peak voltage 100 V and frequency 50 Hz. Find the DC output voltage and the ripple frequency of the rectified output (use pi = 3.14).",
+      "steps": [
+        "Given: Vm = 100 V, input frequency f = 50 Hz.",
+        "Formula: for a half wave rectifier, Vdc = Vm/pi.",
+        "Substitution: Vdc = 100/3.14.",
+        "Calculation: Vdc = 31.8 V.",
+        "A half wave rectifier conducts only once per input cycle, so the output pulse (ripple) frequency equals the input frequency.",
+        "Final answer: Vdc = 31.8 V, ripple frequency = 50 Hz."
+      ],
+      "ans": "Vdc = 31.8 V, ripple frequency = 50 Hz"
+    },
+    {
+      "topic": "Law of mass action: minority carrier concentration",
+      "marks": 4,
+      "q": "A silicon crystal is doped with donor atoms to give a free electron concentration of 5 x 10^22 per m^3. If the intrinsic carrier concentration of silicon is ni = 1.5 x 10^16 per m^3, find the hole (minority carrier) concentration in the doped sample.",
+      "steps": [
+        "Given: ne = Nd = 5 x 10^22 per m^3, ni = 1.5 x 10^16 per m^3.",
+        "Formula (law of mass action): ni^2 = ne x nh, so nh = ni^2/ne.",
+        "Substitution: ni^2 = (1.5 x 10^16)^2 = 2.25 x 10^32.",
+        "Calculation: nh = 2.25 x 10^32 / (5 x 10^22).",
+        "nh = 0.45 x 10^10 = 4.5 x 10^9 per m^3.",
+        "Final answer: nh = 4.5 x 10^9 per m^3 (holes are the minority carriers in this n-type sample)."
+      ],
+      "ans": "nh = 4.5 x 10^9 per m^3"
+    },
+    {
+      "topic": "Evaluating a combinational logic circuit",
+      "marks": 3,
+      "q": "A digital circuit gives output Y = (A AND B) OR (NOT C). For inputs A = 1, B = 1, C = 0, find the output Y of the circuit.",
+      "steps": [
+        "Given: A = 1, B = 1, C = 0. Expression: Y = (A . B) + (NOT C).",
+        "AND gate: A . B = 1 . 1 = 1 (AND gate output is 1 only if all inputs are 1).",
+        "NOT gate: NOT C = NOT 0 = 1 (NOT gate inverts the input).",
+        "OR gate: Y = 1 + 1 = 1 (OR gate output is 1 if any input is 1).",
+        "Final answer: Y = 1."
+      ],
+      "ans": "Y = 1"
+    }
+  ],
+  "practice": [
+    { "topic": "Transistor Ie, Ib, beta", "q": "A transistor has emitter current 10 mA and base current 0.1 mA. Find Ic, beta and alpha.", "hint": "Ic = Ie - Ib; beta = Ic/Ib; alpha = Ic/Ie.", "ans": "Ic = 9.9 mA, beta = 99, alpha = 0.99." },
+    { "topic": "Alpha to beta conversion", "q": "A transistor has alpha = 0.995. Find its current gain beta.", "hint": "beta = alpha/(1 - alpha).", "ans": "beta = 199." },
+    { "topic": "Zener voltage regulator", "q": "A 5 V Zener diode regulates a 15 V supply through a 500 ohm series resistor, with a 1 kOhm load. Find Is, Il and Iz.", "hint": "Is = (Vin - Vz)/Rs; Il = Vz/Rl; Iz = Is - Il.", "ans": "Is = 20 mA, Il = 5 mA, Iz = 15 mA." },
+    { "topic": "Dynamic resistance of diode", "q": "The forward voltage of a diode changes by 0.2 V when the forward current changes by 40 mA. Find the dynamic resistance.", "hint": "rac = deltaV/deltaI.", "ans": "5 ohm." },
+    { "topic": "Full wave rectifier ripple frequency", "q": "A full wave rectifier is fed by a 50 Hz AC supply. Find the ripple (output pulse) frequency.", "hint": "A full wave rectifier conducts during both halves of each cycle, so output frequency is twice the input frequency.", "ans": "100 Hz." },
+    { "topic": "Logic gate evaluation", "q": "For the circuit Y = NOT (A AND B), find Y when A = 0 and B = 1.", "hint": "First find A AND B, then invert it using the NOT gate.", "ans": "Y = 1." }
+  ]
+}

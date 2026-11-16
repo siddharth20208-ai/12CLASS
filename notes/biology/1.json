@@ -1,0 +1,95 @@
+[
+  {
+    "t": "Binary fission and budding",
+    "def": "Binary fission and budding are simple asexual reproduction methods used by lower animals, where offspring arise without gamete formation or fertilization.",
+    "points": [
+      "In binary fission, the parent cell divides into two equal daughter cells, each growing into a complete organism (e.g. Amoeba, Paramecium).",
+      "The nucleus divides first by mitosis, followed by division of the cytoplasm.",
+      "In budding, a small outgrowth called a bud forms on the parent body.",
+      "The bud grows, develops organs, and may detach (Hydra) or remain attached forming a colony (sponges, corals).",
+      "Both methods produce offspring genetically identical to the parent.",
+      "These methods are fast and suited to simple-bodied organisms living in favourable, stable conditions."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Parent cell\"] --> B[\"Binary fission: splits into 2 equal cells\"]\n  A --> C[\"Budding: outgrowth (bud) forms\"]\n  C --> D[\"Bud grows and detaches or stays attached\"]" },
+    "example": "Hydra reproduces by budding: a bud appears on its body wall, grows tentacles and a mouth, then detaches as a new small Hydra.",
+    "tip": "State the organism name with each method (Amoeba for fission, Hydra for budding) — examiners specifically check for correct examples."
+  },
+  {
+    "t": "Spermatogenesis and oogenesis",
+    "def": "Spermatogenesis is the formation of sperm in the testis, and oogenesis is the formation of the ovum in the ovary; both convert diploid germ cells into haploid gametes through meiosis.",
+    "points": [
+      "Spermatogenesis occurs in seminiferous tubules: spermatogonium (2n) divides by mitosis then meiosis I and II to give 4 haploid spermatids.",
+      "Spermatids transform into mature sperm by spermiogenesis (losing cytoplasm, gaining a tail).",
+      "Oogenesis occurs in the ovary: oogonium (2n) grows into a primary oocyte which undergoes meiosis I to form a secondary oocyte and first polar body.",
+      "Meiosis II (completed only after fertilization) gives one functional ovum and a second polar body.",
+      "Spermatogenesis gives 4 equal functional sperm; oogenesis gives only 1 functional ovum due to unequal cytoplasm division.",
+      "Both processes are controlled by hormones: FSH and LH from the pituitary act on the testis/ovary."
+    ],
+    "formula": "1 spermatogonium -> 4 functional sperm;  1 oogonium -> 1 functional ovum + polar bodies",
+    "diagram": { "mermaid": "flowchart TD\n  A[\"Spermatogonium 2n\"] --> B[\"Primary spermatocyte\"]\n  B --> C[\"Secondary spermatocytes (meiosis I)\"]\n  C --> D[\"4 Spermatids (meiosis II)\"]\n  D --> E[\"4 mature sperm\"]" },
+    "example": "In humans, spermatogenesis takes about 65-75 days, continuously from puberty, while oogenesis begins before birth but each egg completes its final division only when fertilized.",
+    "tip": "Draw two separate simple flow diagrams side by side and highlight the key difference: equal 4 sperm vs only 1 functional ovum."
+  },
+  {
+    "t": "Menstrual cycle phases",
+    "def": "The menstrual cycle is the roughly 28-day hormonal cycle in human females that prepares the uterus for possible pregnancy, divided into menstrual, follicular, ovulatory and luteal phases.",
+    "points": [
+      "Menstrual phase (day 1-5): shedding of the endometrium, if no fertilization occurred in the previous cycle.",
+      "Follicular phase: FSH stimulates growth of ovarian follicles, which secrete estrogen causing endometrium to thicken.",
+      "Ovulatory phase: a sharp surge in LH around day 14 triggers rupture of the Graafian follicle, releasing the ovum (ovulation).",
+      "Luteal phase: the ruptured follicle becomes the corpus luteum, secreting progesterone to maintain the endometrium.",
+      "If fertilization does not occur, corpus luteum degenerates, progesterone falls, and menstruation starts again.",
+      "If fertilization occurs, the developing embryo maintains the corpus luteum through hCG, and the cycle stops (pregnancy)."
+    ],
+    "formula": "Cycle length ~28 days; Ovulation ~day 14; Menses ~day 1-5",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Menstrual phase\"] --> B[\"Follicular phase (FSH, estrogen)\"]\n  B --> C[\"Ovulation (LH surge)\"]\n  C --> D[\"Luteal phase (progesterone)\"]\n  D --> A" },
+    "example": "If ovulation happens on day 14 and fertilization does not occur, the corpus luteum breaks down by around day 26, and menstruation begins again near day 28.",
+    "tip": "Draw the cycle as a circular flow with hormone names at each stage — this diagram alone can fetch 2 marks."
+  },
+  {
+    "t": "Fertilization and implantation",
+    "def": "Fertilization is the fusion of sperm and ovum to form a zygote, and implantation is the attachment of the resulting blastocyst to the uterine wall.",
+    "points": [
+      "Fertilization usually occurs in the ampullary region of the fallopian tube.",
+      "A sperm penetrates the zona pellucida of the ovum and the two nuclei fuse to form a diploid zygote.",
+      "The zygote divides repeatedly (cleavage) while moving towards the uterus, forming a morula and then a blastocyst.",
+      "The blastocyst has an outer trophoblast layer and an inner cell mass that will form the embryo.",
+      "The trophoblast attaches to and digests into the endometrium; this attachment is called implantation.",
+      "After implantation, the trophoblast develops into the placenta, which connects the embryo to the mother."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Sperm + Ovum\"] --> B[\"Zygote\"]\n  B --> C[\"Cleavage: Morula\"]\n  C --> D[\"Blastocyst\"]\n  D --> E[\"Implantation in endometrium\"]" },
+    "example": "Implantation normally happens about 6-7 days after fertilization, once the blastocyst has travelled down the fallopian tube into the uterus.",
+    "tip": "Mention the location of fertilization (ampulla of fallopian tube) specifically — a common fill-in-the-blank point."
+  },
+  {
+    "t": "Pregnancy and parturition",
+    "def": "Pregnancy (gestation) is the period during which the embryo develops inside the uterus, and parturition is the process of childbirth at the end of this period.",
+    "points": [
+      "The placenta formed after implantation supplies nutrients and oxygen to the fetus and removes waste, also secreting hormones like hCG, estrogen and progesterone.",
+      "High progesterone during pregnancy keeps the uterus relaxed and prevents early contractions.",
+      "Human gestation lasts about 9 months (280 days from the last menstrual period).",
+      "Near full term, signals from the fully grown fetus and placenta trigger mild uterine contractions, known as the Ferguson reflex.",
+      "The posterior pituitary releases oxytocin, which causes strong uterine contractions leading to parturition (birth).",
+      "After birth, the placenta is also expelled as the afterbirth."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Full-term fetus signals\"] --> B[\"Mild uterine contractions\"]\n  B --> C[\"Oxytocin released\"]\n  C --> D[\"Strong contractions\"]\n  D --> E[\"Parturition (birth)\"]" },
+    "example": "Human gestation period is about 9 months (around 280 days); oxytocin injections are sometimes used medically to induce labour when parturition is delayed.",
+    "tip": "Name both key hormones (progesterone for maintaining pregnancy, oxytocin for triggering birth) — a frequent 1-mark question."
+  },
+  {
+    "t": "Lactation",
+    "def": "Lactation is the production and release of milk from the mammary glands of a mother after childbirth, controlled by hormones.",
+    "points": [
+      "During pregnancy, estrogen and progesterone stimulate growth and development of mammary gland tissue.",
+      "After childbirth, the hormone prolactin from the anterior pituitary stimulates milk production (synthesis) in the mammary glands.",
+      "The suckling action of the baby stimulates release of oxytocin from the posterior pituitary.",
+      "Oxytocin causes contraction of muscle cells around the milk glands, pushing milk out (milk ejection reflex).",
+      "The first milk secreted, called colostrum, is rich in antibodies (especially IgA) that protect the newborn.",
+      "Continued suckling maintains prolactin and oxytocin release, keeping up milk supply."
+    ],
+    "formula": "Prolactin -> milk synthesis;  Oxytocin -> milk ejection",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Baby suckles\"] --> B[\"Prolactin: milk made\"]\n  A --> C[\"Oxytocin: milk ejected\"]\n  B --> D[\"Milk stored in gland\"]\n  C --> D" },
+    "example": "Colostrum, the yellowish first milk produced in the initial days after birth, gives the newborn passive immunity through maternal antibodies.",
+    "tip": "Clearly separate the role of prolactin (making milk) from oxytocin (releasing milk) — this distinction is often tested directly."
+  }
+]

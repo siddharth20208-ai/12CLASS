@@ -1,0 +1,228 @@
+{
+  "solved": [
+    {
+      "topic": "Tangents and normals",
+      "marks": 2,
+      "q": "Find the equations of the tangent and normal to the curve y = x^2 at the point (2, 4).",
+      "steps": [
+        "Differentiate: dy/dx = 2x.",
+        "At x = 2: slope of tangent m = 2(2) = 4.",
+        "Tangent equation (point-slope form): y - 4 = 4(x - 2).",
+        "Simplify: y = 4x - 4.",
+        "Slope of normal = -1/m = -1/4.",
+        "Normal equation: y - 4 = (-1/4)(x - 2), i.e. x + 4y = 18."
+      ],
+      "ans": "Tangent: y = 4x - 4; Normal: x + 4y = 18"
+    },
+    {
+      "topic": "Tangents and normals",
+      "marks": 3,
+      "q": "Find the point on the curve y = x^2 - 2x + 3 where the tangent is parallel to the line y = 2x + 5.",
+      "steps": [
+        "Differentiate: dy/dx = 2x - 2.",
+        "Slope of given line = 2 (coefficient of x).",
+        "Set tangent slope equal: 2x - 2 = 2.",
+        "Solve: 2x = 4, so x = 2.",
+        "Find y at x = 2: y = 4 - 4 + 3 = 3.",
+        "Required point is (2, 3); tangent there: y - 3 = 2(x - 2), i.e. y = 2x - 1."
+      ],
+      "ans": "Point (2, 3); tangent y = 2x - 1"
+    },
+    {
+      "topic": "Rate of change (related rates)",
+      "marks": 3,
+      "q": "A spherical balloon is being inflated so that its radius increases at 2 cm/s. Find the rate of increase of its volume when r = 5 cm.",
+      "steps": [
+        "Volume formula: V = (4/3) pi r^3.",
+        "Differentiate w.r.t. t using chain rule: dV/dt = 4 pi r^2 (dr/dt).",
+        "Given dr/dt = 2 cm/s and r = 5 cm.",
+        "Substitute: dV/dt = 4 pi (5)^2 (2).",
+        "Compute: 4 pi (25)(2) = 200 pi.",
+        "Final answer: dV/dt = 200 pi cm^3/s."
+      ],
+      "ans": "200 pi cm^3/s"
+    },
+    {
+      "topic": "Rate of change (related rates)",
+      "marks": 4,
+      "q": "A ladder 5 m long is leaning against a vertical wall. The bottom of the ladder is pulled away from the wall at 2 m/s. Find the rate at which the top of the ladder is sliding down when the bottom is 3 m from the wall.",
+      "steps": [
+        "Let x = distance of bottom from wall, y = height of top on wall. Relation: x^2 + y^2 = 25 (ladder length 5).",
+        "Differentiate both sides w.r.t. t: 2x (dx/dt) + 2y (dy/dt) = 0.",
+        "Simplify: x (dx/dt) + y (dy/dt) = 0.",
+        "When x = 3: y = sqrt(25 - 9) = sqrt(16) = 4.",
+        "Given dx/dt = 2 m/s. Substitute: 3(2) + 4(dy/dt) = 0.",
+        "Solve: 6 + 4(dy/dt) = 0, so dy/dt = -6/4 = -1.5.",
+        "Negative sign means y is decreasing, i.e. top slides down at 1.5 m/s."
+      ],
+      "ans": "Top slides down at 1.5 m/s"
+    },
+    {
+      "topic": "Rate of change (related rates)",
+      "marks": 3,
+      "q": "The radius of a circular plate is increasing at the rate of 3 cm/s. Find the rate at which its area is increasing when the radius is 10 cm.",
+      "steps": [
+        "Area formula: A = pi r^2.",
+        "Differentiate w.r.t. t: dA/dt = 2 pi r (dr/dt).",
+        "Given dr/dt = 3 cm/s, r = 10 cm.",
+        "Substitute: dA/dt = 2 pi (10)(3).",
+        "Compute: dA/dt = 60 pi cm^2/s.",
+        "Final answer: 60 pi cm^2/s."
+      ],
+      "ans": "60 pi cm^2/s"
+    },
+    {
+      "topic": "Increasing and decreasing functions",
+      "marks": 4,
+      "q": "Find the intervals in which f(x) = 2x^3 - 3x^2 - 12x + 5 is increasing and decreasing.",
+      "steps": [
+        "Differentiate: f'(x) = 6x^2 - 6x - 12.",
+        "Factor: f'(x) = 6(x^2 - x - 2) = 6(x - 2)(x + 1).",
+        "Critical points where f'(x) = 0: x = 2 and x = -1.",
+        "Sign chart: for x < -1, (x-2)<0 and (x+1)<0, so product positive, f' > 0.",
+        "For -1 < x < 2, (x-2)<0, (x+1)>0, product negative, f' < 0.",
+        "For x > 2, both factors positive, f' > 0.",
+        "Final answer: f is increasing on (-infinity, -1) union (2, infinity), decreasing on (-1, 2)."
+      ],
+      "ans": "Increasing on (-infinity,-1) U (2,infinity); decreasing on (-1,2)"
+    },
+    {
+      "topic": "Maxima and minima",
+      "marks": 4,
+      "q": "Find the local maximum and minimum values of f(x) = 2x^3 - 15x^2 + 36x + 1.",
+      "steps": [
+        "Differentiate: f'(x) = 6x^2 - 30x + 36.",
+        "Factor: f'(x) = 6(x^2 - 5x + 6) = 6(x - 2)(x - 3).",
+        "Critical points: x = 2 and x = 3.",
+        "Second derivative: f''(x) = 12x - 30.",
+        "At x = 2: f''(2) = 24 - 30 = -6 < 0, so local maximum; f(2) = 16 - 60 + 72 + 1 = 29.",
+        "At x = 3: f''(3) = 36 - 30 = 6 > 0, so local minimum; f(3) = 54 - 135 + 108 + 1 = 28.",
+        "Final answer: local maximum = 29 at x = 2, local minimum = 28 at x = 3."
+      ],
+      "ans": "Local max = 29 at x = 2; local min = 28 at x = 3"
+    },
+    {
+      "topic": "Maxima and minima",
+      "marks": 4,
+      "q": "Discuss the nature of the critical points of f(x) = x^4 - 4x^3 using the first derivative test.",
+      "steps": [
+        "Differentiate: f'(x) = 4x^3 - 12x^2 = 4x^2(x - 3).",
+        "Critical points where f'(x) = 0: x = 0 and x = 3.",
+        "For x < 0: x^2 > 0, (x-3) < 0, so f'(x) < 0.",
+        "For 0 < x < 3: x^2 > 0, (x-3) < 0, so f'(x) < 0 (no sign change at x = 0).",
+        "For x > 3: x^2 > 0, (x-3) > 0, so f'(x) > 0 (sign changes from negative to positive at x = 3).",
+        "Since f' does not change sign at x = 0, it is a point of inflection, not an extremum.",
+        "At x = 3, f' changes from negative to positive, so x = 3 is a local minimum; f(3) = 81 - 108 = -27."
+      ],
+      "ans": "x = 0 is a point of inflection (not extremum); local minimum = -27 at x = 3"
+    },
+    {
+      "topic": "Maxima and minima",
+      "marks": 4,
+      "q": "A wire of length 36 cm is bent to form a rectangle. Find the dimensions of the rectangle so that its area is maximum.",
+      "steps": [
+        "Let the sides be x and y. Perimeter condition: 2(x + y) = 36, so y = 18 - x.",
+        "Area as function of x: A(x) = x*y = x(18 - x) = 18x - x^2.",
+        "Differentiate: A'(x) = 18 - 2x.",
+        "Set A'(x) = 0: 18 - 2x = 0, so x = 9.",
+        "Check using second derivative: A''(x) = -2 < 0, confirming maximum at x = 9.",
+        "Then y = 18 - 9 = 9, giving maximum area A = 9*9 = 81.",
+        "Final answer: the rectangle is a square of side 9 cm with maximum area 81 sq cm."
+      ],
+      "ans": "x = 9 cm, y = 9 cm (square); maximum area = 81 sq cm"
+    },
+    {
+      "topic": "Approximations using differentials",
+      "marks": 2,
+      "q": "Using differentials, find the approximate value of sqrt(26).",
+      "steps": [
+        "Take f(x) = sqrt(x); choose nearby known value x = 25, dx = 1.",
+        "f(25) = sqrt(25) = 5.",
+        "Differentiate: f'(x) = 1/(2 sqrt(x)); at x = 25, f'(25) = 1/10.",
+        "Compute dy = f'(x) dx = (1/10)(1) = 0.1.",
+        "Approximate value: f(25 + 1) is about f(25) + dy = 5 + 0.1.",
+        "Final answer: sqrt(26) is approximately 5.1."
+      ],
+      "ans": "sqrt(26) is approximately 5.1"
+    },
+    {
+      "topic": "Approximations using differentials",
+      "marks": 3,
+      "q": "Using differentials, find the approximate value of the cube root of 26.",
+      "steps": [
+        "Take f(x) = x^(1/3); choose nearby known value x = 27, dx = -1 (since 26 = 27 - 1).",
+        "f(27) = 27^(1/3) = 3.",
+        "Differentiate: f'(x) = (1/3) x^(-2/3); at x = 27, f'(27) = (1/3)(1/9) = 1/27.",
+        "Compute dy = f'(x) dx = (1/27)(-1) = -1/27.",
+        "Approximate value: f(26) is about f(27) + dy = 3 - 1/27.",
+        "Final answer: cube root of 26 is approximately 2.963 (3 - 1/27)."
+      ],
+      "ans": "Cube root of 26 is approximately 2.963 (3 - 1/27)"
+    },
+    {
+      "topic": "Second derivative test",
+      "marks": 4,
+      "q": "Find the local maxima and minima of f(x) = x^3 - 6x^2 + 9x + 15 using the second derivative test.",
+      "steps": [
+        "Differentiate: f'(x) = 3x^2 - 12x + 9.",
+        "Factor: f'(x) = 3(x^2 - 4x + 3) = 3(x - 1)(x - 3).",
+        "Critical points: x = 1 and x = 3.",
+        "Second derivative: f''(x) = 6x - 12.",
+        "At x = 1: f''(1) = 6 - 12 = -6 < 0, so local maximum; f(1) = 1 - 6 + 9 + 15 = 19.",
+        "At x = 3: f''(3) = 18 - 12 = 6 > 0, so local minimum; f(3) = 27 - 54 + 27 + 15 = 15.",
+        "Final answer: local maximum = 19 at x = 1, local minimum = 15 at x = 3."
+      ],
+      "ans": "Local max = 19 at x = 1; local min = 15 at x = 3"
+    }
+  ],
+  "practice": [
+    {
+      "topic": "Tangents and normals",
+      "q": "Find the equations of the tangent and normal to the curve y = x^3 at the point where x = 1.",
+      "hint": "Find dy/dx = 3x^2, evaluate the slope at x=1, then use point-slope form for tangent and normal.",
+      "ans": "Tangent: y = 3x - 2; Normal: x + 3y = 4"
+    },
+    {
+      "topic": "Rate of change (related rates)",
+      "q": "A balloon's radius increases at 2 cm/s. Find the rate of increase of its surface area when r = 5 cm.",
+      "hint": "Differentiate A = 4 pi r^2 w.r.t. t using chain rule and substitute dr/dt and r.",
+      "ans": "80 pi cm^2/s"
+    },
+    {
+      "topic": "Increasing and decreasing functions",
+      "q": "Find the intervals in which f(x) = x^3 - 6x^2 + 9x + 2 is increasing and decreasing.",
+      "hint": "Differentiate, factor f'(x) = 3(x-1)(x-3), then build a sign chart for the three intervals.",
+      "ans": "Increasing on (-infinity,1) U (3,infinity); decreasing on (1,3)"
+    },
+    {
+      "topic": "Maxima and minima",
+      "q": "Find the local maximum and minimum values of f(x) = x^3 - 3x.",
+      "hint": "Set f'(x) = 3x^2 - 3 = 0 to get critical points x = 1, -1, then use f''(x) = 6x to classify each.",
+      "ans": "Local max = 2 at x = -1; local min = -2 at x = 1"
+    },
+    {
+      "topic": "Approximations using differentials",
+      "q": "Using differentials, find the approximate value of sqrt(37).",
+      "hint": "Use f(x) = sqrt(x) with x = 36, dx = 1, and f'(x) = 1/(2 sqrt(x)).",
+      "ans": "sqrt(37) is approximately 6.083"
+    },
+    {
+      "topic": "Second derivative test",
+      "q": "Find the local maxima and minima of f(x) = 2x^3 - 9x^2 + 12x + 5 using the second derivative test.",
+      "hint": "Factor f'(x) = 6(x-1)(x-2) for critical points, then use f''(x) = 12x - 18 to classify each.",
+      "ans": "Local max = 10 at x = 1; local min = 9 at x = 2"
+    },
+    {
+      "topic": "Rate of change (related rates)",
+      "q": "The edge of a cube is increasing at 3 cm/s. Find the rate at which the volume is increasing when the edge is 4 cm.",
+      "hint": "Differentiate V = x^3 w.r.t. t to get dV/dt = 3x^2 (dx/dt), then substitute given values.",
+      "ans": "144 cm^3/s"
+    },
+    {
+      "topic": "Maxima and minima",
+      "q": "A wire of length 40 m is used to fence a rectangular garden. Find the dimensions for maximum area.",
+      "hint": "Write y = 20 - x from the perimeter condition, form A(x) = x(20-x), differentiate and set A'(x) = 0.",
+      "ans": "x = 10 m, y = 10 m (square); maximum area = 100 sq m"
+    }
+  ]
+}

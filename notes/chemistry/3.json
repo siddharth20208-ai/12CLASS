@@ -1,0 +1,109 @@
+[
+  {
+    "t": "First law of thermodynamics",
+    "def": "The first law of thermodynamics states that energy can neither be created nor destroyed, only converted from one form to another; the change in internal energy equals heat added plus work done on the system.",
+    "points": [
+      "ΔU = q + w, where ΔU is change in internal energy, q is heat absorbed, w is work done on the system.",
+      "Sign convention: heat absorbed by system is +q, heat released is -q; work done ON the system is +w, work done BY the system is -w.",
+      "For an isolated system, no heat or work exchange occurs, so ΔU = 0.",
+      "At constant volume, work done = 0 (no expansion/compression), so ΔU = q (heat at constant volume = qv).",
+      "At constant pressure, work w = -PΔV (expansion work), and q at constant pressure defines enthalpy change ΔH.",
+      "Internal energy is a state function — it depends only on the initial and final states, not the path taken."
+    ],
+    "formula": "ΔU = q + w     w = -P ΔV (constant pressure)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Heat q added\"] --> C[\"Change in internal energy\"]\n  B[\"Work w done on system\"] --> C\n  C --> D[\"Delta U = q + w\"]"
+    },
+    "example": "A gas absorbs 500 J heat and does 200 J work on surroundings (expansion): ΔU = q + w = 500 + (-200) = 300 J.",
+    "tip": "Clearly state the sign convention you are using before substituting values — many marks are lost due to sign confusion."
+  },
+  {
+    "t": "Enthalpy changes (ΔH)",
+    "def": "Enthalpy change (ΔH) is the heat absorbed or released by a system during a process at constant pressure.",
+    "points": [
+      "ΔH = ΔU + PΔV (relates enthalpy change to internal energy change at constant pressure).",
+      "Enthalpy of formation: heat change when 1 mole of a compound forms from its elements in their standard states.",
+      "Enthalpy of combustion: heat released when 1 mole of a substance burns completely in oxygen.",
+      "Enthalpy of reaction: heat change when reactants (in stoichiometric amounts) convert completely to products.",
+      "Exothermic reactions have ΔH negative (heat released); endothermic reactions have ΔH positive (heat absorbed).",
+      "Standard enthalpy changes are measured at 298 K and 1 bar pressure, denoted ΔH°."
+    ],
+    "formula": "ΔH = ΔU + PΔV = ΔU + Δn(g)RT",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Reactants\"] --> B{\"Delta H\"}\n  B -->|Negative exothermic| C[\"Heat released\"]\n  B -->|Positive endothermic| D[\"Heat absorbed\"]"
+    },
+    "example": "Combustion of methane: CH4 + 2O2 -> CO2 + 2H2O, ΔH = -890 kJ/mol (exothermic, heat is released).",
+    "tip": "Clearly state whether the reaction is exothermic or endothermic based on the sign of ΔH — examiners often ask this as a follow-up."
+  },
+  {
+    "t": "Hess's law",
+    "def": "Hess's law of constant heat summation states that the total enthalpy change for a reaction is the same whether it occurs in one step or in several steps, since enthalpy is a state function.",
+    "points": [
+      "Enthalpy change depends only on initial and final states, not on the path/number of steps taken.",
+      "Thermochemical equations can be added, subtracted or multiplied like algebraic equations, and their ΔH values are treated the same way.",
+      "To find ΔH of an unknown reaction, combine known reactions so that their sum gives the target reaction.",
+      "If a reaction is reversed, the sign of ΔH is also reversed.",
+      "If a reaction is multiplied by a factor, ΔH is multiplied by the same factor.",
+      "Hess's law allows calculation of enthalpies that are difficult to measure directly (e.g. enthalpy of formation of unstable compounds)."
+    ],
+    "formula": "ΔH(overall) = ΔH1 + ΔH2 + ... (for steps that sum to overall reaction)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Reactants\"] -->|Step 1 dH1| B[\"Intermediate\"]\n  B -->|Step 2 dH2| C[\"Products\"]\n  A -->|Direct dH| C"
+    },
+    "example": "C(s)+1/2O2 -> CO, ΔH=-110.5 kJ; CO+1/2O2 -> CO2, ΔH=-283.0 kJ. Adding: C(s)+O2 -> CO2, ΔH = -110.5 + (-283.0) = -393.5 kJ.",
+    "tip": "Draw a simple energy cycle (triangle with arrows) connecting reactants, intermediate and products with the known and unknown ΔH values — this earns the diagram mark."
+  },
+  {
+    "t": "Entropy (ΔS)",
+    "def": "Entropy is a measure of the degree of disorder or randomness of a system; entropy change (ΔS) during a process tells whether disorder increases or decreases.",
+    "points": [
+      "ΔS = qrev/T for a reversible process at temperature T.",
+      "Entropy increases when a solid melts, a liquid boils, or a gas is produced (more disorder) — ΔS positive.",
+      "Entropy decreases when a gas condenses or a liquid freezes (less disorder) — ΔS negative.",
+      "Entropy of a perfectly ordered crystalline solid at 0 K is taken as zero (third law of thermodynamics basis).",
+      "Entropy increases when the number of moles of gas increases in a reaction.",
+      "ΔS(reaction) = ΣS°(products) - ΣS°(reactants) using standard entropy values."
+    ],
+    "formula": "ΔS = qrev / T     ΔS(rxn) = S(products) - S(reactants)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Solid low entropy\"] --> B[\"Liquid medium entropy\"]\n  B --> C[\"Gas high entropy\"]\n  C --> D[\"Entropy increases solid to gas\"]"
+    },
+    "example": "For melting of ice at 273K, if latent heat = 6008 J/mol, ΔS = q/T = 6008/273 ≈ 22 J/K/mol (positive, as disorder increases).",
+    "tip": "Relate entropy change directly to the physical state change (solid/liquid/gas) involved — this reasoning is what fetches marks, not just the formula."
+  },
+  {
+    "t": "Gibbs free energy (ΔG)",
+    "def": "Gibbs free energy combines enthalpy and entropy to determine whether a process is spontaneous at constant temperature and pressure.",
+    "points": [
+      "ΔG = ΔH - TΔS, where T is the absolute temperature in Kelvin.",
+      "ΔG represents the maximum useful work obtainable from a process, excluding work done against pressure-volume changes.",
+      "A reaction can be spontaneous even if ΔH is positive, as long as TΔS is large enough and positive.",
+      "At equilibrium, ΔG = 0, so ΔH = TΔS, giving the temperature at which the reaction just becomes spontaneous.",
+      "Standard Gibbs free energy change ΔG° relates to equilibrium constant K by ΔG° = -RT ln K."
+    ],
+    "formula": "ΔG = ΔH - TΔS     ΔG° = -RT ln K",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Enthalpy change DH\"] --> C[\"Gibbs free energy DG\"]\n  B[\"Entropy term T times DS\"] --> C\n  C --> D[\"DG = DH minus T DS\"]"
+    },
+    "example": "ΔH = -40 kJ/mol, ΔS = -100 J/K/mol, T = 300K: ΔG = -40000 - 300(-100) = -40000+30000 = -10000 J = -10 kJ/mol (spontaneous).",
+    "tip": "Keep ΔH in Joules (not kJ) when using ΔS in J/K/mol in the same equation, or convert ΔS to kJ/K/mol — unit mismatch is the top numerical error."
+  },
+  {
+    "t": "Spontaneity criteria",
+    "def": "Spontaneity criteria use the sign of ΔG to predict whether a process will occur on its own without external help, at constant temperature and pressure.",
+    "points": [
+      "ΔG < 0: the process is spontaneous (occurs on its own in the forward direction).",
+      "ΔG > 0: the process is non-spontaneous (will not occur on its own; the reverse process is spontaneous).",
+      "ΔG = 0: the system is at equilibrium; no net change occurs.",
+      "If ΔH < 0 and ΔS > 0, ΔG is always negative — spontaneous at all temperatures.",
+      "If ΔH > 0 and ΔS < 0, ΔG is always positive — non-spontaneous at all temperatures.",
+      "If signs of ΔH and ΔS are the same (both positive or both negative), spontaneity depends on temperature."
+    ],
+    "formula": "DG<0 spontaneous | DG=0 equilibrium | DG>0 non-spontaneous",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"DG negative\"] --> B[\"Spontaneous\"]\n  C[\"DG zero\"] --> D[\"Equilibrium\"]\n  E[\"DG positive\"] --> F[\"Non-spontaneous\"]"
+    },
+    "example": "Melting of ice above 273K: ΔH is positive (absorbs heat) but ΔS is positive and large enough that TΔS > ΔH, making ΔG negative, so melting is spontaneous above 0°C.",
+    "tip": "Make a small 4-case table of ΔH and ΔS sign combinations and the resulting spontaneity — this exact table is frequently asked."
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "q": "The elementary row transformation R1 -> R1 + 2R2 means:",
+    "o": [
+      "Add twice R2 to R1",
+      "Multiply R1 by 2",
+      "Swap R1 and R2",
+      "Subtract R1 from R2"
+    ],
+    "a": 0,
+    "why": "This notation means replace R1 with R1 plus 2 times R2."
+  },
+  {
+    "q": "For a 3x3 matrix A, A.adj(A) equals:",
+    "o": [
+      "A^2",
+      "|A|.I",
+      "adj(A)",
+      "I"
+    ],
+    "a": 1,
+    "why": "The standard identity A.adj(A) = |A|.I holds for any square matrix."
+  },
+  {
+    "q": "A square matrix A has an inverse if and only if:",
+    "o": [
+      "|A| = 0",
+      "A is symmetric",
+      "|A| != 0",
+      "A is a zero matrix"
+    ],
+    "a": 2,
+    "why": "A matrix is invertible only when its determinant is non-zero."
+  },
+  {
+    "q": "If A is a 2x2 matrix with |A| = 5, then |A^-1| equals:",
+    "o": [
+      "5",
+      "25",
+      "0",
+      "1/5"
+    ],
+    "a": 3,
+    "why": "|A^-1| = 1/|A| = 1/5."
+  },
+  {
+    "q": "To solve AX = B by the matrix method, X is given by:",
+    "o": [
+      "X = A^-1B",
+      "X = BA^-1",
+      "X = AB^-1",
+      "X = B^-1A"
+    ],
+    "a": 0,
+    "why": "Multiplying both sides by A^-1 on the left gives X = A^-1B."
+  },
+  {
+    "q": "In the reduction (echelon) method, the goal is to reduce the matrix to:",
+    "o": [
+      "A diagonal matrix",
+      "An upper triangular form with leading 1s",
+      "A null matrix",
+      "A symmetric matrix"
+    ],
+    "a": 1,
+    "why": "Echelon form has leading entries 1 with zeros below them, making the system easy to solve."
+  },
+  {
+    "q": "If A is invertible, then (A^-1)^-1 equals:",
+    "o": [
+      "I",
+      "A^-1",
+      "A",
+      "adj(A)"
+    ],
+    "a": 2,
+    "why": "The inverse of the inverse returns the original matrix A."
+  },
+  {
+    "q": "For two invertible matrices A and B of the same order, (AB)^-1 equals:",
+    "o": [
+      "A^-1B^-1",
+      "A^-1 + B^-1",
+      "BA",
+      "B^-1A^-1"
+    ],
+    "a": 3,
+    "why": "The reversal law for inverses states (AB)^-1 = B^-1A^-1."
+  },
+  {
+    "q": "Which elementary transformation is used to make a pivot element 1 in a row?",
+    "o": [
+      "Ri -> kRi (k != 0)",
+      "Ri -> Ri + Rj",
+      "Ri <-> Rj",
+      "Ri -> Ri - Rj"
+    ],
+    "a": 0,
+    "why": "Scaling a row by a nonzero constant k can make the pivot entry equal to 1."
+  },
+  {
+    "q": "If A is a square matrix such that A^2 = I, then A^-1 equals:",
+    "o": [
+      "-A",
+      "A",
+      "I",
+      "0"
+    ],
+    "a": 1,
+    "why": "From A.A = I, A itself acts as its own inverse, so A^-1 = A."
+  }
+]

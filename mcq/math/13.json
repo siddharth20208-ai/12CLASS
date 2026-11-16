@@ -1,0 +1,112 @@
+[
+  {
+    "q": "A random variable that can take only a finite or countable number of values is called",
+    "o": [
+      "discrete",
+      "continuous",
+      "mixed",
+      "constant"
+    ],
+    "a": 0,
+    "why": "discrete random variables take countable values"
+  },
+  {
+    "q": "For a discrete random variable X, the sum of all probabilities P(X = xi) must equal",
+    "o": [
+      "0",
+      "1",
+      "0.5",
+      "it depends on the distribution"
+    ],
+    "a": 1,
+    "why": "total probability of all outcomes must sum to 1"
+  },
+  {
+    "q": "For a probability density function f(x) of a continuous random variable, which condition must hold?",
+    "o": [
+      "f(x) can be negative",
+      "f(x) is always an integer",
+      "∫ f(x) dx over the entire range = 1",
+      "f(x) = 0 everywhere"
+    ],
+    "a": 2,
+    "why": "total area under a valid p.d.f. must equal 1"
+  },
+  {
+    "q": "The expectation (mean) of a discrete random variable X is given by",
+    "o": [
+      "sum of xi",
+      "max(xi)",
+      "sum of P(X=xi)^2",
+      "sum of xi . P(X=xi)"
+    ],
+    "a": 3,
+    "why": "mean = sum xi P(xi), the weighted average"
+  },
+  {
+    "q": "The variance of a random variable X is defined as",
+    "o": [
+      "E(X^2) - [E(X)]^2",
+      "E(X)",
+      "E(X) - E(X^2)",
+      "[E(X)]^2"
+    ],
+    "a": 0,
+    "why": "standard formula for variance"
+  },
+  {
+    "q": "The cumulative distribution function F(x) of a random variable X is defined as",
+    "o": [
+      "P(X = x)",
+      "P(X <= x)",
+      "P(X > x)",
+      "E(X)"
+    ],
+    "a": 1,
+    "why": "CDF gives the probability that X is less than or equal to x"
+  },
+  {
+    "q": "If f(x) = kx for 0 <= x <= 2 is a valid p.d.f., the value of k is",
+    "o": [
+      "1/4",
+      "1",
+      "1/2",
+      "2"
+    ],
+    "a": 2,
+    "why": "∫[0,2] kx dx = k(4)/2 = 2k = 1 gives k = 1/2"
+  },
+  {
+    "q": "For a discrete distribution P(X=0)=0.2, P(X=1)=0.3, P(X=2)=k to be valid, k equals",
+    "o": [
+      "0.3",
+      "0.4",
+      "0.1",
+      "0.5"
+    ],
+    "a": 3,
+    "why": "sum of probabilities = 1, so k = 1 - 0.2 - 0.3 = 0.5"
+  },
+  {
+    "q": "The CDF F(x) of a random variable is a non-decreasing function that satisfies",
+    "o": [
+      "F(-infinity) = 0, F(infinity) = 1",
+      "F(-infinity) = 1, F(infinity) = 0",
+      "F(x) is always negative",
+      "F(x) decreases as x increases"
+    ],
+    "a": 0,
+    "why": "CDF rises from 0 to 1 as x goes from -infinity to infinity"
+  },
+  {
+    "q": "If X has p.d.f. f(x) = 2x for 0<=x<=1, then P(0 <= X <= 1/2) equals",
+    "o": [
+      "1/2",
+      "1/4",
+      "1/8",
+      "3/4"
+    ],
+    "a": 1,
+    "why": "∫[0,0.5] 2x dx = x^2 from 0 to 0.5 = 0.25"
+  }
+]

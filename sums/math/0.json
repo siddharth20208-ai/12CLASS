@@ -1,0 +1,162 @@
+{
+  "solved": [
+    {
+      "topic": "Truth table of a statement",
+      "marks": 2,
+      "q": "Prepare the truth table for (p ^ q) v ~p.",
+      "steps": [
+        "List all 4 combinations of p, q: TT, TF, FT, FF.",
+        "Column p ^ q: using AND rule, true only when both p, q are true: T, F, F, F.",
+        "Column ~p: negate p: F, F, T, T.",
+        "Column (p ^ q) v ~p: using OR rule (true if at least one is true): T, F, T, T."
+      ],
+      "ans": "Truth values of (p ^ q) v ~p are T, F, T, T for TT, TF, FT, FF respectively; it is a contingency."
+    },
+    {
+      "topic": "Tautology / contradiction / contingency",
+      "marks": 2,
+      "q": "Examine whether the statement (p v q) v ~p is a tautology.",
+      "steps": [
+        "List all combinations of p, q: TT, TF, FT, FF.",
+        "Column p v q (OR rule, true if at least one true): T, T, T, F.",
+        "Column ~p: F, F, T, T.",
+        "Column (p v q) v ~p: OR the two columns: T, T, T, T.",
+        "All entries in the last column are T."
+      ],
+      "ans": "(p v q) v ~p is a tautology."
+    },
+    {
+      "topic": "Logical equivalence",
+      "marks": 2,
+      "q": "Using truth table, show that p -> q is logically equivalent to ~q -> ~p.",
+      "steps": [
+        "List all combinations of p, q: TT, TF, FT, FF.",
+        "Column p -> q (false only when p=T, q=F): T, F, T, T.",
+        "Column ~q: F, T, F, T. Column ~p: F, F, T, T.",
+        "Column ~q -> ~p (false only when ~q=T, ~p=F): T, F, T, T.",
+        "Compare p -> q column with ~q -> ~p column: both are T, F, T, T, identical in every row."
+      ],
+      "ans": "p -> q is logically equivalent to ~q -> ~p (contrapositive law)."
+    },
+    {
+      "topic": "De Morgan's laws",
+      "marks": 2,
+      "q": "Using De Morgan's laws, write the negation of: p ^ (q v r).",
+      "steps": [
+        "Statement: p ^ (q v r).",
+        "Negate: ~[p ^ (q v r)].",
+        "Apply De Morgan's law ~(A ^ B) = ~A v ~B with A = p, B = (q v r): ~p v ~(q v r).",
+        "Apply De Morgan's law ~(q v r) = ~q ^ ~r to the second part.",
+        "Combine: ~p v (~q ^ ~r)."
+      ],
+      "ans": "Negation is ~p v (~q ^ ~r)."
+    },
+    {
+      "topic": "Converse, inverse, contrapositive",
+      "marks": 2,
+      "q": "Write the converse, inverse and contrapositive of the statement: 'If a number is divisible by 4, then it is divisible by 2.'",
+      "steps": [
+        "Let p: number is divisible by 4, q: number is divisible by 2. Statement is p -> q.",
+        "Converse is q -> p: If a number is divisible by 2, then it is divisible by 4.",
+        "Inverse is ~p -> ~q: If a number is not divisible by 4, then it is not divisible by 2.",
+        "Contrapositive is ~q -> ~p: If a number is not divisible by 2, then it is not divisible by 4."
+      ],
+      "ans": "Converse: q->p (not divisible by 4 as above); Inverse: ~p->~q; Contrapositive: ~q->~p (equivalent to original)."
+    },
+    {
+      "topic": "Quantifiers",
+      "marks": 2,
+      "q": "Write the negation of the statement: 'For all x belonging to N, x + 5 > 3.'",
+      "steps": [
+        "Statement is of the form: for all x, P(x), i.e. (for all x in N)(x+5>3).",
+        "Negation of a universal quantifier statement is an existential quantifier statement of the negated predicate: there exists x such that ~P(x).",
+        "Negate the inequality: x + 5 > 3 negated is x + 5 <= 3."
+      ],
+      "ans": "There exists x belonging to N such that x + 5 <= 3."
+    },
+    {
+      "topic": "Duality",
+      "marks": 2,
+      "q": "Write the dual of the statement: (p v q) ^ T.",
+      "steps": [
+        "Rule for duality: replace ^ by v, v by ^, T by F, and F by T.",
+        "Given statement: (p v q) ^ T.",
+        "Replace v inside bracket by ^: (p ^ q).",
+        "Replace outer ^ by v, and T by F: (p ^ q) v F."
+      ],
+      "ans": "Dual is (p ^ q) v F."
+    },
+    {
+      "topic": "Switching circuits - series",
+      "marks": 3,
+      "q": "Two switches S1 and S2 are connected in series. Write the logical statement for the circuit and the condition for the lamp to glow.",
+      "steps": [
+        "Series connection corresponds to the AND (^) connective.",
+        "Let p: S1 is closed, q: S2 is closed. The circuit statement is p ^ q.",
+        "Lamp glows only when the statement p ^ q is true, i.e. the current flows only along a path with no open switch.",
+        "By truth table of AND: p ^ q is true only when both p and q are true."
+      ],
+      "ans": "Logical statement: p ^ q; lamp glows only when both S1 and S2 are closed (both T)."
+    },
+    {
+      "topic": "Switching circuits - simplification",
+      "marks": 4,
+      "q": "Simplify the circuit given by the statement [p ^ (~p v q)] and draw the simplified circuit.",
+      "steps": [
+        "Given expression: p ^ (~p v q).",
+        "Use distributive law: p ^ (~p v q) = (p ^ ~p) v (p ^ q).",
+        "p ^ ~p is a contradiction (always F), since a statement and its negation cannot both be true.",
+        "So expression becomes F v (p ^ q).",
+        "F v (p ^ q) = p ^ q, since F v A = A for any statement A."
+      ],
+      "ans": "Simplified statement: p ^ q, so the simplified circuit is S1 and S2 in series (switches corresponding to p and q)."
+    },
+    {
+      "topic": "Switching circuits - parallel and series combined",
+      "marks": 4,
+      "q": "Express in symbolic form and write the truth table for the circuit: S1 in series with (S2 parallel S3).",
+      "steps": [
+        "Series corresponds to AND (^), parallel corresponds to OR (v).",
+        "Let p: S1 closed, q: S2 closed, r: S3 closed. The circuit statement is p ^ (q v r).",
+        "Build truth table: for each of 8 combinations of p, q, r compute q v r first, then AND with p.",
+        "e.g. p=T, q=F, r=T: q v r = T, so p ^ (q v r) = T ^ T = T (lamp glows).",
+        "e.g. p=F, q=T, r=T: p ^ (q v r) = F ^ T = F (lamp does not glow, since S1 is open)."
+      ],
+      "ans": "Symbolic form: p ^ (q v r); lamp glows whenever S1 is closed and at least one of S2, S3 is closed."
+    },
+    {
+      "topic": "Logical equivalence using algebra of statements",
+      "marks": 3,
+      "q": "Without using truth table, show that ~(p v q) v (~p ^ q) is logically equivalent to ~p.",
+      "steps": [
+        "Apply De Morgan's law to the first term: ~(p v q) = ~p ^ ~q.",
+        "Expression becomes (~p ^ ~q) v (~p ^ q).",
+        "Factor ~p using distributive law: ~p ^ (~q v q).",
+        "~q v q is a tautology (always T), by the law of excluded middle.",
+        "So expression becomes ~p ^ T = ~p, since A ^ T = A for any statement A."
+      ],
+      "ans": "The expression simplifies to ~p, proving the equivalence."
+    },
+    {
+      "topic": "Statement patterns and conditional/biconditional",
+      "marks": 2,
+      "q": "Prepare the truth table for p <-> q and state when it is true.",
+      "steps": [
+        "List combinations of p, q: TT, TF, FT, FF.",
+        "Biconditional rule: p <-> q is true when p and q have the same truth value.",
+        "TT: both true, so p<->q = T. TF: differ, so F. FT: differ, so F. FF: both false, so T."
+      ],
+      "ans": "p <-> q has truth values T, F, F, T; it is true exactly when p and q have the same truth value."
+    }
+  ],
+  "practice": [
+    { "topic": "Truth table", "q": "Construct the truth table for ~p ^ q.", "hint": "Find ~p column first, then AND with q row by row.", "ans": "F, F, T, F for TT, TF, FT, FF." },
+    { "topic": "Tautology/contradiction", "q": "Examine whether p ^ ~p is a tautology, contradiction or contingency.", "hint": "A statement AND its negation is always false.", "ans": "Contradiction (always F)." },
+    { "topic": "Logical equivalence", "q": "Show using truth table that ~(p ^ q) is equivalent to ~p v ~q.", "hint": "This is De Morgan's law; compare truth table columns.", "ans": "Both columns are F,T,T,T; equivalent." },
+    { "topic": "Converse/inverse/contrapositive", "q": "Write the converse, inverse and contrapositive of: 'If it rains then the match is cancelled.'", "hint": "Let p: it rains, q: match cancelled; statement is p->q.", "ans": "Converse: q->p; Inverse: ~p->~q; Contrapositive: ~q->~p." },
+    { "topic": "Negation of quantified statement", "q": "Write the negation of: 'There exists a real number x such that x^2 = -1.'", "hint": "Negation of 'there exists' is 'for all' with negated predicate.", "ans": "For all real x, x^2 is not equal to -1." },
+    { "topic": "Duality", "q": "Write the dual of (p ^ q) v F.", "hint": "Swap ^ with v and F with T.", "ans": "(p v q) ^ T." },
+    { "topic": "Switching circuit", "q": "Write the symbolic form of the circuit: (S1 parallel S2) in series with S3.", "hint": "Parallel is OR, series is AND; combine accordingly.", "ans": "(p v q) ^ r." },
+    { "topic": "Algebra of statements", "q": "Without truth table, simplify (p v q) ^ (p v ~q).", "hint": "Use distributive law: p v (q ^ ~q).", "ans": "Simplifies to p, since q ^ ~q is a contradiction." }
+  ]
+}

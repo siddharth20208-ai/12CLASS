@@ -1,0 +1,107 @@
+[
+  {
+    "t": "Classification of Carbohydrates",
+    "def": "Carbohydrates are polyhydroxy aldehydes or ketones (or compounds that give these on hydrolysis) made of carbon, hydrogen and oxygen.",
+    "points": [
+      "Monosaccharides: simplest sugars, cannot be hydrolysed further, e.g. glucose, fructose.",
+      "Oligosaccharides: give 2-10 monosaccharide units on hydrolysis; disaccharides (2 units) like sucrose, maltose, lactose are the common type.",
+      "Polysaccharides: give many monosaccharide units on hydrolysis, e.g. starch, cellulose, glycogen.",
+      "Carbohydrates are also classed as reducing sugars (reduce Tollens' or Fehling's reagent, have free -CHO or -C=O) and non-reducing sugars (sucrose).",
+      "They are the main energy source and structural material (cellulose) in living organisms."
+    ],
+    "formula": "General formula: Cx(H2O)y",
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Carbohydrates\"] --> B[\"Monosaccharides\"]\n  A --> C[\"Oligosaccharides\"]\n  A --> D[\"Polysaccharides\"]\n  C --> E[\"Disaccharides like sucrose maltose lactose\"]\n  D --> F[\"Starch cellulose glycogen\"]"
+    },
+    "example": "Sucrose (table sugar) is a disaccharide of glucose + fructose; starch is a polysaccharide made of many glucose units.",
+    "tip": "Write the three-level classification with one example each - a common 2-mark question."
+  },
+  {
+    "t": "Structure of Glucose and Fructose",
+    "def": "Glucose is an aldohexose (six-carbon sugar with an aldehyde group) and fructose is a ketohexose (six-carbon sugar with a ketone group); both have the molecular formula C6H12O6.",
+    "points": [
+      "Glucose open chain structure: CHO-(CHOH)4-CH2OH, with the aldehyde group at C1.",
+      "Fructose open chain structure: CH2OH-CO-(CHOH)3-CH2OH, with the ketone group at C2.",
+      "Both molecules exist mainly in a cyclic (ring) form in solution: glucose forms a six-membered pyranose ring, fructose forms a five-membered furanose ring.",
+      "Glucose gives Fehling's and Tollens' test positive (reducing sugar) because of the free aldehyde group.",
+      "Glucose and fructose are structural isomers of each other (same formula, different structure)."
+    ],
+    "formula": "Molecular formula (both): C6H12O6",
+    "diagram": {
+      "draw": "Draw the open-chain zig-zag skeleton for glucose: CHO at top (C1), then four CHOH carbons (C2-C5) each with OH labelled, ending in CH2OH (C6). Below it draw fructose similarly but with C=O at C2 instead of CHO at C1, and CH2OH at C1."
+    },
+    "example": "Glucose + Fehling's solution on heating gives a brick-red precipitate of Cu2O, confirming the aldehyde group.",
+    "tip": "Mention 'isomers of each other' and the aldehyde vs ketone difference - frequently asked distinguishing point."
+  },
+  {
+    "t": "Proteins: Structure and Classification",
+    "def": "Proteins are natural polymers of amino acids joined together by peptide bonds, essential for body structure and function.",
+    "points": [
+      "Amino acids link by a peptide bond (-CO-NH-) formed between the -COOH of one acid and -NH2 of the next, releasing water.",
+      "Primary structure: the sequence of amino acids in the polypeptide chain.",
+      "Secondary structure: regular folding of the chain into alpha-helix or beta-pleated sheet, held by hydrogen bonds.",
+      "Tertiary structure: overall 3-D folding of the protein giving its biological shape.",
+      "Quaternary structure: arrangement of two or more polypeptide chains (subunits) together, as in haemoglobin.",
+      "Classified as fibrous (insoluble, structural, e.g. keratin, collagen) or globular (soluble, functional, e.g. enzymes, insulin)."
+    ],
+    "formula": "Peptide bond formation: -COOH + H2N- -> -CO-NH- + H2O",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Primary structure sequence\"] --> B[\"Secondary structure helix or sheet\"]\n  B --> C[\"Tertiary structure 3D folding\"]\n  C --> D[\"Quaternary structure multiple chains\"]"
+    },
+    "example": "Haemoglobin has four polypeptide chains held together - an example of quaternary structure.",
+    "tip": "List all four structural levels in order with one keyword each for full marks."
+  },
+  {
+    "t": "Enzymes and Their Action",
+    "def": "Enzymes are biological catalysts, mostly globular proteins, that speed up biochemical reactions in living cells without being consumed.",
+    "points": [
+      "Enzymes are highly specific - each enzyme acts on a particular substrate only.",
+      "Active site: a specific region on the enzyme where the substrate binds.",
+      "Mechanism (lock and key model): substrate fits into the active site forming an enzyme-substrate complex, which breaks down to give products and free enzyme.",
+      "Enzyme activity is affected by temperature and pH; most work best at body temperature (37°C) and specific pH.",
+      "Enzymes lower the activation energy of the reaction, increasing reaction rate.",
+      "Example enzymes: amylase (breaks starch to maltose), pepsin (digests proteins in stomach)."
+    ],
+    "formula": "E + S -> ES -> E + P",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Enzyme E\"] --> B[\"Enzyme substrate complex ES\"]\n  C[\"Substrate S\"] --> B\n  B --> D[\"Product P\"]\n  B --> E[\"Free enzyme E\"]"
+    },
+    "example": "Amylase in saliva converts starch into maltose during digestion of food in the mouth.",
+    "tip": "Draw the lock-and-key diagram and mention 'activation energy decreases' for full marks."
+  },
+  {
+    "t": "Vitamins and Deficiency Diseases",
+    "def": "Vitamins are organic compounds required in small amounts in the diet for normal growth and health, as the body cannot synthesise most of them.",
+    "points": [
+      "Fat-soluble vitamins: A, D, E, K - stored in the body, dissolve in fats.",
+      "Water-soluble vitamins: B-complex and C - not stored, excess excreted in urine, needed regularly in diet.",
+      "Vitamin A deficiency causes night blindness (xerophthalmia).",
+      "Vitamin D deficiency causes rickets in children and osteomalacia in adults.",
+      "Vitamin C deficiency causes scurvy (bleeding gums).",
+      "Vitamin B1 (thiamine) deficiency causes beriberi."
+    ],
+    "formula": "No single formula - classification only: fat-soluble (A, D, E, K) and water-soluble (B, C)",
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Vitamins\"] --> B[\"Fat soluble A D E K\"]\n  A --> C[\"Water soluble B complex and C\"]\n  B --> D[\"Deficiency night blindness rickets\"]\n  C --> E[\"Deficiency beriberi scurvy\"]"
+    },
+    "example": "A sailor on a long voyage without fresh fruits develops scurvy due to vitamin C deficiency.",
+    "tip": "Make a table: vitamin name, source, deficiency disease - this table format scores full marks."
+  },
+  {
+    "t": "Nucleic Acids (DNA and RNA)",
+    "def": "Nucleic acids are biopolymers made of nucleotide units that store and transmit genetic information in living cells.",
+    "points": [
+      "Each nucleotide has three parts: a nitrogen base, a pentose sugar, and a phosphate group.",
+      "DNA (deoxyribonucleic acid) contains deoxyribose sugar and bases adenine, guanine, cytosine, thymine; it is double-stranded (double helix).",
+      "RNA (ribonucleic acid) contains ribose sugar and bases adenine, guanine, cytosine, uracil (no thymine); it is usually single-stranded.",
+      "In DNA, base pairing follows the rule: adenine pairs with thymine, guanine pairs with cytosine, held by hydrogen bonds.",
+      "DNA carries hereditary information; RNA helps in protein synthesis."
+    ],
+    "formula": "Nucleotide = nitrogen base + pentose sugar + phosphate group",
+    "diagram": {
+      "draw": "Draw two parallel curved lines representing the double helix backbone of DNA. Connect them with short horizontal rungs labelled 'A-T' and 'G-C' base pairs at intervals. Label one strand 'sugar-phosphate backbone' and the base pair rungs 'hydrogen bonds'."
+    },
+    "example": "In a DNA strand with sequence A-T-G-C, the complementary strand reads T-A-C-G by base pairing rules.",
+    "tip": "State clearly the sugar and base difference between DNA and RNA - a frequently asked distinguishing question."
+  }
+]

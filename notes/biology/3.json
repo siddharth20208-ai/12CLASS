@@ -1,0 +1,94 @@
+[
+  {
+    "t": "DNA structure and packaging",
+    "def": "DNA is a double helix molecule made of two polynucleotide strands, and it is tightly packaged with histone proteins to fit inside the cell nucleus as chromatin.",
+    "points": [
+      "Each strand is a chain of nucleotides; each nucleotide has a sugar (deoxyribose), a phosphate group, and a nitrogenous base.",
+      "Bases are A, T, G, C; A pairs with T, and G pairs with C by hydrogen bonds (complementary base pairing).",
+      "The two strands run antiparallel and twist into a right-handed double helix (Watson-Crick model).",
+      "DNA wraps around a core of 8 histone proteins to form a nucleosome, like beads on a string.",
+      "Nucleosomes further coil and condense to form chromatin fibre, and then chromosomes during cell division.",
+      "This packaging lets a very long DNA molecule fit compactly inside the small nucleus."
+    ],
+    "formula": "A pairs with T (2 H-bonds); G pairs with C (3 H-bonds)",
+    "diagram": { "draw": "Draw two antiparallel strands twisted as a double helix. Mark sugar-phosphate backbone on the outside and base pairs (A-T, G-C) connected by dashed hydrogen bonds on the inside. Separately draw a nucleosome: a disc-shaped histone core with DNA wrapped around it, labelled 'histone octamer' and 'linker DNA'." },
+    "example": "A nucleosome contains about 200 base pairs of DNA wrapped around 8 histone molecules, repeated thousands of times to form chromatin.",
+    "tip": "Always mention base-pairing rule (A-T, G-C) with number of hydrogen bonds — a very common 1-mark question."
+  },
+  {
+    "t": "Semiconservative replication",
+    "def": "Semiconservative replication is the process by which DNA makes an exact copy of itself, where each new DNA molecule has one old (parental) strand and one newly synthesized strand.",
+    "points": [
+      "The double helix unwinds and the two strands separate, each acting as a template.",
+      "DNA polymerase adds complementary nucleotides to each template strand, following base-pairing rules.",
+      "This produces two daughter DNA molecules, each with one parental strand and one new strand.",
+      "Meselson and Stahl proved this using E. coli grown first in heavy nitrogen (15N) medium, then shifted to normal (14N) medium.",
+      "After one generation, DNA showed hybrid (intermediate) density; after two generations, both hybrid and light density DNA appeared.",
+      "This matched the semiconservative model and ruled out conservative or dispersive replication models."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Parent DNA (both strands old)\"] --> B[\"Strands separate\"]\n  B --> C[\"New strand made on each old strand\"]\n  C --> D[\"2 daughter DNA: 1 old + 1 new strand each\"]" },
+    "example": "After the first generation in Meselson-Stahl's experiment, all DNA molecules were hybrid density, confirming that each new DNA kept one heavy parental strand.",
+    "tip": "Name Meselson and Stahl and describe heavy/light nitrogen clearly — the experimental proof is worth separate marks from the concept."
+  },
+  {
+    "t": "Transcription and genetic code",
+    "def": "Transcription is the synthesis of mRNA from a DNA template, and the genetic code is the set of rules (codons) by which mRNA sequences specify amino acids.",
+    "points": [
+      "RNA polymerase binds to the promoter region of a gene and unwinds the DNA locally.",
+      "It synthesizes mRNA complementary to the template strand, in the 5' to 3' direction, using ribonucleotides (with uracil instead of thymine).",
+      "Transcription has three stages: initiation, elongation, and termination (at a terminator sequence).",
+      "The genetic code is read in triplets called codons; each codon of 3 bases specifies one amino acid.",
+      "The code is degenerate (more than one codon can code for the same amino acid) and nearly universal across organisms.",
+      "AUG is the start codon (codes for methionine); UAA, UAG, UGA are stop codons."
+    ],
+    "formula": "64 possible codons; 61 code for amino acids, 3 are stop codons (UAA, UAG, UGA)",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"RNA polymerase binds promoter\"] --> B[\"DNA unwinds\"]\n  B --> C[\"mRNA synthesized (5' to 3')\"]\n  C --> D[\"Termination at stop sequence\"]" },
+    "example": "The codon AUG always signals the start of translation and codes for methionine, which is usually the first amino acid of a new polypeptide.",
+    "tip": "Remember the code is degenerate but unambiguous (one codon never codes for two different amino acids) — this exact wording is often asked."
+  },
+  {
+    "t": "Translation process",
+    "def": "Translation is the process by which ribosomes read mRNA codons and assemble a specific sequence of amino acids to build a polypeptide chain.",
+    "points": [
+      "mRNA attaches to a ribosome, which reads codons starting from the start codon AUG.",
+      "tRNA molecules, each carrying a specific amino acid, bring their anticodon to pair with the mRNA codon.",
+      "The ribosome forms a peptide bond between consecutive amino acids, growing the polypeptide chain.",
+      "The ribosome moves along the mRNA one codon at a time (this movement is called translocation).",
+      "Translation stops when the ribosome reaches a stop codon, releasing the finished polypeptide.",
+      "The polypeptide then folds and may be modified to become a functional protein."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"mRNA + ribosome\"] --> B[\"tRNA brings amino acid matching codon\"]\n  B --> C[\"Peptide bond forms\"]\n  C --> D[\"Ribosome moves to next codon\"]\n  D --> E[\"Stop codon reached: polypeptide released\"]" },
+    "example": "If an mRNA reads AUG-GGA-UUU-UAA, translation produces a chain of 3 amino acids (Met-Gly-Phe) and stops at the UAA stop codon.",
+    "tip": "Clearly mention the role of tRNA's anticodon matching the mRNA codon — this base-pairing step is the key examiner focus."
+  },
+  {
+    "t": "Lac operon regulation",
+    "def": "The lac operon is a group of genes in E. coli (lacZ, lacY, lacA) controlled together by one promoter and operator, switched on only when lactose is available, as a model of gene regulation.",
+    "points": [
+      "The operon has structural genes lacZ, lacY, lacA, controlled by a promoter and operator, and regulated by a separate regulatory gene lacI.",
+      "lacI produces a repressor protein that normally binds to the operator, blocking RNA polymerase.",
+      "Without lactose: repressor binds operator, transcription is blocked — the operon is 'off'.",
+      "With lactose present: allolactose (a lactose derivative) binds to the repressor, changing its shape so it cannot bind the operator.",
+      "RNA polymerase can now transcribe the structural genes, producing enzymes needed to digest lactose — the operon is 'on'.",
+      "This is an example of negative inducible gene regulation, since a repressor normally keeps genes off until induced."
+    ],
+    "diagram": { "mermaid": "flowchart TD\n  A[\"No lactose\"] --> B[\"Repressor binds operator\"]\n  B --> C[\"Operon OFF\"]\n  D[\"Lactose present\"] --> E[\"Allolactose binds repressor\"]\n  E --> F[\"Repressor leaves operator\"]\n  F --> G[\"Operon ON: enzymes made\"]" },
+    "example": "When E. coli is grown in a medium with lactose as the only sugar, lac operon genes switch on within minutes to produce beta-galactosidase for digesting lactose.",
+    "tip": "Draw both the 'off' state (repressor on operator) and 'on' state (repressor removed) — two separate diagrams fetch separate marks."
+  },
+  {
+    "t": "Human Genome Project & DNA fingerprinting",
+    "def": "The Human Genome Project aimed to sequence the entire human genome, and DNA fingerprinting is a technique that uses unique DNA sequence variations (VNTRs) to identify individuals.",
+    "points": [
+      "The Human Genome Project (HGP) was an international effort completed in the early 2000s to determine the sequence of all base pairs in human DNA.",
+      "It identified around 20,000-25,000 genes in the human genome and mapped their locations on chromosomes.",
+      "HGP findings help in understanding genetic diseases, designing targeted drugs, and advancing personalized medicine.",
+      "DNA fingerprinting relies on Variable Number of Tandem Repeats (VNTRs), repetitive DNA sequences that differ in number between individuals.",
+      "Steps include isolating DNA, cutting with restriction enzymes, separating fragments by gel electrophoresis, and comparing banding patterns.",
+      "Since VNTR patterns are unique to each individual (except identical twins), this technique is used in forensic investigation and paternity testing."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"DNA sample\"] --> B[\"Cut with restriction enzymes\"]\n  B --> C[\"Gel electrophoresis\"]\n  C --> D[\"Unique VNTR band pattern\"]\n  D --> E[\"Match or identify individual\"]" },
+    "example": "DNA fingerprinting was used to identify crime suspects and in paternity disputes by comparing VNTR band patterns of the suspect/father with evidence/child samples.",
+    "tip": "Mention VNTR by name as the basis of DNA fingerprinting — simply saying 'DNA pattern' without this term loses marks."
+  }
+]

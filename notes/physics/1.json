@@ -1,0 +1,110 @@
+[
+  {
+    "t": "Surface Tension and Surface Energy",
+    "def": "Surface tension is the force acting per unit length along the free surface of a liquid, tending to minimize its surface area. Surface energy is the extra potential energy stored in the surface because of this tension.",
+    "points": [
+      "Liquid molecules on the surface are pulled inward more than sideways, so the surface behaves like a stretched elastic membrane.",
+      "Surface tension T is defined as T = F / L, where F is the force acting along a line of length L on the surface.",
+      "To increase the surface area, work must be done against the inward pull of molecules.",
+      "Surface energy per unit area equals surface tension: W = T x (change in area).",
+      "A soap film has two free surfaces, so work done = T x 2 x (change in area).",
+      "Small drops are spherical because a sphere has minimum surface area for a given volume."
+    ],
+    "formula": "T = F / L     W = T x ΔA (one surface)     W = 2T x ΔA (film with two surfaces)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Liquid surface molecules\"] --> B[\"Net inward pull\"]\n  B --> C[\"Surface behaves like stretched skin\"]\n  C --> D[\"Surface tension T = F over L\"]\n  D --> E[\"Work to stretch area = T times area change\"]"
+    },
+    "example": "A soap bubble of radius 1 cm has surface tension 0.03 N/m. Work done to blow it from zero radius: W = 2T x 4*pi*r^2 = 2 x 0.03 x 4 x 3.14 x (0.01)^2 = 7.54e-5 J.",
+    "tip": "Remember a soap bubble has TWO surfaces (inner and outer) while a single drop has only ONE — this doubling is a common mark-losing mistake."
+  },
+  {
+    "t": "Angle of Contact and Capillarity",
+    "def": "The angle of contact is the angle between the tangent to the liquid surface and the solid surface, measured inside the liquid, at the point of contact. Capillarity is the rise or fall of liquid in a narrow tube due to surface tension.",
+    "points": [
+      "If angle of contact is less than 90 degrees, the liquid wets the solid and rises in a capillary (e.g. water in glass).",
+      "If angle of contact is more than 90 degrees, the liquid does not wet the solid and falls (e.g. mercury in glass).",
+      "Rise happens because the curved (concave) liquid surface creates a pressure difference that pulls liquid up.",
+      "At equilibrium, the weight of the risen liquid column is balanced by the vertical component of surface tension force.",
+      "This gives the capillary rise formula relating height h to tube radius r and surface tension T.",
+      "Capillarity explains kerosene rising in a lamp wick and water rising in soil through fine pores."
+    ],
+    "formula": "h = 2T cos θ / (r ρ g)",
+    "diagram": {
+      "draw": "Draw a narrow glass capillary tube dipped vertically in a beaker of water. Show the water surface inside the tube curved upward (concave meniscus) and risen to height h above the beaker's water level. Label r for tube radius, θ for angle of contact at the tube wall, and h for height of rise."
+    },
+    "example": "Water rises 5 cm in a capillary of radius 0.2 mm, θ = 0. T = h r ρ g / 2 = (0.05 x 0.2e-3 x 1000 x 9.8)/2 = 0.049 N/m.",
+    "tip": "Draw the meniscus shape correctly — concave for water (wetting), convex for mercury (non-wetting) — examiners check this detail."
+  },
+  {
+    "t": "Viscosity and Stokes' Law",
+    "def": "Viscosity is the internal friction between adjacent layers of a fluid moving with different velocities, which opposes relative motion. Stokes' law gives the viscous drag force on a small sphere moving slowly through a viscous fluid.",
+    "points": [
+      "Fluid layers moving faster drag slower layers forward; slower layers drag faster layers back — this is viscous force.",
+      "Viscous force is proportional to the velocity gradient between layers: F = η A (dv/dx), where η is coefficient of viscosity.",
+      "SI unit of η is poiseuille (Pa·s or N s/m^2).",
+      "For a small sphere of radius r moving with velocity v through a fluid of viscosity η, Stokes found F = 6πηrv.",
+      "This drag force always opposes the motion of the sphere.",
+      "Viscosity decreases with increase in temperature for liquids (unlike gases, where it increases)."
+    ],
+    "formula": "F = η A (dv/dx)     Stokes' law: F = 6πηrv",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Sphere falls through viscous fluid\"] --> B[\"Viscous drag F = 6 pi eta r v\"]\n  B --> C[\"Drag opposes motion, increases with speed\"]\n  C --> D[\"Eventually drag plus buoyancy equals weight\"]\n  D --> E[\"Terminal velocity reached\"]"
+    },
+    "example": "A steel ball of radius 1 mm falls through oil of viscosity 0.5 Pa·s at speed 0.02 m/s. Drag F = 6 x 3.14 x 0.5 x 1e-3 x 0.02 = 1.88e-4 N.",
+    "tip": "State clearly that Stokes' law applies only to small spherical bodies falling slowly (streamline/laminar flow) — this condition is often asked."
+  },
+  {
+    "t": "Terminal Velocity",
+    "def": "Terminal velocity is the constant maximum speed reached by a body falling through a viscous fluid, when the net force on it becomes zero.",
+    "points": [
+      "A falling sphere experiences three forces: weight (down), buoyant upthrust (up), and viscous drag (up, opposing motion).",
+      "As speed increases, viscous drag (proportional to v) increases until it balances the other forces.",
+      "At terminal velocity, acceleration = 0, so weight = upthrust + viscous drag.",
+      "Using Stokes' law: (4/3)πr^3 ρ g = (4/3)πr^3 σ g + 6πηrv, where ρ is density of sphere, σ is density of fluid.",
+      "Solving gives terminal velocity v = 2r^2 g (ρ − σ) / (9η).",
+      "Terminal velocity increases with the square of the radius, so bigger drops fall faster."
+    ],
+    "formula": "v = 2 r² g (ρ − σ) / (9 η)",
+    "diagram": {
+      "draw": "Draw a small sphere falling inside a tall jar of viscous liquid. Draw three arrows on the sphere: weight mg downward, upthrust (buoyant force) upward, and viscous drag F upward. Label all three and write 'at terminal velocity, mg = upthrust + F'."
+    },
+    "example": "Steel ball r = 1 mm, ρ = 7800 kg/m^3, σ (oil) = 900 kg/m^3, η = 0.5 Pa·s: v = 2(1e-3)^2 x 9.8 x (7800-900)/(9 x 0.5) = 2e-6 x 9.8 x 6900/4.5 ≈ 0.030 m/s.",
+    "tip": "Write the force-balance equation first, then substitute — examiners give step marks for showing mg = upthrust + viscous force."
+  },
+  {
+    "t": "Equation of Continuity and Bernoulli's Principle",
+    "def": "The equation of continuity states that for steady, incompressible flow, the mass flowing per second through any cross-section of a tube is constant. Bernoulli's principle states that the total energy per unit volume (pressure + kinetic + potential) remains constant along a streamline for an ideal fluid.",
+    "points": [
+      "Equation of continuity comes from conservation of mass: mass entering = mass leaving in steady flow.",
+      "For incompressible flow this gives A1 v1 = A2 v2 — where the pipe narrows, the fluid speeds up.",
+      "Bernoulli's principle applies conservation of energy to a flowing ideal (non-viscous, incompressible) fluid.",
+      "The three energy terms are pressure energy (P), kinetic energy per unit volume ((1/2)ρv^2), and potential energy per unit volume (ρgh).",
+      "Their sum stays constant along a streamline: P + (1/2)ρv^2 + ρgh = constant.",
+      "Where speed is higher, pressure is lower, and vice versa — this explains lift on aircraft wings and the venturimeter."
+    ],
+    "formula": "A1 v1 = A2 v2     P + (1/2)ρv² + ρgh = constant",
+    "diagram": {
+      "draw": "Draw a horizontal pipe that narrows in the middle (venturi shape). Show wide section with large area A1, slow speed v1, high pressure; narrow section with small area A2, fast speed v2, low pressure. Attach manometer tubes at both sections showing different liquid levels."
+    },
+    "example": "Pipe area reduces from 4 cm^2 to 1 cm^2; water enters at 2 m/s. By continuity, v2 = A1v1/A2 = (4x2)/1 = 8 m/s.",
+    "tip": "Always state the three conditions for Bernoulli's equation: fluid is ideal, incompressible, and flow is steady/streamline — markers check this."
+  },
+  {
+    "t": "Reynolds Number and Types of Flow",
+    "def": "Reynolds number is a dimensionless number that gives the ratio of inertial force to viscous force in a flowing fluid, and predicts whether the flow is laminar (streamline) or turbulent.",
+    "points": [
+      "Reynolds number Re = ρvd/η, where ρ is fluid density, v is flow speed, d is pipe diameter, η is viscosity.",
+      "Low Re (below about 2000) means viscous forces dominate — flow is smooth and streamline (laminar).",
+      "High Re (above about 3000) means inertial forces dominate — flow becomes chaotic (turbulent) with eddies.",
+      "Between 2000 and 3000 is an unstable transition region.",
+      "Critical velocity is the speed at which laminar flow changes to turbulent flow for a given fluid and pipe.",
+      "Re is dimensionless, so it has no unit — it is purely a ratio."
+    ],
+    "formula": "Re = ρ v d / η",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Low Reynolds number\"] --> B[\"Laminar smooth flow\"]\n  C[\"High Reynolds number\"] --> D[\"Turbulent chaotic flow\"]\n  B --> E[\"Re less than 2000\"]\n  D --> F[\"Re more than 3000\"]"
+    },
+    "example": "Water (ρ=1000, η=0.001 Pa s) flows at 0.5 m/s in a pipe of diameter 0.02 m: Re = (1000 x 0.5 x 0.02)/0.001 = 10000 — turbulent flow.",
+    "tip": "Just quoting the formula and the two ranges (laminar below ~2000, turbulent above ~3000) is usually enough for the 1-2 mark question."
+  }
+]

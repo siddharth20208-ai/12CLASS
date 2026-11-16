@@ -1,0 +1,112 @@
+[
+  {
+    "q": "According to the first law of thermodynamics, the change in internal energy ΔU is given by:",
+    "o": [
+      "ΔU = q - w",
+      "ΔU = q + w",
+      "ΔU = q x w",
+      "ΔU = w - q"
+    ],
+    "a": 1,
+    "why": "First law: ΔU = q + w, where q is heat absorbed and w is work done on the system."
+  },
+  {
+    "q": "A gas absorbs 500 J of heat and does 200 J of work on the surroundings (expansion). The change in internal energy is:",
+    "o": [
+      "700 J",
+      "-300 J",
+      "300 J",
+      "-700 J"
+    ],
+    "a": 2,
+    "why": "ΔU = q + w = 500 + (-200) = 300 J, since work done BY the system is taken as negative."
+  },
+  {
+    "q": "For combustion of methane, CH4 + 2O2 -> CO2 + 2H2O, ΔH = -890 kJ/mol. This reaction is:",
+    "o": [
+      "Endothermic, heat absorbed",
+      "Non-spontaneous always",
+      "Isothermal",
+      "Exothermic, heat released"
+    ],
+    "a": 3,
+    "why": "Negative ΔH means heat is released, so the combustion of methane is exothermic."
+  },
+  {
+    "q": "Hess's law of constant heat summation is based on the fact that enthalpy is:",
+    "o": [
+      "A state function",
+      "A path function",
+      "Always positive",
+      "Dependent on the number of steps"
+    ],
+    "a": 0,
+    "why": "Hess's law works because enthalpy is a state function, depending only on initial and final states."
+  },
+  {
+    "q": "Given C(s) + 1/2 O2 -> CO, ΔH = -110.5 kJ and CO + 1/2 O2 -> CO2, ΔH = -283.0 kJ, the ΔH for C(s) + O2 -> CO2 is:",
+    "o": [
+      "+172.5 kJ",
+      "-393.5 kJ",
+      "-172.5 kJ",
+      "+393.5 kJ"
+    ],
+    "a": 1,
+    "why": "Adding the two steps: ΔH = -110.5 + (-283.0) = -393.5 kJ (Hess's law)."
+  },
+  {
+    "q": "During melting of ice, the entropy change ΔS is:",
+    "o": [
+      "Zero",
+      "Negative",
+      "Positive",
+      "Cannot be determined"
+    ],
+    "a": 2,
+    "why": "Melting increases disorder (solid to liquid), so entropy change is positive."
+  },
+  {
+    "q": "The Gibbs free energy equation is given by:",
+    "o": [
+      "ΔG = ΔH + TΔS",
+      "ΔG = ΔH x ΔS",
+      "ΔG = TΔS - ΔH",
+      "ΔG = ΔH - TΔS"
+    ],
+    "a": 3,
+    "why": "Gibbs free energy relation: ΔG = ΔH - TΔS."
+  },
+  {
+    "q": "For a reaction with ΔH = -40 kJ/mol and ΔS = -100 J/K/mol at T = 300K, ΔG is:",
+    "o": [
+      "-10 kJ/mol",
+      "-70 kJ/mol",
+      "+10 kJ/mol",
+      "+70 kJ/mol"
+    ],
+    "a": 0,
+    "why": "ΔG = -40000 - 300(-100) = -40000 + 30000 = -10000 J = -10 kJ/mol."
+  },
+  {
+    "q": "A reaction is at equilibrium when:",
+    "o": [
+      "ΔG > 0",
+      "ΔG = 0",
+      "ΔG < 0",
+      "ΔH = 0 always"
+    ],
+    "a": 1,
+    "why": "At equilibrium, Gibbs free energy change ΔG = 0."
+  },
+  {
+    "q": "If ΔH is positive and ΔS is negative for a reaction, then the reaction is:",
+    "o": [
+      "Spontaneous at all temperatures",
+      "Spontaneous only at high temperature",
+      "Non-spontaneous at all temperatures",
+      "Spontaneous only at low temperature"
+    ],
+    "a": 2,
+    "why": "If ΔH > 0 and ΔS < 0, ΔG = ΔH - TΔS is always positive, making the reaction non-spontaneous at all temperatures."
+  }
+]

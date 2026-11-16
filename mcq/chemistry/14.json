@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Based on source, cellulose acetate (made by chemically modifying cellulose) is classified as a",
+    "o": [
+      "Natural polymer",
+      "Fully synthetic polymer",
+      "Semi-synthetic polymer",
+      "Elastomer only"
+    ],
+    "a": 2,
+    "why": "Cellulose acetate is derived from a natural polymer (cellulose) through chemical modification, making it semi-synthetic."
+  },
+  {
+    "q": "Bakelite, having a rigid cross-linked/network structure, is classified based on molecular forces as a",
+    "o": [
+      "Elastomer",
+      "Fibre",
+      "Thermoplastic",
+      "Thermosetting polymer"
+    ],
+    "a": 3,
+    "why": "Bakelite has strong cross-links formed on heating that make it hard permanently, a characteristic of thermosetting polymers."
+  },
+  {
+    "q": "Addition polymerisation of monomers proceeds mainly in which three mechanistic steps?",
+    "o": [
+      "Initiation, propagation, termination",
+      "Oxidation, reduction, substitution",
+      "Hydrolysis, condensation, elimination",
+      "Nucleation, growth, ageing"
+    ],
+    "a": 0,
+    "why": "Chain-growth addition polymerisation occurs via initiation of the double bond, propagation of the chain, then termination."
+  },
+  {
+    "q": "Condensation polymerisation differs from addition polymerisation mainly because it",
+    "o": [
+      "Needs only one type of monomer",
+      "Involves loss of a small molecule like water at each step",
+      "Cannot form polyamides",
+      "Occurs only with alkenes"
+    ],
+    "a": 1,
+    "why": "In condensation polymerisation, bifunctional monomers link with elimination of a small molecule such as water at each step."
+  },
+  {
+    "q": "Nylon-6,6 is formed by condensation of hexamethylenediamine with",
+    "o": [
+      "Terephthalic acid",
+      "Ethylene glycol",
+      "Adipic acid",
+      "Caprolactam"
+    ],
+    "a": 2,
+    "why": "Nylon-6,6 is a polyamide formed from hexamethylenediamine and adipic acid, releasing water at each amide bond."
+  },
+  {
+    "q": "Buna-S, used to manufacture vehicle tyres, is a copolymer of",
+    "o": [
+      "Butadiene and acrylonitrile",
+      "Vinyl chloride and vinyl acetate",
+      "Ethylene and propylene",
+      "Butadiene and styrene"
+    ],
+    "a": 3,
+    "why": "Buna-S is formed by copolymerising 1,3-butadiene with styrene, giving a tough synthetic rubber."
+  },
+  {
+    "q": "Natural rubber is chemically described as",
+    "o": [
+      "Cis-1,4-polyisoprene",
+      "Trans-1,4-polyisoprene",
+      "A copolymer of butadiene and isoprene",
+      "Polyethylene"
+    ],
+    "a": 0,
+    "why": "Natural rubber is a 1,4-addition polymer of isoprene with cis configuration, which gives it its elastic property."
+  },
+  {
+    "q": "Vulcanisation of rubber involves heating raw rubber with sulphur to",
+    "o": [
+      "Remove all double bonds",
+      "Form sulphur cross-links between polymer chains, increasing strength",
+      "Dissolve the rubber completely",
+      "Convert rubber into a thermoplastic"
+    ],
+    "a": 1,
+    "why": "Sulphur forms cross-links (bridges) between rubber chains during vulcanisation, improving strength and elasticity."
+  },
+  {
+    "q": "PHBV, a biodegradable copolyester used in packaging and sutures, is broken down naturally by",
+    "o": [
+      "UV radiation only",
+      "Strong acids only",
+      "Microorganisms hydrolysing its ester linkages",
+      "High temperature combustion only"
+    ],
+    "a": 2,
+    "why": "Biodegradable polymers like PHBV contain ester linkages that microorganisms can hydrolyse into simple, non-toxic products."
+  },
+  {
+    "q": "Nylon-2-nylon-6, a biodegradable polyamide, is made from glycine and",
+    "o": [
+      "Adipic acid",
+      "Ethylene glycol",
+      "Terephthalic acid",
+      "Amino caproic acid"
+    ],
+    "a": 3,
+    "why": "Nylon-2-nylon-6 is a copolymer formed from glycine and amino caproic acid, making it biodegradable."
+  }
+]

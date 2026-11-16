@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Every food chain begins with:",
+    "o": [
+      "Decomposers",
+      "Producers (green plants)",
+      "Carnivores",
+      "Herbivores"
+    ],
+    "a": 1,
+    "why": "Producers trap solar energy via photosynthesis, forming the base of every food chain."
+  },
+  {
+    "q": "Organisms that eat herbivores directly are called:",
+    "o": [
+      "Primary consumers",
+      "Producers",
+      "Secondary consumers",
+      "Decomposers"
+    ],
+    "a": 2,
+    "why": "Secondary consumers (carnivores) feed on primary consumers (herbivores)."
+  },
+  {
+    "q": "According to the 10% law of energy flow, if producers have 1000 units of energy, how much reaches the primary consumers?",
+    "o": [
+      "1000 units",
+      "500 units",
+      "10 units",
+      "100 units"
+    ],
+    "a": 3,
+    "why": "Only about 10% of energy is transferred to the next trophic level: 10% of 1000 = 100."
+  },
+  {
+    "q": "A food web, compared to a single food chain, gives an ecosystem:",
+    "o": [
+      "Greater stability due to alternate feeding links",
+      "Less stability",
+      "No change in stability",
+      "Only energy loss"
+    ],
+    "a": 0,
+    "why": "Interconnected food chains in a web allow organisms alternate food sources if one link is lost."
+  },
+  {
+    "q": "An ecological pyramid of numbers, biomass, or energy represents data at successive:",
+    "o": [
+      "Seasons",
+      "Trophic levels",
+      "Geographic regions",
+      "Days of the year"
+    ],
+    "a": 1,
+    "why": "Ecological pyramids depict numbers/biomass/energy across trophic levels from producers upward."
+  },
+  {
+    "q": "The gradual, directional change in species composition of a community over time is called:",
+    "o": [
+      "Food web",
+      "Energy flow",
+      "Ecological succession",
+      "Biomagnification"
+    ],
+    "a": 2,
+    "why": "Succession is the stepwise replacement of communities until a stable climax community forms."
+  },
+  {
+    "q": "In the carbon cycle, CO2 is returned to the atmosphere mainly through:",
+    "o": [
+      "Photosynthesis only",
+      "Transpiration only",
+      "Nitrogen fixation",
+      "Respiration and combustion"
+    ],
+    "a": 3,
+    "why": "Respiration by organisms and combustion of fuels release CO2 back into the atmosphere."
+  },
+  {
+    "q": "Atmospheric nitrogen is converted into a usable form for plants mainly by:",
+    "o": [
+      "Nitrogen-fixing bacteria",
+      "Photosynthesis",
+      "Decomposers only",
+      "Herbivores"
+    ],
+    "a": 0,
+    "why": "Nitrogen-fixing bacteria (e.g., Rhizobium) convert N2 gas into ammonia/nitrates usable by plants."
+  },
+  {
+    "q": "A food chain that begins with dead organic matter rather than living plants is called a:",
+    "o": [
+      "Grazing food chain",
+      "Detritus food chain",
+      "Energy pyramid",
+      "Nitrogen cycle"
+    ],
+    "a": 1,
+    "why": "Detritus food chains start from dead organic matter broken down by decomposers."
+  },
+  {
+    "q": "Decomposers play their key ecological role by:",
+    "o": [
+      "Producing oxygen only",
+      "Hunting live prey",
+      "Breaking down dead matter and releasing nutrients back to soil",
+      "Fixing nitrogen only"
+    ],
+    "a": 2,
+    "why": "Decomposers (bacteria, fungi) recycle nutrients from dead organisms back into the ecosystem."
+  }
+]

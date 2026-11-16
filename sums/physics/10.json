@@ -1,0 +1,145 @@
+{
+  "solved": [
+    {
+      "topic": "Bohr magneton",
+      "marks": 2,
+      "q": "Calculate the value of the Bohr magneton. (e = 1.6 x 10^-19 C, h = 6.63 x 10^-34 J s, m = 9.1 x 10^-31 kg)",
+      "steps": [
+        "Given: e = 1.6 x 10^-19 C, h = 6.63 x 10^-34 J s, m = 9.1 x 10^-31 kg.",
+        "Formula: mu_B = e*h / (4*pi*m).",
+        "Numerator = e*h = 1.6 x 10^-19 x 6.63 x 10^-34 = 1.0608 x 10^-52.",
+        "Denominator = 4*pi*m = 4 x 3.14 x 9.1 x 10^-31 = 1.1438 x 10^-29.",
+        "mu_B = 1.0608 x 10^-52 / 1.1438 x 10^-29 = 9.27 x 10^-24 A m^2."
+      ],
+      "ans": "mu_B = 9.27 x 10^-24 A m^2"
+    },
+    {
+      "topic": "Orbital magnetic moment of an electron",
+      "marks": 3,
+      "q": "An electron revolves in a circular orbit of radius 5.3 x 10^-11 m with speed 2.2 x 10^6 m/s. Find its orbital magnetic moment. (e = 1.6 x 10^-19 C)",
+      "steps": [
+        "Given: r = 5.3 x 10^-11 m, v = 2.2 x 10^6 m/s, e = 1.6 x 10^-19 C.",
+        "Formula: mu = I*A = e*v*r / 2 (since I = e/T = e*v/(2*pi*r) and A = pi*r^2).",
+        "Substitute: mu = (1.6 x 10^-19 x 2.2 x 10^6 x 5.3 x 10^-11) / 2.",
+        "Numerator = 1.6 x 10^-19 x 2.2 x 10^6 = 3.52 x 10^-13; then 3.52 x 10^-13 x 5.3 x 10^-11 = 1.866 x 10^-23.",
+        "mu = 1.866 x 10^-23 / 2 = 9.33 x 10^-24 A m^2."
+      ],
+      "ans": "mu = 9.33 x 10^-24 A m^2 (close to one Bohr magneton)"
+    },
+    {
+      "topic": "Relation between B, H and M",
+      "marks": 2,
+      "q": "A magnetic material is placed in a magnetizing field of intensity H = 1500 A/m and acquires a magnetization M = 500 A/m. Find the magnetic field B inside the material. (mu0 = 4*pi x 10^-7)",
+      "steps": [
+        "Given: H = 1500 A/m, M = 500 A/m, mu0 = 4*pi x 10^-7 T m/A.",
+        "Formula: B = mu0*(H + M).",
+        "H + M = 1500 + 500 = 2000 A/m.",
+        "B = 4*pi x 10^-7 x 2000 = 4 x 3.14 x 10^-7 x 2000 = 2.51 x 10^-3 T."
+      ],
+      "ans": "B = 2.51 x 10^-3 T"
+    },
+    {
+      "topic": "Susceptibility and relative permeability",
+      "marks": 3,
+      "q": "A sample is placed in a magnetizing field H = 2000 A/m and the resulting magnetization is M = 98000 A/m. Find the magnetic susceptibility chi, the relative permeability mu_r and the absolute permeability mu of the material.",
+      "steps": [
+        "Given: H = 2000 A/m, M = 98000 A/m, mu0 = 4*pi x 10^-7 T m/A.",
+        "Formula: chi = M/H, mu_r = 1 + chi, mu = mu0*mu_r.",
+        "chi = 98000 / 2000 = 49.",
+        "mu_r = 1 + 49 = 50.",
+        "mu = mu0*mu_r = 4*pi x 10^-7 x 50 = 6.28 x 10^-5 T m/A.",
+        "Since chi is large and positive, the material is ferromagnetic."
+      ],
+      "ans": "chi = 49, mu_r = 50, mu = 6.28 x 10^-5 T m/A"
+    },
+    {
+      "topic": "Curie's law",
+      "marks": 3,
+      "q": "The susceptibility of a paramagnetic material is 2.4 x 10^-3 at 300 K. Using Curie's law, find its susceptibility at 600 K.",
+      "steps": [
+        "Given: chi1 = 2.4 x 10^-3 at T1 = 300 K, T2 = 600 K.",
+        "Formula (Curie's law): chi = C/T, i.e. chi*T = C (constant).",
+        "Find Curie constant: C = chi1*T1 = 2.4 x 10^-3 x 300 = 0.72.",
+        "At T2 = 600 K: chi2 = C/T2 = 0.72 / 600.",
+        "chi2 = 1.2 x 10^-3."
+      ],
+      "ans": "chi2 = 1.2 x 10^-3 (exactly half of chi1, since T doubled)"
+    },
+    {
+      "topic": "Gyromagnetic ratio and orbital angular momentum",
+      "marks": 3,
+      "q": "The orbital angular momentum of an electron is L = h/(2*pi). Using the gyromagnetic ratio mu/L = e/(2m), find its orbital magnetic moment. (e = 1.6 x 10^-19 C, m = 9.1 x 10^-31 kg, h = 6.63 x 10^-34 J s)",
+      "steps": [
+        "Given: L = h/(2*pi) = 6.63 x 10^-34 / (2 x 3.14) = 1.055 x 10^-34 J s.",
+        "Formula: mu = (e/(2m)) x L.",
+        "Gyromagnetic ratio e/(2m) = 1.6 x 10^-19 / (2 x 9.1 x 10^-31) = 8.79 x 10^10 C/kg.",
+        "mu = 8.79 x 10^10 x 1.055 x 10^-34.",
+        "mu = 9.27 x 10^-24 A m^2, which equals the Bohr magneton mu_B."
+      ],
+      "ans": "mu = 9.27 x 10^-24 A m^2 (= mu_B)"
+    },
+    {
+      "topic": "Magnetization from net magnetic moment",
+      "marks": 2,
+      "q": "A bar magnet of volume 2 x 10^-6 m^3 has a net magnetic moment of 2 x 10^-3 A m^2. Find its magnetization.",
+      "steps": [
+        "Given: net magnetic moment = 2 x 10^-3 A m^2, volume V = 2 x 10^-6 m^3.",
+        "Formula: M = (net magnetic moment) / V.",
+        "M = (2 x 10^-3) / (2 x 10^-6).",
+        "M = 1 x 10^3 A/m."
+      ],
+      "ans": "M = 1000 A/m"
+    },
+    {
+      "topic": "Energy loss due to hysteresis",
+      "marks": 4,
+      "q": "A transformer core of volume 1000 cm^3 is taken through a hysteresis cycle at 50 Hz. The area of the B-H hysteresis loop corresponds to an energy loss of 250 J/m^3 per cycle. Find (i) the energy lost per cycle and (ii) the power lost as heat in the core.",
+      "steps": [
+        "Given: loop area (energy loss density) = 250 J/m^3 per cycle, volume V = 1000 cm^3 = 1000 x 10^-6 m^3 = 1 x 10^-3 m^3, frequency f = 50 Hz.",
+        "Formula: energy lost per cycle, E = (energy loss density) x V.",
+        "E = 250 x 1 x 10^-3 = 0.25 J per cycle.",
+        "Power lost, P = E x f (since f cycles occur per second).",
+        "P = 0.25 x 50 = 12.5 W."
+      ],
+      "ans": "Energy lost per cycle = 0.25 J; power lost = 12.5 W"
+    }
+  ],
+  "practice": [
+    {
+      "topic": "Orbital magnetic moment",
+      "q": "An electron revolves in an orbit of radius 1 x 10^-10 m with speed 1 x 10^6 m/s. Find its orbital magnetic moment.",
+      "hint": "mu = e*v*r/2.",
+      "ans": "mu = 8 x 10^-24 A m^2"
+    },
+    {
+      "topic": "B, H, M relation",
+      "q": "Find B inside a material for which H = 800 A/m and M = 200 A/m.",
+      "hint": "B = mu0*(H + M).",
+      "ans": "B = 1.256 x 10^-3 T"
+    },
+    {
+      "topic": "Susceptibility and permeability",
+      "q": "A sample has H = 2000 A/m and M = 1600 A/m. Find chi, mu_r and mu.",
+      "hint": "chi = M/H, mu_r = 1 + chi, mu = mu0*mu_r.",
+      "ans": "chi = 0.8, mu_r = 1.8, mu = 2.26 x 10^-6 T m/A"
+    },
+    {
+      "topic": "Curie's law",
+      "q": "A paramagnetic salt has susceptibility 3 x 10^-3 at 400 K. Find its Curie constant.",
+      "hint": "C = chi*T.",
+      "ans": "C = 1.2"
+    },
+    {
+      "topic": "Hysteresis loss",
+      "q": "A ferromagnetic core of volume 2 x 10^-3 m^3 has a hysteresis loop area equivalent to 180 J/m^3 per cycle, and is cycled at 25 Hz. Find the power lost.",
+      "hint": "Energy per cycle = loss density x volume; power = energy per cycle x frequency.",
+      "ans": "Power lost = 9 W"
+    },
+    {
+      "topic": "Gyromagnetic ratio",
+      "q": "An electron has an orbital magnetic moment of 9.24 x 10^-24 A m^2. Find its orbital angular momentum, given e/(2m) = 8.79 x 10^10 C/kg.",
+      "hint": "L = mu / (e/(2m)).",
+      "ans": "L = 1.05 x 10^-34 J s"
+    }
+  ]
+}

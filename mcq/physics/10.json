@@ -1,0 +1,112 @@
+[
+  {
+    "q": "The direction of the orbital magnetic moment of a revolving electron is",
+    "o": [
+      "same as orbital angular momentum",
+      "always along the nucleus",
+      "opposite to orbital angular momentum",
+      "always perpendicular to angular momentum"
+    ],
+    "a": 2,
+    "why": "Since the electron's charge is negative, its magnetic moment is opposite in direction to its angular momentum."
+  },
+  {
+    "q": "The smallest unit of orbital magnetic moment of an electron is called",
+    "o": [
+      "Bohr radius",
+      "Planck's constant",
+      "Curie constant",
+      "Bohr magneton"
+    ],
+    "a": 3,
+    "why": "Bohr magneton mu_B = eh/(4 pi m) is the fundamental quantum of orbital magnetic moment."
+  },
+  {
+    "q": "Magnetic intensity H in a solenoid depends only on",
+    "o": [
+      "the external current and coil geometry",
+      "the magnetic material placed inside",
+      "the magnetization of the core",
+      "the temperature of the material"
+    ],
+    "a": 0,
+    "why": "H is produced solely by the external current/coil, independent of the material inside."
+  },
+  {
+    "q": "If H = 1000 A/m and M = 2000 A/m inside a material, the total magnetic field B is approximately",
+    "o": [
+      "1.26 x 10^-3 T",
+      "3.77 x 10^-3 T",
+      "2.51 x 10^-3 T",
+      "7.5 x 10^-3 T"
+    ],
+    "a": 1,
+    "why": "B = mu0(H+M) = 4 pi x10^-7 x 3000 ≈ 3.77 x 10^-3 T."
+  },
+  {
+    "q": "If the magnetic susceptibility of a material is 499, its relative permeability mu_r is",
+    "o": [
+      "499",
+      "1/500",
+      "500",
+      "0.002"
+    ],
+    "a": 2,
+    "why": "mu_r = 1 + chi = 1 + 499 = 500."
+  },
+  {
+    "q": "Which of the following correctly describes diamagnetic materials?",
+    "o": [
+      "Strongly attracted, large positive susceptibility",
+      "Retain magnetism permanently",
+      "Weakly attracted, small positive susceptibility",
+      "Weakly repelled, small negative susceptibility"
+    ],
+    "a": 3,
+    "why": "Diamagnetic materials have small negative susceptibility and are weakly repelled by a magnetic field."
+  },
+  {
+    "q": "Which type of magnetic material shows a hysteresis loop and retains magnetism after the field is removed?",
+    "o": [
+      "Ferromagnetic",
+      "Paramagnetic",
+      "Diamagnetic",
+      "None of these"
+    ],
+    "a": 0,
+    "why": "Only ferromagnetic materials show hysteresis and retentivity due to domain alignment."
+  },
+  {
+    "q": "According to Curie's law, the susceptibility chi of a paramagnetic material is",
+    "o": [
+      "directly proportional to temperature T",
+      "inversely proportional to T",
+      "independent of T",
+      "proportional to T^2"
+    ],
+    "a": 1,
+    "why": "chi = C/T, so susceptibility decreases as temperature increases due to thermal agitation."
+  },
+  {
+    "q": "A paramagnetic material has chi = 0.004 at T = 300 K. Its new susceptibility at T = 600 K is",
+    "o": [
+      "0.008",
+      "0.004",
+      "0.002",
+      "0.001"
+    ],
+    "a": 2,
+    "why": "Curie constant C = chi x T = 1.2; at 600 K, chi = C/T = 1.2/600 = 0.002."
+  },
+  {
+    "q": "In a B-H hysteresis loop, the reverse magnetic field needed to bring B back to zero is called",
+    "o": [
+      "retentivity",
+      "susceptibility",
+      "permeability",
+      "coercivity"
+    ],
+    "a": 3,
+    "why": "Coercivity is the reverse field strength required to demagnetize the material (bring B to zero)."
+  }
+]

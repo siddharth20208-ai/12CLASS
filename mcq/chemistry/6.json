@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Down Group 16, the non-metallic character and electronegativity of the elements:",
+    "o": [
+      "Decrease",
+      "Increase",
+      "Remain constant",
+      "First increase then decrease"
+    ],
+    "a": 0,
+    "why": "Non-metallic character and electronegativity decrease down Group 16, with oxygen being the most non-metallic."
+  },
+  {
+    "q": "In the Contact process, SO2 is catalytically oxidised to SO3 using which catalyst?",
+    "o": [
+      "Ni",
+      "V2O5",
+      "Pt",
+      "MnO2"
+    ],
+    "a": 1,
+    "why": "V2O5 is the catalyst used for the oxidation of SO2 to SO3 in the Contact process."
+  },
+  {
+    "q": "In H2SO4, sulfur is surrounded by two S=O double bonds and two S-OH bonds in a geometry that is:",
+    "o": [
+      "Linear",
+      "Trigonal planar",
+      "Tetrahedral",
+      "Octahedral"
+    ],
+    "a": 2,
+    "why": "Sulfur in H2SO4 is tetrahedrally surrounded by two oxo and two hydroxyl groups."
+  },
+  {
+    "q": "Deacon's process for manufacturing chlorine industrially uses the reaction:",
+    "o": [
+      "MnO2 + 4HCl -> MnCl2 + Cl2 + 2H2O",
+      "Cl2 + H2O -> HOCl + HCl",
+      "2NaCl -> 2Na + Cl2 (electrolysis)",
+      "4HCl + O2 --(CuCl2, heat)--> 2Cl2 + 2H2O"
+    ],
+    "a": 3,
+    "why": "Deacon's process oxidises HCl gas with air using a CuCl2 catalyst: 4HCl + O2 -> 2Cl2 + 2H2O."
+  },
+  {
+    "q": "Among the oxoacids of chlorine, the strongest acid is:",
+    "o": [
+      "HClO4",
+      "HClO2",
+      "HClO3",
+      "HOCl"
+    ],
+    "a": 0,
+    "why": "Acid strength increases with oxidation state/number of oxygens: HOCl < HClO2 < HClO3 < HClO4, so HClO4 is strongest."
+  },
+  {
+    "q": "Among the oxoacids of chlorine, the strongest oxidising agent is:",
+    "o": [
+      "HClO2",
+      "HOCl",
+      "HClO3",
+      "HClO4"
+    ],
+    "a": 1,
+    "why": "Oxidising power decreases as acid strength increases, so HOCl (weakest acid) is the strongest oxidiser among them."
+  },
+  {
+    "q": "The interhalogen compound ClF3 has which molecular shape?",
+    "o": [
+      "Linear",
+      "Square pyramidal",
+      "Bent T-shape",
+      "Pentagonal bipyramidal"
+    ],
+    "a": 2,
+    "why": "AX3 type interhalogens like ClF3 have a bent T-shape structure."
+  },
+  {
+    "q": "The largest known interhalogen compound, IF7, has which shape?",
+    "o": [
+      "Linear",
+      "Square planar",
+      "Square pyramidal",
+      "Pentagonal bipyramidal"
+    ],
+    "a": 3,
+    "why": "IF7 (AX7 type) has a pentagonal bipyramidal shape."
+  },
+  {
+    "q": "Among noble gases, xenon forms compounds with fluorine most readily because:",
+    "o": [
+      "It has the lowest ionisation enthalpy among readily available noble gases",
+      "It has the smallest atomic size in the group",
+      "It is the most electronegative noble gas",
+      "It has no outer electrons at all"
+    ],
+    "a": 0,
+    "why": "Reactivity increases down Group 18 as ionisation enthalpy decreases, making xenon (large, low IE) reactive enough to form compounds."
+  },
+  {
+    "q": "The shape of XeF4 is:",
+    "o": [
+      "Linear",
+      "Square planar",
+      "Pentagonal bipyramidal",
+      "Distorted octahedral"
+    ],
+    "a": 1,
+    "why": "XeF4, formed from Xe + 2F2, has a square planar molecular shape."
+  }
+]

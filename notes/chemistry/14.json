@@ -1,0 +1,104 @@
+[
+  {
+    "t": "Classification of Polymers",
+    "def": "Polymers are large molecules (macromolecules) made of many repeating small units called monomers joined by covalent bonds.",
+    "points": [
+      "Based on source: natural (cellulose, rubber), semi-synthetic (cellulose acetate), synthetic (polythene, nylon).",
+      "Based on structure: linear (PVC), branched (glycogen), cross-linked or network (bakelite).",
+      "Based on mode of polymerisation: addition polymers (formed by addition of monomers, no loss of atoms) and condensation polymers (formed with loss of a small molecule like water).",
+      "Based on molecular forces: elastomers (rubber-like, weak forces), fibres (strong forces, e.g. nylon), thermoplastics (soften on heating, e.g. polythene), thermosetting (hard permanently, e.g. bakelite).",
+      "Monomers are the repeating small units from which the polymer chain is built."
+    ],
+    "formula": "n (monomer) -> (repeat unit)n  (polymer)",
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Polymers\"] --> B[\"By source natural synthetic\"]\n  A --> C[\"By structure linear branched cross linked\"]\n  A --> D[\"By polymerisation addition condensation\"]\n  A --> E[\"By forces elastomer fibre thermoplastic thermoset\"]"
+    },
+    "example": "Polythene is a synthetic, linear, addition, thermoplastic polymer made from ethene monomers.",
+    "tip": "Give all four classification bases with one example each for a complete 5-mark answer."
+  },
+  {
+    "t": "Addition Polymerization",
+    "def": "Addition polymerisation is the process in which monomer molecules with multiple bonds add to one another repeatedly without loss of any atom, to form a polymer.",
+    "points": [
+      "Occurs mainly with monomers having a carbon-carbon double bond (alkenes) or similar unsaturation.",
+      "Proceeds by a chain reaction mechanism: initiation, propagation and termination.",
+      "An initiator (free radical, cation or anion) starts the reaction by opening the double bond.",
+      "The double bond breaks and each monomer adds to the growing chain, repeating many times.",
+      "No small molecule is lost; the polymer has the same empirical composition as the monomer."
+    ],
+    "formula": "n CH2=CH2  --(polymerisation)-->  -(CH2-CH2)n-   (polythene)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Initiator starts reaction\"] --> B[\"Double bond opens\"]\n  B --> C[\"Monomer adds to chain\"]\n  C --> D[\"Chain grows by repetition\"]\n  D --> E[\"Termination gives polymer\"]"
+    },
+    "example": "Polymerisation of propene (CH2=CH-CH3) gives polypropylene, used for ropes and containers.",
+    "tip": "Name the three mechanism steps (initiation, propagation, termination) - examiners specifically check for these terms."
+  },
+  {
+    "t": "Condensation Polymerization",
+    "def": "Condensation polymerisation is the process in which monomers having two or more reactive functional groups combine repeatedly, with the loss of small molecules like water or alcohol, to form a polymer.",
+    "points": [
+      "Monomers usually have two different functional groups (bifunctional), such as a diacid and a diamine, or a diacid and a diol.",
+      "A small molecule (commonly water) is eliminated at each linking step.",
+      "The polymer chain grows by repeated condensation reactions between monomer units.",
+      "Resulting polymer often has ester (-COO-) or amide (-CONH-) linkages.",
+      "Examples: nylon-6,6 (polyamide, from hexamethylenediamine and adipic acid) and terylene/PET (polyester, from ethylene glycol and terephthalic acid)."
+    ],
+    "formula": "n HOOC-R-COOH + n H2N-R'-NH2 -> -(CO-R-CO-NH-R'-NH)n- + 2n H2O",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Diacid monomer\"] --> C[\"Condensation reaction\"]\n  B[\"Diamine or diol monomer\"] --> C\n  C --> D[\"Polymer chain with amide or ester links\"]\n  C --> E[\"Small molecule water released\"]"
+    },
+    "example": "Nylon-6,6 is made from hexamethylenediamine and adipic acid, releasing water at each amide bond formed.",
+    "tip": "Clearly mention 'loss of small molecule such as water' - this is the key difference from addition polymerisation, often asked to distinguish the two."
+  },
+  {
+    "t": "Copolymerization",
+    "def": "Copolymerisation is a type of addition polymerisation in which two or more different monomers combine together to form a polymer called a copolymer.",
+    "points": [
+      "Unlike a homopolymer (one type of monomer), a copolymer is built from two or more different monomers.",
+      "The arrangement of monomer units in the chain can be random, alternating, block, or graft.",
+      "Copolymers often combine useful properties of both monomers, e.g. strength and flexibility.",
+      "Buna-S is a copolymer of 1,3-butadiene and styrene, used to make synthetic rubber (tyres).",
+      "Buna-N is a copolymer of 1,3-butadiene and acrylonitrile, oil-resistant rubber."
+    ],
+    "formula": "n (monomer A) + m (monomer B) -> copolymer chain of A and B units",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Monomer A butadiene\"] --> C[\"Copolymerisation\"]\n  B[\"Monomer B styrene\"] --> C\n  C --> D[\"Copolymer Buna S rubber\"]"
+    },
+    "example": "Buna-S rubber (butadiene + styrene) is used for making vehicle tyres due to its toughness and abrasion resistance.",
+    "tip": "Name at least two copolymer examples with their monomers (Buna-S, Buna-N) - commonly asked in 2-mark questions."
+  },
+  {
+    "t": "Natural and Synthetic Rubber",
+    "def": "Natural rubber is a natural polymer of isoprene (cis-1,4-polyisoprene) obtained from the latex of rubber trees; synthetic rubbers are man-made elastomers prepared by polymerisation of suitable monomers.",
+    "points": [
+      "Natural rubber is a 1,4-addition polymer of isoprene (2-methyl-1,3-butadiene) with cis configuration, giving it elasticity.",
+      "Raw natural rubber is soft and sticky; it is strengthened by vulcanisation.",
+      "Vulcanisation: heating raw rubber with sulphur, which forms cross-links (sulphur bridges) between polymer chains, increasing strength, elasticity and reducing stickiness.",
+      "Synthetic rubbers (elastomers) are made by polymerising dienes, e.g. neoprene (from chloroprene), Buna-S, Buna-N.",
+      "Synthetic rubbers often have better resistance to oil, heat or chemicals than natural rubber."
+    ],
+    "formula": "Vulcanisation: rubber + sulphur --(heat)--> cross linked rubber (sulphur bridges)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Raw natural rubber soft sticky\"] --> B[\"Heated with sulphur\"]\n  B --> C[\"Sulphur cross links form between chains\"]\n  C --> D[\"Vulcanised rubber strong elastic\"]"
+    },
+    "example": "Vulcanised rubber is used to make automobile tyres, which need both strength and elasticity.",
+    "tip": "Mention the role of sulphur cross-links clearly - this is the exact mechanism examiners expect in the vulcanisation answer."
+  },
+  {
+    "t": "Biodegradable Polymers",
+    "def": "Biodegradable polymers are polymers that can be broken down into simple, non-toxic substances by the action of microorganisms (bacteria, fungi) in the environment.",
+    "points": [
+      "Unlike conventional plastics (polythene, PVC) which persist for years, biodegradable polymers decompose naturally, reducing pollution.",
+      "They usually contain ester or amide linkages that microorganisms can hydrolyse easily.",
+      "PHBV (poly beta-hydroxybutyrate-co-beta-hydroxyvalerate) is a biodegradable copolyester used in packaging and medical sutures.",
+      "Nylon-2-nylon-6 is a biodegradable polyamide copolymer made from glycine and amino caproic acid.",
+      "Biodegradable polymers are important for reducing plastic waste and environmental pollution."
+    ],
+    "formula": "No single formula - key feature: ester/amide linkages broken down by microorganisms",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Biodegradable polymer\"] --> B[\"Buried in soil or disposed\"]\n  B --> C[\"Microorganisms act on it\"]\n  C --> D[\"Hydrolysis of ester or amide links\"]\n  D --> E[\"Simple non toxic products\"]"
+    },
+    "example": "PHBV is used to make biodegradable packaging material and dissolvable surgical sutures.",
+    "tip": "Give one example (PHBV or Nylon-2-nylon-6) with its use, and link the answer to 'reducing environmental pollution'."
+  }
+]

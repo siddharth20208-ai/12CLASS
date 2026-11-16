@@ -1,0 +1,110 @@
+[
+  {
+    "t": "Phases of Growth",
+    "def": "Plant growth passes through three main phases in a growing region: a meristematic phase of cell division, an elongation phase of cell enlargement, and a maturation phase of cell differentiation.",
+    "points": [
+      "Meristematic phase: cells are small, thin-walled, with dense cytoplasm; they divide actively by mitosis.",
+      "Elongation phase: cells located just behind the meristem increase greatly in size, mainly by vacuolation.",
+      "Maturation phase: cells attain their maximum size and differentiate into specific permanent tissues.",
+      "When growth is plotted against time, it gives a sigmoid (S-shaped) curve.",
+      "The sigmoid curve shows a slow initial lag phase, a fast log/exponential phase, and a final stationary phase.",
+      "This grand period of growth pattern is seen in the growth of a single cell, organ, or whole plant."
+    ],
+    "formula": "Growth rate = increase in size / time; sigmoid curve: lag -> log -> stationary phase",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Meristematic phase - division\"] --> B[\"Elongation phase - enlargement\"]\n  B --> C[\"Maturation phase - differentiation\"]"
+    },
+    "example": "In a growing root tip, cells near the apex are meristematic, cells a few mm behind show elongation, and cells further back are matured into root hairs and vascular tissue.",
+    "tip": "Draw the sigmoid growth curve with three labelled phases (lag, log, stationary) on the axes of growth vs time — this is commonly asked."
+  },
+  {
+    "t": "Plant Growth Regulators and Functions",
+    "def": "Plant growth regulators (hormones) are small organic chemicals produced by plants that regulate growth, development and various physiological processes even in very low concentrations.",
+    "points": [
+      "Auxins: promote cell elongation, apical dominance, and root initiation; example IAA.",
+      "Gibberellins: promote stem elongation, seed germination, and bolting; example GA3.",
+      "Cytokinins: promote cell division, delay senescence, and break dormancy; example kinetin.",
+      "Ethylene: promotes fruit ripening, senescence, and abscission of leaves and flowers.",
+      "Abscisic acid (ABA): called the stress hormone; induces dormancy, stomatal closure, and inhibits growth.",
+      "Growth regulators act together, and the balance between promoters and inhibitors decides the final response."
+    ],
+    "formula": "Five classes: Auxin, Gibberellin, Cytokinin, Ethylene, Abscisic acid",
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Plant Growth Regulators\"] --> B[\"Auxin - elongation\"]\n  A --> C[\"Gibberellin - stem growth\"]\n  A --> D[\"Cytokinin - cell division\"]\n  A --> E[\"Ethylene - ripening\"]\n  A --> F[\"ABA - stress and dormancy\"]"
+    },
+    "example": "Spraying gibberellin on sugarcane increases internode length and the height of the crop, which is used commercially to increase yield.",
+    "tip": "Make a table of hormone name, one key function, and one example — this format scores full marks quickly in 5-mark answers."
+  },
+  {
+    "t": "Photoperiodism and Vernalization",
+    "def": "Photoperiodism is the response of plants to the relative length of day and night that controls flowering, while vernalization is the promotion of flowering by exposure of plants (or seeds) to low temperature.",
+    "points": [
+      "Short day plants flower when day length is less than a critical value; example chrysanthemum.",
+      "Long day plants flower when day length exceeds a critical value; example spinach.",
+      "Day-neutral plants flower regardless of day length; example tomato, cotton.",
+      "Phytochrome pigment detects the light/dark duration and triggers the flowering response.",
+      "Vernalization requires a period of low temperature treatment before the plant can flower normally.",
+      "Vernalization is commonly used to make winter wheat flower earlier when sown in a different season."
+    ],
+    "formula": "Flowering response depends on critical photoperiod (day length) and/or cold treatment (vernalization)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Day length detected by phytochrome\"] --> B[\"Short day plant flowers\"]\n  A --> C[\"Long day plant flowers\"]\n  D[\"Low temperature exposure\"] --> E[\"Vernalization triggers flowering\"]"
+    },
+    "example": "Winter wheat normally needs a cold winter period before it flowers; artificially chilling the seeds (vernalization) allows farmers to sow and harvest it in a single season.",
+    "tip": "Clearly separate the definitions: photoperiodism is about light duration, vernalization is about cold temperature — do not mix them."
+  },
+  {
+    "t": "Essential Macro and Micronutrients",
+    "def": "Essential nutrients are mineral elements required by plants for normal growth and metabolism; they are classified as macronutrients (needed in large amounts) and micronutrients (needed in trace amounts).",
+    "points": [
+      "Macronutrients (needed in larger quantity): carbon, hydrogen, oxygen, nitrogen, phosphorus, potassium, calcium, magnesium, sulphur.",
+      "Micronutrients (needed in trace amount): iron, manganese, zinc, copper, boron, molybdenum, chlorine, nickel.",
+      "Nitrogen is a major component of amino acids, proteins, and chlorophyll.",
+      "Phosphorus is important for ATP, nucleic acids, and membranes.",
+      "Potassium helps in opening/closing of stomata and enzyme activation.",
+      "Iron is essential for chlorophyll synthesis and electron transport (though not part of chlorophyll itself)."
+    ],
+    "formula": "Essential elements = Macronutrients (9 elements) + Micronutrients (8 elements)",
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Essential Nutrients\"] --> B[\"Macronutrients - large amount\"]\n  A --> C[\"Micronutrients - trace amount\"]\n  B --> D[\"C H O N P K Ca Mg S\"]\n  C --> E[\"Fe Mn Zn Cu B Mo Cl Ni\"]"
+    },
+    "example": "A nitrogen-deficient maize plant shows yellowing of older leaves (chlorosis) because nitrogen is mobile and is withdrawn from old leaves to supply new growth.",
+    "tip": "Memorise the mnemonic grouping of macro vs micro nutrients; HSC often asks to classify a given list of elements."
+  },
+  {
+    "t": "Deficiency Symptoms",
+    "def": "Deficiency symptoms are visible abnormalities that appear in plants when a particular essential mineral element is not available in sufficient amount.",
+    "points": [
+      "Nitrogen deficiency: general chlorosis (yellowing) starting from older leaves; stunted growth.",
+      "Phosphorus deficiency: stunted growth, dark green or purplish leaves, poor root development.",
+      "Potassium deficiency: chlorosis at leaf margins (marginal), followed by necrosis (browning/death) of tissue.",
+      "Magnesium deficiency: interveinal chlorosis in leaves, since magnesium is part of the chlorophyll molecule.",
+      "Calcium deficiency: affects new growing regions, leading to death of apical/root tips.",
+      "Mobile elements (N, P, K, Mg) show symptoms first in older leaves; immobile elements (Ca, S, Fe) show symptoms in new leaves."
+    ],
+    "formula": "Mobile nutrient deficiency -> symptoms in old leaves first; Immobile nutrient deficiency -> symptoms in young leaves first",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Nutrient deficiency\"] --> B[\"Mobile element - N P K Mg\"]\n  A --> C[\"Immobile element - Ca S Fe\"]\n  B --> D[\"Symptoms in older leaves\"]\n  C --> E[\"Symptoms in young leaves\"]"
+    },
+    "example": "A potted rose plant grown without potassium shows brown, scorched margins on its older leaves, a classic sign of potassium deficiency.",
+    "tip": "Link each deficiency to the element's biological role (e.g., Mg in chlorophyll causing interveinal chlorosis) — this reasoning fetches extra marks."
+  },
+  {
+    "t": "Nitrogen Fixation and Nutrient Uptake",
+    "def": "Nitrogen fixation is the conversion of atmospheric nitrogen gas into usable nitrogenous compounds (like ammonia) by certain bacteria, while nutrient uptake is the absorption of mineral ions by roots from the soil.",
+    "points": [
+      "Atmospheric nitrogen (N2) is inert and cannot be used directly by plants.",
+      "Biological nitrogen fixation is carried out by free-living bacteria (Azotobacter) and symbiotic bacteria (Rhizobium in legume root nodules).",
+      "The enzyme nitrogenase converts N2 + H2 into NH3 (ammonia) under anaerobic conditions.",
+      "Ammonia is further converted to nitrites and nitrates by nitrifying bacteria (nitrification) for plant uptake.",
+      "Roots absorb mineral ions from soil water mainly by active transport, using energy from respiration (ATP).",
+      "Some ions enter passively along with water through diffusion, but most require specific membrane carrier proteins."
+    ],
+    "formula": "N2 + 8H+ + 8e- + 16 ATP --(nitrogenase)--> 2NH3 + H2 + 16ADP + 16Pi",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Atmospheric N2\"] --> B[\"Rhizobium in root nodule\"]\n  B --> C[\"Nitrogenase enzyme\"]\n  C --> D[\"Ammonia NH3\"]\n  D --> E[\"Nitrates - absorbed by plant\"]"
+    },
+    "example": "Legume crops like pea and gram are grown in rotation with other crops because Rhizobium in their root nodules enriches the soil with fixed nitrogen.",
+    "tip": "Name both bacteria (Rhizobium - symbiotic, Azotobacter - free-living) and the enzyme nitrogenase by name; these exact terms are checked in answer keys."
+  }
+]

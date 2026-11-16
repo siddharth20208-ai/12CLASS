@@ -1,0 +1,112 @@
+[
+  {
+    "q": "In IUPAC nomenclature, the carbonyl carbon of an aldehyde (-CHO group) is always numbered as",
+    "o": [
+      "It is not numbered",
+      "C2",
+      "The highest numbered carbon",
+      "C1"
+    ],
+    "a": 3,
+    "why": "The CHO carbon is given the lowest possible locant, C1, by IUPAC convention."
+  },
+  {
+    "q": "Rosenmund reduction of an acid chloride (R-COCl) with H2/Pd-BaSO4 gives",
+    "o": [
+      "An aldehyde",
+      "An alcohol",
+      "A carboxylic acid",
+      "A ketone"
+    ],
+    "a": 0,
+    "why": "Rosenmund reduction selectively reduces acid chlorides to aldehydes, stopping before the alcohol stage."
+  },
+  {
+    "q": "In nucleophilic addition to carbonyl compounds, the reactivity order is generally",
+    "o": [
+      "Ketones > aldehydes > HCHO",
+      "HCHO > other aldehydes > ketones",
+      "Aldehydes = ketones always",
+      "HCHO is least reactive"
+    ],
+    "a": 1,
+    "why": "Fewer and less bulky alkyl groups on the carbonyl carbon of HCHO make it most electrophilic and reactive."
+  },
+  {
+    "q": "Aldol condensation requires the starting carbonyl compound to have at least one",
+    "o": [
+      "Beta-hydrogen atom",
+      "Halogen atom",
+      "Alpha-hydrogen atom",
+      "Hydroxyl group"
+    ],
+    "a": 2,
+    "why": "Dilute base removes an alpha-hydrogen to form the carbanion (enolate) needed to attack another carbonyl molecule."
+  },
+  {
+    "q": "2 CH3CHO with dilute NaOH gives an aldol product that, on heating, loses water to form",
+    "o": [
+      "Butan-1-ol",
+      "Acetone",
+      "Butanoic acid",
+      "But-2-enal (crotonaldehyde)"
+    ],
+    "a": 3,
+    "why": "The beta-hydroxy aldehyde (3-hydroxybutanal) dehydrates on heating to the alpha,beta-unsaturated but-2-enal."
+  },
+  {
+    "q": "Tollens' reagent gives a bright silver mirror with",
+    "o": [
+      "Aldehydes only",
+      "Ketones only",
+      "Both aldehydes and ketones equally",
+      "Alcohols only"
+    ],
+    "a": 0,
+    "why": "Tollens' reagent (ammoniacal AgNO3) oxidises aldehydes to carboxylic acids, depositing metallic silver; ketones do not react."
+  },
+  {
+    "q": "A compound gives a positive iodoform test. This confirms the presence of a",
+    "o": [
+      "-COOH group",
+      "CH3-CO- or CH3-CH(OH)- group",
+      "-CHO group only",
+      "-OH group on any carbon"
+    ],
+    "a": 1,
+    "why": "The iodoform test with I2/NaOH gives yellow CHI3 specifically from methyl ketones or compounds oxidisable to them."
+  },
+  {
+    "q": "Carboxylic acids are much more acidic than alcohols mainly because",
+    "o": [
+      "COOH has no oxygen atoms",
+      "Carboxylic acids have a higher boiling point",
+      "The carboxylate ion is resonance stabilised equally over two oxygens",
+      "Carboxylic acids are non-polar"
+    ],
+    "a": 2,
+    "why": "The negative charge in R-COO- is delocalised equally between two oxygen atoms by resonance, stabilising the ion strongly."
+  },
+  {
+    "q": "Which test distinguishes a carboxylic acid from a phenol by producing effervescence?",
+    "o": [
+      "FeCl3 test",
+      "Lucas test",
+      "Tollens' test",
+      "Reaction with NaHCO3"
+    ],
+    "a": 3,
+    "why": "Carboxylic acids react with NaHCO3 releasing CO2 gas (effervescence); phenols, being weaker acids, do not react."
+  },
+  {
+    "q": "In the HVZ reaction, CH3COOH with Cl2 in presence of red phosphorus gives",
+    "o": [
+      "ClCH2COOH (chloroacetic acid)",
+      "CH3CH2Cl",
+      "CH3COCl",
+      "CCl3COOH only"
+    ],
+    "a": 0,
+    "why": "Red phosphorus catalyses substitution of an alpha-hydrogen by chlorine, giving chloroacetic acid."
+  }
+]

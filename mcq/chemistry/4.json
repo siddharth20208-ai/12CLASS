@@ -1,0 +1,112 @@
+[
+  {
+    "q": "In a galvanic cell, oxidation occurs at the:",
+    "o": [
+      "Cathode",
+      "Salt bridge",
+      "Anode",
+      "External wire"
+    ],
+    "a": 2,
+    "why": "Oxidation always occurs at the anode in a galvanic cell."
+  },
+  {
+    "q": "For the Daniell cell, Zn | Zn2+ || Cu2+ | Cu, with E°Cu = 0.34V and E°Zn = -0.76V, the EMF of the cell is:",
+    "o": [
+      "0.42 V",
+      "-0.42 V",
+      "-1.10 V",
+      "1.10 V"
+    ],
+    "a": 3,
+    "why": "EMF = E°cathode - E°anode = 0.34 - (-0.76) = 1.10 V."
+  },
+  {
+    "q": "The standard hydrogen electrode (SHE) has a potential defined as:",
+    "o": [
+      "0.00 V",
+      "1.00 V",
+      "-1.00 V",
+      "0.76 V"
+    ],
+    "a": 0,
+    "why": "SHE potential is fixed by convention as exactly 0.00 V, used as the reference electrode."
+  },
+  {
+    "q": "A metal higher in the electrochemical series (more negative E°) can:",
+    "o": [
+      "Not react with any salt solution",
+      "Displace a metal lower in the series from its salt solution",
+      "Only be oxidised by itself",
+      "Always remain in its reduced form only"
+    ],
+    "a": 1,
+    "why": "A metal with more negative E° is a stronger reducing agent and can displace a less reactive metal from its salt solution."
+  },
+  {
+    "q": "The Nernst equation for a cell at 298K is given by Ecell = E°cell - (0.0591/n) log Q. For Zn|Zn2+(0.1M)||Cu2+(1M)|Cu (n=2, E°cell=1.10V), Ecell is approximately:",
+    "o": [
+      "1.10 V",
+      "1.07 V",
+      "1.13 V",
+      "0.0591 V"
+    ],
+    "a": 2,
+    "why": "Ecell = 1.10 - (0.0591/2) log(0.1/1) = 1.10 + 0.0296 ≈ 1.13 V."
+  },
+  {
+    "q": "Molar conductivity Λm is related to specific conductance κ and concentration C by:",
+    "o": [
+      "Λm = κ x C / 1000",
+      "Λm = κ x C",
+      "Λm = κ / C",
+      "Λm = κ x 1000 / C"
+    ],
+    "a": 3,
+    "why": "Λm = κ x 1000 / C, where C is molar concentration, to get units of S cm^2 mol^-1."
+  },
+  {
+    "q": "For 0.1M KCl, κ = 0.0248 S/cm. The molar conductivity Λm is:",
+    "o": [
+      "248 S cm^2/mol",
+      "2.48 S cm^2/mol",
+      "24.8 S cm^2/mol",
+      "0.248 S cm^2/mol"
+    ],
+    "a": 0,
+    "why": "Λm = κ x 1000/C = 0.0248 x 1000/0.1 = 248 S cm^2 mol^-1."
+  },
+  {
+    "q": "Kohlrausch's law of independent migration of ions states that at infinite dilution:",
+    "o": [
+      "Each ion's contribution to Λm° depends on the other ion present",
+      "Λm° of an electrolyte is the sum of independent contributions of its ions",
+      "Molar conductivity decreases with dilution",
+      "Only cations contribute to conductivity"
+    ],
+    "a": 1,
+    "why": "Kohlrausch's law states that limiting molar conductivity is the sum of independent ionic contributions, regardless of the counter-ion."
+  },
+  {
+    "q": "According to Faraday's first law of electrolysis, the mass deposited (m) is related to charge (Q) by:",
+    "o": [
+      "m = Z/Q",
+      "m is independent of Q",
+      "m = Z x Q",
+      "m = Q/Z^2"
+    ],
+    "a": 2,
+    "why": "Faraday's first law: m = Z x Q, where Z is the electrochemical equivalent."
+  },
+  {
+    "q": "To deposit 5.4 g of Al (atomic mass 27) from Al3+, the charge required is:",
+    "o": [
+      "19300 C",
+      "96500 C",
+      "28950 C",
+      "57900 C"
+    ],
+    "a": 3,
+    "why": "Moles Al = 5.4/27 = 0.2 mol; electrons needed = 3 x 0.2 = 0.6 mol; Q = 0.6 x 96500 = 57900 C."
+  }
+]

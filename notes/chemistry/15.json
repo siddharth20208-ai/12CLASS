@@ -1,0 +1,105 @@
+[
+  {
+    "t": "Principles of Green Chemistry",
+    "def": "Green chemistry is the design of chemical products and processes that reduce or eliminate the use and generation of hazardous substances, protecting the environment.",
+    "points": [
+      "Prevent waste rather than treat or clean it up after it is formed.",
+      "Design safer chemicals and products that have little or no toxicity.",
+      "Use renewable raw materials/feedstock instead of depleting ones wherever possible.",
+      "Maximise atom economy so most reactant atoms end up in the final product.",
+      "Use catalysts (reusable) instead of stoichiometric reagents to reduce waste and energy use.",
+      "Design processes for energy efficiency, carried out at room temperature and pressure where possible."
+    ],
+    "formula": "No chemical formula - 12 principles framework; key concept: Atom Economy% = (mass of desired product / total mass of reactants) x 100",
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Green Chemistry Principles\"] --> B[\"Prevent waste\"]\n  A --> C[\"Safer chemicals\"]\n  A --> D[\"Renewable feedstock\"]\n  A --> E[\"Atom economy and catalysts\"]\n  A --> F[\"Energy efficient process\"]"
+    },
+    "example": "Using hydrogen peroxide (gives only water as by-product) instead of chlorine-based bleach is a green chemistry choice.",
+    "tip": "List 4-5 principles with a one-line explanation each - full marks need variety, not depth."
+  },
+  {
+    "t": "Green Synthesis Examples",
+    "def": "Green synthesis means preparing chemical products using methods that are safer, use less hazardous solvents/reagents, and produce less waste than conventional methods.",
+    "points": [
+      "Synthesis of adipic acid: traditional method used nitric acid oxidation (releases nitrous oxide, a pollutant); green method uses hydrogen peroxide as oxidant with a catalyst, giving only water as by-product.",
+      "Synthesis of urethane: traditionally made using toxic phosgene gas; green process avoids toxic intermediates.",
+      "Use of microwave and ultrasound-assisted reactions to speed up synthesis with less solvent and energy.",
+      "Use of water or supercritical CO2 as green solvents instead of volatile organic solvents.",
+      "Dry media reactions (solid-state, solvent-free reactions) reduce solvent waste."
+    ],
+    "formula": "No single formula - concept example: traditional adipic acid synthesis releases N2O; green method uses H2O2 giving only H2O as by-product",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Traditional synthesis\"] --> B[\"Uses toxic reagent or solvent\"]\n  B --> C[\"Generates harmful by products\"]\n  D[\"Green synthesis\"] --> E[\"Uses safer reagent like H2O2\"]\n  E --> F[\"Gives only water as by product\"]"
+    },
+    "example": "Green synthesis of adipic acid using H2O2 and a catalyst avoids the nitrous oxide pollution of the older nitric acid method.",
+    "tip": "The adipic acid example is the most commonly asked green synthesis case - learn it with both old and new method."
+  },
+  {
+    "t": "Atom Economy",
+    "def": "Atom economy is a measure of how much of the reactant atoms are incorporated into the desired final product of a chemical reaction, expressed as a percentage.",
+    "points": [
+      "It compares the molar mass of the desired product to the sum of molar masses of all reactants.",
+      "Higher atom economy means less waste is produced - a key goal of green chemistry.",
+      "Addition reactions generally have 100% atom economy since no atoms are lost.",
+      "Substitution and elimination reactions often have lower atom economy as some atoms leave as by-products.",
+      "Choosing reaction routes with higher atom economy reduces raw material cost and environmental impact."
+    ],
+    "formula": "Atom economy (%) = (molar mass of desired product / sum of molar masses of all reactants) x 100",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Reactants total mass\"] --> B[\"Reaction occurs\"]\n  B --> C[\"Desired product mass\"]\n  B --> D[\"By products and waste mass\"]\n  C --> E[\"Atom economy percent calculated\"]"
+    },
+    "example": "For reaction A + B -> C + D, if molar mass of C (desired) is 80 and total reactant mass is 100, atom economy = (80/100) x 100 = 80%.",
+    "tip": "Always show the formula and substitute numbers step by step - examiners award marks for the calculation method, not just the final answer."
+  },
+  {
+    "t": "Classification of Nanomaterials",
+    "def": "Nanomaterials are materials having at least one dimension in the nanometre range (1 to 100 nm), classified by how many of their dimensions are in this nano range.",
+    "points": [
+      "Zero-dimensional (0D): all three dimensions are in the nanoscale, e.g. nanoparticles, quantum dots.",
+      "One-dimensional (1D): one dimension is outside the nanoscale (length is large), e.g. nanowires, nanorods, nanotubes.",
+      "Two-dimensional (2D): two dimensions are outside the nanoscale (large surface), e.g. nanofilms, nanosheets, graphene.",
+      "Three-dimensional (3D) nanostructured materials: made of nanosized grains or particles arranged in bulk, e.g. nanocrystalline bulk materials.",
+      "Carbon-based nanomaterials: fullerenes, carbon nanotubes, graphene are important examples."
+    ],
+    "formula": "Nanoscale range: 1 nm to 100 nm (1 nm = 10^-9 m)",
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Nanomaterials\"] --> B[\"0D nanoparticles quantum dots\"]\n  A --> C[\"1D nanowires nanotubes\"]\n  A --> D[\"2D nanosheets graphene\"]\n  A --> E[\"3D nanocrystalline bulk\"]"
+    },
+    "example": "A carbon nanotube is a 1D nanomaterial because its diameter is in nanometres but its length can be much larger.",
+    "tip": "State the size range (1-100 nm) first, then classify by dimension with one example each."
+  },
+  {
+    "t": "Properties of Nanomaterials",
+    "def": "Nanomaterials show unique physical, chemical, electrical and mechanical properties that are different from the same substance in bulk form, mainly because of their very small size and large surface area.",
+    "points": [
+      "Very high surface area to volume ratio compared to bulk material, making them more reactive and better catalysts.",
+      "Mechanical properties improve: nanomaterials are often much stronger and harder than the bulk form (e.g. carbon nanotubes are stronger than steel).",
+      "Optical properties change with particle size - e.g. gold nanoparticles appear red/purple instead of golden yellow.",
+      "Electrical and magnetic properties can differ greatly from bulk due to quantum effects at the nanoscale.",
+      "Melting point and other physical properties can be different (often lower) compared to the bulk material."
+    ],
+    "formula": "Surface area to volume ratio increases greatly as particle size decreases (ratio proportional to 1/r)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Bulk material\"] --> B[\"Reduced to nanoscale size\"]\n  B --> C[\"Surface area to volume ratio increases\"]\n  C --> D[\"Changed optical electrical and mechanical properties\"]"
+    },
+    "example": "Bulk gold is yellow and unreactive, but gold nanoparticles appear red/purple and show high catalytic activity.",
+    "tip": "Give at least three different property changes (optical, mechanical, surface area) with one example each for full marks."
+  },
+  {
+    "t": "Applications of Nanochemistry",
+    "def": "Nanochemistry applications use the unique properties of nanomaterials in medicine, electronics, energy, and environmental fields to create better products and technologies.",
+    "points": [
+      "Medicine: targeted drug delivery using nanoparticles, cancer treatment, and diagnostic imaging.",
+      "Electronics: nanomaterials used to make smaller, faster computer chips and transistors.",
+      "Energy: nanomaterials improve efficiency of solar cells and battery electrodes.",
+      "Environment: nanomaterials used for water purification (removing pollutants) and as catalysts to reduce emissions.",
+      "Textiles and coatings: nanoparticles (like silver nanoparticles) used for antibacterial and stain-resistant fabric."
+    ],
+    "formula": "No chemical formula - application-based topic",
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Nanochemistry applications\"] --> B[\"Medicine drug delivery\"]\n  A --> C[\"Electronics smaller chips\"]\n  A --> D[\"Energy solar cells batteries\"]\n  A --> E[\"Environment water purification\"]"
+    },
+    "example": "Silver nanoparticles are coated on fabrics and bandages for their antibacterial action.",
+    "tip": "List applications field-wise (medicine, electronics, energy, environment) with one example each - a safe way to cover a 5-mark answer."
+  }
+]

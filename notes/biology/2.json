@@ -1,0 +1,96 @@
+[
+  {
+    "t": "Mendel's laws",
+    "def": "Mendel's laws describe the basic rules by which traits pass from parents to offspring, discovered through his pea plant breeding experiments.",
+    "points": [
+      "Law of Dominance: in a heterozygous pair of alleles, the dominant allele expresses itself and masks the recessive one in the phenotype.",
+      "Law of Segregation: the two alleles of a gene separate from each other during gamete formation, so each gamete carries only one allele.",
+      "Law of Independent Assortment: alleles of different genes on different chromosomes separate independently of each other during gamete formation.",
+      "Monohybrid cross (one trait) gives an F2 phenotypic ratio of 3:1 (dominant:recessive).",
+      "Dihybrid cross (two traits) gives an F2 phenotypic ratio of 9:3:3:1.",
+      "These ratios arise because gametes combine randomly, following the laws of probability."
+    ],
+    "formula": "Monohybrid F2 ratio = 3:1;  Dihybrid F2 ratio = 9:3:3:1",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Parents YYRR x yyrr\"] --> B[\"F1 YyRr (all yellow round)\"]\n  B --> C[\"F1 self pollinated\"]\n  C --> D[\"F2 ratio 9:3:3:1\"]" },
+    "example": "Crossing tall (TT) and dwarf (tt) pea plants gives all tall F1 (Tt); self-pollinating F1 gives F2 in ratio 3 tall : 1 dwarf.",
+    "tip": "Always draw the Punnett square for the cross asked — examiners give separate marks for the square and the final ratio."
+  },
+  {
+    "t": "Linkage and recombination",
+    "def": "Linkage is the tendency of genes located close together on the same chromosome to be inherited together, while recombination is the formation of new allele combinations due to crossing over.",
+    "points": [
+      "Genes on the same chromosome do not assort completely independently if they are close together; they tend to stay together during meiosis.",
+      "Linked genes are inherited together more often than expected by chance, producing parental-type gametes more frequently.",
+      "Crossing over is the exchange of segments between homologous chromosomes during meiosis I (prophase).",
+      "This exchange produces new combinations of alleles, called recombinant types, in addition to parental types.",
+      "The closer two genes are on a chromosome, the lower the chance of crossing over separating them (tighter linkage).",
+      "Linkage and recombination together explain why some traits do not follow Mendel's independent assortment ratio."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Homologous chromosomes pair up\"] --> B[\"Crossing over at chiasma\"]\n  B --> C[\"Exchange of gene segments\"]\n  C --> D[\"Recombinant gametes formed\"]" },
+    "example": "Morgan's experiments on Drosophila showed genes for body colour and wing shape are linked, giving far fewer recombinant offspring than the 9:3:3:1 ratio expected from independent assortment.",
+    "tip": "Mention Morgan and Drosophila by name — this classic example is commonly asked to support the concept of linkage."
+  },
+  {
+    "t": "Sex determination (XX-XY, ZW)",
+    "def": "Sex determination is the mechanism by which the sex of an organism is decided, commonly through sex chromosomes such as XX-XY in humans and ZW in birds.",
+    "points": [
+      "In humans, females have two X chromosomes (XX) and males have one X and one Y chromosome (XY).",
+      "The egg always carries an X chromosome; the sperm may carry either an X or a Y chromosome.",
+      "If a sperm with X fertilizes the egg, the offspring is XX (female); if with Y, the offspring is XY (male).",
+      "So the father's sperm determines the sex of the child in humans (XY system).",
+      "In birds, the system is reversed and called ZW: males are ZZ and females are ZW, so the mother determines sex.",
+      "The Y chromosome carries the SRY gene in humans that triggers development of male characteristics."
+    ],
+    "formula": "Human: Female XX, Male XY;  Birds: Male ZZ, Female ZW",
+    "diagram": { "mermaid": "flowchart TD\n  A[\"Mother XX\"] --> C[\"Egg always X\"]\n  B[\"Father XY\"] --> D[\"Sperm X or Y\"]\n  C --> E[\"X egg + X sperm = XX Female\"]\n  C --> F[\"X egg + Y sperm = XY Male\"]" },
+    "example": "In a human cross, father's gametes are 50% X-bearing and 50% Y-bearing, giving a theoretical 1:1 ratio of daughters to sons.",
+    "tip": "State clearly 'the father determines the sex of the child in humans' — a frequently asked one-mark fact."
+  },
+  {
+    "t": "Pedigree analysis",
+    "def": "Pedigree analysis is the study of a family tree diagram to trace how a particular trait or genetic disorder has been inherited across generations.",
+    "points": [
+      "Standard symbols are used: square for male, circle for female, filled shape for affected individual, line connecting mates, vertical line to offspring.",
+      "It helps determine whether a trait is dominant or recessive by seeing how it skips or appears every generation.",
+      "It also helps determine whether a trait is autosomal or sex-linked (X-linked) by seeing which sex is more affected.",
+      "Recessive X-linked traits (e.g. colour blindness, haemophilia) appear mostly in males, carried silently by females.",
+      "Dominant traits usually appear in every generation if at least one parent has it.",
+      "Recessive traits can skip generations, appearing again when two carrier parents mate."
+    ],
+    "diagram": { "draw": "Draw three generations as rows. Use squares for males, circles for females, shade/fill the symbols of affected individuals. Connect mates with a horizontal line and connect parents to children with vertical/branching lines. Label generations I, II, III at the left." },
+    "example": "In haemophilia pedigrees, affected males appear in multiple generations while carrier females (unaffected but heterozygous) pass the trait silently to their sons.",
+    "tip": "Always draw correct standard symbols (square/circle, filled/unfilled) — examiners deduct marks for wrong pedigree notation."
+  },
+  {
+    "t": "Chromosomal disorders (Down, Klinefelter, Turner)",
+    "def": "Chromosomal disorders are conditions caused by an abnormal number of chromosomes, usually due to nondisjunction (failure of chromosomes to separate properly) during meiosis.",
+    "points": [
+      "Down syndrome: trisomy of chromosome 21, karyotype 47 (2n+1), causing short stature, flat face, mental retardation.",
+      "Klinefelter syndrome: extra X chromosome in males, karyotype 47,XXY, causing feminized features and infertility.",
+      "Turner syndrome: missing one X chromosome in females, karyotype 45,X, causing short stature, webbed neck and infertility.",
+      "All three disorders arise from nondisjunction, where homologous chromosomes or sister chromatids fail to separate in meiosis.",
+      "These disorders can be detected before birth using amniocentesis or karyotyping.",
+      "They are not inherited in the usual Mendelian sense; they occur due to a chromosome number error during gamete formation."
+    ],
+    "formula": "Down = 47 (trisomy 21);  Klinefelter = 47, XXY;  Turner = 45, X",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Nondisjunction in meiosis\"] --> B[\"Extra chromosome 21: Down syndrome\"]\n  A --> C[\"Extra X in male: Klinefelter 47 XXY\"]\n  A --> D[\"Missing X in female: Turner 45 X\"]" },
+    "example": "A karyotype report showing 47 chromosomes with three copies of chromosome 21 confirms a diagnosis of Down syndrome.",
+    "tip": "Memorize exact karyotype numbers (47, 47 XXY, 45 X) — these numerical facts are directly asked for 1 mark each."
+  },
+  {
+    "t": "Multiple alleles (ABO blood groups)",
+    "def": "Multiple alleles occur when more than two alternative forms (alleles) of a gene exist at the same locus; the human ABO blood group system is controlled by three such alleles.",
+    "points": [
+      "The three alleles are IA, IB and i (also written as i).",
+      "IA and IB are both dominant over i, but codominant with each other.",
+      "Genotype IAIA or IAi gives blood group A; IBIB or IBi gives blood group B.",
+      "Genotype IAIB gives blood group AB (both antigens expressed, codominance).",
+      "Genotype ii gives blood group O (neither antigen present).",
+      "This system shows that a single gene locus can have more than two alleles present in a population, unlike simple Mendelian traits."
+    ],
+    "formula": "Genotypes: IAIA/IAi = A, IBIB/IBi = B, IAIB = AB, ii = O",
+    "diagram": { "mermaid": "flowchart TD\n  A[\"3 alleles: IA IB i\"] --> B[\"IAIA or IAi = Group A\"]\n  A --> C[\"IBIB or IBi = Group B\"]\n  A --> D[\"IAIB = Group AB\"]\n  A --> E[\"ii = Group O\"]" },
+    "example": "A child with genotype IAIB has blood group AB because both A and B antigens are expressed equally (codominance), unlike a simple dominant-recessive trait.",
+    "tip": "Explain codominance between IA and IB clearly with the AB group example — this is the key concept examiners test here."
+  }
+]

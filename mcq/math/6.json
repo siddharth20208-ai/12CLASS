@@ -1,0 +1,112 @@
+[
+  {
+    "q": "In a Linear Programming Problem (LPP), the function to be maximized or minimized is called the:",
+    "o": [
+      "Constraint",
+      "Feasible region",
+      "Objective function",
+      "Corner point"
+    ],
+    "a": 2,
+    "why": "The function being optimized in an LPP is called the objective function."
+  },
+  {
+    "q": "The set of all points satisfying all the constraints of an LPP is called the:",
+    "o": [
+      "Objective function",
+      "Non-negativity region",
+      "Corner point",
+      "Feasible region"
+    ],
+    "a": 3,
+    "why": "The feasible region is the set of points satisfying every constraint simultaneously."
+  },
+  {
+    "q": "In the corner-point method, the optimal value of the objective function occurs at:",
+    "o": [
+      "A corner (vertex) of the feasible region",
+      "Any interior point",
+      "The centroid of the feasible region",
+      "The origin always"
+    ],
+    "a": 0,
+    "why": "For a bounded feasible region, the optimal value always occurs at one of the corner points."
+  },
+  {
+    "q": "Non-negativity constraints in an LPP require that the decision variables satisfy:",
+    "o": [
+      "x <= 0, y <= 0",
+      "x >= 0, y >= 0",
+      "x = y",
+      "x + y = 0"
+    ],
+    "a": 1,
+    "why": "Decision variables in standard LPP formulation must be non-negative, i.e., x >= 0, y >= 0."
+  },
+  {
+    "q": "If the feasible region of an LPP is unbounded, the maximum of the objective function:",
+    "o": [
+      "Always exists",
+      "Is always zero",
+      "May not exist",
+      "Is always at the origin"
+    ],
+    "a": 2,
+    "why": "In an unbounded feasible region, the objective function may increase without bound, so maximum may not exist."
+  },
+  {
+    "q": "A feasible region is called bounded when it can be:",
+    "o": [
+      "Infinite in extent",
+      "Only a single point",
+      "Only along the x-axis",
+      "Enclosed within a circle of finite radius"
+    ],
+    "a": 3,
+    "why": "A bounded region can be enclosed within some finite circle; otherwise it is unbounded."
+  },
+  {
+    "q": "Which of the following is the correct first step in formulating an LPP?",
+    "o": [
+      "Identify the decision variables",
+      "Draw the graph",
+      "Find corner points",
+      "Calculate the objective function value"
+    ],
+    "a": 0,
+    "why": "Formulation begins by identifying the decision variables that need to be determined."
+  },
+  {
+    "q": "For a minimization LPP with unbounded feasible region, the minimum value:",
+    "o": [
+      "Never exists",
+      "May exist if feasible region is bounded below in the direction of decrease",
+      "Is always zero",
+      "Equals the maximum value"
+    ],
+    "a": 1,
+    "why": "Even with an unbounded region, a minimum can exist if the objective function is bounded below over the feasible region."
+  },
+  {
+    "q": "The graphical solution method for an LPP with two variables involves plotting:",
+    "o": [
+      "Only the objective function",
+      "Only non-negativity constraints",
+      "The constraint inequalities as half-planes",
+      "A single straight line"
+    ],
+    "a": 2,
+    "why": "Each constraint is plotted as a line, and the feasible region is the intersection of corresponding half-planes."
+  },
+  {
+    "q": "In an LPP, constraints are typically expressed as:",
+    "o": [
+      "Linear equations only",
+      "Exponential equations",
+      "Quadratic equations",
+      "Linear inequalities"
+    ],
+    "a": 3,
+    "why": "LPP constraints are linear inequalities (or equalities) in the decision variables."
+  }
+]

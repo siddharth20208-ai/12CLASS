@@ -1,0 +1,98 @@
+[
+  {
+    "t": "Classification (primary, secondary, tertiary)",
+    "def": "Amines are organic derivatives of ammonia (NH3) classified as primary, secondary or tertiary based on how many hydrogen atoms of NH3 are replaced by alkyl/aryl groups.",
+    "points": [
+      "Primary amine (1 degree): one H of NH3 replaced by an alkyl/aryl group, general formula R-NH2.",
+      "Secondary amine (2 degree): two H atoms replaced, general formula R-NH-R'.",
+      "Tertiary amine (3 degree): all three H atoms replaced, general formula R-N(R')(R'').",
+      "This classification is different from alcohols: it is based on number of carbon groups on nitrogen, not on the carbon bearing the group.",
+      "Amines can be aliphatic (alkyl groups) or aromatic (at least one aryl group directly on nitrogen, like aniline).",
+      "IUPAC names use suffix '-amine', e.g. CH3NH2 is methanamine; common names add 'amine' to alkyl group name, e.g. methylamine."
+    ],
+    "formula": "Primary: R-NH2     Secondary: R-NH-R'     Tertiary: R-N(R')(R'')",
+    "diagram": { "mermaid": "flowchart TD\n  A[\"Ammonia NH3\"] --> B[\"Replace 1 H - Primary amine\"]\n  A --> C[\"Replace 2 H - Secondary amine\"]\n  A --> D[\"Replace 3 H - Tertiary amine\"]" },
+    "example": "CH3NH2 is a primary amine (methanamine), (CH3)2NH is secondary (N-methylmethanamine), (CH3)3N is tertiary (N,N-dimethylmethanamine).",
+    "tip": "Identify degree by counting carbon groups attached to N (not to carbon) - this is the most common point students confuse with alcohols."
+  },
+  {
+    "t": "Preparation of amines",
+    "def": "Amines can be prepared by reduction of various nitrogen-containing compounds like nitro compounds, nitriles and amides, or by reactions like Gabriel phthalimide synthesis.",
+    "points": [
+      "Reduction of nitro compounds (R-NO2) using H2/catalyst or Sn/HCl gives primary amines.",
+      "Reduction of nitriles (R-CN) using H2/catalyst or LiAlH4 gives primary amines.",
+      "Reduction of amides (R-CONH2) using LiAlH4 gives primary amines.",
+      "Ammonolysis of alkyl halides: R-X + excess NH3 gives primary amine (but tends to give mixture of 1,2,3-amine due to further alkylation).",
+      "Gabriel phthalimide synthesis gives pure primary amines without over-alkylation, using phthalimide, KOH, then alkyl halide, followed by hydrolysis.",
+      "Hoffmann bromamide degradation: amide + Br2/NaOH gives primary amine with one carbon LESS than the starting amide."
+    ],
+    "formula": "R-CONH2 + Br2 + 4NaOH -> R-NH2 + Na2CO3 + 2NaBr + 2H2O (Hoffmann bromamide)",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Nitro compound or nitrile or amide\"] --> B[\"Reduction with H2/catalyst or LiAlH4\"]\n  B --> C[\"Primary amine R-NH2\"]\n  D[\"Phthalimide + KOH + R-X\"] --> E[\"Hydrolysis\"]\n  E --> C" },
+    "example": "CH3CONH2 + Br2 + 4NaOH --Hoffmann--> CH3NH2 (methanamine, one carbon less than acetamide's 2 carbons).",
+    "tip": "Remember Gabriel synthesis gives ONLY pure primary amine (no over-alkylation) and Hoffmann degradation reduces carbon count by one - both are frequently asked distinctly."
+  },
+  {
+    "t": "Basicity of amines",
+    "def": "Amines are basic because the nitrogen atom has a lone pair of electrons that can accept a proton (H+), and their basic strength depends on availability of this lone pair.",
+    "points": [
+      "In aqueous solution, basicity order for aliphatic amines is generally: secondary > primary > tertiary (due to combined effect of +I effect, steric hindrance and solvation of the resulting cation).",
+      "+I (electron donating) effect of alkyl groups increases electron density on N, increasing basicity.",
+      "Too many bulky alkyl groups (as in tertiary amine) cause steric hindrance, making it harder for the cation formed to be solvated/stabilised in water, lowering basicity.",
+      "Aromatic amines (like aniline) are much weaker bases than aliphatic amines because the lone pair on N is delocalised into the benzene ring by resonance, making it less available to accept H+.",
+      "Electron-withdrawing groups on the aromatic ring (like -NO2) further decrease basicity of aryl amines; electron-donating groups (-CH3, -OCH3) increase it.",
+      "Overall general order: aliphatic amines > ammonia > aromatic amines (aniline) in basicity."
+    ],
+    "formula": "Aqueous basicity order: secondary > primary > tertiary (aliphatic); aliphatic amine > aniline",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Amine basicity depends on lone pair availability\"] --> B[\"Alkyl groups - +I effect increases basicity\"]\n  A --> C[\"Bulky groups - steric hindrance decreases basicity\"]\n  A --> D[\"Aryl group - lone pair delocalised, decreases basicity\"]" },
+    "example": "Aniline (C6H5NH2) is a weaker base than methylamine (CH3NH2) because aniline's nitrogen lone pair is delocalised into the benzene ring by resonance.",
+    "tip": "Explain basicity using BOTH electronic (+I, resonance) and steric factors - a one-sided explanation loses marks in a 'why' question."
+  },
+  {
+    "t": "Hinsberg test",
+    "def": "Hinsberg test distinguishes primary, secondary and tertiary amines using benzenesulphonyl chloride, based on differences in solubility and reactivity of the products formed.",
+    "points": [
+      "Benzenesulphonyl chloride (C6H5SO2Cl, Hinsberg reagent) is added to the amine along with KOH.",
+      "Primary amine forms N-alkylbenzenesulphonamide, which has an acidic N-H and dissolves in KOH (soluble in alkali) due to formation of a soluble salt.",
+      "Secondary amine forms N,N-dialkylbenzenesulphonamide, which has NO acidic N-H left (both H replaced), so it is insoluble in KOH.",
+      "Tertiary amine does not react with benzenesulphonyl chloride at all (no N-H to replace), so it remains unreacted/insoluble, simply separates as oily layer.",
+      "This test is used as a simple chemical method to identify and separate the three types of amines in a mixture.",
+      "After separating, acidifying the KOH-soluble primary amine product regenerates the free primary amine (precipitate reappears)."
+    ],
+    "formula": "R-NH2 + C6H5SO2Cl -> R-NH-SO2-C6H5 (soluble in KOH) + HCl",
+    "diagram": { "mermaid": "flowchart TD\n  A[\"Add Hinsberg reagent + KOH\"] --> B[\"Primary amine - soluble product in KOH\"]\n  A --> C[\"Secondary amine - insoluble product, no acidic H left\"]\n  A --> D[\"Tertiary amine - no reaction at all\"]" },
+    "example": "CH3NH2 + C6H5SO2Cl gives CH3NHSO2C6H5 which dissolves in KOH (due to acidic N-H), confirming it is a primary amine.",
+    "tip": "Explain WHY secondary amide product is insoluble (no acidic N-H left) - just stating solubility without the reason loses marks."
+  },
+  {
+    "t": "Carbylamine reaction",
+    "def": "The carbylamine (isocyanide) reaction is a specific test for primary amines, where the amine reacts with chloroform and alcoholic KOH to give a foul-smelling isocyanide.",
+    "points": [
+      "Only primary amines (aliphatic or aromatic) give this test; secondary and tertiary amines do NOT react.",
+      "Primary amine + chloroform (CHCl3) + alcoholic KOH, on heating, gives an isocyanide (carbylamine) and KCl plus water.",
+      "The isocyanide formed has a characteristic very unpleasant/foul smell, which confirms the test.",
+      "This test is useful to distinguish primary amines from secondary and tertiary amines simply by smell after heating.",
+      "Also called isocyanide test since the product R-NC is an isocyanide (carbylamine is the old/common name).",
+      "Works for both aliphatic amines (R-NH2) and aromatic amines (Ar-NH2) since both have the required N-H2 group."
+    ],
+    "formula": "R-NH2 + CHCl3 + 3KOH(alc) -> R-NC + 3KCl + 3H2O",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Primary amine R-NH2\"] --> B[\"+ CHCl3 + alcoholic KOH, heat\"]\n  B --> C[\"Isocyanide R-NC - foul smell\"]\n  C --> D[\"Confirms primary amine\"]" },
+    "example": "C6H5NH2 (aniline) + CHCl3 + alcoholic KOH gives C6H5NC (phenyl isocyanide) with a foul smell, confirming aniline is a primary amine.",
+    "tip": "State explicitly that only primary amines give this positive test, and mention 'foul smell' as the observable result - this is the expected keyword."
+  },
+  {
+    "t": "Diazonium salts",
+    "def": "Diazonium salts are compounds of the general formula Ar-N2+X-, formed by reacting primary aromatic amines with nitrous acid at low temperature, and are very reactive intermediates in organic synthesis.",
+    "points": [
+      "Formed by diazotisation: aromatic primary amine + NaNO2 + dilute HCl (or H2SO4) at low temperature (0-5 degree C).",
+      "Low temperature is essential because diazonium salts are unstable and decompose above 5 degree C (especially in water, giving phenol).",
+      "Diazonium salts undergo substitution reactions where N2 gas is released and replaced by another group, e.g. -OH (water), -Cl (HCl), -CN (KCN/CuCN, Sandmeyer reaction).",
+      "Coupling reactions: diazonium salt reacts with phenol or aniline (in alkaline/weakly acidic medium) to form brightly coloured azo compounds (azo dyes) without losing nitrogen.",
+      "Diazonium salts are very important intermediates to introduce various functional groups onto a benzene ring that are otherwise hard to add directly.",
+      "Reduction of diazonium salt with H3PO2/H2O (or ethanol) replaces N2+ with H, useful to remove the amino group entirely from the ring."
+    ],
+    "formula": "Ar-NH2 + NaNO2 + HCl --(273-278 K)--> Ar-N2+Cl- + NaCl + 2H2O",
+    "diagram": { "mermaid": "flowchart TD\n  A[\"Aromatic primary amine\"] --> B[\"NaNO2 + HCl, 0-5 degree C\"]\n  B --> C[\"Diazonium salt Ar-N2+Cl-\"]\n  C --> D[\"Substitution - replace N2 with OH, Cl, CN\"]\n  C --> E[\"Coupling - azo dye with phenol or aniline\"]" },
+    "example": "Aniline + NaNO2 + HCl at 0-5 degree C gives benzenediazonium chloride, which couples with phenol in alkaline medium to form a bright orange-red azo dye.",
+    "tip": "Always mention the low temperature condition (0-5 degree C) for diazotisation - omitting this is a very common mark-losing mistake."
+  }
+]

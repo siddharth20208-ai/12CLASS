@@ -1,0 +1,104 @@
+[
+  {
+    "t": "Levels of biodiversity",
+    "def": "Biodiversity is the variety of life found at different levels of biological organisation — within species, between species, and among ecosystems.",
+    "points": [
+      "Genetic diversity: variation in genes within a single species, giving different varieties (e.g., many rice varieties).",
+      "Species diversity: the variety and number of different species found in a given region or ecosystem.",
+      "Ecosystem diversity: the variety of habitats, ecological processes and ecosystems (forests, deserts, wetlands) on earth.",
+      "India is one of the 12 mega-biodiversity countries and has 2 biodiversity hotspots: the Western Ghats and the Himalayas.",
+      "Higher biodiversity means greater stability and productivity of an ecosystem."
+    ],
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Biodiversity\"] --> B[\"Genetic diversity\"]\n  A --> C[\"Species diversity\"]\n  A --> D[\"Ecosystem diversity\"]"
+    },
+    "example": "Thousands of rice varieties in India show genetic diversity; the many different plant and animal species in the Western Ghats show species and ecosystem diversity.",
+    "tip": "Name all three levels with one example each — this three-mark question is asked almost every year."
+  },
+  {
+    "t": "Causes of biodiversity loss",
+    "def": "Biodiversity loss is the decline in the variety and number of species and habitats, caused mainly by human activities disturbing natural ecosystems.",
+    "points": [
+      "Habitat destruction: deforestation, urbanisation and conversion of forests/wetlands into farmland or cities destroys natural homes of species.",
+      "Overexploitation: excessive hunting, fishing and poaching reduce populations faster than they can reproduce.",
+      "Pollution: air, water and soil pollution harm or kill many sensitive species.",
+      "Introduction of alien/invasive species disturbs native species through competition and predation.",
+      "Climate change alters habitats and food availability, pushing species towards extinction.",
+      "Fragmentation of habitats into small isolated patches reduces breeding and food resources for wildlife."
+    ],
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Biodiversity loss\"] --> B[\"Habitat destruction\"]\n  A --> C[\"Overexploitation\"]\n  A --> D[\"Pollution\"]\n  A --> E[\"Invasive species\"]\n  A --> F[\"Climate change\"]"
+    },
+    "example": "Clearing of the Amazon rainforest for agriculture destroys the habitat of thousands of species, leading to extinction of many of them.",
+    "tip": "Remember the acronym HIPPO (Habitat loss, Invasive species, Pollution, Population growth, Overexploitation) to recall causes quickly."
+  },
+  {
+    "t": "In-situ conservation (biosphere reserves, national parks)",
+    "def": "In-situ conservation is the protection of endangered plants and animals in their own natural habitat, without removing them from where they naturally live.",
+    "points": [
+      "National parks are protected areas set aside for conservation of wildlife and its habitat, where human activities like grazing and hunting are prohibited.",
+      "Wildlife sanctuaries protect specific animal species but allow some regulated human activities like grazing.",
+      "Biosphere reserves are large protected areas that conserve whole ecosystems, including plants, animals and local human communities living sustainably.",
+      "Biosphere reserves have three zones: a core zone (fully protected), a buffer zone (limited human use) and a transition zone (human settlement allowed).",
+      "In-situ conservation is cheaper and more natural, as organisms continue to evolve and interact in their normal environment.",
+      "Example sites in India: Sunderban, Nilgiri and Gulf of Mannar biosphere reserves."
+    ],
+    "diagram": {
+      "draw": "Draw three concentric circles. Label the innermost circle 'Core zone - fully protected'. Label the middle ring 'Buffer zone - limited use'. Label the outer ring 'Transition zone - human settlement'. Title the diagram 'Biosphere reserve zones'."
+    },
+    "example": "The Nilgiri Biosphere Reserve in the Western Ghats protects tigers, elephants and many endemic plants in their natural habitat.",
+    "tip": "Clearly differentiate national park, wildlife sanctuary and biosphere reserve in a table — this comparison is a common 3-4 mark question."
+  },
+  {
+    "t": "Ex-situ conservation (zoos, seed banks)",
+    "def": "Ex-situ conservation is the protection of endangered plants and animals by removing them from their natural habitat and maintaining them in artificial, controlled conditions.",
+    "points": [
+      "Zoological parks (zoos) keep and breed endangered animals under human care for display, research and breeding programmes.",
+      "Botanical gardens maintain living collections of rare and endangered plant species.",
+      "Seed banks (gene banks) store seeds of various plant varieties at low temperature and humidity for long-term preservation of genetic diversity.",
+      "Cryopreservation stores gametes, embryos and tissues at very low temperature (in liquid nitrogen) for future use.",
+      "Captive breeding programmes breed endangered species in zoos and later reintroduce them into the wild.",
+      "Ex-situ methods are useful as a backup when a species' natural habitat is nearly destroyed."
+    ],
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Ex-situ conservation\"] --> B[\"Zoos\"]\n  A --> C[\"Botanical gardens\"]\n  A --> D[\"Seed banks\"]\n  A --> E[\"Cryopreservation\"]"
+    },
+    "example": "The National Bureau of Plant Genetic Resources in India maintains a seed bank preserving thousands of crop varieties for future breeding.",
+    "tip": "Give at least three examples of ex-situ methods (zoo, botanical garden, seed bank) with one line explanation each."
+  },
+  {
+    "t": "Global warming and greenhouse effect",
+    "def": "The greenhouse effect is the natural warming of earth's atmosphere caused by greenhouse gases trapping heat, and global warming is the abnormal rise in earth's average temperature due to an increase in these gases from human activities.",
+    "points": [
+      "Greenhouse gases include carbon dioxide, methane, nitrous oxide and water vapour, which trap infrared (heat) radiation reflected from earth's surface.",
+      "Sunlight passes through the atmosphere and warms the earth; the earth re-radiates heat, but greenhouse gases absorb and trap part of it, warming the atmosphere.",
+      "Burning of fossil fuels, deforestation and industrial activities have increased greenhouse gas levels, intensifying the natural greenhouse effect.",
+      "This enhanced effect causes global warming, leading to melting of glaciers, rising sea levels and climate change.",
+      "Effects include changing rainfall patterns, more frequent extreme weather events and threats to biodiversity.",
+      "Control measures include reducing fossil fuel use, afforestation and using renewable energy."
+    ],
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Sunlight enters atmosphere\"] --> B[\"Earth absorbs and warms\"]\n  B --> C[\"Earth releases heat radiation\"]\n  C --> D[\"Greenhouse gases trap heat\"]\n  D --> E[\"Atmosphere warms further\"]"
+    },
+    "example": "Rising carbon dioxide levels from burning coal and petrol have increased global average temperature, causing glaciers in the Himalayas to melt faster.",
+    "tip": "Name at least three greenhouse gases and explain the trapping mechanism in simple terms — this is a standard 2-3 mark question."
+  },
+  {
+    "t": "Ozone depletion",
+    "def": "Ozone depletion is the gradual thinning of the ozone layer in the stratosphere, mainly caused by chlorofluorocarbons (CFCs) and other ozone-destroying chemicals released by human activities.",
+    "points": [
+      "The ozone layer in the stratosphere absorbs most of the sun's harmful ultraviolet (UV) radiation, protecting life on earth.",
+      "Chlorofluorocarbons (CFCs), used in refrigerators, air conditioners and aerosol sprays, release chlorine atoms when they reach the stratosphere.",
+      "Chlorine atoms react with and break down ozone molecules, reducing the thickness of the ozone layer.",
+      "A large area of severely thinned ozone, called the ozone hole, has been observed over Antarctica.",
+      "Depletion of ozone allows more harmful UV rays to reach earth, increasing risks of skin cancer, cataracts and harming crops and marine life.",
+      "The Montreal Protocol is an international agreement to phase out the production and use of ozone-depleting substances like CFCs."
+    ],
+    "formula": "CFC + UV light -> Cl (chlorine radical); Cl + O3 -> ClO + O2 (ozone destruction)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"CFCs released\"] --> B[\"Rise to stratosphere\"]\n  B --> C[\"UV light breaks CFC releasing chlorine\"]\n  C --> D[\"Chlorine destroys ozone molecules\"]\n  D --> E[\"Ozone layer thins - ozone hole\"]"
+    },
+    "example": "The large seasonal ozone hole over Antarctica is caused mainly by accumulated CFCs reacting with ozone in the cold stratosphere.",
+    "tip": "Mention CFCs as the main cause, the reaction with ozone, the health effects of increased UV, and the Montreal Protocol as the remedy for full marks."
+  }
+]

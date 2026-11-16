@@ -1,0 +1,155 @@
+{
+  "solved": [
+    {
+      "topic": "Sine rule",
+      "marks": 3,
+      "q": "In triangle ABC, a = 10, A = 30 degrees, B = 45 degrees. Find side b.",
+      "steps": [
+        "Using sine rule: a/sin A = b/sin B.",
+        "Substitute values: 10/sin 30 = b/sin 45.",
+        "sin 30 = 1/2, sin 45 = 1/sqrt(2).",
+        "b = 10 * sin 45 / sin 30 = 10 * (1/sqrt(2)) / (1/2) = 10 * 2/sqrt(2) = 20/sqrt(2) = 10*sqrt(2)."
+      ],
+      "ans": "b = 10*sqrt(2)."
+    },
+    {
+      "topic": "Cosine rule",
+      "marks": 3,
+      "q": "In triangle ABC, a = 7, b = 8, c = 5. Find angle C.",
+      "steps": [
+        "Using cosine rule: cos C = (a^2 + b^2 - c^2)/(2ab).",
+        "Substitute: cos C = (49 + 64 - 25)/(2*7*8) = 88/112.",
+        "Simplify: 88/112 = 11/14.",
+        "C = cos^-1(11/14)."
+      ],
+      "ans": "C = cos^-1(11/14), approximately 38 degrees 13 minutes."
+    },
+    {
+      "topic": "Projection formula",
+      "marks": 2,
+      "q": "In triangle ABC, verify the projection formula a = b cos C + c cos B when b = 5, c = 7, cos B = 1/7, cos C = 5/7.",
+      "steps": [
+        "Projection formula: a = b cos C + c cos B.",
+        "Substitute: a = 5*(5/7) + 7*(1/7) = 25/7 + 1 = 25/7 + 7/7 = 32/7.",
+        "So the formula gives a = 32/7 for this triangle."
+      ],
+      "ans": "a = 32/7 (projection formula verified)."
+    },
+    {
+      "topic": "Area of a triangle",
+      "marks": 2,
+      "q": "In triangle ABC, b = 10, c = 8 and A = 60 degrees. Find the area of the triangle.",
+      "steps": [
+        "Using the formula: Area = (1/2) * b * c * sin A.",
+        "Substitute: Area = (1/2) * 10 * 8 * sin 60.",
+        "sin 60 = sqrt(3)/2.",
+        "Area = (1/2) * 80 * sqrt(3)/2 = 40 * sqrt(3)/2 = 20*sqrt(3)."
+      ],
+      "ans": "Area = 20*sqrt(3) square units."
+    },
+    {
+      "topic": "Inverse trig principal value",
+      "marks": 2,
+      "q": "Find the principal value of sin^-1(-1/2).",
+      "steps": [
+        "Principal value range of sin^-1 is [-pi/2, pi/2].",
+        "We need theta in this range with sin(theta) = -1/2.",
+        "sin(pi/6) = 1/2, and sine is an odd function, so sin(-pi/6) = -1/2.",
+        "-pi/6 lies in [-pi/2, pi/2]."
+      ],
+      "ans": "sin^-1(-1/2) = -pi/6."
+    },
+    {
+      "topic": "Addition formula for tan^-1",
+      "marks": 3,
+      "q": "Evaluate: tan^-1(1/2) + tan^-1(1/3).",
+      "steps": [
+        "Using formula: tan^-1 x + tan^-1 y = tan^-1((x+y)/(1-xy)), valid when xy < 1.",
+        "Here x = 1/2, y = 1/3, so xy = 1/6 < 1.",
+        "x + y = 1/2 + 1/3 = 5/6. 1 - xy = 1 - 1/6 = 5/6.",
+        "(x+y)/(1-xy) = (5/6)/(5/6) = 1.",
+        "tan^-1(1) = pi/4."
+      ],
+      "ans": "tan^-1(1/2) + tan^-1(1/3) = pi/4."
+    },
+    {
+      "topic": "Sum of inverse sine and inverse cosine",
+      "marks": 3,
+      "q": "Show that sin^-1(3/5) + sin^-1(4/5) = pi/2.",
+      "steps": [
+        "Let A = sin^-1(3/5), so sin A = 3/5, and cos A = sqrt(1 - 9/25) = sqrt(16/25) = 4/5.",
+        "Let B = sin^-1(4/5), so sin B = 4/5, and cos B = sqrt(1 - 16/25) = sqrt(9/25) = 3/5.",
+        "cos(A+B) = cos A cos B - sin A sin B = (4/5)(3/5) - (3/5)(4/5) = 12/25 - 12/25 = 0.",
+        "Since cos(A+B) = 0 and A, B are both in [0, pi/2], A + B = pi/2."
+      ],
+      "ans": "sin^-1(3/5) + sin^-1(4/5) = pi/2, proved."
+    },
+    {
+      "topic": "Evaluate sum of three inverse tangents",
+      "marks": 4,
+      "q": "Evaluate: tan^-1(1) + tan^-1(2) + tan^-1(3).",
+      "steps": [
+        "First combine tan^-1(2) + tan^-1(3) using tan^-1 x + tan^-1 y = tan^-1((x+y)/(1-xy)).",
+        "Here xy = 6 > 1 and x, y both positive, so add pi: sum = pi + tan^-1((2+3)/(1-6)) = pi + tan^-1(5/-5) = pi + tan^-1(-1).",
+        "tan^-1(-1) = -pi/4, so sum = pi - pi/4 = 3pi/4.",
+        "Now add tan^-1(1) = pi/4: total = pi/4 + 3pi/4 = pi."
+      ],
+      "ans": "tan^-1(1) + tan^-1(2) + tan^-1(3) = pi."
+    },
+    {
+      "topic": "Trigonometric equation (quadratic in sine)",
+      "marks": 3,
+      "q": "Solve: 2sin^2(x) - 1 = 0, for 0 <= x <= 2pi.",
+      "steps": [
+        "2sin^2(x) - 1 = 0 gives sin^2(x) = 1/2.",
+        "So sin(x) = 1/sqrt(2) or sin(x) = -1/sqrt(2).",
+        "For sin(x) = 1/sqrt(2) in [0, 2pi]: x = pi/4 or x = 3pi/4.",
+        "For sin(x) = -1/sqrt(2) in [0, 2pi]: x = 5pi/4 or x = 7pi/4."
+      ],
+      "ans": "x = pi/4, 3pi/4, 5pi/4, 7pi/4."
+    },
+    {
+      "topic": "Trigonometric equation (linear)",
+      "marks": 3,
+      "q": "Solve: 2cos(x) - 1 = 0, for 0 <= x <= 2pi.",
+      "steps": [
+        "2cos(x) - 1 = 0 gives cos(x) = 1/2.",
+        "cos(x) = 1/2 has solution x = pi/3 in the first quadrant.",
+        "cos is also positive in the fourth quadrant: x = 2pi - pi/3 = 5pi/3."
+      ],
+      "ans": "x = pi/3 or x = 5pi/3."
+    },
+    {
+      "topic": "Trigonometric equation (tangent, general solution)",
+      "marks": 2,
+      "q": "Find the general solution of: tan(x) = sqrt(3).",
+      "steps": [
+        "tan(x) = sqrt(3) gives the principal value x = pi/3 (since tan(pi/3) = sqrt(3)).",
+        "The general solution for tan(x) = tan(alpha) is x = n*pi + alpha, n belonging to Z."
+      ],
+      "ans": "x = n*pi + pi/3, n belonging to Z."
+    },
+    {
+      "topic": "Solving a triangle given two sides and included angle",
+      "marks": 4,
+      "q": "In triangle ABC, b = 4, c = 3 and angle A = 60 degrees. Find side a.",
+      "steps": [
+        "Using cosine rule: a^2 = b^2 + c^2 - 2bc cos A.",
+        "Substitute: a^2 = 16 + 9 - 2*4*3*cos 60.",
+        "cos 60 = 1/2, so a^2 = 25 - 24*(1/2) = 25 - 12 = 13.",
+        "a = sqrt(13)."
+      ],
+      "ans": "a = sqrt(13)."
+    }
+  ],
+  "practice": [
+    { "topic": "Sine rule", "q": "In triangle ABC, a = 6, A = 45 degrees, C = 60 degrees. Find side c.", "hint": "Use a/sin A = c/sin C.", "ans": "c = 3*sqrt(6) (i.e. 6*sin60/sin45)." },
+    { "topic": "Cosine rule", "q": "In triangle ABC, a = 5, b = 6, c = 7. Find cos A.", "hint": "cos A = (b^2+c^2-a^2)/(2bc).", "ans": "cos A = 5/7." },
+    { "topic": "Area of triangle", "q": "In triangle ABC, a = 6, b = 7, angle C = 30 degrees. Find its area.", "hint": "Area = (1/2) a b sin C.", "ans": "Area = 10.5 sq units." },
+    { "topic": "Principal value", "q": "Find the principal value of cos^-1(-1/2).", "hint": "Principal range of cos^-1 is [0, pi]; use cos(2pi/3) = -1/2.", "ans": "2pi/3." },
+    { "topic": "Addition formula tan^-1", "q": "Evaluate tan^-1(1/5) + tan^-1(2/3).", "hint": "Use tan^-1x+tan^-1y formula with x=1/5, y=2/3.", "ans": "pi/4." },
+    { "topic": "Trig equation", "q": "Solve 2sin(x) + 1 = 0 for 0 <= x <= 2pi.", "hint": "sin x = -1/2; reference angle pi/6, solutions in 3rd and 4th quadrant.", "ans": "x = 7pi/6 or x = 11pi/6." },
+    { "topic": "Solving triangle", "q": "In triangle ABC, a = 8, b = 5, angle C = 60 degrees. Find side c.", "hint": "Use cosine rule c^2 = a^2+b^2-2ab cos C.", "ans": "c = 7 (since c^2 = 64+25-40 = 49)." },
+    { "topic": "Property of inverse trig", "q": "Evaluate tan^-1(1/2) + tan^-1(1/3) + tan^-1(1).", "hint": "First combine tan^-1(1/2)+tan^-1(1/3) = pi/4, then add tan^-1(1) = pi/4.", "ans": "pi/2." }
+  ]
+}

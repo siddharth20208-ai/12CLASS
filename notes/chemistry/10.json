@@ -1,0 +1,98 @@
+[
+  {
+    "t": "Nomenclature and classification",
+    "def": "Alcohols (R-OH on saturated carbon), phenols (OH directly on benzene ring) and ethers (R-O-R') are classified by position and number of the -OH or -O- group.",
+    "points": [
+      "Alcohols are classified as primary, secondary or tertiary based on the carbon bearing the OH group.",
+      "Alcohols are also classified as mono-, di-, tri-hydric (one, two, three OH groups), e.g. glycerol is trihydric.",
+      "Phenols have OH directly attached to an aromatic ring carbon; cannot be primary/secondary/tertiary like alcohols.",
+      "IUPAC name of alcohol uses suffix '-ol' with locant, e.g. propan-1-ol.",
+      "Ethers are named as alkoxyalkanes in IUPAC, e.g. CH3-O-CH3 is methoxymethane.",
+      "Ethers can be symmetrical (same groups on both sides) or unsymmetrical (different groups)."
+    ],
+    "formula": "Alcohol: R-OH     Phenol: Ar-OH     Ether: R-O-R'",
+    "diagram": { "mermaid": "flowchart TD\n  A[\"OH or O containing compounds\"] --> B[\"Alcohol R-OH\"]\n  A --> C[\"Phenol Ar-OH\"]\n  A --> D[\"Ether R-O-R\"]\n  B --> E[\"Primary, secondary, tertiary\"]" },
+    "example": "(CH3)3C-OH is 2-methylpropan-2-ol (IUPAC), a tertiary alcohol since OH is on a carbon joined to three other carbons.",
+    "tip": "Clearly identify primary/secondary/tertiary before naming - this classification is often asked along with nomenclature."
+  },
+  {
+    "t": "Preparation of alcohols and phenols",
+    "def": "Alcohols can be prepared from alkenes, aldehydes/ketones, or Grignard reagents, while phenols are mainly made industrially from cumene or from diazonium salts.",
+    "points": [
+      "Alcohols from alkenes: acid-catalysed hydration (Markovnikov addition) of water across the double bond.",
+      "Alcohols from carbonyl compounds: reduction of aldehydes/ketones using NaBH4/LiAlH4 or H2/catalyst.",
+      "Alcohols from Grignard reagents: reaction with aldehydes, ketones or esters followed by hydrolysis.",
+      "Phenol industrially made by cumene process: cumene is oxidised by air to cumene hydroperoxide, then treated with dilute acid to give phenol and acetone.",
+      "Phenol from diazonium salt: aryl diazonium salt is hydrolysed with water to give phenol and nitrogen gas.",
+      "Phenol from haloarenes: chlorobenzene fused with NaOH at high temperature/pressure (Dow's process) gives phenol."
+    ],
+    "formula": "Cumene -O2-> cumene hydroperoxide -H+/H2O-> Phenol + Acetone",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Cumene\"] --> B[\"Air oxidation\"]\n  B --> C[\"Cumene hydroperoxide\"]\n  C --> D[\"Dilute acid treatment\"]\n  D --> E[\"Phenol + Acetone\"]" },
+    "example": "Cumene process is the main industrial method: cumene gives cumene hydroperoxide on air oxidation, which on acid hydrolysis gives phenol plus acetone as by-product.",
+    "tip": "The cumene process is the most important industrial method - write it with all 2 steps and name acetone as useful by-product."
+  },
+  {
+    "t": "Acidity of phenols vs alcohols",
+    "def": "Phenols are more acidic than alcohols because the phenoxide ion formed after losing H+ is stabilised by resonance with the benzene ring, while alkoxide ion from alcohol has no such stabilisation.",
+    "points": [
+      "Both alcohols and phenols can lose H+ from the O-H bond, but phenol loses it more easily.",
+      "Phenoxide ion (C6H5-O-) has negative charge delocalised into the ring by resonance, spreading out and stabilising the charge.",
+      "Alkoxide ion (R-O-) has no resonance, negative charge stays only on oxygen, making it less stable, so less easily formed.",
+      "Electron-withdrawing groups (like -NO2) on the ring further increase acidity of phenol by stabilising phenoxide more.",
+      "Electron-donating groups (like -CH3, -OCH3) on the ring decrease acidity of phenol.",
+      "Order of acidity: phenol (pKa approx 10) is much more acidic than ethanol (pKa approx 16)."
+    ],
+    "formula": "Phenol pKa approx 10     Ethanol pKa approx 16 (lower pKa = more acidic)",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Phenol loses H+\"] --> B[\"Phenoxide ion\"]\n  B --> C[\"Negative charge delocalised by resonance into ring\"]\n  C --> D[\"More stable, phenol more acidic\"]" },
+    "example": "p-nitrophenol is more acidic than phenol because -NO2 group withdraws electrons and stabilises the phenoxide ion further by resonance.",
+    "tip": "Draw the resonance structures of phenoxide ion showing charge delocalisation into the ring - this diagram is key to a complete answer."
+  },
+  {
+    "t": "Williamson's synthesis of ethers",
+    "def": "Williamson synthesis is the preparation of ethers by reacting an alkyl halide with a sodium alkoxide or sodium phenoxide, through an SN2 mechanism.",
+    "points": [
+      "Sodium alkoxide (R-O-Na) is prepared by reacting an alcohol with sodium metal.",
+      "The alkoxide (nucleophile) then attacks the alkyl halide (R'-X) in an SN2 reaction.",
+      "Works best with primary alkyl halides since SN2 needs less steric hindrance; tertiary halides give elimination instead.",
+      "Can be used to make both symmetrical ethers (both groups same) and unsymmetrical ethers (different groups).",
+      "Phenols can also be used: sodium phenoxide + alkyl halide gives aryl alkyl ether.",
+      "This method is preferred over simple dehydration of alcohols because it gives unsymmetrical ethers cleanly."
+    ],
+    "formula": "R-O-Na + R'-X -> R-O-R' + NaX",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Alcohol + Na\"] --> B[\"Sodium alkoxide R-O-Na\"]\n  B --> C[\"+ Alkyl halide R-X, SN2\"]\n  C --> D[\"Ether R-O-R + NaX\"]" },
+    "example": "CH3-O-Na + C2H5-Br -> CH3-O-C2H5 + NaBr (gives unsymmetrical ether methoxyethane).",
+    "tip": "Always use a primary alkyl halide with the alkoxide in your example - mention this choice avoids the elimination side reaction."
+  },
+  {
+    "t": "Distinguishing tests (Lucas test, FeCl3 test)",
+    "def": "Lucas test distinguishes primary, secondary and tertiary alcohols based on reaction speed with Lucas reagent, while the FeCl3 test identifies phenols by a colour change.",
+    "points": [
+      "Lucas reagent = concentrated HCl + anhydrous ZnCl2; reacts with alcohol via SN1 to form alkyl chloride (turbidity/cloudiness).",
+      "Tertiary alcohol reacts immediately (turbidity appears at once) because it forms a stable carbocation fastest.",
+      "Secondary alcohol gives turbidity within about 5 minutes (needs slight warming sometimes).",
+      "Primary alcohol shows no turbidity at room temperature; needs heating to react.",
+      "FeCl3 test: phenols give a characteristic violet/purple/green colouration with neutral FeCl3 solution due to complex formation.",
+      "Alcohols do NOT give colour with FeCl3, so this test distinguishes phenols from alcohols."
+    ],
+    "formula": "Lucas reagent: conc. HCl + anhydrous ZnCl2",
+    "diagram": { "mermaid": "flowchart TD\n  A[\"Add Lucas reagent to alcohol\"] --> B[\"Turbidity at once - tertiary\"]\n  A --> C[\"Turbidity in 5 min - secondary\"]\n  A --> D[\"No turbidity at room temp - primary\"]" },
+    "example": "Phenol + neutral FeCl3 solution gives a violet colouration, confirming presence of phenolic -OH group.",
+    "tip": "Mention the exact timing differences for Lucas test (immediate/5 min/no reaction) - examiners check for this specific detail."
+  },
+  {
+    "t": "Important reactions (esterification, dehydration)",
+    "def": "Alcohols undergo esterification with carboxylic acids to form esters, and dehydration with acid catalysts to form alkenes or ethers depending on temperature.",
+    "points": [
+      "Esterification: alcohol + carboxylic acid, with conc. H2SO4 catalyst, gives ester plus water (Fischer esterification), reaction is reversible.",
+      "Dehydration of alcohol with conc. H2SO4 at high temperature (about 443 K / 170 C) gives alkene by removing water (follows Saytzeff's rule).",
+      "Dehydration at lower temperature (about 413 K / 140 C) with excess alcohol gives ether instead (intermolecular dehydration).",
+      "Order of dehydration reactivity: tertiary alcohol dehydrates fastest, then secondary, then primary.",
+      "Esterification needs excess acid/alcohol and removal of water to shift equilibrium towards ester (Le Chatelier's principle).",
+      "Esters formed have a pleasant, fruity smell and are used in perfumes and flavouring."
+    ],
+    "formula": "R-OH + R'COOH --(H2SO4)--> R'COOR + H2O",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Alcohol\"] --> B[\"+ H2SO4, 443 K\"]\n  B --> C[\"Alkene (intramolecular dehydration)\"]\n  A --> D[\"+ H2SO4, 413 K, excess alcohol\"]\n  D --> E[\"Ether (intermolecular dehydration)\"]" },
+    "example": "Ethanol + acetic acid with conc. H2SO4 gives ethyl acetate (CH3COOC2H5) plus water, a classic Fischer esterification.",
+    "tip": "Clearly state both temperature conditions for dehydration (alkene vs ether) - mixing these up is the most common mistake students make."
+  }
+]

@@ -1,0 +1,169 @@
+{
+  "solved": [
+    {
+      "topic": "Area under a curve",
+      "marks": 2,
+      "q": "Find the area bounded by the curve y = x^2, the x-axis, and the lines x = 0 and x = 3.",
+      "steps": [
+        "Area under curve above x-axis: Area = integral of y dx from 0 to 3.",
+        "Area = integral of x^2 dx from 0 to 3.",
+        "Integrate: [x^3/3] from 0 to 3.",
+        "Substitute limits: (3^3)/3 - 0 = 27/3 = 9."
+      ],
+      "ans": "Area = 9 sq units."
+    },
+    {
+      "topic": "Area under a curve (y = sqrt(x))",
+      "marks": 2,
+      "q": "Find the area bounded by the curve y = sqrt(x), the x-axis, and the lines x = 0 and x = 4.",
+      "steps": [
+        "Area = integral of y dx from 0 to 4.",
+        "Area = integral of x^(1/2) dx from 0 to 4.",
+        "Integrate using power rule: (x^(1/2+1))/(1/2+1) = (2/3) x^(3/2).",
+        "Apply limits: (2/3)(4)^(3/2) - (2/3)(0)^(3/2) = (2/3)(8) - 0 = 16/3."
+      ],
+      "ans": "Area = 16/3 sq units."
+    },
+    {
+      "topic": "Area bounded by curve and x-axis (parabola meeting x-axis)",
+      "marks": 3,
+      "q": "Find the area bounded by the curve y = 4 - x^2 and the x-axis.",
+      "steps": [
+        "Find x-axis intercepts by setting y = 0: 4 - x^2 = 0, so x = -2, 2.",
+        "These intercepts are the limits of integration: Area = integral of (4-x^2) dx from -2 to 2.",
+        "Integrate: [4x - x^3/3] from -2 to 2.",
+        "At x = 2: 8 - 8/3 = 16/3. At x = -2: -8 - (-8/3) = -8 + 8/3 = -16/3.",
+        "Area = 16/3 - (-16/3) = 32/3."
+      ],
+      "ans": "Area = 32/3 sq units."
+    },
+    {
+      "topic": "Area bounded by a line, x-axis and vertical lines",
+      "marks": 2,
+      "q": "Find the area bounded by the line y = 2x + 1, the x-axis, and the lines x = 1 and x = 3.",
+      "steps": [
+        "Since y = 2x+1 is positive on [1,3], Area = integral of (2x+1) dx from 1 to 3.",
+        "Integrate: [x^2 + x] from 1 to 3.",
+        "At x = 3: 9 + 3 = 12. At x = 1: 1 + 1 = 2.",
+        "Area = 12 - 2 = 10."
+      ],
+      "ans": "Area = 10 sq units."
+    },
+    {
+      "topic": "Area between two curves (parabola and line)",
+      "marks": 4,
+      "q": "Find the area of the region bounded by the curve y^2 = 4x and the line y = x.",
+      "steps": [
+        "Points of intersection: substitute y = x in y^2 = 4x to get x^2 = 4x, so x(x-4) = 0, giving x = 0, 4.",
+        "In the first quadrant, parabola gives y = 2 sqrt(x); test x = 1: parabola y = 2, line y = 1, so parabola is on top.",
+        "Area = integral of (2 sqrt(x) - x) dx from 0 to 4, using upper curve minus lower curve.",
+        "Integrate: 2*(2/3)x^(3/2) - x^2/2 = (4/3)x^(3/2) - x^2/2.",
+        "At x = 4: (4/3)(8) - 8 = 32/3 - 8 = 8/3. At x = 0: 0.",
+        "Area = 8/3 - 0 = 8/3."
+      ],
+      "ans": "Area = 8/3 sq units."
+    },
+    {
+      "topic": "Area between two parabolas",
+      "marks": 4,
+      "q": "Find the area of the region bounded by the curves y = x^2 and y = 2x - x^2.",
+      "steps": [
+        "Points of intersection: set x^2 = 2x - x^2, giving 2x^2 - 2x = 0, so x = 0, 1.",
+        "Test x = 0.5: y = 2x - x^2 gives 0.75, y = x^2 gives 0.25, so 2x-x^2 is the upper curve.",
+        "Area = integral of [(2x - x^2) - x^2] dx from 0 to 1 = integral of (2x - 2x^2) dx.",
+        "Integrate: [x^2 - 2x^3/3] from 0 to 1.",
+        "At x = 1: 1 - 2/3 = 1/3. At x = 0: 0.",
+        "Area = 1/3 sq units."
+      ],
+      "ans": "Area = 1/3 sq units."
+    },
+    {
+      "topic": "Area under a trigonometric curve",
+      "marks": 2,
+      "q": "Find the area bounded by the curve y = sin x, the x-axis, and the lines x = 0 and x = pi.",
+      "steps": [
+        "Area = integral of sin x dx from 0 to pi.",
+        "Integrate: [-cos x] from 0 to pi.",
+        "At x = pi: -cos(pi) = -(-1) = 1. At x = 0: -cos(0) = -1.",
+        "Area = 1 - (-1) = 2."
+      ],
+      "ans": "Area = 2 sq units."
+    },
+    {
+      "topic": "Area of a circle using symmetry",
+      "marks": 3,
+      "q": "Find the area enclosed by the circle x^2 + y^2 = 16, using symmetry.",
+      "steps": [
+        "The circle is symmetric about both axes, so total area = 4 x (area in first quadrant).",
+        "In the first quadrant, y = sqrt(16 - x^2), with x ranging from 0 to 4.",
+        "First-quadrant area = integral of sqrt(16-x^2) dx from 0 to 4 = [x/2 sqrt(16-x^2) + 8 sin^-1(x/4)] from 0 to 4.",
+        "At x=4: 0 + 8*(pi/2) = 4pi. At x=0: 0.",
+        "By symmetry, total area = 4 x 4pi = 16pi."
+      ],
+      "ans": "Area = 16 pi sq units (i.e. pi r^2 with r = 4)."
+    },
+    {
+      "topic": "Area with curve crossing the x-axis (split integral)",
+      "marks": 4,
+      "q": "Find the area bounded by the curve y = x^3, the x-axis, and the lines x = -1 and x = 2.",
+      "steps": [
+        "Since y = x^3 is negative on [-1,0] and positive on [0,2], split the integral at x = 0.",
+        "For [-1,0]: integral of x^3 dx = [x^4/4] from -1 to 0 = 0 - 1/4 = -1/4; take absolute value = 1/4.",
+        "For [0,2]: integral of x^3 dx = [x^4/4] from 0 to 2 = 16/4 - 0 = 4.",
+        "Total area = sum of absolute areas of each part = 1/4 + 4."
+      ],
+      "ans": "Area = 17/4 sq units."
+    },
+    {
+      "topic": "Area using horizontal strips (curve and vertical line)",
+      "marks": 3,
+      "q": "Find the area bounded by the curve y^2 = x and the line x = 4, using horizontal strips.",
+      "steps": [
+        "Write x in terms of y: x = y^2 (left boundary) and x = 4 (right boundary).",
+        "Intersection of y^2 = x and x = 4 gives y^2 = 4, so y = -2, 2; these are the y-limits.",
+        "Area = integral of (x_right - x_left) dy from -2 to 2 = integral of (4 - y^2) dy.",
+        "Integrate: [4y - y^3/3] from -2 to 2.",
+        "At y=2: 8 - 8/3 = 16/3. At y=-2: -8 + 8/3 = -16/3.",
+        "Area = 16/3 - (-16/3) = 32/3."
+      ],
+      "ans": "Area = 32/3 sq units."
+    },
+    {
+      "topic": "Area between a parabola and a line",
+      "marks": 4,
+      "q": "Find the area of the region bounded by the curve y = x^2 + 1 and the line y = x + 3.",
+      "steps": [
+        "Points of intersection: set x^2+1 = x+3, giving x^2 - x - 2 = 0, so (x-2)(x+1) = 0, x = -1, 2.",
+        "Test x = 0: line gives y = 3, parabola gives y = 1, so the line is the upper curve.",
+        "Area = integral of [(x+3) - (x^2+1)] dx from -1 to 2 = integral of (x + 2 - x^2) dx.",
+        "Integrate: [x^2/2 + 2x - x^3/3] from -1 to 2.",
+        "At x=2: 2 + 4 - 8/3 = 6 - 8/3 = 10/3. At x=-1: 1/2 - 2 + 1/3 = -7/6.",
+        "Area = 10/3 - (-7/6) = 20/6 + 7/6 = 27/6 = 9/2."
+      ],
+      "ans": "Area = 9/2 sq units."
+    },
+    {
+      "topic": "Area of an ellipse using symmetry",
+      "marks": 3,
+      "q": "Find the area enclosed by the ellipse x^2/9 + y^2/4 = 1, using symmetry.",
+      "steps": [
+        "The ellipse is symmetric about both axes, so total area = 4 x (area in first quadrant).",
+        "From the equation, y = (2/3) sqrt(9 - x^2) for the upper half, with x from 0 to 3.",
+        "First-quadrant area = integral of (2/3) sqrt(9-x^2) dx from 0 to 3 = (2/3) x [x/2 sqrt(9-x^2) + 9/2 sin^-1(x/3)] from 0 to 3.",
+        "At x=3: (2/3)(0 + (9/2)(pi/2)) = (2/3)(9pi/4) = 3pi/2. At x=0: 0.",
+        "By symmetry, total area = 4 x (3pi/2) = 6pi, which matches the standard formula Area = pi x a x b = pi x 3 x 2."
+      ],
+      "ans": "Area = 6 pi sq units."
+    }
+  ],
+  "practice": [
+    { "topic": "Area under a curve", "q": "Find the area bounded by the curve y = x^2, the x-axis, and the lines x = 0 and x = 2.", "hint": "Area = integral of x^2 dx from 0 to 2, use [x^3/3].", "ans": "8/3 sq units." },
+    { "topic": "Area under a curve", "q": "Find the area bounded by the curve y = sqrt(x), the x-axis, and the lines x = 0 and x = 9.", "hint": "Area = integral of x^(1/2) dx from 0 to 9, use (2/3)x^(3/2).", "ans": "18 sq units." },
+    { "topic": "Area bounded by curve and x-axis", "q": "Find the area bounded by the curve y = 4x - x^2 and the x-axis.", "hint": "Find x-intercepts (x=0,4), integrate (4x-x^2) between them.", "ans": "32/3 sq units." },
+    { "topic": "Area between two curves", "q": "Find the area bounded by the curves y = x and y = x^3 in the first quadrant.", "hint": "Intersection at x=0,1; line is above cube on (0,1); integrate (x - x^3) dx.", "ans": "1/4 sq units." },
+    { "topic": "Area between curve and line", "q": "Find the area bounded by the curve y^2 = 9x and the line y = 3x, in the first quadrant.", "hint": "Intersection at x=0,1; parabola (y=3sqrt(x)) lies above the line; integrate (3sqrt(x)-3x) dx.", "ans": "1/2 sq unit." },
+    { "topic": "Area under a trigonometric curve", "q": "Find the area bounded by the curve y = cos x, the x-axis, and the lines x = 0 and x = pi/2.", "hint": "Area = integral of cos x dx from 0 to pi/2, use [sin x].", "ans": "1 sq unit." },
+    { "topic": "Area using horizontal strips", "q": "Find the area bounded by the curve y^2 = 16x and the line x = 1, using horizontal strips.", "hint": "Write x = y^2/16, limits y=-4 to 4 from y^2=16; integrate (1 - y^2/16) dy.", "ans": "16/3 sq units." },
+    { "topic": "Area between a parabola and a line", "q": "Find the area bounded by the parabola y = x^2 and the line y = 4.", "hint": "Intersection at x=-2,2; integrate (4 - x^2) dx between the limits.", "ans": "32/3 sq units." }
+  ]
+}

@@ -1,0 +1,108 @@
+[
+  {
+    "t": "Crystalline vs amorphous solids",
+    "def": "Crystalline solids have particles arranged in a regular repeating 3D pattern, while amorphous solids have particles arranged randomly with no long-range order.",
+    "points": [
+      "Crystalline solids have a definite geometric shape; amorphous solids do not.",
+      "Crystalline solids have a sharp, fixed melting point; amorphous solids melt over a range of temperature.",
+      "Crystalline solids are anisotropic — properties like refractive index differ with direction. Amorphous solids are isotropic.",
+      "Crystalline solids have long-range order; amorphous solids have only short-range order.",
+      "When crystalline solids are cut with a sharp tool, they break into pieces with flat faces (cleave). Amorphous solids give an irregular cut.",
+      "Examples: NaCl, diamond, quartz are crystalline. Glass, rubber, plastic are amorphous."
+    ],
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Solids\"] --> B[\"Crystalline\"]\n  A --> C[\"Amorphous\"]\n  B --> D[\"Regular long range order\"]\n  C --> E[\"Random short range order\"]"
+    },
+    "example": "Quartz (crystalline SiO2) has a sharp melting point and flat faces, while quartz glass (amorphous SiO2) softens gradually over a range of temperature.",
+    "tip": "Write the comparison as a two-column table in the exam — isotropic/anisotropic and sharp/range melting point are the most asked points."
+  },
+  {
+    "t": "Unit cell types (SCC, BCC, FCC)",
+    "def": "A unit cell is the smallest repeating unit of a crystal lattice; SCC, BCC and FCC describe how particles are packed at the corners, body centre and face centres of a cube.",
+    "points": [
+      "Simple cubic cell (SCC): particles only at 8 corners. Z (atoms per cell) = 8 x 1/8 = 1. Coordination number = 6.",
+      "Body-centred cubic (BCC): corners plus one particle at body centre. Z = 8 x 1/8 + 1 = 2. Coordination number = 8.",
+      "Face-centred cubic (FCC): corners plus one particle at the centre of each of the 6 faces. Z = 8 x 1/8 + 6 x 1/2 = 4. Coordination number = 12.",
+      "Each corner atom is shared by 8 unit cells, so it contributes 1/8 to one cell.",
+      "Each face atom is shared by 2 unit cells, so it contributes 1/2 to one cell.",
+      "A body-centre atom belongs entirely (1) to that one cell."
+    ],
+    "formula": "Z(SCC) = 1, Z(BCC) = 2, Z(FCC) = 4",
+    "diagram": {
+      "draw": "Draw three cubes side by side. First cube: dots only at the 8 corners, label 'SCC, Z=1'. Second cube: dots at corners plus one dot in the middle, label 'BCC, Z=2'. Third cube: dots at corners plus one dot on the centre of each of the 6 faces, label 'FCC, Z=4'."
+    },
+    "example": "Polonium crystallizes in SCC lattice, so each unit cell contains exactly 1 atom of Po.",
+    "tip": "Draw all three cells quickly with correct dot positions and write Z and coordination number under each — this is a guaranteed 2-mark diagram question."
+  },
+  {
+    "t": "Packing efficiency",
+    "def": "Packing efficiency is the percentage of the total volume of a unit cell that is actually occupied by the spherical particles.",
+    "points": [
+      "Packing efficiency = (volume occupied by atoms / total volume of unit cell) x 100.",
+      "For SCC: atoms touch along the edge, a = 2r, packing efficiency = 52.4%.",
+      "For BCC: atoms touch along the body diagonal, a = 4r/sqrt(3), packing efficiency = 68%.",
+      "For FCC: atoms touch along the face diagonal, a = 2*sqrt(2)*r, packing efficiency = 74%.",
+      "FCC and HCP (close packed structures) have the highest packing efficiency and leave the least empty space (void).",
+      "Remaining % of the cell volume is empty space (void volume)."
+    ],
+    "formula": "Packing efficiency = (Z x (4/3)pi r^3 / a^3) x 100",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"SCC 52.4%\"] --> B[\"BCC 68%\"]\n  B --> C[\"FCC 74%\"]\n  C --> D[\"Closest packing least empty space\"]"
+    },
+    "example": "For FCC: a = 2*sqrt(2)*r, volume occupied by 4 atoms = 4*(4/3)pi r^3, cube volume = a^3 = 16*sqrt(2)*r^3. Packing efficiency = (16.76/22.6)x100 ≈ 74%.",
+    "tip": "Memorize the final 3 numbers 52.4%, 68%, 74% along with which structure has which — direct 1-mark questions are common."
+  },
+  {
+    "t": "Density of unit cell",
+    "def": "The density of a crystal can be calculated from the number of atoms per unit cell, molar mass, edge length and Avogadro's number.",
+    "points": [
+      "Density d = (Z x M) / (a^3 x N_A), where Z = atoms per unit cell, M = molar mass, a = edge length, N_A = Avogadro number.",
+      "Edge length a must be converted to cm (1 pm = 10^-10 cm) before using in the formula since density is usually in g/cm^3.",
+      "a^3 gives the volume of one unit cell in cm^3.",
+      "This formula connects the microscopic crystal structure to the bulk density we can measure in the lab.",
+      "Rearranging the formula lets us find Z, M or a if the other three quantities are known."
+    ],
+    "formula": "d = Z x M / (a³ x N_A)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Z atoms per cell\"] --> D[\"Density formula\"]\n  B[\"Molar mass M\"] --> D\n  C[\"Edge length a\"] --> D\n  D --> E[\"d = ZM / a cubed NA\"]"
+    },
+    "example": "Silver (FCC, Z=4), a = 409 pm = 4.09x10^-8 cm. d = 10.5 g/cm^3. M = d*a^3*N_A/Z = (10.5 x 6.84x10^-23 x 6.022x10^23)/4 ≈ 108 g/mol (matches silver).",
+    "tip": "Always convert pm to cm correctly (1 pm = 10^-10 cm) — unit mistakes are the most common error here."
+  },
+  {
+    "t": "Point defects",
+    "def": "Point defects are irregularities or imperfections at specific points in the otherwise regular arrangement of particles in a crystal.",
+    "points": [
+      "Vacancy defect: a particle is missing from its lattice site; decreases density.",
+      "Interstitial defect: extra particles occupy the empty spaces (interstitial sites) between lattice points; increases density.",
+      "Frenkel defect: a smaller ion leaves its normal site and occupies an interstitial site, creating a vacancy + interstitial pair; density unchanged (seen in AgCl, AgBr, ZnS).",
+      "Schottky defect: equal numbers of cations and vacancies of anions are missing from the lattice to maintain electrical neutrality; decreases density (seen in NaCl, KCl).",
+      "Non-stoichiometric defects: metal excess or metal deficiency defects where the ratio of cations to anions differs from the ideal formula, often giving colour or semiconducting behaviour.",
+      "Point defects affect electrical conductivity, density and colour of the crystal."
+    ],
+    "formula": "Schottky: equal cation + anion vacancies | Frenkel: ion displaced to interstitial site",
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Point Defects\"] --> B[\"Vacancy\"]\n  A --> C[\"Interstitial\"]\n  A --> D[\"Frenkel pair vacancy and interstitial\"]\n  A --> E[\"Schottky cation and anion vacancy\"]"
+    },
+    "example": "AgBr shows Frenkel defect because Ag+ is small and can move into interstitial space, while NaCl shows Schottky defect because Na+ and Cl- are similar in size and cannot show Frenkel defect easily.",
+    "tip": "Pair each defect name with its example compound (AgBr/AgCl for Frenkel, NaCl/KCl for Schottky) — examiners often ask 'give an example' directly."
+  },
+  {
+    "t": "Electrical and magnetic properties",
+    "def": "Solids are classified as conductors, semiconductors or insulators based on band theory, and as diamagnetic, paramagnetic or ferromagnetic based on their behaviour in a magnetic field.",
+    "points": [
+      "Band theory: valence band (filled with electrons) and conduction band (empty, higher energy) are separated by an energy gap.",
+      "Conductors: valence and conduction bands overlap, so electrons move freely (e.g. metals like Cu, Ag).",
+      "Insulators: large energy gap between bands, so electrons cannot jump to the conduction band (e.g. diamond).",
+      "Semiconductors: small energy gap, so a few electrons can jump to the conduction band, especially on heating or doping (e.g. Si, Ge).",
+      "Diamagnetic substances are weakly repelled by a magnetic field (all electrons paired); paramagnetic substances are weakly attracted (unpaired electrons present).",
+      "Ferromagnetic substances are strongly attracted and can be permanently magnetized because magnetic domains align in the same direction (e.g. Fe, Co, Ni)."
+    ],
+    "formula": "Conductor: no energy gap | Semiconductor: small gap | Insulator: large gap",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Conductor bands overlap\"] --> D[\"Free electron flow\"]\n  B[\"Semiconductor small gap\"] --> E[\"Few electrons jump\"]\n  C[\"Insulator large gap\"] --> F[\"No electron flow\"]"
+    },
+    "example": "Silicon is a semiconductor; doping it with a group 15 element (like P) adds extra electrons, creating an n-type semiconductor with increased conductivity.",
+    "tip": "Draw the three band diagrams (overlap, small gap, large gap) side by side — this diagram alone can fetch 2 marks."
+  }
+]

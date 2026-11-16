@@ -1,0 +1,112 @@
+[
+  {
+    "q": "The maximum kinetic energy of photoelectrons depends on",
+    "o": [
+      "the intensity of incident light only",
+      "the frequency of incident light only",
+      "both intensity and frequency equally",
+      "the distance between source and metal"
+    ],
+    "a": 1,
+    "why": "KEmax depends only on frequency; intensity affects only the number of photoelectrons (photocurrent)."
+  },
+  {
+    "q": "Below the threshold frequency, photoelectric emission",
+    "o": [
+      "occurs weakly",
+      "occurs instantly with low energy",
+      "does not occur, however intense the light",
+      "occurs only at night"
+    ],
+    "a": 2,
+    "why": "No photoelectrons are emitted below threshold frequency regardless of light intensity."
+  },
+  {
+    "q": "Einstein's photoelectric equation is written as",
+    "o": [
+      "hv = phi0 - KEmax",
+      "KEmax = hv x phi0",
+      "phi0 = hv + KEmax",
+      "hv = phi0 + KEmax"
+    ],
+    "a": 3,
+    "why": "Photon energy hv is split between work function phi0 and the electron's maximum kinetic energy."
+  },
+  {
+    "q": "For a metal with work function 2 eV, light supplying photon energy 3.5 eV gives photoelectrons with maximum KE of",
+    "o": [
+      "1.5 eV",
+      "0.57 eV",
+      "5.5 eV",
+      "2 eV"
+    ],
+    "a": 0,
+    "why": "KEmax = hv - phi0 = 3.5 - 2 = 1.5 eV."
+  },
+  {
+    "q": "The threshold frequency v0 and work function phi0 of a metal are related by",
+    "o": [
+      "phi0 = h/v0",
+      "phi0 = h v0",
+      "v0 = h phi0",
+      "phi0 = v0/h"
+    ],
+    "a": 1,
+    "why": "phi0 = h v0 is the minimum photon energy needed to just free an electron."
+  },
+  {
+    "q": "The stopping potential V0 for photoelectrons is related to their maximum kinetic energy by",
+    "o": [
+      "e V0 = 2 KEmax",
+      "V0 = KEmax/e^2",
+      "e V0 = KEmax",
+      "V0 = e KEmax"
+    ],
+    "a": 2,
+    "why": "The work done by the retarding field equals the maximum KE: e V0 = KEmax."
+  },
+  {
+    "q": "A graph of stopping potential V0 versus frequency v for a given metal is a straight line whose slope equals",
+    "o": [
+      "e/h",
+      "1/(he)",
+      "h x e",
+      "h/e"
+    ],
+    "a": 3,
+    "why": "From e V0 = hv - phi0, V0 = (h/e)v - phi0/e, giving slope h/e."
+  },
+  {
+    "q": "The de Broglie wavelength of a particle of momentum p is given by",
+    "o": [
+      "lambda = h/p",
+      "lambda = p/h",
+      "lambda = h p",
+      "lambda = p^2/h"
+    ],
+    "a": 0,
+    "why": "De Broglie wavelength lambda = h/p, the matter-wave relation."
+  },
+  {
+    "q": "An electron accelerated through a potential V acquires a de Broglie wavelength given by",
+    "o": [
+      "h/(mv)",
+      "h/sqrt(2meV)",
+      "sqrt(2meV)/h",
+      "h x sqrt(2meV)"
+    ],
+    "a": 1,
+    "why": "lambda = h/sqrt(2meV) for an electron accelerated through potential difference V."
+  },
+  {
+    "q": "The Davisson-Germer experiment experimentally confirmed",
+    "o": [
+      "the photoelectric effect",
+      "the particle nature of electrons only",
+      "the wave nature of electrons (de Broglie hypothesis)",
+      "Bohr's atomic model"
+    ],
+    "a": 2,
+    "why": "Electron diffraction from a nickel crystal matched the de Broglie wavelength, confirming matter waves."
+  }
+]

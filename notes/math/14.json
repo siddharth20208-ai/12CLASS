@@ -1,0 +1,110 @@
+[
+  {
+    "t": "Bernoulli Trials and Conditions",
+    "def": "A Bernoulli trial is a random experiment with exactly two possible outcomes, usually called 'success' and 'failure'. A sequence of such trials is called Bernoulli trials when certain conditions are met.",
+    "points": [
+      "Each trial has only two outcomes: success (probability p) or failure (probability q), with p + q = 1.",
+      "The number of trials, n, is fixed in advance.",
+      "The trials are independent: the outcome of one trial does not affect another.",
+      "The probability of success p remains the same in every trial.",
+      "Examples: tossing a coin repeatedly, checking defective items from a production line.",
+      "These conditions must all hold for the Binomial Distribution to apply."
+    ],
+    "formula": "p + q = 1, where p = probability of success, q = probability of failure",
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Fixed number of trials n\"] --> E[\"Bernoulli Trials\"]\n  B[\"Only two outcomes\"] --> E\n  C[\"Independent trials\"] --> E\n  D[\"Constant probability p\"] --> E"
+    },
+    "example": "Tossing a fair coin 5 times: each toss has 2 outcomes (head/tail), p = 0.5 stays same, trials are independent, n = 5 is fixed. This satisfies Bernoulli trial conditions.",
+    "tip": "Always check and state all four conditions explicitly in the answer before applying the binomial formula — this is a direct mark-scoring step."
+  },
+  {
+    "t": "Binomial Probability Mass Function: nCr p^r q^(n-r)",
+    "def": "The binomial p.m.f. gives the probability of getting exactly r successes in n independent Bernoulli trials, where each trial has success probability p.",
+    "points": [
+      "X follows a binomial distribution, written X ~ B(n, p).",
+      "The probability of exactly r successes is P(X = r) = nCr p^r q^(n-r).",
+      "nCr = n! / (r! (n-r)!) counts the number of ways to arrange r successes among n trials.",
+      "p^r is the probability of r successes, q^(n-r) is the probability of the remaining (n-r) failures.",
+      "r can take whole number values from 0 to n.",
+      "Sum of P(X=r) for r = 0 to n always equals 1."
+    ],
+    "formula": "P(X = r) = nCr p^r q^(n-r), r = 0, 1, 2, ..., n",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Identify n, p, q\"] --> B[\"Choose r successes needed\"]\n  B --> C[\"Compute nCr\"]\n  C --> D[\"Multiply by p^r and q^(n-r)\"]\n  D --> E[\"Get P(X = r)\"]"
+    },
+    "example": "n = 4, p = 0.5 (coin tosses). P(exactly 2 heads) = 4C2 (0.5)^2 (0.5)^2 = 6 x 0.25 x 0.25 = 0.375.",
+    "tip": "Clearly identify n, p, q, and r first in every problem before substituting into the formula — this avoids mixing up values."
+  },
+  {
+    "t": "Mean (np) and Variance (npq) of Binomial Distribution",
+    "def": "For a binomial distribution X ~ B(n, p), the mean (expected number of successes) is np, and the variance (spread of the distribution) is npq.",
+    "points": [
+      "Mean of binomial distribution: E(X) = np.",
+      "Variance of binomial distribution: Var(X) = npq, where q = 1 - p.",
+      "Standard deviation: SD(X) = sqrt(npq).",
+      "These formulas are derived using the sum formulas for E(X) and E(X^2) but are usually used directly.",
+      "If mean and variance are given, they can be used to find n and p (see later topic).",
+      "Variance is always less than or equal to the mean, since npq <= np (because q <= 1)."
+    ],
+    "formula": "Mean = np     Variance = npq     SD = sqrt(npq)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Given n and p\"] --> B[\"Mean = n x p\"]\n  A --> C[\"q = 1 - p\"]\n  C --> D[\"Variance = n x p x q\"]\n  D --> E[\"SD = sqrt of variance\"]"
+    },
+    "example": "n = 10, p = 0.4, so q = 0.6. Mean = 10 x 0.4 = 4. Variance = 10 x 0.4 x 0.6 = 2.4.",
+    "tip": "Memorise mean = np and variance = npq directly — deriving them from scratch in an exam wastes valuable time."
+  },
+  {
+    "t": "Computing Probabilities of a Given Number of Successes",
+    "def": "This means directly applying the binomial p.m.f. formula to calculate the probability of exactly r successes (or a set of specific values of r) out of n trials.",
+    "points": [
+      "Identify n (number of trials), p (probability of success), and q = 1 - p from the question.",
+      "Identify the required value(s) of r (number of successes asked).",
+      "Substitute n, p, q, r into P(X = r) = nCr p^r q^(n-r).",
+      "Calculate nCr using factorials, then compute p^r and q^(n-r) separately.",
+      "Multiply all three parts together to get the final probability.",
+      "If asked for more than one value of r, calculate each separately and add if needed (e.g., for 'exactly 2 or exactly 3')."
+    ],
+    "formula": "P(X = r) = nCr p^r q^(n-r)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Identify n, p, q, r\"] --> B[\"Compute nCr\"]\n  B --> C[\"Compute p^r\"]\n  C --> D[\"Compute q^(n-r)\"]\n  D --> E[\"Multiply to get probability\"]"
+    },
+    "example": "A die is rolled 3 times; success = getting a 6, so p = 1/6, q = 5/6, n = 3. P(exactly 1 six) = 3C1 (1/6)^1 (5/6)^2 = 3 x (1/6) x (25/36) = 75/216.",
+    "tip": "Keep fractions unsimplified until the final answer to avoid rounding errors in intermediate steps."
+  },
+  {
+    "t": "At Least / At Most Problems",
+    "def": "At least r successes means r or more successes (X >= r); at most r successes means r or fewer successes (X <= r). These are solved by adding relevant individual binomial probabilities.",
+    "points": [
+      "'At least r' means P(X >= r) = P(X=r) + P(X=r+1) + ... + P(X=n).",
+      "It is often easier to use the complement: P(X >= r) = 1 - P(X < r) = 1 - [P(X=0)+...+P(X=r-1)].",
+      "'At most r' means P(X <= r) = P(X=0) + P(X=1) + ... + P(X=r), added directly.",
+      "'At least 1 success' is most simply found as P(X >= 1) = 1 - P(X = 0).",
+      "Always identify clearly which values of r need to be included before adding.",
+      "Double-check by ensuring all probabilities used are correctly computed with the binomial formula first."
+    ],
+    "formula": "P(X >= r) = 1 - P(X < r)     P(X <= r) = sum from 0 to r of P(X=k)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Question asks at least or at most\"] --> B[\"List required r values\"]\n  B --> C[\"Use complement if at least r is large\"]\n  C --> D[\"Add individual P(X=k) values\"]\n  D --> E[\"Get final probability\"]"
+    },
+    "example": "n=4, p=0.5. P(at least 1 success) = 1 - P(X=0) = 1 - 4C0(0.5)^0(0.5)^4 = 1 - 0.0625 = 0.9375.",
+    "tip": "For 'at least 1', always use the shortcut 1 - P(X=0) instead of adding many terms — it saves time and reduces errors."
+  },
+  {
+    "t": "Finding n and p from Mean and Variance",
+    "def": "When the mean and variance of a binomial distribution are both given, we can find the unknown values of n and p by using the standard formulas mean = np and variance = npq together.",
+    "points": [
+      "Write down the two given equations: np = mean, and npq = variance.",
+      "Divide variance by mean: npq / np = q = variance / mean.",
+      "This directly gives q, the probability of failure.",
+      "Find p using p = 1 - q.",
+      "Substitute p back into np = mean to solve for n.",
+      "Check that n comes out as a positive whole number, since n must be an integer number of trials."
+    ],
+    "formula": "q = Variance / Mean     p = 1 - q     n = Mean / p",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Given mean np and variance npq\"] --> B[\"Divide variance by mean to get q\"]\n  B --> C[\"Find p = 1 - q\"]\n  C --> D[\"Substitute into np = mean\"]\n  D --> E[\"Solve for n\"]"
+    },
+    "example": "Mean = 4, Variance = 3. q = 3/4 = 0.75, so p = 0.25. n = mean/p = 4/0.25 = 16.",
+    "tip": "Always verify your final n is a whole number and p is between 0 and 1 — if not, recheck your division in the first step."
+  }
+]

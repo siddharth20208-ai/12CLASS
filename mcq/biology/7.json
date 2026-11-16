@@ -1,0 +1,112 @@
+[
+  {
+    "q": "During inspiration, the diaphragm:",
+    "o": [
+      "Contracts and flattens",
+      "Relaxes and becomes dome-shaped",
+      "Stops moving entirely",
+      "Contracts and becomes more dome-shaped"
+    ],
+    "a": 0,
+    "why": "Diaphragm contraction and flattening increases thoracic volume, causing inspiration."
+  },
+  {
+    "q": "Most oxygen is transported in blood bound to:",
+    "o": [
+      "Plasma proteins",
+      "Haemoglobin as oxyhaemoglobin",
+      "Bicarbonate ions",
+      "Carbonic anhydrase"
+    ],
+    "a": 1,
+    "why": "The majority of O2 is carried bound to haemoglobin as oxyhaemoglobin."
+  },
+  {
+    "q": "About what percentage of CO2 produced by tissues is transported in blood as bicarbonate ions?",
+    "o": [
+      "20%",
+      "40%",
+      "70%",
+      "55%"
+    ],
+    "a": 2,
+    "why": "Roughly 70% of CO2 is carried as bicarbonate ions (HCO3-) in plasma."
+  },
+  {
+    "q": "The valve located between the right atrium and right ventricle of the human heart is the:",
+    "o": [
+      "Bicuspid (mitral) valve",
+      "Aortic semilunar valve",
+      "Pulmonary semilunar valve",
+      "Tricuspid valve"
+    ],
+    "a": 3,
+    "why": "The tricuspid valve guards the opening between the right atrium and right ventricle."
+  },
+  {
+    "q": "Which heart chamber has the thickest muscular wall, since it pumps blood to the entire body?",
+    "o": [
+      "Left ventricle",
+      "Left atrium",
+      "Right ventricle",
+      "Right atrium"
+    ],
+    "a": 0,
+    "why": "The left ventricle has the thickest wall to generate high pressure for systemic circulation."
+  },
+  {
+    "q": "If stroke volume is 70 mL and heart rate is 72 beats/min, the cardiac output is approximately:",
+    "o": [
+      "2.5 L/min",
+      "5 L/min",
+      "7 L/min",
+      "10 L/min"
+    ],
+    "a": 1,
+    "why": "Cardiac output = stroke volume x heart rate = 70 x 72 = 5040 mL/min ~= 5 L/min."
+  },
+  {
+    "q": "A person with blood group AB has no antibodies against A or B antigens, making this group the:",
+    "o": [
+      "Universal donor",
+      "Rh-negative donor",
+      "Universal recipient",
+      "Least common group biologically"
+    ],
+    "a": 2,
+    "why": "Group AB lacks anti-A and anti-B antibodies, so it can receive from any ABO group."
+  },
+  {
+    "q": "In an ECG, the QRS complex represents:",
+    "o": [
+      "Atrial depolarization",
+      "Atrial repolarization",
+      "Ventricular repolarization",
+      "Ventricular depolarization (contraction)"
+    ],
+    "a": 3,
+    "why": "The sharp QRS complex corresponds to depolarization/contraction of the ventricles."
+  },
+  {
+    "q": "One complete cardiac cycle normally takes about:",
+    "o": [
+      "0.8 second",
+      "0.4 second",
+      "0.1 second",
+      "1.5 seconds"
+    ],
+    "a": 0,
+    "why": "A full cardiac cycle (atrial systole + ventricular systole + joint diastole) lasts about 0.8 s."
+  },
+  {
+    "q": "The heart sounds 'lub' and 'dup' are produced respectively by the closing of:",
+    "o": [
+      "Semilunar valves, then AV valves",
+      "AV valves, then semilunar valves",
+      "Only the AV valves",
+      "Only the semilunar valves"
+    ],
+    "a": 1,
+    "why": "'Lub' is from AV valve closure, 'dup' is from semilunar valve closure."
+  }
+]

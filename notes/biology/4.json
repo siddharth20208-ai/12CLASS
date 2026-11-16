@@ -1,0 +1,93 @@
+[
+  {
+    "t": "Origin of life theories (Oparin-Haldane)",
+    "def": "The Oparin-Haldane theory of chemical evolution proposes that life originated from simple inorganic molecules which gradually combined to form complex organic molecules under early earth conditions.",
+    "points": [
+      "Early earth's atmosphere lacked free oxygen and was rich in gases like methane, ammonia, hydrogen and water vapor (a reducing atmosphere).",
+      "Energy sources such as UV rays, lightning and volcanic heat helped simple molecules combine into organic monomers like amino acids and nucleotides.",
+      "These monomers further combined to form polymers such as proteins and nucleic acids.",
+      "Polymers aggregated into complex molecular assemblies capable of self-replication and metabolism.",
+      "These assemblies developed membranes to form proto-cells, eventually giving rise to the first true living cells.",
+      "This theory is called chemical evolution because it says life arose by gradual chemical changes, not instant creation."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Simple gases (CH4 NH3 H2 H2O)\"] --> B[\"Organic monomers (amino acids)\"]\n  B --> C[\"Polymers (proteins nucleic acids)\"]\n  C --> D[\"Proto-cells with membrane\"]\n  D --> E[\"First living cells\"]" },
+    "example": "Simple gases exposed to lightning-like energy under early earth's reducing atmosphere are believed to have formed the first amino acids, as later confirmed by the Miller-Urey experiment.",
+    "tip": "Clearly state 'reducing atmosphere, no free oxygen' as the starting condition — examiners check for this specific term."
+  },
+  {
+    "t": "Miller-Urey experiment",
+    "def": "The Miller-Urey experiment was a laboratory simulation of primitive earth's atmosphere that successfully produced amino acids, giving experimental support to chemical evolution.",
+    "points": [
+      "Stanley Miller and Harold Urey set up a closed glass apparatus with a mixture of gases: CH4, NH3, H2, and water vapor.",
+      "Electric sparks were passed through the gas mixture to simulate lightning on early earth.",
+      "The mixture was then cooled and condensed, collecting the resulting liquid in a trap.",
+      "After about a week of running the experiment, analysis showed formation of amino acids and other simple organic compounds.",
+      "This showed that organic building blocks of life could form spontaneously from inorganic gases under early earth-like conditions.",
+      "It directly supported the Oparin-Haldane theory of chemical evolution of life."
+    ],
+    "diagram": { "draw": "Draw a closed glass apparatus: a flask of water at the bottom (heated to produce vapor), connected by tubes to a larger chamber containing the gas mixture (CH4, NH3, H2) with electrodes producing a spark discharge. Connect this to a condenser that cools the gas back to liquid, which flows into a collection trap. Label each part: water flask, gas chamber, electrodes (spark), condenser, trap." },
+    "example": "After running the Miller-Urey apparatus for about a week, scientists detected glycine and alanine (simple amino acids) in the collected liquid.",
+    "tip": "Label all 4 parts of the apparatus (gas chamber, electrodes, condenser, trap) in the diagram for full marks."
+  },
+  {
+    "t": "Natural selection and Darwinism",
+    "def": "Darwin's theory of natural selection states that organisms with favourable variations survive and reproduce more successfully than others, gradually leading to evolution of species over generations.",
+    "points": [
+      "Individuals in a population show variation in traits due to differences in genes.",
+      "Resources (food, space) are limited, so there is a struggle for existence among individuals.",
+      "Individuals with traits better suited to the environment have higher chances of survival ('survival of the fittest').",
+      "These better-suited individuals reproduce more, passing favourable traits to offspring.",
+      "Over many generations, favourable traits accumulate, changing the population gradually — this is evolution by natural selection.",
+      "Natural selection acts on existing variation; it does not create new variation itself (that comes from mutation and recombination)."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Variation exists in population\"] --> B[\"Struggle for existence\"]\n  B --> C[\"Fitter individuals survive and reproduce more\"]\n  C --> D[\"Favourable traits passed to offspring\"]\n  D --> E[\"Population changes over generations\"]" },
+    "example": "The peppered moth in England shifted from mostly light-coloured to mostly dark-coloured during industrialization, as darker moths were better camouflaged against soot-darkened trees and survived predators better.",
+    "tip": "Use the phrase 'survival of the fittest' along with the step-by-step logic — examiners look for both the keyword and the reasoning."
+  },
+  {
+    "t": "Hardy-Weinberg principle",
+    "def": "The Hardy-Weinberg principle states that allele and genotype frequencies in a population remain constant across generations if no evolutionary forces (mutation, selection, migration, drift) act on it, meaning the population is in genetic equilibrium.",
+    "points": [
+      "For a gene with two alleles, let p = frequency of the dominant allele and q = frequency of the recessive allele.",
+      "Since there are only two alleles, p + q = 1.",
+      "Genotype frequencies are given by p^2 (homozygous dominant) + 2pq (heterozygous) + q^2 (homozygous recessive) = 1.",
+      "This equilibrium holds only under ideal conditions: large population, random mating, no mutation, no migration, no selection.",
+      "Any deviation from the expected p^2 + 2pq + q^2 ratio in a real population indicates that evolution is occurring.",
+      "This principle gives biologists a mathematical baseline to detect and measure evolutionary change."
+    ],
+    "formula": "p + q = 1;  p^2 + 2pq + q^2 = 1",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Allele frequencies p and q\"] --> B[\"p squared: homozygous dominant\"]\n  A --> C[\"2pq: heterozygous\"]\n  A --> D[\"q squared: homozygous recessive\"]\n  B --> E[\"Sum = 1 (equilibrium)\"]\n  C --> E\n  D --> E" },
+    "example": "If the recessive allele frequency q = 0.2, then p = 0.8. Genotype frequencies: p^2 = 0.64 (dominant homozygous), 2pq = 0.32 (heterozygous), q^2 = 0.04 (recessive homozygous).",
+    "tip": "Practice solving for p or q when given one genotype frequency (e.g. given q^2, find p and q) — this numerical type is asked almost every year."
+  },
+  {
+    "t": "Evidences of evolution (fossils, homology, analogy)",
+    "def": "Evidences of evolution are facts from fossils, comparative anatomy and other fields that support the idea that species have evolved from common or convergent ancestors over time.",
+    "points": [
+      "Fossils are preserved remains or impressions of ancient organisms found in rock layers, showing a sequence from simple to complex life forms over geological time.",
+      "Homologous organs have the same basic structure and origin but may perform different functions, showing descent from a common ancestor (e.g. forelimbs of frog, bird, human).",
+      "Analogous organs look similar and perform the same function but have different structural origin, showing convergent evolution in unrelated species (e.g. wings of birds and insects).",
+      "Vestigial organs are reduced, non-functional remnants of structures that were functional in ancestors (e.g. human appendix), supporting common descent.",
+      "Connecting links (like Archaeopteryx, showing both reptilian and bird features) provide evidence of transition between groups.",
+      "Together, these lines of evidence from different fields all point consistently to evolution having occurred."
+    ],
+    "diagram": { "mermaid": "flowchart TD\n  A[\"Evidence of evolution\"] --> B[\"Fossils: sequence in rock layers\"]\n  A --> C[\"Homology: same structure diff function\"]\n  A --> D[\"Analogy: diff structure same function\"]\n  A --> E[\"Vestigial organs\"]" },
+    "example": "The forelimbs of a human (for grasping), a bat (for flying) and a whale (for swimming) have the same bone arrangement, proving they are homologous and share a common ancestor.",
+    "tip": "Give one clear example each for homology and analogy — mixing up the two definitions is the most common mistake students make."
+  },
+  {
+    "t": "Types of natural selection",
+    "def": "Natural selection can act on a population in different patterns depending on which phenotypes are favoured, classified as stabilizing, directional and disruptive selection.",
+    "points": [
+      "Stabilizing selection favours the average (intermediate) phenotype and removes both extremes, reducing variation (e.g. human birth weight).",
+      "Directional selection favours one extreme phenotype over the other, shifting the population average in one direction over time (e.g. antibiotic resistance in bacteria).",
+      "Disruptive selection favours both extreme phenotypes and selects against the intermediate type, potentially splitting the population into two forms.",
+      "Stabilizing selection is the most common type and keeps a population well-adapted to a stable environment.",
+      "Directional selection often occurs when the environment changes in a consistent direction (e.g. increasing pollution, drug use).",
+      "Disruptive selection can increase variation within a population and, over long time, may lead to formation of new species."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Population with variation\"] --> B[\"Stabilizing: favours average\"]\n  A --> C[\"Directional: favours one extreme\"]\n  A --> D[\"Disruptive: favours both extremes\"]" },
+    "example": "Human birth weight shows stabilizing selection: babies of average weight survive best, while both very low and very high birth weights have higher risk, keeping the average weight stable in the population.",
+    "tip": "Draw a simple bell-curve sketch for each type showing which part of the curve is favoured — this visual strongly supports the written answer."
+  }
+]

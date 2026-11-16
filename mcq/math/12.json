@@ -1,0 +1,112 @@
+[
+  {
+    "q": "The order of a differential equation is defined as",
+    "o": [
+      "the highest power of the dependent variable",
+      "the highest power of the highest derivative",
+      "the number of terms in the equation",
+      "the order of the highest derivative present"
+    ],
+    "a": 3,
+    "why": "order is the order of the highest derivative appearing"
+  },
+  {
+    "q": "The degree of a differential equation is defined when the equation is",
+    "o": [
+      "expressed as a polynomial in derivatives",
+      "linear only",
+      "expressed in exponential form",
+      "written with fractional derivatives"
+    ],
+    "a": 0,
+    "why": "degree is the power of the highest derivative when written as a polynomial in derivatives"
+  },
+  {
+    "q": "The variable separable method is applicable when a differential equation can be written as",
+    "o": [
+      "f(x,y) dx + g(x,y) dy = 0 with mixed terms only",
+      "f(x) dx = g(y) dy",
+      "y' = constant always",
+      "d^2y/dx^2 = f(x) only"
+    ],
+    "a": 1,
+    "why": "variable separable form separates x and y terms on each side"
+  },
+  {
+    "q": "A differential equation dy/dx = f(x,y) is homogeneous if f(x,y) can be written as a function of",
+    "o": [
+      "x only",
+      "y only",
+      "y/x (or x/y)",
+      "x+y"
+    ],
+    "a": 2,
+    "why": "homogeneous equations depend only on the ratio y/x"
+  },
+  {
+    "q": "For a homogeneous differential equation, the standard substitution used is",
+    "o": [
+      "x = sin y",
+      "x = y^2",
+      "y = e^x",
+      "y = vx"
+    ],
+    "a": 3,
+    "why": "substituting y = vx reduces it to a variable separable form in v and x"
+  },
+  {
+    "q": "A linear differential equation of the form dy/dx + Py = Q has integrating factor",
+    "o": [
+      "e^(∫P dx)",
+      "e^(∫Q dx)",
+      "∫P dx",
+      "e^(-∫P dx)"
+    ],
+    "a": 0,
+    "why": "integrating factor for linear ODE dy/dx + Py = Q is e^(∫P dx)"
+  },
+  {
+    "q": "The general solution of a linear differential equation dy/dx + Py = Q, with I.F. = e^(∫P dx), is",
+    "o": [
+      "y = ∫Q dx + C",
+      "y . I.F. = ∫Q . I.F. dx + C",
+      "y . I.F. = Q + C",
+      "y = I.F. + C"
+    ],
+    "a": 1,
+    "why": "standard solution form for first order linear differential equations"
+  },
+  {
+    "q": "The differential equation obtained by eliminating arbitrary constants from a family of curves is called",
+    "o": [
+      "a general solution",
+      "a particular solution",
+      "the formation of a differential equation",
+      "an integrating factor equation"
+    ],
+    "a": 2,
+    "why": "eliminating arbitrary constants from a curve family forms its differential equation"
+  },
+  {
+    "q": "In a law of natural growth/decay, dN/dt = kN, if k is negative the quantity",
+    "o": [
+      "grows exponentially",
+      "oscillates",
+      "remains constant",
+      "decays exponentially"
+    ],
+    "a": 3,
+    "why": "negative k in dN/dt = kN gives exponential decay"
+  },
+  {
+    "q": "Newton's law of cooling states that the rate of change of temperature of a body is proportional to",
+    "o": [
+      "the difference between the body's temperature and surrounding temperature",
+      "the body's own temperature only",
+      "time elapsed",
+      "the surrounding temperature only"
+    ],
+    "a": 0,
+    "why": "Newton's law: dT/dt = -k(T - T_surrounding)"
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "t": "Concentration terms (molarity, molality, mole fraction)",
+    "def": "Concentration terms express how much solute is dissolved in a given amount of solvent or solution, using different bases like volume, mass or moles.",
+    "points": [
+      "Molarity (M) = moles of solute / volume of solution in litres. Depends on temperature since volume changes.",
+      "Molality (m) = moles of solute / mass of solvent in kg. Does NOT depend on temperature.",
+      "Mole fraction (x) = moles of one component / total moles of all components. Always less than 1, sum of mole fractions of all components = 1.",
+      "Mass percentage = (mass of solute / mass of solution) x 100.",
+      "ppm (parts per million) is used for very dilute solutions = (mass of solute / mass of solution) x 10^6.",
+      "Molality is preferred over molarity when temperature changes because mass does not change with temperature but volume does."
+    ],
+    "formula": "M = n/V(L)   m = n/W(kg)   x = n1/(n1+n2)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Solute moles\"] --> B[\"Molarity per litre\"]\n  A --> C[\"Molality per kg solvent\"]\n  A --> D[\"Mole fraction of total moles\"]"
+    },
+    "example": "1 mole of NaOH dissolved to make 2 L solution: Molarity = 1/2 = 0.5 M. If dissolved in 2 kg water: Molality = 1/2 = 0.5 m.",
+    "tip": "State clearly which quantity is temperature independent (molality, mole fraction, mass %) vs dependent (molarity) — this is a common 1-mark theory question."
+  },
+  {
+    "t": "Raoult's law",
+    "def": "Raoult's law states that the partial vapour pressure of each volatile component in an ideal solution is directly proportional to its mole fraction in the solution.",
+    "points": [
+      "For a solution of two volatile liquids A and B: pA = pA° xA and pB = pB° xB, where pA° and pB° are vapour pressures of pure A and B.",
+      "Total vapour pressure of solution ptotal = pA + pB = pA° xA + pB° xB.",
+      "For a non-volatile solute dissolved in a volatile solvent, the solution's vapour pressure is lower than that of the pure solvent: p = p° x(solvent).",
+      "Relative lowering of vapour pressure = (p° - p)/p° = x(solute), which equals the mole fraction of solute.",
+      "This relation is used to determine the molar mass of an unknown non-volatile solute."
+    ],
+    "formula": "p = p° x(solvent)     (p° - p)/p° = x(solute)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Pure solvent vapour pressure p0\"] --> B[\"Add non-volatile solute\"]\n  B --> C[\"Vapour pressure decreases to p\"]\n  C --> D[\"p0 minus p over p0 equals mole fraction of solute\"]"
+    },
+    "example": "If x(solute) = 0.02, then relative lowering of vapour pressure = 0.02, i.e. vapour pressure drops by 2% of the pure solvent's value.",
+    "tip": "Write the two forms of Raoult's law clearly — one for two volatile liquids, one for a non-volatile solute — examiners test both."
+  },
+  {
+    "t": "Colligative properties",
+    "def": "Colligative properties are properties of a solution that depend only on the number of solute particles present, not on their chemical identity.",
+    "points": [
+      "Relative lowering of vapour pressure: (p° - p)/p° = x(solute) = n2/(n1+n2).",
+      "Elevation in boiling point: ΔTb = Kb x m, where Kb is the molal elevation constant.",
+      "Depression in freezing point: ΔTf = Kf x m, where Kf is the molal depression constant.",
+      "Osmotic pressure: π = CRT, where C is molar concentration, R is gas constant, T is absolute temperature.",
+      "All four properties increase as the number of solute particles (moles) in solution increases.",
+      "These properties are used to experimentally determine the molar mass of an unknown solute."
+    ],
+    "formula": "ΔTb = Kb m   ΔTf = Kf m   π = CRT",
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Add solute to solvent\"] --> B[\"Vapour pressure falls\"]\n  A --> C[\"Boiling point rises\"]\n  A --> D[\"Freezing point falls\"]\n  A --> E[\"Osmotic pressure develops\"]"
+    },
+    "example": "0.6 g urea in 100 g water gives ΔTf = 0.186°C. Using ΔTf = Kf x m with Kf=1.86, molar mass of urea works out to 60 g/mol.",
+    "tip": "Always write all four colligative properties with formulas in a list — a common 'define colligative properties' question wants all four named."
+  },
+  {
+    "t": "Van't Hoff factor",
+    "def": "The Van't Hoff factor (i) is the ratio of the experimentally observed colligative property to the theoretically calculated value, used to correct for dissociation or association of the solute.",
+    "points": [
+      "i = observed colligative property / calculated (normal) colligative property = normal molar mass / observed molar mass.",
+      "For solutes that dissociate (like NaCl into Na+ and Cl-), i > 1.",
+      "For solutes that associate (like acetic acid dimerizing in benzene), i < 1.",
+      "For solutes that neither dissociate nor associate (like glucose, urea), i = 1.",
+      "Modified colligative property equations include i: ΔTb = i Kb m, ΔTf = i Kf m, π = i CRT.",
+      "The degree of dissociation/association can be calculated once i is known, using the number of particles formed."
+    ],
+    "formula": "i = (normal M) / (observed M) = observed property / calculated property",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"i greater than 1 dissociation\"] --> C[\"Van t Hoff factor\"]\n  B[\"i less than 1 association\"] --> C\n  C --> D[\"i equals 1 no change\"]"
+    },
+    "example": "NaCl dissociates into 2 ions, so ideally i=2. If observed i = 1.87, degree of dissociation α = (i-1)/(n-1) = (1.87-1)/(2-1) = 0.87 (87% dissociated).",
+    "tip": "Always mention i in the modified formula ΔTf = i Kf m when the solute is ionic or known to associate — missing 'i' loses marks even with correct numbers."
+  },
+  {
+    "t": "Ideal and non-ideal solutions",
+    "def": "Ideal solutions obey Raoult's law at all concentrations and temperatures, with no change in enthalpy or volume on mixing; non-ideal solutions deviate from Raoult's law.",
+    "points": [
+      "Ideal solution: ΔHmix = 0, ΔVmix = 0, obeys Raoult's law exactly (e.g. benzene + toluene).",
+      "Non-ideal solution with positive deviation: A-B interactions are weaker than A-A and B-B; vapour pressure is higher than predicted by Raoult's law (e.g. ethanol + acetone).",
+      "Non-ideal solution with negative deviation: A-B interactions are stronger than A-A and B-B; vapour pressure is lower than predicted (e.g. chloroform + acetone).",
+      "Positive deviation solutions show ΔHmix > 0 (endothermic mixing); negative deviation shows ΔHmix < 0 (exothermic mixing).",
+      "Solutions with large deviations form azeotropes (constant boiling mixtures) which cannot be separated by simple distillation."
+    ],
+    "formula": "Ideal: p = pA°xA + pB°xB exactly | Non-ideal: deviates from this",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Ideal solution Raoult law obeyed\"] --> B[\"Non-ideal\"]\n  B --> C[\"Positive deviation higher vapour pressure\"]\n  B --> D[\"Negative deviation lower vapour pressure\"]"
+    },
+    "example": "Ethanol-water mixture shows positive deviation and forms a minimum boiling azeotrope at about 95% ethanol, which cannot be purified further by distillation.",
+    "tip": "Give one example compound for each type (ideal, positive deviation, negative deviation) — examiners often ask to classify a given pair of liquids."
+  },
+  {
+    "t": "Degree of dissociation/association",
+    "def": "The degree of dissociation or association is the fraction of solute molecules that dissociate into ions or associate into larger units in solution, calculated from the Van't Hoff factor.",
+    "points": [
+      "For dissociation into n particles: α = (i - 1)/(n - 1), where i is the observed Van't Hoff factor.",
+      "For association of n molecules into one unit: α = (1 - i)/(1 - 1/n).",
+      "α = 1 means complete dissociation/association; α = 0 means none occurs.",
+      "The value of i is first found experimentally from the ratio of observed to calculated colligative property (or normal/observed molar mass).",
+      "This calculation links experimental molar mass data to the real behaviour of electrolytes and associating molecules in solution."
+    ],
+    "formula": "α(dissociation) = (i-1)/(n-1)     α(association) = (1-i)/(1-1/n)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Find i from molar mass ratio\"] --> B[\"Dissociation alpha = i-1 over n-1\"]\n  A --> C[\"Association alpha = 1-i over 1 minus 1 over n\"]"
+    },
+    "example": "Acetic acid dimerizes in benzene (n=2). If i = 0.52, α = (1-0.52)/(1-0.5) = 0.48/0.5 = 0.96, i.e. 96% of acetic acid molecules associate into dimers.",
+    "tip": "Clearly state the value of n (number of particles formed/combined) before substituting in the formula — a common mistake is using the wrong n."
+  }
+]

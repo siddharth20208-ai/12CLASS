@@ -1,0 +1,108 @@
+[
+  {
+    "t": "Derivatives of Composite and Implicit Functions",
+    "def": "A composite function is a 'function of a function', such as sin(x^2). Its derivative is found using the chain rule. An implicit function is one where y is not isolated on one side, like x^2 + y^2 = 25, and we differentiate both sides treating y as a function of x.",
+    "points": [
+      "Chain rule: if y = f(g(x)), then dy/dx = f'(g(x)) . g'(x).",
+      "Work from outside to inside: differentiate the outer function first, keep the inner function unchanged, then multiply by derivative of inner function.",
+      "Example rule: d/dx[sin(x^2)] = cos(x^2) . 2x.",
+      "For implicit functions, differentiate every term on both sides w.r.t. x, remembering d/dx(y^n) = n y^(n-1) . dy/dx.",
+      "Collect all dy/dx terms on one side and solve for dy/dx.",
+      "Always simplify the final answer in terms of x and y."
+    ],
+    "formula": "dy/dx = f'(g(x)) . g'(x)     d/dx(y^n) = n y^(n-1) dy/dx",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Identify outer function\"] --> B[\"Identify inner function\"]\n  B --> C[\"Differentiate outer, keep inner\"]\n  C --> D[\"Multiply by derivative of inner\"]\n  D --> E[\"Simplify answer\"]"
+    },
+    "example": "Find dy/dx if x^2 + y^2 = 25. Differentiating: 2x + 2y dy/dx = 0, so dy/dx = -x/y.",
+    "tip": "In implicit differentiation, never forget to multiply by dy/dx every time you differentiate a y term — this is the most common mark-losing mistake."
+  },
+  {
+    "t": "Logarithmic Differentiation",
+    "def": "Logarithmic differentiation is a technique used to differentiate functions of the form y = [f(x)]^g(x), or products/quotients of many functions, by first taking log of both sides.",
+    "points": [
+      "Take natural log on both sides: log y = g(x) . log f(x).",
+      "Differentiate both sides w.r.t. x using product rule and chain rule.",
+      "On the left side, d/dx(log y) = (1/y) dy/dx.",
+      "Solve for dy/dx by multiplying both sides by y.",
+      "Substitute back the original expression for y.",
+      "Use this method whenever the variable appears in both the base and the power."
+    ],
+    "formula": "log y = g(x) log f(x)     (1/y) dy/dx = derivative of RHS",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Take log of both sides\"] --> B[\"Differentiate using product rule\"]\n  B --> C[\"Get 1 by y times dy by dx\"]\n  C --> D[\"Multiply both sides by y\"]\n  D --> E[\"Substitute y back\"]"
+    },
+    "example": "y = x^x. Taking log: log y = x log x. Differentiating: (1/y)dy/dx = log x + 1. So dy/dx = x^x (log x + 1).",
+    "tip": "Always substitute the original y back into the final answer — leaving (1/y) dy/dx unsolved loses marks."
+  },
+  {
+    "t": "Parametric Differentiation",
+    "def": "When both x and y are given in terms of a third variable (parameter) t, parametric differentiation finds dy/dx without first eliminating t.",
+    "points": [
+      "Given x = f(t) and y = g(t).",
+      "Find dx/dt and dy/dt separately by normal differentiation.",
+      "Use the formula dy/dx = (dy/dt) / (dx/dt), provided dx/dt is not zero.",
+      "Simplify the ratio in terms of t (or convert to x, y if asked).",
+      "This method avoids the difficulty of eliminating t to get y directly in terms of x."
+    ],
+    "formula": "dy/dx = (dy/dt) / (dx/dt)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"x = f of t, y = g of t\"] --> B[\"Find dx by dt\"]\n  A --> C[\"Find dy by dt\"]\n  B --> D[\"Divide dy/dt by dx/dt\"]\n  C --> D\n  D --> E[\"Get dy/dx in terms of t\"]"
+    },
+    "example": "x = a cos t, y = a sin t. dx/dt = -a sin t, dy/dt = a cos t. So dy/dx = (a cos t)/(-a sin t) = -cot t.",
+    "tip": "Never try to eliminate t first if it is complicated — directly use the ratio formula to save time."
+  },
+  {
+    "t": "Derivatives of Inverse Trigonometric Functions",
+    "def": "Inverse trigonometric functions like sin^-1(x), cos^-1(x), tan^-1(x) have standard, fixed derivative formulas that must be memorised, similar to basic trig derivatives.",
+    "points": [
+      "d/dx(sin^-1 x) = 1/sqrt(1-x^2), for -1 < x < 1.",
+      "d/dx(cos^-1 x) = -1/sqrt(1-x^2), for -1 < x < 1.",
+      "d/dx(tan^-1 x) = 1/(1+x^2).",
+      "d/dx(cot^-1 x) = -1/(1+x^2).",
+      "d/dx(sec^-1 x) = 1/(|x| sqrt(x^2-1)) and d/dx(cosec^-1 x) = -1/(|x| sqrt(x^2-1)).",
+      "When the inner function is not just x, apply the chain rule, multiplying by the derivative of the inner function."
+    ],
+    "formula": "d/dx(sin^-1 x) = 1/sqrt(1-x^2)     d/dx(tan^-1 x) = 1/(1+x^2)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Identify inverse trig function\"] --> B[\"Apply standard formula\"]\n  B --> C[\"If inner function present, use chain rule\"]\n  C --> D[\"Multiply by derivative of inner function\"]"
+    },
+    "example": "Find derivative of y = tan^-1(2x). dy/dx = 1/(1+(2x)^2) . 2 = 2/(1+4x^2).",
+    "tip": "Memorise all six standard formulas exactly — a single sign error (like missing the minus sign for cos^-1 or cot^-1) costs the mark."
+  },
+  {
+    "t": "Second Order Derivatives",
+    "def": "The second order derivative is the derivative of the first derivative; it tells us how the rate of change itself is changing, written as d^2y/dx^2 or y''.",
+    "points": [
+      "First find dy/dx (the first derivative) using normal rules.",
+      "Then differentiate dy/dx again w.r.t. x to get d^2y/dx^2.",
+      "Notation: d^2y/dx^2, y'', or f''(x) all mean the same thing.",
+      "For implicit or parametric functions, differentiate the first derivative expression carefully, substituting dy/dx where needed.",
+      "Second derivative is used to check concavity: positive means curve is concave up, negative means concave down.",
+      "Simplify the final expression fully."
+    ],
+    "formula": "d^2y/dx^2 = d/dx(dy/dx)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Find first derivative dy/dx\"] --> B[\"Differentiate dy/dx again\"]\n  B --> C[\"Get d2y/dx2\"]\n  C --> D[\"Use for concavity check\"]"
+    },
+    "example": "y = x^3 - 3x. dy/dx = 3x^2 - 3. d^2y/dx^2 = 6x.",
+    "tip": "For implicit functions, substitute the value of dy/dx (found in the first step) back into the second differentiation to simplify correctly."
+  },
+  {
+    "t": "Derivative of One Function with Respect to Another",
+    "def": "This means finding du/dv, the rate of change of one function u with respect to another function v, both of which depend on the same variable x.",
+    "points": [
+      "Given u = f(x) and v = g(x), both functions of x.",
+      "Find du/dx by differentiating u with respect to x.",
+      "Find dv/dx by differentiating v with respect to x.",
+      "Use the formula du/dv = (du/dx) / (dv/dx), provided dv/dx is not zero.",
+      "Simplify the resulting expression as much as possible, often cancelling common terms."
+    ],
+    "formula": "du/dv = (du/dx) / (dv/dx)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"u = f of x, v = g of x\"] --> B[\"Find du by dx\"]\n  A --> C[\"Find dv by dx\"]\n  B --> D[\"Divide du/dx by dv/dx\"]\n  C --> D\n  D --> E[\"Simplify du by dv\"]"
+    },
+    "example": "Find du/dv if u = x^2 and v = x^3. du/dx = 2x, dv/dx = 3x^2. du/dv = 2x/3x^2 = 2/(3x).",
+    "tip": "This is just like parametric differentiation with x itself acting as the parameter — use the same ratio idea."
+  }
+]

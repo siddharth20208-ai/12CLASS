@@ -1,0 +1,146 @@
+{
+  "solved": [
+    {
+      "topic": "Wheatstone bridge - balance condition",
+      "marks": 2,
+      "q": "In a Wheatstone bridge, the resistances in the four arms are P = 5 ohm, Q = 10 ohm, R = 8 ohm. Find the value of S for the bridge to be balanced.",
+      "steps": [
+        "Given: P = 5 ohm, Q = 10 ohm, R = 8 ohm.",
+        "Formula: balance condition P/Q = R/S.",
+        "Substitution: 5/10 = 8/S.",
+        "Calculation: S = 8 x 10/5 = 80/5.",
+        "S = 16 ohm."
+      ],
+      "ans": "S = 16 ohm"
+    },
+    {
+      "topic": "Meter bridge",
+      "marks": 3,
+      "q": "In a meter bridge experiment, the known resistance R = 15 ohm is in the right gap and the unknown resistance X is in the left gap. The balance point is obtained at l = 40 cm from the left end. Find X.",
+      "steps": [
+        "Given: R = 15 ohm, l = 40 cm, so (100 - l) = 60 cm.",
+        "Formula: X/R = l/(100-l), so X = R x l/(100-l).",
+        "Substitution: X = 15 x 40/60.",
+        "Calculation: X = 600/60 = 10.",
+        "X = 10 ohm."
+      ],
+      "ans": "X = 10 ohm"
+    },
+    {
+      "topic": "Potentiometer - EMF measurement",
+      "marks": 2,
+      "q": "A potentiometer wire has a potential gradient of k = 0.02 V/cm. A cell is balanced at a length of 55 cm. Find the EMF of the cell.",
+      "steps": [
+        "Given: k = 0.02 V/cm, L = 55 cm.",
+        "Formula: E = k x L.",
+        "Substitution: E = 0.02 x 55.",
+        "Calculation: E = 1.1.",
+        "E = 1.1 V."
+      ],
+      "ans": "E = 1.1 V"
+    },
+    {
+      "topic": "Comparison of EMFs using potentiometer",
+      "marks": 3,
+      "q": "In a potentiometer experiment, cell 1 gives a balancing length L1 = 60 cm and cell 2 (of known EMF E2 = 1.5 V) gives a balancing length L2 = 45 cm. Find the EMF E1 of cell 1.",
+      "steps": [
+        "Given: L1 = 60 cm, L2 = 45 cm, E2 = 1.5 V.",
+        "Formula: E1/E2 = L1/L2, so E1 = E2 x L1/L2.",
+        "Substitution: E1 = 1.5 x 60/45.",
+        "Calculation: E1 = 1.5 x 1.333... = 90/45 x 1.5 = 2.",
+        "E1 = 2.0 V."
+      ],
+      "ans": "E1 = 2.0 V"
+    },
+    {
+      "topic": "Internal resistance using potentiometer",
+      "marks": 4,
+      "q": "In an experiment to find the internal resistance of a cell using a potentiometer, the balancing length with the key open is L1 = 60 cm. When a resistance R = 4.9 ohm is connected across the cell, the balancing length becomes L2 = 50 cm. Find the internal resistance of the cell.",
+      "steps": [
+        "Given: L1 = 60 cm, L2 = 50 cm, R = 4.9 ohm.",
+        "Formula: r = R(L1 - L2)/L2.",
+        "Substitution: r = 4.9 x (60 - 50)/50.",
+        "Calculation: r = 4.9 x 10/50 = 49/50.",
+        "r = 0.98 ohm."
+      ],
+      "ans": "r = 0.98 ohm"
+    },
+    {
+      "topic": "Kirchhoff's current law",
+      "marks": 2,
+      "q": "At a junction in a circuit, currents of 6 A and 4 A enter the junction, while two currents I3 = 3 A and I4 leave the junction. Find I4.",
+      "steps": [
+        "Given: currents entering = 6 A + 4 A = 10 A; one leaving current I3 = 3 A.",
+        "Formula (Kirchhoff's current law): sum of currents entering = sum of currents leaving.",
+        "Substitution: 6 + 4 = 3 + I4.",
+        "Calculation: I4 = 10 - 3.",
+        "I4 = 7 A."
+      ],
+      "ans": "I4 = 7 A"
+    },
+    {
+      "topic": "Kirchhoff's voltage law - single loop circuit",
+      "marks": 3,
+      "q": "A cell of EMF 6 V and internal resistance 0.2 ohm is connected in series with two resistors of 2 ohm and 2.8 ohm in a single loop. Find the current in the circuit.",
+      "steps": [
+        "Given: E = 6 V, r = 0.2 ohm, R1 = 2 ohm, R2 = 2.8 ohm.",
+        "Formula (Kirchhoff's voltage law for a single loop): E = I(R1 + R2 + r).",
+        "Substitution: 6 = I(2 + 2.8 + 0.2) = I x 5.",
+        "Calculation: I = 6/5.",
+        "I = 1.2 A."
+      ],
+      "ans": "I = 1.2 A"
+    },
+    {
+      "topic": "Potential gradient of a potentiometer wire",
+      "marks": 3,
+      "q": "A potentiometer wire of length 4 m and resistance 10 ohm carries a steady current of 0.5 A from a driver cell. Find the potential gradient along the wire.",
+      "steps": [
+        "Given: L = 4 m, resistance of wire Rw = 10 ohm, current I = 0.5 A.",
+        "Formula: potential gradient k = V/L, where V = I x Rw (total potential drop across the wire).",
+        "Substitution: V = 0.5 x 10 = 5 V; k = 5/4.",
+        "Calculation: k = 1.25 V/m.",
+        "k = 1.25 V/m."
+      ],
+      "ans": "k = 1.25 V/m"
+    }
+  ],
+  "practice": [
+    {
+      "topic": "Wheatstone bridge",
+      "q": "In a balanced Wheatstone bridge, P = 4 ohm, Q = 8 ohm, R = 12 ohm. Find S.",
+      "hint": "Use P/Q = R/S, so S = R x Q/P.",
+      "ans": "S = 24 ohm"
+    },
+    {
+      "topic": "Meter bridge",
+      "q": "In a meter bridge, R = 20 ohm is in the right gap and the balance point is at 25 cm from the left end where X is connected. Find X.",
+      "hint": "X/R = l/(100-l), so X = R x l/(100-l).",
+      "ans": "X = 20/3 ohm = 6.67 ohm"
+    },
+    {
+      "topic": "Potentiometer EMF",
+      "q": "A potentiometer wire has potential gradient k = 0.015 V/cm. Find the EMF of a cell balanced at 80 cm.",
+      "hint": "E = k x L.",
+      "ans": "E = 1.2 V"
+    },
+    {
+      "topic": "Comparison of EMFs",
+      "q": "Two cells give balancing lengths L1 = 70 cm and L2 = 56 cm on a potentiometer. If E2 = 1.4 V, find E1.",
+      "hint": "E1/E2 = L1/L2.",
+      "ans": "E1 = 1.75 V"
+    },
+    {
+      "topic": "Internal resistance",
+      "q": "With key open, balancing length is 65 cm; with R = 5 ohm connected across the cell, it becomes 52 cm. Find the internal resistance.",
+      "hint": "r = R(L1 - L2)/L2.",
+      "ans": "r = 1.25 ohm"
+    },
+    {
+      "topic": "Kirchhoff's current law",
+      "q": "Three currents of 2 A, 3 A and 5 A enter a junction, and two currents leave it, one of which is 4 A. Find the other leaving current.",
+      "hint": "Sum of currents entering = sum of currents leaving.",
+      "ans": "6 A"
+    }
+  ]
+}

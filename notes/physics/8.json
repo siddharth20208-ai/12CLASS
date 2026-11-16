@@ -1,0 +1,94 @@
+[
+  {
+    "t": "Kirchhoff's laws",
+    "def": "Kirchhoff's current law (KCL) says the sum of currents entering a junction equals the sum leaving it. Kirchhoff's voltage law (KVL) says the sum of potential drops around any closed loop is zero.",
+    "points": [
+      "KCL is based on conservation of charge — charge cannot pile up at a junction.",
+      "Write all currents entering a junction as positive, leaving as negative, and add them to zero.",
+      "KVL is based on conservation of energy in a closed loop.",
+      "Go around a loop, add EMFs and IR drops with correct sign, and set the total to zero.",
+      "Use KCL to write equations at junctions and KVL in loops to solve for unknown currents.",
+      "These laws work even when the circuit has many batteries and resistors, unlike simple series-parallel rules."
+    ],
+    "formula": "Sum of currents at a junction = 0     Sum of EMF = Sum of IR in a loop",
+    "diagram": { "draw": "Draw a circuit with two loops sharing one branch (like the letter theta). Mark a junction point with three currents I1 entering, I2 and I3 leaving, with arrows. Draw two closed loops with a battery and resistor in each, label loop directions with curved arrows." },
+    "example": "At a junction, I1 = 5 A enters, I2 = 2 A and I3 leave. By KCL: 5 = 2 + I3, so I3 = 3 A.",
+    "tip": "Always state both laws in words first, then show one labelled circuit diagram with current directions — this gets easy marks even without solving numbers."
+  },
+  {
+    "t": "Wheatstone bridge and balance condition",
+    "def": "A Wheatstone bridge is a four-resistor arrangement used to find an unknown resistance by comparing it with known resistances; it is balanced when the galvanometer shows zero deflection.",
+    "points": [
+      "Four resistances P, Q, R, S form a diamond shape with a galvanometer across one diagonal and a battery across the other.",
+      "At balance, no current flows through the galvanometer.",
+      "This happens when the ratio of resistances in adjacent arms are equal: P/Q = R/S.",
+      "If three resistances are known, the fourth (unknown) can be calculated directly.",
+      "The bridge is very sensitive near balance, giving accurate measurement of unknown resistance."
+    ],
+    "formula": "Balance condition: P/Q = R/S",
+    "diagram": { "draw": "Draw a diamond (rhombus) of four resistors P, Q, R, S on the four sides. Connect a battery across one diagonal (top to bottom) and a galvanometer across the other diagonal (left to right). Label all four resistors and the galvanometer G." },
+    "example": "If P = 10 ohm, Q = 20 ohm, R = 15 ohm, then for balance S = RQ/P = 15 x 20/10 = 30 ohm.",
+    "tip": "Draw the diamond shape correctly with galvanometer on the correct diagonal — examiners check this carefully for 1 mark."
+  },
+  {
+    "t": "Meter bridge",
+    "def": "A meter bridge is a practical Wheatstone bridge using a 1-metre long uniform resistance wire, used to find an unknown resistance from the balancing length.",
+    "points": [
+      "The unknown resistance X is connected in one gap, a known resistance R in the other gap.",
+      "A jockey is slid along the wire to find the balance point where galvanometer shows zero deflection.",
+      "At balance, the bridge wire acts like the other two arms of a Wheatstone bridge.",
+      "If balance point is at length l cm from one end, X/R = l/(100-l).",
+      "So X = R x l/(100-l).",
+      "The experiment is repeated a few times for accuracy, and the wire must be uniform in cross-section."
+    ],
+    "formula": "X/R = l / (100 - l)",
+    "diagram": { "draw": "Draw a 1-metre wire stretched on a scale between two end terminals. On the left gap connect the unknown resistance X, on the right gap connect known resistance R. Draw the battery and galvanometer circuit with a jockey touching the wire at the balance point, label distance l from the left end." },
+    "example": "If R = 10 ohm and balance length l = 40 cm, then X = 10 x 40/(100-40) = 10 x 40/60 = 6.67 ohm.",
+    "tip": "Remember the balance length is measured from the same end as the known resistance's gap — state this clearly."
+  },
+  {
+    "t": "Potentiometer and its applications",
+    "def": "A potentiometer is a long uniform wire carrying a steady current, used to measure EMF or potential difference accurately by comparing balancing lengths, without drawing any current from the source being measured.",
+    "points": [
+      "A steady current flows through the potentiometer wire from a driver battery, creating a uniform potential gradient (k = V/L) along the wire.",
+      "The unknown EMF or cell is connected through a galvanometer to a jockey that slides on the wire.",
+      "At the balance point, no current flows through the galvanometer, meaning the EMF exactly equals the potential drop up to that length.",
+      "EMF = k x balancing length (where k is potential gradient per unit length).",
+      "Since no current is drawn from the cell at balance, the measurement is very accurate, unlike a voltmeter."
+    ],
+    "formula": "E = k L     where k = potential gradient = V/L of wire",
+    "diagram": { "draw": "Draw a long straight potentiometer wire AB connected to a driver battery and rheostat. Draw the cell (whose EMF is to be measured) connected through a galvanometer to a jockey touching the wire. Label the balance point J and the length AJ = L." },
+    "example": "If potential gradient k = 0.02 V/cm and balancing length is 60 cm, then EMF = 0.02 x 60 = 1.2 V.",
+    "tip": "Clearly explain why potentiometer is better than a voltmeter: it draws zero current at balance, giving exact EMF."
+  },
+  {
+    "t": "Comparison of EMFs",
+    "def": "A potentiometer can compare the EMFs of two cells by finding the balancing length for each cell separately using the same potential gradient.",
+    "points": [
+      "Connect one cell at a time to the galvanometer circuit using a two-way key.",
+      "For cell 1, find balancing length L1, so E1 = k L1.",
+      "For cell 2, find balancing length L2, so E2 = k L2.",
+      "Dividing the two equations cancels k: E1/E2 = L1/L2.",
+      "This method is accurate because no current is drawn from either cell at the balance point."
+    ],
+    "formula": "E1 / E2 = L1 / L2",
+    "diagram": { "draw": "Draw the potentiometer wire with driver battery. Draw a two-way key connecting either cell 1 or cell 2 (shown as two cells side by side) through a galvanometer to the jockey. Label balancing lengths L1 and L2 for the two cells." },
+    "example": "If L1 = 50 cm for cell 1 and L2 = 40 cm for cell 2, then E1/E2 = 50/40 = 1.25, meaning cell 1's EMF is 1.25 times cell 2's EMF.",
+    "tip": "Mention that the same driver current (and hence same k) must be kept constant throughout both readings."
+  },
+  {
+    "t": "Internal resistance measurement",
+    "def": "A potentiometer can measure a cell's internal resistance by comparing the balancing length with the cell's circuit open and with a known resistance connected across it.",
+    "points": [
+      "First find balancing length L1 with the cell's circuit open (no external resistance), giving its EMF E.",
+      "Then connect a known resistance R across the cell terminals, which draws current and reduces terminal voltage V.",
+      "Find the new balancing length L2 for this terminal voltage V, so V corresponds to L2.",
+      "Since E/V = L1/L2, and the current through R is I = V/R, use E = I(R + r) to find the internal resistance r.",
+      "This gives r = R(L1 - L2)/L2."
+    ],
+    "formula": "r = R (L1 - L2) / L2",
+    "diagram": { "draw": "Draw the potentiometer wire with driver battery. Draw the test cell connected through a key and a resistance box R in series, with a separate galvanometer-jockey branch for balancing. Label the two balance points L1 (key open) and L2 (key closed with R in circuit)." },
+    "example": "If L1 = 60 cm, L2 = 50 cm, and R = 5 ohm, then r = 5 x (60-50)/50 = 5 x 0.2 = 1 ohm.",
+    "tip": "Write both balance conditions (open and closed circuit) clearly before substituting into the formula for full marks."
+  }
+]

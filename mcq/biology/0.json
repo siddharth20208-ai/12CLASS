@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Vegetative propagation by cutting and grafting produces offspring that are:",
+    "o": [
+      "Genetically identical to parent",
+      "Genetically different from parent",
+      "Haploid",
+      "Triploid"
+    ],
+    "a": 0,
+    "why": "No gametes/fertilization involved, so offspring is a clone of parent."
+  },
+  {
+    "q": "Pollen transfer from one flower to another flower on the SAME plant is called:",
+    "o": [
+      "Autogamy",
+      "Geitonogamy",
+      "Xenogamy",
+      "Hydrophily"
+    ],
+    "a": 1,
+    "why": "Geitonogamy is pollination between two flowers of the same plant."
+  },
+  {
+    "q": "Which type of pollination occurs between flowers of two genetically different plants?",
+    "o": [
+      "Autogamy",
+      "Geitonogamy",
+      "Xenogamy",
+      "Cleistogamy"
+    ],
+    "a": 2,
+    "why": "Xenogamy is true cross-pollination between different plants."
+  },
+  {
+    "q": "Maize is pollinated mainly by:",
+    "o": [
+      "Insects",
+      "Water",
+      "Birds",
+      "Wind"
+    ],
+    "a": 3,
+    "why": "Maize is anemophilous, pollen carried by wind to another plant's stigma."
+  },
+  {
+    "q": "A mature anther typically has how many microsporangia (pollen sacs)?",
+    "o": [
+      "4",
+      "2",
+      "6",
+      "8"
+    ],
+    "a": 0,
+    "why": "Each of the two lobes has two microsporangia, giving 4 in total."
+  },
+  {
+    "q": "The innermost, nourishing wall layer of the microsporangium is the:",
+    "o": [
+      "Epidermis",
+      "Tapetum",
+      "Middle layer",
+      "Endothecium"
+    ],
+    "a": 1,
+    "why": "Tapetum is the innermost layer that nourishes developing pollen grains."
+  },
+  {
+    "q": "In the embryo sac, the egg cell along with two synergids forms the:",
+    "o": [
+      "Antipodal complex",
+      "Polar complex",
+      "Egg apparatus",
+      "Chalazal complex"
+    ],
+    "a": 2,
+    "why": "Egg cell + 2 synergids near the micropylar end form the egg apparatus."
+  },
+  {
+    "q": "In double fertilization, fusion of a male gamete with the two polar nuclei is called:",
+    "o": [
+      "Syngamy",
+      "Parthenocarpy",
+      "Autogamy",
+      "Triple fusion"
+    ],
+    "a": 3,
+    "why": "Triple fusion forms the triploid primary endosperm nucleus (PEN)."
+  },
+  {
+    "q": "A seed that develops without fertilization, as in an apomictic Citrus embryo, is genetically:",
+    "o": [
+      "Identical to the mother plant",
+      "A hybrid of two parents",
+      "Haploid",
+      "Always sterile"
+    ],
+    "a": 0,
+    "why": "Apomictic embryos arise from diploid ovule cells without meiosis/fertilization, so they clone the mother plant."
+  },
+  {
+    "q": "A seedless banana fruit forms without fertilization through a process called:",
+    "o": [
+      "Polyembryony",
+      "Parthenocarpy",
+      "Apomixis",
+      "Vernalization"
+    ],
+    "a": 1,
+    "why": "Parthenocarpy is fruit development from the ovary without fertilization, giving seedless fruit."
+  }
+]

@@ -1,0 +1,124 @@
+{
+  "solved": [
+    {
+      "topic": "Work function and threshold frequency/wavelength",
+      "marks": 2,
+      "q": "The work function of a metal is 2 eV. Find (i) the threshold frequency and (ii) the threshold wavelength for the metal. (h = 6.63 x 10^-34 J s, c = 3 x 10^8 m/s, e = 1.6 x 10^-19 C)",
+      "steps": [
+        "Given: phi0 = 2 eV = 2 x 1.6 x 10^-19 J = 3.2 x 10^-19 J, h = 6.63 x 10^-34 J s, c = 3 x 10^8 m/s.",
+        "Formula: phi0 = h v0, so v0 = phi0 / h.",
+        "Substitution: v0 = 3.2 x 10^-19 / 6.63 x 10^-34.",
+        "Calculation: v0 = 4.83 x 10^14 Hz.",
+        "Formula for threshold wavelength: lambda0 = h c / phi0.",
+        "Substitution: lambda0 = (6.63 x 10^-34 x 3 x 10^8) / (3.2 x 10^-19) = 19.89 x 10^-26 / 3.2 x 10^-19.",
+        "Calculation: lambda0 = 6.22 x 10^-7 m."
+      ],
+      "ans": "v0 = 4.83 x 10^14 Hz, lambda0 = 6.22 x 10^-7 m (622 nm)."
+    },
+    {
+      "topic": "Einstein's photoelectric equation - KEmax and vmax",
+      "marks": 4,
+      "q": "Light of wavelength 400 nm falls on a metal surface of work function 2 eV. Find (i) the maximum kinetic energy of the emitted photoelectrons in eV and (ii) their maximum velocity. (h = 6.63 x 10^-34 J s, c = 3 x 10^8 m/s, e = 1.6 x 10^-19 C, me = 9.1 x 10^-31 kg)",
+      "steps": [
+        "Given: lambda = 400 x 10^-9 m, phi0 = 2 eV, h = 6.63 x 10^-34 J s, c = 3 x 10^8 m/s, me = 9.1 x 10^-31 kg.",
+        "Formula: v = c / lambda, then Einstein's equation h v = phi0 + KEmax.",
+        "Substitution: v = (3 x 10^8) / (400 x 10^-9) = 7.5 x 10^14 Hz.",
+        "Photon energy: E = h v = 6.63 x 10^-34 x 7.5 x 10^14 = 4.9725 x 10^-19 J = 3.11 eV (dividing by 1.6 x 10^-19).",
+        "KEmax = E - phi0 = 3.11 - 2 = 1.11 eV = 1.11 x 1.6 x 10^-19 = 1.78 x 10^-19 J.",
+        "Formula: KEmax = (1/2) me vmax^2, so vmax = sqrt(2 KEmax / me).",
+        "Substitution: vmax = sqrt(2 x 1.78 x 10^-19 / 9.1 x 10^-31) = sqrt(3.91 x 10^11).",
+        "Calculation: vmax = 6.25 x 10^5 m/s."
+      ],
+      "ans": "KEmax = 1.11 eV; vmax = 6.25 x 10^5 m/s."
+    },
+    {
+      "topic": "Stopping potential from Einstein's equation",
+      "marks": 3,
+      "q": "Light of frequency 6 x 10^14 Hz falls on a metal surface of work function 1.9 eV. Calculate the stopping potential. (h = 6.63 x 10^-34 J s, e = 1.6 x 10^-19 C)",
+      "steps": [
+        "Given: v = 6 x 10^14 Hz, phi0 = 1.9 eV, h = 6.63 x 10^-34 J s, e = 1.6 x 10^-19 C.",
+        "Formula: e V0 = h v - phi0, so V0 = (h v - phi0) / e.",
+        "Substitution: h v = 6.63 x 10^-34 x 6 x 10^14 = 3.978 x 10^-19 J.",
+        "Converting to eV: h v = 3.978 x 10^-19 / 1.6 x 10^-19 = 2.49 eV.",
+        "V0 = (2.49 - 1.9) eV / e = 0.59 V (since energy in eV divided by e in units of e gives volts directly)."
+      ],
+      "ans": "Stopping potential V0 = 0.59 V."
+    },
+    {
+      "topic": "Finding Planck's constant and work function from V0-v graph",
+      "marks": 4,
+      "q": "In a photoelectric experiment, the stopping potential was found to be 1.0 V at frequency 6 x 10^14 Hz and 1.5 V at frequency 7.5 x 10^14 Hz. Using the straight line graph of V0 versus v, find (i) Planck's constant and (ii) the work function of the metal, given e = 1.6 x 10^-19 C.",
+      "steps": [
+        "Given: (v1, V01) = (6 x 10^14 Hz, 1.0 V), (v2, V02) = (7.5 x 10^14 Hz, 1.5 V).",
+        "Formula: e V0 = h v - phi0, which is a straight line V0 = (h/e) v - (phi0/e), so slope = h/e = (V02 - V01)/(v2 - v1).",
+        "Substitution: slope = (1.5 - 1.0) / (7.5 x 10^14 - 6 x 10^14) = 0.5 / (1.5 x 10^14).",
+        "Calculation: slope = 3.33 x 10^-15 V s.",
+        "h = e x slope = 1.6 x 10^-19 x 3.33 x 10^-15.",
+        "Calculation: h = 5.33 x 10^-34 J s.",
+        "Work function: phi0 = h v1 - e V01 = 5.33 x 10^-34 x 6 x 10^14 - 1.6 x 10^-19 x 1.0.",
+        "Calculation: phi0 = 3.2 x 10^-19 - 1.6 x 10^-19 = 1.6 x 10^-19 J = 1 eV."
+      ],
+      "ans": "h = 5.33 x 10^-34 J s; phi0 = 1.6 x 10^-19 J = 1 eV."
+    },
+    {
+      "topic": "De Broglie wavelength of an accelerated electron",
+      "marks": 3,
+      "q": "An electron is accelerated from rest through a potential difference of 100 V. Find its de Broglie wavelength. (h = 6.63 x 10^-34 J s, me = 9.1 x 10^-31 kg, e = 1.6 x 10^-19 C)",
+      "steps": [
+        "Given: V = 100 V, me = 9.1 x 10^-31 kg, e = 1.6 x 10^-19 C, h = 6.63 x 10^-34 J s.",
+        "Formula: lambda = h / sqrt(2 me e V).",
+        "Substitution: 2 me e V = 2 x 9.1 x 10^-31 x 1.6 x 10^-19 x 100 = 2.912 x 10^-47.",
+        "sqrt(2 me e V) = sqrt(2.912 x 10^-47) = 5.40 x 10^-24 kg m/s.",
+        "lambda = 6.63 x 10^-34 / 5.40 x 10^-24."
+      ],
+      "ans": "lambda = 1.23 x 10^-10 m (1.23 Angstrom)."
+    },
+    {
+      "topic": "De Broglie wavelength from velocity",
+      "marks": 2,
+      "q": "Find the de Broglie wavelength associated with an electron moving with a speed of 1.0 x 10^6 m/s. (h = 6.63 x 10^-34 J s, me = 9.1 x 10^-31 kg)",
+      "steps": [
+        "Given: v = 1.0 x 10^6 m/s, me = 9.1 x 10^-31 kg, h = 6.63 x 10^-34 J s.",
+        "Formula: lambda = h / (me v).",
+        "Substitution: me v = 9.1 x 10^-31 x 1.0 x 10^6 = 9.1 x 10^-25 kg m/s.",
+        "lambda = 6.63 x 10^-34 / 9.1 x 10^-25."
+      ],
+      "ans": "lambda = 7.29 x 10^-10 m."
+    },
+    {
+      "topic": "De Broglie wavelength of a macroscopic body",
+      "marks": 2,
+      "q": "Calculate the de Broglie wavelength of a ball of mass 0.1 kg moving with a speed of 10 m/s. Comment on the result. (h = 6.63 x 10^-34 J s)",
+      "steps": [
+        "Given: m = 0.1 kg, v = 10 m/s, h = 6.63 x 10^-34 J s.",
+        "Formula: lambda = h / (m v).",
+        "Substitution: m v = 0.1 x 10 = 1 kg m/s.",
+        "lambda = 6.63 x 10^-34 / 1 = 6.63 x 10^-34 m.",
+        "This wavelength is extremely small compared to the size of the ball, so the wave nature of the ball is not observable."
+      ],
+      "ans": "lambda = 6.63 x 10^-34 m (undetectably small)."
+    },
+    {
+      "topic": "Photon energy, momentum and photon flux of a laser",
+      "marks": 4,
+      "q": "A laser of power 1 mW emits light of wavelength 600 nm. Find (i) the energy of each photon in eV, (ii) the momentum of each photon, and (iii) the number of photons emitted per second. (h = 6.63 x 10^-34 J s, c = 3 x 10^8 m/s, e = 1.6 x 10^-19 C)",
+      "steps": [
+        "Given: P = 1 x 10^-3 W, lambda = 600 x 10^-9 m, h = 6.63 x 10^-34 J s, c = 3 x 10^8 m/s.",
+        "Formula: E = h c / lambda; momentum p = h / lambda = E / c; number of photons per second n = P / E.",
+        "Substitution: E = (6.63 x 10^-34 x 3 x 10^8) / (600 x 10^-9) = 19.89 x 10^-26 / 6 x 10^-7.",
+        "Calculation: E = 3.315 x 10^-19 J = 2.07 eV (dividing by 1.6 x 10^-19).",
+        "p = E / c = 3.315 x 10^-19 / 3 x 10^8 = 1.105 x 10^-27 kg m/s.",
+        "n = P / E = 1 x 10^-3 / 3.315 x 10^-19."
+      ],
+      "ans": "E = 2.07 eV; p = 1.105 x 10^-27 kg m/s; n = 3.02 x 10^15 photons/s."
+    }
+  ],
+  "practice": [
+    { "topic": "Threshold frequency", "q": "The work function of caesium is 1.9 eV. Find its threshold frequency and threshold wavelength.", "hint": "Use phi0 = h v0 and lambda0 = h c / phi0.", "ans": "v0 = 4.58 x 10^14 Hz, lambda0 = 6.55 x 10^-7 m." },
+    { "topic": "Einstein's equation", "q": "Light of frequency 8 x 10^14 Hz falls on a metal of work function 2.2 eV. Find the maximum kinetic energy of photoelectrons in eV.", "hint": "KEmax = h v - phi0, convert h v to eV first.", "ans": "KEmax ≈ 1.11 eV." },
+    { "topic": "Stopping potential", "q": "If the stopping potential for photoelectrons emitted from a surface illuminated by light of frequency 6.5 x 10^14 Hz is 0.6 V, find the work function of the metal.", "hint": "phi0 = h v - e V0.", "ans": "phi0 ≈ 2.09 eV." },
+    { "topic": "De Broglie wavelength from accelerating voltage", "q": "Find the de Broglie wavelength of an electron accelerated through a potential difference of 150 V.", "hint": "lambda = h / sqrt(2 me e V).", "ans": "lambda ≈ 1.00 x 10^-10 m." },
+    { "topic": "De Broglie wavelength from momentum", "q": "An electron has momentum 2 x 10^-24 kg m/s. Find its de Broglie wavelength.", "hint": "lambda = h / p.", "ans": "lambda ≈ 3.32 x 10^-10 m." },
+    { "topic": "Photon energy and number of photons", "q": "A 2 mW laser beam has wavelength 500 nm. Find the energy of one photon and the number of photons emitted per second.", "hint": "E = h c / lambda, n = P / E.", "ans": "E ≈ 3.98 x 10^-19 J (2.49 eV); n ≈ 5.03 x 10^15 photons/s." }
+  ]
+}

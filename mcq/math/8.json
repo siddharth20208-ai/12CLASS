@@ -1,0 +1,112 @@
+[
+  {
+    "q": "For the curve y = x^2 at the point (1,1), the slope of the tangent is",
+    "o": [
+      "2",
+      "1",
+      "0",
+      "-2"
+    ],
+    "a": 0,
+    "why": "dy/dx = 2x, at x=1 gives 2"
+  },
+  {
+    "q": "The equation of the normal at a point where dy/dx = 0 is",
+    "o": [
+      "y = y1",
+      "x = x1",
+      "y = x",
+      "x + y = 0"
+    ],
+    "a": 1,
+    "why": "horizontal tangent means vertical normal x = x1"
+  },
+  {
+    "q": "If the slope of the tangent to a curve at (x1,y1) is m, the slope of the normal is",
+    "o": [
+      "m",
+      "1/m",
+      "-1/m",
+      "-m"
+    ],
+    "a": 2,
+    "why": "normal is perpendicular to tangent"
+  },
+  {
+    "q": "If V = (4/3)pi r^3, then dV/dt in terms of dr/dt is",
+    "o": [
+      "4 pi r (dr/dt)",
+      "8 pi r (dr/dt)",
+      "(4/3) pi r^2 (dr/dt)",
+      "4 pi r^2 (dr/dt)"
+    ],
+    "a": 3,
+    "why": "dV/dr = 4 pi r^2, chain rule dV/dt = dV/dr . dr/dt"
+  },
+  {
+    "q": "A function f is strictly increasing on an interval if, for all x in that interval",
+    "o": [
+      "f'(x) > 0",
+      "f'(x) = 0",
+      "f'(x) < 0",
+      "f''(x) > 0"
+    ],
+    "a": 0,
+    "why": "positive first derivative means increasing function"
+  },
+  {
+    "q": "At a point of local maximum of a twice differentiable function f, which condition holds?",
+    "o": [
+      "f'(x)=0, f''(x)>0",
+      "f'(x)=0, f''(x)<0",
+      "f'(x)>0, f''(x)=0",
+      "f'(x)<0, f''(x)<0"
+    ],
+    "a": 1,
+    "why": "second derivative test: f'=0 and f''<0 gives maximum"
+  },
+  {
+    "q": "Using differentials, the approximate value of sqrt(25.1) is closest to",
+    "o": [
+      "5.001",
+      "5.1",
+      "5.01",
+      "5.02"
+    ],
+    "a": 2,
+    "why": "dy = (1/(2 sqrt x)) dx = (1/10)(0.1) = 0.01, so sqrt(25.1) ~ 5 + 0.01 = 5.01"
+  },
+  {
+    "q": "For f(x) = x^3 - 3x, the critical points occur at x =",
+    "o": [
+      "0 and 3",
+      "3 and -3",
+      "0 and -3",
+      "1 and -1"
+    ],
+    "a": 3,
+    "why": "f'(x) = 3x^2 - 3 = 0 gives x = ±1"
+  },
+  {
+    "q": "If f''(x) = 0 at a critical point and the sign of f' does not change, the point is",
+    "o": [
+      "a point of inflection",
+      "a local minimum",
+      "a local maximum",
+      "undefined"
+    ],
+    "a": 0,
+    "why": "second derivative test fails; such a point is typically an inflection point"
+  },
+  {
+    "q": "The approximate change in y = x^2 when x changes from 4 to 4.1 is",
+    "o": [
+      "0.1",
+      "0.8",
+      "0.2",
+      "1.6"
+    ],
+    "a": 1,
+    "why": "dy = 2x dx = 2(4)(0.1) = 0.8"
+  }
+]

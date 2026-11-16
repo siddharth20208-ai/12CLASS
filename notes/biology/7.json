@@ -1,0 +1,111 @@
+[
+  {
+    "t": "Mechanism of Breathing",
+    "def": "Breathing (pulmonary ventilation) is the mechanical process of inspiration (taking air into the lungs) and expiration (expelling air out of the lungs) due to pressure changes created by the diaphragm and rib muscles.",
+    "points": [
+      "During inspiration, the diaphragm contracts and flattens, and external intercostal muscles contract, lifting the ribs.",
+      "This increases the volume of the thoracic cavity, decreasing air pressure inside the lungs below atmospheric pressure.",
+      "Air rushes into the lungs from outside due to this negative pressure gradient.",
+      "During expiration, the diaphragm relaxes and becomes dome-shaped, and intercostal muscles relax, lowering the ribs.",
+      "This decreases thoracic volume, increasing pressure inside the lungs above atmospheric pressure.",
+      "Air is pushed out of the lungs to the atmosphere.",
+      "Breathing is an entirely mechanical (involuntary, muscular) process, different from cellular respiration."
+    ],
+    "formula": "Inspiration: Thoracic volume increases -> Intrapulmonary pressure decreases -> Air moves in",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Diaphragm contracts\"] --> B[\"Thoracic volume increases\"]\n  B --> C[\"Lung pressure decreases\"]\n  C --> D[\"Air moves in - Inspiration\"]\n  D --> E[\"Diaphragm relaxes - Expiration\"]"
+    },
+    "example": "When a person takes a deep breath, the diaphragm moves down noticeably, which can be observed as the abdomen pushing outward.",
+    "tip": "Clearly state the pressure-volume relationship (Boyle's law idea) for both inspiration and expiration — examiners look for this cause-effect chain."
+  },
+  {
+    "t": "Gas Exchange and Transport",
+    "def": "Gas exchange is the diffusion of oxygen and carbon dioxide between alveoli and blood (and between blood and tissues), while gas transport is the carriage of these gases by blood to and from the tissues.",
+    "points": [
+      "Oxygen diffuses from alveolar air (high O2 partial pressure) into blood capillaries (low O2) across the thin alveolar membrane.",
+      "Most oxygen is transported bound to haemoglobin as oxyhaemoglobin; a small amount dissolves in plasma.",
+      "Carbon dioxide diffuses from tissues (high CO2) into blood, then from blood into alveoli (low CO2) to be exhaled.",
+      "CO2 is transported mainly as bicarbonate ions (HCO3-) in plasma, partly bound to haemoglobin, and partly dissolved in plasma.",
+      "The enzyme carbonic anhydrase in RBCs speeds up conversion of CO2 and water into carbonic acid, which dissociates into H+ and HCO3-.",
+      "Partial pressure gradients of O2 and CO2 are the driving force for all these diffusion exchanges."
+    ],
+    "formula": "CO2 + H2O <--(carbonic anhydrase)--> H2CO3 <--> H+ + HCO3-",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Alveoli - high O2\"] --> B[\"Blood capillary\"]\n  B --> C[\"Haemoglobin binds O2\"]\n  D[\"Tissue - high CO2\"] --> E[\"Blood as HCO3-\"]\n  E --> F[\"Alveoli - CO2 exhaled\"]"
+    },
+    "example": "About 70% of carbon dioxide produced by tissues is carried in blood as bicarbonate ions, making it the major transport form of CO2.",
+    "tip": "Give the percentage breakdown of CO2 transport (bicarbonate largest, then haemoglobin-bound, then dissolved) — this quantitative detail is often asked."
+  },
+  {
+    "t": "Structure of Human Heart",
+    "def": "The human heart is a four-chambered muscular organ (two atria and two ventricles) that pumps blood throughout the body, enclosed in a protective double-layered membrane called the pericardium.",
+    "points": [
+      "The heart has two upper thin-walled chambers, the right and left atria, which receive blood.",
+      "It has two lower thick-walled chambers, the right and left ventricles, which pump blood out.",
+      "The right atrium receives deoxygenated blood from the body via the vena cavae; the left atrium receives oxygenated blood from the lungs via pulmonary veins.",
+      "The tricuspid valve lies between right atrium and right ventricle; the bicuspid (mitral) valve lies between left atrium and left ventricle.",
+      "Semilunar valves guard the openings of the pulmonary artery (from right ventricle) and the aorta (from left ventricle), preventing backflow.",
+      "The left ventricle has the thickest muscular wall because it pumps blood to the whole body at high pressure."
+    ],
+    "formula": "Deoxygenated blood path: Vena cava -> Right atrium -> Right ventricle -> Pulmonary artery -> Lungs",
+    "diagram": {
+      "draw": "Draw a four-chambered heart. Label top two chambers 'Right atrium' and 'Left atrium', bottom two 'Right ventricle' and 'Left ventricle'. Draw vena cava entering right atrium, pulmonary veins entering left atrium, pulmonary artery leaving right ventricle, and aorta leaving left ventricle. Mark tricuspid valve, bicuspid valve, and semilunar valves at the respective openings."
+    },
+    "example": "During a heartbeat, blood flows one-way: atria contract first pushing blood into ventricles, then ventricles contract pushing blood into the arteries, valves preventing any backflow.",
+    "tip": "Draw the heart diagram with all four chambers, major vessels, and all valves labelled — this diagram alone can carry 3-4 marks."
+  },
+  {
+    "t": "Cardiac Cycle",
+    "def": "The cardiac cycle is the sequence of events (one complete heartbeat) consisting of alternate contraction (systole) and relaxation (diastole) of the atria and ventricles that pumps blood through the heart.",
+    "points": [
+      "Joint diastole: both atria and ventricles are relaxed; blood flows passively into atria and partly into ventricles.",
+      "Atrial systole: both atria contract, pushing remaining blood into the ventricles.",
+      "Ventricular systole: ventricles contract, AV valves close, semilunar valves open, blood is ejected into pulmonary artery and aorta.",
+      "Ventricular diastole follows, semilunar valves close to prevent backflow, and the cycle repeats.",
+      "One complete cardiac cycle normally takes about 0.8 seconds, giving a heart rate of about 72 beats per minute.",
+      "Heart sounds 'lub' and 'dup' are produced by the closing of AV valves and semilunar valves respectively."
+    ],
+    "formula": "Cardiac cycle duration ≈ 0.8 s; Heart rate ≈ 72 beats/min; Cardiac output = Stroke volume x Heart rate",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Joint diastole\"] --> B[\"Atrial systole\"]\n  B --> C[\"Ventricular systole\"]\n  C --> D[\"Ventricular diastole\"]\n  D --> A"
+    },
+    "example": "If stroke volume is 70 mL and heart rate is 72 beats/min, cardiac output = 70 x 72 = 5040 mL/min ≈ 5 L/min, the normal resting cardiac output.",
+    "tip": "Remember the exact timing: atrial systole (0.1s), ventricular systole (0.3s), joint diastole (0.4s) adding to 0.8s — numeric recall questions are common."
+  },
+  {
+    "t": "Blood Groups and Composition",
+    "def": "Blood is a fluid connective tissue made of plasma and cells (RBCs, WBCs, platelets); blood groups (ABO system) classify blood based on the presence of A and/or B antigens on RBC surfaces.",
+    "points": [
+      "Plasma is the straw-coloured liquid matrix of blood containing water, proteins, nutrients, hormones, and waste products.",
+      "Formed elements include RBCs (carry oxygen via haemoglobin), WBCs (defence/immunity), and platelets (blood clotting).",
+      "ABO blood grouping: Group A has antigen A and antibody anti-B; Group B has antigen B and antibody anti-A.",
+      "Group AB has both antigens A and B but no antibodies, making it the universal recipient.",
+      "Group O has no antigens but both antibodies, making it the universal donor.",
+      "Rh factor: presence of Rh antigen makes blood Rh positive; its absence makes it Rh negative; mismatch can cause agglutination."
+    ],
+    "formula": "Group O = universal donor; Group AB = universal recipient",
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Blood Groups ABO\"] --> B[\"Group A - antigen A\"]\n  A --> C[\"Group B - antigen B\"]\n  A --> D[\"Group AB - both antigens\"]\n  A --> E[\"Group O - no antigens\"]"
+    },
+    "example": "A person with blood group O-negative can donate blood to almost any recipient in an emergency because their RBCs lack both A, B, and Rh antigens.",
+    "tip": "Make a quick table of antigen and antibody present for each of the four ABO groups — this is the most tested format for this topic."
+  },
+  {
+    "t": "ECG and Cardiac Disorders",
+    "def": "An electrocardiogram (ECG) is a graphic recording of the electrical activity of the heart during each cardiac cycle, used to detect cardiac disorders like arrhythmia and heart attack.",
+    "points": [
+      "The ECG shows characteristic waves named P, QRS complex, and T for each heartbeat.",
+      "P wave represents depolarization (contraction) of the atria.",
+      "QRS complex represents depolarization (contraction) of the ventricles.",
+      "T wave represents repolarization (relaxation) of the ventricles.",
+      "Abnormal ECG patterns help diagnose arrhythmia (irregular heartbeat), myocardial infarction (heart attack), and other heart disorders.",
+      "Common cardiac disorders include atherosclerosis (fatty deposits narrowing arteries), hypertension (high blood pressure), and coronary artery disease."
+    ],
+    "formula": "Normal ECG cycle: P wave -> QRS complex -> T wave, repeating every ~0.8 s",
+    "diagram": {
+      "draw": "Draw a horizontal baseline. Draw a small rounded bump labelled 'P wave', followed by a sharp spike pattern (small dip, tall peak, small dip) labelled 'QRS complex', then a rounded bump labelled 'T wave'. Mark the whole sequence as 'One cardiac cycle'."
+    },
+    "example": "In a myocardial infarction (heart attack), the ECG typically shows an abnormally elevated or depressed ST segment, helping doctors diagnose it quickly.",
+    "tip": "Draw the P-QRS-T wave pattern neatly and label which part corresponds to atrial vs ventricular activity — a frequently asked diagram question."
+  }
+]

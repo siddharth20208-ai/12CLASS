@@ -1,0 +1,110 @@
+[
+  {
+    "t": "Order and degree of a differential equation",
+    "def": "The order of a differential equation is the highest derivative present in it, and the degree is the power of that highest derivative after the equation is made free of fractional powers and radicals.",
+    "points": [
+      "Look for the highest derivative term in the equation, such as dy/dx, d^2y/dx^2, etc.",
+      "The order equals the number of times y has been differentiated in that highest term.",
+      "To find the degree, first make sure the equation is a polynomial in all derivatives (no fractional powers, no derivatives inside roots).",
+      "If needed, square or rearrange the equation to remove radicals or fractional powers.",
+      "The degree is then the power to which the highest-order derivative is raised.",
+      "If the equation cannot be made polynomial in derivatives, the degree is said to be not defined."
+    ],
+    "formula": "Order = highest derivative present; Degree = power of highest derivative (after removing radicals/fractions)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Identify highest derivative\"] --> B[\"That gives the order\"]\n  B --> C[\"Clear radicals or fractional powers\"]\n  C --> D[\"Power of highest derivative gives degree\"]"
+    },
+    "example": "For (d^2y/dx^2)^3 + (dy/dx)^2 = x: highest derivative is d^2y/dx^2, so order = 2. It is already polynomial, raised to power 3, so degree = 3.",
+    "tip": "Always clear square roots and fractional powers of derivatives before deciding the degree — a common mistake is skipping this step."
+  },
+  {
+    "t": "Variable separable method",
+    "def": "The variable separable method solves a differential equation by rearranging it so that all terms with y and dy are on one side, and all terms with x and dx are on the other side, then integrating both sides.",
+    "points": [
+      "Write the differential equation in the form dy/dx = f(x) g(y).",
+      "Rearrange so that all y-terms (with dy) go to one side and all x-terms (with dx) go to the other side.",
+      "Integrate both sides separately with respect to their own variables.",
+      "Add a single constant of integration C after integrating (usually written on the x-side).",
+      "Simplify the result to get the general solution relating x and y.",
+      "If initial conditions are given, substitute them to find the particular value of C."
+    ],
+    "formula": "dy/g(y) = f(x) dx  then  ∫dy/g(y) = ∫f(x) dx + C",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Write dy/dx = f x times g y\"] --> B[\"Separate: dy over g y = f x dx\"]\n  B --> C[\"Integrate both sides\"]\n  C --> D[\"Add constant C to get general solution\"]"
+    },
+    "example": "dy/dx = xy. Separate: dy/y = x dx. Integrate: ln|y| = x^2/2 + C, so y = A e^(x^2/2), where A = e^C.",
+    "tip": "After separating, double check that the x side has only x-terms and the y side has only y-terms before integrating."
+  },
+  {
+    "t": "Homogeneous differential equations",
+    "def": "A homogeneous differential equation is one where dy/dx can be written as a function of y/x only; it is solved using the substitution y = vx.",
+    "points": [
+      "Check that dy/dx = F(y/x), meaning the equation depends only on the ratio y/x, not x or y separately.",
+      "Substitute y = vx, so dy/dx = v + x(dv/dx), using the product rule.",
+      "Replace y/x with v and dy/dx with v + x(dv/dx) in the original equation.",
+      "The equation now becomes variable separable in v and x; separate and integrate both sides.",
+      "Integrate to get a relation between v and x, then substitute back v = y/x.",
+      "Simplify to get the final general solution in x and y."
+    ],
+    "formula": "If dy/dx = F(y/x): substitute y = vx, dy/dx = v + x dv/dx, then separate and integrate",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Check dy/dx = F of y/x\"] --> B[\"Substitute y = vx\"]\n  B --> C[\"Get v + x dv/dx = F v\"]\n  C --> D[\"Separate variables v and x\"]\n  D --> E[\"Integrate then replace v by y/x\"]"
+    },
+    "example": "dy/dx = (x^2+y^2)/(xy). Put y=vx: v + x dv/dx = (1+v^2)/v. Simplify to get v dv/(1) = dx/x type separable form, then integrate and resubstitute v = y/x.",
+    "tip": "Always verify homogeneity first by replacing x with kx and y with ky — if the function is unchanged, the equation is homogeneous."
+  },
+  {
+    "t": "Linear differential equations and integrating factor",
+    "def": "A linear differential equation of the first order has the form dy/dx + Py = Q, where P and Q are functions of x only, and it is solved by multiplying with an integrating factor.",
+    "points": [
+      "Write the equation in standard form: dy/dx + Py = Q, where P, Q are functions of x.",
+      "Find the integrating factor (I.F.) using I.F. = e^(∫P dx).",
+      "Multiply the entire equation by the integrating factor; the left side becomes the derivative of (y x I.F.).",
+      "So the equation becomes d/dx (y x I.F.) = Q x I.F.",
+      "Integrate both sides with respect to x: y x I.F. = ∫(Q x I.F.) dx + C.",
+      "Divide by I.F. to get the final solution for y."
+    ],
+    "formula": "dy/dx + Py = Q;  I.F. = e^(∫P dx);  y x I.F. = ∫Q x I.F. dx + C",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Write as dy/dx + Py = Q\"] --> B[\"Find I.F. = e to integral P dx\"]\n  B --> C[\"Multiply equation by I.F.\"]\n  C --> D[\"Integrate: y times I.F. = integral Q I.F. dx + C\"]"
+    },
+    "example": "dy/dx + y/x = x. Here P=1/x, I.F. = e^(ln x) = x. So d/dx(xy) = x^2. Integrate: xy = x^3/3 + C, so y = x^2/3 + C/x.",
+    "tip": "Memorise the exact formula for the integrating factor and the final solution structure — this is a fixed 4-mark pattern question."
+  },
+  {
+    "t": "Formation of differential equations",
+    "def": "Forming a differential equation means starting from a given family of curves (with arbitrary constants) and eliminating those constants by differentiation to get an equation free of constants.",
+    "points": [
+      "Write the given equation of the curve with its arbitrary constant(s), such as y = Ae^x or similar.",
+      "Differentiate the equation as many times as there are arbitrary constants to eliminate.",
+      "If there is one constant, differentiate once; if two constants, differentiate twice.",
+      "Use the original equation and the derivative(s) to eliminate the constant(s) algebraically.",
+      "The remaining equation, containing only x, y, and derivatives (no arbitrary constants), is the required differential equation.",
+      "Double-check that no constant remains in the final answer."
+    ],
+    "formula": "Differentiate n times to eliminate n arbitrary constants from a given family of curves",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Given curve with constant A\"] --> B[\"Differentiate once\"]\n  B --> C[\"Use both equations to eliminate A\"]\n  C --> D[\"Get differential equation free of constants\"]"
+    },
+    "example": "y = A e^(2x). Differentiate: dy/dx = 2A e^(2x) = 2y. So the differential equation is dy/dx = 2y, with A eliminated.",
+    "tip": "Count the arbitrary constants first — that number tells you exactly how many times to differentiate."
+  },
+  {
+    "t": "Applications (growth, decay, cooling)",
+    "def": "Differential equations model real-life situations where the rate of change of a quantity is proportional to the quantity itself, such as population growth, radioactive decay, and Newton's law of cooling.",
+    "points": [
+      "In growth/decay, rate of change of quantity N is proportional to N itself: dN/dt = kN (k>0 for growth, k<0 for decay).",
+      "Solving this variable separable equation gives N = N0 e^(kt), where N0 is the initial amount.",
+      "For Newton's law of cooling, rate of change of temperature T is proportional to the difference between T and surrounding temperature Ts: dT/dt = -k(T - Ts).",
+      "Solve this as a linear/variable separable equation to get T - Ts = (T0 - Ts) e^(-kt).",
+      "Use given initial conditions (value at t=0) to find the constant N0 or T0 and the proportionality constant k.",
+      "Substitute the required time or quantity to answer the specific question asked."
+    ],
+    "formula": "Growth/decay: N = N0 e^(kt)     Newton's cooling: T - Ts = (T0 - Ts) e^(-kt)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Rate of change proportional to quantity\"] --> B[\"Form dN/dt = kN or dT/dt = -k T-Ts\"]\n  B --> C[\"Solve by variable separable method\"]\n  C --> D[\"Apply initial condition to find constants\"]\n  D --> E[\"Answer required value\"]"
+    },
+    "example": "A substance decays with k=0.1 per hour, initial amount 100g. After 10 hours: N = 100 e^(-0.1x10) = 100 e^(-1) ≈ 36.8 g.",
+    "tip": "Always identify which model (growth, decay, or cooling) applies from the wording, then write the correct differential equation before solving."
+  }
+]

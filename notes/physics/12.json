@@ -1,0 +1,97 @@
+[
+  {
+    "t": "AC through resistor, inductor and capacitor",
+    "def": "When alternating voltage is applied separately across a pure resistor, inductor and capacitor, the current shows different phase relationships with the voltage in each case.",
+    "points": [
+      "Across a pure resistor: current is in phase with voltage (v = iR holds at every instant).",
+      "Across a pure inductor: current lags voltage by 90 degrees, because back-EMF (-L di/dt) opposes rapid current change.",
+      "Across a pure capacitor: current leads voltage by 90 degrees, since charge must build up before voltage appears.",
+      "These phase differences come purely from how each element reacts to changing current.",
+      "Understanding each element alone is the base for analysing a series LCR circuit with all three together."
+    ],
+    "formula": "Resistor: v, i in phase.   Inductor: i lags v by 90 deg.   Capacitor: i leads v by 90 deg",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Pure Resistor\"] --> B[\"Current in phase with voltage\"]\n  C[\"Pure Inductor\"] --> D[\"Current lags voltage by 90 degrees\"]\n  E[\"Pure Capacitor\"] --> F[\"Current leads voltage by 90 degrees\"]" },
+    "example": "If v = v0 sin(wt) is applied to a pure capacitor, current is i = i0 sin(wt + pi/2), reaching its peak a quarter cycle before voltage.",
+    "tip": "Remember the mnemonic 'CIVIL': in Capacitor, I leads V; in Inductor, V leads I. This one line secures the phase-direction mark."
+  },
+  {
+    "t": "Reactance and impedance",
+    "def": "Reactance is the opposition offered by a pure inductor or capacitor to AC without dissipating energy, while impedance is the total effective opposition of a circuit combining resistance and reactance.",
+    "points": [
+      "Inductive reactance: XL = w L = 2 pi f L, which increases with frequency.",
+      "Capacitive reactance: XC = 1/(w C) = 1/(2 pi f C), which decreases with frequency.",
+      "Impedance for series LCR: Z = sqrt(R^2 + (XL - XC)^2).",
+      "Current amplitude i0 = v0 / Z.",
+      "Phase angle between voltage and current: phi = tan inverse[(XL - XC)/R].",
+      "Unlike pure resistance, reactive elements store and release energy rather than dissipating it as heat."
+    ],
+    "formula": "XL = 2 pi f L     XC = 1/(2 pi f C)     Z = sqrt(R^2 + (XL-XC)^2)",
+    "diagram": { "draw": "Draw two graphs side by side: one showing XL rising linearly with frequency f, another showing XC falling as a curve with increasing f. Label axes clearly as Reactance vs Frequency." },
+    "example": "For L = 0.1 H, f = 50 Hz: XL = 2 pi x 50 x 0.1 = 31.4 ohm.",
+    "tip": "State units are ohms for reactance/impedance, same as resistance — students often forget this in their final answer."
+  },
+  {
+    "t": "Series LCR circuit and phasors",
+    "def": "A series LCR circuit has a resistor, inductor and capacitor carrying the same current, with voltages across each shown using phasor (rotating vector) diagrams to find total voltage, impedance and phase.",
+    "points": [
+      "Same current I flows through R, L and C since they are in series.",
+      "VR is in phase with current (along current direction in the phasor diagram).",
+      "VL leads current by 90 degrees; VC lags current by 90 degrees.",
+      "Resultant voltage: V = sqrt(VR^2 + (VL - VC)^2).",
+      "If XL > XC, circuit is inductive (voltage leads current); if XC > XL, circuit is capacitive (current leads voltage).",
+      "This phasor method gives impedance Z and phase angle phi used in power and resonance calculations."
+    ],
+    "formula": "V = sqrt(VR^2 + (VL - VC)^2)     tan(phi) = (XL - XC)/R",
+    "diagram": { "draw": "Draw a phasor diagram with current I along the horizontal axis. Draw VR along the same direction as I. Draw VL pointing straight up (90 degrees ahead), and VC pointing straight down (90 degrees behind). Draw the resultant V as a vector combining VR and (VL - VC), label the angle phi between V and I." },
+    "example": "If VR = 30 V, VL = 80 V, VC = 40 V, then V = sqrt(30^2 + (80-40)^2) = sqrt(900+1600) = sqrt(2500) = 50 V.",
+    "tip": "Draw the phasor diagram neatly with VL up, VC down, VR along I — this diagram alone is worth marks in long-answer questions."
+  },
+  {
+    "t": "Resonance in LCR circuit",
+    "def": "Resonance occurs in a series LCR circuit when inductive reactance equals capacitive reactance, making impedance minimum (purely resistive) and current maximum.",
+    "points": [
+      "Resonance condition: XL = XC.",
+      "At resonance, impedance Z = R (its smallest possible value).",
+      "Current is maximum at resonance: I = V/R.",
+      "Resonant angular frequency: w0 = 1/sqrt(LC); resonant frequency f0 = 1/(2 pi sqrt(LC)).",
+      "At resonance, voltage and current are in phase (phi = 0).",
+      "This is used in radio/TV tuning circuits to select a desired frequency and reject others."
+    ],
+    "formula": "f0 = 1 / (2 pi sqrt(LC))",
+    "diagram": { "draw": "Draw a graph with frequency f on the x-axis and current I on the y-axis. Draw a peak-shaped curve that rises to a maximum at f0 (resonant frequency) and falls on either side. Label the peak point as resonance, I = V/R." },
+    "example": "For L = 2 H, C = 8 microfarad: f0 = 1/(2 pi sqrt(2 x 8e-6)) = 1/(2 pi x 4e-3) ≈ 39.8 Hz.",
+    "tip": "Always mention that at resonance Z = R (minimum) and current is maximum — this is the key conceptual line examiners look for."
+  },
+  {
+    "t": "Power in AC circuit and power factor",
+    "def": "Average power in an AC circuit depends on the phase angle between voltage and current, measured by the power factor cos(phi).",
+    "points": [
+      "Average power: Pavg = Vrms Irms cos(phi).",
+      "cos(phi) is called power factor, showing how much of the supplied power is actually used.",
+      "For a pure resistor, phi = 0, so power factor = 1 (maximum useful power).",
+      "For a pure inductor or capacitor, phi = 90 degrees, so power factor = 0 (no net power consumed).",
+      "Low power factor means more current is needed for the same real power, increasing transmission losses.",
+      "Industries use capacitor banks to improve the power factor of inductive loads like motors."
+    ],
+    "formula": "Pavg = Vrms Irms cos(phi)",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Phase angle phi between V and I\"] --> B[\"Power factor = cos phi\"]\n  B --> C[\"Pavg = Vrms Irms cos phi\"]\n  C --> D[\"phi = 0: max power. phi = 90: zero power\"]" },
+    "example": "If Vrms = 200 V, Irms = 5 A, phi = 60 degrees, Pavg = 200 x 5 x cos60 = 1000 x 0.5 = 500 W.",
+    "tip": "Give a real reason for power factor correction (reduces current and transmission losses) — this real-world line earns bonus marks."
+  },
+  {
+    "t": "RMS and peak values",
+    "def": "The RMS value of AC is the equivalent steady DC value that produces the same heating effect, while the peak value is the maximum instantaneous value of the waveform.",
+    "points": [
+      "For i = i0 sin(wt), average of sin^2(wt) over a full cycle is 1/2.",
+      "So RMS current: Irms = i0/sqrt(2) ≈ 0.707 i0; similarly Vrms = v0/sqrt(2).",
+      "Peak value i0 or v0 is the maximum value reached once per cycle, larger than RMS by factor sqrt(2).",
+      "RMS values are used in practice because they relate directly to power/heating, unlike instantaneous values.",
+      "Household mains rating (like 230 V) is always the RMS value, not the peak value.",
+      "Power formula Pavg = Vrms Irms cos(phi) uses RMS values, not peak values."
+    ],
+    "formula": "Irms = i0 / sqrt(2)     Vrms = v0 / sqrt(2)",
+    "diagram": { "draw": "Draw a sine wave of current vs time. Mark the peak value i0 at the top of the curve. Draw a horizontal dashed line at Irms = 0.707 i0, showing it is lower than the peak, labelling both clearly on the same graph." },
+    "example": "If peak voltage v0 = 325 V (typical mains), Vrms = 325/sqrt(2) ≈ 230 V, matching the stated mains voltage.",
+    "tip": "Always connect this topic to the real 230 V mains example — examiners like seeing the practical link."
+  }
+]

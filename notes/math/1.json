@@ -1,0 +1,98 @@
+[
+  {
+    "t": "Elementary row/column transformations",
+    "def": "Elementary transformations are simple operations on rows or columns of a matrix (swap, scale, add a multiple of one row to another) that simplify the matrix without changing the solution of the underlying system.",
+    "points": [
+      "Ri <-> Rj means swap row i and row j.",
+      "Ri -> kRi means multiply row i by a nonzero constant k.",
+      "Ri -> Ri + kRj means add k times row j to row i.",
+      "Use these to convert a matrix step by step into identity form or echelon form.",
+      "The same operations can be done on columns instead of rows.",
+      "Do only one operation per step and write it clearly for full marks."
+    ],
+    "formula": "Ri -> Ri + kRj (most used transformation)",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Original matrix\"] --> B[\"Apply row operation\"]\n  B --> C[\"Simplified matrix\"]\n  C --> D[\"Repeat until goal reached\"]" },
+    "example": "Matrix [[2,4],[1,3]]: apply R1 -> R1 - 2R2 to get [[0,-2],[1,3]], simplifying the first row.",
+    "tip": "Write the operation name (like R1 -> R1 - 2R2) before every step — examiners check this working."
+  },
+  {
+    "t": "Inverse by adjoint method",
+    "def": "The inverse of a matrix A is found as A^-1 = (1/det A) times adj A, where adj A is the transpose of the cofactor matrix of A.",
+    "points": [
+      "First find det A; if det A = 0, inverse does not exist.",
+      "Find the cofactor of every element (minor with sign (-1)^(i+j)).",
+      "Arrange cofactors into the cofactor matrix.",
+      "Take the transpose of the cofactor matrix to get adj A.",
+      "Multiply adj A by 1/det A to get A^-1.",
+      "Always verify A * A^-1 = I if time permits."
+    ],
+    "formula": "A^-1 = (1/det A) adj A",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Matrix A\"] --> B[\"Find det A\"]\n  A --> C[\"Find cofactors\"]\n  C --> D[\"Transpose to get adj A\"]\n  B --> E[\"A inverse = adj A / det A\"]\n  D --> E" },
+    "example": "A = [[2,1],[1,1]]: det A = 1. adj A = [[1,-1],[-1,2]]. A^-1 = [[1,-1],[-1,2]].",
+    "tip": "Show the cofactor matrix step separately before writing adj A — it is a scoring step on its own."
+  },
+  {
+    "t": "Inverse by elementary transformations",
+    "def": "This method finds A^-1 by writing [A | I] side by side and applying row operations until the left block becomes I; the right block then becomes A^-1.",
+    "points": [
+      "Write the matrix A next to the identity matrix I of the same size.",
+      "Apply the same row operation to both sides at every step.",
+      "Aim to make the diagonal entries 1 and off-diagonal entries 0 on the left.",
+      "Once left block is I, the right block gives A^-1.",
+      "If you cannot reduce the left side to I, A is not invertible.",
+      "This method avoids computing determinants and cofactors."
+    ],
+    "formula": "[A | I] -> row operations -> [I | A^-1]",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Write A beside I\"] --> B[\"Apply row operations to both sides\"]\n  B --> C[\"Left side becomes I\"]\n  C --> D[\"Right side is A inverse\"]" },
+    "example": "A = [[1,1],[2,3]]: [A|I] -> R2->R2-2R1 -> [[1,1|1,0],[0,1|-2,1]] -> R1->R1-R2 -> [[1,0|3,-1],[0,1|-2,1]], so A^-1 = [[3,-1],[-2,1]].",
+    "tip": "Write every row operation used in each step on the side — missing steps loses process marks even if the final answer is right."
+  },
+  {
+    "t": "Solving linear equations by matrix method",
+    "def": "A system of linear equations can be written as AX = B, and solved by X = A^-1 B once A^-1 is known.",
+    "points": [
+      "Write the equations in the form AX = B, listing coefficients in A, variables in X, constants in B.",
+      "Check det A is not zero, so A^-1 exists.",
+      "Find A^-1 by adjoint or elementary transformation method.",
+      "Multiply A^-1 by B to get X.",
+      "The entries of X give the values of the variables directly.",
+      "Verify by substituting values back into original equations."
+    ],
+    "formula": "AX = B  =>  X = A^-1 B",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Write as AX = B\"] --> B[\"Find A inverse\"]\n  B --> C[\"Compute X = A inverse times B\"]\n  C --> D[\"Read x, y, z values\"]" },
+    "example": "x + y = 3, x - y = 1: A = [[1,1],[1,-1]], B=[3,1]^T. A^-1 = [[1/2,1/2],[1/2,-1/2]]. X = [2,1]^T, so x=2, y=1.",
+    "tip": "State A, X, B clearly at the start — examiners award a mark just for correct setup."
+  },
+  {
+    "t": "Reduction (echelon) method",
+    "def": "The echelon (reduction) method solves a system by reducing the augmented matrix [A | B] with row operations until the equations become simple enough for back-substitution.",
+    "points": [
+      "Write the augmented matrix [A | B] with coefficients and constants together.",
+      "Use row operations to make zeros below the leading entries (echelon form).",
+      "The bottom rows now give simple equations in fewer variables.",
+      "Solve the simplest equation first, then substitute upward (back-substitution).",
+      "If a row reduces to 0 = nonzero, the system has no solution.",
+      "If a row reduces to 0 = 0, the system has infinitely many solutions."
+    ],
+    "formula": "[A | B] -> row reduce -> echelon form -> back-substitute",
+    "diagram": { "mermaid": "flowchart TD\n  A[\"Augmented matrix A given B\"] --> B[\"Row reduce to echelon form\"]\n  B --> C[\"Solve last variable\"]\n  C --> D[\"Back substitute upward\"]\n  D --> E[\"Get all variable values\"]" },
+    "example": "x+y+z=6, y+2z=5, z=2 (after reduction): from z=2, y=5-4=1, then x=6-1-2=3. Solution x=3,y=1,z=2.",
+    "tip": "Clearly box or underline the echelon form before back-substituting, examiners look for this intermediate step."
+  },
+  {
+    "t": "Properties of inverse",
+    "def": "These are standard rules satisfied by matrix inverses that simplify computation without redoing full inverse calculations.",
+    "points": [
+      "A^-1 exists only when det A is not equal to zero (A is non-singular).",
+      "(A^-1)^-1 = A, the inverse of an inverse gives back the original matrix.",
+      "(AB)^-1 = B^-1 A^-1, note the reversed order.",
+      "(A^T)^-1 = (A^-1)^T, inverse and transpose commute.",
+      "det(A^-1) = 1/det A.",
+      "Identity matrix I is its own inverse: I^-1 = I."
+    ],
+    "formula": "(AB)^-1 = B^-1 A^-1",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"A exists inverse if det A not 0\"] --> B[\"AB inverse equals B inverse times A inverse\"]\n  B --> C[\"Order reverses\"]" },
+    "example": "If A and B are invertible 2x2 matrices, to find (AB)^-1 you compute B^-1 A^-1, not A^-1 B^-1.",
+    "tip": "Quote the exact property name when asked a theory question — half the marks come from stating it correctly."
+  }
+]

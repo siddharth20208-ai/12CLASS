@@ -1,0 +1,112 @@
+[
+  {
+    "q": "The F2 phenotypic ratio obtained in a monohybrid cross according to Mendel's laws is:",
+    "o": [
+      "9:3:3:1",
+      "1:2:1",
+      "1:1",
+      "3:1"
+    ],
+    "a": 3,
+    "why": "Monohybrid cross F2 gives 3 dominant : 1 recessive ratio."
+  },
+  {
+    "q": "A dihybrid cross following independent assortment gives an F2 ratio of:",
+    "o": [
+      "9:3:3:1",
+      "3:1",
+      "1:1:1:1",
+      "9:7"
+    ],
+    "a": 0,
+    "why": "Two independently assorting gene pairs give the classic 9:3:3:1 ratio."
+  },
+  {
+    "q": "Crossing over, which produces recombinant gametes, occurs during:",
+    "o": [
+      "Mitosis",
+      "Meiosis I (prophase)",
+      "Meiosis II",
+      "Fertilization"
+    ],
+    "a": 1,
+    "why": "Crossing over between homologous chromosomes happens at prophase I of meiosis."
+  },
+  {
+    "q": "Morgan's classic linkage experiments demonstrating linked genes used which organism?",
+    "o": [
+      "Pea plant",
+      "E. coli",
+      "Drosophila",
+      "Human"
+    ],
+    "a": 2,
+    "why": "Morgan studied linkage between body colour and wing shape genes in Drosophila."
+  },
+  {
+    "q": "In humans, the sex of a child is determined by the chromosome carried by the:",
+    "o": [
+      "Egg",
+      "Y of the mother",
+      "Mitochondria",
+      "Sperm"
+    ],
+    "a": 3,
+    "why": "The egg always carries X; sperm carries X or Y, so the father determines sex."
+  },
+  {
+    "q": "In the bird ZW sex-determination system, males have the genotype:",
+    "o": [
+      "ZZ",
+      "XX",
+      "ZW",
+      "XY"
+    ],
+    "a": 0,
+    "why": "In birds, males are ZZ and females are ZW, reversed from the human XY system."
+  },
+  {
+    "q": "An X-linked recessive disorder like haemophilia appears mostly in:",
+    "o": [
+      "Females",
+      "Males",
+      "Equally in both sexes",
+      "Only in carrier females"
+    ],
+    "a": 1,
+    "why": "Recessive X-linked traits show up mainly in males since they have only one X allele."
+  },
+  {
+    "q": "A karyotype of 47 chromosomes with trisomy of chromosome 21 indicates:",
+    "o": [
+      "Turner syndrome",
+      "Klinefelter syndrome",
+      "Down syndrome",
+      "Normal karyotype"
+    ],
+    "a": 2,
+    "why": "Down syndrome is caused by an extra copy (trisomy) of chromosome 21."
+  },
+  {
+    "q": "A person with karyotype 45,X has:",
+    "o": [
+      "Klinefelter syndrome",
+      "Normal female karyotype",
+      "Down syndrome",
+      "Turner syndrome"
+    ],
+    "a": 3,
+    "why": "Turner syndrome results from a missing X chromosome, giving karyotype 45,X."
+  },
+  {
+    "q": "A child with blood group AB has genotype IAIB, which demonstrates the concept of:",
+    "o": [
+      "Codominance",
+      "Complete dominance",
+      "Epistasis",
+      "Linkage"
+    ],
+    "a": 0,
+    "why": "Both IA and IB alleles express together (both antigens present), showing codominance."
+  }
+]

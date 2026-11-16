@@ -1,0 +1,111 @@
+[
+  {
+    "t": "Diffusion and Osmosis",
+    "def": "Diffusion is the movement of particles from a region of higher concentration to a region of lower concentration. Osmosis is a special case of diffusion where only water molecules move through a semi-permeable membrane from a region of higher water potential to lower water potential.",
+    "points": [
+      "Diffusion needs no membrane and no energy; it continues till concentration becomes equal everywhere.",
+      "Osmosis occurs only across a semi-permeable membrane, which allows water but not solute to pass.",
+      "Water moves from a dilute (high water potential) solution to a concentrated (low water potential) solution.",
+      "Endosmosis: water enters a cell placed in a hypotonic solution, cell swells.",
+      "Exosmosis: water leaves a cell placed in a hypertonic solution, cell shrinks.",
+      "In an isotonic solution there is no net movement of water, cell size stays the same.",
+      "Osmosis is important for water absorption by roots and turgidity of cells."
+    ],
+    "formula": "Water potential, Psi(w) = Psi(s) + Psi(p) (solute potential + pressure potential)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Hypotonic solution\"] --> B[\"Water moves in\"]\n  B --> C[\"Cell swells - Endosmosis\"]\n  D[\"Hypertonic solution\"] --> E[\"Water moves out\"]\n  E --> F[\"Cell shrinks - Exosmosis\"]"
+    },
+    "example": "A raisin kept in plain water swells up because water enters it by endosmosis, since the raisin's cell contents are hypertonic to the surrounding water.",
+    "tip": "Clearly distinguish diffusion from osmosis in a two-point table and mention the semi-permeable membrane condition for full marks."
+  },
+  {
+    "t": "Water Potential Components",
+    "def": "Water potential (Psi(w)) is the free energy of water per unit volume, which determines the direction of water movement; it is the sum of solute potential and pressure potential.",
+    "points": [
+      "Solute potential (Psi(s)) is always negative; it decreases as solute concentration increases.",
+      "Pressure potential (Psi(p)) is usually positive; it is the turgor pressure developed inside the cell wall.",
+      "Formula: Psi(w) = Psi(s) + Psi(p).",
+      "Pure water has water potential equal to zero (taken as reference).",
+      "Water always moves from higher (less negative) to lower (more negative) water potential.",
+      "At full turgidity, Psi(p) equals the magnitude of Psi(s), so Psi(w) becomes zero and water movement stops."
+    ],
+    "formula": "Psi(w) = Psi(s) + Psi(p)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Solute potential - negative\"] --> C[\"Water potential\"]\n  B[\"Pressure potential - positive\"] --> C\n  C --> D[\"Water moves to lower water potential\"]"
+    },
+    "example": "If Psi(s) = -8 bar and Psi(p) = +5 bar, then Psi(w) = -8 + 5 = -3 bar.",
+    "tip": "Always write the formula first and state sign conventions (Psi(s) negative, Psi(p) positive) — examiners check this specifically."
+  },
+  {
+    "t": "Plasmolysis",
+    "def": "Plasmolysis is the shrinking of the protoplasm away from the cell wall when a plant cell is placed in a hypertonic solution and loses water by exosmosis.",
+    "points": [
+      "Occurs when a living plant cell is kept in a strongly hypertonic (concentrated) solution.",
+      "Water moves out of the cell by exosmosis, following the water potential gradient.",
+      "The protoplast shrinks and separates from the rigid cell wall, which does not shrink.",
+      "This stage is called plasmolysis; the cell appears flaccid.",
+      "If the cell is then placed in water, water re-enters and the protoplast expands again — this is called deplasmolysis.",
+      "Plasmolysis proves that the cell membrane is living and semi-permeable."
+    ],
+    "formula": "Exosmosis occurs when cell's Psi(w) is higher than outside solution's Psi(w)",
+    "diagram": {
+      "draw": "Draw a plant cell with a thick rectangular cell wall. Inside, draw the protoplast (cytoplasm with nucleus) shrunk away from the wall, leaving a gap. Label 'Cell wall', 'Shrunken protoplast', and 'Gap filled with external solution'."
+    },
+    "example": "An onion peel kept in 10% salt solution shows plasmolysed cells under a microscope within a few minutes.",
+    "tip": "Mention that plasmolysis is reversible (deplasmolysis) — this extra point often fetches a bonus mark."
+  },
+  {
+    "t": "Absorption of Water by Roots",
+    "def": "Absorption of water by roots is the process by which root hairs take up soil water and pass it inward to the xylem, mainly through osmosis and the apoplast/symplast pathways.",
+    "points": [
+      "Root hairs increase the surface area for absorption and are in close contact with soil water.",
+      "Water enters root hair cells by osmosis because cell sap has lower (more negative) water potential than soil water.",
+      "Apoplast pathway: water moves through cell walls and intercellular spaces without crossing membranes.",
+      "Symplast pathway: water moves from cell to cell through cytoplasm via plasmodesmata.",
+      "At the endodermis, the Casparian strip blocks the apoplast path, forcing water through the symplast (membrane).",
+      "Water finally reaches the xylem vessels and moves upward."
+    ],
+    "formula": "Water moves from higher Psi(w) in soil to lower Psi(w) in root cells",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Soil water\"] --> B[\"Root hair\"]\n  B --> C[\"Cortex - apoplast and symplast\"]\n  C --> D[\"Endodermis - Casparian strip\"]\n  D --> E[\"Xylem vessel\"]"
+    },
+    "example": "Root hairs of a wheat seedling absorb soil water which travels through cortex cells and endodermis to reach the central xylem within minutes of watering.",
+    "tip": "Draw the apoplast vs symplast pathway diagram and label the Casparian strip clearly — this is a favourite diagram question."
+  },
+  {
+    "t": "Ascent of Sap (Cohesion-Tension Theory)",
+    "def": "Ascent of sap is the upward movement of water and minerals from roots to leaves through the xylem, best explained by the cohesion-tension theory.",
+    "points": [
+      "Transpiration from leaf surfaces creates a pull (tension) that is transmitted down the water column in the xylem.",
+      "Water molecules are held together by cohesion (hydrogen bonding), forming a continuous unbroken water column.",
+      "Water molecules also adhere to the walls of the narrow xylem vessels (adhesion), helping maintain the column.",
+      "Because of cohesion and adhesion, the tension created at the top pulls water all the way up from the roots.",
+      "This theory explains how water rises even in very tall trees without using metabolic energy.",
+      "Root pressure assists only in short plants and mainly at night when transpiration is low."
+    ],
+    "formula": "Transpiration pull = Cohesion + Adhesion + Tension in the continuous water column",
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Transpiration from leaf\"] --> B[\"Creates tension/pull\"]\n  B --> C[\"Pull transmitted down xylem\"]\n  C --> D[\"Cohesion keeps water column unbroken\"]\n  D --> E[\"Water rises from root to leaf\"]"
+    },
+    "example": "In a tall tree 30 m high, the cohesion-tension mechanism alone can pull water upward without the plant spending ATP, powered purely by transpiration.",
+    "tip": "Name the three components — cohesion, adhesion, tension — explicitly; examiners award separate marks for each term."
+  },
+  {
+    "t": "Transpiration and Stomatal Mechanism",
+    "def": "Transpiration is the loss of water vapour from aerial plant parts, mostly through stomata, and is regulated by the opening and closing of guard cells.",
+    "points": [
+      "Stomata are small pores on the leaf surface surrounded by two guard cells.",
+      "According to the K+ ion theory, guard cells actively accumulate potassium ions in daylight.",
+      "This lowers the water potential of guard cells, so water enters them by osmosis.",
+      "Guard cells become turgid; their thicker inner wall bows outward, opening the stomatal pore.",
+      "At night or under water stress, K+ ions move out, guard cells lose turgor, and the pore closes.",
+      "Transpiration helps in water movement, cooling the leaf, and mineral transport, but also causes water loss."
+    ],
+    "formula": "High K+ in guard cells -> low Psi(w) -> water enters -> turgid guard cells -> stomata open",
+    "diagram": {
+      "draw": "Draw two bean-shaped guard cells facing each other with a stomatal pore between them. Show the inner wall (facing the pore) thicker than the outer wall. Label 'Guard cell', 'Stomatal pore', 'Thick inner wall', 'Thin outer wall', and 'K+ ions'."
+    },
+    "example": "On a sunny day, stomata of a potted plant stay open for photosynthesis, but the plant also loses a measurable amount of water as transpiration, visible as fogging under a bell jar experiment.",
+    "tip": "Use the K+ ion theory, not the old starch-sugar theory, as the accepted mechanism — HSC answer keys expect this."
+  }
+]

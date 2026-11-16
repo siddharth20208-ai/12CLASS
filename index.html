@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iQClass 12 — Class 12 Study Companion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=9" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#/">iQ<span>Class</span> 12</a>
+    <div class="boardsw">
+      <button data-board="cbse">CBSE</button>
+      <button data-board="hsc">Maharashtra HSC</button>
+    </div>
+    <nav class="links">
+      <a href="#/plan">📅 My Plan</a>
+      <a href="#/physics">Physics</a>
+      <a href="#/chemistry">Chemistry</a>
+      <a href="#/biology">Biology</a>
+      <a href="#/math">Math</a>
+    </nav>
+  </header>
+
+  <main id="app"></main>
+
+  <footer class="foot">
+    <p>iQClass 12 · Class 12 study companion · CBSE & Maharashtra HSC · Learn better, prepare smarter.</p>
+  </footer>
+
+  <script src="data.js?v=9"></script>
+  <script src="hsc-physics.js?v=9"></script>
+  <script src="hsc-chemistry.js?v=9"></script>
+  <script src="hsc-biology.js?v=9"></script>
+  <script src="hsc-math.js?v=9"></script>
+  <script src="boards.js?v=9"></script>
+  <script src="notes.js?v=9"></script>
+  <script src="links.js?v=9"></script>
+  <script src="progress.js?v=9"></script>
+  <script src="quiz.js?v=9"></script>
+  <script src="sums.js?v=9"></script>
+  <script src="formulas.js?v=9"></script>
+  <script src="weightage.js?v=9"></script>
+  <script src="pattern.js?v=9"></script>
+  <script src="plan.js?v=9"></script>
+  <script src="core.js?v=9"></script>
+  <script src="views.js?v=9"></script>
+  <script src="views2.js?v=9"></script>
+  <script src="views3.js?v=9"></script>
+  <script src="app.js?v=9"></script>
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: false, theme: "default" });
+    window.mermaid = mermaid;
+  </script>
+</body>
+</html>

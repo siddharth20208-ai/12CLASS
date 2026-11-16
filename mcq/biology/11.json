@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Restriction enzymes act on DNA by:",
+    "o": [
+      "Joining two DNA strands permanently",
+      "Translating DNA into protein",
+      "Replicating DNA",
+      "Cutting DNA at specific recognition sequences"
+    ],
+    "a": 3,
+    "why": "Restriction endonucleases recognize and cut specific DNA sequences, creating sticky ends."
+  },
+  {
+    "q": "Which of the following is a commonly used restriction enzyme?",
+    "o": [
+      "EcoRI",
+      "DNA polymerase",
+      "RNA polymerase",
+      "Ligase"
+    ],
+    "a": 0,
+    "why": "EcoRI is a widely used restriction enzyme in recombinant DNA technology."
+  },
+  {
+    "q": "A vector used in genetic engineering must be able to:",
+    "o": [
+      "Destroy the host cell",
+      "Replicate independently inside the host and carry a marker gene",
+      "Prevent all DNA replication",
+      "Only work in plants"
+    ],
+    "a": 1,
+    "why": "A good vector self-replicates in the host and has a selectable marker gene."
+  },
+  {
+    "q": "PCR (Polymerase Chain Reaction) is primarily used to:",
+    "o": [
+      "Separate DNA fragments by size",
+      "Cut DNA at specific sites",
+      "Amplify a specific DNA segment into many copies",
+      "Destroy unwanted DNA"
+    ],
+    "a": 2,
+    "why": "PCR exponentially amplifies a target DNA sequence using repeated cycles."
+  },
+  {
+    "q": "Gel electrophoresis separates DNA fragments mainly based on their:",
+    "o": [
+      "Colour",
+      "Smell",
+      "Temperature",
+      "Size (and charge), smaller fragments move farther"
+    ],
+    "a": 3,
+    "why": "In an electric field, smaller DNA fragments move faster through the gel matrix."
+  },
+  {
+    "q": "Bt cotton is genetically modified to resist:",
+    "o": [
+      "Bollworm (insect pests)",
+      "Drought only",
+      "Cold weather",
+      "Fungal rot only"
+    ],
+    "a": 0,
+    "why": "Bt cotton expresses a toxin gene from Bacillus thuringiensis that kills bollworm larvae."
+  },
+  {
+    "q": "Gene therapy aims to treat genetic disorders by:",
+    "o": [
+      "Removing all genes from a cell",
+      "Inserting a correct/functional gene to replace a defective one",
+      "Destroying the patient's immune system",
+      "Using only drugs, never genes"
+    ],
+    "a": 1,
+    "why": "Gene therapy corrects genetic disease by introducing a normal copy of the defective gene."
+  },
+  {
+    "q": "If two sticky ends are to join successfully, the DNA fragments must have been cut by:",
+    "o": [
+      "Different restriction enzymes",
+      "DNA polymerase only",
+      "The same restriction enzyme",
+      "Heat treatment only"
+    ],
+    "a": 2,
+    "why": "Identical restriction enzymes produce complementary sticky ends that can base-pair and join."
+  },
+  {
+    "q": "The first step of recombinant DNA technology typically involves:",
+    "o": [
+      "Inserting the gene directly into the organism's body",
+      "Sequencing the entire genome",
+      "Cloning the whole organism",
+      "Isolating the desired gene and the vector DNA"
+    ],
+    "a": 3,
+    "why": "Recombinant DNA technology begins with isolation of the gene of interest and a suitable vector."
+  },
+  {
+    "q": "GM crops like Bt cotton are called 'genetically modified' because they contain:",
+    "o": [
+      "A foreign gene inserted from another organism",
+      "No DNA at all",
+      "Only mutated native genes",
+      "Artificial chromosomes with no genes"
+    ],
+    "a": 0,
+    "why": "GM crops carry a gene transferred from a different organism, giving a new trait."
+  }
+]

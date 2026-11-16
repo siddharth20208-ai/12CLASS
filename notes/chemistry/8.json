@@ -1,0 +1,97 @@
+[
+  {
+    "t": "Ligands and coordination number",
+    "def": "A ligand is an ion or molecule that donates a pair of electrons to a central metal atom/ion to form a coordinate bond. Coordination number is the total number of such donor atoms directly bonded to the central metal.",
+    "points": [
+      "Ligands have at least one lone pair of electrons to donate (Lewis base), metal is Lewis acid.",
+      "Unidentate ligands donate through one atom, e.g. Cl-, NH3, H2O.",
+      "Bidentate ligands donate through two atoms, e.g. ethylenediamine (en), oxalate (ox).",
+      "Polydentate ligands donate through many atoms, e.g. EDTA (hexadentate).",
+      "Ambidentate ligands can bond through either of two different atoms, e.g. SCN- (via S or N).",
+      "Coordination number = number of sigma bonds between ligands and central metal, e.g. [Co(NH3)6]3+ has CN = 6.",
+      "Common coordination numbers are 4 (tetrahedral/square planar) and 6 (octahedral)."
+    ],
+    "formula": "CN = number of donor atoms bonded to central metal",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Ligand type\"] --> B[\"Unidentate - one donor atom\"]\n  A --> C[\"Bidentate - two donor atoms\"]\n  A --> D[\"Polydentate - many donor atoms\"]\n  A --> E[\"Ambidentate - two possible donor atoms\"]" },
+    "example": "[Ni(CO)4]: Ni is central metal, CO is unidentate ligand, coordination number = 4 (tetrahedral geometry).",
+    "tip": "State the definition, give one example of each ligand type, and clearly write the coordination number with geometry for full marks."
+  },
+  {
+    "t": "IUPAC nomenclature",
+    "def": "IUPAC nomenclature of coordination compounds follows fixed rules to name the ligands first (in alphabetical order), then the central metal with its oxidation state in Roman numerals.",
+    "points": [
+      "Name ligands in alphabetical order before the metal name, regardless of charge.",
+      "Anionic ligands end in 'o' (chloro, cyano, oxalato); neutral ligands keep usual name (ammine for NH3, aqua for H2O, carbonyl for CO).",
+      "Use prefixes di, tri, tetra for simple ligands; bis, tris for complex/bidentate ligand names.",
+      "If the complex ion is an anion, the metal name ends in '-ate'.",
+      "Oxidation state of the metal is written in Roman numerals in brackets right after the metal name.",
+      "Cation is named before anion in the full compound name, just like simple salts."
+    ],
+    "formula": "Name = (ligands alphabetically) + (metal) + (oxidation state in Roman numerals)",
+    "diagram": { "mermaid": "flowchart TD\n  A[\"Write ligands alphabetically\"] --> B[\"Add prefix for number of ligands\"]\n  B --> C[\"Write metal name\"]\n  C --> D[\"Add -ate if complex is anion\"]\n  D --> E[\"Write oxidation state in brackets\"]" },
+    "example": "[Co(NH3)4Cl2]Cl is named tetraamminedichloridocobalt(III) chloride.",
+    "tip": "Practice naming 5-6 standard complexes both ways (formula to name and name to formula) - this is asked almost every year."
+  },
+  {
+    "t": "Isomerism in coordination compounds",
+    "def": "Isomerism in coordination compounds occurs when two or more compounds have the same formula but different arrangement of ligands, leading to different properties.",
+    "points": [
+      "Structural isomerism arises from different bonding patterns: ionisation, linkage, coordination, and hydrate isomerism.",
+      "Ionisation isomers give different ions in solution, e.g. [Co(NH3)5Br]SO4 and [Co(NH3)5SO4]Br.",
+      "Linkage isomerism occurs with ambidentate ligands like SCN-, which can bind through S or N.",
+      "Stereoisomerism includes geometrical isomerism (cis-trans) in square planar and octahedral complexes.",
+      "Optical isomerism occurs when a complex and its mirror image are non-superimposable (chiral), common in octahedral complexes with bidentate ligands.",
+      "Geometrical isomers differ in physical/chemical properties even though bonds are the same, only arrangement differs."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Isomerism\"] --> B[\"Structural - ionisation, linkage, coordination\"]\n  A --> C[\"Stereoisomerism\"]\n  C --> D[\"Geometrical - cis and trans\"]\n  C --> E[\"Optical - mirror images\"]" },
+    "example": "[Pt(NH3)2Cl2] square planar complex has cis form (two Cl adjacent) and trans form (two Cl opposite) as geometrical isomers.",
+    "tip": "Draw the cis and trans structures clearly with labels - diagram-based questions on this topic carry good marks."
+  },
+  {
+    "t": "Valence Bond Theory (VBT)",
+    "def": "Valence Bond Theory explains the bonding, geometry and magnetic nature of coordination compounds using hybridisation of the metal's orbitals to accept ligand electron pairs.",
+    "points": [
+      "Central metal ion uses hybrid orbitals (sp3, dsp2, sp3d2, d2sp3) to accept lone pairs from ligands.",
+      "If inner (n-1)d orbitals are used for hybridisation, complex is called inner orbital/low spin complex.",
+      "If outer nd orbitals are used, complex is called outer orbital/high spin complex.",
+      "Strong field (low spin) complexes pair up electrons, often making them diamagnetic.",
+      "Weak field (high spin) complexes keep electrons unpaired, making them paramagnetic.",
+      "Geometry is decided by the type of hybridisation: sp3 gives tetrahedral, dsp2 gives square planar, sp3d2/d2sp3 give octahedral."
+    ],
+    "formula": "Hybridisation types: sp3 (tetrahedral), dsp2 (square planar), sp3d2 or d2sp3 (octahedral)",
+    "diagram": { "mermaid": "flowchart TD\n  A[\"Metal ion orbitals\"] --> B[\"Hybridise with ligand lone pairs\"]\n  B --> C[\"Inner d orbitals used - low spin\"]\n  B --> D[\"Outer d orbitals used - high spin\"]\n  C --> E[\"Often diamagnetic\"]\n  D --> F[\"Often paramagnetic\"]" },
+    "example": "[Ni(CN)4]2-: Ni2+ uses dsp2 hybridisation, square planar, diamagnetic (all electrons paired due to strong CN- field).",
+    "tip": "Always connect hybridisation to geometry AND magnetic behaviour in your answer - examiners look for all three."
+  },
+  {
+    "t": "Crystal Field Theory (CFT)",
+    "def": "Crystal Field Theory explains bonding in coordination compounds as a purely electrostatic interaction between the central metal ion and the ligands, which splits the d-orbitals into different energy levels.",
+    "points": [
+      "In an octahedral field, the five degenerate d orbitals split into two sets: lower energy t2g (3 orbitals) and higher energy eg (2 orbitals).",
+      "The energy gap between t2g and eg is called crystal field splitting energy, denoted delta-o.",
+      "Strong field ligands (like CN-, CO) cause large splitting, giving low spin complexes.",
+      "Weak field ligands (like F-, H2O) cause small splitting, giving high spin complexes.",
+      "In tetrahedral complexes, splitting pattern is reversed and smaller: e set lower, t2 set higher.",
+      "Electrons fill according to Hund's rule balanced against the crystal field splitting energy (pairing energy vs delta-o)."
+    ],
+    "formula": "Octahedral splitting: delta-o separates t2g (lower) and eg (higher) orbitals",
+    "diagram": { "draw": "Draw two horizontal energy levels. Draw a dashed horizontal line below both labelled 'average energy of d orbitals'. Draw the lower level with 3 small boxes labelled t2g below the dashed line. Draw the upper level with 2 small boxes labelled eg above the dashed line. Mark the vertical gap between them with an arrow labelled delta-o." },
+    "example": "[CoF6]3-: F- is weak field ligand, small delta-o, electrons spread out (high spin), 4 unpaired electrons, paramagnetic.",
+    "tip": "Draw the t2g-eg splitting diagram neatly with delta-o marked - this diagram alone often fetches 1-2 marks."
+  },
+  {
+    "t": "Applications of coordination compounds",
+    "def": "Coordination compounds are used widely in analytical chemistry, extraction of metals, biological systems and medicine because of their unique bonding and selective reactivity.",
+    "points": [
+      "Used in qualitative/quantitative analysis, e.g. Ni2+ detected as red precipitate with DMG (dimethylglyoxime).",
+      "EDTA (a hexadentate ligand) is used to estimate hardness of water and to treat heavy metal poisoning.",
+      "Used in extraction of metals, e.g. silver and gold are extracted as cyanide complexes [Ag(CN)2]-.",
+      "Biological systems use coordination compounds: haemoglobin (iron complex) carries oxygen, chlorophyll (magnesium complex) helps photosynthesis.",
+      "Coordination compounds like cisplatin [Pt(NH3)2Cl2] (cis isomer) are used as anti-cancer drugs.",
+      "Electroplating uses complex ions to get smooth, uniform metal deposits."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Coordination compounds\"] --> B[\"Analysis - Ni-DMG test\"]\n  A --> C[\"Metal extraction - Ag and Au cyanide complex\"]\n  A --> D[\"Biology - haemoglobin, chlorophyll\"]\n  A --> E[\"Medicine - cisplatin anti-cancer drug\"]" },
+    "example": "Hardness of water is estimated by titrating Ca2+ and Mg2+ ions against EDTA solution using an indicator.",
+    "tip": "List at least 4 different application areas with one specific example each - breadth of answer earns more marks than depth on one point."
+  }
+]

@@ -1,0 +1,153 @@
+{
+  "solved": [
+    {
+      "topic": "Faraday's law - EMF from flux change",
+      "marks": 2,
+      "q": "A coil of 100 turns has magnetic flux through it changing from 0.01 Wb to 0.04 Wb in 0.5 s. Find the magnitude of the induced EMF.",
+      "steps": [
+        "Given: N = 100, phi1 = 0.01 Wb, phi2 = 0.04 Wb, dt = 0.5 s.",
+        "Formula: e = N d(phi)/dt (magnitude).",
+        "Change in flux: d(phi) = phi2 - phi1 = 0.04 - 0.01 = 0.03 Wb.",
+        "Substitution: e = 100 x (0.03/0.5).",
+        "Calculation: e = 100 x 0.06 = 6 V.",
+        "Answer: induced EMF = 6 V."
+      ],
+      "ans": "6 V"
+    },
+    {
+      "topic": "Motional EMF - rod on rails",
+      "marks": 2,
+      "q": "A straight conducting rod of length 1.5 m moves with a velocity of 8 m/s perpendicular to a uniform magnetic field of 0.4 T, with the rod, field and velocity mutually perpendicular. Find the motional EMF induced across the rod.",
+      "steps": [
+        "Given: L = 1.5 m, v = 8 m/s, B = 0.4 T.",
+        "Formula: e = B L v.",
+        "Substitution: e = 0.4 x 1.5 x 8.",
+        "Calculation: 0.4 x 1.5 = 0.6; 0.6 x 8 = 4.8.",
+        "Answer: motional EMF = 4.8 V."
+      ],
+      "ans": "4.8 V"
+    },
+    {
+      "topic": "EMF in a rotating coil (AC generator)",
+      "marks": 3,
+      "q": "A coil of 50 turns and area 0.02 m^2 rotates with a frequency of 50 Hz in a uniform magnetic field of 0.5 T, with the axis of rotation perpendicular to the field. Find the maximum EMF induced (use pi = 3.142).",
+      "steps": [
+        "Given: N = 50, A = 0.02 m^2, B = 0.5 T, f = 50 Hz.",
+        "Formula: e_max = N B A omega, where omega = 2 pi f.",
+        "Substitution for omega: omega = 2 x 3.142 x 50 = 314.2 rad/s.",
+        "Substitution for e_max: e_max = 50 x 0.5 x 0.02 x 314.2.",
+        "Calculation: 50 x 0.5 = 25; 25 x 0.02 = 0.5; 0.5 x 314.2 = 157.1.",
+        "Answer: maximum EMF = 157.1 V."
+      ],
+      "ans": "157.1 V"
+    },
+    {
+      "topic": "Self inductance of a solenoid",
+      "marks": 3,
+      "q": "A long solenoid has 2000 turns per metre, cross-sectional area 4 x 10^-4 m^2 and length 0.5 m, with air as the core. Find its self inductance. (mu0 = 4 pi x 10^-7 T m/A)",
+      "steps": [
+        "Given: n = 2000 turns/m, A = 4 x 10^-4 m^2, l = 0.5 m, mu0 = 4 pi x 10^-7.",
+        "Formula: L = mu0 n^2 A l.",
+        "Substitution: L = (4 pi x 10^-7) x (2000)^2 x (4 x 10^-4) x 0.5.",
+        "Calculation: n^2 = 4 x 10^6; mu0 n^2 = 4 pi x 10^-7 x 4 x 10^6 = 16 pi x 10^-1 = 1.6 pi.",
+        "Calculation: A l = 4 x 10^-4 x 0.5 = 2 x 10^-4; L = 1.6 pi x 2 x 10^-4 = 3.2 pi x 10^-4.",
+        "Calculation: with pi = 3.142, L = 3.2 x 3.142 x 10^-4 = 10.05 x 10^-4 H.",
+        "Answer: L = 1.005 x 10^-3 H (approx 1 mH)."
+      ],
+      "ans": "approx 1.005 x 10^-3 H"
+    },
+    {
+      "topic": "Self-induced EMF (e = -L dI/dt)",
+      "marks": 2,
+      "q": "The current through a coil of self inductance 0.5 H increases uniformly from 2 A to 10 A in 0.4 s. Find the magnitude of the self-induced EMF.",
+      "steps": [
+        "Given: L = 0.5 H, I1 = 2 A, I2 = 10 A, dt = 0.4 s.",
+        "Formula: e = L dI/dt (magnitude).",
+        "Change in current: dI = I2 - I1 = 10 - 2 = 8 A.",
+        "Substitution: e = 0.5 x (8/0.4).",
+        "Calculation: 8/0.4 = 20; e = 0.5 x 20 = 10.",
+        "Answer: self-induced EMF = 10 V."
+      ],
+      "ans": "10 V"
+    },
+    {
+      "topic": "Mutual inductance (e2 = -M dI1/dt)",
+      "marks": 3,
+      "q": "Two coils have a mutual inductance of 0.2 H. The current in the primary coil decreases from 5 A to 1 A in 0.02 s. Find the EMF induced in the secondary coil.",
+      "steps": [
+        "Given: M = 0.2 H, I1(initial) = 5 A, I1(final) = 1 A, dt = 0.02 s.",
+        "Formula: e2 = M dI1/dt (magnitude).",
+        "Change in current: dI1 = 1 - 5 = -4 A, so magnitude = 4 A.",
+        "Substitution: e2 = 0.2 x (4/0.02).",
+        "Calculation: 4/0.02 = 200; e2 = 0.2 x 200 = 40.",
+        "Answer: induced EMF in secondary coil = 40 V."
+      ],
+      "ans": "40 V"
+    },
+    {
+      "topic": "Energy stored in an inductor",
+      "marks": 2,
+      "q": "An inductor of self inductance 4 H carries a steady current of 2.5 A. Find the energy stored in its magnetic field.",
+      "steps": [
+        "Given: L = 4 H, I = 2.5 A.",
+        "Formula: U = (1/2) L I^2.",
+        "Substitution: U = 0.5 x 4 x (2.5)^2.",
+        "Calculation: (2.5)^2 = 6.25; 0.5 x 4 = 2; U = 2 x 6.25 = 12.5.",
+        "Answer: energy stored = 12.5 J."
+      ],
+      "ans": "12.5 J"
+    },
+    {
+      "topic": "Charge induced due to flux change",
+      "marks": 4,
+      "q": "A coil of 100 turns and area 0.02 m^2 is withdrawn from a uniform magnetic field of 0.8 T so that the flux through it falls to zero. If the coil is connected to a galvanometer circuit of total resistance 5 ohm, find the total charge that flows through the circuit.",
+      "steps": [
+        "Given: N = 100, A = 0.02 m^2, B = 0.8 T, R = 5 ohm, final flux = 0.",
+        "Formula: induced charge q = N d(phi)/R, where d(phi) = B A (initial flux per turn, since final flux is zero).",
+        "Flux per turn initially: phi = B A = 0.8 x 0.02 = 0.016 Wb.",
+        "Substitution: q = N phi / R = 100 x 0.016 / 5.",
+        "Calculation: 100 x 0.016 = 1.6; q = 1.6/5 = 0.32.",
+        "Answer: total charge flowing through the circuit = 0.32 C."
+      ],
+      "ans": "0.32 C"
+    }
+  ],
+  "practice": [
+    {
+      "topic": "Faraday's law - EMF from flux change",
+      "q": "A coil of 150 turns has flux through it changing from 0.02 Wb to 0.08 Wb in 0.2 s. Find the induced EMF.",
+      "hint": "Use e = N d(phi)/dt with d(phi) = phi2 - phi1.",
+      "ans": "45 V"
+    },
+    {
+      "topic": "Motional EMF - rod on rails",
+      "q": "A rod of length 2 m moves with velocity 5 m/s perpendicular to a magnetic field of 0.3 T. Find the EMF induced across the rod.",
+      "hint": "Use e = B L v.",
+      "ans": "3 V"
+    },
+    {
+      "topic": "Self inductance of a solenoid",
+      "q": "A solenoid has 1000 turns per metre, cross-sectional area 2 x 10^-4 m^2 and length 1 m. Find its self inductance (mu0 = 4 pi x 10^-7 T m/A, use pi = 3.142).",
+      "hint": "Use L = mu0 n^2 A l.",
+      "ans": "approx 2.51 x 10^-4 H"
+    },
+    {
+      "topic": "Mutual inductance",
+      "q": "Two coils have mutual inductance 0.1 H. Current in the primary changes by 6 A in 0.03 s. Find the EMF induced in the secondary coil.",
+      "hint": "Use e2 = M dI1/dt.",
+      "ans": "20 V"
+    },
+    {
+      "topic": "Energy stored in an inductor",
+      "q": "An inductor of self inductance 3 H carries a current of 4 A. Find the energy stored in its magnetic field.",
+      "hint": "Use U = (1/2) L I^2.",
+      "ans": "24 J"
+    },
+    {
+      "topic": "Charge induced due to flux change",
+      "q": "A coil of 200 turns and area 0.01 m^2 is removed from a uniform field of 0.5 T so that flux falls to zero. The circuit resistance is 4 ohm. Find the charge that flows.",
+      "hint": "Use q = N B A / R.",
+      "ans": "0.25 C"
+    }
+  ]
+}

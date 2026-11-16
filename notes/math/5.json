@@ -1,0 +1,98 @@
+[
+  {
+    "t": "Vector and Cartesian equation of a line",
+    "def": "A line in 3D can be written vectorially using a point and direction vector, or in Cartesian form using direction ratios.",
+    "points": [
+      "Vector form: r = a + t*b, where a is a point on the line and b is the direction vector.",
+      "Cartesian form: (x-x1)/l = (y-y1)/m = (z-z1)/n, using point (x1,y1,z1) and direction ratios l,m,n.",
+      "l, m, n in Cartesian form correspond to the components of b in vector form.",
+      "To convert vector to Cartesian, write r = xi+yj+zk and equate components.",
+      "A line is fully determined by one point on it and its direction.",
+      "If two points are given, direction ratios come from subtracting their coordinates."
+    ],
+    "formula": "r = a + t*b   ;   (x-x1)/l=(y-y1)/m=(z-z1)/n",
+    "diagram": { "draw": "Draw a 3D line passing through a labelled point (x1,y1,z1). Draw an arrow alongside showing the direction vector (l,m,n)." },
+    "example": "Line through (1,2,3) with direction (2,-1,4): vector form r=(1,2,3)+t(2,-1,4); Cartesian form (x-1)/2=(y-2)/-1=(z-3)/4.",
+    "tip": "Always state both forms if asked 'equation of line' generally — some questions expect Cartesian specifically."
+  },
+  {
+    "t": "Equation of a plane (normal, three points)",
+    "def": "A plane can be defined using a normal vector and a point on it, or using three non-collinear points on the plane.",
+    "points": [
+      "Normal form: n.(r-a) = 0, where n is normal vector and a is a known point on the plane.",
+      "Cartesian form from normal: if n=(A,B,C) and point (x1,y1,z1), plane is A(x-x1)+B(y-y1)+C(z-z1)=0.",
+      "For three points, find two vectors lying in the plane by subtracting coordinates.",
+      "Take cross product of those two vectors to get the normal vector n.",
+      "Use any one of the three points with this normal in the point-normal formula.",
+      "Three points must not be collinear, otherwise they do not define a unique plane."
+    ],
+    "formula": "n.(r-a)=0   ;   normal n = (P2-P1) x (P3-P1)",
+    "diagram": { "draw": "Draw a flat plane. Draw a point A on the plane and an arrow sticking straight out of the plane labelled n (the normal vector)." },
+    "example": "Plane with normal (2,-1,2) through (1,2,3): 2(x-1)-1(y-2)+2(z-3)=0, simplifying to 2x-y+2z-6=0.",
+    "tip": "When given three points, show the cross-product calculation clearly — this step itself carries marks."
+  },
+  {
+    "t": "Angle between lines, planes, line and plane",
+    "def": "The angle between two lines uses their direction vectors, between two planes uses their normal vectors, and between a line and a plane uses the direction vector and normal with sine instead of cosine.",
+    "points": [
+      "Angle between two lines with directions b1, b2: cos(theta) = |b1.b2|/(|b1||b2|).",
+      "Angle between two planes with normals n1, n2: cos(theta) = |n1.n2|/(|n1||n2|).",
+      "Angle between a line (direction b) and a plane (normal n): sin(theta) = |b.n|/(|b||n|).",
+      "Note the line-plane angle uses sine, not cosine, because it is measured from the plane, not the normal.",
+      "Always take the absolute value so the angle found is acute.",
+      "Lines/planes are perpendicular or parallel based on special values of these dot products."
+    ],
+    "formula": "lines: cos=|b1.b2|/(|b1||b2|)   line-plane: sin=|b.n|/(|b||n|)",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Two directions or normals\"] --> B[\"Compute dot product\"]\n  B --> C[\"Divide by magnitudes\"]\n  C --> D[\"Lines/planes use cos, line-plane uses sin\"]" },
+    "example": "Line direction (2,3,6), plane normal (2,1,-1): sin(theta)=|4+3-6|/(7*sqrt6)=1/(7sqrt6).",
+    "tip": "Remember: line-and-plane angle formula uses SINE, this is the most commonly confused formula in the whole chapter."
+  },
+  {
+    "t": "Distance of a point from a plane",
+    "def": "The perpendicular distance from a point to a plane is found using the plane's equation and the point's coordinates in a direct formula.",
+    "points": [
+      "Write the plane in the form ax+by+cz+d=0.",
+      "Substitute the point's coordinates (x1,y1,z1) into ax1+by1+cz1+d.",
+      "Take the absolute value of this result.",
+      "Divide by sqrt(a^2+b^2+c^2), the magnitude of the normal vector.",
+      "This gives the shortest (perpendicular) distance from point to plane.",
+      "If the point lies on the plane, the distance comes out as zero."
+    ],
+    "formula": "d = |ax1+by1+cz1+d| / sqrt(a^2+b^2+c^2)",
+    "diagram": { "draw": "Draw a flat plane and a point P above it. Draw a dashed perpendicular line straight down from P to the plane, labelled d (the distance)." },
+    "example": "Point (1,2,3), plane 2x-y+2z+3=0: d=|2-2+6+3|/sqrt(4+1+4)=9/3=3 units.",
+    "tip": "Make sure the plane equation is in the exact form ax+by+cz+d=0 before substituting — rearrange first if needed."
+  },
+  {
+    "t": "Shortest distance between skew lines",
+    "def": "Skew lines are lines that do not intersect and are not parallel; the shortest distance between them is found using the cross product of their direction vectors.",
+    "points": [
+      "Write both lines in vector form with points a1, a2 and directions b1, b2.",
+      "Compute the cross product b1 x b2.",
+      "Compute the vector joining the two points, (a2-a1).",
+      "Shortest distance = |(a2-a1).(b1 x b2)| / |b1 x b2|.",
+      "If b1 x b2 = 0, the lines are parallel instead of skew, use a different formula.",
+      "If the shortest distance is zero, the lines actually intersect."
+    ],
+    "formula": "d = |(a2-a1).(b1 x b2)| / |b1 x b2|",
+    "diagram": { "draw": "Draw two lines in 3D that clearly do not touch or appear parallel (skew). Draw a short perpendicular segment connecting the nearest points of the two lines, labelled d." },
+    "example": "Lines with b1=(1,0,0), b2=(0,1,0), a2-a1=(0,0,2): b1 x b2=(0,0,1). d=|(0,0,2).(0,0,1)|/|(0,0,1)|=2/1=2 units.",
+    "tip": "Always verify b1 x b2 is not the zero vector first — otherwise this formula does not apply."
+  },
+  {
+    "t": "Coplanarity of two lines",
+    "def": "Two lines in space are coplanar (lie in the same plane) if the scalar triple product of the connecting vector and the two direction vectors equals zero.",
+    "points": [
+      "Take a point on each line, a1 and a2, and find the connecting vector (a2-a1).",
+      "Take the direction vectors of both lines, b1 and b2.",
+      "Form the scalar triple product [(a2-a1) b1 b2] as a 3x3 determinant.",
+      "If this determinant equals zero, the two lines are coplanar.",
+      "If coplanar and not parallel, the lines must intersect at exactly one point.",
+      "If the determinant is nonzero, the lines are skew (do not lie in one plane)."
+    ],
+    "formula": "Coplanar if [(a2-a1) b1 b2] = 0",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Find connecting vector a2-a1\"] --> B[\"Form triple product with b1, b2\"]\n  B --> C{\"Determinant zero\"}\n  C -->|\"yes\"| D[\"Lines coplanar\"]\n  C -->|\"no\"| E[\"Lines skew\"]" },
+    "example": "If (a2-a1)=(1,1,0), b1=(1,0,0), b2=(0,1,0): determinant = 0 (since third row/column pattern gives zero in z), so lines are coplanar.",
+    "tip": "Set up the determinant with rows in order (connecting vector, b1, b2) consistently to avoid sign confusion."
+  }
+]

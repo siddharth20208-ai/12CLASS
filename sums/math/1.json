@@ -1,0 +1,173 @@
+{
+  "solved": [
+    {
+      "topic": "Elementary row/column transformation",
+      "marks": 2,
+      "q": "Using elementary row transformation R2 -> R2 - 2R1, transform A = [[1, 2],[2, 5]].",
+      "steps": [
+        "Given A = [[1, 2],[2, 5]].",
+        "Apply R2 -> R2 - 2R1: new row 2 = [2 - 2(1), 5 - 2(2)] = [0, 1].",
+        "Row 1 remains unchanged: [1, 2]."
+      ],
+      "ans": "Transformed matrix = [[1, 2],[0, 1]]."
+    },
+    {
+      "topic": "Inverse by adjoint method (2x2)",
+      "marks": 2,
+      "q": "Find the inverse of A = [[3, 1],[5, 2]] using the adjoint method.",
+      "steps": [
+        "Using formula for 2x2: det A = (3)(2) - (1)(5) = 6 - 5 = 1.",
+        "Since det A is not zero, A inverse exists.",
+        "Cofactor matrix: [[2, -5],[-1, 3]]. Adjoint = transpose of cofactor matrix = [[2, -1],[-5, 3]].",
+        "A inverse = (1/det A) * adj A = (1/1) * [[2, -1],[-5, 3]] = [[2, -1],[-5, 3]]."
+      ],
+      "ans": "A inverse = [[2, -1],[-5, 3]]."
+    },
+    {
+      "topic": "Inverse by adjoint method (3x3)",
+      "marks": 4,
+      "q": "Find the inverse of A = [[1, 1, 1],[1, -1, 1],[2, 1, -1]] by the adjoint method.",
+      "steps": [
+        "Expand along row 1: det A = 1*[(-1)(-1) - (1)(1)] - 1*[(1)(-1) - (1)(2)] + 1*[(1)(1) - (-1)(2)].",
+        "= 1*(1 - 1) - 1*(-1 - 2) + 1*(1 + 2) = 1*0 - 1*(-3) + 1*3 = 0 + 3 + 3 = 6.",
+        "Since det A = 6 is not zero, A inverse exists.",
+        "Compute all 9 cofactors using 2x2 minors with sign (-1)^(i+j); cofactor matrix comes out to [[0, 3, 3],[2, -3, 1],[2, 0, -2]].",
+        "Adjoint = transpose of cofactor matrix = [[0, 2, 2],[3, -3, 0],[3, 1, -2]].",
+        "A inverse = (1/det A) * adj A = (1/6) * [[0, 2, 2],[3, -3, 0],[3, 1, -2]]."
+      ],
+      "ans": "A inverse = (1/6)[[0, 2, 2],[3, -3, 0],[3, 1, -2]]."
+    },
+    {
+      "topic": "Inverse by elementary transformations",
+      "marks": 4,
+      "q": "Find the inverse of A = [[2, 1],[1, 1]] using elementary row transformations.",
+      "steps": [
+        "Write [A | I] = [[2, 1 | 1, 0],[1, 1 | 0, 1]].",
+        "Apply R1 <-> R2 to get a leading 1: [[1, 1 | 0, 1],[2, 1 | 1, 0]].",
+        "Apply R2 -> R2 - 2R1: [[1, 1 | 0, 1],[0, -1 | 1, -2]].",
+        "Apply R2 -> -R2: [[1, 1 | 0, 1],[0, 1 | -1, 2]].",
+        "Apply R1 -> R1 - R2: [[1, 0 | 1, -1],[0, 1 | -1, 2]].",
+        "Left block is now I, so the right block is A inverse."
+      ],
+      "ans": "A inverse = [[1, -1],[-1, 2]]."
+    },
+    {
+      "topic": "Solving linear equations by matrix inverse method",
+      "marks": 4,
+      "q": "Solve the following system using the matrix inverse method: x + y + z = 6, x - y + z = 2, 2x + y - z = 1.",
+      "steps": [
+        "Write as AX = B where A = [[1, 1, 1],[1, -1, 1],[2, 1, -1]], X = [x, y, z]^T, B = [6, 2, 1]^T.",
+        "det A = 6 (computed as in the adjoint example above), so A inverse exists.",
+        "A inverse = (1/6)[[0, 2, 2],[3, -3, 0],[3, 1, -2]] (found by adjoint method).",
+        "X = A inverse * B: x = (1/6)(0*6 + 2*2 + 2*1) = (1/6)(0+4+2) = 6/6 = 1.",
+        "y = (1/6)(3*6 + (-3)*2 + 0*1) = (1/6)(18 - 6 + 0) = 12/6 = 2.",
+        "z = (1/6)(3*6 + 1*2 + (-2)*1) = (1/6)(18 + 2 - 2) = 18/6 = 3.",
+        "Verify: 1+2+3=6, 1-2+3=2, 2(1)+2-3=1 - all three equations are satisfied."
+      ],
+      "ans": "x = 1, y = 2, z = 3."
+    },
+    {
+      "topic": "Reduction (Gauss elimination / echelon) method",
+      "marks": 4,
+      "q": "Solve by the reduction method: x + 2y - z = 3, 2x - y + z = 4, 4x + 3y - 2z = 10.",
+      "steps": [
+        "Write augmented matrix [[1, 2, -1 | 3],[2, -1, 1 | 4],[4, 3, -2 | 10]].",
+        "Apply R2 -> R2 - 2R1 and R3 -> R3 - 4R1: [[1, 2, -1 | 3],[0, -5, 3 | -2],[0, -5, 2 | -2]].",
+        "Apply R3 -> R3 - R2: [[1, 2, -1 | 3],[0, -5, 3 | -2],[0, 0, -1 | 0]].",
+        "From row 3: -z = 0, so z = 0.",
+        "From row 2: -5y + 3z = -2, i.e. -5y + 0 = -2, so y = 2/5.",
+        "From row 1: x + 2y - z = 3, i.e. x + 4/5 - 0 = 3, so x = 3 - 4/5 = 11/5."
+      ],
+      "ans": "x = 11/5, y = 2/5, z = 0."
+    },
+    {
+      "topic": "Properties of inverse",
+      "marks": 2,
+      "q": "If A = [[1, 2],[2, 3]], verify that (A inverse) inverse = A.",
+      "steps": [
+        "det A = (1)(3) - (2)(2) = 3 - 4 = -1.",
+        "adj A = [[3, -2],[-2, 1]]. A inverse = (1/-1)[[3, -2],[-2, 1]] = [[-3, 2],[2, -1]].",
+        "Now find inverse of A inverse: det(A inverse) = (-3)(-1) - (2)(2) = 3 - 4 = -1.",
+        "adj(A inverse) = [[-1, -2],[-2, -3]]. (A inverse) inverse = (1/-1)[[-1, -2],[-2, -3]] = [[1, 2],[2, 3]].",
+        "This equals the original matrix A."
+      ],
+      "ans": "(A inverse) inverse = [[1, 2],[2, 3]] = A, verified."
+    },
+    {
+      "topic": "Inverse of a product (AB)^-1 = B^-1 A^-1",
+      "marks": 3,
+      "q": "If A = [[1, 0],[0, 2]] and B = [[1, 1],[0, 1]], verify (AB) inverse = B inverse * A inverse.",
+      "steps": [
+        "First find AB: AB = [[1*1+0*0, 1*1+0*1],[0*1+2*0, 0*1+2*1]] = [[1, 1],[0, 2]].",
+        "det(AB) = (1)(2) - (1)(0) = 2, so (AB) inverse = (1/2)[[2, -1],[0, 1]] = [[1, -1/2],[0, 1/2]].",
+        "A inverse = [[1, 0],[0, 1/2]] (since A is diagonal, invert each diagonal entry).",
+        "B inverse: det B = 1, adj B = [[1, -1],[0, 1]], so B inverse = [[1, -1],[0, 1]].",
+        "Compute B inverse * A inverse = [[1*1+(-1)*0, 1*0+(-1)*(1/2)],[0*1+1*0, 0*0+1*(1/2)]] = [[1, -1/2],[0, 1/2]].",
+        "This matches (AB) inverse found above."
+      ],
+      "ans": "(AB) inverse = B inverse * A inverse = [[1, -1/2],[0, 1/2]], verified."
+    },
+    {
+      "topic": "Matrix method with fractional solution",
+      "marks": 4,
+      "q": "Solve using matrix inversion: 2x + y = 5, 3x + 2y = 8.",
+      "steps": [
+        "Write A = [[2, 1],[3, 2]], X = [x, y]^T, B = [5, 8]^T.",
+        "det A = (2)(2) - (1)(3) = 4 - 3 = 1.",
+        "adj A = [[2, -1],[-3, 2]]. A inverse = (1/1)[[2, -1],[-3, 2]] = [[2, -1],[-3, 2]].",
+        "X = A inverse * B: x = 2*5 + (-1)*8 = 10 - 8 = 2.",
+        "y = -3*5 + 2*8 = -15 + 16 = 1.",
+        "Verify: 2(2)+1=5 correct, 3(2)+2(1)=8 correct."
+      ],
+      "ans": "x = 2, y = 1."
+    },
+    {
+      "topic": "Elementary transformation to find rank-type reduction",
+      "marks": 3,
+      "q": "Reduce A = [[1, 2, 3],[2, 4, 7]] to row echelon form using elementary row transformation.",
+      "steps": [
+        "Given A = [[1, 2, 3],[2, 4, 7]].",
+        "Apply R2 -> R2 - 2R1: new row 2 = [2-2(1), 4-2(2), 7-2(3)] = [0, 0, 1].",
+        "Row 1 remains [1, 2, 3]."
+      ],
+      "ans": "Echelon form = [[1, 2, 3],[0, 0, 1]]."
+    },
+    {
+      "topic": "Finding unknown using inverse condition",
+      "marks": 3,
+      "q": "Find k if A = [[k, 2],[3, 4]] is a singular matrix (i.e. A inverse does not exist).",
+      "steps": [
+        "A matrix is singular when its determinant is zero.",
+        "det A = k*4 - 2*3 = 4k - 6.",
+        "Set det A = 0: 4k - 6 = 0.",
+        "Solve: 4k = 6, so k = 6/4 = 3/2."
+      ],
+      "ans": "k = 3/2."
+    },
+    {
+      "topic": "3-variable system by reduction method with verification",
+      "marks": 4,
+      "q": "Solve by reduction method: 2x + y + z = 5, x - y + z = 0, x + y - z = 1.",
+      "steps": [
+        "Augmented matrix: [[2, 1, 1 | 5],[1, -1, 1 | 0],[1, 1, -1 | 1]].",
+        "Apply R1 <-> R2 for a convenient pivot: [[1, -1, 1 | 0],[2, 1, 1 | 5],[1, 1, -1 | 1]].",
+        "Apply R2 -> R2 - 2R1 and R3 -> R3 - R1: [[1, -1, 1 | 0],[0, 3, -1 | 5],[0, 2, -2 | 1]].",
+        "Apply R3 -> 3R3 - 2R2: [[1, -1, 1 | 0],[0, 3, -1 | 5],[0, 0, -4 | -7]].",
+        "From row 3: -4z = -7, so z = 7/4.",
+        "From row 2: 3y - z = 5, i.e. 3y = 5 + 7/4 = 27/4, so y = 9/4.",
+        "From row 1: x - y + z = 0, i.e. x = y - z = 9/4 - 7/4 = 2/4 = 1/2."
+      ],
+      "ans": "x = 1/2, y = 9/4, z = 7/4."
+    }
+  ],
+  "practice": [
+    { "topic": "Row transformation", "q": "Apply R1 -> R1 + R2 to A = [[1, 2],[3, 4]].", "hint": "Add corresponding entries of row 2 to row 1 only.", "ans": "[[4, 6],[3, 4]]." },
+    { "topic": "Inverse by adjoint (2x2)", "q": "Find the inverse of A = [[5, 3],[2, 2]] by adjoint method.", "hint": "det A = 10-6=4; adjoint is [[2,-3],[-2,5]].", "ans": "A inverse = (1/4)[[2, -3],[-2, 5]]." },
+    { "topic": "Inverse by adjoint (3x3)", "q": "Find the inverse of A = [[1, 0, 1],[0, 1, 2],[1, 1, 1]] using adjoint method.", "hint": "First find det A by expansion along row 1, then build the cofactor matrix.", "ans": "det A = -2; A inverse = (1/-2)[[-1, 1, -1],[2, 0, -2],[-1, -1, 1]]." },
+    { "topic": "Inverse by elementary transformation", "q": "Find the inverse of A = [[3, 1],[2, 1]] using row transformations.", "hint": "Write [A|I] and reduce left block to identity.", "ans": "A inverse = [[1, -1],[-2, 3]]." },
+    { "topic": "Matrix inverse method for linear equations", "q": "Solve by matrix inverse method: 3x - 2y = 4, x + y = 3.", "hint": "Form A, find A inverse, then X = A inverse B.", "ans": "x = 2, y = 1." },
+    { "topic": "Reduction method", "q": "Solve by reduction method: x + y + z = 9, 2x - 3y + 4z = 13, 3x + 4y + 5z = 40.", "hint": "Eliminate x from rows 2 and 3 using row 1 first.", "ans": "x = 1, y = 3, z = 5." },
+    { "topic": "Property of inverse", "q": "If A = [[2, 0],[0, 3]], find (A inverse) inverse and verify it equals A.", "hint": "For a diagonal matrix, the inverse just takes reciprocals of diagonal entries.", "ans": "(A inverse) inverse = [[2, 0],[0, 3]] = A." },
+    { "topic": "Singular matrix condition", "q": "Find the value of x for which the matrix [[x, 4],[2, x]] has no inverse.", "hint": "Inverse fails to exist when determinant = 0.", "ans": "x = 2 sqrt(2) or x = -2 sqrt(2)." }
+  ]
+}

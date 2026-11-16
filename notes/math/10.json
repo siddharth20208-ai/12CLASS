@@ -1,0 +1,110 @@
+[
+  {
+    "t": "Fundamental theorem of calculus",
+    "def": "The fundamental theorem of calculus connects differentiation and integration: it says the definite integral of f(x) from a to b equals F(b) - F(a), where F is any antiderivative of f.",
+    "points": [
+      "First find the indefinite integral (antiderivative) F(x) of the given function f(x).",
+      "Evaluate F(x) at the upper limit b to get F(b).",
+      "Evaluate F(x) at the lower limit a to get F(a).",
+      "Subtract: definite integral = F(b) - F(a).",
+      "No constant of integration C is needed since it cancels out in subtraction.",
+      "This theorem is what makes definite integrals easy to compute using indefinite integration."
+    ],
+    "formula": "∫[a to b] f(x) dx = F(b) - F(a), where F'(x) = f(x)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Find antiderivative F x\"] --> B[\"Evaluate F at upper limit b\"]\n  B --> C[\"Evaluate F at lower limit a\"]\n  C --> D[\"Subtract F b minus F a\"]"
+    },
+    "example": "∫[1 to 2] x^2 dx. F(x) = x^3/3. F(2) - F(1) = 8/3 - 1/3 = 7/3.",
+    "tip": "Always write F(x) with square brackets and limits [a,b] before substituting — this step itself carries marks."
+  },
+  {
+    "t": "Properties of definite integrals",
+    "def": "Definite integrals follow certain useful properties (like reversing limits, splitting intervals, and symmetry) that simplify calculation without finding the antiderivative directly.",
+    "points": [
+      "Reversing limits changes sign: ∫[a to b] f(x)dx = -∫[b to a] f(x)dx.",
+      "Interval can be split: ∫[a to b] = ∫[a to c] + ∫[c to b], for any c between a and b.",
+      "Substitution property: ∫[a to b] f(x)dx = ∫[a to b] f(a+b-x)dx.",
+      "If limits are 0 to a: ∫[0 to a] f(x)dx = ∫[0 to a] f(a-x)dx.",
+      "If f(x) is even on [-a,a]: integral = 2∫[0 to a] f(x)dx.",
+      "If f(x) is odd on [-a,a]: integral = 0."
+    ],
+    "formula": "∫[0 to a] f(x) dx = ∫[0 to a] f(a-x) dx",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Given definite integral\"] --> B{\"Check pattern\"}\n  B -->|Symmetric limits| C[\"Use even/odd property\"]\n  B -->|0 to a| D[\"Try f a-x substitution\"]\n  B -->|Complex interval| E[\"Split into parts\"]"
+    },
+    "example": "∫[0 to pi/2] sin x/(sin x + cos x) dx. Using f(a-x) property with a = pi/2, add original and transformed integral to get 2I = pi/2, so I = pi/4.",
+    "tip": "When direct integration looks hard, always try the f(a-x) property first — many board questions are designed for this trick."
+  },
+  {
+    "t": "Definite integral as limit of a sum",
+    "def": "A definite integral can be defined as the limit of the sum of areas of many thin rectangles under the curve, as the number of rectangles tends to infinity.",
+    "points": [
+      "Divide the interval [a,b] into n equal parts, each of width h = (b-a)/n.",
+      "Form the sum of f(a), f(a+h), f(a+2h), ..., up to f(a+(n-1)h), each multiplied by h.",
+      "As n tends to infinity, h tends to 0, and this sum approaches the definite integral.",
+      "This is the basic definition: ∫[a to b] f(x)dx = lim(n→∞) h [f(a) + f(a+h) + ... + f(a+(n-1)h)].",
+      "This method is mainly used to prove the definite integral equals a known limit expression.",
+      "It connects the geometric idea of 'area under curve' with the algebraic definite integral."
+    ],
+    "formula": "∫[a to b] f(x) dx = lim(h→0) h Σ f(a+rh), r = 0 to n-1, where h = (b-a)/n",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Divide a,b into n strips of width h\"] --> B[\"Sum areas of rectangles\"]\n  B --> C[\"Let n approach infinity\"]\n  C --> D[\"Sum approaches the definite integral\"]"
+    },
+    "example": "∫[0 to 1] x dx using limit of sum: h = 1/n, sum = h(0 + h + 2h + ... + (n-1)h) = h^2 x n(n-1)/2, which as n→∞ gives 1/2.",
+    "tip": "This topic is usually asked to verify a given standard integral — show the summation formula and the limit step clearly for full marks."
+  },
+  {
+    "t": "Integrals using substitution with changed limits",
+    "def": "When substitution is used in a definite integral, the limits of integration must also be changed to match the new variable, so no need to substitute back at the end.",
+    "points": [
+      "Choose the substitution t = g(x) as usual and find dt.",
+      "Convert the limits: find t when x equals the lower limit, and t when x equals the upper limit.",
+      "Rewrite the whole integral in terms of t with the new limits.",
+      "Integrate with respect to t and get the antiderivative in t.",
+      "Apply the new limits directly in t — no need to go back to x.",
+      "This saves a step compared to indefinite integration by substitution."
+    ],
+    "formula": "If t = g(x): ∫[a to b] f(g(x))g'(x)dx = ∫[g(a) to g(b)] f(t) dt",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Choose t = g x\"] --> B[\"Convert limits x=a,b to t\"]\n  B --> C[\"Rewrite integral in t\"]\n  C --> D[\"Integrate and apply new limits in t\"]"
+    },
+    "example": "∫[0 to 1] 2x(x^2+1)^2 dx. Let t = x^2+1. At x=0, t=1; at x=1, t=2. Integral becomes ∫[1 to 2] t^2 dt = [t^3/3] = 8/3 - 1/3 = 7/3.",
+    "tip": "Always convert limits immediately after choosing substitution so you never forget to switch back to x."
+  },
+  {
+    "t": "Symmetry and even/odd function properties",
+    "def": "For integrals over symmetric limits like [-a, a], knowing whether a function is even or odd greatly simplifies the calculation.",
+    "points": [
+      "A function is even if f(-x) = f(x); its graph is symmetric about the y-axis.",
+      "A function is odd if f(-x) = -f(x); its graph is symmetric about the origin.",
+      "For an even function: ∫[-a to a] f(x)dx = 2 ∫[0 to a] f(x)dx.",
+      "For an odd function: ∫[-a to a] f(x)dx = 0.",
+      "Check f(-x) carefully by substituting -x in place of x and simplifying.",
+      "This shortcut avoids calculating the full integral for symmetric limits."
+    ],
+    "formula": "Even: ∫[-a to a] f(x)dx = 2∫[0 to a] f(x)dx     Odd: ∫[-a to a] f(x)dx = 0",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Find f of -x\"] --> B{\"Compare with f x\"}\n  B -->|Equal| C[\"Even function: double the half integral\"]\n  B -->|Negative of f x| D[\"Odd function: integral is 0\"]"
+    },
+    "example": "∫[-1 to 1] x^3 dx. Since f(x)=x^3 is odd (f(-x) = -f(x)), the integral is 0 directly, without integrating.",
+    "tip": "Always test f(-x) first for symmetric limits — it can reduce a long calculation to a one-line answer."
+  },
+  {
+    "t": "Standard definite integrals",
+    "def": "Standard definite integrals are a set of commonly occurring integrals, mostly of trigonometric functions over 0 to pi/2 or 0 to pi, whose values are fixed results used directly in exams.",
+    "points": [
+      "Memorise results like ∫[0 to pi/2] sin x dx = 1 and ∫[0 to pi/2] cos x dx = 1.",
+      "Walli's formula gives results for ∫[0 to pi/2] sin^n x dx and ∫[0 to pi/2] cos^n x dx based on whether n is even or odd.",
+      "For sin^m x cos^n x type integrals over 0 to pi/2, a combined Walli's formula is used.",
+      "Recognise the limits 0 to pi/2 as a signal to check for a standard/Walli's type integral.",
+      "Apply the matching standard result directly instead of long integration.",
+      "Double-check whether the power is even or odd before picking the Walli's formula pattern."
+    ],
+    "formula": "∫[0 to pi/2] sin^n x dx = ∫[0 to pi/2] cos^n x dx = [(n-1)(n-3)...1 or 2] / [n(n-2)...1 or 2] x (pi/2 if n even)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Check limits 0 to pi/2\"] --> B{\"Power n even or odd\"}\n  B -->|Even| C[\"Use Walli with pi/2 factor\"]\n  B -->|Odd| D[\"Use Walli without pi/2 factor\"]"
+    },
+    "example": "∫[0 to pi/2] sin^4 x dx = (3x1)/(4x2) x pi/2 = (3/8)(pi/2) = 3pi/16.",
+    "tip": "Learn Walli's formula pattern by heart with 2-3 practice examples — it converts a tough integral into a one-step answer."
+  }
+]

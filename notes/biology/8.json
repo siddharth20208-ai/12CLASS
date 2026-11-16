@@ -1,0 +1,94 @@
+[
+  {
+    "t": "Neuron structure and nerve impulse",
+    "def": "A neuron is the structural and functional unit of the nervous system, specialized to receive, conduct and transmit electrical signals called nerve impulses.",
+    "points": [
+      "A neuron has three main parts: dendrites (receive signals), cell body/soma (contains nucleus), and axon (carries impulse away).",
+      "The axon is covered by a myelin sheath formed by Schwann cells, with gaps called nodes of Ranvier.",
+      "At rest, the inside of the axon is negative compared to outside — this is the resting potential (about -70 mV).",
+      "A stimulus opens Na+ channels, Na+ rushes in, making inside positive — this is depolarization, the action potential.",
+      "K+ channels then open and K+ moves out, restoring the negative charge — this is repolarization.",
+      "In myelinated neurons the impulse jumps from node to node (saltatory conduction), making it very fast.",
+      "The impulse always travels in one direction, from dendrite to axon terminal."
+    ],
+    "formula": "Resting potential approx -70 mV; Action potential rises to approx +30 mV",
+    "diagram": { "draw": "Draw a neuron: dendrites on left feeding into a round cell body with a nucleus, then a long axon covered by segmented myelin sheath with gaps labelled 'node of Ranvier', ending in branched axon terminals. Label dendrite, cell body, nucleus, axon, myelin sheath, node of Ranvier, axon terminal." },
+    "example": "In a myelinated neuron, impulse speed can reach 100 m/s because of saltatory conduction, compared to only about 1 m/s in an unmyelinated neuron.",
+    "tip": "Draw the labelled neuron diagram first, then explain depolarization and repolarization in sequence — this structure scores full marks."
+  },
+  {
+    "t": "Reflex arc",
+    "def": "A reflex arc is the shortest neural pathway through which a reflex action (quick, automatic response to a stimulus) is carried out, without involving the brain's conscious control.",
+    "points": [
+      "A receptor detects the stimulus (e.g., skin touching a hot object).",
+      "The sensory (afferent) neuron carries the impulse to the spinal cord.",
+      "In the spinal cord, the signal passes through a relay/association neuron.",
+      "The motor (efferent) neuron carries the impulse from spinal cord to the effector.",
+      "The effector (a muscle) contracts and produces the response, e.g., withdrawing the hand.",
+      "Because the signal does not need to reach the brain first, the response is very fast and protective."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Receptor detects stimulus\"] --> B[\"Sensory neuron\"]\n  B --> C[\"Relay neuron in spinal cord\"]\n  C --> D[\"Motor neuron\"]\n  D --> E[\"Effector muscle responds\"]" },
+    "example": "Touching a hot plate: the hand is pulled away before the brain even registers pain, because the reflex arc acts through the spinal cord only.",
+    "tip": "Always name all five components in order: receptor, sensory neuron, relay neuron, motor neuron, effector — examiners check for the complete chain."
+  },
+  {
+    "t": "Structure of brain (forebrain, midbrain, hindbrain)",
+    "def": "The human brain is divided into three main regions — forebrain, midbrain and hindbrain — each controlling different body functions.",
+    "points": [
+      "Forebrain has the cerebrum (thinking, voluntary action), thalamus (relay of sensory info) and hypothalamus (controls hunger, thirst, temperature, links to pituitary).",
+      "Midbrain connects forebrain and hindbrain; controls visual and auditory reflexes.",
+      "Hindbrain has the cerebellum (balance and coordination), pons (connects brain parts, controls breathing), and medulla oblongata (controls heartbeat, breathing, blood pressure — vital reflexes).",
+      "The cerebrum is divided into left and right hemispheres, each with four lobes.",
+      "The medulla continues as the spinal cord.",
+      "Damage to the medulla can be fatal because it controls life-sustaining reflexes."
+    ],
+    "diagram": { "draw": "Draw a side (sagittal) view of the brain. Label from front to back: cerebrum (large folded top part), thalamus and hypothalamus (small central structures), midbrain (small region below cerebrum), cerebellum (folded structure at the back-bottom), pons and medulla oblongata (stalk-like part at the base connecting to spinal cord)." },
+    "example": "A person who loses balance while walking after an injury likely has cerebellum damage, since the cerebellum controls posture and coordination.",
+    "tip": "Group your answer into forebrain, midbrain, hindbrain headings with one function each — this scoring pattern matches the board's marking scheme."
+  },
+  {
+    "t": "Endocrine glands and hormones",
+    "def": "Endocrine glands are ductless glands that secrete chemical messengers called hormones directly into the blood, which act on distant target organs.",
+    "points": [
+      "Pituitary gland is the 'master gland' — controls other endocrine glands via tropic hormones (e.g., TSH, ACTH, FSH, LH).",
+      "Thyroid gland secretes thyroxine, which regulates metabolic rate; needs iodine.",
+      "Adrenal gland secretes adrenaline (fight-or-flight response) and cortisol (stress hormone).",
+      "Pancreas (islets of Langerhans) secretes insulin (lowers blood glucose) and glucagon (raises blood glucose).",
+      "Hormones act on specific target cells having receptors for them, unlike nerves which act on fixed pathways.",
+      "Hormonal control is slower but longer-lasting compared to nervous control."
+    ],
+    "diagram": { "mermaid": "flowchart TD\n  A[\"Hypothalamus\"] --> B[\"Pituitary gland\"]\n  B --> C[\"Thyroid\"]\n  B --> D[\"Adrenal gland\"]\n  B --> E[\"Gonads\"]\n  F[\"Pancreas\"] --> G[\"Insulin and glucagon control blood sugar\"]" },
+    "example": "Low iodine intake reduces thyroxine production, causing goitre (enlarged thyroid) as the gland enlarges trying to compensate.",
+    "tip": "Make a two-column table: gland name and main hormone with its function — quick to write and covers maximum marks."
+  },
+  {
+    "t": "Structure of eye and ear",
+    "def": "The eye is the organ of vision that forms images of light on the retina, and the ear is the organ of hearing and balance that detects sound waves and body position.",
+    "points": [
+      "Eye: light enters through cornea, passes through pupil (controlled by iris), lens focuses it onto the retina.",
+      "Retina has photoreceptors — rods (dim light, black & white) and cones (bright light, colour).",
+      "The optic nerve carries the visual impulse from retina to the brain.",
+      "Ear has three parts: outer ear (pinna, ear canal), middle ear (ear drum, ossicles — malleus, incus, stapes), inner ear (cochlea for hearing, semicircular canals for balance).",
+      "Sound vibrations travel from ear drum through ossicles to the cochlea, which converts them to nerve impulses.",
+      "Semicircular canals detect head position and movement, helping maintain balance."
+    ],
+    "diagram": { "draw": "For the eye: draw a cross-section showing cornea (front curved layer), iris and pupil, lens, and retina at the back, with the optic nerve leaving at the back. For the ear: draw outer ear (pinna and canal), ear drum, three tiny ossicles, cochlea (coiled structure), and semicircular canals, all labelled." },
+    "example": "In dim light, only rod cells are active (no colour perception), which is why colours appear dull or grey at night.",
+    "tip": "Draw both diagrams clearly with all labels — eye and ear diagrams are classic 2-mark questions almost every year."
+  },
+  {
+    "t": "Synaptic transmission",
+    "def": "Synaptic transmission is the process by which a nerve impulse passes from one neuron to another (or to an effector) across a junction called the synapse, usually using chemical messengers.",
+    "points": [
+      "The gap between the axon terminal of one neuron and the dendrite of the next is the synaptic cleft.",
+      "When an impulse reaches the axon terminal, it triggers release of neurotransmitter (e.g., acetylcholine) from vesicles.",
+      "The neurotransmitter diffuses across the synaptic cleft and binds to receptors on the next neuron's membrane.",
+      "This binding opens ion channels, generating a new impulse in the next neuron.",
+      "The neurotransmitter is then broken down or reabsorbed, so the signal does not continue forever.",
+      "Synaptic transmission is one-directional because only the axon terminal releases neurotransmitter."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Impulse reaches axon terminal\"] --> B[\"Neurotransmitter released from vesicles\"]\n  B --> C[\"Diffuses across synaptic cleft\"]\n  C --> D[\"Binds receptor on next neuron\"]\n  D --> E[\"New impulse generated\"]" },
+    "example": "Acetylcholine released at a neuromuscular junction binds muscle receptors and triggers muscle contraction, then is broken down by acetylcholinesterase to stop continuous contraction.",
+    "tip": "Mention that synapse ensures one-way transmission — this specific point is often asked separately for 1 mark."
+  }
+]

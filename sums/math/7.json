@@ -1,0 +1,168 @@
+{
+  "solved": [
+    {
+      "topic": "Chain rule - composite function",
+      "marks": 2,
+      "q": "Find dy/dx if y = sin(x^2 + 1).",
+      "steps": [
+        "Identify outer function sin(u) and inner function u = x^2 + 1.",
+        "Chain rule: dy/dx = cos(u) . du/dx.",
+        "du/dx = d/dx(x^2+1) = 2x.",
+        "Multiply: dy/dx = cos(x^2+1) . 2x."
+      ],
+      "ans": "dy/dx = 2x cos(x^2 + 1)."
+    },
+    {
+      "topic": "Chain rule - power of linear function",
+      "marks": 2,
+      "q": "Find dy/dx if y = (3x + 5)^4.",
+      "steps": [
+        "Outer function is u^4, inner function u = 3x+5.",
+        "Chain rule: dy/dx = 4u^3 . du/dx.",
+        "du/dx = 3.",
+        "dy/dx = 4(3x+5)^3 . 3 = 12(3x+5)^3."
+      ],
+      "ans": "dy/dx = 12(3x + 5)^3."
+    },
+    {
+      "topic": "Implicit differentiation - basic",
+      "marks": 3,
+      "q": "If x^2 + y^2 = 25, find dy/dx. Hence find the value of dy/dx at the point (3, 4).",
+      "steps": [
+        "Differentiate both sides w.r.t. x: 2x + 2y dy/dx = 0.",
+        "Using d/dx(y^2) = 2y dy/dx (power rule with chain rule for y).",
+        "Collect dy/dx terms: 2y dy/dx = -2x.",
+        "Solve: dy/dx = -x/y.",
+        "At (3,4): dy/dx = -3/4."
+      ],
+      "ans": "dy/dx = -x/y; at (3,4), dy/dx = -3/4."
+    },
+    {
+      "topic": "Implicit differentiation - product rule",
+      "marks": 3,
+      "q": "If xy + y^2 = x, find dy/dx.",
+      "steps": [
+        "Differentiate xy using product rule: d/dx(xy) = y + x dy/dx.",
+        "Differentiate y^2 using chain rule: d/dx(y^2) = 2y dy/dx.",
+        "Differentiate RHS: d/dx(x) = 1.",
+        "Equation becomes: y + x dy/dx + 2y dy/dx = 1.",
+        "Collect dy/dx terms: dy/dx (x + 2y) = 1 - y.",
+        "Solve for dy/dx: dy/dx = (1 - y)/(x + 2y)."
+      ],
+      "ans": "dy/dx = (1 - y)/(x + 2y)."
+    },
+    {
+      "topic": "Logarithmic differentiation - variable base and power",
+      "marks": 4,
+      "q": "Find dy/dx if y = x^x.",
+      "steps": [
+        "Since both base and power contain x, take log of both sides: log y = x log x.",
+        "Differentiate both sides w.r.t. x using product rule on RHS: (1/y) dy/dx = x.(1/x) + log x . 1.",
+        "Simplify RHS: (1/y) dy/dx = 1 + log x.",
+        "Multiply both sides by y: dy/dx = y(1 + log x).",
+        "Substitute y = x^x back: dy/dx = x^x (1 + log x)."
+      ],
+      "ans": "dy/dx = x^x (log x + 1)."
+    },
+    {
+      "topic": "Logarithmic differentiation - product/quotient of functions",
+      "marks": 4,
+      "q": "Find dy/dx if y = [x^3 (x+2)^2] / sqrt(x+1).",
+      "steps": [
+        "Take log of both sides: log y = 3 log x + 2 log(x+2) - (1/2) log(x+1).",
+        "Differentiate both sides w.r.t. x: (1/y) dy/dx = 3/x + 2/(x+2) - 1/(2(x+1)).",
+        "Using d/dx(log f) = f'/f for each term on the right.",
+        "Multiply both sides by y: dy/dx = y [3/x + 2/(x+2) - 1/(2(x+1))].",
+        "Substitute back y = x^3(x+2)^2/sqrt(x+1) to get the final expression in x."
+      ],
+      "ans": "dy/dx = [x^3(x+2)^2/sqrt(x+1)] . [3/x + 2/(x+2) - 1/(2(x+1))]."
+    },
+    {
+      "topic": "Logarithmic differentiation - function raised to variable function",
+      "marks": 3,
+      "q": "Find dy/dx if y = (sin x)^x.",
+      "steps": [
+        "Take log of both sides: log y = x log(sin x).",
+        "Differentiate using product rule on RHS: (1/y) dy/dx = x . (cos x/sin x) + log(sin x) . 1.",
+        "Simplify: (1/y) dy/dx = x cot x + log(sin x).",
+        "Multiply both sides by y: dy/dx = y [log(sin x) + x cot x].",
+        "Substitute y = (sin x)^x back: dy/dx = (sin x)^x [log(sin x) + x cot x]."
+      ],
+      "ans": "dy/dx = (sin x)^x [log(sin x) + x cot x]."
+    },
+    {
+      "topic": "Parametric differentiation - astroid",
+      "marks": 3,
+      "q": "If x = a cos^3 t and y = a sin^3 t, find dy/dx.",
+      "steps": [
+        "Differentiate x w.r.t. t using chain rule: dx/dt = 3a cos^2 t . (-sin t) = -3a cos^2 t sin t.",
+        "Differentiate y w.r.t. t using chain rule: dy/dt = 3a sin^2 t . cos t.",
+        "Use parametric formula dy/dx = (dy/dt)/(dx/dt).",
+        "dy/dx = [3a sin^2 t cos t] / [-3a cos^2 t sin t].",
+        "Cancel common factors 3a, sin t, cos t: dy/dx = -sin t/cos t = -tan t."
+      ],
+      "ans": "dy/dx = -tan t."
+    },
+    {
+      "topic": "Parametric differentiation - cycloid",
+      "marks": 3,
+      "q": "If x = a(t - sin t) and y = a(1 - cos t), find dy/dx.",
+      "steps": [
+        "Differentiate x w.r.t. t: dx/dt = a(1 - cos t).",
+        "Differentiate y w.r.t. t: dy/dt = a(sin t - 0) = a sin t.",
+        "Use parametric formula: dy/dx = (dy/dt)/(dx/dt) = [a sin t]/[a(1 - cos t)].",
+        "Cancel a: dy/dx = sin t/(1 - cos t).",
+        "Using half-angle identities sin t = 2 sin(t/2)cos(t/2) and 1-cos t = 2 sin^2(t/2), simplify: dy/dx = cot(t/2)."
+      ],
+      "ans": "dy/dx = sin t/(1 - cos t) = cot(t/2)."
+    },
+    {
+      "topic": "Derivative of inverse trigonometric function",
+      "marks": 2,
+      "q": "Find dy/dx if y = tan^-1(3x).",
+      "steps": [
+        "Standard formula: d/dx(tan^-1 u) = 1/(1+u^2) . du/dx, with u = 3x.",
+        "Here du/dx = 3.",
+        "Substitute u = 3x: dy/dx = 1/(1+(3x)^2) . 3.",
+        "Simplify denominator: dy/dx = 3/(1+9x^2)."
+      ],
+      "ans": "dy/dx = 3/(1 + 9x^2)."
+    },
+    {
+      "topic": "Second order derivative",
+      "marks": 4,
+      "q": "Find d^2y/dx^2 if y = x^3 log x. Hence find its value at x = 1.",
+      "steps": [
+        "Find dy/dx using product rule: dy/dx = 3x^2 log x + x^3 . (1/x) = 3x^2 log x + x^2.",
+        "Differentiate dy/dx again using product rule on first term: d/dx(3x^2 log x) = 6x log x + 3x^2.(1/x) = 6x log x + 3x.",
+        "Differentiate second term: d/dx(x^2) = 2x.",
+        "Add: d^2y/dx^2 = 6x log x + 3x + 2x = 6x log x + 5x.",
+        "At x = 1: log 1 = 0, so d^2y/dx^2 = 6(1)(0) + 5(1) = 5."
+      ],
+      "ans": "d^2y/dx^2 = 6x log x + 5x; at x = 1, value is 5."
+    },
+    {
+      "topic": "Derivative of one function with respect to another using substitution",
+      "marks": 4,
+      "q": "If u = sin^-1(2x sqrt(1 - x^2)) and v = sin^-1(x), find du/dv, for 0 < x < 1/sqrt(2).",
+      "steps": [
+        "Put x = sin(theta), so theta = sin^-1(x), i.e. v = theta.",
+        "Then u = sin^-1(2 sin(theta) sqrt(1 - sin^2(theta))) = sin^-1(2 sin(theta) cos(theta)).",
+        "Using identity 2 sin(theta) cos(theta) = sin(2 theta): u = sin^-1(sin(2 theta)) = 2 theta (valid since 0 < theta < pi/4).",
+        "So u = 2 theta and v = theta, giving u = 2v directly in terms of the parameter theta.",
+        "Differentiate u = 2v w.r.t. v: du/dv = 2."
+      ],
+      "ans": "du/dv = 2."
+    }
+  ],
+  "practice": [
+    { "topic": "Chain rule", "q": "Find dy/dx if y = cos(5x^3).", "hint": "Chain rule: differentiate cos(u) to get -sin(u), multiply by du/dx = 15x^2.", "ans": "dy/dx = -15x^2 sin(5x^3)." },
+    { "topic": "Chain rule - power form", "q": "Find dy/dx if y = (2x^2 - 1)^5.", "hint": "Chain rule: 5(2x^2-1)^4 times derivative of inner function 4x.", "ans": "dy/dx = 20x(2x^2 - 1)^4." },
+    { "topic": "Implicit differentiation", "q": "If x^3 + y^3 = 3axy, find dy/dx.", "hint": "Differentiate both sides, use product rule on 3axy, then collect dy/dx terms.", "ans": "dy/dx = (ay - x^2)/(y^2 - ax)." },
+    { "topic": "Logarithmic differentiation", "q": "Find dy/dx if y = x^(sin x).", "hint": "Take log: log y = sin x . log x, then differentiate using product rule.", "ans": "dy/dx = x^(sin x) [ (sin x)/x + cos x . log x ]." },
+    { "topic": "Logarithmic differentiation - quotient", "q": "Find dy/dx if y = sqrt[(x-1)(x-2)/((x-3)(x-4))].", "hint": "Take log of both sides, log y = (1/2)[log(x-1)+log(x-2)-log(x-3)-log(x-4)], differentiate.", "ans": "dy/dx = (y/2)[1/(x-1)+1/(x-2)-1/(x-3)-1/(x-4)]." },
+    { "topic": "Parametric differentiation", "q": "If x = a cos t and y = b sin t, find dy/dx.", "hint": "Find dx/dt = -a sin t and dy/dt = b cos t, then divide.", "ans": "dy/dx = -(b cos t)/(a sin t) = -(b/a) cot t." },
+    { "topic": "Second order derivative", "q": "If y = e^(2x) sin(3x), find d^2y/dx^2.", "hint": "Differentiate twice using product rule, combine like terms carefully.", "ans": "d^2y/dx^2 = e^(2x)[-5 sin(3x) + 12 cos(3x)]." },
+    { "topic": "Derivative of one function w.r.t. another", "q": "If u = tan^-1(x) and v = log(sqrt(1+x^2)), find du/dv.", "hint": "Find du/dx = 1/(1+x^2) and dv/dx = x/(1+x^2), then take ratio du/dx divided by dv/dx.", "ans": "du/dv = 1/x." }
+  ]
+}

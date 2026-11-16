@@ -1,0 +1,109 @@
+[
+  {
+    "t": "Rate of Reaction and Rate Law",
+    "def": "The rate of a reaction is the change in concentration of reactant or product per unit time. The rate law expresses rate as a function of reactant concentrations raised to some powers.",
+    "points": [
+      "Average rate = change in concentration / time taken; instantaneous rate is the rate at one moment (slope of concentration-time curve).",
+      "Rate = -d[R]/dt for reactants (concentration decreases) or +d[P]/dt for products (concentration increases).",
+      "Rate law: Rate = k [A]^x [B]^y, where x and y are experimentally found, not from the balanced equation.",
+      "k is the rate constant; it depends on temperature and catalyst, not on concentration.",
+      "Units of k change with order: for first order, k has units of time^-1.",
+      "Rate laws are determined by experiment (initial rate method), never assumed from stoichiometry."
+    ],
+    "formula": "Rate = k [A]^x [B]^y",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Reactant concentration\"] --> B[\"Measure change over time\"]\n  B --> C[\"Plot concentration vs time\"]\n  C --> D[\"Slope gives rate\"]\n  D --> E[\"Fit to Rate = k times concentration powers\"]"
+    },
+    "example": "For 2NO + O2 -> 2NO2, experiments show Rate = k[NO]^2[O2]. Order = 2 + 1 = 3, even though stoichiometric coefficients are 2 and 1.",
+    "tip": "Always state that rate law is obtained experimentally and is independent of stoichiometric coefficients — a common conceptual question."
+  },
+  {
+    "t": "Order and Molecularity",
+    "def": "Order of reaction is the sum of powers of concentration terms in the experimental rate law. Molecularity is the number of reacting species colliding simultaneously in an elementary step, based on the mechanism.",
+    "points": [
+      "Order is found experimentally and can be zero, fractional, or a whole number.",
+      "Molecularity is always a whole number (1, 2 or rarely 3) and is theoretical, taken from one elementary step.",
+      "For a single-step (elementary) reaction, order equals molecularity.",
+      "For a multi-step reaction, overall order is decided by the slowest (rate-determining) step.",
+      "Molecularity cannot be zero or fractional; order can be.",
+      "Example: inversion of cane sugar is first order but molecularity 2 (bimolecular), since water is in excess and its concentration does not change."
+    ],
+    "formula": "Order = sum of exponents in rate law; Molecularity = number of colliding species in elementary step",
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Reaction mechanism\"] --> B[\"Elementary steps\"]\n  B --> C[\"Molecularity from slowest step\"]\n  A --> D[\"Experimental rate law\"]\n  D --> E[\"Order from exponents\"]"
+    },
+    "example": "Decomposition of H2O2 catalysed reaction is first order (rate depends only on [H2O2] to power 1) though more molecules may be involved in the mechanism.",
+    "tip": "Give a clear table comparing order vs molecularity with one example each — this comparison is frequently asked for 2 marks."
+  },
+  {
+    "t": "Integrated Rate Equations",
+    "def": "Integrated rate equations give the concentration of reactant as a function of time, obtained by integrating the differential rate law for a given order.",
+    "points": [
+      "Zero order: rate does not depend on concentration; Rate = k.",
+      "Zero order integrated form: [A] = [A]0 - kt, which is linear with negative slope -k.",
+      "First order: rate depends on concentration to power one; Rate = k[A].",
+      "First order integrated form: k = (2.303/t) log([A]0/[A]).",
+      "A plot of log[A] vs t is a straight line with slope -k/2.303 for first order.",
+      "Zero order examples: enzyme reactions at high substrate, surface catalysed reactions; first order examples: radioactive decay, decomposition of N2O5."
+    ],
+    "formula": "Zero order: [A] = [A]0 - kt     First order: k = (2.303/t) log([A]0/[A])",
+    "diagram": {
+      "draw": "Draw two graphs side by side. Left graph: x-axis time, y-axis [A], a straight descending line labelled 'Zero order, slope = -k'. Right graph: x-axis time, y-axis log[A], a straight descending line labelled 'First order, slope = -k/2.303'."
+    },
+    "example": "First order decomposition: [A]0 = 0.8 M, [A] after 10 min = 0.4 M. k = (2.303/10) log(0.8/0.4) = (2.303/10)(0.301) = 0.0693 min^-1.",
+    "tip": "Memorise both integrated equations and the graph shapes exactly — numericals and graph-identification questions are very common."
+  },
+  {
+    "t": "Half-life of Reactions",
+    "def": "Half-life (t1/2) is the time required for the concentration of a reactant to reduce to half of its initial value.",
+    "points": [
+      "For zero order reaction: t1/2 = [A]0 / (2k); it depends on initial concentration.",
+      "For first order reaction: t1/2 = 0.693 / k; it is independent of initial concentration.",
+      "First order half-life being constant is used to identify first order kinetics experimentally.",
+      "After n half-lives, concentration remaining = [A]0 / 2^n (for first order).",
+      "Radioactive decay is the classic first-order example with a constant half-life."
+    ],
+    "formula": "Zero order: t1/2 = [A]0/(2k)     First order: t1/2 = 0.693/k",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Start with A0\"] --> B[\"After 1 half life: A0/2\"]\n  B --> C[\"After 2 half lives: A0/4\"]\n  C --> D[\"After 3 half lives: A0/8\"]"
+    },
+    "example": "A first order reaction has k = 0.0231 min^-1. t1/2 = 0.693/0.0231 = 30 min. After 90 min (3 half-lives), only 1/8 of initial reactant remains.",
+    "tip": "If a numerical gives constant half-life at different concentrations, immediately identify it as first order."
+  },
+  {
+    "t": "Arrhenius Equation and Activation Energy",
+    "def": "The Arrhenius equation relates the rate constant of a reaction to temperature and activation energy, showing that rate increases sharply with temperature.",
+    "points": [
+      "Arrhenius equation: k = A e^(-Ea/RT), where A is the frequency factor, Ea is activation energy, R is gas constant, T is absolute temperature.",
+      "Taking log: log k = log A - Ea/(2.303RT).",
+      "A plot of log k vs 1/T gives a straight line with slope = -Ea/2.303R.",
+      "Higher activation energy means rate increases more steeply with temperature.",
+      "Activation energy is the minimum extra energy needed by reactant molecules to form the activated complex and react.",
+      "Using rate constants at two temperatures: log(k2/k1) = (Ea/2.303R)(1/T1 - 1/T2)."
+    ],
+    "formula": "k = A e^(-Ea/RT)     log(k2/k1) = (Ea/2.303R)(1/T1 - 1/T2)",
+    "diagram": {
+      "draw": "Draw a graph with x-axis as reaction coordinate and y-axis as energy. Show reactants at a lower energy level on the left, a hump (peak) in the middle labelled 'activated complex', and products at a lower level on the right. Mark the vertical gap from reactants to the peak as 'Ea (activation energy)'."
+    },
+    "example": "If k2/k1 = 4 for a temperature rise from 300 K to 310 K, use log4 = (Ea/2.303R)(1/300 - 1/310) to solve for Ea.",
+    "tip": "Draw the energy profile diagram with Ea clearly marked — this diagram alone often fetches 1-2 marks."
+  },
+  {
+    "t": "Collision Theory",
+    "def": "Collision theory explains reaction rate in terms of the frequency of collisions between reactant molecules, the fraction having enough energy, and their proper orientation.",
+    "points": [
+      "Reactant molecules must collide to react, but not every collision leads to a reaction.",
+      "Only collisions with energy equal to or greater than activation energy (effective collisions) can lead to products.",
+      "Molecules must also collide with the correct orientation for bonds to break and form properly.",
+      "Rate is proportional to the collision frequency (Z) and the fraction of molecules with sufficient energy (e^(-Ea/RT)).",
+      "Increasing temperature increases the fraction of molecules with energy greater than Ea, increasing rate.",
+      "A steric/orientation factor (P) is included to account for molecules that collide with enough energy but wrong orientation and still fail to react."
+    ],
+    "formula": "Rate = P Z e^(-Ea/RT)",
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Molecules collide\"] --> B{\"Enough energy and correct orientation\"}\n  B -->|Yes| C[\"Effective collision\"]\n  C --> D[\"Products formed\"]\n  B -->|No| E[\"No reaction, molecules bounce apart\"]"
+    },
+    "example": "Doubling temperature greatly increases the fraction of molecules with energy above Ea, explaining why reaction rates often double or triple for a 10 degree rise.",
+    "tip": "Mention all three requirements: collision, sufficient energy, proper orientation — missing any one loses marks in theory questions."
+  }
+]

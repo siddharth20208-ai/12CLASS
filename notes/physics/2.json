@@ -1,0 +1,110 @@
+[
+  {
+    "t": "Pressure of Gas and RMS Speed",
+    "def": "Kinetic theory explains gas pressure as the result of continuous collisions of fast-moving molecules with the walls of the container. RMS speed is the square root of the mean of the squares of molecular speeds.",
+    "points": [
+      "Gas molecules move randomly in all directions and collide with the container walls.",
+      "Each collision transfers momentum to the wall; the total rate of momentum transfer per unit area is the pressure.",
+      "Kinetic theory gives P = (1/3)(N/V) m v̄², where N/V is number density, m is mass of one molecule, v̄² is mean square speed.",
+      "This can be rewritten as P = (1/3)ρ v̄², where ρ is the gas density.",
+      "RMS speed is defined as vrms = sqrt(v̄²), and from the ideal gas equation vrms = sqrt(3RT/M), where M is molar mass.",
+      "Higher temperature means higher average kinetic energy, so vrms increases with temperature and decreases with molar mass."
+    ],
+    "formula": "P = (1/3)(N/V) m v̄²     vrms = √(3RT/M)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Molecules move randomly\"] --> B[\"Collide with container walls\"]\n  B --> C[\"Momentum transferred per second\"]\n  C --> D[\"Pressure P = one third rho times v squared mean\"]\n  D --> E[\"vrms = sqrt of 3RT over M\"]"
+    },
+    "example": "Oxygen (M = 32e-3 kg/mol) at 300 K: vrms = sqrt(3 x 8.314 x 300 / 0.032) = sqrt(233831) ≈ 483.6 m/s.",
+    "tip": "Learn the derivation steps (momentum change per collision, collisions per second, pressure = force/area) — this full derivation is often asked for 3-4 marks."
+  },
+  {
+    "t": "Degrees of Freedom and Law of Equipartition",
+    "def": "Degrees of freedom are the independent ways a molecule can possess energy (translational, rotational, vibrational). The law of equipartition states that each degree of freedom gets equal average energy, (1/2)kT.",
+    "points": [
+      "A monatomic gas molecule (like He) has only 3 translational degrees of freedom (motion along x, y, z).",
+      "A diatomic gas molecule (like O2, N2) has 3 translational + 2 rotational degrees of freedom = 5 (ignoring vibration at ordinary temperature).",
+      "By equipartition, average energy per degree of freedom = (1/2)kT, where k is Boltzmann constant.",
+      "Total internal energy of n moles: U = (f/2) n R T, where f is the number of degrees of freedom.",
+      "For monatomic gas, U = (3/2)nRT; for diatomic gas, U = (5/2)nRT.",
+      "This explains why diatomic gases have higher specific heat than monatomic gases — they store energy in more ways."
+    ],
+    "formula": "Average energy per degree of freedom = (1/2)kT     U = (f/2) n R T",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Monatomic gas f=3\"] --> B[\"U = 3 by 2 nRT\"]\n  C[\"Diatomic gas f=5\"] --> D[\"U = 5 by 2 nRT\"]\n  B --> E[\"Each degree of freedom gets half kT\"]\n  D --> E"
+    },
+    "example": "1 mole of helium at 300 K: U = (3/2) x 1 x 8.314 x 300 = 3741 J.",
+    "tip": "Clearly list degrees of freedom for monatomic (3) and diatomic (5) gases — a very common 2-mark theory question."
+  },
+  {
+    "t": "Mean Free Path",
+    "def": "Mean free path is the average distance travelled by a gas molecule between two successive collisions with other molecules.",
+    "points": [
+      "Gas molecules are in constant random motion and frequently collide with each other, changing direction.",
+      "Between collisions a molecule travels a free, straight-line path of varying length.",
+      "The average of all these free path lengths is called the mean free path (λ).",
+      "It depends on the number density of molecules (n) and the molecular diameter (d): λ = 1 / (√2 π n d²).",
+      "Mean free path increases when pressure decreases (fewer molecules per unit volume means fewer collisions).",
+      "At very low pressure (like in a vacuum tube), mean free path becomes large, which is why gas discharge tubes need low pressure."
+    ],
+    "formula": "λ = 1 / (√2 π n d²)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Molecule moves in straight line\"] --> B[\"Collides with another molecule\"]\n  B --> C[\"Changes direction\"]\n  C --> D[\"Travels another free path\"]\n  D --> E[\"Average of all paths = mean free path\"]"
+    },
+    "example": "If number density n increases (gas compressed), λ decreases since λ is inversely proportional to n — molecules collide more often in denser gas.",
+    "tip": "Just stating the definition plus the proportionality (λ inversely proportional to n and d²) usually earns full marks for this short topic."
+  },
+  {
+    "t": "Blackbody Radiation and Emissive Power",
+    "def": "A blackbody is an ideal body that absorbs all radiation falling on it and emits the maximum possible radiation at every wavelength for its temperature. Emissive power is the energy radiated per unit area per unit time by a body.",
+    "points": [
+      "A perfect blackbody has emissivity (absorptive and emissive power ratio) equal to 1 — it absorbs 100% of incident radiation.",
+      "In practice, a blackbody is approximated by a hollow cavity with a small hole (Ferry's blackbody).",
+      "Emissive power (E) depends on the surface area, nature of surface, and absolute temperature of the body.",
+      "A blackbody's radiation spectrum (energy vs wavelength) depends only on its temperature, not on the material.",
+      "As temperature increases, the total energy radiated increases rapidly, and the peak of the spectrum shifts to shorter wavelength.",
+      "Real objects are not perfect blackbodies but can be compared to one using their emissivity (0 < e < 1)."
+    ],
+    "formula": "Emissivity e = (emissive power of body) / (emissive power of blackbody at same T)",
+    "diagram": {
+      "draw": "Draw a hollow sphere with a small hole on one side (Ferry's blackbody). Show radiation entering the hole and reflecting multiple times inside the cavity, getting absorbed. Label 'small hole acts as nearly perfect blackbody'."
+    },
+    "example": "A surface with emissivity 0.8 radiates 0.8 times the energy a perfect blackbody would radiate at the same temperature and area.",
+    "tip": "Remember: a blackbody is both a perfect absorber AND a perfect emitter — state both properties for full marks."
+  },
+  {
+    "t": "Stefan-Boltzmann Law",
+    "def": "Stefan-Boltzmann law states that the energy radiated per unit area per unit time by a perfect blackbody is directly proportional to the fourth power of its absolute temperature.",
+    "points": [
+      "The law is written as E = σT⁴, where σ is Stefan's constant (5.67 x 10⁻⁸ W/m²K⁴).",
+      "For a body of surface area A at temperature T, total power radiated = σ A T⁴.",
+      "For a body with emissivity e (not a perfect blackbody), power radiated = e σ A T⁴.",
+      "If the body also absorbs radiation from surroundings at temperature T0, net power radiated = eσA(T⁴ - T0⁴).",
+      "This fourth-power dependence means even a small rise in temperature causes a large increase in radiated energy.",
+      "This law is used to estimate the temperature of stars and the Sun from the radiation they emit."
+    ],
+    "formula": "E = σT⁴     Net power = eσA(T⁴ − T0⁴)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Blackbody at temperature T\"] --> B[\"Radiates energy E = sigma T to the 4th\"]\n  B --> C[\"Small increase in T\"]\n  C --> D[\"Large increase in radiated energy\"]"
+    },
+    "example": "A blackbody at 500 K radiating E1; at 1000 K it radiates E2. Ratio E2/E1 = (1000/500)^4 = 2^4 = 16 times more.",
+    "tip": "In numericals, always take the ratio (T2/T1)^4 instead of calculating σT⁴ separately — it is faster and avoids large-number errors."
+  },
+  {
+    "t": "Wien's Displacement Law and Kirchhoff's Law",
+    "def": "Wien's displacement law states that the wavelength at which a blackbody emits maximum energy is inversely proportional to its absolute temperature. Kirchhoff's law states that a good absorber of radiation at a given wavelength is also a good emitter of radiation at the same wavelength, at the same temperature.",
+    "points": [
+      "Wien's law: λmax T = b (constant), where b = 2.9 x 10⁻³ m·K (Wien's constant).",
+      "As temperature increases, λmax decreases — hotter bodies emit more at shorter (bluer) wavelengths.",
+      "This explains why a heated iron rod glows red first, then orange, then white as temperature rises.",
+      "Kirchhoff's law: good absorbers are good emitters; a blackbody (perfect absorber) is also the best possible emitter.",
+      "A body in thermal equilibrium absorbs and emits radiation at the same rate for each wavelength.",
+      "Applications: pyrometry (estimating star surface temperature from colour) uses Wien's law; design of radiation-efficient coatings uses Kirchhoff's law."
+    ],
+    "formula": "λmax T = b (Wien's constant ≈ 2.9 x 10⁻³ m K)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Low temperature\"] --> B[\"Peak at long wavelength\"]\n  C[\"High temperature\"] --> D[\"Peak at short wavelength\"]\n  B --> E[\"lambda max times T = constant b\"]\n  D --> E"
+    },
+    "example": "Sun's surface temperature ≈ 5800 K: λmax = b/T = 2.9e-3/5800 ≈ 5.0 x 10⁻⁷ m (500 nm, in visible green-blue range).",
+    "tip": "State both laws clearly and separately — many students confuse Wien's law (wavelength-temperature) with Stefan's law (energy-temperature)."
+  }
+]

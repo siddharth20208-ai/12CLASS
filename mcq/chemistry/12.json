@@ -1,0 +1,112 @@
+[
+  {
+    "q": "(CH3)2NH is an example of which class of amine?",
+    "o": [
+      "Secondary amine",
+      "Primary amine",
+      "Tertiary amine",
+      "Quaternary amine"
+    ],
+    "a": 0,
+    "why": "Two hydrogens of NH3 are replaced by methyl groups, giving a secondary amine R-NH-R'."
+  },
+  {
+    "q": "The Gabriel phthalimide synthesis is preferred for preparing amines because it gives",
+    "o": [
+      "Only tertiary amines",
+      "Pure primary amines without over-alkylation",
+      "A mixture of primary, secondary and tertiary amines",
+      "Only aromatic amines"
+    ],
+    "a": 1,
+    "why": "Unlike direct ammonolysis of alkyl halides, Gabriel synthesis avoids further alkylation, yielding pure primary amine."
+  },
+  {
+    "q": "Hoffmann bromamide degradation converts an amide R-CONH2 into an amine with",
+    "o": [
+      "The same number of carbons",
+      "One carbon more than the amide",
+      "One carbon less than the amide",
+      "Two carbons less than the amide"
+    ],
+    "a": 2,
+    "why": "The carbonyl carbon is lost as CO2 (via Na2CO3), so the resulting amine has one carbon fewer than the starting amide."
+  },
+  {
+    "q": "In aqueous solution, the basicity order of aliphatic amines is generally",
+    "o": [
+      "Primary > secondary > tertiary",
+      "All three are equally basic",
+      "Tertiary > secondary > primary",
+      "Secondary > primary > tertiary"
+    ],
+    "a": 3,
+    "why": "A balance of +I effect, steric hindrance and solvation of the cation gives secondary > primary > tertiary in water."
+  },
+  {
+    "q": "Aniline is a weaker base than methylamine mainly because",
+    "o": [
+      "The nitrogen lone pair in aniline is delocalised into the benzene ring",
+      "Aniline has a higher molecular mass",
+      "Aniline has no lone pair on nitrogen",
+      "Methylamine is aromatic"
+    ],
+    "a": 0,
+    "why": "Resonance delocalisation of the lone pair into the ring makes it less available to accept a proton, lowering basicity."
+  },
+  {
+    "q": "In the Hinsberg test, which type of amine does NOT react with benzenesulphonyl chloride at all?",
+    "o": [
+      "Primary amine",
+      "Tertiary amine",
+      "Secondary amine",
+      "Both primary and secondary"
+    ],
+    "a": 1,
+    "why": "Tertiary amines have no N-H to be substituted, so they do not react with Hinsberg's reagent."
+  },
+  {
+    "q": "The product formed by a primary amine with benzenesulphonyl chloride is soluble in excess KOH because",
+    "o": [
+      "It is a neutral compound",
+      "It decomposes in KOH",
+      "It still has an acidic N-H that forms a soluble salt with KOH",
+      "It forms an insoluble precipitate"
+    ],
+    "a": 2,
+    "why": "The remaining acidic N-H in the N-alkylbenzenesulphonamide reacts with KOH to form a soluble potassium salt."
+  },
+  {
+    "q": "The carbylamine (isocyanide) test, using CHCl3 and alcoholic KOH, is a positive test specifically for",
+    "o": [
+      "Tertiary amines only",
+      "Secondary amines only",
+      "All amines equally",
+      "Primary amines only"
+    ],
+    "a": 3,
+    "why": "Only primary amines (R-NH2) react with CHCl3/KOH to form foul-smelling isocyanides; secondary and tertiary amines do not react."
+  },
+  {
+    "q": "Diazotisation of aromatic primary amines must be carried out at",
+    "o": [
+      "0-5 degree C",
+      "Room temperature (25-30 C)",
+      "Above 50 degree C",
+      "100 degree C under reflux"
+    ],
+    "a": 0,
+    "why": "Diazonium salts are unstable and decompose above 5 degree C, so diazotisation is done at 0-5 degree C."
+  },
+  {
+    "q": "A benzenediazonium salt reacting with phenol in weakly alkaline medium gives",
+    "o": [
+      "Benzene and nitrogen gas",
+      "A coloured azo dye via coupling",
+      "Aniline directly",
+      "Chlorobenzene"
+    ],
+    "a": 1,
+    "why": "Diazonium salts couple with phenols/anilines to form brightly coloured azo compounds without losing nitrogen."
+  }
+]

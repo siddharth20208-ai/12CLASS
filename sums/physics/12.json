@@ -1,0 +1,152 @@
+{
+  "solved": [
+    {
+      "topic": "Inductive reactance",
+      "marks": 2,
+      "q": "A pure inductor of inductance 0.2 H is connected to an AC source of frequency 50 Hz. Find the inductive reactance.",
+      "steps": [
+        "Given: L = 0.2 H, f = 50 Hz.",
+        "Formula: XL = 2*pi*f*L.",
+        "Substitution: XL = 2 x 3.14 x 50 x 0.2.",
+        "Calculation: 2 x 3.14 x 50 = 314; 314 x 0.2 = 62.8 ohm.",
+        "Final answer: XL = 62.8 ohm."
+      ],
+      "ans": "62.8 ohm"
+    },
+    {
+      "topic": "Capacitive reactance",
+      "marks": 2,
+      "q": "A pure capacitor of capacitance 100 microfarad is connected to an AC source of frequency 50 Hz. Find the capacitive reactance.",
+      "steps": [
+        "Given: C = 100e-6 F, f = 50 Hz.",
+        "Formula: XC = 1/(2*pi*f*C).",
+        "Substitution: XC = 1/(2 x 3.14 x 50 x 100e-6).",
+        "Calculation: 2 x 3.14 x 50 = 314; 314 x 100e-6 = 0.0314; XC = 1/0.0314 = 31.8 ohm.",
+        "Final answer: XC = 31.8 ohm."
+      ],
+      "ans": "31.8 ohm"
+    },
+    {
+      "topic": "Series LCR circuit: impedance, phase angle, current amplitude",
+      "marks": 4,
+      "q": "A series LCR circuit has R = 30 ohm, XL = 70 ohm and XC = 30 ohm, connected to an AC source of peak voltage 100 V. Find the impedance, the phase angle between voltage and current, and the peak current.",
+      "steps": [
+        "Given: R = 30 ohm, XL = 70 ohm, XC = 30 ohm, v0 = 100 V.",
+        "Formula: Z = sqrt(R^2 + (XL - XC)^2).",
+        "Substitution: XL - XC = 70 - 30 = 40 ohm; Z = sqrt(30^2 + 40^2) = sqrt(900 + 1600) = sqrt(2500).",
+        "Calculation: Z = 50 ohm.",
+        "Phase angle: tan(phi) = (XL - XC)/R = 40/30 = 1.333; phi = tan inverse(1.333) = 53.1 degrees (voltage leads current, circuit is inductive).",
+        "Peak current: i0 = v0/Z = 100/50 = 2 A.",
+        "Final answer: Z = 50 ohm, phi = 53.1 degrees, i0 = 2 A."
+      ],
+      "ans": "Z = 50 ohm, phase angle = 53.1 degrees (inductive), peak current = 2 A"
+    },
+    {
+      "topic": "Resonant frequency of LCR circuit",
+      "marks": 3,
+      "q": "A series LCR circuit has inductance 0.1 H and capacitance 10 microfarad. Find its resonant frequency.",
+      "steps": [
+        "Given: L = 0.1 H, C = 10e-6 F.",
+        "Formula: f0 = 1/(2*pi*sqrt(LC)).",
+        "Substitution: LC = 0.1 x 10e-6 = 1e-6; sqrt(LC) = sqrt(1e-6) = 1e-3.",
+        "Calculation: f0 = 1/(2 x 3.14 x 1e-3) = 1/(6.28e-3).",
+        "f0 = 159.2 Hz.",
+        "Final answer: f0 = 159.2 Hz."
+      ],
+      "ans": "159.2 Hz"
+    },
+    {
+      "topic": "Phasor addition of voltages in series LCR",
+      "marks": 3,
+      "q": "In a series LCR circuit, the voltage across the resistor is 40 V, across the inductor is 90 V, and across the capacitor is 50 V. Find the resultant voltage of the source.",
+      "steps": [
+        "Given: VR = 40 V, VL = 90 V, VC = 50 V.",
+        "Formula: V = sqrt(VR^2 + (VL - VC)^2).",
+        "Substitution: VL - VC = 90 - 50 = 40 V; V = sqrt(40^2 + 40^2) = sqrt(1600 + 1600) = sqrt(3200).",
+        "Calculation: sqrt(3200) = 40*sqrt(2) = 40 x 1.414 = 56.6 V.",
+        "Final answer: V = 56.6 V."
+      ],
+      "ans": "56.6 V"
+    },
+    {
+      "topic": "Average power and power factor",
+      "marks": 3,
+      "q": "An AC circuit has Vrms = 220 V, Irms = 2 A, and the current lags the voltage by a phase angle of 60 degrees. Find the power factor and the average power consumed.",
+      "steps": [
+        "Given: Vrms = 220 V, Irms = 2 A, phi = 60 degrees.",
+        "Formula: power factor = cos(phi); Pavg = Vrms*Irms*cos(phi).",
+        "Substitution: cos(60 degrees) = 0.5.",
+        "Calculation: Pavg = 220 x 2 x 0.5 = 440 x 0.5.",
+        "Pavg = 220 W.",
+        "Final answer: power factor = 0.5, average power = 220 W."
+      ],
+      "ans": "power factor = 0.5, average power = 220 W"
+    },
+    {
+      "topic": "RMS value from peak value",
+      "marks": 2,
+      "q": "The peak value of the voltage of the household AC supply is 311 V. Find its RMS value.",
+      "steps": [
+        "Given: v0 = 311 V.",
+        "Formula: Vrms = v0/sqrt(2).",
+        "Substitution: Vrms = 311/1.414.",
+        "Calculation: 311/1.414 = 219.9 V.",
+        "Final answer: Vrms = 219.9 V, approximately 220 V (the standard mains rating)."
+      ],
+      "ans": "approximately 220 V"
+    },
+    {
+      "topic": "Complete series LCR circuit from f, L, C, R",
+      "marks": 4,
+      "q": "A series LCR circuit with R = 30 ohm, L = 0.2 H and C = 100 microfarad is connected to an AC source of frequency 50 Hz and peak voltage 150 V. Find the reactances, impedance, peak current, and state whether the circuit is inductive or capacitive.",
+      "steps": [
+        "Given: R = 30 ohm, L = 0.2 H, C = 100e-6 F, f = 50 Hz, v0 = 150 V.",
+        "Formula: XL = 2*pi*f*L; XC = 1/(2*pi*f*C); Z = sqrt(R^2 + (XL - XC)^2); i0 = v0/Z.",
+        "Substitution: XL = 2 x 3.14 x 50 x 0.2 = 62.8 ohm; XC = 1/(2 x 3.14 x 50 x 100e-6) = 31.8 ohm.",
+        "Calculation: XL - XC = 62.8 - 31.8 = 31 ohm; Z = sqrt(30^2 + 31^2) = sqrt(900 + 961) = sqrt(1861) = 43.1 ohm.",
+        "Peak current: i0 = 150/43.1 = 3.48 A.",
+        "Since XL > XC, voltage leads current, so the circuit is inductive.",
+        "Final answer: XL = 62.8 ohm, XC = 31.8 ohm, Z = 43.1 ohm, i0 = 3.48 A, circuit is inductive."
+      ],
+      "ans": "XL = 62.8 ohm, XC = 31.8 ohm, Z = 43.1 ohm, peak current = 3.48 A, inductive circuit"
+    }
+  ],
+  "practice": [
+    {
+      "topic": "Inductive reactance",
+      "q": "Find the inductive reactance of a 0.5 H inductor connected to a 100 Hz AC supply.",
+      "hint": "XL = 2*pi*f*L.",
+      "ans": "314 ohm"
+    },
+    {
+      "topic": "Capacitive reactance",
+      "q": "Find the capacitive reactance of a 50 microfarad capacitor connected to a 50 Hz AC supply.",
+      "hint": "XC = 1/(2*pi*f*C).",
+      "ans": "63.7 ohm"
+    },
+    {
+      "topic": "Impedance and phase angle",
+      "q": "A series LCR circuit has R = 40 ohm, XL = 120 ohm and XC = 90 ohm. Find the impedance and the phase angle.",
+      "hint": "Z = sqrt(R^2 + (XL-XC)^2); tan(phi) = (XL-XC)/R.",
+      "ans": "Z = 50 ohm, phi = 36.9 degrees"
+    },
+    {
+      "topic": "Resonant frequency",
+      "q": "A series LCR circuit has L = 0.5 H and C = 2 microfarad. Find the resonant frequency.",
+      "hint": "f0 = 1/(2*pi*sqrt(LC)).",
+      "ans": "approximately 159.2 Hz"
+    },
+    {
+      "topic": "Phasor voltage addition",
+      "q": "In a series LCR circuit, VR = 30 V, VL = 70 V, VC = 30 V. Find the resultant source voltage.",
+      "hint": "V = sqrt(VR^2 + (VL-VC)^2).",
+      "ans": "50 V"
+    },
+    {
+      "topic": "Average power",
+      "q": "An AC circuit has Vrms = 200 V, Irms = 5 A and phase angle 90 degrees between voltage and current. Find the average power consumed.",
+      "hint": "Pavg = Vrms*Irms*cos(phi); cos(90 degrees) = 0.",
+      "ans": "0 W (no net power consumed in a purely reactive circuit)"
+    }
+  ]
+}

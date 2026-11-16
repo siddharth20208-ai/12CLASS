@@ -1,0 +1,93 @@
+[
+  {
+    "t": "Vegetative propagation",
+    "def": "Vegetative propagation is a type of asexual reproduction in plants in which a new plant grows from a vegetative part of the parent (root, stem or leaf) without any seed formation.",
+    "points": [
+      "No gametes or fertilization are involved, so the new plant is genetically identical to the parent.",
+      "Natural methods include runners (grass), rhizome (ginger), tuber (potato), bulb (onion) and offset (water hyacinth).",
+      "Artificial methods include cutting, layering and grafting, used widely in horticulture.",
+      "In cutting, a piece of stem is placed in soil; it develops adventitious roots and grows into a new plant.",
+      "In grafting, a scion (desired shoot) is joined on to a stock (rooted plant) of a different variety.",
+      "This method is fast and keeps desirable traits of the parent unchanged, unlike seed propagation."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Vegetative part of parent\"] --> B[\"Cutting Layering or Grafting\"]\n  B --> C[\"Develops roots or shoots\"]\n  C --> D[\"New plant genetically identical to parent\"]" },
+    "example": "Potato tuber has 'eyes' (buds); each eye planted in soil can sprout into a full new potato plant, identical to the parent plant.",
+    "tip": "Give one natural and one artificial example with the plant name; examiners award separate marks for each correct example."
+  },
+  {
+    "t": "Pollination types and agents",
+    "def": "Pollination is the transfer of pollen grains from the anther to the stigma of a flower, which can be self-pollination (same flower/plant) or cross-pollination (different plant).",
+    "points": [
+      "Autogamy: pollen transfers within the same flower (self-pollination).",
+      "Geitonogamy: pollen moves from one flower to another flower on the same plant; genetically it behaves like self-pollination.",
+      "Xenogamy: pollen moves from a flower of one plant to a flower of a genetically different plant (true cross-pollination).",
+      "Abiotic agents: wind (anemophily, e.g. grasses) and water (hydrophily, e.g. Vallisneria) carry pollen without any living carrier.",
+      "Biotic agents: insects (entomophily), birds (ornithophily) and bats (chiropterophily) carry pollen while visiting flowers for nectar.",
+      "Cross-pollinated flowers usually show adaptations like bright colour, scent, nectar or large pollen output to attract or compensate loss."
+    ],
+    "diagram": { "mermaid": "flowchart TD\n  A[\"Pollination\"] --> B[\"Self pollination\"]\n  A --> C[\"Cross pollination\"]\n  B --> D[\"Autogamy and Geitonogamy\"]\n  C --> E[\"Xenogamy\"]\n  C --> F[\"Agents: wind water insects birds\"]" },
+    "example": "Maize is wind-pollinated (anemophily): it produces huge amounts of light, dry pollen that is carried by wind to the feathery stigma of another plant.",
+    "tip": "State the type, the agent and one plant example together — partial answers without an example lose marks."
+  },
+  {
+    "t": "Structure of anther and ovule",
+    "def": "The anther is the pollen-producing part of the stamen, and the ovule is the structure inside the ovary that develops into the seed after fertilization.",
+    "points": [
+      "A mature anther is bilobed, each lobe having two microsporangia (pollen sacs), so four sacs in total.",
+      "Each microsporangium is surrounded by wall layers: epidermis, endothecium, middle layers and tapetum (innermost, nourishing layer).",
+      "Pollen mother cells inside undergo meiosis to form pollen grains (microspores) in tetrads.",
+      "An ovule has an outer integument(s) with a small opening called the micropyle.",
+      "Inside the ovule is the nucellus, which encloses the embryo sac (female gametophyte) with the egg cell, two polar nuclei, and other cells.",
+      "The ovule is attached to the ovary wall by a stalk called the funiculus, meeting at a point called the hilum."
+    ],
+    "formula": "4 microsporangia per anther; embryo sac = 1 egg + 2 synergids + 3 antipodals + 2 polar nuclei (8 nuclei, 7 cells)",
+    "diagram": { "draw": "Draw a bilobed anther in T.S. showing 4 pollen sacs filled with pollen grains, label epidermis, endothecium, tapetum. Separately draw an ovule: label funiculus, hilum, micropyle, integument, nucellus, and embryo sac with egg cell, synergids, polar nuclei and antipodal cells." },
+    "example": "In the embryo sac, the egg cell plus two synergids form the egg apparatus near the micropylar end, which is where the pollen tube enters during fertilization.",
+    "tip": "Labelled diagrams of anther T.S. and embryo sac are asked almost every year — practise drawing them neatly within 2 minutes."
+  },
+  {
+    "t": "Double fertilization",
+    "def": "Double fertilization is the unique process in angiogens where two male gametes delivered by the pollen tube fuse separately with the egg cell and the polar nuclei of the embryo sac.",
+    "points": [
+      "The pollen tube grows through the style and usually enters the ovule through the micropyle (porogamy).",
+      "It releases two male gametes into the embryo sac.",
+      "One male gamete fuses with the egg cell (syngamy), forming a diploid zygote.",
+      "The other male gamete fuses with the two polar nuclei (triple fusion), forming a triploid primary endosperm nucleus (PEN).",
+      "Because both syngamy and triple fusion occur in the same embryo sac, the process is called double fertilization.",
+      "The zygote develops into the embryo, and the PEN develops into the nutritive endosperm tissue."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Pollen tube enters via micropyle\"] --> B[\"Releases 2 male gametes\"]\n  B --> C[\"Male gamete + egg cell = Zygote\"]\n  B --> D[\"Male gamete + 2 polar nuclei = PEN\"]\n  C --> E[\"Embryo\"]\n  D --> F[\"Endosperm\"]" },
+    "example": "In maize, after double fertilization, the zygote becomes the embryo and the large triploid endosperm stores starch that we eat as corn kernels.",
+    "tip": "Clearly separate syngamy (2n zygote) from triple fusion (3n PEN) — examiners check the ploidy numbers specifically."
+  },
+  {
+    "t": "Apomixis and polyembryony",
+    "def": "Apomixis is a form of asexual reproduction that produces seeds without fertilization, and polyembryony is the occurrence of more than one embryo in a single seed.",
+    "points": [
+      "In apomixis, the embryo develops directly from diploid cells of the ovule (e.g. nucellus) without meiosis or fertilization.",
+      "Seeds formed by apomixis are genetically identical to the mother plant, like a natural clone.",
+      "It is common in Citrus and some grasses and in the Asteraceae family.",
+      "Polyembryony occurs when extra embryos develop from other cells of the ovule besides the zygote, often from nucellar tissue.",
+      "Commercially seen in Citrus and mango seeds, which often give rise to more than one seedling.",
+      "Both apomixis and polyembryony are of great use in producing uniform hybrid seeds without loss of hybrid vigor in later generations."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Ovule cells (diploid)\"] --> B[\"No meiosis no fertilization\"]\n  B --> C[\"Apomictic embryo (clone of mother)\"]\n  A --> D[\"Extra nucellar cells also form embryos\"]\n  D --> E[\"Polyembryony: many embryos in one seed\"]" },
+    "example": "A single Citrus seed can produce two or more seedlings because the zygotic embryo plus extra nucellar embryos develop together — this is polyembryony.",
+    "tip": "Mention the agricultural importance: apomixis fixes hybrid vigor so farmers do not need to buy new hybrid seed every year — this is a common 2-mark add-on."
+  },
+  {
+    "t": "Fruit and seed development",
+    "def": "After fertilization, the ovary develops into a fruit, and the fertilized ovule develops into a seed, a process together called fruit and seed formation.",
+    "points": [
+      "The zygote divides repeatedly to form the embryo, while the PEN develops into the endosperm that nourishes it.",
+      "The integuments of the ovule harden to form the seed coat (testa).",
+      "The ovary wall develops into the pericarp (fruit wall), which may be dry or fleshy.",
+      "In some fruits (e.g. apple, cucumber), other floral parts also contribute to the fruit; such fruits are called false fruits.",
+      "If a fruit develops without fertilization, it is seedless and is called a parthenocarpic fruit (e.g. banana).",
+      "Fruits help in seed protection and dispersal by wind, water or animals."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Zygote\"] --> B[\"Embryo\"]\n  C[\"PEN\"] --> D[\"Endosperm\"]\n  E[\"Integument\"] --> F[\"Seed coat\"]\n  G[\"Ovary wall\"] --> H[\"Pericarp (fruit)\"]" },
+    "example": "In banana, auxin-like hormones are applied to the ovary without pollination, producing a seedless (parthenocarpic) fruit that we eat.",
+    "tip": "Give the part-to-part mapping (zygote to embryo, PEN to endosperm, integument to seed coat, ovary wall to pericarp) as a quick table for full marks."
+  }
+]

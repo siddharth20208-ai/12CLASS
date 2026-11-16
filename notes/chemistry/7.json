@@ -1,0 +1,109 @@
+[
+  {
+    "t": "Electronic Configuration of d-block Elements",
+    "def": "Transition (d-block) elements have the general electronic configuration (n-1)d(1-10) ns(0-2), where the outer s-orbital and the inner d-orbital are both partly filled.",
+    "points": [
+      "Transition elements lie between s-block and p-block, in groups 3 to 12 of the periodic table.",
+      "3d series (Sc to Zn) fills the 3d orbitals while the 4s orbital is already filled or nearly filled.",
+      "Exceptions occur due to extra stability of half-filled and fully-filled d-orbitals: Cr is 3d5 4s1 and Cu is 3d10 4s1, not the expected 3d4 4s2 or 3d9 4s2.",
+      "Zn, Cd, Hg have fully filled d10 configuration and are often excluded from typical transition metal behaviour since they do not have incomplete d-orbitals.",
+      "During ionisation, electrons are lost first from the 4s orbital before the 3d orbital.",
+      "This (n-1)d ns arrangement explains variable oxidation states and other transition metal properties."
+    ],
+    "formula": "General configuration: (n-1)d^1-10 ns^0-2",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Fill 1s to 4s orbitals normally\"] --> B[\"Start filling 3d orbitals\"]\n  B --> C[\"Exceptions: Cr = 3d5 4s1\"]\n  C --> D[\"Exceptions: Cu = 3d10 4s1\"]\n  D --> E[\"Zn = 3d10 4s2, fully filled d\"]"
+    },
+    "example": "Electronic configuration of Fe (Z=26): [Ar] 3d6 4s2. Fe2+ loses two 4s electrons: [Ar] 3d6. Fe3+ loses one more from 3d: [Ar] 3d5.",
+    "tip": "Always write configurations of Cr and Cu correctly with the exception noted — these are favourite one-mark questions."
+  },
+  {
+    "t": "Variable Oxidation States",
+    "def": "Transition elements show several oxidation states in their compounds because the energies of (n-1)d and ns electrons are very close, so both can take part in bonding.",
+    "points": [
+      "Since (n-1)d and ns orbitals have similar energy, electrons from both can be removed with comparable ease.",
+      "This gives a range of oxidation states differing usually by one unit, e.g. Fe2+ and Fe3+, Mn2+ to Mn7+.",
+      "Lower oxidation states are more ionic in character; higher oxidation states are more covalent.",
+      "The most stable (common) oxidation state is usually +2 for most 3d metals, arising from loss of the two 4s electrons.",
+      "Manganese shows the widest range of oxidation states (+2 to +7) among 3d elements due to its half-filled d5 configuration at +2.",
+      "Compounds in higher oxidation states, such as MnO4- and CrO4(2-), are often strong oxidising agents."
+    ],
+    "formula": "Common oxidation states differ by units of one, e.g. Fe: +2, +3; Mn: +2 to +7",
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"(n-1)d and ns close in energy\"] --> B[\"Both sets of electrons can be removed\"]\n  B --> C[\"Multiple oxidation states possible\"]\n  C --> D[\"Higher states more covalent and oxidising\"]\n  C --> E[\"Lower states more ionic\"]"
+    },
+    "example": "Manganese shows +2 (Mn2+), +4 (MnO2), +6 (MnO4 2-) and +7 (MnO4-) oxidation states, with KMnO4 (+7) being a powerful oxidising agent.",
+    "tip": "Quote manganese as the best example of maximum oxidation states and explain the +2 state using the 4s2 electron loss."
+  },
+  {
+    "t": "Magnetic Properties and Colour of Ions",
+    "def": "Transition metal ions are often coloured and magnetic because of unpaired electrons in their incompletely filled d-orbitals.",
+    "points": [
+      "Paramagnetism arises when an ion has one or more unpaired electrons; they are attracted into a magnetic field.",
+      "Magnetic moment increases with the number of unpaired electrons: mu = sqrt(n(n+2)) Bohr magneton, where n is number of unpaired electrons.",
+      "Ions with no unpaired electrons (like Zn2+, d10) are diamagnetic and show no colour.",
+      "Colour arises from d-d transitions: an electron absorbs visible light to jump from a lower-energy d-orbital to a higher-energy d-orbital, and the complementary colour is seen.",
+      "Ions with completely empty (d0) or completely filled (d10) d-orbitals usually show no colour because no d-d transition is possible.",
+      "Colour and magnetic behaviour both depend directly on the number of unpaired d-electrons present."
+    ],
+    "formula": "mu = sqrt(n(n+2)) Bohr magneton, where n = number of unpaired electrons",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Ion has unpaired d electrons\"] --> B[\"Paramagnetic behaviour\"]\n  A --> C[\"Light absorbed for d-d transition\"]\n  C --> D[\"Ion appears coloured\"]\n  E[\"No unpaired electrons, d0 or d10\"] --> F[\"Diamagnetic and colourless\"]"
+    },
+    "example": "Ti3+ (3d1) has 1 unpaired electron, mu = sqrt(1x3) = 1.73 BM, and appears violet/purple due to a single d-d transition.",
+    "tip": "Always connect colour and magnetism to the same cause: unpaired d-electrons. State clearly when an ion is colourless (d0/d10)."
+  },
+  {
+    "t": "Catalytic Properties",
+    "def": "Many transition metals and their compounds act as good catalysts because of their ability to show variable oxidation states and to form unstable intermediate compounds with reactants.",
+    "points": [
+      "Variable oxidation states allow transition metals to accept and donate electrons easily, helping redox reactions proceed.",
+      "They can form intermediate complexes with reactants, providing a new, lower-energy pathway for the reaction.",
+      "Large surface area (in finely divided or powdered metal form) increases adsorption of reactant molecules, improving catalytic action.",
+      "Vacant d-orbitals allow reactant molecules to bind to the metal surface and get activated (weakening bonds for easier reaction).",
+      "Examples: Fe catalyses the Haber process for ammonia; V2O5 catalyses SO2 to SO3 oxidation in the Contact process; Ni catalyses hydrogenation of oils."
+    ],
+    "formula": "Catalysis via variable oxidation state: M(n+) <-> M((n+2)+) + 2e- (electron transfer cycle)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Reactants adsorb on metal surface\"] --> B[\"Form unstable intermediate with metal\"]\n  B --> C[\"Lower activation energy pathway\"]\n  C --> D[\"Products formed and released\"]\n  D --> E[\"Catalyst surface regenerated\"]"
+    },
+    "example": "In the Contact process, V2O5 first gets reduced by SO2 to V2O4, then V2O4 is reoxidised by O2 back to V2O5, repeatedly converting SO2 to SO3.",
+    "tip": "Give at least two named industrial examples (Fe in Haber process, V2O5 in Contact process) for full marks."
+  },
+  {
+    "t": "Lanthanoid Contraction",
+    "def": "Lanthanoid contraction is the steady and gradual decrease in atomic and ionic radii of the lanthanoid series elements as atomic number increases from La to Lu.",
+    "points": [
+      "As atomic number increases across lanthanoids, electrons are added to the inner 4f orbitals.",
+      "4f orbitals have poor shielding effect compared to d or p orbitals, so the increasing nuclear charge is not effectively screened.",
+      "This poor shielding causes the effective nuclear charge felt by outer electrons to increase, pulling the outer shell closer and shrinking the atomic/ionic radius.",
+      "The cumulative effect across all 14 lanthanoids is called lanthanoid contraction.",
+      "It causes the radii of elements just after the lanthanoids (like Zr and Hf, or Nb and Ta) to become almost similar, making their separation difficult.",
+      "This similarity of post-lanthanoid elements is a direct consequence used to explain near-identical properties of 4d and 5d congeners."
+    ],
+    "formula": "Radius decrease per element is small, but cumulative decrease across 14 lanthanoids is significant (~ 20 pm smaller overall)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Electrons added to 4f orbitals\"] --> B[\"Poor shielding by 4f electrons\"]\n  B --> C[\"Increased effective nuclear charge\"]\n  C --> D[\"Outer shell pulled closer to nucleus\"]\n  D --> E[\"Gradual decrease in radius: lanthanoid contraction\"]"
+    },
+    "example": "Because of lanthanoid contraction, Zr (atomic radius ~160 pm) and Hf (~159 pm) have almost identical radii, making their chemical separation very difficult.",
+    "tip": "Explain the cause (poor 4f shielding) and one consequence (similar radii of Zr/Hf or Nb/Ta) — both parts are usually required for full marks."
+  },
+  {
+    "t": "Actinoids and Their Properties",
+    "def": "Actinoids are the 14 elements following actinium (atomic numbers 90-103) in which the 5f orbitals are progressively filled; they are mostly radioactive and show more variable oxidation states than lanthanoids.",
+    "points": [
+      "General electronic configuration: (n-2)f(1-14) (n-1)d(0-1) ns2, with filling of 5f orbitals.",
+      "All actinoids are radioactive; many are synthetic (man-made) and unstable, especially those after uranium (transuranium elements).",
+      "+3 is the common oxidation state, similar to lanthanoids, but actinoids show a wider range of oxidation states (e.g. +3 to +7 for some elements like uranium and neptunium) because 5f, 6d and 7s orbitals are close in energy.",
+      "Actinoid contraction also occurs (radii decrease across the series) similar to lanthanoid contraction, but it is less regular due to greater involvement of 6d orbitals.",
+      "Actinoids are harder to study because many are radioactive, short-lived, and available only in very small (sometimes trace) quantities.",
+      "Compared to lanthanoids, actinoid compounds show more covalent character due to greater involvement of 5f, 6d electrons in bonding."
+    ],
+    "formula": "General configuration: (n-2)f^1-14 (n-1)d^0-1 ns^2; common oxidation state +3",
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Actinoids, Z = 90 to 103\"] --> B[\"5f orbitals progressively filled\"]\n  B --> C[\"Mostly radioactive elements\"]\n  C --> D[\"Wider range of oxidation states than lanthanoids\"]\n  D --> E[\"Actinoid contraction similar to lanthanoid contraction\"]"
+    },
+    "example": "Uranium shows oxidation states from +3 to +6 (commonly +6 in UO2 2+, uranyl ion), unlike most lanthanoids which are mainly restricted to +3.",
+    "tip": "Contrast actinoids with lanthanoids on three points: radioactivity, wider oxidation states, and greater covalent character — a standard comparison question."
+  }
+]

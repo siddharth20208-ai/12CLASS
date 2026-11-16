@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Amoeba reproduces asexually by:",
+    "o": [
+      "Budding",
+      "Binary fission",
+      "Gemmule formation",
+      "Fragmentation only"
+    ],
+    "a": 1,
+    "why": "Amoeba divides into two equal daughter cells by binary fission."
+  },
+  {
+    "q": "Hydra commonly reproduces asexually by:",
+    "o": [
+      "Binary fission",
+      "Spore formation",
+      "Budding",
+      "Regeneration only"
+    ],
+    "a": 2,
+    "why": "A bud grows on Hydra's body and detaches as a new individual."
+  },
+  {
+    "q": "One spermatogonium undergoing spermatogenesis ultimately gives rise to how many functional sperm?",
+    "o": [
+      "1",
+      "2",
+      "8",
+      "4"
+    ],
+    "a": 3,
+    "why": "Meiosis I and II convert 1 spermatogonium into 4 haploid spermatids/sperm."
+  },
+  {
+    "q": "Oogenesis in humans yields how many functional ova per primary oocyte?",
+    "o": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "a": 0,
+    "why": "Unequal cytoplasm division gives only 1 functional ovum plus polar bodies."
+  },
+  {
+    "q": "A sharp LH surge around day 14 of the menstrual cycle triggers:",
+    "o": [
+      "Menstruation",
+      "Ovulation",
+      "Follicle growth",
+      "Implantation"
+    ],
+    "a": 1,
+    "why": "The LH surge causes rupture of the Graafian follicle, releasing the ovum."
+  },
+  {
+    "q": "If ovulation occurs on day 14 and the cycle length is 28 days with no fertilization, menstruation begins again near day:",
+    "o": [
+      "14",
+      "20",
+      "28",
+      "24"
+    ],
+    "a": 2,
+    "why": "28-day cycle: menstruation restarts near day 28 after corpus luteum degenerates."
+  },
+  {
+    "q": "Fertilization in humans normally occurs in the:",
+    "o": [
+      "Uterus",
+      "Ovary",
+      "Cervix",
+      "Ampullary region of fallopian tube"
+    ],
+    "a": 3,
+    "why": "Sperm and ovum fuse in the ampulla of the fallopian tube."
+  },
+  {
+    "q": "The outer layer of the blastocyst that attaches to the endometrium during implantation is the:",
+    "o": [
+      "Trophoblast",
+      "Inner cell mass",
+      "Zona pellucida",
+      "Morula"
+    ],
+    "a": 0,
+    "why": "The trophoblast attaches to and digests into the endometrium, enabling implantation."
+  },
+  {
+    "q": "The hormone mainly responsible for strong uterine contractions leading to parturition is:",
+    "o": [
+      "Progesterone",
+      "Oxytocin",
+      "Prolactin",
+      "Estrogen"
+    ],
+    "a": 1,
+    "why": "Posterior pituitary releases oxytocin, which drives labour contractions."
+  },
+  {
+    "q": "Milk ejection (letting-down) from the mammary gland during suckling is caused mainly by:",
+    "o": [
+      "Prolactin",
+      "Progesterone",
+      "Oxytocin",
+      "FSH"
+    ],
+    "a": 2,
+    "why": "Oxytocin contracts muscle cells around milk glands, ejecting milk; prolactin only makes milk."
+  }
+]

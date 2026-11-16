@@ -1,0 +1,112 @@
+[
+  {
+    "q": "The general electronic configuration of d-block (transition) elements is:",
+    "o": [
+      "ns^2 np^(1-6)",
+      "(n-1)d^(1-10) ns^(0-2)",
+      "(n-2)f^(1-14) ns^2",
+      "ns^1 only"
+    ],
+    "a": 1,
+    "why": "Transition elements have the general configuration (n-1)d^(1-10) ns^(0-2)."
+  },
+  {
+    "q": "The correct electronic configuration of chromium (Z=24), showing extra stability of half-filled orbitals, is:",
+    "o": [
+      "3d4 4s2",
+      "3d6 4s0",
+      "3d5 4s1",
+      "3d3 4s3"
+    ],
+    "a": 2,
+    "why": "Cr has configuration 3d5 4s1 instead of the expected 3d4 4s2, due to extra stability of a half-filled d-subshell."
+  },
+  {
+    "q": "Among the first-row transition metals, which element shows the widest range of oxidation states (+2 to +7)?",
+    "o": [
+      "Fe",
+      "Zn",
+      "Cu",
+      "Mn"
+    ],
+    "a": 3,
+    "why": "Manganese shows oxidation states from +2 to +7, the widest range among 3d transition metals, due to its d5 configuration at +2."
+  },
+  {
+    "q": "The common +2 oxidation state of most 3d transition metals arises from the loss of:",
+    "o": [
+      "Both 4s electrons",
+      "One 3d electron only",
+      "All 3d electrons",
+      "One 4s and one 3d electron"
+    ],
+    "a": 0,
+    "why": "The +2 state is commonly achieved by loss of the two 4s electrons, since 4s is lost before 3d on ionisation."
+  },
+  {
+    "q": "The magnetic moment formula relating the number of unpaired electrons (n) to magnetic moment (mu) in Bohr magnetons is:",
+    "o": [
+      "mu = n(n+2)",
+      "mu = sqrt(n(n+2))",
+      "mu = sqrt(n) + 2",
+      "mu = 2n"
+    ],
+    "a": 1,
+    "why": "Magnetic moment mu = sqrt(n(n+2)) Bohr magneton, where n is the number of unpaired electrons."
+  },
+  {
+    "q": "Ti3+ ion has one unpaired electron (3d1). Its magnetic moment is approximately:",
+    "o": [
+      "3.87 BM",
+      "2.83 BM",
+      "1.73 BM",
+      "0 BM"
+    ],
+    "a": 2,
+    "why": "mu = sqrt(n(n+2)) = sqrt(1x3) = sqrt(3) ≈ 1.73 BM for one unpaired electron."
+  },
+  {
+    "q": "Zn2+ ion (d10 configuration) is colourless and diamagnetic because:",
+    "o": [
+      "It has unpaired electrons causing colour",
+      "It has a half-filled d-subshell",
+      "It absorbs all visible light",
+      "It has no unpaired electrons, so no d-d transition is possible"
+    ],
+    "a": 3,
+    "why": "With a fully filled d10 configuration, no d-d transition can occur, making the ion colourless and diamagnetic (no unpaired electrons)."
+  },
+  {
+    "q": "In the Contact process, V2O5 acts as a catalyst for converting SO2 to SO3 by:",
+    "o": [
+      "Cycling between V2O5 and V2O4 via redox with SO2 and O2",
+      "Remaining completely unreactive throughout",
+      "Reacting permanently to form VSO4",
+      "Acting only as a physical adsorbent with no chemical change"
+    ],
+    "a": 0,
+    "why": "V2O5 is reduced by SO2 to V2O4, then reoxidised by O2 back to V2O5, repeatedly converting SO2 to SO3."
+  },
+  {
+    "q": "Lanthanoid contraction occurs mainly due to:",
+    "o": [
+      "Strong shielding by 4f electrons",
+      "Poor shielding by 4f electrons, increasing effective nuclear charge",
+      "Addition of electrons to the 5d orbitals",
+      "Decrease in nuclear charge across the series"
+    ],
+    "a": 1,
+    "why": "Poor shielding by 4f electrons increases effective nuclear charge, pulling the outer shell inward and causing lanthanoid contraction."
+  },
+  {
+    "q": "As a result of lanthanoid contraction, which pair of elements have almost identical atomic radii, making separation difficult?",
+    "o": [
+      "Na and K",
+      "Fe and Co",
+      "Zr and Hf",
+      "Cl and Br"
+    ],
+    "a": 2,
+    "why": "Lanthanoid contraction causes Zr and Hf to have nearly identical radii, making their chemical separation very difficult."
+  }
+]

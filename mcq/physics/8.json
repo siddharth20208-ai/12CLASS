@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Kirchhoff's current law is based on conservation of",
+    "o": [
+      "energy",
+      "momentum",
+      "charge",
+      "mass"
+    ],
+    "a": 2,
+    "why": "KCL: sum of currents at a junction is zero, due to charge conservation."
+  },
+  {
+    "q": "At a junction, I1 = 5 A enters, I2 = 2 A leaves. If a third current I3 also leaves, its value is",
+    "o": [
+      "7 A",
+      "2 A",
+      "5 A",
+      "3 A"
+    ],
+    "a": 3,
+    "why": "5 = 2 + I3, so I3 = 3 A."
+  },
+  {
+    "q": "Kirchhoff's voltage law is a statement of conservation of",
+    "o": [
+      "energy",
+      "momentum",
+      "mass",
+      "charge"
+    ],
+    "a": 0,
+    "why": "KVL: sum of EMFs equals sum of IR drops in a loop, from energy conservation."
+  },
+  {
+    "q": "In a balanced Wheatstone bridge with resistances P, Q, R, S, the condition for balance is",
+    "o": [
+      "P + Q = R + S",
+      "P/Q = R/S",
+      "P x Q = R x S",
+      "P - Q = R - S"
+    ],
+    "a": 1,
+    "why": "Balance condition is P/Q = R/S (galvanometer shows zero deflection)."
+  },
+  {
+    "q": "If P = 10 ohm, Q = 20 ohm, R = 15 ohm in a balanced Wheatstone bridge, the value of S is",
+    "o": [
+      "20 ohm",
+      "7.5 ohm",
+      "30 ohm",
+      "15 ohm"
+    ],
+    "a": 2,
+    "why": "S = RQ/P = 15 x 20/10 = 30 ohm."
+  },
+  {
+    "q": "A meter bridge is essentially a practical form of",
+    "o": [
+      "potentiometer",
+      "rheostat",
+      "galvanometer",
+      "Wheatstone bridge"
+    ],
+    "a": 3,
+    "why": "Meter bridge uses a 1 m wire as a Wheatstone bridge arm."
+  },
+  {
+    "q": "In a meter bridge, if R = 10 ohm and the balance length l = 40 cm (from the R gap's opposite end convention X/R = l/(100-l)), the unknown resistance X is",
+    "o": [
+      "6.67 ohm",
+      "15 ohm",
+      "10 ohm",
+      "4 ohm"
+    ],
+    "a": 0,
+    "why": "X = R x l/(100-l) = 10 x 40/60 = 6.67 ohm."
+  },
+  {
+    "q": "A potentiometer is preferred over a voltmeter for measuring EMF because at balance it",
+    "o": [
+      "draws maximum current",
+      "draws zero current from the cell",
+      "needs no galvanometer",
+      "has very low resistance"
+    ],
+    "a": 1,
+    "why": "At the balance point no current flows through the galvanometer branch, giving an exact EMF reading."
+  },
+  {
+    "q": "If the potential gradient of a potentiometer wire is 0.02 V/cm and the balancing length for a cell is 60 cm, the EMF of the cell is",
+    "o": [
+      "3.0 V",
+      "0.833 V",
+      "1.2 V",
+      "12 V"
+    ],
+    "a": 2,
+    "why": "E = k L = 0.02 x 60 = 1.2 V."
+  },
+  {
+    "q": "A potentiometer gives balancing lengths L1 = 50 cm and L2 = 40 cm for two cells. The ratio of their EMFs E1/E2 is",
+    "o": [
+      "0.8",
+      "1.0",
+      "2.0",
+      "1.25"
+    ],
+    "a": 3,
+    "why": "E1/E2 = L1/L2 = 50/40 = 1.25."
+  }
+]

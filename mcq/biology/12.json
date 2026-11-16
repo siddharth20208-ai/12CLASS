@@ -1,0 +1,112 @@
+[
+  {
+    "q": "The exponential growth curve of a population is shaped like the letter:",
+    "o": [
+      "J",
+      "S",
+      "U",
+      "L"
+    ],
+    "a": 0,
+    "why": "Exponential (unlimited resource) growth rises steeply, giving a J-shaped curve."
+  },
+  {
+    "q": "The logistic growth equation is given by dN/dt =",
+    "o": [
+      "rN",
+      "rN(K-N)/K",
+      "r/N",
+      "N/K"
+    ],
+    "a": 1,
+    "why": "Logistic growth includes a (K-N)/K term that slows growth as N approaches carrying capacity K."
+  },
+  {
+    "q": "The maximum population size that an environment can sustainably support is called:",
+    "o": [
+      "Natality",
+      "Mortality",
+      "Carrying capacity (K)",
+      "Biotic potential"
+    ],
+    "a": 2,
+    "why": "Carrying capacity K is the maximum sustainable population size for given resources."
+  },
+  {
+    "q": "If birth rate exceeds death rate in a population, the population will generally:",
+    "o": [
+      "Decrease",
+      "Remain exactly constant",
+      "Become extinct immediately",
+      "Increase"
+    ],
+    "a": 3,
+    "why": "Population size grows when births outnumber deaths, other factors being constant."
+  },
+  {
+    "q": "An interaction where one species benefits and the other is harmed by being eaten is:",
+    "o": [
+      "Predation",
+      "Mutualism",
+      "Commensalism",
+      "Amensalism"
+    ],
+    "a": 0,
+    "why": "In predation, the predator benefits while the prey is harmed (killed and eaten)."
+  },
+  {
+    "q": "Predation is ecologically significant mainly because it:",
+    "o": [
+      "Always leads to extinction of prey",
+      "Helps regulate prey population size and maintain ecological balance",
+      "Has no effect on ecosystem",
+      "Only affects plants"
+    ],
+    "a": 1,
+    "why": "Predators keep prey populations in check, contributing to ecosystem stability."
+  },
+  {
+    "q": "An organism that lives in or on another organism and derives nutrition at the host's expense shows:",
+    "o": [
+      "Mutualism",
+      "Commensalism",
+      "Parasitism",
+      "Competition"
+    ],
+    "a": 2,
+    "why": "Parasitism benefits the parasite while harming the host."
+  },
+  {
+    "q": "The competitive exclusion principle states that two species competing for the same limited resource:",
+    "o": [
+      "Can coexist indefinitely without change",
+      "Never interact at all",
+      "Will always merge into one species",
+      "Cannot coexist indefinitely; one will eventually eliminate the other"
+    ],
+    "a": 3,
+    "why": "When niches fully overlap, the more efficient competitor eventually excludes the other."
+  },
+  {
+    "q": "Which of the following is a population attribute (not a property of an individual organism)?",
+    "o": [
+      "Birth rate of the population",
+      "Age of a single organism",
+      "Height of one organism",
+      "Weight of one organism"
+    ],
+    "a": 0,
+    "why": "Birth rate, death rate, sex ratio and density are attributes of populations, not individuals."
+  },
+  {
+    "q": "Tapeworms living in the intestine of humans are an example of:",
+    "o": [
+      "Mutualism",
+      "Parasitism",
+      "Predation",
+      "Competition"
+    ],
+    "a": 1,
+    "why": "The tapeworm benefits by absorbing nutrients while harming the human host — a parasitic relationship."
+  }
+]

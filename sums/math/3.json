@@ -1,0 +1,165 @@
+{
+  "solved": [
+    {
+      "topic": "Separate equations from combined (homogeneous) equation",
+      "marks": 2,
+      "q": "Find the separate equations of lines represented by x^2 - 5xy + 4y^2 = 0.",
+      "steps": [
+        "The equation is a homogeneous second-degree expression in x and y, so it factors into two linear factors.",
+        "Try factoring: x^2 - 5xy + 4y^2 = (x - y)(x - 4y).",
+        "Check: (x - y)(x - 4y) = x^2 - 4xy - xy + 4y^2 = x^2 - 5xy + 4y^2, which matches.",
+        "Setting each factor to zero gives the two lines."
+      ],
+      "ans": "x - y = 0 and x - 4y = 0."
+    },
+    {
+      "topic": "Angle between pair of lines",
+      "marks": 3,
+      "q": "Find the acute angle between the lines represented by 2x^2 + 7xy + 3y^2 = 0.",
+      "steps": [
+        "Compare with ax^2 + 2hxy + by^2 = 0: a = 2, 2h = 7 so h = 7/2, b = 3.",
+        "Using formula: tan(theta) = |2*sqrt(h^2 - ab)/(a+b)|.",
+        "h^2 - ab = (7/2)^2 - 2*3 = 49/4 - 6 = 49/4 - 24/4 = 25/4.",
+        "tan(theta) = |2*sqrt(25/4)/(2+3)| = |2*(5/2)/5| = |5/5| = 1.",
+        "theta = tan^-1(1) = 45 degrees."
+      ],
+      "ans": "The acute angle between the lines is 45 degrees."
+    },
+    {
+      "topic": "Perpendicularity condition (a + b = 0)",
+      "marks": 2,
+      "q": "Show that the lines represented by 3x^2 - 4xy - 3y^2 = 0 are perpendicular to each other.",
+      "steps": [
+        "Compare with ax^2 + 2hxy + by^2 = 0: a = 3, b = -3.",
+        "The condition for the pair of lines to be perpendicular is a + b = 0.",
+        "Here a + b = 3 + (-3) = 0, so the condition is satisfied."
+      ],
+      "ans": "The lines are perpendicular, since a + b = 0."
+    },
+    {
+      "topic": "Coincident lines condition (h^2 = ab)",
+      "marks": 3,
+      "q": "Find the value of p such that px^2 - 8xy + 12y^2 = 0 represents a pair of coincident (parallel, identical) lines.",
+      "steps": [
+        "Compare with ax^2 + 2hxy + by^2 = 0: a = p, 2h = -8 so h = -4, b = 12.",
+        "Condition for coincident lines is h^2 = ab.",
+        "Substitute: (-4)^2 = p * 12, i.e. 16 = 12p.",
+        "Solve: p = 16/12 = 4/3."
+      ],
+      "ans": "p = 4/3."
+    },
+    {
+      "topic": "General second-degree equation representing pair of lines",
+      "marks": 4,
+      "q": "Show that 2x^2 + 5xy + 3y^2 + 6x + 7y + 4 = 0 represents a pair of straight lines, and find their separate equations.",
+      "steps": [
+        "Compare with ax^2 + 2hxy + by^2 + 2gx + 2fy + c = 0: a = 2, 2h = 5 so h = 5/2, b = 3, 2g = 6 so g = 3, 2f = 7 so f = 7/2, c = 4.",
+        "Condition for pair of lines: abc + 2fgh - af^2 - bg^2 - ch^2 = 0.",
+        "abc = 2*3*4 = 24. 2fgh = 2*(7/2)*3*(5/2) = 2*(7/2)*3*(5/2) = (7)*(3)*(5)/2 = 105/2 = 52.5.",
+        "af^2 = 2*(7/2)^2 = 2*49/4 = 49/2 = 24.5. bg^2 = 3*9 = 27. ch^2 = 4*(5/2)^2 = 4*25/4 = 25.",
+        "Sum: 24 + 52.5 - 24.5 - 27 - 25 = 0, so the condition is satisfied and it is a pair of lines.",
+        "Factor the second-degree part: 2x^2 + 5xy + 3y^2 = (2x + 3y)(x + y).",
+        "Assume combined form (2x + 3y + l)(x + y + m); expand and compare x-coefficient (2m+l = 6) and y-coefficient (3m+l = 7).",
+        "Subtracting: m = 1, then l = 6 - 2(1) = 4; check constant term l*m = 4*1 = 4, matching c = 4."
+      ],
+      "ans": "2x^2+5xy+3y^2+6x+7y+4 = (2x+3y+4)(x+y+1), so the two lines are 2x + 3y + 4 = 0 and x + y + 1 = 0."
+    },
+    {
+      "topic": "Finding k so that equation represents a pair of lines",
+      "marks": 4,
+      "q": "Find the value of k so that 3x^2 + 10xy + ky^2 - 5x - 6y + 1 = 0 represents a pair of straight lines.",
+      "steps": [
+        "Compare with ax^2 + 2hxy + by^2 + 2gx + 2fy + c = 0: a = 3, 2h = 10 so h = 5, b = k, 2g = -5 so g = -5/2, 2f = -6 so f = -3, c = 1.",
+        "Apply condition abc + 2fgh - af^2 - bg^2 - ch^2 = 0.",
+        "abc = 3*k*1 = 3k. 2fgh = 2*(-3)*(-5/2)*5 = 2*(-3)*(-5/2)*5 = 75.",
+        "af^2 = 3*9 = 27. bg^2 = k*(25/4). ch^2 = 1*25 = 25.",
+        "Equation: 3k + 75 - 27 - 25k/4 - 25 = 0, i.e. 3k + 23 - 25k/4 = 0.",
+        "Multiply through by 4: 12k + 92 - 25k = 0, i.e. -13k + 92 = 0, so k = 92/13."
+      ],
+      "ans": "k = 92/13."
+    },
+    {
+      "topic": "Finding slope of lines from homogeneous equation",
+      "marks": 3,
+      "q": "Find the individual slopes of the lines represented by 6x^2 - 5xy + y^2 = 0.",
+      "steps": [
+        "Divide the equation by x^2 (treating y = mx): 6 - 5m + m^2 = 0, i.e. m^2 - 5m + 6 = 0.",
+        "This quadratic in m gives the slopes of the two lines.",
+        "Factor: m^2 - 5m + 6 = (m - 2)(m - 3) = 0.",
+        "So m = 2 or m = 3."
+      ],
+      "ans": "The two lines have slopes m = 2 and m = 3, i.e. y = 2x and y = 3x."
+    },
+    {
+      "topic": "Sum and product of slopes",
+      "marks": 2,
+      "q": "If m1 and m2 are the slopes of the lines represented by ax^2 + 2hxy + by^2 = 0, find m1 + m2 and m1*m2 for 4x^2 - 4xy + y^2 = 0 (b not equal to 0).",
+      "steps": [
+        "Compare: a = 4, 2h = -4 so h = -2, b = 1.",
+        "Dividing by x^2 with y = mx: a + 2hm + bm^2 = 0 becomes 4 - 4m + m^2 = 0.",
+        "By sum/product of roots of quadratic in m: m1 + m2 = -2h/b = -2(-2)/1 = 4, and m1*m2 = a/b = 4/1 = 4.",
+        "Verify by factoring: m^2 - 4m + 4 = (m-2)^2 = 0, so both roots m1 = m2 = 2; sum = 4, product = 4."
+      ],
+      "ans": "m1 + m2 = 4, m1*m2 = 4 (here the lines are coincident with slope 2)."
+    },
+    {
+      "topic": "Equation of lines from given slopes through origin",
+      "marks": 2,
+      "q": "Find the combined equation of the pair of lines through the origin having slopes 2 and -3.",
+      "steps": [
+        "A line through the origin with slope m is y = mx, i.e. y - mx = 0.",
+        "The two lines are y - 2x = 0 and y + 3x = 0.",
+        "Combined equation is their product: (y - 2x)(y + 3x) = 0.",
+        "Expand: y^2 + 3xy - 2xy - 6x^2 = y^2 + xy - 6x^2."
+      ],
+      "ans": "Combined equation: -6x^2 + xy + y^2 = 0, or equivalently 6x^2 - xy - y^2 = 0."
+    },
+    {
+      "topic": "Angle between lines given by general second-degree equation",
+      "marks": 3,
+      "q": "Find the acute angle between the lines represented by x^2 - 3xy + 2y^2 = 0.",
+      "steps": [
+        "Compare: a = 1, 2h = -3 so h = -3/2, b = 2.",
+        "tan(theta) = |2*sqrt(h^2-ab)/(a+b)|.",
+        "h^2 - ab = (9/4) - 2 = 9/4 - 8/4 = 1/4.",
+        "tan(theta) = |2*sqrt(1/4)/(1+2)| = |2*(1/2)/3| = |1/3| = 1/3.",
+        "theta = tan^-1(1/3)."
+      ],
+      "ans": "theta = tan^-1(1/3), approximately 18 degrees 26 minutes."
+    },
+    {
+      "topic": "Finding value of h given angle condition",
+      "marks": 4,
+      "q": "Find lambda if the lines represented by x^2 + lambda*xy - y^2 = 0 are at right angles to each other.",
+      "steps": [
+        "Compare with ax^2+2hxy+by^2=0: a = 1, b = -1 (here 2h = lambda).",
+        "The condition for perpendicular lines is a + b = 0.",
+        "Here a + b = 1 + (-1) = 0 automatically, for any value of lambda.",
+        "So the lines are perpendicular for every value of lambda, since a + b = 0 identically."
+      ],
+      "ans": "The lines are perpendicular for all values of lambda (condition a+b=0 holds identically)."
+    },
+    {
+      "topic": "Pair of lines through origin and a point (combined equation check)",
+      "marks": 3,
+      "q": "Find the separate equations of the lines represented by 3x^2 + 2xy - y^2 = 0.",
+      "steps": [
+        "This is a homogeneous equation; factor it as a product of two linear expressions in x, y.",
+        "Try: 3x^2 + 2xy - y^2 = (3x - y)(x + y).",
+        "Check by expanding: (3x - y)(x + y) = 3x^2 + 3xy - xy - y^2 = 3x^2 + 2xy - y^2, which matches.",
+        "Setting each factor to zero gives the two lines."
+      ],
+      "ans": "3x - y = 0 and x + y = 0."
+    }
+  ],
+  "practice": [
+    { "topic": "Separate equations", "q": "Find the separate equations of the lines x^2 - 7xy + 12y^2 = 0.", "hint": "Factor as (x-3y)(x-4y); check cross terms give -7xy.", "ans": "x - 3y = 0 and x - 4y = 0." },
+    { "topic": "Angle between lines", "q": "Find the acute angle between the lines 3x^2 - 4xy + y^2 = 0.", "hint": "Use tan(theta)=|2sqrt(h^2-ab)/(a+b)| with a=3,h=-2,b=1.", "ans": "tan^-1(1/2) (approx 26 degrees 34 minutes)." },
+    { "topic": "Perpendicular lines condition", "q": "Show that the lines x^2 - y^2 = 0 are perpendicular.", "hint": "Compare a=1, b=-1, check a+b=0.", "ans": "Perpendicular, since a+b = 1-1 = 0." },
+    { "topic": "Coincident lines condition", "q": "Find m such that 4x^2 + mxy + 9y^2 = 0 represents coincident lines.", "hint": "Use h^2=ab with a=4, b=9, 2h=m.", "ans": "m = 12 or m = -12." },
+    { "topic": "General second degree pair of lines", "q": "Show that x^2 - y^2 + x + y = 0 represents a pair of straight lines and find them.", "hint": "Factor directly: x^2-y^2=(x-y)(x+y); add (x+y) to get common factor.", "ans": "(x+y)(x-y+1)=0, so lines are x+y=0 and x-y+1=0." },
+    { "topic": "Slopes from homogeneous equation", "q": "Find the slopes of the lines represented by x^2 - xy - 6y^2 = 0.", "hint": "Divide by x^2 putting y=mx: 1 - m - 6m^2 = 0, i.e. 6m^2+m-1=0.", "ans": "m = 1/3 or m = -1/2." },
+    { "topic": "Combined equation from slopes", "q": "Find the combined equation of the pair of lines through the origin with slopes 1 and -1.", "hint": "Lines are y-x=0 and y+x=0; multiply them.", "ans": "y^2 - x^2 = 0." },
+    { "topic": "Value of k for pair of lines (general equation)", "q": "Find k so that x^2 + kxy + y^2 - 5x - 5y + 6 = 0 represents a pair of lines, given the lines are x+y-2=0 and x+y-3=0 for k=2.", "hint": "Verify by substituting k=2 into the abc+2fgh-af^2-bg^2-ch^2=0 condition.", "ans": "k = 2." }
+  ]
+}

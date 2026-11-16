@@ -1,0 +1,150 @@
+{
+  "solved": [
+    {
+      "topic": "Nuclear radius and density - ratio for two nuclei",
+      "marks": 2,
+      "q": "Find the ratio of the radii of nuclei with mass numbers A1 = 27 and A2 = 125.",
+      "steps": [
+        "Given: A1 = 27, A2 = 125. Formula: R = R0 A^(1/3).",
+        "Ratio R2/R1 = (A2/A1)^(1/3) = (125/27)^(1/3).",
+        "125/27 = (5/3)^3, since 5^3 = 125 and 3^3 = 27.",
+        "So (125/27)^(1/3) = 5/3.",
+        "Answer: R2/R1 = 5/3 = 1.67 (no units, it is a ratio)."
+      ],
+      "ans": "R2 : R1 = 5 : 3 (approx 1.67)"
+    },
+    {
+      "topic": "Nuclear radius from density",
+      "marks": 3,
+      "q": "The density of nuclear matter is 2.3 x 10^17 kg/m^3 and mass of a nucleon is 1.67 x 10^-27 kg. Estimate the value of R0 in R = R0 A^(1/3).",
+      "steps": [
+        "Given: rho = 2.3 x 10^17 kg/m^3, mN = 1.67 x 10^-27 kg.",
+        "Formula: rho = mass/volume = (A mN) / ((4/3) pi R^3), and R = R0 A^(1/3) so R^3 = R0^3 A.",
+        "Substituting: rho = (A mN) / ((4/3) pi R0^3 A) = 3 mN / (4 pi R0^3).",
+        "So R0^3 = 3 mN / (4 pi rho) = (3 x 1.67 x 10^-27) / (4 x 3.14 x 2.3 x 10^17).",
+        "Numerator = 5.01 x 10^-27. Denominator = 4 x 3.14 x 2.3 x 10^17 = 28.9 x 10^17.",
+        "R0^3 = 5.01 x 10^-27 / 28.9 x 10^17 = 1.73 x 10^-45 m^3.",
+        "R0 = (1.73 x 10^-45)^(1/3) = 1.2 x 10^-15 m (taking cube root)."
+      ],
+      "ans": "R0 is approximately 1.2 x 10^-15 m (1.2 fm)"
+    },
+    {
+      "topic": "Mass defect and binding energy of Helium-4",
+      "marks": 4,
+      "q": "Calculate the mass defect and binding energy per nucleon for Helium-4 nucleus. Given: mass of proton = 1.007825 u, mass of neutron = 1.008665 u, mass of He-4 nucleus = 4.002603 u, 1 u = 931.5 MeV.",
+      "steps": [
+        "Given: Z = 2, N = 2 (A = 4). mp = 1.007825 u, mn = 1.008665 u, M = 4.002603 u.",
+        "Formula: delta m = [Z mp + (A-Z) mn] - M.",
+        "Sum of nucleon masses = 2(1.007825) + 2(1.008665) = 2.01565 + 2.01733 = 4.03298 u.",
+        "delta m = 4.03298 - 4.002603 = 0.030377 u.",
+        "Binding energy E = delta m x 931.5 = 0.030377 x 931.5 = 28.3 MeV.",
+        "Binding energy per nucleon = 28.3 / 4 = 7.07 MeV per nucleon."
+      ],
+      "ans": "delta m = 0.0304 u, Binding energy = 28.3 MeV, BE per nucleon = 7.07 MeV"
+    },
+    {
+      "topic": "Decay constant from half-life",
+      "marks": 2,
+      "q": "A radioactive substance has a half-life of 5 years. Calculate its decay constant in SI units.",
+      "steps": [
+        "Given: T(1/2) = 5 years = 5 x 365 x 24 x 3600 s.",
+        "T(1/2) = 5 x 3.15 x 10^7 s = 1.576 x 10^8 s (using 1 year = 3.15 x 10^7 s).",
+        "Formula: lambda = 0.693 / T(1/2).",
+        "lambda = 0.693 / (1.576 x 10^8) = 4.4 x 10^-9 s^-1."
+      ],
+      "ans": "lambda = 4.4 x 10^-9 per second"
+    },
+    {
+      "topic": "Fraction of radioactive sample remaining after n half-lives",
+      "marks": 2,
+      "q": "A radioactive sample initially has a mass of 800 g and a half-life of 10 days. Find the mass remaining after 40 days.",
+      "steps": [
+        "Given: N0 (mass) = 800 g, T(1/2) = 10 days, t = 40 days.",
+        "Formula: N = N0 (1/2)^(t/T).",
+        "Number of half-lives n = t / T = 40/10 = 4.",
+        "N = 800 x (1/2)^4 = 800 x (1/16).",
+        "N = 50 g."
+      ],
+      "ans": "Mass remaining = 50 g"
+    },
+    {
+      "topic": "Activity decreasing with time",
+      "marks": 3,
+      "q": "A radioactive source has an initial activity of 8000 disintegrations per minute and a half-life of 15 minutes. Find its activity after 45 minutes.",
+      "steps": [
+        "Given: A0 = 8000 dis/min, T(1/2) = 15 min, t = 45 min.",
+        "Formula: A = A0 (1/2)^(t/T), since activity falls in the same way as N.",
+        "Number of half-lives n = t/T = 45/15 = 3.",
+        "A = 8000 x (1/2)^3 = 8000 x (1/8).",
+        "A = 1000 disintegrations per minute."
+      ],
+      "ans": "Activity after 45 minutes = 1000 dis/min"
+    },
+    {
+      "topic": "Q-value (energy released) in alpha decay",
+      "marks": 4,
+      "q": "Calculate the energy released in the alpha decay of U-238 to Th-234. Given masses: M(U-238) = 238.05079 u, M(Th-234) = 234.04363 u, M(He-4) = 4.00260 u, 1 u = 931.5 MeV.",
+      "steps": [
+        "Given: reaction U-238 -> Th-234 + alpha (He-4).",
+        "Formula: Q = [M(U-238) - M(Th-234) - M(He-4)] c^2, with 1 u = 931.5 MeV giving energy directly.",
+        "Mass difference delta m = 238.05079 - (234.04363 + 4.00260).",
+        "234.04363 + 4.00260 = 238.04623 u.",
+        "delta m = 238.05079 - 238.04623 = 0.00456 u.",
+        "Q = 0.00456 x 931.5 = 4.25 MeV."
+      ],
+      "ans": "Energy released Q = 4.25 MeV"
+    },
+    {
+      "topic": "Number of nuclei from activity and decay constant",
+      "marks": 3,
+      "q": "A radioactive source of Cobalt-60 (half-life 5.3 years) has an activity of 3.7 x 10^10 disintegrations per second (1 curie). Find the number of Co-60 nuclei present.",
+      "steps": [
+        "Given: T(1/2) = 5.3 years, Activity A = 3.7 x 10^10 s^-1.",
+        "Convert half-life to seconds: T(1/2) = 5.3 x 365 x 24 x 3600 s = 1.672 x 10^8 s.",
+        "Find decay constant: lambda = 0.693 / T(1/2) = 0.693 / (1.672 x 10^8) = 4.15 x 10^-9 s^-1.",
+        "Formula: A = lambda N, so N = A / lambda.",
+        "N = (3.7 x 10^10) / (4.15 x 10^-9) = 0.891 x 10^19.",
+        "N = 8.9 x 10^18 nuclei."
+      ],
+      "ans": "N is approximately 8.9 x 10^18 nuclei"
+    }
+  ],
+  "practice": [
+    {
+      "topic": "Nuclear radius ratio",
+      "q": "Find the ratio of radii of nuclei with mass numbers 8 and 64.",
+      "hint": "Use R2/R1 = (A2/A1)^(1/3); note 64/8 = 8 = 2^3.",
+      "ans": "R2 : R1 = 2 : 1"
+    },
+    {
+      "topic": "Mass defect and binding energy",
+      "q": "Find the binding energy of a nucleus whose mass defect is 0.02 u. (1 u = 931.5 MeV)",
+      "hint": "E = delta m x 931.5 MeV.",
+      "ans": "18.6 MeV"
+    },
+    {
+      "topic": "Decay constant from half-life",
+      "q": "A radioactive isotope has a half-life of 8 days. Calculate its decay constant.",
+      "hint": "lambda = 0.693 / T(1/2); convert days to seconds if SI units needed.",
+      "ans": "lambda = 0.693/8 = 0.0866 per day (or 1.0 x 10^-6 per second)"
+    },
+    {
+      "topic": "Fraction remaining after given time",
+      "q": "A radioactive sample of mass 400 g has a half-life of 20 days. Find the mass remaining after 100 days.",
+      "hint": "n = t/T = 5 half-lives; remaining = N0 (1/2)^n.",
+      "ans": "12.5 g"
+    },
+    {
+      "topic": "Activity after given time",
+      "q": "A source has initial activity 6400 dis/s and half-life 2 hours. Find its activity after 8 hours.",
+      "hint": "n = t/T = 4; A = A0 (1/2)^n.",
+      "ans": "400 dis/s"
+    },
+    {
+      "topic": "Alpha decay Q-value",
+      "q": "In the decay Ra-226 -> Rn-222 + alpha, the mass defect is 0.0054 u. Find the energy released.",
+      "hint": "Q = delta m x 931.5 MeV.",
+      "ans": "5.03 MeV"
+    }
+  ]
+}

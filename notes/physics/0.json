@@ -1,0 +1,88 @@
+[
+  {
+    "t": "Moment of Inertia and Radius of Gyration",
+    "def": "Moment of inertia (I) is the rotational equivalent of mass: it measures how hard it is to change a body's rotation about an axis. Radius of gyration (K) is the distance from the axis at which the whole mass could be placed to give the same moment of inertia.",
+    "points": [
+      "In straight-line motion, mass resists change in velocity. In rotation, moment of inertia resists change in angular velocity.",
+      "I depends on (a) the mass of the body and (b) how far that mass is spread from the axis.",
+      "For a system of particles: I = m1 r1^2 + m2 r2^2 + ... = sum of m r^2.",
+      "Mass far from the axis increases I a lot, because distance is squared.",
+      "Radius of gyration is defined by I = M K^2, so K = sqrt(I / M).",
+      "SI unit of I is kg m^2; unit of K is metre."
+    ],
+    "formula": "I = Σ m r²     I = M K²     K = √(I / M)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Mass M\"] --> C{\"Moment of Inertia I\"}\n  B[\"Distance r from axis\"] --> C\n  C --> D[\"I = M K squared\"]\n  D --> E[\"K = radius of gyration\"]"
+    },
+    "example": "Ring of mass 2 kg, radius 0.5 m about its central axis: I = M R^2 = 2 x 0.25 = 0.5 kg m^2. Then K = sqrt(0.5 / 2) = 0.5 m (equal to R for a ring).",
+    "tip": "Always write the definition, formula I = MK^2 and the SI unit. Learn the table of I for ring, disc, rod and sphere — it is asked every year."
+  },
+  {
+    "t": "Theorem of Parallel Axes",
+    "def": "The moment of inertia of a body about any axis equals its moment of inertia about a parallel axis through its centre of mass plus the product of its mass and the square of the distance between the two axes.",
+    "points": [
+      "Take an axis through the centre of mass (CM). Call its moment of inertia Ic.",
+      "Take another axis parallel to it, at distance h.",
+      "The moment of inertia about the new axis is bigger by M h^2.",
+      "This lets you find I about an edge or end from the known I about the centre.",
+      "It works for any shape (2D or 3D)."
+    ],
+    "formula": "I = Ic + M h²",
+    "diagram": {
+      "draw": "Draw a rod horizontally. Draw a vertical dashed line through its middle and label it 'Axis through CM (Ic)'. Draw a second vertical dashed line at the left end, label it 'Parallel axis (I)'. Mark the gap between them with an arrow labelled 'h'."
+    },
+    "example": "Uniform rod, mass M, length L. About the centre Ic = ML^2/12. About one end, h = L/2: I = ML^2/12 + M(L/2)^2 = ML^2/12 + ML^2/4 = ML^2/3.",
+    "tip": "The rod-about-end result ML²/3 is the most common application — practise deriving it in 3 lines."
+  },
+  {
+    "t": "Theorem of Perpendicular Axes",
+    "def": "For a flat (planar) body, the moment of inertia about an axis perpendicular to its plane equals the sum of its moments of inertia about two mutually perpendicular axes lying in the plane and meeting at the same point.",
+    "points": [
+      "Applies ONLY to thin flat bodies (laminas) like a disc or ring.",
+      "Let X and Y axes lie in the plane of the body; Z is perpendicular to the plane.",
+      "Then Iz = Ix + Iy.",
+      "For symmetric bodies such as a disc, Ix = Iy, so each equals Iz / 2.",
+      "Used to get I about a diameter from I about the central axis."
+    ],
+    "formula": "Iz = Ix + Iy",
+    "diagram": {
+      "draw": "Draw a flat disc. Draw X and Y axes crossing at its centre in the plane of the disc. Draw the Z axis coming straight out of the centre (perpendicular to the page). Label Ix, Iy, Iz."
+    },
+    "example": "Disc about its central perpendicular axis: Iz = MR^2/2. Since Ix = Iy, Ix = Iz/2 = MR^2/4 (moment of inertia about a diameter).",
+    "tip": "Clearly state 'valid only for a plane lamina' — examiners deduct marks if this condition is missing."
+  },
+  {
+    "t": "Conservation of Angular Momentum",
+    "def": "If no external torque acts on a system, its total angular momentum remains constant.",
+    "points": [
+      "Angular momentum L = I ω (moment of inertia times angular velocity).",
+      "Torque τ = dL/dt. If τ = 0, then dL/dt = 0, so L is constant.",
+      "So I1 ω1 = I2 ω2 — if I decreases, ω increases, and vice versa.",
+      "Ice skater pulls arms in: I decreases, so she spins faster.",
+      "A diver tucks the body to spin faster and opens it to slow down before entering water."
+    ],
+    "formula": "L = I ω     τ = dL/dt     I₁ω₁ = I₂ω₂ (when τ = 0)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"No external torque\"] --> B[\"L = I x omega stays constant\"]\n  B --> C[\"Arms pulled in: I decreases\"]\n  C --> D[\"omega increases: spins faster\"]"
+    },
+    "example": "A skater with I = 4 kg m^2 spins at 2 rad/s. She pulls in her arms so I = 2 kg m^2. New ω = I1ω1 / I2 = (4 x 2) / 2 = 4 rad/s.",
+    "tip": "Give the statement, the derivation from τ = dL/dt, and at least two real-life examples for full marks."
+  },
+  {
+    "t": "Banking of Roads",
+    "def": "Banking means raising the outer edge of a curved road above the inner edge so that a component of the normal reaction provides the centripetal force needed for turning.",
+    "points": [
+      "A car turning on a flat road depends only on friction for the centripetal force — risky at high speed.",
+      "On a banked road (angle θ), the normal reaction N tilts inward.",
+      "Vertical component: N cos θ = mg balances weight.",
+      "Horizontal component: N sin θ = m v^2 / r provides centripetal force.",
+      "Dividing: tan θ = v^2 / (r g). This gives the safe speed without needing friction."
+    ],
+    "formula": "tan θ = v² / (r g)     v = √(r g tan θ)",
+    "diagram": {
+      "draw": "Draw an inclined line (road) at angle θ. Place a box (car) on it. Draw mg straight down, N perpendicular to the road surface. Resolve N into N cos θ (up) and N sin θ (towards the centre of the curve). Label θ."
+    },
+    "example": "Curve radius r = 50 m, banking θ = 15° (tan 15° ≈ 0.268), g = 9.8: v = sqrt(50 x 9.8 x 0.268) = sqrt(131.3) ≈ 11.5 m/s.",
+    "tip": "The force diagram carries 1–2 marks by itself — draw it neatly with all components labelled."
+  }
+]

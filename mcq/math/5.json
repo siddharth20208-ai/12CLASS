@@ -1,0 +1,112 @@
+[
+  {
+    "q": "The vector equation of a line passing through point with position vector a and parallel to vector b is:",
+    "o": [
+      "r = a - b",
+      "r = a + t.b",
+      "r = t.a + b",
+      "r = a.b"
+    ],
+    "a": 1,
+    "why": "Vector line equation: r = a + t.b, where t is a scalar parameter."
+  },
+  {
+    "q": "The Cartesian equation of a plane with direction ratios of normal a, b, c and passing through (x1, y1, z1) is:",
+    "o": [
+      "ax + by + cz = 0",
+      "x/a + y/b + z/c = 1",
+      "a(x-x1) + b(y-y1) + c(z-z1) = 0",
+      "ax + by + cz = d only"
+    ],
+    "a": 2,
+    "why": "This is the point-normal form of the plane equation."
+  },
+  {
+    "q": "Two planes with normal vectors n1 and n2 are perpendicular when:",
+    "o": [
+      "n1.n2 = 1",
+      "n1 x n2 = 0",
+      "n1 = n2",
+      "n1.n2 = 0"
+    ],
+    "a": 3,
+    "why": "Planes are perpendicular exactly when their normal vectors are perpendicular, giving dot product zero."
+  },
+  {
+    "q": "The distance of point (x1, y1, z1) from the plane ax + by + cz + d = 0 is given by:",
+    "o": [
+      "|ax1+by1+cz1+d|/sqrt(a^2+b^2+c^2)",
+      "(ax1+by1+cz1+d)/sqrt(a^2+b^2+c^2)",
+      "ax1+by1+cz1+d",
+      "sqrt(a^2+b^2+c^2)"
+    ],
+    "a": 0,
+    "why": "Perpendicular distance formula uses the absolute value divided by the magnitude of the normal vector."
+  },
+  {
+    "q": "Two lines in space are said to be skew when they are:",
+    "o": [
+      "Parallel and intersecting",
+      "Neither parallel nor intersecting",
+      "Intersecting but not parallel",
+      "Coincident"
+    ],
+    "a": 1,
+    "why": "Skew lines do not lie in the same plane, so they are neither parallel nor intersecting."
+  },
+  {
+    "q": "The angle between two lines with direction vectors b1 and b2 satisfies cos(theta) =",
+    "o": [
+      "|b1||b2|",
+      "(b1 x b2)/(|b1||b2|)",
+      "(b1.b2)/(|b1||b2|)",
+      "b1 + b2"
+    ],
+    "a": 2,
+    "why": "Angle between lines uses cos(theta) = (b1.b2)/(|b1||b2|)."
+  },
+  {
+    "q": "Two lines represented in vector form are coplanar if the shortest distance between them is:",
+    "o": [
+      "Equal to 1",
+      "Undefined",
+      "Maximum",
+      "Equal to 0"
+    ],
+    "a": 3,
+    "why": "Coplanar lines either intersect or are parallel, so the shortest distance between them is zero."
+  },
+  {
+    "q": "The angle between a line with direction vector b and a plane with normal n satisfies sin(theta) =",
+    "o": [
+      "|b.n|/(|b||n|)",
+      "(b.n)/(|b||n|)",
+      "(b x n)/(|b||n|)",
+      "cos(theta) directly"
+    ],
+    "a": 0,
+    "why": "Angle between line and plane uses sine formula: sin(theta) = |b.n|/(|b||n|)."
+  },
+  {
+    "q": "The shortest distance between two skew lines r = a1 + t.b1 and r = a2 + s.b2 is given using:",
+    "o": [
+      "(a1+a2).(b1+b2)",
+      "(a2-a1).(b1 x b2)/|b1 x b2|",
+      "|b1 x b2|",
+      "(a1-a2).b1"
+    ],
+    "a": 1,
+    "why": "Shortest distance formula: |(a2-a1).(b1 x b2)|/|b1 x b2|."
+  },
+  {
+    "q": "A plane passing through three non-collinear points can be determined using:",
+    "o": [
+      "Only one point",
+      "Only the midpoint",
+      "The scalar triple product of vectors formed by the points",
+      "Section formula alone"
+    ],
+    "a": 2,
+    "why": "The normal direction to the plane is found via the cross product, and coplanarity uses the scalar triple product of vectors from the points."
+  }
+]

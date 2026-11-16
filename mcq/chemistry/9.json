@@ -1,0 +1,112 @@
+[
+  {
+    "q": "A halogen atom attached directly to a benzene ring carbon gives",
+    "o": [
+      "Alkyl halide",
+      "Vinyl halide",
+      "Allylic halide",
+      "Aryl halide"
+    ],
+    "a": 3,
+    "why": "Halogen bonded directly to an aromatic ring carbon defines an aryl halide."
+  },
+  {
+    "q": "The best laboratory method to convert an alcohol into the corresponding chloride, giving a pure product, uses",
+    "o": [
+      "SOCl2 (thionyl chloride)",
+      "Conc. HCl alone",
+      "NaCl solution",
+      "Cl2 gas with sunlight"
+    ],
+    "a": 0,
+    "why": "SOCl2 gives R-Cl with by-products SO2 and HCl escaping as gases, leaving a pure product."
+  },
+  {
+    "q": "The Finkelstein reaction converts an alkyl chloride/bromide into an alkyl iodide using",
+    "o": [
+      "AgF in ether",
+      "NaI in dry acetone",
+      "KOH in alcohol",
+      "Mg in dry ether"
+    ],
+    "a": 1,
+    "why": "NaI in dry acetone displaces Cl/Br since NaI is soluble but NaCl/NaBr precipitate, driving the reaction forward."
+  },
+  {
+    "q": "SN2 reactions proceed with which stereochemical outcome?",
+    "o": [
+      "Retention of configuration",
+      "Racemisation",
+      "Inversion of configuration (Walden inversion)",
+      "No change in optical activity"
+    ],
+    "a": 2,
+    "why": "The nucleophile attacks from the back side opposite the leaving group, inverting the configuration."
+  },
+  {
+    "q": "The rate law for an SN1 reaction is",
+    "o": [
+      "Rate = k[RX][Nu-]",
+      "Rate = k[RX]^2",
+      "Rate = k[Nu-]",
+      "Rate = k[RX]"
+    ],
+    "a": 3,
+    "why": "SN1 is unimolecular; the rate-determining step is carbocation formation, depending only on substrate concentration."
+  },
+  {
+    "q": "Dehydrohalogenation of 2-bromobutane with alcoholic KOH gives mainly but-2-ene rather than but-1-ene because of",
+    "o": [
+      "Saytzeff's rule (more substituted alkene is major)",
+      "Markovnikov's rule",
+      "Hofmann's rule",
+      "Peroxide effect"
+    ],
+    "a": 0,
+    "why": "Saytzeff's rule states the more stable, more substituted alkene forms as the major elimination product."
+  },
+  {
+    "q": "Among R-Cl, R-Br and R-I, which reacts fastest with magnesium metal to form a Grignard reagent?",
+    "o": [
+      "R-Cl",
+      "R-I",
+      "R-Br",
+      "All react equally fast"
+    ],
+    "a": 1,
+    "why": "C-I bond is weakest, so alkyl iodides react fastest with Mg: reactivity order R-I > R-Br > R-Cl."
+  },
+  {
+    "q": "A Grignard reagent reacting with formaldehyde (HCHO) followed by hydrolysis gives",
+    "o": [
+      "A tertiary alcohol",
+      "A secondary alcohol",
+      "A primary alcohol",
+      "A carboxylic acid"
+    ],
+    "a": 2,
+    "why": "HCHO has no alkyl substituent, so addition of RMgX followed by hydrolysis yields a primary alcohol."
+  },
+  {
+    "q": "Freons (CFCs), once used as refrigerants, are now phased out mainly because they",
+    "o": [
+      "Are flammable",
+      "Corrode metal pipes",
+      "Are expensive to manufacture",
+      "Deplete the ozone layer"
+    ],
+    "a": 3,
+    "why": "CFCs release chlorine radicals in the stratosphere that catalytically destroy ozone molecules."
+  },
+  {
+    "q": "Which compound was historically used as an anaesthetic and is now mainly used as an industrial solvent?",
+    "o": [
+      "Chloroform (CHCl3)",
+      "DDT",
+      "Carbon tetrachloride",
+      "Teflon"
+    ],
+    "a": 0,
+    "why": "Chloroform was once used as an anaesthetic in surgery and is now used mainly as a solvent."
+  }
+]

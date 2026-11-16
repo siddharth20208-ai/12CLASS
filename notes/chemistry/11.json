@@ -1,0 +1,98 @@
+[
+  {
+    "t": "Nomenclature and preparation",
+    "def": "Aldehydes (-CHO group) and ketones (-C=O between two carbons) and carboxylic acids (-COOH group) are carbonyl compounds named using IUPAC suffixes '-al', '-one' and '-oic acid' respectively.",
+    "points": [
+      "Aldehyde IUPAC name uses suffix '-al', e.g. ethanal (CH3CHO); carbon of CHO is always C1.",
+      "Ketone IUPAC name uses suffix '-one' with locant number for carbonyl position, e.g. propan-2-one (acetone).",
+      "Carboxylic acid IUPAC name uses suffix '-oic acid', e.g. ethanoic acid (CH3COOH); COOH carbon is always C1.",
+      "Aldehydes prepared by oxidation of primary alcohols (controlled, mild oxidant like PCC) or by Rosenmund reduction of acid chlorides.",
+      "Ketones prepared by oxidation of secondary alcohols, or by reaction of Grignard reagent with nitriles/acid chlorides.",
+      "Carboxylic acids prepared by oxidation of primary alcohols/aldehydes (strong oxidant like KMnO4), or by hydrolysis of nitriles/esters."
+    ],
+    "formula": "R-CH2OH --(oxidation)--> R-CHO --(oxidation)--> R-COOH",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Primary alcohol\"] --> B[\"Mild oxidation PCC\"]\n  B --> C[\"Aldehyde\"]\n  C --> D[\"Strong oxidation KMnO4\"]\n  D --> E[\"Carboxylic acid\"]" },
+    "example": "CH3CH2OH --PCC--> CH3CHO (ethanal, mild oxidant stops at aldehyde) --KMnO4--> CH3COOH (ethanoic acid, full oxidation).",
+    "tip": "Remember PCC/Rosenmund gives aldehyde (stops there), while strong oxidants like KMnO4 go all the way to acid - this control is often tested."
+  },
+  {
+    "t": "Nucleophilic addition reactions",
+    "def": "Aldehydes and ketones undergo nucleophilic addition reactions at the polar carbonyl carbon, where a nucleophile adds to carbon and a proton (or group) adds to the oxygen.",
+    "points": [
+      "Carbonyl carbon is electrophilic (partial positive) due to oxygen's high electronegativity, so it attracts nucleophiles.",
+      "Addition of HCN gives cyanohydrin; addition of NaHSO3 gives bisulphite addition product.",
+      "Addition of Grignard reagent gives alcohols (primary from HCHO, secondary from other aldehydes, tertiary from ketones).",
+      "Addition of alcohols gives acetals/ketals (used to protect carbonyl group during other reactions).",
+      "Aldehydes are generally more reactive than ketones in nucleophilic addition due to less steric hindrance and less +I effect (only one alkyl group vs two).",
+      "Reactivity order: HCHO > other aldehydes > ketones, because more alkyl groups reduce electrophilicity of carbonyl carbon."
+    ],
+    "formula": "R2C=O + Nu-H -> R2C(OH)(Nu)",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Nucleophile attacks carbonyl carbon\"] --> B[\"Tetrahedral intermediate forms\"]\n  B --> C[\"Proton adds to oxygen\"]\n  C --> D[\"Addition product - alcohol derivative\"]" },
+    "example": "CH3CHO + HCN -> CH3CH(OH)CN (acetaldehyde cyanohydrin), a nucleophilic addition product.",
+    "tip": "State the reactivity order (HCHO > aldehydes > ketones) with the reason (steric + electronic effects) to secure full marks."
+  },
+  {
+    "t": "Aldol condensation",
+    "def": "Aldol condensation is the reaction where two molecules of an aldehyde/ketone having alpha-hydrogen atoms combine in presence of dilute base to form a beta-hydroxy aldehyde/ketone, which can lose water to give an alpha,beta-unsaturated compound.",
+    "points": [
+      "Requires at least one alpha-hydrogen atom (hydrogen on carbon next to carbonyl group) on the starting compound.",
+      "Dilute base (like NaOH) removes alpha-H to form a carbanion (enolate), which then attacks the carbonyl carbon of another molecule.",
+      "First product is an aldol (beta-hydroxy aldehyde or ketone) - hence the name aldol.",
+      "On heating/with acid, the aldol loses water (dehydration) to give an alpha,beta-unsaturated carbonyl compound (condensation product).",
+      "Cross aldol condensation occurs between two different carbonyl compounds, giving a mixture of products.",
+      "This reaction is important in building longer carbon chains in organic synthesis."
+    ],
+    "formula": "2 CH3CHO --(dil. NaOH)--> CH3-CH(OH)-CH2-CHO (aldol) --(heat, -H2O)--> CH3-CH=CH-CHO",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Carbonyl compound with alpha-H\"] --> B[\"Dilute base removes alpha-H\"]\n  B --> C[\"Carbanion attacks another carbonyl\"]\n  C --> D[\"Aldol - beta-hydroxy carbonyl\"]\n  D --> E[\"Heat, lose water, unsaturated carbonyl\"]" },
+    "example": "2 CH3CHO with dilute NaOH gives 3-hydroxybutanal (aldol), which on heating loses water to give but-2-enal (crotonaldehyde).",
+    "tip": "Clearly show both steps - aldol formation AND dehydration to the unsaturated compound - partial answers lose marks."
+  },
+  {
+    "t": "Distinguishing tests (Tollens', Fehling's, iodoform)",
+    "def": "Tollens' and Fehling's tests distinguish aldehydes from ketones using mild oxidation, while the iodoform test identifies compounds with a specific -CH3-CO- or -CH(OH)-CH3 group.",
+    "points": [
+      "Tollens' reagent (ammoniacal AgNO3) oxidises aldehydes to carboxylic acid, forming a bright silver mirror on the test tube; ketones give no reaction.",
+      "Fehling's reagent (alkaline CuSO4 with tartrate) oxidises aldehydes, forming a brick-red precipitate of Cu2O; ketones give no reaction.",
+      "Aromatic aldehydes (like benzaldehyde) do NOT respond to Fehling's test, only aliphatic aldehydes do.",
+      "Iodoform test: compounds with CH3-CO- group (methyl ketones) or CH3-CH(OH)- group, treated with I2/NaOH, give a yellow precipitate of iodoform (CHI3).",
+      "Ethanol and acetaldehyde also give positive iodoform test since they can be oxidised to the methyl ketone type structure under the reaction conditions.",
+      "Iodoform test is used to confirm acetone, ethanol and compounds with the specific methyl carbonyl/methyl carbinol pattern."
+    ],
+    "formula": "R-CHO + 2 Tollens' reagent -> R-COOH + silver mirror (Ag)",
+    "diagram": { "mermaid": "flowchart TD\n  A[\"Unknown carbonyl compound\"] --> B[\"Tollens test - silver mirror if aldehyde\"]\n  A --> C[\"Fehling test - brick red precipitate if aliphatic aldehyde\"]\n  A --> D[\"Iodoform test - yellow precipitate if methyl ketone pattern\"]" },
+    "example": "Acetone (CH3-CO-CH3) gives negative Tollens'/Fehling's test (it's a ketone) but positive iodoform test (has CH3-CO- group), forming yellow CHI3 precipitate.",
+    "tip": "State clearly which test distinguishes aldehyde from ketone (Tollens'/Fehling's) and which confirms a specific structural pattern (iodoform) - don't mix their purposes."
+  },
+  {
+    "t": "Acidity of carboxylic acids",
+    "def": "Carboxylic acids are acidic because they can lose the H+ from -COOH easily, forming a carboxylate ion that is stabilised by resonance between the two oxygen atoms.",
+    "points": [
+      "Carboxylic acid loses H+ to form carboxylate ion (R-COO-), which has the negative charge equally shared between both oxygen atoms by resonance.",
+      "This resonance stabilisation makes carboxylic acids much more acidic than alcohols or phenols.",
+      "Electron-withdrawing groups (like -Cl, -NO2) near the COOH group increase acidity by further stabilising the carboxylate ion.",
+      "Electron-donating groups (like -CH3) decrease acidity by destabilising the carboxylate ion.",
+      "Acidity order example: trichloroacetic acid > dichloroacetic acid > chloroacetic acid > acetic acid, due to increasing number of electron-withdrawing Cl atoms.",
+      "Carboxylic acids react with bases (NaOH, NaHCO3) to give salt and water/CO2, confirming their acidic nature; this also distinguishes them from phenols (phenols don't react with NaHCO3)."
+    ],
+    "formula": "R-COOH + NaHCO3 -> R-COONa + H2O + CO2 (effervescence confirms carboxylic acid)",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Carboxylic acid loses H+\"] --> B[\"Carboxylate ion formed\"]\n  B --> C[\"Negative charge shared equally between 2 oxygens by resonance\"]\n  C --> D[\"Ion stabilised, acid is strong\"]" },
+    "example": "Chloroacetic acid (ClCH2COOH) is more acidic than acetic acid because Cl withdraws electron density, stabilising the carboxylate ion more.",
+    "tip": "Use the NaHCO3 effervescence test to distinguish carboxylic acid from phenol in your answer - a frequently asked practical distinction."
+  },
+  {
+    "t": "HVZ reaction",
+    "def": "The Hell-Volhard-Zelinsky (HVZ) reaction is the alpha-halogenation of carboxylic acids using chlorine or bromine in presence of red phosphorus, replacing an alpha-hydrogen with a halogen.",
+    "points": [
+      "Carboxylic acid with alpha-hydrogen reacts with X2 (Cl2 or Br2) in presence of small amount of red phosphorus.",
+      "Red phosphorus first reacts with the halogen to form phosphorus trihalide (PX3), which catalyses the reaction.",
+      "The halogen atom gets substituted specifically at the alpha-carbon (carbon next to COOH group).",
+      "Product is an alpha-halo carboxylic acid.",
+      "This reaction is useful to introduce a halogen at a specific position for further synthesis (e.g. making amino acids via substitution of the halogen).",
+      "Only acids with at least one alpha-hydrogen can undergo this reaction."
+    ],
+    "formula": "R-CH2-COOH + X2 --(red P)--> R-CHX-COOH + HX",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Carboxylic acid with alpha-H\"] --> B[\"+ X2, red phosphorus catalyst\"]\n  B --> C[\"Halogen substitutes alpha-H\"]\n  C --> D[\"Alpha-halo carboxylic acid\"]" },
+    "example": "CH3COOH + Cl2 --(red P)--> ClCH2COOH + HCl (gives chloroacetic acid, halogen added at alpha carbon).",
+    "tip": "Mention red phosphorus as the catalyst and 'alpha-carbon' specifically - naming the correct position is essential for full marks."
+  }
+]

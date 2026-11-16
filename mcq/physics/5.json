@@ -1,0 +1,112 @@
+[
+  {
+    "q": "The principle of superposition of waves states that the resultant displacement at a point is",
+    "o": [
+      "the product of individual displacements",
+      "always zero when two waves meet",
+      "the average of the individual displacements",
+      "the algebraic sum of the individual displacements"
+    ],
+    "a": 3,
+    "why": "Superposition: y(resultant) = y1 + y2 + y3 + ... (algebraic sum)"
+  },
+  {
+    "q": "In a stationary wave y = 2A cos(omega t) sin(kx), the distance between two successive nodes is",
+    "o": [
+      "lambda/2",
+      "lambda",
+      "lambda/4",
+      "2 lambda"
+    ],
+    "a": 0,
+    "why": "In a stationary wave, adjacent nodes (or antinodes) are separated by lambda/2"
+  },
+  {
+    "q": "At a node in a stationary wave, the amplitude of vibration is",
+    "o": [
+      "maximum",
+      "zero",
+      "equal to the amplitude of one wave A",
+      "equal to 2A"
+    ],
+    "a": 1,
+    "why": "Nodes are points of permanent zero displacement in a stationary wave"
+  },
+  {
+    "q": "The fundamental frequency of a stretched string of length L under tension T and mass per unit length m is",
+    "o": [
+      "n = (1/2L) sqrt(m/T)",
+      "n = 2L sqrt(T/m)",
+      "n = (1/2L) sqrt(T/m)",
+      "n = L sqrt(T/m)"
+    ],
+    "a": 2,
+    "why": "Fundamental frequency of a string: n = (1/2L) sqrt(T/m)"
+  },
+  {
+    "q": "An open organ pipe of length L produces a fundamental frequency given by",
+    "o": [
+      "n = v/4L",
+      "n = 2v/L",
+      "n = v/L",
+      "n = v/2L"
+    ],
+    "a": 3,
+    "why": "Open pipe fundamental frequency: n = v/2L, and it supports all harmonics"
+  },
+  {
+    "q": "A closed organ pipe of length L supports which harmonics?",
+    "o": [
+      "only odd harmonics",
+      "only even harmonics",
+      "all harmonics",
+      "no harmonics"
+    ],
+    "a": 0,
+    "why": "A closed pipe (one end closed) produces only odd harmonics, with fundamental n = v/4L"
+  },
+  {
+    "q": "If two tuning forks of frequencies 256 Hz and 260 Hz are sounded together, the beat frequency heard is",
+    "o": [
+      "2 Hz",
+      "4 Hz",
+      "258 Hz",
+      "516 Hz"
+    ],
+    "a": 1,
+    "why": "Beat frequency = |n1 - n2| = |260 - 256| = 4 Hz"
+  },
+  {
+    "q": "Beats are produced due to the superposition of two sound waves having",
+    "o": [
+      "the same frequency and same phase",
+      "very different amplitudes only",
+      "slightly different frequencies",
+      "perpendicular directions of propagation"
+    ],
+    "a": 2,
+    "why": "Beats arise from superposition of two waves with slightly different frequencies, causing periodic amplitude variation"
+  },
+  {
+    "q": "The end correction in a resonance tube experiment accounts for the fact that",
+    "o": [
+      "the antinode forms exactly at the open end",
+      "the tube has no effect on resonance",
+      "sound travels faster inside the tube",
+      "the antinode forms slightly outside the open end of the tube"
+    ],
+    "a": 3,
+    "why": "Due to edge effects, the antinode actually lies slightly above the open end, requiring an end correction"
+  },
+  {
+    "q": "In a resonance tube experiment, if L2 and L1 are two successive resonance lengths, the speed of sound is given by",
+    "o": [
+      "v = 2n(L2 - L1)",
+      "v = n(L2 - L1)",
+      "v = n(L2 - L1)/2",
+      "v = 4n(L2 - L1)"
+    ],
+    "a": 0,
+    "why": "Since L2 - L1 = lambda/2, speed v = n lambda = 2n(L2 - L1)"
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "q": "If p is T and q is F, what is the truth value of p -> q?",
+    "o": [
+      "T",
+      "Both T and F",
+      "Cannot be determined",
+      "F"
+    ],
+    "a": 3,
+    "why": "p -> q is false only when p = T and q = F."
+  },
+  {
+    "q": "Which connective is represented by the symbol v?",
+    "o": [
+      "or",
+      "and",
+      "not",
+      "implies"
+    ],
+    "a": 0,
+    "why": "v denotes the disjunction (or) connective."
+  },
+  {
+    "q": "A statement pattern whose truth table entries are all T is called a:",
+    "o": [
+      "Contradiction",
+      "Tautology",
+      "Contingency",
+      "Negation"
+    ],
+    "a": 1,
+    "why": "Always true statement pattern is a tautology."
+  },
+  {
+    "q": "For how many statements does a truth table have exactly 8 rows?",
+    "o": [
+      "2",
+      "4",
+      "3",
+      "5"
+    ],
+    "a": 2,
+    "why": "Number of rows = 2^n, so 2^3 = 8 for n = 3 statements."
+  },
+  {
+    "q": "According to De Morgan's law, ~(p ^ q) is equivalent to:",
+    "o": [
+      "~p ^ ~q",
+      "p ^ q",
+      "p v q",
+      "~p v ~q"
+    ],
+    "a": 3,
+    "why": "De Morgan's law: ~(p ^ q) = ~p v ~q."
+  },
+  {
+    "q": "The contrapositive of p -> q is:",
+    "o": [
+      "~q -> ~p",
+      "~p -> ~q",
+      "q -> p",
+      "~q -> p"
+    ],
+    "a": 0,
+    "why": "Contrapositive reverses and negates both parts: ~q -> ~p."
+  },
+  {
+    "q": "A statement pattern that is always false is called a:",
+    "o": [
+      "Tautology",
+      "Contradiction",
+      "Contrapositive",
+      "Contingency"
+    ],
+    "a": 1,
+    "why": "Always false pattern is a contradiction."
+  },
+  {
+    "q": "The dual of the statement (p v q) ^ r is obtained by:",
+    "o": [
+      "Negating p, q, r",
+      "Interchanging T and F only",
+      "Interchanging v and ^",
+      "Taking converse"
+    ],
+    "a": 2,
+    "why": "Duality is formed by interchanging ^ and v (and T, F)."
+  },
+  {
+    "q": "In a switching circuit, two switches in series represent which connective?",
+    "o": [
+      "or (v)",
+      "implies (->)",
+      "not (~)",
+      "and (^)"
+    ],
+    "a": 3,
+    "why": "Series connection means both switches must be closed, i.e., and (^)."
+  },
+  {
+    "q": "If p <-> q is true, then p and q must have:",
+    "o": [
+      "The same truth value",
+      "Different truth values",
+      "p true always",
+      "q false always"
+    ],
+    "a": 0,
+    "why": "Biconditional p <-> q is true exactly when p and q share the same truth value."
+  }
+]

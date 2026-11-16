@@ -1,0 +1,112 @@
+[
+  {
+    "q": "The SI unit of moment of inertia is",
+    "o": [
+      "kg m^2",
+      "kg m",
+      "kg/m^2",
+      "N m"
+    ],
+    "a": 0,
+    "why": "I = sum(m r^2), units kg x m^2"
+  },
+  {
+    "q": "Radius of gyration K is related to moment of inertia I and mass M by",
+    "o": [
+      "I = M/K^2",
+      "I = M K^2",
+      "K = I M^2",
+      "I = K/M"
+    ],
+    "a": 1,
+    "why": "By definition I = M K^2, so K = sqrt(I/M)"
+  },
+  {
+    "q": "A ring of mass 2 kg and radius 0.5 m rotates about its central axis. Its moment of inertia is",
+    "o": [
+      "0.25 kg m^2",
+      "1 kg m^2",
+      "0.5 kg m^2",
+      "2 kg m^2"
+    ],
+    "a": 2,
+    "why": "I = M R^2 = 2 x 0.25 = 0.5 kg m^2"
+  },
+  {
+    "q": "According to the theorem of parallel axes, if Ic is the moment of inertia about an axis through the centre of mass, the moment of inertia about a parallel axis at distance h is",
+    "o": [
+      "I = Ic - M h^2",
+      "I = Ic / M h^2",
+      "I = Ic x M h^2",
+      "I = Ic + M h^2"
+    ],
+    "a": 3,
+    "why": "Parallel axis theorem: I = Ic + M h^2"
+  },
+  {
+    "q": "The theorem of perpendicular axes applies to",
+    "o": [
+      "a planar (laminar) body only",
+      "any three-dimensional body",
+      "only a sphere",
+      "only a ring"
+    ],
+    "a": 0,
+    "why": "This theorem is valid only for plane (two-dimensional) laminar bodies"
+  },
+  {
+    "q": "According to the theorem of perpendicular axes, Iz for a lamina equals",
+    "o": [
+      "Ix - Iy",
+      "Ix + Iy",
+      "Ix / Iy",
+      "Ix x Iy"
+    ],
+    "a": 1,
+    "why": "Iz = Ix + Iy, where x and y axes lie in the plane of the lamina"
+  },
+  {
+    "q": "The angular momentum L of a rotating body is given by",
+    "o": [
+      "L = I/omega",
+      "L = omega/I",
+      "L = I omega",
+      "L = I^2 omega"
+    ],
+    "a": 2,
+    "why": "Angular momentum L = I omega, analogous to p = mv"
+  },
+  {
+    "q": "If no external torque acts on a rotating system, then",
+    "o": [
+      "angular velocity is always constant",
+      "angular momentum decreases",
+      "moment of inertia is always constant",
+      "I1 omega1 = I2 omega2"
+    ],
+    "a": 3,
+    "why": "Conservation of angular momentum: when torque = 0, I omega stays constant, so I1 omega1 = I2 omega2"
+  },
+  {
+    "q": "A car moving on a banked road without tendency to skid satisfies",
+    "o": [
+      "tan theta = v^2 / (r g)",
+      "tan theta = r g / v^2",
+      "tan theta = v / (r g)",
+      "tan theta = r g v^2"
+    ],
+    "a": 0,
+    "why": "Banking condition: tan theta = v^2 / (r g)"
+  },
+  {
+    "q": "The maximum safe speed on a banked curve of radius r and banking angle theta is",
+    "o": [
+      "v = r g tan theta",
+      "v = sqrt(r g tan theta)",
+      "v = sqrt(r g / tan theta)",
+      "v = r g / tan theta"
+    ],
+    "a": 1,
+    "why": "From tan theta = v^2/(rg), v = sqrt(r g tan theta)"
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "q": "A Bernoulli trial is a random experiment with exactly how many possible outcomes?",
+    "o": [
+      "one",
+      "two",
+      "three",
+      "any number"
+    ],
+    "a": 1,
+    "why": "Bernoulli trials have exactly two outcomes, success and failure"
+  },
+  {
+    "q": "For Bernoulli trials with success probability p and failure probability q, it must hold that",
+    "o": [
+      "p - q = 1",
+      "p = q",
+      "p + q = 1",
+      "p . q = 1"
+    ],
+    "a": 2,
+    "why": "success and failure probabilities must sum to 1"
+  },
+  {
+    "q": "If X ~ B(n,p), the probability of exactly r successes is given by",
+    "o": [
+      "nCr p^(n-r) q^r",
+      "nPr p^r q^(n-r)",
+      "n! p^r",
+      "nCr p^r q^(n-r)"
+    ],
+    "a": 3,
+    "why": "standard binomial p.m.f. formula"
+  },
+  {
+    "q": "The mean of a binomial distribution B(n,p) is",
+    "o": [
+      "np",
+      "npq",
+      "nq",
+      "n+p"
+    ],
+    "a": 0,
+    "why": "mean of binomial distribution is np"
+  },
+  {
+    "q": "The variance of a binomial distribution B(n,p) is",
+    "o": [
+      "np",
+      "npq",
+      "np^2",
+      "nq^2"
+    ],
+    "a": 1,
+    "why": "variance of binomial distribution is npq"
+  },
+  {
+    "q": "If a fair coin is tossed 4 times, the probability of getting exactly 2 heads is",
+    "o": [
+      "1/2",
+      "1/4",
+      "3/8",
+      "1/16"
+    ],
+    "a": 2,
+    "why": "4C2 (0.5)^2 (0.5)^2 = 6/16 = 3/8"
+  },
+  {
+    "q": "For X ~ B(5, 0.5), P(X >= 1) equals",
+    "o": [
+      "0.5",
+      "P(X=0)",
+      "P(X=5)",
+      "1 - P(X=0)"
+    ],
+    "a": 3,
+    "why": "'at least one' is the complement of zero successes"
+  },
+  {
+    "q": "If the mean and variance of a binomial distribution are 4 and 2 respectively, the value of p is",
+    "o": [
+      "0.5",
+      "0.25",
+      "0.75",
+      "0.4"
+    ],
+    "a": 0,
+    "why": "np=4, npq=2 gives q = 2/4 = 0.5, so p = 1 - 0.5 = 0.5"
+  },
+  {
+    "q": "If mean = 4 and variance = 2 for a binomial distribution, the number of trials n equals",
+    "o": [
+      "4",
+      "8",
+      "6",
+      "10"
+    ],
+    "a": 1,
+    "why": "np=4, q=0.5 so p=0.5, n = 4/p = 4/0.5 = 8"
+  },
+  {
+    "q": "'At most 2 successes' for a binomial variable X means",
+    "o": [
+      "P(X=2) only",
+      "P(X>2)",
+      "P(X=0) + P(X=1) + P(X=2)",
+      "1 - P(X=2)"
+    ],
+    "a": 2,
+    "why": "'at most 2' includes 0, 1, and 2 successes"
+  }
+]

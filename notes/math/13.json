@@ -1,0 +1,109 @@
+[
+  {
+    "t": "Discrete and Continuous Random Variables",
+    "def": "A random variable assigns a numerical value to each outcome of a random experiment. It is discrete if it takes only countable (separate) values, and continuous if it can take any value in an interval.",
+    "points": [
+      "A random variable X is a function from the sample space to real numbers.",
+      "Discrete random variable: takes finite or countably infinite values, like number of heads in 3 tosses (0, 1, 2, 3).",
+      "Continuous random variable: takes any value in an interval, like height or time, measured on a continuous scale.",
+      "Discrete variables use a probability mass function (p.m.f.); continuous variables use a probability density function (p.d.f.).",
+      "Sum of all probabilities for a discrete variable is always 1; for continuous, the total area under the density curve is 1."
+    ],
+    "formula": "Sum of P(X = xi) = 1  (discrete)     Integral of f(x) dx over all x = 1  (continuous)",
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Random Variable X\"] --> B[\"Discrete: countable values\"]\n  A --> C[\"Continuous: any value in interval\"]\n  B --> D[\"Uses p.m.f.\"]\n  C --> E[\"Uses p.d.f.\"]"
+    },
+    "example": "Tossing 2 coins, let X = number of heads. X can be 0, 1, or 2, so X is a discrete random variable.",
+    "tip": "Always state clearly whether the variable is discrete or continuous before writing its distribution table — examiners check this definition step."
+  },
+  {
+    "t": "Probability Mass Function (p.m.f.)",
+    "def": "A probability mass function gives the probability that a discrete random variable X takes each specific value xi, written P(X = xi).",
+    "points": [
+      "List all possible values x1, x2, ..., xn of the discrete random variable.",
+      "For each value, find P(X = xi), the probability of that outcome.",
+      "Every probability must satisfy 0 <= P(X = xi) <= 1.",
+      "The sum of all probabilities must equal 1: sum P(X = xi) = 1.",
+      "Usually presented as a table with values of X in one row and probabilities in the next.",
+      "Used to answer questions like P(X <= 2) by adding relevant probabilities."
+    ],
+    "formula": "0 <= P(X = xi) <= 1     sum P(X = xi) = 1",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"List values x1 to xn\"] --> B[\"Assign probability to each\"]\n  B --> C[\"Check each probability between 0 and 1\"]\n  C --> D[\"Check sum equals 1\"]"
+    },
+    "example": "X: 0, 1, 2 with P(X=0)=0.25, P(X=1)=0.5, P(X=2)=0.25. Sum = 1, so this is a valid p.m.f.",
+    "tip": "Before solving any problem, always verify the sum of given probabilities equals 1 — this check carries marks and catches errors early."
+  },
+  {
+    "t": "Probability Density Function (p.d.f.)",
+    "def": "A probability density function f(x) describes the relative likelihood of a continuous random variable taking values near a point x; probability over an interval is found using integration.",
+    "points": [
+      "f(x) must satisfy f(x) >= 0 for all x in its domain.",
+      "Total area under the curve f(x) over the entire range must equal 1.",
+      "Probability of X lying between a and b is the definite integral of f(x) dx from a to b.",
+      "For a continuous variable, P(X = any single point) = 0, since area under a point is zero.",
+      "So P(a < X < b) = P(a <= X <= b) for continuous random variables.",
+      "f(x) is often given as a piecewise function, defined differently on different intervals, and zero elsewhere."
+    ],
+    "formula": "integral of f(x) dx over domain = 1     P(a<X<b) = integral from a to b of f(x) dx",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Given f(x)\"] --> B[\"Check f(x) >= 0\"]\n  B --> C[\"Check total area = 1\"]\n  C --> D[\"Integrate over a,b for P(a<X<b)\"]"
+    },
+    "example": "f(x) = 2x for 0 < x < 1, else 0. Check: integral of 2x dx from 0 to 1 = [x^2] from 0 to 1 = 1. Valid p.d.f. P(0<X<0.5) = [x^2] from 0 to 0.5 = 0.25.",
+    "tip": "Always first verify total area equals 1 before using f(x) to find any probability or constant k."
+  },
+  {
+    "t": "Expectation (Mean) and Variance",
+    "def": "Expectation E(X), or mean, gives the average value a random variable takes in the long run. Variance Var(X) measures how spread out the values are around the mean.",
+    "points": [
+      "For discrete X: E(X) = sum of xi . P(X = xi), over all values.",
+      "For continuous X: E(X) = integral of x . f(x) dx over the domain.",
+      "E(X^2) is found similarly, using xi^2 . P(X=xi) or x^2 . f(x) dx.",
+      "Variance formula: Var(X) = E(X^2) - [E(X)]^2.",
+      "Standard deviation is the square root of variance: SD = sqrt(Var(X)).",
+      "Larger variance means values are more spread out from the mean."
+    ],
+    "formula": "E(X) = sum xi P(X=xi)     Var(X) = E(X^2) - [E(X)]^2",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Find E(X)\"] --> C[\"Find E(X^2)\"]\n  B[\"Distribution table\"] --> A\n  B --> C\n  C --> D[\"Var(X) = E(X^2) - E(X)^2\"]"
+    },
+    "example": "X: 0,1,2 with P = 0.25, 0.5, 0.25. E(X) = 0(0.25)+1(0.5)+2(0.25) = 1. E(X^2) = 0+0.5+1 = 1.5. Var(X) = 1.5 - 1^2 = 0.5.",
+    "tip": "Always compute E(X^2) as a separate step before using the variance formula — combining steps often causes calculation errors."
+  },
+  {
+    "t": "Cumulative Distribution Function",
+    "def": "The cumulative distribution function (c.d.f.), F(x), gives the probability that the random variable X takes a value less than or equal to x, that is F(x) = P(X <= x).",
+    "points": [
+      "For discrete X, F(x) is found by adding up all P(X = xi) for xi <= x.",
+      "For continuous X, F(x) is found by integrating f(t) from the lowest value up to x.",
+      "F(x) is non-decreasing: it never goes down as x increases.",
+      "F(x) ranges from 0 (at the smallest value) to 1 (at the largest value).",
+      "For continuous variables, f(x) = dF(x)/dx, so the p.d.f. is the derivative of the c.d.f.",
+      "Used to directly find probabilities like P(X <= a) without separately summing or integrating each time."
+    ],
+    "formula": "F(x) = P(X <= x)     f(x) = dF(x)/dx (continuous case)",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Given p.m.f. or p.d.f.\"] --> B[\"Sum or integrate up to x\"]\n  B --> C[\"Get F(x) = P(X <= x)\"]\n  C --> D[\"Use for probability questions\"]"
+    },
+    "example": "Discrete X: P(X=0)=0.25, P(X=1)=0.5, P(X=2)=0.25. F(1) = P(X=0)+P(X=1) = 0.75.",
+    "tip": "Remember F(x) always starts near 0 and ends at exactly 1 — use this to check your working at the final value."
+  },
+  {
+    "t": "Finding the Constant k in a Distribution",
+    "def": "When a p.m.f. or p.d.f. is given with an unknown constant k, we use the basic rule that total probability must equal 1 to solve for k.",
+    "points": [
+      "Write out the given p.m.f. table or p.d.f. expression containing k.",
+      "For discrete case: set up the equation sum of all P(X = xi) = 1, then solve for k.",
+      "For continuous case: set up integral of f(x) dx over the full domain equal to 1, then solve for k.",
+      "Solve the resulting algebraic (or integral) equation for k.",
+      "Substitute k back into the original distribution to get the complete, valid distribution.",
+      "Check that no probability becomes negative or greater than 1 after substituting k."
+    ],
+    "formula": "sum P(X=xi) = 1  or  integral f(x) dx = 1, then solve for k",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Write distribution with k\"] --> B[\"Set total probability = 1\"]\n  B --> C[\"Solve equation for k\"]\n  C --> D[\"Substitute k back\"]\n  D --> E[\"Verify all probabilities valid\"]"
+    },
+    "example": "P(X=0)=k, P(X=1)=2k, P(X=2)=3k. Sum = 6k = 1, so k = 1/6. Then P(X=0)=1/6, P(X=1)=2/6, P(X=2)=3/6.",
+    "tip": "After finding k, always substitute back and check every probability lies between 0 and 1 — this verification step is often separately awarded a mark."
+  }
+]

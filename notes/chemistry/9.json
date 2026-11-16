@@ -1,0 +1,97 @@
+[
+  {
+    "t": "Nomenclature and classification",
+    "def": "Halogen derivatives are hydrocarbons in which one or more hydrogen atoms are replaced by halogen atoms (F, Cl, Br, I); they are classified by the number of halogens and type of carbon they are attached to.",
+    "points": [
+      "Classified as mono-, di-, tri- or poly-halogen compounds based on number of halogen atoms.",
+      "Classified as alkyl halides (R-X, halogen on saturated carbon) or aryl halides (halogen directly on benzene ring).",
+      "Alkyl halides are further classified as primary (1 degree), secondary (2 degree) or tertiary (3 degree) based on the carbon the halogen is attached to.",
+      "IUPAC name uses prefix 'halo' with locant number, e.g. chloro, bromo, before the parent alkane name.",
+      "Common name uses 'alkyl halide' format, e.g. ethyl chloride, isopropyl bromide.",
+      "Vinyl halides have halogen on a double bond carbon; allylic halides have halogen on carbon next to a double bond."
+    ],
+    "formula": "General formula: R-X (alkyl halide) or Ar-X (aryl halide)",
+    "diagram": { "mermaid": "flowchart TD\n  A[\"Halogen derivatives\"] --> B[\"Alkyl halides R-X\"]\n  A --> C[\"Aryl halides Ar-X\"]\n  B --> D[\"Primary 1 degree\"]\n  B --> E[\"Secondary 2 degree\"]\n  B --> F[\"Tertiary 3 degree\"]" },
+    "example": "CH3-CH2-CH2-Cl is 1-chloropropane (IUPAC), common name n-propyl chloride, a primary alkyl halide.",
+    "tip": "Practice drawing structures from IUPAC names and vice versa - direct 2 mark questions are common here."
+  },
+  {
+    "t": "Preparation methods",
+    "def": "Alkyl halides can be prepared from alcohols, hydrocarbons, or by halogen exchange reactions, each giving good yield under specific conditions.",
+    "points": [
+      "From alcohols: R-OH + HX gives R-X + H2O (using HCl/ZnCl2, HBr, or PX3/PX5/SOCl2).",
+      "From alkanes: free radical halogenation using X2 and sunlight/UV light (not very selective, gives mixture).",
+      "From alkenes: addition of HX or X2 across the double bond gives haloalkanes.",
+      "Finkelstein reaction: R-Cl/R-Br + NaI in dry acetone gives R-I (iodide is less soluble, drives reaction forward).",
+      "Swarts reaction: R-Cl/R-Br + AgF/CoF2/SbF3 gives R-F (fluorination).",
+      "Best lab method for alcohols is using SOCl2 (thionyl chloride) since by-products SO2 and HCl escape as gas, giving pure product."
+    ],
+    "formula": "R-OH + SOCl2 -> R-Cl + SO2 + HCl",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Alcohol R-OH\"] --> B[\"+ HX or PX3 or SOCl2\"]\n  B --> C[\"Alkyl halide R-X\"]\n  D[\"Alkane\"] --> E[\"+ X2, sunlight\"]\n  E --> C" },
+    "example": "CH3CH2OH + SOCl2 -> CH3CH2Cl + SO2 + HCl (best method, gives pure ethyl chloride).",
+    "tip": "SOCl2 method is favourite exam answer for 'best method to prepare alkyl halide from alcohol' - mention why by-products escaping is an advantage."
+  },
+  {
+    "t": "SN1 and SN2 mechanisms",
+    "def": "SN1 and SN2 are the two types of nucleophilic substitution mechanisms by which a nucleophile replaces the halogen in an alkyl halide, differing in number of steps and rate dependence.",
+    "points": [
+      "SN2 (substitution, nucleophilic, bimolecular): single step, nucleophile attacks from the back side opposite to the leaving halogen.",
+      "SN2 rate depends on concentration of both substrate and nucleophile; favoured by primary alkyl halides (less steric hindrance).",
+      "SN2 causes inversion of configuration (Walden inversion) since nucleophile attacks from the opposite side.",
+      "SN1 (substitution, nucleophilic, unimolecular): two steps - first halide leaves forming a carbocation, then nucleophile attacks.",
+      "SN1 rate depends only on substrate concentration (rate determining step is carbocation formation); favoured by tertiary alkyl halides (stable carbocation).",
+      "SN1 gives racemic mixture (partial or complete loss of optical activity) since carbocation is planar and nucleophile can attack from either side."
+    ],
+    "formula": "SN2 rate = k[RX][Nu-]     SN1 rate = k[RX]",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Nucleophile attacks R-X\"] --> B[\"SN2: one step, back side attack\"]\n  A --> C[\"SN1: two steps, carbocation forms first\"]\n  B --> D[\"Inversion of configuration\"]\n  C --> E[\"Racemic mixture formed\"]" },
+    "example": "CH3Br + OH- -> CH3OH + Br- follows SN2 (primary halide, one step, inversion).",
+    "tip": "Draw the energy profile or mechanism arrows for both and clearly state rate law, order and stereochemical outcome - this is a classic 4-5 mark question."
+  },
+  {
+    "t": "Elimination reactions (dehydrohalogenation)",
+    "def": "Dehydrohalogenation is the elimination of a hydrogen and a halogen atom from adjacent carbons of an alkyl halide, using a strong base, to form an alkene.",
+    "points": [
+      "Alcoholic KOH (strong base in alcohol solvent) is used to remove H and X from beta carbon.",
+      "This is a beta-elimination reaction since H is removed from the carbon beta to the halogen.",
+      "Follows Saytzeff's rule: the more substituted (more stable) alkene is the major product.",
+      "Tertiary alkyl halides eliminate fastest, followed by secondary, then primary (reactivity order 3 degree > 2 degree > 1 degree).",
+      "This reaction competes with substitution; strong base and heat favour elimination over substitution.",
+      "Mechanism can be E1 (via carbocation, like SN1) or E2 (single step, like SN2) depending on substrate and conditions."
+    ],
+    "formula": "R-CH2-CHX-R' + KOH(alc) -> R-CH=CH-R' + KX + H2O",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Alkyl halide\"] --> B[\"+ alcoholic KOH, heat\"]\n  B --> C[\"Remove H from beta carbon and X from alpha carbon\"]\n  C --> D[\"Alkene formed, Saytzeff product major\"]" },
+    "example": "2-bromobutane + alcoholic KOH gives mainly but-2-ene (more substituted, major) and some but-1-ene (minor), by Saytzeff's rule.",
+    "tip": "State Saytzeff's rule by name and show which alkene is major with reasoning (more substituted = more stable) for full marks."
+  },
+  {
+    "t": "Reactions with metals (Grignard reagent)",
+    "def": "Grignard reagents are organomagnesium compounds (R-MgX) formed by reacting alkyl/aryl halides with magnesium metal in dry ether, and are very important for making carbon-carbon bonds.",
+    "points": [
+      "R-X + Mg (dry ether) -> R-MgX (Grignard reagent); reaction must be done in absence of moisture.",
+      "Grignard reagents are highly reactive; they react instantly with water, CO2, alcohols to decompose, so strictly dry/anhydrous conditions are needed.",
+      "React with HCHO to give primary alcohols, with other aldehydes to give secondary alcohols, with ketones to give tertiary alcohols.",
+      "React with CO2 (dry ice) followed by acid hydrolysis to give carboxylic acids - useful for increasing carbon chain by one.",
+      "React with water to simply give the corresponding alkane plus Mg(OH)X.",
+      "Reactivity order of halides with Mg: R-I > R-Br > R-Cl (C-I bond is weakest, breaks easiest)."
+    ],
+    "formula": "R-X + Mg --(dry ether)--> R-MgX",
+    "diagram": { "mermaid": "flowchart TD\n  A[\"R-MgX Grignard reagent\"] --> B[\"+ HCHO -> primary alcohol\"]\n  A --> C[\"+ other aldehyde -> secondary alcohol\"]\n  A --> D[\"+ ketone -> tertiary alcohol\"]\n  A --> E[\"+ CO2, then H+ -> carboxylic acid\"]" },
+    "example": "CH3MgI + HCHO -> CH3CH2OMgI, then hydrolysis gives CH3CH2OH (ethanol), a primary alcohol.",
+    "tip": "Remember dry ether and moisture-free conditions are essential - mentioning this condition is often worth a separate mark."
+  },
+  {
+    "t": "Uses of halogen derivatives",
+    "def": "Halogen derivatives have wide industrial, medical and household uses because of their solvent properties, stability and specific reactivity, though some harm the environment.",
+    "points": [
+      "Chloroform (CHCl3) was historically used as anaesthetic; now used as a solvent and in making refrigerants.",
+      "DDT (dichlorodiphenyltrichloroethane) was widely used as an insecticide, now banned/restricted due to environmental persistence.",
+      "Freons (CFCs) were used as refrigerants and aerosol propellants but are now phased out as they deplete the ozone layer.",
+      "Carbon tetrachloride (CCl4) was used as a dry-cleaning solvent and fire extinguisher, now restricted due to toxicity.",
+      "Teflon (PTFE, a fluorinated polymer) is used as non-stick coating on cookware due to its chemical inertness.",
+      "Many halogenated compounds are used as intermediates to synthesize drugs, dyes and other organic compounds."
+    ],
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Halogen derivatives uses\"] --> B[\"Chloroform - anaesthetic, solvent\"]\n  A --> C[\"DDT - insecticide, now banned\"]\n  A --> D[\"Freons - refrigerants, ozone depletion\"]\n  A --> E[\"Teflon - non-stick coating\"]" },
+    "example": "CFCs released from old refrigerators and aerosols break down ozone in the stratosphere, creating the ozone hole.",
+    "tip": "Mention both the use AND the environmental/health concern for each compound - examiners reward balanced answers here."
+  }
+]

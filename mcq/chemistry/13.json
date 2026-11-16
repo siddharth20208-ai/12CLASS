@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Carbohydrates that cannot be hydrolysed into simpler sugars are called",
+    "o": [
+      "Polysaccharides",
+      "Monosaccharides",
+      "Oligosaccharides",
+      "Disaccharides"
+    ],
+    "a": 1,
+    "why": "Monosaccharides are the simplest carbohydrate units and cannot be hydrolysed further."
+  },
+  {
+    "q": "Sucrose, a non-reducing disaccharide, on hydrolysis gives",
+    "o": [
+      "Glucose and galactose",
+      "Only glucose",
+      "Glucose and fructose",
+      "Only fructose"
+    ],
+    "a": 2,
+    "why": "Sucrose is a disaccharide of glucose and fructose joined so that no free reducing group remains."
+  },
+  {
+    "q": "In solution, glucose mainly exists as a cyclic structure in the form of a",
+    "o": [
+      "Open chain only",
+      "Five-membered furanose ring",
+      "Four-membered ring",
+      "Six-membered pyranose ring"
+    ],
+    "a": 3,
+    "why": "Glucose predominantly cyclises into a six-membered pyranose ring in aqueous solution."
+  },
+  {
+    "q": "The bond joining two amino acids in a protein chain is called a",
+    "o": [
+      "Peptide bond (-CO-NH-)",
+      "Hydrogen bond",
+      "Glycosidic bond",
+      "Ester bond"
+    ],
+    "a": 0,
+    "why": "The -COOH of one amino acid reacts with the -NH2 of the next, releasing water and forming a peptide (amide) bond."
+  },
+  {
+    "q": "The alpha-helix and beta-pleated sheet arrangements of a polypeptide chain describe its",
+    "o": [
+      "Primary structure",
+      "Secondary structure",
+      "Tertiary structure",
+      "Quaternary structure"
+    ],
+    "a": 1,
+    "why": "Secondary structure refers to the regular, hydrogen-bonded folding patterns like alpha-helix and beta-sheet."
+  },
+  {
+    "q": "In the lock-and-key model of enzyme action, the region where the substrate binds is called the",
+    "o": [
+      "Coenzyme site",
+      "Allosteric site",
+      "Active site",
+      "Peptide site"
+    ],
+    "a": 2,
+    "why": "The active site is the specific region of the enzyme that binds the substrate to form the enzyme-substrate complex."
+  },
+  {
+    "q": "A deficiency of which vitamin causes scurvy (bleeding gums)?",
+    "o": [
+      "Vitamin A",
+      "Vitamin D",
+      "Vitamin B1",
+      "Vitamin C"
+    ],
+    "a": 3,
+    "why": "Vitamin C deficiency impairs collagen synthesis, leading to scurvy with bleeding gums."
+  },
+  {
+    "q": "Which vitamins are fat-soluble and stored in the body?",
+    "o": [
+      "A, D, E, K",
+      "B-complex and C",
+      "Only vitamin C",
+      "All vitamins equally"
+    ],
+    "a": 0,
+    "why": "Vitamins A, D, E and K dissolve in fats and are stored, unlike water-soluble B-complex and C which are excreted."
+  },
+  {
+    "q": "DNA differs from RNA in that DNA contains",
+    "o": [
+      "Ribose sugar and uracil",
+      "Deoxyribose sugar and thymine (instead of uracil)",
+      "No phosphate group",
+      "Only single strand, no base pairing"
+    ],
+    "a": 1,
+    "why": "DNA has deoxyribose sugar and the base thymine, while RNA has ribose sugar and uracil instead."
+  },
+  {
+    "q": "In DNA base pairing, adenine pairs with",
+    "o": [
+      "Cytosine",
+      "Guanine",
+      "Thymine",
+      "Uracil"
+    ],
+    "a": 2,
+    "why": "Complementary base pairing rules state adenine pairs with thymine (A-T), and guanine pairs with cytosine (G-C)."
+  }
+]

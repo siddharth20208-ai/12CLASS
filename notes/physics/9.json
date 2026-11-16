@@ -1,0 +1,97 @@
+[
+  {
+    "t": "Biot-Savart law",
+    "def": "Biot-Savart law gives the magnetic field dB produced at a point by a tiny current-carrying element Idl, and is the starting formula for finding magnetic fields of wires, loops and solenoids.",
+    "points": [
+      "dB is proportional to the current I and the length of the small element dl.",
+      "dB is proportional to sin(theta), where theta is the angle between dl and the line to the point.",
+      "dB is inversely proportional to the square of the distance r from the element to the point.",
+      "The constant of proportionality is mu0/(4 pi), same role as k in Coulomb's law.",
+      "Direction of dB is perpendicular to the plane containing dl and r, given by the right-hand rule.",
+      "Total field from a long wire or loop is found by adding (integrating) dB from all elements."
+    ],
+    "formula": "dB = (mu0 / 4 pi) x (I dl sin theta) / r^2",
+    "diagram": { "draw": "Draw a small current element of length dl on a wire with current I marked by an arrow. Draw a line from the element to a point P at distance r, label the angle theta between dl and r. Show dB coming out of the page at P with a dot, using the right-hand rule." },
+    "example": "Biot-Savart law is mainly used for derivation; it is combined by integration to get the field of a circular loop or straight wire (see next topics).",
+    "tip": "Write the formula with all symbols defined, and mention it is the magnetic analogue of Coulomb's law — this comparison is often asked."
+  },
+  {
+    "t": "Magnetic field of a circular loop and straight wire",
+    "def": "Using Biot-Savart's law, the magnetic field at the centre of a current loop and at a distance from a long straight wire can be calculated by integration.",
+    "points": [
+      "For a circular loop of radius r carrying current I, the field at its centre is B = mu0 I / (2r), directed along the axis.",
+      "On the axis at distance x from the centre, the field is smaller: B = mu0 I r^2 / [2(r^2+x^2)^(3/2)].",
+      "For an infinitely long straight wire, the field at perpendicular distance r is B = mu0 I / (2 pi r).",
+      "Field lines around a straight wire form concentric circles, direction found by right-hand thumb rule.",
+      "Field increases with more current and decreases as you move farther from the wire or loop."
+    ],
+    "formula": "Loop centre: B = mu0 I / (2r)     Straight wire: B = mu0 I / (2 pi r)",
+    "diagram": { "draw": "Draw a circular loop carrying current I with field lines through the centre perpendicular to the loop plane, label B at centre. Separately draw a straight vertical wire with current I upward, draw concentric dashed circles around it showing field direction by right-hand thumb rule, label B at distance r." },
+    "example": "A loop of radius 0.1 m carries 5 A. B at centre = (4 pi x 10^-7 x 5)/(2 x 0.1) = (6.28x10^-6 x 5)/0.2 ≈ 1.57 x 10^-5 T.",
+    "tip": "Clearly separate the two formulas (loop vs wire) — students often mix them up in the exam."
+  },
+  {
+    "t": "Ampere's circuital law and solenoid",
+    "def": "Ampere's circuital law states that the line integral of magnetic field around any closed loop equals mu0 times the total current enclosed by that loop.",
+    "points": [
+      "It is the magnetic analogue of Gauss's law in electrostatics.",
+      "Choose a closed path (Amperian loop) with symmetry matching the current distribution.",
+      "Sum of B.dl around the loop = mu0 x I_enclosed.",
+      "For a long solenoid with n turns per unit length and current I, the field inside is uniform: B = mu0 n I, and nearly zero outside.",
+      "For a toroid, the field inside the core is B = mu0 N I / (2 pi r).",
+      "This law makes it very easy to get the field for highly symmetric shapes, without doing Biot-Savart integration."
+    ],
+    "formula": "Integral of B.dl = mu0 I_enclosed     Solenoid: B = mu0 n I",
+    "diagram": { "mermaid": "flowchart LR\n  A[\"Choose symmetric Amperian loop\"] --> B[\"Apply integral of B dl = mu0 I enclosed\"]\n  B --> C[\"Solve for B\"]\n  C --> D[\"Solenoid: B = mu0 n I inside\"]\n  C --> E[\"Straight wire: B = mu0 I over 2 pi r\"]" },
+    "example": "A solenoid has 1000 turns/m carrying 2 A. B = mu0 n I = 4 pi x 10^-7 x 1000 x 2 ≈ 2.51 x 10^-3 T.",
+    "tip": "Show the derivation steps: state the law, choose the loop, then substitute — each step carries marks even if final answer is wrong."
+  },
+  {
+    "t": "Force on a current carrying conductor",
+    "def": "A current-carrying conductor placed in a magnetic field experiences a mechanical force because of the force on the moving charges that make up the current.",
+    "points": [
+      "The force on a straight conductor of length L carrying current I in field B is F = BIL sin(theta), where theta is the angle between current direction and B.",
+      "Maximum force occurs when the conductor is perpendicular to the field (theta = 90 degrees).",
+      "Direction of force is given by Fleming's left-hand rule or the right-hand slap rule.",
+      "Two parallel wires carrying current in the same direction attract each other; opposite directions repel.",
+      "This force between parallel currents is used to define the SI unit ampere.",
+      "This principle is the working basis of electric motors and moving-coil meters."
+    ],
+    "formula": "F = B I L sin(theta)     (max F = BIL when theta = 90 degrees)",
+    "diagram": { "draw": "Draw a straight conductor carrying current I horizontally. Draw magnetic field B lines going into the page using crosses. Show the resulting force F pointing upward using Fleming's left-hand rule, with fingers labelled Field, Current, Motion/Force." },
+    "example": "A 0.5 m wire carries 4 A current perpendicular to a 0.2 T field. F = BIL = 0.2 x 4 x 0.5 = 0.4 N.",
+    "tip": "Always mention Fleming's left-hand rule by name and show finger directions in your diagram for the direction mark."
+  },
+  {
+    "t": "Moving coil galvanometer",
+    "def": "A moving coil galvanometer is an instrument that detects and measures small electric currents using the deflecting torque on a current-carrying coil placed in a magnetic field.",
+    "points": [
+      "The coil (N turns, area A) is suspended in a radial magnetic field B between permanent magnet poles.",
+      "Current I through the coil produces a deflecting torque, tau = N I A B.",
+      "A spring provides a restoring torque k*theta that opposes the deflection.",
+      "At equilibrium, N I A B = k theta, so deflection theta is directly proportional to current I.",
+      "This linear relationship, theta = (NAB/k) I, lets the scale be marked uniformly.",
+      "Sensitivity can be increased by increasing N, A, B, or decreasing spring constant k."
+    ],
+    "formula": "theta = (N A B / k) I",
+    "diagram": { "draw": "Draw a rectangular coil of wire between the curved poles N and S of a permanent magnet. Show the coil connected to a pointer over a scale, and a spring providing restoring torque. Label the radial field lines pointing from N pole to coil to S pole." },
+    "example": "If N=100, A=2x10^-4 m^2, B=0.1 T, k=10^-6 N m/rad, and I=1 mA, theta = (100 x 2e-4 x 0.1 / 1e-6) x 1e-3 = 2 rad (approx, for illustration).",
+    "tip": "State that deflection is proportional to current (theta directly proportional to I) — this one line is often asked separately for 1 mark."
+  },
+  {
+    "t": "Conversion of galvanometer to ammeter/voltmeter",
+    "def": "A sensitive galvanometer can be converted into an ammeter (to measure large currents) by adding a low shunt resistance in parallel, or into a voltmeter (to measure potential difference) by adding a high resistance in series.",
+    "points": [
+      "Galvanometer has resistance G and gives full deflection for current Ig.",
+      "To make an ammeter of range I, connect shunt S in parallel so extra current bypasses the coil: S = Ig G / (I - Ig).",
+      "An ideal ammeter has very low resistance so it barely changes the circuit's current — hence shunt is small.",
+      "To make a voltmeter of range V, connect resistance R in series: R = (V/Ig) - G.",
+      "An ideal voltmeter has very high resistance so it draws negligible current from the circuit — hence R is large.",
+      "Ammeters are always connected in series in a circuit, voltmeters always in parallel."
+    ],
+    "formula": "Shunt: S = Ig G / (I - Ig)     Series resistance: R = (V/Ig) - G",
+    "diagram": { "draw": "Draw a galvanometer symbol with a shunt resistance S connected in parallel across it for the ammeter case. Separately draw the galvanometer with a high series resistance R connected in series for the voltmeter case. Label G, S, R clearly in both diagrams." },
+    "example": "G = 100 ohm, Ig = 1 mA, I = 1 A: S = (1e-3 x 100)/(1 - 1e-3) ≈ 0.1 ohm (shunt). For V = 10 V: R = (10/1e-3) - 100 = 10000 - 100 = 9900 ohm.",
+    "tip": "Remember shunt (parallel, low R) is for ammeter; series resistance (high R) is for voltmeter — a common mix-up in exams."
+  }
+]

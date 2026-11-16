@@ -1,0 +1,112 @@
+[
+  {
+    "q": "The zeroth law of thermodynamics is used to define the concept of",
+    "o": [
+      "entropy",
+      "temperature",
+      "internal energy",
+      "work done"
+    ],
+    "a": 1,
+    "why": "Zeroth law establishes thermal equilibrium, which defines temperature"
+  },
+  {
+    "q": "The first law of thermodynamics is expressed as",
+    "o": [
+      "dQ = dU - dW",
+      "dU = dQ x dW",
+      "dQ = dU + dW",
+      "dW = dQ + dU"
+    ],
+    "a": 2,
+    "why": "First law: heat supplied dQ = increase in internal energy dU + work done by system dW"
+  },
+  {
+    "q": "In an isothermal process for an ideal gas, the quantity that remains constant is",
+    "o": [
+      "pressure",
+      "volume",
+      "internal energy only for real gas",
+      "PV (temperature)"
+    ],
+    "a": 3,
+    "why": "Isothermal means constant temperature, so PV = nRT = constant"
+  },
+  {
+    "q": "In an adiabatic process, no heat is exchanged, so the relation between internal energy and work done is",
+    "o": [
+      "dU = -dW",
+      "dU = dW",
+      "dU = 0",
+      "dW = 0"
+    ],
+    "a": 0,
+    "why": "Adiabatic: dQ = 0, so first law gives dU = -dW"
+  },
+  {
+    "q": "In a P-V diagram, the work done by a gas during an expansion equals",
+    "o": [
+      "the slope of the curve",
+      "the area under the curve between initial and final volume",
+      "the area above the curve",
+      "the length of the curve"
+    ],
+    "a": 1,
+    "why": "W = integral of P dV, which equals the area under the P-V curve"
+  },
+  {
+    "q": "The efficiency of a heat engine operating between a hot reservoir giving Q1 and rejecting Q2 is",
+    "o": [
+      "eta = Q2/Q1",
+      "eta = Q1/Q2",
+      "eta = 1 - Q2/Q1",
+      "eta = Q1 - Q2"
+    ],
+    "a": 2,
+    "why": "Efficiency eta = W/Q1 = 1 - Q2/Q1"
+  },
+  {
+    "q": "The coefficient of performance (COP) of a refrigerator is defined as",
+    "o": [
+      "COP = W/Q2",
+      "COP = Q1/Q2",
+      "COP = Q1/W",
+      "COP = Q2/W"
+    ],
+    "a": 3,
+    "why": "COP = heat removed from cold body / work done on refrigerator = Q2/W"
+  },
+  {
+    "q": "The Carnot engine efficiency operating between temperatures T1 (hot) and T2 (cold) is",
+    "o": [
+      "eta = 1 - T2/T1",
+      "eta = T2/T1",
+      "eta = T1/T2",
+      "eta = T1 - T2"
+    ],
+    "a": 0,
+    "why": "Carnot efficiency eta = 1 - T2/T1, the maximum possible efficiency between those temperatures"
+  },
+  {
+    "q": "A Carnot engine works between 500 K and 300 K. Its maximum efficiency is",
+    "o": [
+      "20%",
+      "40%",
+      "60%",
+      "75%"
+    ],
+    "a": 1,
+    "why": "eta = 1 - 300/500 = 1 - 0.6 = 0.4 = 40%"
+  },
+  {
+    "q": "The second law of thermodynamics implies that",
+    "o": [
+      "a heat engine can convert all heat into work",
+      "entropy of an isolated system always decreases",
+      "no engine can be more efficient than a Carnot engine operating between the same two temperatures",
+      "heat flows spontaneously from cold to hot"
+    ],
+    "a": 2,
+    "why": "Second law: the Carnot engine sets the upper limit of efficiency between two given temperatures"
+  }
+]

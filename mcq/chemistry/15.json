@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Which of the following is a core principle of green chemistry?",
+    "o": [
+      "Maximise use of hazardous solvents for speed",
+      "Avoid renewable feedstock",
+      "Use stoichiometric reagents instead of catalysts",
+      "Prevent waste rather than treat it after formation"
+    ],
+    "a": 3,
+    "why": "Green chemistry's first principle is to design processes that prevent waste from forming at all."
+  },
+  {
+    "q": "Using hydrogen peroxide instead of chlorine-based bleach is considered a green chemistry choice because",
+    "o": [
+      "H2O2 gives only water as the by-product",
+      "H2O2 is more expensive",
+      "H2O2 is a stronger oxidant than chlorine",
+      "Chlorine bleach has higher atom economy"
+    ],
+    "a": 0,
+    "why": "Hydrogen peroxide oxidation produces only water as by-product, reducing hazardous waste compared to chlorine-based bleaching."
+  },
+  {
+    "q": "In the green synthesis of adipic acid, using H2O2 with a catalyst instead of nitric acid oxidation mainly avoids the release of",
+    "o": [
+      "Carbon dioxide",
+      "Nitrous oxide (a pollutant)",
+      "Sulphur dioxide",
+      "Oxygen gas"
+    ],
+    "a": 1,
+    "why": "Traditional nitric acid oxidation of cyclohexanone releases polluting N2O gas, which the H2O2-based green route avoids."
+  },
+  {
+    "q": "Atom economy of a reaction is calculated as",
+    "o": [
+      "(moles of product / moles of reactant)",
+      "(mass of waste / mass of product) x 100",
+      "(mass of desired product / total mass of reactants) x 100",
+      "(mass of reactants / mass of product) x 100"
+    ],
+    "a": 2,
+    "why": "Atom economy percentage compares the molar mass of the desired product to the total molar mass of all reactants."
+  },
+  {
+    "q": "For a reaction A + B -> C (desired) + D, if molar mass of C is 90 and total reactant mass is 120, the atom economy is",
+    "o": [
+      "25%",
+      "60%",
+      "90%",
+      "75%"
+    ],
+    "a": 3,
+    "why": "Atom economy = (90/120) x 100 = 75%."
+  },
+  {
+    "q": "Addition reactions generally have an atom economy of approximately",
+    "o": [
+      "100%",
+      "50%",
+      "75%",
+      "25%"
+    ],
+    "a": 0,
+    "why": "In addition reactions no atoms are lost as by-products, so essentially all reactant atoms end up in the product (100%)."
+  },
+  {
+    "q": "A nanomaterial in which all three dimensions lie within the 1-100 nm range is classified as",
+    "o": [
+      "1D nanomaterial",
+      "0D nanomaterial",
+      "2D nanomaterial",
+      "3D bulk nanomaterial"
+    ],
+    "a": 1,
+    "why": "0D nanomaterials, such as nanoparticles and quantum dots, have all three dimensions in the nanoscale range."
+  },
+  {
+    "q": "A carbon nanotube, which has a nanoscale diameter but a much greater length, is classified as a",
+    "o": [
+      "0D nanomaterial",
+      "2D nanomaterial",
+      "1D nanomaterial",
+      "3D nanomaterial"
+    ],
+    "a": 2,
+    "why": "Only one dimension (diameter) is in the nanoscale while length is large, making it a 1D nanomaterial."
+  },
+  {
+    "q": "Compared to bulk gold, gold nanoparticles typically appear",
+    "o": [
+      "Yellow, same as bulk",
+      "Colourless",
+      "Black",
+      "Red/purple due to size-dependent optical properties"
+    ],
+    "a": 3,
+    "why": "At the nanoscale, quantum size effects change light absorption, so gold nanoparticles appear red/purple instead of golden yellow."
+  },
+  {
+    "q": "Silver nanoparticles coated on fabrics and bandages are mainly used for their",
+    "o": [
+      "Antibacterial action",
+      "Magnetic properties",
+      "Increased weight",
+      "Fire resistance"
+    ],
+    "a": 0,
+    "why": "Silver nanoparticles exhibit strong antibacterial activity, making them useful in antimicrobial coatings."
+  }
+]

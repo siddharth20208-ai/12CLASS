@@ -1,0 +1,108 @@
+[
+  {
+    "t": "Group 16 Trends and Oxides of Sulfur",
+    "def": "Group 16 (oxygen family) elements show increasing atomic size and metallic character down the group, and sulfur forms important oxides like sulfur dioxide and sulfur trioxide.",
+    "points": [
+      "Group 16 order: O, S, Se, Te, Po; atomic and ionic radii increase down the group.",
+      "Electronegativity and non-metallic character decrease down the group; oxygen is most non-metallic.",
+      "Oxidation states shown: -2 common for all; +4 and +6 shown by S, Se, Te.",
+      "SO2 is prepared by burning sulfur in air or roasting sulfide ores; it is a colourless, pungent gas, used to make sulfuric acid.",
+      "SO3 is formed by catalytic oxidation of SO2 (2SO2 + O2 -> 2SO3) in the Contact process.",
+      "SO2 has a V-shaped (angular) structure; SO3 has a planar trigonal structure in the gas phase."
+    ],
+    "formula": "2SO2 + O2 --(catalyst)--> 2SO3",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Sulfur burnt in air\"] --> B[\"SO2 formed\"]\n  B --> C[\"Catalytic oxidation with O2\"]\n  C --> D[\"SO3 formed\"]\n  D --> E[\"Dissolved in water gives H2SO4\"]"
+    },
+    "example": "Industrial Contact process: S burnt to SO2, then SO2 oxidised to SO3 over V2O5 catalyst at 720 K, then SO3 absorbed in water to give H2SO4.",
+    "tip": "Write balanced equations for both SO2 formation and its conversion to SO3 — these reactions are commonly asked for 2 marks."
+  },
+  {
+    "t": "Oxoacids of Sulfur",
+    "def": "Oxoacids of sulfur are acids containing sulfur, oxygen and hydrogen, such as sulfurous acid and sulfuric acid, important in industry and the laboratory.",
+    "points": [
+      "Sulfurous acid, H2SO3, is formed when SO2 dissolves in water; it is a weak diprotic acid.",
+      "Sulfuric acid, H2SO4, is a strong dibasic acid, manufactured by the Contact process.",
+      "In H2SO4, sulfur is tetrahedrally surrounded by two OH groups and two oxygen atoms (two S=O double bonds).",
+      "H2SO4 is used in fertiliser manufacture, in batteries, and as a dehydrating and oxidising agent.",
+      "Oleum (H2S2O7, pyrosulfuric acid) is formed when SO3 is absorbed in concentrated H2SO4; diluting oleum with water gives H2SO4 back."
+    ],
+    "formula": "SO2 + H2O -> H2SO3     SO3 + H2O -> H2SO4",
+    "diagram": {
+      "draw": "Draw the sulfuric acid molecule: a central S atom. Draw two double bonds going up to two O atoms labelled '=O'. Draw two single bonds going down-left and down-right to two OH groups. Label the shape as tetrahedral around sulfur."
+    },
+    "example": "Dilution of oleum: H2S2O7 + H2O -> 2H2SO4, done carefully by adding acid to water to control the large heat release.",
+    "tip": "Draw the structure of H2SO4 clearly with S=O and S-OH bonds shown — structure questions carry easy marks."
+  },
+  {
+    "t": "Group 17 Trends and Preparation of Halogens",
+    "def": "Group 17 (halogens) are highly reactive non-metals whose reactivity decreases down the group, and they are prepared industrially and in the laboratory by oxidation of halide ions.",
+    "points": [
+      "Group 17 order: F, Cl, Br, I; all are diatomic, coloured, and strong oxidising agents.",
+      "Oxidising power and electronegativity decrease down the group (F2 is strongest oxidiser).",
+      "Chlorine is manufactured industrially by Deacon's process: oxidation of HCl gas with air using a CuCl2 catalyst.",
+      "Deacon's process reaction: 4HCl + O2 --(CuCl2, heat)--> 2Cl2 + 2H2O.",
+      "In the laboratory, Cl2 is made by heating MnO2 with concentrated HCl.",
+      "Bromine and iodine are obtained by oxidising Br- and I- ions in brine or seaweed extracts using Cl2 gas."
+    ],
+    "formula": "4HCl + O2 --(CuCl2 catalyst)--> 2Cl2 + 2H2O",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"HCl gas and air\"] --> B[\"Pass over CuCl2 catalyst, heat\"]\n  B --> C[\"Chlorine gas produced\"]\n  C --> D[\"Water vapour byproduct\"]"
+    },
+    "example": "Laboratory preparation of chlorine: MnO2 + 4HCl -> MnCl2 + Cl2 + 2H2O, by gently heating the mixture.",
+    "tip": "Name the catalyst (CuCl2) and the role of oxidation of chloride to chlorine clearly in Deacon's process answer."
+  },
+  {
+    "t": "Oxoacids of Halogens",
+    "def": "Oxoacids of halogens are acids of chlorine (and other halogens) containing oxygen, whose acid strength increases as the oxidation state of the halogen increases.",
+    "points": [
+      "Chlorine forms four main oxoacids: hypochlorous (HOCl), chlorous (HOClO), chloric (HOClO2), and perchloric (HOClO3) acid.",
+      "Oxidation state of Cl increases from +1 in HOCl to +7 in HClO4.",
+      "Acid strength increases in the order HOCl < HClO2 < HClO3 < HClO4, as more oxygen atoms stabilise the negative charge on the conjugate base.",
+      "Oxidising power decreases in the same order (HOCl is the strongest oxidiser, HClO4 the weakest among them).",
+      "All these acids are unstable and cannot usually be isolated pure; they exist mainly in aqueous solution or as salts."
+    ],
+    "formula": "Acid strength: HOCl < HClO2 < HClO3 < HClO4",
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"HOCl, Cl +1\"] --> B[\"HClO2, Cl +3\"]\n  B --> C[\"HClO3, Cl +5\"]\n  C --> D[\"HClO4, Cl +7\"]\n  D --> E[\"Acid strength increases this way\"]"
+    },
+    "example": "Perchloric acid (HClO4) is the strongest oxoacid of chlorine because the +7 oxidation state gives the most stable, highly delocalised conjugate base ClO4-.",
+    "tip": "Remember the trend as 'more oxygens, stronger acid, weaker oxidiser' — a quick way to answer ranking questions."
+  },
+  {
+    "t": "Interhalogen Compounds",
+    "def": "Interhalogen compounds are formed between two different halogen atoms, usually a larger halogen combined with one, three, five or seven smaller halogen atoms.",
+    "points": [
+      "General formulas: AX, AX3, AX5, AX7, where A is the larger, less electronegative halogen and X is the smaller one.",
+      "They are formed by direct combination of halogens, e.g., Cl2 + F2 -> 2ClF.",
+      "AX type (like ClF, BrCl) is linear in shape.",
+      "AX3 type (like ClF3) has a bent T-shape; AX5 type (like ClF5) is square pyramidal; AX7 type (like IF7) is pentagonal bipyramidal.",
+      "Interhalogens are generally more reactive than the parent halogens (except fluorine) because the A-X bond is weaker than X-X bond.",
+      "They are used as fluorinating agents and oxidising agents in various reactions."
+    ],
+    "formula": "Cl2 + 3F2 -> 2ClF3 (excess F2)",
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Two different halogens combine\"] --> B[\"AX type: linear, e.g. ClF\"]\n  A --> C[\"AX3 type: bent T-shape, e.g. ClF3\"]\n  A --> D[\"AX5 type: square pyramidal, e.g. ClF5\"]\n  A --> E[\"AX7 type: pentagonal bipyramidal, e.g. IF7\"]"
+    },
+    "example": "IF7 is the largest known interhalogen; iodine (larger, less electronegative) is surrounded by seven fluorine atoms in a pentagonal bipyramidal shape.",
+    "tip": "Learn one example and its correct shape for each formula type (AX, AX3, AX5, AX7) — shape-naming questions are common."
+  },
+  {
+    "t": "Group 18 Noble Gas Compounds",
+    "def": "Noble gases (Group 18) have complete octets and are chemically mostly inert, but heavier noble gases, especially xenon, can form compounds with highly electronegative elements like fluorine and oxygen.",
+    "points": [
+      "Noble gases: He, Ne, Ar, Kr, Xe, Rn; they have full outer shells, giving very low reactivity.",
+      "Reactivity increases down the group as ionisation enthalpy decreases, making larger atoms (Kr, Xe) more reactive.",
+      "Xenon forms fluorides by direct reaction with fluorine under controlled conditions: Xe + F2 -> XeF2, Xe + 2F2 -> XeF4, Xe + 3F2 -> XeF6.",
+      "XeF2 is linear in shape, XeF4 is square planar, and XeF6 is distorted octahedral.",
+      "Xenon fluorides hydrolyse with water to give xenon oxides, e.g. XeF6 hydrolyses to give XeO3.",
+      "Noble gas compounds are strong oxidising and fluorinating agents."
+    ],
+    "formula": "Xe + F2 --(Ni vessel, heat)--> XeF2     Xe + 2F2 -> XeF4     Xe + 3F2 -> XeF6",
+    "diagram": {
+      "draw": "Draw three separate xenon fluoride structures. XeF2: a straight line F-Xe-F (linear). XeF4: a square with Xe at the centre and F atoms at the four corners (square planar). XeF6: Xe at the centre with six F atoms around it in a slightly distorted octahedral arrangement. Label each shape below the drawing."
+    },
+    "example": "Varying the ratio of Xe to F2 and reaction conditions (temperature, pressure) controls which xenon fluoride (XeF2, XeF4 or XeF6) is the major product.",
+    "tip": "State the exact mole ratio of Xe to F2 for each fluoride and its shape — this exact-ratio detail is often tested."
+  }
+]

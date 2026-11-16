@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Which concentration term does NOT change with temperature?",
+    "o": [
+      "Molarity",
+      "Molality",
+      "Volume percentage",
+      "None of these"
+    ],
+    "a": 1,
+    "why": "Molality is based on mass of solvent, which does not change with temperature, unlike molarity (based on volume)."
+  },
+  {
+    "q": "1 mole of a solute dissolved to make 2 L of solution has molarity:",
+    "o": [
+      "2 M",
+      "1 M",
+      "0.5 M",
+      "4 M"
+    ],
+    "a": 2,
+    "why": "Molarity = moles/volume(L) = 1/2 = 0.5 M."
+  },
+  {
+    "q": "According to Raoult's law, the vapour pressure of a solution containing a non-volatile solute is:",
+    "o": [
+      "Equal to pure solvent vapour pressure",
+      "Higher than pure solvent vapour pressure",
+      "Independent of mole fraction",
+      "Lower than pure solvent vapour pressure"
+    ],
+    "a": 3,
+    "why": "A non-volatile solute lowers the solvent's vapour pressure: p = p° x(solvent), which is less than p°."
+  },
+  {
+    "q": "Which is NOT a colligative property?",
+    "o": [
+      "Refractive index",
+      "Depression in freezing point",
+      "Osmotic pressure",
+      "Elevation in boiling point"
+    ],
+    "a": 0,
+    "why": "Refractive index is not a colligative property; it does not depend solely on the number of solute particles."
+  },
+  {
+    "q": "0.6 g urea (molar mass 60 g/mol) dissolved in 100 g water gives depression in freezing point of 0.186°C using Kf = 1.86 K kg/mol. This confirms the molar mass because:",
+    "o": [
+      "ΔTf is unrelated to molality",
+      "ΔTf = Kf x m gives m = 0.1, matching 0.6/60 = 0.01 mol in 0.1 kg solvent",
+      "Kf value is incorrect here",
+      "Urea does not follow colligative laws"
+    ],
+    "a": 1,
+    "why": "m = ΔTf/Kf = 0.186/1.86 = 0.1 mol/kg; moles = 0.6/60 = 0.01 mol in 0.1 kg water gives molality 0.1, confirming molar mass 60."
+  },
+  {
+    "q": "NaCl dissociates into 2 ions in water. If the observed Van't Hoff factor i = 1.87, the degree of dissociation is:",
+    "o": [
+      "0.5",
+      "1.87",
+      "0.87",
+      "0.13"
+    ],
+    "a": 2,
+    "why": "α = (i-1)/(n-1) = (1.87-1)/(2-1) = 0.87."
+  },
+  {
+    "q": "For a solute that associates in solution (like acetic acid dimerizing in benzene), the Van't Hoff factor i is:",
+    "o": [
+      "Greater than 1",
+      "Equal to 1",
+      "Equal to zero",
+      "Less than 1"
+    ],
+    "a": 3,
+    "why": "Association reduces the effective number of particles, so i < 1 for associating solutes."
+  },
+  {
+    "q": "An ideal solution is characterized by:",
+    "o": [
+      "ΔHmix and ΔVmix both equal to zero",
+      "Large positive ΔHmix",
+      "Formation of an azeotrope",
+      "Deviation from Raoult's law"
+    ],
+    "a": 0,
+    "why": "Ideal solutions obey Raoult's law exactly with no enthalpy or volume change on mixing."
+  },
+  {
+    "q": "Ethanol-acetone mixture shows positive deviation from Raoult's law because:",
+    "o": [
+      "A-B interactions are stronger than A-A and B-B",
+      "A-B interactions are weaker than A-A and B-B",
+      "ΔHmix is negative",
+      "No vapour pressure change occurs"
+    ],
+    "a": 1,
+    "why": "Positive deviation occurs when solute-solvent interactions are weaker than solute-solute and solvent-solvent interactions, increasing vapour pressure."
+  },
+  {
+    "q": "Acetic acid dimerizes in benzene (n=2). If the observed Van't Hoff factor i = 0.52, the degree of association is:",
+    "o": [
+      "0.52",
+      "0.48",
+      "0.96",
+      "1.00"
+    ],
+    "a": 2,
+    "why": "α = (1-i)/(1-1/n) = (1-0.52)/(1-0.5) = 0.48/0.5 = 0.96."
+  }
+]
