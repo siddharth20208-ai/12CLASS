@@ -11,7 +11,10 @@
       "These laws work even when the circuit has many batteries and resistors, unlike simple series-parallel rules."
     ],
     "formula": "Sum of currents at a junction = 0     Sum of EMF = Sum of IR in a loop",
-    "diagram": { "draw": "Draw a circuit with two loops sharing one branch (like the letter theta). Mark a junction point with three currents I1 entering, I2 and I3 leaving, with arrows. Draw two closed loops with a battery and resistor in each, label loop directions with curved arrows." },
+    "diagram": {
+      "draw": "Draw a circuit with two loops sharing one branch (like the letter theta). Mark a junction point with three currents I1 entering, I2 and I3 leaving, with arrows. Draw two closed loops with a battery and resistor in each, label loop directions with curved arrows.",
+      "svg": "diagrams/physics/8-0.svg"
+    },
     "example": "At a junction, I1 = 5 A enters, I2 = 2 A and I3 leave. By KCL: 5 = 2 + I3, so I3 = 3 A.",
     "tip": "Always state both laws in words first, then show one labelled circuit diagram with current directions — this gets easy marks even without solving numbers."
   },
@@ -26,7 +29,10 @@
       "The bridge is very sensitive near balance, giving accurate measurement of unknown resistance."
     ],
     "formula": "Balance condition: P/Q = R/S",
-    "diagram": { "draw": "Draw a diamond (rhombus) of four resistors P, Q, R, S on the four sides. Connect a battery across one diagonal (top to bottom) and a galvanometer across the other diagonal (left to right). Label all four resistors and the galvanometer G." },
+    "diagram": {
+      "draw": "Draw a diamond (rhombus) of four resistors P, Q, R, S on the four sides. Connect a battery across one diagonal (top to bottom) and a galvanometer across the other diagonal (left to right). Label all four resistors and the galvanometer G.",
+      "svg": "diagrams/physics/8-1.svg"
+    },
     "example": "If P = 10 ohm, Q = 20 ohm, R = 15 ohm, then for balance S = RQ/P = 15 x 20/10 = 30 ohm.",
     "tip": "Draw the diamond shape correctly with galvanometer on the correct diagonal — examiners check this carefully for 1 mark."
   },
@@ -42,7 +48,10 @@
       "The experiment is repeated a few times for accuracy, and the wire must be uniform in cross-section."
     ],
     "formula": "X/R = l / (100 - l)",
-    "diagram": { "draw": "Draw a 1-metre wire stretched on a scale between two end terminals. On the left gap connect the unknown resistance X, on the right gap connect known resistance R. Draw the battery and galvanometer circuit with a jockey touching the wire at the balance point, label distance l from the left end." },
+    "diagram": {
+      "draw": "Draw a 1-metre wire stretched on a scale between two end terminals. On the left gap connect the unknown resistance X, on the right gap connect known resistance R. Draw the battery and galvanometer circuit with a jockey touching the wire at the balance point, label distance l from the left end.",
+      "svg": "diagrams/physics/8-2.svg"
+    },
     "example": "If R = 10 ohm and balance length l = 40 cm, then X = 10 x 40/(100-40) = 10 x 40/60 = 6.67 ohm.",
     "tip": "Remember the balance length is measured from the same end as the known resistance's gap — state this clearly."
   },
@@ -57,7 +66,10 @@
       "Since no current is drawn from the cell at balance, the measurement is very accurate, unlike a voltmeter."
     ],
     "formula": "E = k L     where k = potential gradient = V/L of wire",
-    "diagram": { "draw": "Draw a long straight potentiometer wire AB connected to a driver battery and rheostat. Draw the cell (whose EMF is to be measured) connected through a galvanometer to a jockey touching the wire. Label the balance point J and the length AJ = L." },
+    "diagram": {
+      "draw": "Draw a long straight potentiometer wire AB connected to a driver battery and rheostat. Draw the cell (whose EMF is to be measured) connected through a galvanometer to a jockey touching the wire. Label the balance point J and the length AJ = L.",
+      "svg": "diagrams/physics/8-3.svg"
+    },
     "example": "If potential gradient k = 0.02 V/cm and balancing length is 60 cm, then EMF = 0.02 x 60 = 1.2 V.",
     "tip": "Clearly explain why potentiometer is better than a voltmeter: it draws zero current at balance, giving exact EMF."
   },
@@ -72,7 +84,10 @@
       "This method is accurate because no current is drawn from either cell at the balance point."
     ],
     "formula": "E1 / E2 = L1 / L2",
-    "diagram": { "draw": "Draw the potentiometer wire with driver battery. Draw a two-way key connecting either cell 1 or cell 2 (shown as two cells side by side) through a galvanometer to the jockey. Label balancing lengths L1 and L2 for the two cells." },
+    "diagram": {
+      "draw": "Draw the potentiometer wire with driver battery. Draw a two-way key connecting either cell 1 or cell 2 (shown as two cells side by side) through a galvanometer to the jockey. Label balancing lengths L1 and L2 for the two cells.",
+      "svg": "diagrams/physics/8-4.svg"
+    },
     "example": "If L1 = 50 cm for cell 1 and L2 = 40 cm for cell 2, then E1/E2 = 50/40 = 1.25, meaning cell 1's EMF is 1.25 times cell 2's EMF.",
     "tip": "Mention that the same driver current (and hence same k) must be kept constant throughout both readings."
   },
@@ -87,7 +102,10 @@
       "This gives r = R(L1 - L2)/L2."
     ],
     "formula": "r = R (L1 - L2) / L2",
-    "diagram": { "draw": "Draw the potentiometer wire with driver battery. Draw the test cell connected through a key and a resistance box R in series, with a separate galvanometer-jockey branch for balancing. Label the two balance points L1 (key open) and L2 (key closed with R in circuit)." },
+    "diagram": {
+      "draw": "Draw the potentiometer wire with driver battery. Draw the test cell connected through a key and a resistance box R in series, with a separate galvanometer-jockey branch for balancing. Label the two balance points L1 (key open) and L2 (key closed with R in circuit).",
+      "svg": "diagrams/physics/8-5.svg"
+    },
     "example": "If L1 = 60 cm, L2 = 50 cm, and R = 5 ohm, then r = 5 x (60-50)/50 = 5 x 0.2 = 1 ohm.",
     "tip": "Write both balance conditions (open and closed circuit) clearly before substituting into the formula for full marks."
   }

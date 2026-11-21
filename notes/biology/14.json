@@ -44,7 +44,8 @@
       "Example sites in India: Sunderban, Nilgiri and Gulf of Mannar biosphere reserves."
     ],
     "diagram": {
-      "draw": "Draw three concentric circles. Label the innermost circle 'Core zone - fully protected'. Label the middle ring 'Buffer zone - limited use'. Label the outer ring 'Transition zone - human settlement'. Title the diagram 'Biosphere reserve zones'."
+      "draw": "Draw three concentric circles. Label the innermost circle 'Core zone - fully protected'. Label the middle ring 'Buffer zone - limited use'. Label the outer ring 'Transition zone - human settlement'. Title the diagram 'Biosphere reserve zones'.",
+      "svg": "diagrams/biology/14-2.svg"
     },
     "example": "The Nilgiri Biosphere Reserve in the Western Ghats protects tigers, elephants and many endemic plants in their natural habitat.",
     "tip": "Clearly differentiate national park, wildlife sanctuary and biosphere reserve in a table — this comparison is a common 3-4 mark question."

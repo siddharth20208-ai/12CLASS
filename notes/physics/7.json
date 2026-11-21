@@ -13,7 +13,8 @@
     ],
     "formula": "F = k q1 q2 / r^2     E = F/q0 = k Q / r^2     k = 1/(4 pi epsilon0)",
     "diagram": {
-      "draw": "Draw a positive point charge Q at the centre. Draw several straight arrows radiating outward in all directions from Q, representing the electric field lines, with arrowheads pointing away from Q. Mark a test point P on one line at distance r from Q and label the field vector E at P pointing away from Q."
+      "draw": "Draw a positive point charge Q at the centre. Draw several straight arrows radiating outward in all directions from Q, representing the electric field lines, with arrowheads pointing away from Q. Mark a test point P on one line at distance r from Q and label the field vector E at P pointing away from Q.",
+      "svg": "diagrams/physics/7-0.svg"
     },
     "example": "Two charges q1 = 2 microC and q2 = 3 microC are 0.3 m apart. F = (9x10^9 x 2x10^-6 x 3x10^-6)/0.3^2 = (9x10^9 x 6x10^-12)/0.09 = 0.054/0.09 = 0.6 N.",
     "tip": "Always convert micro/nano Coulombs to SI units before substituting, and state the direction (attraction or repulsion) along with the magnitude."
@@ -31,7 +32,8 @@
     ],
     "formula": "Gauss's law: Phi = Q_enclosed / epsilon0     Point charge: E = Q/(4 pi epsilon0 r^2)",
     "diagram": {
-      "draw": "Draw a point charge Q at the centre and a dashed sphere of radius r around it as the Gaussian surface. Draw several field lines radiating outward from Q through the sphere's surface, each with an arrow. Label the Gaussian surface, radius r, and the charge Q at the centre."
+      "draw": "Draw a point charge Q at the centre and a dashed sphere of radius r around it as the Gaussian surface. Draw several field lines radiating outward from Q through the sphere's surface, each with an arrow. Label the Gaussian surface, radius r, and the charge Q at the centre.",
+      "svg": "diagrams/physics/7-1.svg"
     },
     "example": "A sphere of radius 0.1 m encloses charge Q = 1 microC. Flux through the sphere = Q/epsilon0 = 1x10^-6/8.85x10^-12 approx 1.13 x 10^5 N m^2/C, regardless of the exact radius.",
     "tip": "State clearly that flux depends only on enclosed charge, not on the size or shape of the Gaussian surface or on charges outside it."
@@ -68,7 +70,8 @@
     ],
     "formula": "C = Q/V     Parallel plate: C = K epsilon0 A/d",
     "diagram": {
-      "draw": "Draw two parallel horizontal plates separated by a gap d, with the top plate labelled +Q and the bottom plate labelled -Q. Draw vertical field lines from the top plate to the bottom plate inside the gap. Label the plate area A, the separation d, and if used, shade the region between plates and label it 'dielectric K'."
+      "draw": "Draw two parallel horizontal plates separated by a gap d, with the top plate labelled +Q and the bottom plate labelled -Q. Draw vertical field lines from the top plate to the bottom plate inside the gap. Label the plate area A, the separation d, and if used, shade the region between plates and label it 'dielectric K'.",
+      "svg": "diagrams/physics/7-3.svg"
     },
     "example": "A parallel plate capacitor has A = 0.02 m^2, d = 1 mm = 10^-3 m, air between plates: C = (8.85x10^-12 x 0.02)/10^-3 = 1.77 x 10^-10 F = 177 pF.",
     "tip": "Remember that adding a dielectric always increases capacitance by factor K; write the formula with and without dielectric to show understanding."
@@ -86,7 +89,8 @@
     ],
     "formula": "Series: 1/C_eq = sum(1/Ci)     Parallel: C_eq = sum(Ci)",
     "diagram": {
-      "draw": "Draw two circuit diagrams side by side. Left: battery connected to two capacitors C1 and C2 drawn one after another in a single loop (series), with the same charge Q shown on both. Right: battery connected to C1 and C2 drawn as two separate parallel branches between the same two nodes (parallel), with the same voltage V across both and separate charges Q1 and Q2 marked."
+      "draw": "Draw two circuit diagrams side by side. Left: battery connected to two capacitors C1 and C2 drawn one after another in a single loop (series), with the same charge Q shown on both. Right: battery connected to C1 and C2 drawn as two separate parallel branches between the same two nodes (parallel), with the same voltage V across both and separate charges Q1 and Q2 marked.",
+      "svg": "diagrams/physics/7-4.svg"
     },
     "example": "Two capacitors C1 = 2 microF and C2 = 3 microF: in series, 1/C_eq = 1/2 + 1/3 = 5/6, so C_eq = 6/5 = 1.2 microF. In parallel, C_eq = 2 + 3 = 5 microF.",
     "tip": "Remember the memory trick: series capacitance behaves like parallel resistance formula, and parallel capacitance behaves like series resistance formula."
@@ -105,7 +109,8 @@
     ],
     "formula": "U = (1/2) C V^2 = Q^2/(2C)     Energy density u = (1/2) epsilon0 E^2",
     "diagram": {
-      "draw": "Draw a parallel plate capacitor with plates labelled +Q and -Q. Inside the gap, draw a slab labelled 'dielectric' with small arrows inside it showing induced dipoles (small + and - pairs) aligned opposite to the main field arrows. Label the main field E between the plates and the reduced net field inside the dielectric."
+      "draw": "Draw a parallel plate capacitor with plates labelled +Q and -Q. Inside the gap, draw a slab labelled 'dielectric' with small arrows inside it showing induced dipoles (small + and - pairs) aligned opposite to the main field arrows. Label the main field E between the plates and the reduced net field inside the dielectric.",
+      "svg": "diagrams/physics/7-5.svg"
     },
     "example": "A capacitor of C = 4 microF is charged to V = 100 V: U = 0.5 x 4x10^-6 x 100^2 = 0.5 x 4x10^-6 x 10000 = 0.02 J.",
     "tip": "Clearly distinguish the two cases: battery connected (V constant) versus battery disconnected (Q constant) when a dielectric is inserted — a classic exam trick question."

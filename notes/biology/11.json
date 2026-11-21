@@ -10,7 +10,9 @@
       "A good vector must be able to replicate independently inside the host and should have a marker gene (e.g., antibiotic resistance) to identify successfully transformed cells.",
       "The foreign gene is inserted into the vector using the same restriction enzyme, so their sticky ends match."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Restriction enzyme cuts DNA\"] --> B[\"Sticky ends formed\"]\n  B --> C[\"Gene inserted into vector plasmid\"]\n  C --> D[\"Recombinant DNA vector ready\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Restriction enzyme cuts DNA\"] --> B[\"Sticky ends formed\"]\n  B --> C[\"Gene inserted into vector plasmid\"]\n  C --> D[\"Recombinant DNA vector ready\"]"
+    },
     "example": "The enzyme EcoRI is used to cut both the foreign gene and the plasmid vector at the same recognition sequence, so their matching sticky ends can join together.",
     "tip": "Mention 'sticky ends' and a specific enzyme/vector example by name (EcoRI, plasmid) — naming specifics earns extra marks."
   },
@@ -26,7 +28,9 @@
       "Expression and multiplication: the host cell multiplies and expresses the foreign gene, producing the desired protein in bulk."
     ],
     "formula": "Isolate gene -> Cut with restriction enzyme -> Ligate into vector -> Transform host -> Select -> Express product",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Isolate gene of interest\"] --> B[\"Cut gene and vector\"]\n  B --> C[\"Ligate into recombinant DNA\"]\n  C --> D[\"Transform into host cell\"]\n  D --> E[\"Select and express product\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Isolate gene of interest\"] --> B[\"Cut gene and vector\"]\n  B --> C[\"Ligate into recombinant DNA\"]\n  C --> D[\"Transform into host cell\"]\n  D --> E[\"Select and express product\"]"
+    },
     "example": "Human insulin gene inserted into E. coli bacteria using this technology allows bacteria to mass-produce human insulin for diabetic patients.",
     "tip": "Write the steps strictly in order (isolate, cut, ligate, transform, select, express) — sequence matters for full marks in this process-based question."
   },
@@ -42,7 +46,9 @@
       "PCR is used in DNA fingerprinting, diagnosis of genetic and infectious diseases, and forensic analysis."
     ],
     "formula": "Amount of DNA after n cycles = original amount x 2^n",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Denaturation: heat to separate strands\"] --> B[\"Annealing: primers bind\"]\n  B --> C[\"Extension: Taq polymerase copies DNA\"]\n  C --> D[\"Cycle repeats, DNA doubles each time\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Denaturation: heat to separate strands\"] --> B[\"Annealing: primers bind\"]\n  B --> C[\"Extension: Taq polymerase copies DNA\"]\n  C --> D[\"Cycle repeats, DNA doubles each time\"]"
+    },
     "example": "Starting with one DNA molecule, after 10 PCR cycles the DNA amount becomes 2^10 = 1024 copies, enough for further analysis.",
     "tip": "Write the three steps (denaturation, annealing, extension) with approximate temperatures — examiners check for correct sequence and terms."
   },
@@ -57,7 +63,10 @@
       "The separated DNA bands are visualized using staining (e.g., ethidium bromide) under UV light.",
       "This technique is a key step after PCR or restriction digestion to check the size and purity of DNA fragments."
     ],
-    "diagram": { "draw": "Draw a rectangular gel tray with wells at the top (negative electrode side) and the gel body leading to the bottom (positive electrode side). Show sample lanes with bands at different positions: smaller fragments shown as bands nearer the bottom (moved farther), larger fragments as bands near the top (moved less). Label wells, direction of DNA movement, negative and positive electrodes." },
+    "diagram": {
+      "draw": "Draw a rectangular gel tray with wells at the top (negative electrode side) and the gel body leading to the bottom (positive electrode side). Show sample lanes with bands at different positions: smaller fragments shown as bands nearer the bottom (moved farther), larger fragments as bands near the top (moved less). Label wells, direction of DNA movement, negative and positive electrodes.",
+      "svg": "diagrams/biology/11-3.svg"
+    },
     "example": "After a PCR reaction, running the product on gel electrophoresis and comparing it with a DNA ladder confirms the size of the amplified gene fragment.",
     "tip": "Clearly state that DNA moves towards the positive electrode because DNA is negatively charged — this reasoning is often specifically asked."
   },
@@ -72,7 +81,9 @@
       "GM crops can also be engineered for herbicide tolerance, drought resistance, or improved nutrition.",
       "Concerns about GM crops include possible effects on biodiversity, allergenicity, and need for regulatory approval before release."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Bt gene from Bacillus thuringiensis\"] --> B[\"Inserted into cotton plant genome\"]\n  B --> C[\"Plant produces Cry toxin protein\"]\n  C --> D[\"Pest insect dies after feeding on plant\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Bt gene from Bacillus thuringiensis\"] --> B[\"Inserted into cotton plant genome\"]\n  B --> C[\"Plant produces Cry toxin protein\"]\n  C --> D[\"Pest insect dies after feeding on plant\"]"
+    },
     "example": "Bt cotton has significantly reduced bollworm damage in Indian cotton fields, cutting down pesticide use and increasing yield.",
     "tip": "Name the specific bacterium (Bacillus thuringiensis) and the toxin (Cry protein) — these exact terms are commonly checked."
   },
@@ -87,7 +98,9 @@
       "Besides treating genetic disorders, biotechnology applications include producing hormones (insulin), vaccines, and diagnostic kits.",
       "Gene therapy raises ethical questions and requires careful testing because of safety and long-term effect concerns."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Identify defective gene in patient\"] --> B[\"Normal gene inserted via viral vector\"]\n  B --> C[\"Gene enters patient cells\"]\n  C --> D[\"Normal protein produced, disorder corrected\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Identify defective gene in patient\"] --> B[\"Normal gene inserted via viral vector\"]\n  B --> C[\"Gene enters patient cells\"]\n  C --> D[\"Normal protein produced, disorder corrected\"]"
+    },
     "example": "The first approved gene therapy case treated a child with ADA deficiency (SCID) by inserting a functional ADA gene into her blood cells, restoring her immune function.",
     "tip": "Give the ADA deficiency/SCID example by name — it is the classic textbook case examiners expect in this topic."
   }

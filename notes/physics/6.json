@@ -12,7 +12,8 @@
     ],
     "formula": "New wavefront = envelope of secondary wavelets; velocity of wave v = distance/time taken for wavelet to spread",
     "diagram": {
-      "draw": "Draw a point source S on the left. Draw a set of concentric circular arcs (wavefronts) spreading from S. Pick one arc and mark several points on it; from each point draw a small circle (secondary wavelet) of radius vt. Draw a new arc touching all these small circles as the common tangent and label it 'new wavefront'. Draw arrows (rays) from S outward, perpendicular to each wavefront."
+      "draw": "Draw a point source S on the left. Draw a set of concentric circular arcs (wavefronts) spreading from S. Pick one arc and mark several points on it; from each point draw a small circle (secondary wavelet) of radius vt. Draw a new arc touching all these small circles as the common tangent and label it 'new wavefront'. Draw arrows (rays) from S outward, perpendicular to each wavefront.",
+      "svg": "diagrams/physics/6-0.svg"
     },
     "example": "Using Huygens' construction, Snell's law of refraction (n1 sin i = n2 sin r) can be derived by comparing the distances travelled by wavelets in two media in the same time.",
     "tip": "Draw the secondary wavelets and the tangent envelope clearly with arrows; this diagram alone carries 2 marks."
@@ -30,7 +31,8 @@
     ],
     "formula": "Fringe width w = lambda D / d",
     "diagram": {
-      "draw": "Draw a source S on the left sending light to a single slit, then to a double slit with slits S1 and S2 separated by distance d. Draw lines from S1 and S2 crossing and reaching a screen at distance D. On the screen mark alternating bright (bold) and dark lines and label the fringe width w between two bright fringes."
+      "draw": "Draw a source S on the left sending light to a single slit, then to a double slit with slits S1 and S2 separated by distance d. Draw lines from S1 and S2 crossing and reaching a screen at distance D. On the screen mark alternating bright (bold) and dark lines and label the fringe width w between two bright fringes.",
+      "svg": "diagrams/physics/6-1.svg"
     },
     "example": "If lambda = 600 nm = 6 x 10^-7 m, D = 1 m, d = 1 mm = 10^-3 m, fringe width w = (6x10^-7 x 1)/10^-3 = 6 x 10^-4 m = 0.6 mm.",
     "tip": "Always write the formula w = lambda D/d and show units conversion (nm to m, mm to m) in the numerical."
@@ -66,7 +68,8 @@
     ],
     "formula": "First minimum: a sin(theta) = lambda     nth minimum: a sin(theta) = n lambda",
     "diagram": {
-      "draw": "Draw a narrow vertical slit of width a on the left with plane wavefronts approaching it. Beyond the slit draw diverging rays spreading out. On a screen on the right, draw an intensity graph with a tall central peak and smaller peaks on either side, separated by minima; label the central maximum and first minimum."
+      "draw": "Draw a narrow vertical slit of width a on the left with plane wavefronts approaching it. Beyond the slit draw diverging rays spreading out. On a screen on the right, draw an intensity graph with a tall central peak and smaller peaks on either side, separated by minima; label the central maximum and first minimum.",
+      "svg": "diagrams/physics/6-3.svg"
     },
     "example": "If a = 0.2 mm and lambda = 500 nm, first minimum angle: sin(theta) = lambda/a = 5x10^-7/2x10^-4 = 2.5x10^-3, so theta approx 2.5x10^-3 rad (very small angle).",
     "tip": "Do not confuse interference (double slit, equally spaced bright fringes) with diffraction (single slit, wide central band with weaker side bands) — examiners test this difference directly."
@@ -84,7 +87,8 @@
     ],
     "formula": "Brewster's law: tan(theta_B) = n (refractive index)",
     "diagram": {
-      "draw": "Draw an interface between air and glass as a horizontal line. Draw an incident unpolarized ray hitting the interface at angle theta_B from the normal. Draw the reflected ray (completely polarized, show vibration dots in the plane of the page) going up at the same angle, and the refracted ray going into the glass. Mark the right angle between the reflected and refracted rays and label theta_B."
+      "draw": "Draw an interface between air and glass as a horizontal line. Draw an incident unpolarized ray hitting the interface at angle theta_B from the normal. Draw the reflected ray (completely polarized, show vibration dots in the plane of the page) going up at the same angle, and the refracted ray going into the glass. Mark the right angle between the reflected and refracted rays and label theta_B.",
+      "svg": "diagrams/physics/6-4.svg"
     },
     "example": "If refractive index of glass n = 1.5, Brewster's angle theta_B = tan^-1(1.5) = 56.3 degrees approximately.",
     "tip": "State both results together: tan(theta_B) = n AND reflected ray perpendicular to refracted ray — both are commonly asked."

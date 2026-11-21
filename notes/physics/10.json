@@ -11,7 +11,10 @@
       "These orbital moments, along with electron spin, add up to give atoms their net magnetic moment."
     ],
     "formula": "mu = I A = e v r / 2     Bohr magneton: mu_B = e h / (4 pi m)",
-    "diagram": { "draw": "Draw a nucleus at the centre with a dashed circular orbit around it. Draw an electron (small circle with minus sign) moving along the orbit with velocity v arrow. Draw the equivalent current loop direction (opposite to electron motion since charge is negative) and the resulting magnetic moment mu arrow perpendicular to the orbit plane." },
+    "diagram": {
+      "draw": "Draw a nucleus at the centre with a dashed circular orbit around it. Draw an electron (small circle with minus sign) moving along the orbit with velocity v arrow. Draw the equivalent current loop direction (opposite to electron motion since charge is negative) and the resulting magnetic moment mu arrow perpendicular to the orbit plane.",
+      "svg": "diagrams/physics/10-0.svg"
+    },
     "example": "The Bohr magneton value is mu_B = 9.27 x 10^-24 A m^2 — the natural smallest unit of atomic magnetism.",
     "tip": "Clearly state that the magnetic moment direction is opposite to orbital angular momentum because the electron's charge is negative — a common conceptual question."
   },
@@ -27,7 +30,9 @@
       "This difference in response is what distinguishes the three classes of magnetic materials."
     ],
     "formula": "B = mu0 (H + M)",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"External coil current\"] --> B[\"Produces magnetizing field H\"]\n  B --> C[\"Material responds with magnetization M\"]\n  C --> D[\"Total field B = mu0 times H plus M\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"External coil current\"] --> B[\"Produces magnetizing field H\"]\n  B --> C[\"Material responds with magnetization M\"]\n  C --> D[\"Total field B = mu0 times H plus M\"]"
+    },
     "example": "If H = 1000 A/m and M = 2000 A/m, then B = mu0(1000+2000) = 4 pi x10^-7 x 3000 ≈ 3.77 x 10^-3 T.",
     "tip": "Remember H depends only on current/coil; M depends on the material. Keep these two separate in the answer."
   },
@@ -43,7 +48,10 @@
       "Ferromagnetic materials: large positive chi, mu_r much greater than 1."
     ],
     "formula": "chi = M / H     mu_r = 1 + chi     mu = mu0 mu_r",
-    "diagram": { "draw": "Draw three bar graphs side by side labelled Diamagnetic, Paramagnetic, Ferromagnetic. Show chi value as a small bar below zero for diamagnetic, small bar above zero for paramagnetic, and a tall bar above zero for ferromagnetic." },
+    "diagram": {
+      "draw": "Draw three bar graphs side by side labelled Diamagnetic, Paramagnetic, Ferromagnetic. Show chi value as a small bar below zero for diamagnetic, small bar above zero for paramagnetic, and a tall bar above zero for ferromagnetic.",
+      "svg": "diagrams/physics/10-2.svg"
+    },
     "example": "A material has chi = 499. Then mu_r = 1 + 499 = 500, meaning it concentrates the magnetic field 500 times more than vacuum — typical of a ferromagnetic material.",
     "tip": "Memorise mu_r = 1 + chi — this single-line formula is a guaranteed numerical in many papers."
   },
@@ -59,7 +67,9 @@
       "The underlying cause in all cases is electron orbital and spin magnetic moments and how they interact."
     ],
     "formula": "Susceptibility: dia (small, negative), para (small, positive), ferro (large, positive)",
-    "diagram": { "mermaid": "flowchart TD\n  A[\"Magnetic materials\"] --> B[\"Diamagnetic: weakly repelled\"]\n  A --> C[\"Paramagnetic: weakly attracted\"]\n  A --> D[\"Ferromagnetic: strongly attracted domains\"]" },
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Magnetic materials\"] --> B[\"Diamagnetic: weakly repelled\"]\n  A --> C[\"Paramagnetic: weakly attracted\"]\n  A --> D[\"Ferromagnetic: strongly attracted domains\"]"
+    },
     "example": "A bismuth rod placed near a strong magnet is pushed away slightly (diamagnetic), while an iron nail is pulled in strongly (ferromagnetic).",
     "tip": "Make a 3-column table (property, susceptibility sign, example) — this scores full marks fast for 'distinguish between' questions."
   },
@@ -75,7 +85,10 @@
       "This law is verified by measuring susceptibility of paramagnetic salts at different temperatures."
     ],
     "formula": "chi = C / T     (Curie's law for paramagnetic materials)",
-    "diagram": { "draw": "Draw a graph with temperature T on the x-axis and susceptibility chi on the y-axis. Draw a curve that falls steeply as T increases, showing chi is inversely proportional to T (hyperbola shape)." },
+    "diagram": {
+      "draw": "Draw a graph with temperature T on the x-axis and susceptibility chi on the y-axis. Draw a curve that falls steeply as T increases, showing chi is inversely proportional to T (hyperbola shape).",
+      "svg": "diagrams/physics/10-4.svg"
+    },
     "example": "If chi = 0.004 at T = 300 K, then C = chi x T = 1.2. At T = 600 K, new chi = C/T = 1.2/600 = 0.002 (half the value).",
     "tip": "State clearly that this law applies ONLY to paramagnetic materials, and mention the Curie temperature concept for ferromagnets as a bonus point."
   },
@@ -91,7 +104,10 @@
       "Materials with large loop area (steel) suit permanent magnets; materials with thin loops (soft iron) suit transformer cores."
     ],
     "formula": "Loop area (proportional to) energy dissipated per unit volume per cycle",
-    "diagram": { "draw": "Draw a B (vertical axis) vs H (horizontal axis) graph. Draw an S-shaped closed loop: starting at origin, rising to saturation in first quadrant, then curving back through the B-axis at a positive value labelled 'Retentivity', crossing the H-axis at a negative value labelled 'Coercivity', continuing to negative saturation, and back to origin through the fourth quadrant similarly." },
+    "diagram": {
+      "draw": "Draw a B (vertical axis) vs H (horizontal axis) graph. Draw an S-shaped closed loop: starting at origin, rising to saturation in first quadrant, then curving back through the B-axis at a positive value labelled 'Retentivity', crossing the H-axis at a negative value labelled 'Coercivity', continuing to negative saturation, and back to origin through the fourth quadrant similarly.",
+      "svg": "diagrams/physics/10-5.svg"
+    },
     "example": "Steel has a wide hysteresis loop (good for permanent magnets); soft iron has a thin loop (good for transformer cores to reduce energy loss).",
     "tip": "Label retentivity and coercivity precisely on the B-H axes in your diagram — these two labels are compulsory for full diagram marks."
   }

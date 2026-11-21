@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+<rect width="640" height="400" fill="#ffffff"/>
+<defs>
+<marker id="arrow64" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 z" fill="#1a1a1a"/>
+</marker>
+</defs>
+<text x="320" y="24" text-anchor="middle" font-size="16" fill="#1a1a1a" font-weight="bold">Polarisation by Reflection (Brewster's Angle)</text>
+
+<line x1="60" y1="220" x2="580" y2="220" stroke="#1a1a1a" stroke-width="2"/>
+<text x="585" y="224" font-size="13" fill="#1a1a1a">glass</text>
+<text x="55" y="210" text-anchor="end" font-size="13" fill="#1a1a1a">air</text>
+
+<!-- normal -->
+<line x1="320" y1="90" x2="320" y2="340" stroke="#888888" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text x="330" y="100" font-size="13" fill="#888888">normal</text>
+
+<!-- incident ray -->
+<line x1="170" y1="110" x2="320" y2="220" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow64)"/>
+<circle cx="200" cy="130" r="2" fill="#1a1a1a"/>
+<circle cx="230" cy="150" r="2" fill="#1a1a1a"/>
+<circle cx="260" cy="170" r="2" fill="#1a1a1a"/>
+<text x="150" y="105" font-size="13" fill="#1a1a1a">unpolarised</text>
+
+<!-- reflected ray, fully polarised, vibration dots -->
+<line x1="320" y1="220" x2="470" y2="110" stroke="#2a6fdb" stroke-width="2" marker-end="url(#arrow64)"/>
+<circle cx="360" cy="192" r="2.5" fill="#2a6fdb"/>
+<circle cx="400" cy="164" r="2.5" fill="#2a6fdb"/>
+<circle cx="440" cy="136" r="2.5" fill="#2a6fdb"/>
+<text x="475" y="108" font-size="13" fill="#2a6fdb">reflected (polarised)</text>
+
+<!-- refracted ray into glass -->
+<line x1="320" y1="220" x2="400" y2="330" stroke="#d9534f" stroke-width="2" marker-end="url(#arrow64)"/>
+<text x="405" y="340" font-size="13" fill="#d9534f">refracted</text>
+
+<!-- angle theta_B -->
+<path d="M 320 170 A 50 50 0 0 0 283 194" fill="none" stroke="#1a1a1a" stroke-width="1.2"/>
+<text x="270" y="175" font-size="13" fill="#1a1a1a">theta_B</text>
+
+<!-- right angle mark between reflected and refracted -->
+<path d="M 335 230 L 345 220 L 355 230" fill="none" stroke="#1a1a1a" stroke-width="1.2"/>
+
+</svg>

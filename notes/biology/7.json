@@ -49,7 +49,8 @@
     ],
     "formula": "Deoxygenated blood path: Vena cava -> Right atrium -> Right ventricle -> Pulmonary artery -> Lungs",
     "diagram": {
-      "draw": "Draw a four-chambered heart. Label top two chambers 'Right atrium' and 'Left atrium', bottom two 'Right ventricle' and 'Left ventricle'. Draw vena cava entering right atrium, pulmonary veins entering left atrium, pulmonary artery leaving right ventricle, and aorta leaving left ventricle. Mark tricuspid valve, bicuspid valve, and semilunar valves at the respective openings."
+      "draw": "Draw a four-chambered heart. Label top two chambers 'Right atrium' and 'Left atrium', bottom two 'Right ventricle' and 'Left ventricle'. Draw vena cava entering right atrium, pulmonary veins entering left atrium, pulmonary artery leaving right ventricle, and aorta leaving left ventricle. Mark tricuspid valve, bicuspid valve, and semilunar valves at the respective openings.",
+      "svg": "diagrams/biology/7-2.svg"
     },
     "example": "During a heartbeat, blood flows one-way: atria contract first pushing blood into ventricles, then ventricles contract pushing blood into the arteries, valves preventing any backflow.",
     "tip": "Draw the heart diagram with all four chambers, major vessels, and all valves labelled — this diagram alone can carry 3-4 marks."
@@ -103,7 +104,8 @@
     ],
     "formula": "Normal ECG cycle: P wave -> QRS complex -> T wave, repeating every ~0.8 s",
     "diagram": {
-      "draw": "Draw a horizontal baseline. Draw a small rounded bump labelled 'P wave', followed by a sharp spike pattern (small dip, tall peak, small dip) labelled 'QRS complex', then a rounded bump labelled 'T wave'. Mark the whole sequence as 'One cardiac cycle'."
+      "draw": "Draw a horizontal baseline. Draw a small rounded bump labelled 'P wave', followed by a sharp spike pattern (small dip, tall peak, small dip) labelled 'QRS complex', then a rounded bump labelled 'T wave'. Mark the whole sequence as 'One cardiac cycle'.",
+      "svg": "diagrams/biology/7-5.svg"
     },
     "example": "In a myocardial infarction (heart attack), the ECG typically shows an abnormally elevated or depressed ST segment, helping doctors diagnose it quickly.",
     "tip": "Draw the P-QRS-T wave pattern neatly and label which part corresponds to atrial vs ventricular activity — a frequently asked diagram question."

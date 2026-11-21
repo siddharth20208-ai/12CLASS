@@ -11,7 +11,10 @@
       "They explain working of generators, transformers, and induction-based sensors."
     ],
     "formula": "e = -N d(phi)/dt",
-    "diagram": { "draw": "Draw a bar magnet being pushed towards a coil connected to a galvanometer. Show flux lines passing through the coil with arrows. Label the induced current direction in the coil and the galvanometer deflection." },
+    "diagram": {
+      "draw": "Draw a bar magnet being pushed towards a coil connected to a galvanometer. Show flux lines passing through the coil with arrows. Label the induced current direction in the coil and the galvanometer deflection.",
+      "svg": "diagrams/physics/11-0.svg"
+    },
     "example": "A coil of 500 turns has flux change from 2e-3 Wb to 6e-3 Wb in 0.1 s. EMF = 500 x (4e-3/0.1) = 20 V.",
     "tip": "State both laws separately in words, then write the formula with the negative sign — examiners check for the sign explanation."
   },
@@ -27,7 +30,9 @@
       "It is essential for predicting current direction in every electromagnetic induction (EMI) problem."
     ],
     "formula": "Direction of induced current always opposes the change in flux (shown by - sign in e = -N dphi/dt)",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Flux through coil increases\"] --> B[\"Induced current opposes increase\"]\n  B --> C[\"Induced magnetic field opposes external magnet\"]\n  C --> D[\"Extra work needed matches electrical energy produced\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Flux through coil increases\"] --> B[\"Induced current opposes increase\"]\n  B --> C[\"Induced magnetic field opposes external magnet\"]\n  C --> D[\"Extra work needed matches electrical energy produced\"]"
+    },
     "example": "When the north pole of a magnet is pushed into a coil, the induced current flows so as to create a north pole facing the magnet, repelling it.",
     "tip": "Use the right-hand rule to find induced current direction after applying Lenz's law for full marks in direction-based questions."
   },
@@ -43,7 +48,10 @@
       "Motional EMF explains the basic working of generators where a coil moves or rotates in a magnetic field."
     ],
     "formula": "e = B L v",
-    "diagram": { "draw": "Draw two parallel horizontal rails with a rod sliding across them, moving to the right with velocity v. Draw the magnetic field B pointing into the page with crosses. Show the induced EMF/current direction in the rod using the right-hand rule, label L as the rod length." },
+    "diagram": {
+      "draw": "Draw two parallel horizontal rails with a rod sliding across them, moving to the right with velocity v. Draw the magnetic field B pointing into the page with crosses. Show the induced EMF/current direction in the rod using the right-hand rule, label L as the rod length.",
+      "svg": "diagrams/physics/11-2.svg"
+    },
     "example": "A rod of length 0.5 m moves at 4 m/s perpendicular to a field of 0.2 T. EMF = 0.2 x 0.5 x 4 = 0.4 V.",
     "tip": "Derive the formula using F = qv x B pushing charges to one end — examiners like seeing this derivation, not just the formula."
   },
@@ -59,7 +67,10 @@
       "Mutual inductance is the basis of energy transfer between coupled coils, as in a transformer."
     ],
     "formula": "e = -L dI/dt     e2 = -M dI1/dt     Solenoid: L = mu0 n^2 A l",
-    "diagram": { "draw": "Draw two coils side by side, wound close together (coil 1 and coil 2). Connect coil 1 to a battery and switch; connect coil 2 to a galvanometer. Show flux lines from coil 1 passing through coil 2, and label the mutual inductance M." },
+    "diagram": {
+      "draw": "Draw two coils side by side, wound close together (coil 1 and coil 2). Connect coil 1 to a battery and switch; connect coil 2 to a galvanometer. Show flux lines from coil 1 passing through coil 2, and label the mutual inductance M.",
+      "svg": "diagrams/physics/11-3.svg"
+    },
     "example": "A solenoid with n=1000 turns/m, A=0.001 m^2, l=0.5 m has L = 4 pi x10^-7 x (1000)^2 x 0.001 x 0.5 ≈ 6.28 x 10^-4 H.",
     "tip": "Write both self and mutual EMF formulas together and clearly distinguish single-coil vs two-coil effects."
   },
@@ -75,7 +86,9 @@
       "Understanding this is important for designing inductors in power supplies and filters."
     ],
     "formula": "U = (1/2) L I^2",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Current increases in inductor\"] --> B[\"Work done against back EMF\"]\n  B --> C[\"Energy stored as magnetic field\"]\n  C --> D[\"U = half L I squared\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Current increases in inductor\"] --> B[\"Work done against back EMF\"]\n  B --> C[\"Energy stored as magnetic field\"]\n  C --> D[\"U = half L I squared\"]"
+    },
     "example": "An inductor of L = 2 H carries current I = 3 A. Energy stored U = 0.5 x 2 x 9 = 9 J.",
     "tip": "Mention the analogy with capacitor energy and kinetic energy formulas — comparing them is a common conceptual mark."
   },
@@ -91,7 +104,10 @@
       "Eddy current strength depends on rate of flux change, conductivity, and size of the conducting body."
     ],
     "formula": "Eddy current power loss (proportional to) (rate of flux change)^2 and conductivity",
-    "diagram": { "draw": "Draw a solid metal plate with a changing magnetic field (shown by field lines with an arrow indicating increasing strength) passing through it. Draw small circular loops (eddy currents) inside the plate opposing the change, with arrows showing their circulation direction." },
+    "diagram": {
+      "draw": "Draw a solid metal plate with a changing magnetic field (shown by field lines with an arrow indicating increasing strength) passing through it. Draw small circular loops (eddy currents) inside the plate opposing the change, with arrows showing their circulation direction.",
+      "svg": "diagrams/physics/11-5.svg"
+    },
     "example": "In electromagnetic braking, a metal disc moving through a magnetic field develops eddy currents that oppose its motion, slowing the disc without any physical contact.",
     "tip": "Give at least one useful application (braking/induction furnace) and one harmful effect (transformer core heating) with the laminated-core solution, for full marks."
   }

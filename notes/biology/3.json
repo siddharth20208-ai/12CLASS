@@ -11,7 +11,10 @@
       "This packaging lets a very long DNA molecule fit compactly inside the small nucleus."
     ],
     "formula": "A pairs with T (2 H-bonds); G pairs with C (3 H-bonds)",
-    "diagram": { "draw": "Draw two antiparallel strands twisted as a double helix. Mark sugar-phosphate backbone on the outside and base pairs (A-T, G-C) connected by dashed hydrogen bonds on the inside. Separately draw a nucleosome: a disc-shaped histone core with DNA wrapped around it, labelled 'histone octamer' and 'linker DNA'." },
+    "diagram": {
+      "draw": "Draw two antiparallel strands twisted as a double helix. Mark sugar-phosphate backbone on the outside and base pairs (A-T, G-C) connected by dashed hydrogen bonds on the inside. Separately draw a nucleosome: a disc-shaped histone core with DNA wrapped around it, labelled 'histone octamer' and 'linker DNA'.",
+      "svg": "diagrams/biology/3-0.svg"
+    },
     "example": "A nucleosome contains about 200 base pairs of DNA wrapped around 8 histone molecules, repeated thousands of times to form chromatin.",
     "tip": "Always mention base-pairing rule (A-T, G-C) with number of hydrogen bonds — a very common 1-mark question."
   },
@@ -26,7 +29,9 @@
       "After one generation, DNA showed hybrid (intermediate) density; after two generations, both hybrid and light density DNA appeared.",
       "This matched the semiconservative model and ruled out conservative or dispersive replication models."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Parent DNA (both strands old)\"] --> B[\"Strands separate\"]\n  B --> C[\"New strand made on each old strand\"]\n  C --> D[\"2 daughter DNA: 1 old + 1 new strand each\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Parent DNA (both strands old)\"] --> B[\"Strands separate\"]\n  B --> C[\"New strand made on each old strand\"]\n  C --> D[\"2 daughter DNA: 1 old + 1 new strand each\"]"
+    },
     "example": "After the first generation in Meselson-Stahl's experiment, all DNA molecules were hybrid density, confirming that each new DNA kept one heavy parental strand.",
     "tip": "Name Meselson and Stahl and describe heavy/light nitrogen clearly — the experimental proof is worth separate marks from the concept."
   },
@@ -42,7 +47,9 @@
       "AUG is the start codon (codes for methionine); UAA, UAG, UGA are stop codons."
     ],
     "formula": "64 possible codons; 61 code for amino acids, 3 are stop codons (UAA, UAG, UGA)",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"RNA polymerase binds promoter\"] --> B[\"DNA unwinds\"]\n  B --> C[\"mRNA synthesized (5' to 3')\"]\n  C --> D[\"Termination at stop sequence\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"RNA polymerase binds promoter\"] --> B[\"DNA unwinds\"]\n  B --> C[\"mRNA synthesized (5' to 3')\"]\n  C --> D[\"Termination at stop sequence\"]"
+    },
     "example": "The codon AUG always signals the start of translation and codes for methionine, which is usually the first amino acid of a new polypeptide.",
     "tip": "Remember the code is degenerate but unambiguous (one codon never codes for two different amino acids) — this exact wording is often asked."
   },
@@ -57,7 +64,9 @@
       "Translation stops when the ribosome reaches a stop codon, releasing the finished polypeptide.",
       "The polypeptide then folds and may be modified to become a functional protein."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"mRNA + ribosome\"] --> B[\"tRNA brings amino acid matching codon\"]\n  B --> C[\"Peptide bond forms\"]\n  C --> D[\"Ribosome moves to next codon\"]\n  D --> E[\"Stop codon reached: polypeptide released\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"mRNA + ribosome\"] --> B[\"tRNA brings amino acid matching codon\"]\n  B --> C[\"Peptide bond forms\"]\n  C --> D[\"Ribosome moves to next codon\"]\n  D --> E[\"Stop codon reached: polypeptide released\"]"
+    },
     "example": "If an mRNA reads AUG-GGA-UUU-UAA, translation produces a chain of 3 amino acids (Met-Gly-Phe) and stops at the UAA stop codon.",
     "tip": "Clearly mention the role of tRNA's anticodon matching the mRNA codon — this base-pairing step is the key examiner focus."
   },
@@ -72,7 +81,9 @@
       "RNA polymerase can now transcribe the structural genes, producing enzymes needed to digest lactose — the operon is 'on'.",
       "This is an example of negative inducible gene regulation, since a repressor normally keeps genes off until induced."
     ],
-    "diagram": { "mermaid": "flowchart TD\n  A[\"No lactose\"] --> B[\"Repressor binds operator\"]\n  B --> C[\"Operon OFF\"]\n  D[\"Lactose present\"] --> E[\"Allolactose binds repressor\"]\n  E --> F[\"Repressor leaves operator\"]\n  F --> G[\"Operon ON: enzymes made\"]" },
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"No lactose\"] --> B[\"Repressor binds operator\"]\n  B --> C[\"Operon OFF\"]\n  D[\"Lactose present\"] --> E[\"Allolactose binds repressor\"]\n  E --> F[\"Repressor leaves operator\"]\n  F --> G[\"Operon ON: enzymes made\"]"
+    },
     "example": "When E. coli is grown in a medium with lactose as the only sugar, lac operon genes switch on within minutes to produce beta-galactosidase for digesting lactose.",
     "tip": "Draw both the 'off' state (repressor on operator) and 'on' state (repressor removed) — two separate diagrams fetch separate marks."
   },
@@ -87,7 +98,9 @@
       "Steps include isolating DNA, cutting with restriction enzymes, separating fragments by gel electrophoresis, and comparing banding patterns.",
       "Since VNTR patterns are unique to each individual (except identical twins), this technique is used in forensic investigation and paternity testing."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"DNA sample\"] --> B[\"Cut with restriction enzymes\"]\n  B --> C[\"Gel electrophoresis\"]\n  C --> D[\"Unique VNTR band pattern\"]\n  D --> E[\"Match or identify individual\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"DNA sample\"] --> B[\"Cut with restriction enzymes\"]\n  B --> C[\"Gel electrophoresis\"]\n  C --> D[\"Unique VNTR band pattern\"]\n  D --> E[\"Match or identify individual\"]"
+    },
     "example": "DNA fingerprinting was used to identify crime suspects and in paternity disputes by comparing VNTR band patterns of the suspect/father with evidence/child samples.",
     "tip": "Mention VNTR by name as the basis of DNA fingerprinting — simply saying 'DNA pattern' without this term loses marks."
   }

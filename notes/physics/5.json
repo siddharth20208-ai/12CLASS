@@ -49,7 +49,8 @@
     ],
     "formula": "n = (1/2L)√(T/m)     higher harmonics = p × n (p = 1,2,3,...)",
     "diagram": {
-      "draw": "Draw a string fixed at both ends. Below it, draw three rows: row 1 shows one loop (fundamental, nodes only at ends), row 2 shows two loops (first overtone, one extra node in middle), row 3 shows three loops (second overtone, two extra nodes). Label frequencies n, 2n, 3n respectively."
+      "draw": "Draw a string fixed at both ends. Below it, draw three rows: row 1 shows one loop (fundamental, nodes only at ends), row 2 shows two loops (first overtone, one extra node in middle), row 3 shows three loops (second overtone, two extra nodes). Label frequencies n, 2n, 3n respectively.",
+      "svg": "diagrams/physics/5-2.svg"
     },
     "example": "String L = 0.5 m, T = 100 N, m = 0.01 kg/m: n = (1/(2x0.5))sqrt(100/0.01) = 1 x sqrt(10000) = 100 Hz.",
     "tip": "Draw the loop patterns for fundamental and first two overtones — diagram marks are easy to score here."
@@ -67,7 +68,8 @@
     ],
     "formula": "Open pipe: n = v/2L (all harmonics)     Closed pipe: n = v/4L (odd harmonics only)",
     "diagram": {
-      "draw": "Draw two vertical pipes side by side. Left pipe: open at both top and bottom, show one loop of a stationary wave with antinodes (A) at both ends. Right pipe: closed at the bottom, open at top, show a quarter-wave pattern with a node (N) at the closed bottom end and antinode (A) at the open top end."
+      "draw": "Draw two vertical pipes side by side. Left pipe: open at both top and bottom, show one loop of a stationary wave with antinodes (A) at both ends. Right pipe: closed at the bottom, open at top, show a quarter-wave pattern with a node (N) at the closed bottom end and antinode (A) at the open top end.",
+      "svg": "diagrams/physics/5-3.svg"
     },
     "example": "Closed pipe L = 0.5 m, v = 340 m/s: fundamental n = 340/(4x0.5) = 170 Hz.",
     "tip": "Remember: OPEN pipe = ALL harmonics; CLOSED pipe = ODD harmonics only. This single fact is tested almost every year."
@@ -103,7 +105,8 @@
     ],
     "formula": "v = 2n(L2 − L1)",
     "diagram": {
-      "draw": "Draw a vertical glass tube partly filled with water, open at the top, with a tuning fork held above the open end. Mark two water levels corresponding to first resonance length L1 and second resonance length L2, with the air column length measured from the water surface to the open top."
+      "draw": "Draw a vertical glass tube partly filled with water, open at the top, with a tuning fork held above the open end. Mark two water levels corresponding to first resonance length L1 and second resonance length L2, with the air column length measured from the water surface to the open top.",
+      "svg": "diagrams/physics/5-5.svg"
     },
     "example": "Resonance tube: L1 = 0.17 m, L2 = 0.52 m, tuning fork n = 512 Hz: v = 2 x 512 x (0.52-0.17) = 2 x 512 x 0.35 = 358.4 m/s.",
     "tip": "Remember the formula v = 2n(L2-L1) specifically cancels the end correction — mention this reasoning for full theory marks."

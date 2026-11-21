@@ -9,7 +9,7 @@
 
   <line x1="70" y1="330" x2="70" y2="60" stroke="black" stroke-width="2" marker-end="url(#arrowF)"/>
   <line x1="70" y1="330" x2="590" y2="330" stroke="black" stroke-width="2" marker-end="url(#arrowF)"/>
-  <text x="20" y="65" font-size="14" fill="black">BE/A (MeV)</text>
+  <text x="15" y="50" font-size="14" fill="black">BE/A (MeV)</text>
   <text x="580" y="352" font-size="14" fill="black">A</text>
   <text x="55" y="345" font-size="13" fill="black">1</text>
   <text x="560" y="345" font-size="13" fill="black">240</text>

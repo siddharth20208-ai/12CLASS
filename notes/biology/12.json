@@ -11,7 +11,10 @@
       "Logistic growth is a more realistic model for most natural populations than exponential growth."
     ],
     "formula": "Exponential: dN/dt = rN     Logistic: dN/dt = rN (K - N) / K",
-    "diagram": { "draw": "Draw two graphs with time on the x-axis and population size (N) on the y-axis. First curve: a J-shaped curve rising steeply without flattening, label 'exponential growth'. Second curve: an S-shaped curve that rises and then flattens at a horizontal line labelled 'K (carrying capacity)', label 'logistic growth'." },
+    "diagram": {
+      "draw": "Draw two graphs with time on the x-axis and population size (N) on the y-axis. First curve: a J-shaped curve rising steeply without flattening, label 'exponential growth'. Second curve: an S-shaped curve that rises and then flattens at a horizontal line labelled 'K (carrying capacity)', label 'logistic growth'.",
+      "svg": "diagrams/biology/12-0.svg"
+    },
     "example": "A bacterial culture with unlimited nutrients shows exponential (J-shaped) growth, but once nutrients become limited in a closed flask, growth slows and follows the logistic (S-shaped) curve as it approaches carrying capacity.",
     "tip": "Draw both J-shaped and S-shaped curves on the same axes with K marked — this comparison diagram is a frequent board question."
   },
@@ -27,7 +30,9 @@
       "These attributes together help ecologists predict future population trends."
     ],
     "formula": "Population growth = (Births + Immigration) - (Deaths + Emigration)",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Births + Immigration\"] --> C[\"Population size change\"]\n  B[\"Deaths + Emigration\"] --> C" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Births + Immigration\"] --> C[\"Population size change\"]\n  B[\"Deaths + Emigration\"] --> C"
+    },
     "example": "If a population has 100 births, 20 immigrants, 60 deaths and 10 emigrants in a year, net growth = (100+20) - (60+10) = 50 individuals added.",
     "tip": "Write the full growth equation with all four factors (births, deaths, immigration, emigration) — partial answers lose marks."
   },
@@ -42,7 +47,9 @@
       "Competition: both species are negatively affected while competing for the same limited resource.",
       "Amensalism: one species is harmed while the other is unaffected (e.g., a large tree shading out smaller plants)."
     ],
-    "diagram": { "mermaid": "flowchart TD\n  A[\"Interspecific interactions\"] --> B[\"Mutualism: both benefit\"]\n  A --> C[\"Commensalism: one benefits, other unaffected\"]\n  A --> D[\"Parasitism: parasite benefits, host harmed\"]\n  A --> E[\"Predation: predator kills prey\"]\n  A --> F[\"Competition: both harmed\"]" },
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Interspecific interactions\"] --> B[\"Mutualism: both benefit\"]\n  A --> C[\"Commensalism: one benefits, other unaffected\"]\n  A --> D[\"Parasitism: parasite benefits, host harmed\"]\n  A --> E[\"Predation: predator kills prey\"]\n  A --> F[\"Competition: both harmed\"]"
+    },
     "example": "In lichen, the fungus provides shelter and absorbs water/minerals while the alga provides food via photosynthesis — a clear mutualistic relationship.",
     "tip": "Make a table listing each interaction type with the effect (+, -, 0) on each species — this (+/-/0) notation is exactly how NCERT/HSC presents it."
   },
@@ -57,7 +64,9 @@
       "Prey species also evolve defences such as camouflage, mimicry, thorns, or toxins to avoid being eaten.",
       "Removing a predator from an ecosystem can cause prey populations to explode, disturbing the ecological balance."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Predator hunts prey\"] --> B[\"Prey population controlled\"]\n  B --> C[\"Resources not overused\"]\n  C --> D[\"Ecological balance maintained\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Predator hunts prey\"] --> B[\"Prey population controlled\"]\n  B --> C[\"Resources not overused\"]\n  C --> D[\"Ecological balance maintained\"]"
+    },
     "example": "Removal of wolves (a predator) from Yellowstone led to overgrazing by deer, showing how important predation is for ecological balance; reintroducing wolves restored balance.",
     "tip": "Mention both the role of predators in energy transfer AND in maintaining ecological balance — both aspects are commonly tested together."
   },
@@ -72,7 +81,9 @@
       "Parasites often have high reproductive capacity to compensate for low survival rates between hosts.",
       "Parasites usually do not kill the host quickly, since they depend on the host remaining alive to survive."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Parasite infects host\"] --> B[\"Absorbs nutrients from host\"]\n  B --> C[\"Host is weakened but usually survives\"]\n  C --> D[\"Parasite reproduces and spreads to new host\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Parasite infects host\"] --> B[\"Absorbs nutrients from host\"]\n  B --> C[\"Host is weakened but usually survives\"]\n  C --> D[\"Parasite reproduces and spreads to new host\"]"
+    },
     "example": "Plasmodium (malaria parasite) needs two hosts — humans (secondary host) and female Anopheles mosquito (primary host, where sexual reproduction occurs) — to complete its life cycle.",
     "tip": "Clearly distinguish ectoparasite from endoparasite with one example each — this classification is a common 2-mark question."
   },
@@ -87,7 +98,9 @@
       "Over time, competing species may evolve to use different resources, reducing overlap (resource partitioning).",
       "This principle explains why closely related species occupying identical niches rarely coexist in the same habitat for long."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Two species compete for same resource\"] --> B[\"One species more efficient\"]\n  B --> C[\"Less efficient species declines\"]\n  C --> D[\"Eventually excluded or shifts niche\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Two species compete for same resource\"] --> B[\"One species more efficient\"]\n  B --> C[\"Less efficient species declines\"]\n  C --> D[\"Eventually excluded or shifts niche\"]"
+    },
     "example": "In Gause's classic experiment, when Paramecium aurelia and Paramecium caudatum were grown together in the same culture with limited food, P. aurelia outcompeted and eliminated P. caudatum.",
     "tip": "Name Gause and his Paramecium experiment specifically — this exact reference is the standard supporting evidence expected in answers."
   }

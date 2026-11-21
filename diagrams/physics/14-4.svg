@@ -12,8 +12,8 @@
   <text x="45" y="65" font-size="14" fill="black">N</text>
   <text x="570" y="362" font-size="14" fill="black">t</text>
 
-  <path d="M 80 90 C 150 100 180 160 220 200 C 280 255 350 290 480 320 C 520 326 550 330 575 333"
-        stroke="#2874a6" stroke-width="2.5" fill="none"/>
+  <polyline points="80,90 120,141.6 160,182.5 200,215 240,240.8 280,261.3 320,277.5 360,290.4 400,300.6 440,308.8 480,315.2 520,320.3 560,324.4 575,325.7"
+        stroke="#2874a6" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
   <text x="50" y="85" font-size="14" fill="black">N0</text>
   <line x1="80" y1="90" x2="90" y2="90" stroke="black" stroke-width="2"/>
@@ -25,8 +25,8 @@
   <text x="185" y="358" font-size="13" fill="black">T1/2</text>
 
   <!-- 2T1/2: N0/4 point -->
-  <line x1="80" y1="277" x2="575" y2="277" stroke="black" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="80" y1="277.5" x2="575" y2="277.5" stroke="black" stroke-width="1" stroke-dasharray="3,3"/>
   <text x="40" y="281" font-size="13" fill="black">N0/4</text>
-  <line x1="340" y1="277" x2="340" y2="340" stroke="black" stroke-width="1" stroke-dasharray="3,3"/>
-  <text x="315" y="358" font-size="13" fill="black">2T1/2</text>
+  <line x1="320" y1="277.5" x2="320" y2="340" stroke="black" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="295" y="358" font-size="13" fill="black">2T1/2</text>
 </svg>

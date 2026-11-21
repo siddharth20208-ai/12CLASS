@@ -11,7 +11,10 @@
       "Total field from a long wire or loop is found by adding (integrating) dB from all elements."
     ],
     "formula": "dB = (mu0 / 4 pi) x (I dl sin theta) / r^2",
-    "diagram": { "draw": "Draw a small current element of length dl on a wire with current I marked by an arrow. Draw a line from the element to a point P at distance r, label the angle theta between dl and r. Show dB coming out of the page at P with a dot, using the right-hand rule." },
+    "diagram": {
+      "draw": "Draw a small current element of length dl on a wire with current I marked by an arrow. Draw a line from the element to a point P at distance r, label the angle theta between dl and r. Show dB coming out of the page at P with a dot, using the right-hand rule.",
+      "svg": "diagrams/physics/9-0.svg"
+    },
     "example": "Biot-Savart law is mainly used for derivation; it is combined by integration to get the field of a circular loop or straight wire (see next topics).",
     "tip": "Write the formula with all symbols defined, and mention it is the magnetic analogue of Coulomb's law — this comparison is often asked."
   },
@@ -26,7 +29,10 @@
       "Field increases with more current and decreases as you move farther from the wire or loop."
     ],
     "formula": "Loop centre: B = mu0 I / (2r)     Straight wire: B = mu0 I / (2 pi r)",
-    "diagram": { "draw": "Draw a circular loop carrying current I with field lines through the centre perpendicular to the loop plane, label B at centre. Separately draw a straight vertical wire with current I upward, draw concentric dashed circles around it showing field direction by right-hand thumb rule, label B at distance r." },
+    "diagram": {
+      "draw": "Draw a circular loop carrying current I with field lines through the centre perpendicular to the loop plane, label B at centre. Separately draw a straight vertical wire with current I upward, draw concentric dashed circles around it showing field direction by right-hand thumb rule, label B at distance r.",
+      "svg": "diagrams/physics/9-1.svg"
+    },
     "example": "A loop of radius 0.1 m carries 5 A. B at centre = (4 pi x 10^-7 x 5)/(2 x 0.1) = (6.28x10^-6 x 5)/0.2 ≈ 1.57 x 10^-5 T.",
     "tip": "Clearly separate the two formulas (loop vs wire) — students often mix them up in the exam."
   },
@@ -42,7 +48,9 @@
       "This law makes it very easy to get the field for highly symmetric shapes, without doing Biot-Savart integration."
     ],
     "formula": "Integral of B.dl = mu0 I_enclosed     Solenoid: B = mu0 n I",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Choose symmetric Amperian loop\"] --> B[\"Apply integral of B dl = mu0 I enclosed\"]\n  B --> C[\"Solve for B\"]\n  C --> D[\"Solenoid: B = mu0 n I inside\"]\n  C --> E[\"Straight wire: B = mu0 I over 2 pi r\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Choose symmetric Amperian loop\"] --> B[\"Apply integral of B dl = mu0 I enclosed\"]\n  B --> C[\"Solve for B\"]\n  C --> D[\"Solenoid: B = mu0 n I inside\"]\n  C --> E[\"Straight wire: B = mu0 I over 2 pi r\"]"
+    },
     "example": "A solenoid has 1000 turns/m carrying 2 A. B = mu0 n I = 4 pi x 10^-7 x 1000 x 2 ≈ 2.51 x 10^-3 T.",
     "tip": "Show the derivation steps: state the law, choose the loop, then substitute — each step carries marks even if final answer is wrong."
   },
@@ -58,7 +66,10 @@
       "This principle is the working basis of electric motors and moving-coil meters."
     ],
     "formula": "F = B I L sin(theta)     (max F = BIL when theta = 90 degrees)",
-    "diagram": { "draw": "Draw a straight conductor carrying current I horizontally. Draw magnetic field B lines going into the page using crosses. Show the resulting force F pointing upward using Fleming's left-hand rule, with fingers labelled Field, Current, Motion/Force." },
+    "diagram": {
+      "draw": "Draw a straight conductor carrying current I horizontally. Draw magnetic field B lines going into the page using crosses. Show the resulting force F pointing upward using Fleming's left-hand rule, with fingers labelled Field, Current, Motion/Force.",
+      "svg": "diagrams/physics/9-3.svg"
+    },
     "example": "A 0.5 m wire carries 4 A current perpendicular to a 0.2 T field. F = BIL = 0.2 x 4 x 0.5 = 0.4 N.",
     "tip": "Always mention Fleming's left-hand rule by name and show finger directions in your diagram for the direction mark."
   },
@@ -74,7 +85,10 @@
       "Sensitivity can be increased by increasing N, A, B, or decreasing spring constant k."
     ],
     "formula": "theta = (N A B / k) I",
-    "diagram": { "draw": "Draw a rectangular coil of wire between the curved poles N and S of a permanent magnet. Show the coil connected to a pointer over a scale, and a spring providing restoring torque. Label the radial field lines pointing from N pole to coil to S pole." },
+    "diagram": {
+      "draw": "Draw a rectangular coil of wire between the curved poles N and S of a permanent magnet. Show the coil connected to a pointer over a scale, and a spring providing restoring torque. Label the radial field lines pointing from N pole to coil to S pole.",
+      "svg": "diagrams/physics/9-4.svg"
+    },
     "example": "If N=100, A=2x10^-4 m^2, B=0.1 T, k=10^-6 N m/rad, and I=1 mA, theta = (100 x 2e-4 x 0.1 / 1e-6) x 1e-3 = 2 rad (approx, for illustration).",
     "tip": "State that deflection is proportional to current (theta directly proportional to I) — this one line is often asked separately for 1 mark."
   },
@@ -90,7 +104,10 @@
       "Ammeters are always connected in series in a circuit, voltmeters always in parallel."
     ],
     "formula": "Shunt: S = Ig G / (I - Ig)     Series resistance: R = (V/Ig) - G",
-    "diagram": { "draw": "Draw a galvanometer symbol with a shunt resistance S connected in parallel across it for the ammeter case. Separately draw the galvanometer with a high series resistance R connected in series for the voltmeter case. Label G, S, R clearly in both diagrams." },
+    "diagram": {
+      "draw": "Draw a galvanometer symbol with a shunt resistance S connected in parallel across it for the ammeter case. Separately draw the galvanometer with a high series resistance R connected in series for the voltmeter case. Label G, S, R clearly in both diagrams.",
+      "svg": "diagrams/physics/9-5.svg"
+    },
     "example": "G = 100 ohm, Ig = 1 mA, I = 1 A: S = (1e-3 x 100)/(1 - 1e-3) ≈ 0.1 ohm (shunt). For V = 10 V: R = (10/1e-3) - 100 = 10000 - 100 = 9900 ohm.",
     "tip": "Remember shunt (parallel, low R) is for ammeter; series resistance (high R) is for voltmeter — a common mix-up in exams."
   }

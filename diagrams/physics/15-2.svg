@@ -47,7 +47,8 @@
   <path d="M 70 270 Q 100 230 130 270 Q 160 310 190 270 Q 210 245 225 270" stroke="#2874a6" stroke-width="2" fill="none"/>
 
   <!-- output waveform full wave rectified -->
-  <text x="430" y="230" font-size="14" fill="black">Full-wave rectified output (across RL)</text>
+  <text x="430" y="230" font-size="13" fill="black">Full-wave rectified output</text>
+  <text x="430" y="247" font-size="13" fill="black">(across RL)</text>
   <line x1="360" y1="270" x2="600" y2="270" stroke="black" stroke-width="1.5" marker-end="url(#arrowI)"/>
   <path d="M 370 270 Q 390 230 410 270 M 410 270 Q 430 230 450 270 M 450 270 Q 470 230 490 270 M 490 270 Q 510 230 530 270 M 530 270 Q 550 230 570 270"
         stroke="#c0392b" stroke-width="2" fill="none"/>

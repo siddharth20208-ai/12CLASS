@@ -45,7 +45,8 @@
       "The shape depends on the type of ecosystem and the parameter chosen (number, biomass or energy)."
     ],
     "diagram": {
-      "draw": "Draw a triangle divided into four horizontal bands. Label from bottom to top: Producers, Herbivores, Carnivores, Top carnivores. Draw this once as 'upright pyramid' and a second inverted triangle with the same labels reversed in width, labelled 'inverted pyramid (example: pond biomass)'."
+      "draw": "Draw a triangle divided into four horizontal bands. Label from bottom to top: Producers, Herbivores, Carnivores, Top carnivores. Draw this once as 'upright pyramid' and a second inverted triangle with the same labels reversed in width, labelled 'inverted pyramid (example: pond biomass)'.",
+      "svg": "diagrams/biology/13-2.svg"
     },
     "example": "In a pond ecosystem, the pyramid of biomass can be inverted because the biomass of producers (phytoplankton) is less than that of consumers (fish) at a given time.",
     "tip": "Mention all three types (number, biomass, energy) and specifically note that the pyramid of energy is always upright — this exception is commonly tested."

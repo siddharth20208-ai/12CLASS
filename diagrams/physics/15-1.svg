@@ -15,7 +15,7 @@
   <rect x="190" y="95" width="8" height="30" fill="black"/>
   <text x="180" y="145" font-size="13" fill="black">n-side</text>
   <rect x="165" y="100" width="20" height="20" fill="#d5dbdb" opacity="0.7"/>
-  <text x="100" y="175" font-size="13" fill="black">depletion region (thin)</text>
+  <text x="100" y="182" font-size="13" fill="black">depletion region (thin)</text>
 
   <line x1="120" y1="110" x2="120" y2="200" stroke="black" stroke-width="2"/>
   <line x1="230" y1="110" x2="230" y2="200" stroke="black" stroke-width="2"/>
@@ -31,8 +31,8 @@
   <line x1="198" y1="110" x2="230" y2="110" stroke="black" stroke-width="2"/>
   <text x="130" y="100" font-size="12" fill="#c0392b">+</text>
   <text x="205" y="100" font-size="12" fill="#2874a6">-</text>
-  <line x1="120" y1="130" x2="230" y2="130" stroke="#1e8449" stroke-width="2" marker-end="url(#arrowH)"/>
-  <text x="130" y="150" font-size="12" fill="#1e8449">current flows</text>
+  <line x1="120" y1="163" x2="230" y2="163" stroke="#1e8449" stroke-width="2" marker-end="url(#arrowH)"/>
+  <text x="130" y="160" font-size="12" fill="#1e8449">current flows</text>
 
   <!-- Reverse bias (right) -->
   <text x="480" y="55" font-size="15" text-anchor="middle" fill="black">Reverse Bias</text>

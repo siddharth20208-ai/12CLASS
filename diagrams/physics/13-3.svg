@@ -19,5 +19,5 @@
 
   <text x="380" y="170" font-size="14" fill="#c0392b">slope = h/e</text>
   <text x="300" y="130" font-size="14" fill="black">line: V0 = (h/e) v - (h/e) v0</text>
-  <text x="195" y="310" font-size="13" fill="black">(threshold frequency)</text>
+  <text x="210" y="300" font-size="13" fill="black">(threshold frequency)</text>
 </svg>

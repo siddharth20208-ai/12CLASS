@@ -12,7 +12,10 @@
       "The impulse always travels in one direction, from dendrite to axon terminal."
     ],
     "formula": "Resting potential approx -70 mV; Action potential rises to approx +30 mV",
-    "diagram": { "draw": "Draw a neuron: dendrites on left feeding into a round cell body with a nucleus, then a long axon covered by segmented myelin sheath with gaps labelled 'node of Ranvier', ending in branched axon terminals. Label dendrite, cell body, nucleus, axon, myelin sheath, node of Ranvier, axon terminal." },
+    "diagram": {
+      "draw": "Draw a neuron: dendrites on left feeding into a round cell body with a nucleus, then a long axon covered by segmented myelin sheath with gaps labelled 'node of Ranvier', ending in branched axon terminals. Label dendrite, cell body, nucleus, axon, myelin sheath, node of Ranvier, axon terminal.",
+      "svg": "diagrams/biology/8-0.svg"
+    },
     "example": "In a myelinated neuron, impulse speed can reach 100 m/s because of saltatory conduction, compared to only about 1 m/s in an unmyelinated neuron.",
     "tip": "Draw the labelled neuron diagram first, then explain depolarization and repolarization in sequence — this structure scores full marks."
   },
@@ -27,7 +30,9 @@
       "The effector (a muscle) contracts and produces the response, e.g., withdrawing the hand.",
       "Because the signal does not need to reach the brain first, the response is very fast and protective."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Receptor detects stimulus\"] --> B[\"Sensory neuron\"]\n  B --> C[\"Relay neuron in spinal cord\"]\n  C --> D[\"Motor neuron\"]\n  D --> E[\"Effector muscle responds\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Receptor detects stimulus\"] --> B[\"Sensory neuron\"]\n  B --> C[\"Relay neuron in spinal cord\"]\n  C --> D[\"Motor neuron\"]\n  D --> E[\"Effector muscle responds\"]"
+    },
     "example": "Touching a hot plate: the hand is pulled away before the brain even registers pain, because the reflex arc acts through the spinal cord only.",
     "tip": "Always name all five components in order: receptor, sensory neuron, relay neuron, motor neuron, effector — examiners check for the complete chain."
   },
@@ -42,7 +47,10 @@
       "The medulla continues as the spinal cord.",
       "Damage to the medulla can be fatal because it controls life-sustaining reflexes."
     ],
-    "diagram": { "draw": "Draw a side (sagittal) view of the brain. Label from front to back: cerebrum (large folded top part), thalamus and hypothalamus (small central structures), midbrain (small region below cerebrum), cerebellum (folded structure at the back-bottom), pons and medulla oblongata (stalk-like part at the base connecting to spinal cord)." },
+    "diagram": {
+      "draw": "Draw a side (sagittal) view of the brain. Label from front to back: cerebrum (large folded top part), thalamus and hypothalamus (small central structures), midbrain (small region below cerebrum), cerebellum (folded structure at the back-bottom), pons and medulla oblongata (stalk-like part at the base connecting to spinal cord).",
+      "svg": "diagrams/biology/8-2.svg"
+    },
     "example": "A person who loses balance while walking after an injury likely has cerebellum damage, since the cerebellum controls posture and coordination.",
     "tip": "Group your answer into forebrain, midbrain, hindbrain headings with one function each — this scoring pattern matches the board's marking scheme."
   },
@@ -57,7 +65,9 @@
       "Hormones act on specific target cells having receptors for them, unlike nerves which act on fixed pathways.",
       "Hormonal control is slower but longer-lasting compared to nervous control."
     ],
-    "diagram": { "mermaid": "flowchart TD\n  A[\"Hypothalamus\"] --> B[\"Pituitary gland\"]\n  B --> C[\"Thyroid\"]\n  B --> D[\"Adrenal gland\"]\n  B --> E[\"Gonads\"]\n  F[\"Pancreas\"] --> G[\"Insulin and glucagon control blood sugar\"]" },
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Hypothalamus\"] --> B[\"Pituitary gland\"]\n  B --> C[\"Thyroid\"]\n  B --> D[\"Adrenal gland\"]\n  B --> E[\"Gonads\"]\n  F[\"Pancreas\"] --> G[\"Insulin and glucagon control blood sugar\"]"
+    },
     "example": "Low iodine intake reduces thyroxine production, causing goitre (enlarged thyroid) as the gland enlarges trying to compensate.",
     "tip": "Make a two-column table: gland name and main hormone with its function — quick to write and covers maximum marks."
   },
@@ -72,7 +82,10 @@
       "Sound vibrations travel from ear drum through ossicles to the cochlea, which converts them to nerve impulses.",
       "Semicircular canals detect head position and movement, helping maintain balance."
     ],
-    "diagram": { "draw": "For the eye: draw a cross-section showing cornea (front curved layer), iris and pupil, lens, and retina at the back, with the optic nerve leaving at the back. For the ear: draw outer ear (pinna and canal), ear drum, three tiny ossicles, cochlea (coiled structure), and semicircular canals, all labelled." },
+    "diagram": {
+      "draw": "For the eye: draw a cross-section showing cornea (front curved layer), iris and pupil, lens, and retina at the back, with the optic nerve leaving at the back. For the ear: draw outer ear (pinna and canal), ear drum, three tiny ossicles, cochlea (coiled structure), and semicircular canals, all labelled.",
+      "svg": "diagrams/biology/8-4.svg"
+    },
     "example": "In dim light, only rod cells are active (no colour perception), which is why colours appear dull or grey at night.",
     "tip": "Draw both diagrams clearly with all labels — eye and ear diagrams are classic 2-mark questions almost every year."
   },
@@ -87,7 +100,9 @@
       "The neurotransmitter is then broken down or reabsorbed, so the signal does not continue forever.",
       "Synaptic transmission is one-directional because only the axon terminal releases neurotransmitter."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Impulse reaches axon terminal\"] --> B[\"Neurotransmitter released from vesicles\"]\n  B --> C[\"Diffuses across synaptic cleft\"]\n  C --> D[\"Binds receptor on next neuron\"]\n  D --> E[\"New impulse generated\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Impulse reaches axon terminal\"] --> B[\"Neurotransmitter released from vesicles\"]\n  B --> C[\"Diffuses across synaptic cleft\"]\n  C --> D[\"Binds receptor on next neuron\"]\n  D --> E[\"New impulse generated\"]"
+    },
     "example": "Acetylcholine released at a neuromuscular junction binds muscle receptors and triggers muscle contraction, then is broken down by acetylcholinesterase to stop continuous contraction.",
     "tip": "Mention that synapse ensures one-way transmission — this specific point is often asked separately for 1 mark."
   }

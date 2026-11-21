@@ -11,7 +11,9 @@
       "These ratios arise because gametes combine randomly, following the laws of probability."
     ],
     "formula": "Monohybrid F2 ratio = 3:1;  Dihybrid F2 ratio = 9:3:3:1",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Parents YYRR x yyrr\"] --> B[\"F1 YyRr (all yellow round)\"]\n  B --> C[\"F1 self pollinated\"]\n  C --> D[\"F2 ratio 9:3:3:1\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Parents YYRR x yyrr\"] --> B[\"F1 YyRr (all yellow round)\"]\n  B --> C[\"F1 self pollinated\"]\n  C --> D[\"F2 ratio 9:3:3:1\"]"
+    },
     "example": "Crossing tall (TT) and dwarf (tt) pea plants gives all tall F1 (Tt); self-pollinating F1 gives F2 in ratio 3 tall : 1 dwarf.",
     "tip": "Always draw the Punnett square for the cross asked — examiners give separate marks for the square and the final ratio."
   },
@@ -26,7 +28,9 @@
       "The closer two genes are on a chromosome, the lower the chance of crossing over separating them (tighter linkage).",
       "Linkage and recombination together explain why some traits do not follow Mendel's independent assortment ratio."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Homologous chromosomes pair up\"] --> B[\"Crossing over at chiasma\"]\n  B --> C[\"Exchange of gene segments\"]\n  C --> D[\"Recombinant gametes formed\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Homologous chromosomes pair up\"] --> B[\"Crossing over at chiasma\"]\n  B --> C[\"Exchange of gene segments\"]\n  C --> D[\"Recombinant gametes formed\"]"
+    },
     "example": "Morgan's experiments on Drosophila showed genes for body colour and wing shape are linked, giving far fewer recombinant offspring than the 9:3:3:1 ratio expected from independent assortment.",
     "tip": "Mention Morgan and Drosophila by name — this classic example is commonly asked to support the concept of linkage."
   },
@@ -42,7 +46,9 @@
       "The Y chromosome carries the SRY gene in humans that triggers development of male characteristics."
     ],
     "formula": "Human: Female XX, Male XY;  Birds: Male ZZ, Female ZW",
-    "diagram": { "mermaid": "flowchart TD\n  A[\"Mother XX\"] --> C[\"Egg always X\"]\n  B[\"Father XY\"] --> D[\"Sperm X or Y\"]\n  C --> E[\"X egg + X sperm = XX Female\"]\n  C --> F[\"X egg + Y sperm = XY Male\"]" },
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Mother XX\"] --> C[\"Egg always X\"]\n  B[\"Father XY\"] --> D[\"Sperm X or Y\"]\n  C --> E[\"X egg + X sperm = XX Female\"]\n  C --> F[\"X egg + Y sperm = XY Male\"]"
+    },
     "example": "In a human cross, father's gametes are 50% X-bearing and 50% Y-bearing, giving a theoretical 1:1 ratio of daughters to sons.",
     "tip": "State clearly 'the father determines the sex of the child in humans' — a frequently asked one-mark fact."
   },
@@ -57,7 +63,10 @@
       "Dominant traits usually appear in every generation if at least one parent has it.",
       "Recessive traits can skip generations, appearing again when two carrier parents mate."
     ],
-    "diagram": { "draw": "Draw three generations as rows. Use squares for males, circles for females, shade/fill the symbols of affected individuals. Connect mates with a horizontal line and connect parents to children with vertical/branching lines. Label generations I, II, III at the left." },
+    "diagram": {
+      "draw": "Draw three generations as rows. Use squares for males, circles for females, shade/fill the symbols of affected individuals. Connect mates with a horizontal line and connect parents to children with vertical/branching lines. Label generations I, II, III at the left.",
+      "svg": "diagrams/biology/2-3.svg"
+    },
     "example": "In haemophilia pedigrees, affected males appear in multiple generations while carrier females (unaffected but heterozygous) pass the trait silently to their sons.",
     "tip": "Always draw correct standard symbols (square/circle, filled/unfilled) — examiners deduct marks for wrong pedigree notation."
   },
@@ -73,7 +82,9 @@
       "They are not inherited in the usual Mendelian sense; they occur due to a chromosome number error during gamete formation."
     ],
     "formula": "Down = 47 (trisomy 21);  Klinefelter = 47, XXY;  Turner = 45, X",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Nondisjunction in meiosis\"] --> B[\"Extra chromosome 21: Down syndrome\"]\n  A --> C[\"Extra X in male: Klinefelter 47 XXY\"]\n  A --> D[\"Missing X in female: Turner 45 X\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Nondisjunction in meiosis\"] --> B[\"Extra chromosome 21: Down syndrome\"]\n  A --> C[\"Extra X in male: Klinefelter 47 XXY\"]\n  A --> D[\"Missing X in female: Turner 45 X\"]"
+    },
     "example": "A karyotype report showing 47 chromosomes with three copies of chromosome 21 confirms a diagnosis of Down syndrome.",
     "tip": "Memorize exact karyotype numbers (47, 47 XXY, 45 X) — these numerical facts are directly asked for 1 mark each."
   },
@@ -89,7 +100,9 @@
       "This system shows that a single gene locus can have more than two alleles present in a population, unlike simple Mendelian traits."
     ],
     "formula": "Genotypes: IAIA/IAi = A, IBIB/IBi = B, IAIB = AB, ii = O",
-    "diagram": { "mermaid": "flowchart TD\n  A[\"3 alleles: IA IB i\"] --> B[\"IAIA or IAi = Group A\"]\n  A --> C[\"IBIB or IBi = Group B\"]\n  A --> D[\"IAIB = Group AB\"]\n  A --> E[\"ii = Group O\"]" },
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"3 alleles: IA IB i\"] --> B[\"IAIA or IAi = Group A\"]\n  A --> C[\"IBIB or IBi = Group B\"]\n  A --> D[\"IAIB = Group AB\"]\n  A --> E[\"ii = Group O\"]"
+    },
     "example": "A child with genotype IAIB has blood group AB because both A and B antigens are expressed equally (codominance), unlike a simple dominant-recessive trait.",
     "tip": "Explain codominance between IA and IB clearly with the AB group example — this is the key concept examiners test here."
   }

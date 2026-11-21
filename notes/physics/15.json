@@ -106,7 +106,8 @@
     ],
     "formula": "AND: Y = A.B;  OR: Y = A+B;  NOT: Y = A bar;  NAND: Y = (A.B) bar;  NOR: Y = (A+B) bar",
     "diagram": {
-      "draw": "Draw the standard IEC/ANSI symbols for AND gate (D-shape), OR gate (curved shape), and NOT gate (triangle with small circle at output) side by side, each with two input lines (one for NOT) and one output line, labelled A, B and Y."
+      "draw": "Draw the standard IEC/ANSI symbols for AND gate (D-shape), OR gate (curved shape), and NOT gate (triangle with small circle at output) side by side, each with two input lines (one for NOT) and one output line, labelled A, B and Y.",
+      "svg": "diagrams/physics/15-5.svg"
     },
     "example": "For an AND gate with inputs A=1, B=0, output Y = A.B = 0. For an OR gate with the same inputs, Y = A+B = 1.",
     "tip": "Practise drawing the truth table alongside the symbol for each gate — questions often ask for both symbol and truth table together."

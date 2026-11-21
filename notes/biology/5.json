@@ -49,7 +49,8 @@
     ],
     "formula": "Exosmosis occurs when cell's Psi(w) is higher than outside solution's Psi(w)",
     "diagram": {
-      "draw": "Draw a plant cell with a thick rectangular cell wall. Inside, draw the protoplast (cytoplasm with nucleus) shrunk away from the wall, leaving a gap. Label 'Cell wall', 'Shrunken protoplast', and 'Gap filled with external solution'."
+      "draw": "Draw a plant cell with a thick rectangular cell wall. Inside, draw the protoplast (cytoplasm with nucleus) shrunk away from the wall, leaving a gap. Label 'Cell wall', 'Shrunken protoplast', and 'Gap filled with external solution'.",
+      "svg": "diagrams/biology/5-2.svg"
     },
     "example": "An onion peel kept in 10% salt solution shows plasmolysed cells under a microscope within a few minutes.",
     "tip": "Mention that plasmolysis is reversible (deplasmolysis) — this extra point often fetches a bonus mark."
@@ -103,7 +104,8 @@
     ],
     "formula": "High K+ in guard cells -> low Psi(w) -> water enters -> turgid guard cells -> stomata open",
     "diagram": {
-      "draw": "Draw two bean-shaped guard cells facing each other with a stomatal pore between them. Show the inner wall (facing the pore) thicker than the outer wall. Label 'Guard cell', 'Stomatal pore', 'Thick inner wall', 'Thin outer wall', and 'K+ ions'."
+      "draw": "Draw two bean-shaped guard cells facing each other with a stomatal pore between them. Show the inner wall (facing the pore) thicker than the outer wall. Label 'Guard cell', 'Stomatal pore', 'Thick inner wall', 'Thin outer wall', and 'K+ ions'.",
+      "svg": "diagrams/biology/5-5.svg"
     },
     "example": "On a sunny day, stomata of a potted plant stay open for photosynthesis, but the plant also loses a measurable amount of water as transpiration, visible as fogging under a bell jar experiment.",
     "tip": "Use the K+ ion theory, not the old starch-sugar theory, as the accepted mechanism — HSC answer keys expect this."

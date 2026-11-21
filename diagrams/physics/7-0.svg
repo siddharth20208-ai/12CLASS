@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+<rect width="640" height="400" fill="#ffffff"/>
+<defs>
+<marker id="arrow70" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 z" fill="#d9534f"/>
+</marker>
+</defs>
+<text x="320" y="24" text-anchor="middle" font-size="16" fill="#1a1a1a" font-weight="bold">Electric Field Lines of a Point Charge</text>
+
+<circle cx="320" cy="210" r="14" fill="#f2b705"/>
+<text x="320" y="215" text-anchor="middle" font-size="14" fill="#1a1a1a">Q</text>
+
+<g stroke="#d9534f" stroke-width="2" marker-end="url(#arrow70)">
+<line x1="320" y1="210" x2="320" y2="90"/>
+<line x1="320" y1="210" x2="320" y2="330"/>
+<line x1="320" y1="210" x2="200" y2="210"/>
+<line x1="320" y1="210" x2="440" y2="210"/>
+<line x1="320" y1="210" x2="225" y2="115"/>
+<line x1="320" y1="210" x2="415" y2="115"/>
+<line x1="320" y1="210" x2="225" y2="305"/>
+<line x1="320" y1="210" x2="415" y2="305"/>
+</g>
+
+<!-- test point P on the rightward line -->
+<circle cx="440" cy="210" r="4" fill="#1a1a1a"/>
+<text x="445" y="200" font-size="14" fill="#1a1a1a">P</text>
+<line x1="320" y1="230" x2="440" y2="230" stroke="#2a6fdb" stroke-width="1.2" stroke-dasharray="3,2"/>
+<text x="380" y="245" text-anchor="middle" font-size="14" fill="#2a6fdb">r</text>
+
+<line x1="440" y1="210" x2="500" y2="210" stroke="#2a9d3a" stroke-width="2" marker-end="url(#arrow70m)"/>
+<defs>
+<marker id="arrow70m" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 z" fill="#2a9d3a"/>
+</marker>
+</defs>
+<text x="505" y="214" font-size="14" fill="#2a9d3a">E</text>
+
+</svg>

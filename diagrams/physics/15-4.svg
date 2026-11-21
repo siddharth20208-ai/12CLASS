@@ -37,7 +37,7 @@
   <!-- Collector circuit: load resistor RL to Vcc, reverse biasing CB junction -->
   <rect x="380" y="70" width="30" height="40" fill="none" stroke="#b02a2a" stroke-width="2"/>
   <line x1="395" y1="70" x2="395" y2="50" stroke="#333" stroke-width="2"/>
-  <text x="440" y="65" font-size="15" fill="#b02a2a">load RL</text>
+  <text x="413" y="92" font-size="15" fill="#b02a2a">load RL</text>
   <line x1="395" y1="50" x2="480" y2="50" stroke="#333" stroke-width="2"/>
   <!-- Vcc battery -->
   <line x1="480" y1="50" x2="480" y2="68" stroke="#333" stroke-width="2"/>

@@ -10,7 +10,9 @@
       "These assemblies developed membranes to form proto-cells, eventually giving rise to the first true living cells.",
       "This theory is called chemical evolution because it says life arose by gradual chemical changes, not instant creation."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Simple gases (CH4 NH3 H2 H2O)\"] --> B[\"Organic monomers (amino acids)\"]\n  B --> C[\"Polymers (proteins nucleic acids)\"]\n  C --> D[\"Proto-cells with membrane\"]\n  D --> E[\"First living cells\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Simple gases (CH4 NH3 H2 H2O)\"] --> B[\"Organic monomers (amino acids)\"]\n  B --> C[\"Polymers (proteins nucleic acids)\"]\n  C --> D[\"Proto-cells with membrane\"]\n  D --> E[\"First living cells\"]"
+    },
     "example": "Simple gases exposed to lightning-like energy under early earth's reducing atmosphere are believed to have formed the first amino acids, as later confirmed by the Miller-Urey experiment.",
     "tip": "Clearly state 'reducing atmosphere, no free oxygen' as the starting condition — examiners check for this specific term."
   },
@@ -25,7 +27,10 @@
       "This showed that organic building blocks of life could form spontaneously from inorganic gases under early earth-like conditions.",
       "It directly supported the Oparin-Haldane theory of chemical evolution of life."
     ],
-    "diagram": { "draw": "Draw a closed glass apparatus: a flask of water at the bottom (heated to produce vapor), connected by tubes to a larger chamber containing the gas mixture (CH4, NH3, H2) with electrodes producing a spark discharge. Connect this to a condenser that cools the gas back to liquid, which flows into a collection trap. Label each part: water flask, gas chamber, electrodes (spark), condenser, trap." },
+    "diagram": {
+      "draw": "Draw a closed glass apparatus: a flask of water at the bottom (heated to produce vapor), connected by tubes to a larger chamber containing the gas mixture (CH4, NH3, H2) with electrodes producing a spark discharge. Connect this to a condenser that cools the gas back to liquid, which flows into a collection trap. Label each part: water flask, gas chamber, electrodes (spark), condenser, trap.",
+      "svg": "diagrams/biology/4-1.svg"
+    },
     "example": "After running the Miller-Urey apparatus for about a week, scientists detected glycine and alanine (simple amino acids) in the collected liquid.",
     "tip": "Label all 4 parts of the apparatus (gas chamber, electrodes, condenser, trap) in the diagram for full marks."
   },
@@ -40,7 +45,9 @@
       "Over many generations, favourable traits accumulate, changing the population gradually — this is evolution by natural selection.",
       "Natural selection acts on existing variation; it does not create new variation itself (that comes from mutation and recombination)."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Variation exists in population\"] --> B[\"Struggle for existence\"]\n  B --> C[\"Fitter individuals survive and reproduce more\"]\n  C --> D[\"Favourable traits passed to offspring\"]\n  D --> E[\"Population changes over generations\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Variation exists in population\"] --> B[\"Struggle for existence\"]\n  B --> C[\"Fitter individuals survive and reproduce more\"]\n  C --> D[\"Favourable traits passed to offspring\"]\n  D --> E[\"Population changes over generations\"]"
+    },
     "example": "The peppered moth in England shifted from mostly light-coloured to mostly dark-coloured during industrialization, as darker moths were better camouflaged against soot-darkened trees and survived predators better.",
     "tip": "Use the phrase 'survival of the fittest' along with the step-by-step logic — examiners look for both the keyword and the reasoning."
   },
@@ -56,7 +63,9 @@
       "This principle gives biologists a mathematical baseline to detect and measure evolutionary change."
     ],
     "formula": "p + q = 1;  p^2 + 2pq + q^2 = 1",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Allele frequencies p and q\"] --> B[\"p squared: homozygous dominant\"]\n  A --> C[\"2pq: heterozygous\"]\n  A --> D[\"q squared: homozygous recessive\"]\n  B --> E[\"Sum = 1 (equilibrium)\"]\n  C --> E\n  D --> E" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Allele frequencies p and q\"] --> B[\"p squared: homozygous dominant\"]\n  A --> C[\"2pq: heterozygous\"]\n  A --> D[\"q squared: homozygous recessive\"]\n  B --> E[\"Sum = 1 (equilibrium)\"]\n  C --> E\n  D --> E"
+    },
     "example": "If the recessive allele frequency q = 0.2, then p = 0.8. Genotype frequencies: p^2 = 0.64 (dominant homozygous), 2pq = 0.32 (heterozygous), q^2 = 0.04 (recessive homozygous).",
     "tip": "Practice solving for p or q when given one genotype frequency (e.g. given q^2, find p and q) — this numerical type is asked almost every year."
   },
@@ -71,7 +80,9 @@
       "Connecting links (like Archaeopteryx, showing both reptilian and bird features) provide evidence of transition between groups.",
       "Together, these lines of evidence from different fields all point consistently to evolution having occurred."
     ],
-    "diagram": { "mermaid": "flowchart TD\n  A[\"Evidence of evolution\"] --> B[\"Fossils: sequence in rock layers\"]\n  A --> C[\"Homology: same structure diff function\"]\n  A --> D[\"Analogy: diff structure same function\"]\n  A --> E[\"Vestigial organs\"]" },
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Evidence of evolution\"] --> B[\"Fossils: sequence in rock layers\"]\n  A --> C[\"Homology: same structure diff function\"]\n  A --> D[\"Analogy: diff structure same function\"]\n  A --> E[\"Vestigial organs\"]"
+    },
     "example": "The forelimbs of a human (for grasping), a bat (for flying) and a whale (for swimming) have the same bone arrangement, proving they are homologous and share a common ancestor.",
     "tip": "Give one clear example each for homology and analogy — mixing up the two definitions is the most common mistake students make."
   },
@@ -86,7 +97,9 @@
       "Directional selection often occurs when the environment changes in a consistent direction (e.g. increasing pollution, drug use).",
       "Disruptive selection can increase variation within a population and, over long time, may lead to formation of new species."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Population with variation\"] --> B[\"Stabilizing: favours average\"]\n  A --> C[\"Directional: favours one extreme\"]\n  A --> D[\"Disruptive: favours both extremes\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Population with variation\"] --> B[\"Stabilizing: favours average\"]\n  A --> C[\"Directional: favours one extreme\"]\n  A --> D[\"Disruptive: favours both extremes\"]"
+    },
     "example": "Human birth weight shows stabilizing selection: babies of average weight survive best, while both very low and very high birth weights have higher risk, keeping the average weight stable in the population.",
     "tip": "Draw a simple bell-curve sketch for each type showing which part of the curve is favoured — this visual strongly supports the written answer."
   }
