@@ -17,16 +17,16 @@
 
   <!-- point P on curve, near vertex-ish for clean tangent -->
   <circle cx="400" cy="140" r="4" fill="#111"/>
-  <text x="408" y="135" font-size="15">P(x1, y1)</text>
+  <text x="412" y="118" font-size="15">P(x1, y1)</text>
 
   <!-- tangent line: touches curve only at P, slope matches curve's slope there -->
-  <line x1="270" y1="230" x2="500" y2="75" stroke="#1a66cc" stroke-width="2.2"/>
+  <line x1="270" y1="227.6" x2="500" y2="72.6" stroke="#1a66cc" stroke-width="2.2"/>
   <text x="500" y="65" font-size="15" fill="#1a66cc">Tangent</text>
 
-  <!-- normal line: perpendicular to tangent at P -->
-  <line x1="320" y1="40" x2="470" y2="290" stroke="#cc3333" stroke-width="2.2"/>
+  <!-- normal line: perpendicular to tangent at P, passes through P -->
+  <line x1="320" y1="21.3" x2="470" y2="243.9" stroke="#cc3333" stroke-width="2.2"/>
   <text x="430" y="300" font-size="15" fill="#cc3333">Normal</text>
 
   <!-- right angle marker between tangent and normal at P -->
-  <path d="M 410 128 L 418 136 L 410 144" fill="none" stroke="#333" stroke-width="1.5"/>
+  <path d="M 393 148 L 401 156 L 409 148" fill="none" stroke="#333" stroke-width="1.5"/>
 </svg>

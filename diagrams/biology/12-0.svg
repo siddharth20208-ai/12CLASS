@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow12" markerWidth="8" markerHeight="8" refX="5" refY="2.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L5,2.5 L0,5 Z" fill="#222222"/>
+    </marker>
+  </defs>
+  <text x="320" y="24" font-size="16" text-anchor="middle" fill="#222222">Population Growth Curves</text>
+
+  <!-- Left graph: exponential -->
+  <line x1="60" y1="300" x2="60" y2="60" stroke="#222222" stroke-width="2" marker-end="url(#arrow12)"/>
+  <line x1="60" y1="300" x2="280" y2="300" stroke="#222222" stroke-width="2" marker-end="url(#arrow12)"/>
+  <text x="170" y="320" font-size="14" text-anchor="middle" fill="#222222">Time</text>
+  <text x="25" y="180" font-size="14" text-anchor="middle" fill="#222222" transform="rotate(-90 25 180)">Population size (N)</text>
+  <path d="M60,295 C120,290 170,250 280,75" fill="none" stroke="#c62828" stroke-width="2.5"/>
+  <text x="170" y="60" font-size="14" text-anchor="middle" fill="#c62828">Exponential growth (J-shaped)</text>
+
+  <!-- Right graph: logistic -->
+  <line x1="380" y1="300" x2="380" y2="60" stroke="#222222" stroke-width="2" marker-end="url(#arrow12)"/>
+  <line x1="380" y1="300" x2="600" y2="300" stroke="#222222" stroke-width="2" marker-end="url(#arrow12)"/>
+  <text x="490" y="320" font-size="14" text-anchor="middle" fill="#222222">Time</text>
+  <text x="345" y="180" font-size="14" text-anchor="middle" fill="#222222" transform="rotate(-90 345 180)">Population size (N)</text>
+  <line x1="380" y1="110" x2="600" y2="110" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <text x="500" y="100" font-size="13" text-anchor="middle" fill="#1565c0">K (carrying capacity)</text>
+  <path d="M380,295 C400,290 420,260 460,200 C500,140 540,112 600,110" fill="none" stroke="#2e7d32" stroke-width="2.5"/>
+  <text x="490" y="60" font-size="14" text-anchor="middle" fill="#2e7d32">Logistic growth (S-shaped)</text>
+</svg>
