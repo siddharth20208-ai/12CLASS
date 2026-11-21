@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="640" height="400" fill="white"/>
+<text x="320" y="30" font-size="18" text-anchor="middle" font-weight="bold">Structure of Sulfuric Acid (H2SO4)</text>
+
+<!-- central S -->
+<circle cx="320" cy="200" r="18" fill="#f9e79f" stroke="black" stroke-width="2"/>
+<text x="320" y="206" font-size="16" text-anchor="middle">S</text>
+
+<!-- double bonds up to O -->
+<line x1="312" y1="186" x2="245" y2="110" stroke="black" stroke-width="2"/>
+<line x1="320" y1="182" x2="253" y2="106" stroke="black" stroke-width="2"/>
+<circle cx="235" cy="95" r="16" fill="#aed6f1" stroke="black" stroke-width="2"/>
+<text x="235" y="100" font-size="14" text-anchor="middle">O</text>
+<text x="200" y="80" font-size="13">=O</text>
+
+<line x1="328" y1="186" x2="395" y2="110" stroke="black" stroke-width="2"/>
+<line x1="320" y1="182" x2="387" y2="106" stroke="black" stroke-width="2"/>
+<circle cx="405" cy="95" r="16" fill="#aed6f1" stroke="black" stroke-width="2"/>
+<text x="405" y="100" font-size="14" text-anchor="middle">O</text>
+<text x="420" y="80" font-size="13">=O</text>
+
+<!-- single bonds down to OH -->
+<line x1="306" y1="212" x2="245" y2="290" stroke="black" stroke-width="2"/>
+<circle cx="235" cy="305" r="18" fill="#d5f5e3" stroke="black" stroke-width="2"/>
+<text x="235" y="310" font-size="13" text-anchor="middle">OH</text>
+
+<line x1="334" y1="212" x2="395" y2="290" stroke="black" stroke-width="2"/>
+<circle cx="405" cy="305" r="18" fill="#d5f5e3" stroke="black" stroke-width="2"/>
+<text x="405" y="310" font-size="13" text-anchor="middle">OH</text>
+
+<text x="320" y="350" font-size="15" text-anchor="middle">Tetrahedral geometry around sulfur</text>
+</svg>

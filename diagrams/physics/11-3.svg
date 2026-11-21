@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="640" height="400" fill="white"/>
+<defs>
+<marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="black"/>
+</marker>
+</defs>
+
+<!-- coil 1 -->
+<path d="M160,120 q15,10 0,20 q15,10 0,20 q15,10 0,20 q15,10 0,20 q15,10 0,20" stroke="black" stroke-width="2" fill="none"/>
+<text x="160" y="105" font-size="14" text-anchor="middle">Coil 1</text>
+
+<!-- coil 2 -->
+<path d="M300,120 q15,10 0,20 q15,10 0,20 q15,10 0,20 q15,10 0,20 q15,10 0,20" stroke="black" stroke-width="2" fill="none"/>
+<text x="300" y="105" font-size="14" text-anchor="middle">Coil 2</text>
+
+<!-- flux lines from coil1 to coil2 -->
+<line x1="175" y1="140" x2="285" y2="140" stroke="#1a5276" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="175" y1="180" x2="285" y2="180" stroke="#1a5276" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="175" y1="220" x2="285" y2="220" stroke="#1a5276" stroke-width="2" marker-end="url(#arr)"/>
+<text x="230" y="250" font-size="16" fill="#1a5276" text-anchor="middle">M</text>
+
+<!-- coil1 circuit: battery + switch -->
+<path d="M160,120 L160,70 L60,70 L60,270 L160,270 L160,220" stroke="black" stroke-width="2" fill="none"/>
+<line x1="55" y1="150" x2="65" y2="150" stroke="black" stroke-width="4"/>
+<line x1="52" y1="165" x2="68" y2="165" stroke="black" stroke-width="2"/>
+<text x="30" y="160" font-size="14">Battery</text>
+
+<line x1="90" y1="70" x2="110" y2="55" stroke="black" stroke-width="2"/>
+<circle cx="90" cy="70" r="3" fill="black"/>
+<circle cx="120" cy="70" r="3" fill="black"/>
+<text x="95" y="45" font-size="14">Switch</text>
+
+<!-- coil2 circuit: galvanometer -->
+<path d="M300,120 L300,70 L440,70 L440,270 L300,270 L300,220" stroke="black" stroke-width="2" fill="none"/>
+<circle cx="440" cy="170" r="35" stroke="black" stroke-width="2" fill="none"/>
+<text x="440" y="175" font-size="16" text-anchor="middle">G</text>
+
+<text x="300" y="330" font-size="14" text-anchor="middle">Changing current in Coil 1 induces EMF in Coil 2 via mutual inductance M</text>
+
+</svg>

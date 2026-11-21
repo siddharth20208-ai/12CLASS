@@ -30,7 +30,8 @@
     ],
     "formula": "Isothermal: PV = constant, W = nRT ln(V2/V1)     Adiabatic: PV^γ = constant, dU = −dW",
     "diagram": {
-      "draw": "Draw a P-V graph with two curves starting from the same point: label the gentler curve 'isothermal (PV=const)' and the steeper, more sharply falling curve 'adiabatic (PV^gamma=const)'. Mark axes P (pressure) vertical and V (volume) horizontal."
+      "draw": "Draw a P-V graph with two curves starting from the same point: label the gentler curve 'isothermal (PV=const)' and the steeper, more sharply falling curve 'adiabatic (PV^gamma=const)'. Mark axes P (pressure) vertical and V (volume) horizontal.",
+      "svg": "diagrams/physics/3-1.svg"
     },
     "example": "1 mole of gas expands isothermally at 300 K from 2 L to 4 L: W = nRT ln(V2/V1) = 1 x 8.314 x 300 x ln(2) = 1729 J.",
     "tip": "On the P-V diagram the adiabatic curve is always steeper than the isothermal curve at any common point — markers check this."
@@ -48,7 +49,8 @@
     ],
     "formula": "W = ∫ P dV  (= area under the P-V curve)",
     "diagram": {
-      "draw": "Draw a P-V diagram with a curve going from point A (P1,V1) to point B (P2,V2). Shade the region below the curve down to the V-axis between V1 and V2, and label it 'work done = shaded area'."
+      "draw": "Draw a P-V diagram with a curve going from point A (P1,V1) to point B (P2,V2). Shade the region below the curve down to the V-axis between V1 and V2, and label it 'work done = shaded area'.",
+      "svg": "diagrams/physics/3-2.svg"
     },
     "example": "Gas at constant pressure 2 x 10^5 Pa expands from 1 L to 3 L: W = P(V2-V1) = 2e5 x 2e-3 = 400 J.",
     "tip": "For a cyclic process, remember the enclosed loop area (not the area under one curve) gives the net work — a frequently tested distinction."
@@ -84,7 +86,8 @@
     ],
     "formula": "ηCarnot = 1 − T2/T1 (maximum possible efficiency)",
     "diagram": {
-      "draw": "Draw a closed loop on a P-V diagram with 4 curved segments labelled in order: 1-2 isothermal expansion (at T1), 2-3 adiabatic expansion, 3-4 isothermal compression (at T2), 4-1 adiabatic compression. Arrows show the cycle direction."
+      "draw": "Draw a closed loop on a P-V diagram with 4 curved segments labelled in order: 1-2 isothermal expansion (at T1), 2-3 adiabatic expansion, 3-4 isothermal compression (at T2), 4-1 adiabatic compression. Arrows show the cycle direction.",
+      "svg": "diagrams/physics/3-4.svg"
     },
     "example": "A Carnot engine between 600 K and 300 K: η = 1 - 300/600 = 0.5 or 50% — the maximum possible for these two temperatures.",
     "tip": "Name the four steps of the Carnot cycle in the correct order with the correct process type (isothermal/adiabatic) — this sequence is often asked directly."

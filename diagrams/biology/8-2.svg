@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="640" height="400" fill="white"/>
+<text x="90" y="40" font-size="14" text-anchor="middle">Front</text>
+<text x="540" y="40" font-size="14" text-anchor="middle">Back</text>
+<!-- cerebrum: large folded top, front -->
+<path d="M60,150 C60,80 180,55 260,70 C330,82 360,110 370,150 C340,140 300,135 260,140 C210,145 170,165 140,180 C110,165 80,170 60,150 Z" fill="#eef7ee" stroke="#2e7d32" stroke-width="2"/>
+<text x="180" y="100" font-size="14" text-anchor="middle">Cerebrum</text>
+<!-- thalamus/hypothalamus: small central -->
+<circle cx="300" cy="165" r="18" fill="#fde8e8" stroke="#c0392b" stroke-width="2"/>
+<text x="300" y="120" font-size="12" text-anchor="middle">Thalamus &amp;</text>
+<text x="300" y="135" font-size="12" text-anchor="middle">hypothalamus</text>
+<!-- midbrain: small region below cerebrum -->
+<rect x="340" y="175" width="25" height="20" fill="#e8f0fd" stroke="#2e5fa3" stroke-width="2"/>
+<text x="420" y="185" font-size="13" text-anchor="middle">Midbrain</text>
+<line x1="390" y1="185" x2="366" y2="185" stroke="#333333" stroke-width="1"/>
+<!-- cerebellum: folded structure at back-bottom -->
+<path d="M420,220 C440,195 480,195 500,220 C520,235 500,260 470,255 C440,260 410,245 420,220 Z" fill="#eef7ee" stroke="#2e7d32" stroke-width="2"/>
+<text x="460" y="285" font-size="14" text-anchor="middle">Cerebellum</text>
+<!-- pons and medulla: stalk-like at base connecting to spinal cord -->
+<path d="M365,195 C370,220 390,240 400,280 C405,310 400,340 395,360" stroke="#333333" stroke-width="2" fill="none"/>
+<text x="470" y="330" font-size="13" text-anchor="middle">Pons &amp; medulla</text>
+<text x="470" y="347" font-size="13" text-anchor="middle">oblongata</text>
+<line x1="430" y1="325" x2="400" y2="300" stroke="#333333" stroke-width="1"/>
+<!-- spinal cord -->
+<line x1="395" y1="360" x2="395" y2="390" stroke="#333333" stroke-width="2"/>
+<text x="430" y="390" font-size="12" text-anchor="middle">Spinal cord</text>
+</svg>

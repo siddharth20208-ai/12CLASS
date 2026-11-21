@@ -28,7 +28,8 @@
     ],
     "formula": "Molecular formula (both): C6H12O6",
     "diagram": {
-      "draw": "Draw the open-chain zig-zag skeleton for glucose: CHO at top (C1), then four CHOH carbons (C2-C5) each with OH labelled, ending in CH2OH (C6). Below it draw fructose similarly but with C=O at C2 instead of CHO at C1, and CH2OH at C1."
+      "draw": "Draw the open-chain zig-zag skeleton for glucose: CHO at top (C1), then four CHOH carbons (C2-C5) each with OH labelled, ending in CH2OH (C6). Below it draw fructose similarly but with C=O at C2 instead of CHO at C1, and CH2OH at C1.",
+      "svg": "diagrams/chemistry/13-1.svg"
     },
     "example": "Glucose + Fehling's solution on heating gives a brick-red precipitate of Cu2O, confirming the aldehyde group.",
     "tip": "Mention 'isomers of each other' and the aldehyde vs ketone difference - frequently asked distinguishing point."
@@ -99,7 +100,8 @@
     ],
     "formula": "Nucleotide = nitrogen base + pentose sugar + phosphate group",
     "diagram": {
-      "draw": "Draw two parallel curved lines representing the double helix backbone of DNA. Connect them with short horizontal rungs labelled 'A-T' and 'G-C' base pairs at intervals. Label one strand 'sugar-phosphate backbone' and the base pair rungs 'hydrogen bonds'."
+      "draw": "Draw two parallel curved lines representing the double helix backbone of DNA. Connect them with short horizontal rungs labelled 'A-T' and 'G-C' base pairs at intervals. Label one strand 'sugar-phosphate backbone' and the base pair rungs 'hydrogen bonds'.",
+      "svg": "diagrams/chemistry/13-5.svg"
     },
     "example": "In a DNA strand with sequence A-T-G-C, the complementary strand reads T-A-C-G by base pairing rules.",
     "tip": "State clearly the sugar and base difference between DNA and RNA - a frequently asked distinguishing question."

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <rect width="640" height="400" fill="#ffffff"/>
+  <polygon points="320,60 150,330 490,330" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="320" y="45" font-family="Arial, sans-serif" font-size="16" fill="#222222" text-anchor="middle">A</text>
+  <text x="135" y="345" font-family="Arial, sans-serif" font-size="16" fill="#222222" text-anchor="middle">B</text>
+  <text x="505" y="345" font-family="Arial, sans-serif" font-size="16" fill="#222222" text-anchor="middle">C</text>
+
+  <text x="310" y="195" font-family="Arial, sans-serif" font-size="15" fill="#1565c0" text-anchor="end">c = ?</text>
+  <text x="235" y="200" font-family="Arial, sans-serif" font-size="15" fill="#1565c0" transform="rotate(-62 235 200)">c</text>
+
+  <text x="420" y="195" font-family="Arial, sans-serif" font-size="15" fill="#c62828" text-anchor="start">b</text>
+
+  <text x="320" y="350" font-family="Arial, sans-serif" font-size="15" fill="#2e7d32" text-anchor="middle">a</text>
+
+  <path d="M 303 95 A 30 30 0 0 1 338 98" fill="none" stroke="#c62828" stroke-width="2"/>
+  <text x="320" y="75" font-family="Arial, sans-serif" font-size="14" fill="#c62828" text-anchor="middle">A = ?</text>
+
+  <path d="M 190 310 A 25 25 0 0 1 200 285" fill="none" stroke="#2e7d32" stroke-width="2"/>
+  <text x="200" y="300" font-family="Arial, sans-serif" font-size="14" fill="#2e7d32" text-anchor="middle">B</text>
+
+  <path d="M 450 310 A 25 25 0 0 0 440 285" fill="none" stroke="#2e7d32" stroke-width="2"/>
+  <text x="440" y="300" font-family="Arial, sans-serif" font-size="14" fill="#2e7d32" text-anchor="middle">C</text>
+</svg>

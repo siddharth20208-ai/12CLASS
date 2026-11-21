@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="white"/>
+  <defs>
+    <marker id="arrow5" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="black"/>
+    </marker>
+  </defs>
+  <text x="320" y="20" font-size="16" text-anchor="middle" fill="black">RMS and Peak value of AC current</text>
+
+  <line x1="60" y1="200" x2="60" y2="60" stroke="black" stroke-width="2" marker-end="url(#arrow5)"/>
+  <line x1="60" y1="200" x2="580" y2="200" stroke="black" stroke-width="2" marker-end="url(#arrow5)"/>
+  <text x="30" y="65" font-size="14" fill="black">i</text>
+  <text x="570" y="222" font-size="14" fill="black">t</text>
+
+  <path d="M 60 200 Q 125 90 190 200 Q 255 310 320 200 Q 385 90 450 200 Q 515 310 580 200"
+        stroke="#2874a6" stroke-width="2.5" fill="none"/>
+
+  <!-- peak marker at first peak (t ~125, y=90) -->
+  <line x1="125" y1="200" x2="125" y2="90" stroke="black" stroke-width="1" stroke-dasharray="3,3"/>
+  <circle cx="125" cy="90" r="3" fill="#2874a6"/>
+  <text x="130" y="85" font-size="14" fill="black">i0 (peak)</text>
+
+  <!-- Irms dashed horizontal line -->
+  <line x1="60" y1="130" x2="580" y2="130" stroke="#c0392b" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="440" y="124" font-size="14" fill="#c0392b">Irms = 0.707 i0</text>
+</svg>

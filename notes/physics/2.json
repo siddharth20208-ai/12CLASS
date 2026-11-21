@@ -66,7 +66,8 @@
     ],
     "formula": "Emissivity e = (emissive power of body) / (emissive power of blackbody at same T)",
     "diagram": {
-      "draw": "Draw a hollow sphere with a small hole on one side (Ferry's blackbody). Show radiation entering the hole and reflecting multiple times inside the cavity, getting absorbed. Label 'small hole acts as nearly perfect blackbody'."
+      "draw": "Draw a hollow sphere with a small hole on one side (Ferry's blackbody). Show radiation entering the hole and reflecting multiple times inside the cavity, getting absorbed. Label 'small hole acts as nearly perfect blackbody'.",
+      "svg": "diagrams/physics/2-3.svg"
     },
     "example": "A surface with emissivity 0.8 radiates 0.8 times the energy a perfect blackbody would radiate at the same temperature and area.",
     "tip": "Remember: a blackbody is both a perfect absorber AND a perfect emitter — state both properties for full marks."

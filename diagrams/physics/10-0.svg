@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="640" height="400" fill="white"/>
+<defs>
+<marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="black"/>
+</marker>
+<marker id="arrR" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#c0392b"/>
+</marker>
+<marker id="arrB" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#1a5276"/>
+</marker>
+</defs>
+
+<!-- nucleus -->
+<circle cx="320" cy="220" r="10" fill="black"/>
+<text x="320" y="245" font-size="14" text-anchor="middle">Nucleus</text>
+
+<!-- dashed orbit -->
+<ellipse cx="320" cy="220" rx="150" ry="70" fill="none" stroke="black" stroke-width="2" stroke-dasharray="6,6"/>
+
+<!-- electron on orbit -->
+<circle cx="470" cy="220" r="10" fill="white" stroke="black" stroke-width="2"/>
+<text x="470" y="225" font-size="14" text-anchor="middle">-</text>
+<text x="470" y="200" font-size="14" text-anchor="middle">electron</text>
+
+<!-- velocity v arrow (electron direction, tangent, say clockwise) -->
+<line x1="470" y1="250" x2="455" y2="288" stroke="black" stroke-width="2" marker-end="url(#arr)"/>
+<text x="430" y="300" font-size="14">v</text>
+
+<!-- equivalent current loop direction: opposite to electron motion -->
+<path d="M170,220 A150,70 0 0 1 320,150" stroke="#c0392b" stroke-width="2" fill="none" marker-end="url(#arrR)"/>
+<text x="200" y="140" font-size="14" fill="#c0392b">I (conventional current)</text>
+
+<!-- magnetic moment mu arrow, perpendicular to orbit plane -->
+<line x1="320" y1="220" x2="320" y2="80" stroke="#1a5276" stroke-width="2" marker-end="url(#arrB)"/>
+<text x="330" y="80" font-size="16" fill="#1a5276">mu (magnetic moment)</text>
+
+<text x="320" y="370" font-size="14" text-anchor="middle">Electron's current loop is opposite to its motion since charge is negative</text>
+
+</svg>

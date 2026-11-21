@@ -1,0 +1,154 @@
+{
+  "solved": [
+    {
+      "topic": "First order rate constant from concentration-time data",
+      "marks": 3,
+      "q": "A first order reaction has initial concentration [A]0 = 0.5 mol/L. After 20 minutes, the concentration falls to 0.125 mol/L. Calculate the rate constant k.",
+      "steps": [
+        "Given: [A]0 = 0.5 mol/L, [A] = 0.125 mol/L, t = 20 min.",
+        "Formula: k = (2.303/t) log([A]0/[A]).",
+        "[A]0/[A] = 0.5/0.125 = 4.",
+        "log 4 = log(2^2) = 2 log 2 = 2(0.301) = 0.602.",
+        "k = (2.303/20) x 0.602.",
+        "k = 0.11515/20... compute: 2.303 x 0.602 = 1.3864, divide by 20 = 0.06932.",
+        "k = 0.0693 min^-1."
+      ],
+      "ans": "k = 0.0693 min^-1"
+    },
+    {
+      "topic": "Half-life of a first order reaction",
+      "marks": 2,
+      "q": "A first order reaction has a rate constant k = 0.0693 min^-1. Calculate its half-life.",
+      "steps": [
+        "Given: k = 0.0693 min^-1, order = first order.",
+        "Formula: t1/2 = 0.693/k.",
+        "Substitution: t1/2 = 0.693/0.0693.",
+        "Calculation: t1/2 = 10.",
+        "t1/2 = 10 minutes."
+      ],
+      "ans": "t1/2 = 10 min"
+    },
+    {
+      "topic": "Zero order reaction - concentration after time t",
+      "marks": 3,
+      "q": "A zero order reaction has [A]0 = 2.0 mol/L and rate constant k = 0.05 mol L^-1 min^-1. Calculate the concentration of A remaining after 15 minutes.",
+      "steps": [
+        "Given: [A]0 = 2.0 mol/L, k = 0.05 mol L^-1 min^-1, t = 15 min.",
+        "Formula: [A] = [A]0 - kt.",
+        "Substitution: [A] = 2.0 - (0.05 x 15).",
+        "Calculation: 0.05 x 15 = 0.75, so [A] = 2.0 - 0.75.",
+        "[A] = 1.25 mol/L."
+      ],
+      "ans": "[A] = 1.25 mol/L"
+    },
+    {
+      "topic": "Half-life of a zero order reaction",
+      "marks": 2,
+      "q": "For the zero order reaction with [A]0 = 2.0 mol/L and k = 0.05 mol L^-1 min^-1, calculate the half-life.",
+      "steps": [
+        "Given: [A]0 = 2.0 mol/L, k = 0.05 mol L^-1 min^-1.",
+        "Formula: t1/2 = [A]0/(2k).",
+        "Substitution: t1/2 = 2.0/(2 x 0.05).",
+        "Calculation: 2 x 0.05 = 0.1, so t1/2 = 2.0/0.1.",
+        "t1/2 = 20 minutes."
+      ],
+      "ans": "t1/2 = 20 min"
+    },
+    {
+      "topic": "Activation energy from Arrhenius equation (two temperatures)",
+      "marks": 4,
+      "q": "The rate constant of a reaction at 310 K is 4 times its value at 300 K (k2/k1 = 4). Calculate the activation energy Ea. (R = 8.314 J/mol K)",
+      "steps": [
+        "Given: T1 = 300 K, T2 = 310 K, k2/k1 = 4, R = 8.314 J/mol K.",
+        "Formula: log(k2/k1) = (Ea/2.303R)(1/T1 - 1/T2).",
+        "1/T1 - 1/T2 = (T2-T1)/(T1 T2) = 10/(300 x 310) = 10/93000 = 1.075 x 10^-4.",
+        "log 4 = 2 log 2 = 2(0.301) = 0.602.",
+        "Substitution: 0.602 = (Ea/(2.303 x 8.314)) x 1.075 x 10^-4.",
+        "2.303 x 8.314 = 19.147; so 0.602 = Ea x (1.075 x 10^-4 / 19.147) = Ea x 5.616 x 10^-6.",
+        "Ea = 0.602 / (5.616 x 10^-6) = 1.072 x 10^5 J/mol.",
+        "Ea = 1.072 x 10^5 J/mol = 107.2 kJ/mol."
+      ],
+      "ans": "Ea = 107.2 kJ/mol (1.072 x 10^5 J/mol)"
+    },
+    {
+      "topic": "Order of reaction from rate law (effect of doubling concentration)",
+      "marks": 3,
+      "q": "In a reaction A -> products, Rate = k[A]^n. When the concentration of A is doubled, the rate of reaction increases 8 times. Find the order n of the reaction.",
+      "steps": [
+        "Given: Rate2/Rate1 = 8 when [A]2 = 2[A]1.",
+        "Formula: Rate = k[A]^n, so Rate2/Rate1 = ([A]2/[A]1)^n.",
+        "Substitution: 8 = 2^n.",
+        "Write 8 as power of 2: 8 = 2^3.",
+        "So 2^n = 2^3, giving n = 3.",
+        "Order of reaction n = 3."
+      ],
+      "ans": "n = 3 (third order reaction)"
+    },
+    {
+      "topic": "Time for 99% completion of a first order reaction",
+      "marks": 4,
+      "q": "A first order reaction has rate constant k = 0.0231 min^-1. Calculate the time required for 99% completion of the reaction.",
+      "steps": [
+        "Given: k = 0.0231 min^-1; 99% complete means 1% i.e. [A] = 0.01[A]0 remains.",
+        "Formula: t = (2.303/k) log([A]0/[A]).",
+        "[A]0/[A] = [A]0/(0.01[A]0) = 100.",
+        "log 100 = 2.",
+        "Substitution: t = (2.303 x 2)/0.0231.",
+        "Calculation: 2.303 x 2 = 4.606; t = 4.606/0.0231 = 199.4.",
+        "t = 199.4 minutes (approx 200 min)."
+      ],
+      "ans": "t = 199.4 min (approx 200 min)"
+    },
+    {
+      "topic": "Rate constant of a zero order reaction from concentration-time data",
+      "marks": 2,
+      "q": "In a zero order reaction, the concentration of reactant falls from 1.0 mol/L to 0.5 mol/L in 10 minutes. Calculate the rate constant k.",
+      "steps": [
+        "Given: [A]0 = 1.0 mol/L, [A] = 0.5 mol/L, t = 10 min.",
+        "Formula: k = ([A]0 - [A])/t.",
+        "Substitution: k = (1.0 - 0.5)/10.",
+        "Calculation: k = 0.5/10.",
+        "k = 0.05 mol L^-1 min^-1."
+      ],
+      "ans": "k = 0.05 mol L^-1 min^-1"
+    }
+  ],
+  "practice": [
+    {
+      "topic": "First order rate constant",
+      "q": "A first order reaction is 50% complete in 15 minutes. Calculate the rate constant k.",
+      "hint": "Use k = 0.693/t1/2 since 50% completion time is the half-life.",
+      "ans": "k = 0.0462 min^-1"
+    },
+    {
+      "topic": "First order time from half-life",
+      "q": "A first order reaction has t1/2 = 30 min. Calculate the time required for the reaction to be 75% complete.",
+      "hint": "75% complete means 25% remains = 1/4 of initial, i.e. 2 half-lives.",
+      "ans": "t = 60 min"
+    },
+    {
+      "topic": "Zero order concentration remaining",
+      "q": "A zero order reaction has [A]0 = 1.0 mol/L and k = 0.02 mol L^-1 min^-1. Find the concentration of A left after 20 minutes.",
+      "hint": "Use [A] = [A]0 - kt.",
+      "ans": "[A] = 0.6 mol/L"
+    },
+    {
+      "topic": "Order of reaction from rate law",
+      "q": "For a reaction, Rate = k[A]^2[B]. If both [A] and [B] are doubled, by what factor does the rate increase?",
+      "hint": "Rate is proportional to [A]^2[B]; substitute [A] -> 2[A] and [B] -> 2[B].",
+      "ans": "Rate increases 8 times"
+    },
+    {
+      "topic": "Activation energy from Arrhenius equation",
+      "q": "The rate constant of a reaction becomes 9 times when temperature is raised from T1 = 300 K to T2 = 320 K (k2/k1 = 9). Calculate Ea. (R = 8.314 J/mol K)",
+      "hint": "Use log(k2/k1) = (Ea/2.303R)(1/T1 - 1/T2); log9 = 2 log3 = 2(0.477) = 0.954.",
+      "ans": "Ea = 8.77 x 10^4 J/mol (approx 87.7 kJ/mol)"
+    },
+    {
+      "topic": "Half-life independent of concentration (first order check)",
+      "q": "A first order reaction has k = 1.54 x 10^-3 s^-1. Calculate the half-life and the time required for the reaction to go to 87.5% completion.",
+      "hint": "t1/2 = 0.693/k; 87.5% completion = 3 half-lives since 1/8 remains.",
+      "ans": "t1/2 = 450 s; time for 87.5% completion = 1350 s"
+    }
+  ]
+}

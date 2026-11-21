@@ -1,0 +1,154 @@
+{
+  "solved": [
+    {
+      "topic": "Capillary rise - finding surface tension",
+      "marks": 3,
+      "q": "Water rises to a height of 5 cm in a capillary tube of radius 0.2 mm. Find the surface tension of water. (Take g = 9.8 m/s^2, density of water = 1000 kg/m^3, angle of contact = 0 degrees.)",
+      "steps": [
+        "Given: h = 5 cm = 0.05 m, r = 0.2 mm = 0.2 x 10^-3 m, rho = 1000 kg/m^3, g = 9.8 m/s^2, theta = 0 so cos(theta) = 1.",
+        "Formula: h = 2T cos(theta) / (r rho g), so T = h r rho g / (2 cos(theta)).",
+        "Substitution: T = (0.05 x 0.2x10^-3 x 1000 x 9.8) / (2 x 1).",
+        "Numerator: 0.05 x 0.2x10^-3 = 1x10^-5; 1x10^-5 x 1000 = 1x10^-2; 1x10^-2 x 9.8 = 0.098.",
+        "T = 0.098 / 2 = 0.049 N/m.",
+        "Answer: T = 0.049 N/m."
+      ],
+      "ans": "0.049 N/m"
+    },
+    {
+      "topic": "Excess pressure inside a liquid drop and a soap bubble",
+      "marks": 3,
+      "q": "A liquid drop and a soap bubble, each of radius 2 mm, are formed from a liquid of surface tension 0.04 N/m. Find the excess pressure inside the drop and inside the bubble.",
+      "steps": [
+        "Given: r = 2 mm = 2 x 10^-3 m, T = 0.04 N/m.",
+        "Formula for a drop (one surface): P(drop) = 2T/r. Formula for a bubble (two surfaces): P(bubble) = 4T/r.",
+        "Substitution for drop: P(drop) = (2 x 0.04) / (2x10^-3) = 0.08 / 0.002.",
+        "P(drop) = 40 Pa.",
+        "Substitution for bubble: P(bubble) = (4 x 0.04) / (2x10^-3) = 0.16 / 0.002 = 80 Pa.",
+        "Answer: excess pressure in drop = 40 Pa, in bubble = 80 Pa (exactly double, since the bubble has two surfaces)."
+      ],
+      "ans": "Drop: 40 Pa; Bubble: 80 Pa"
+    },
+    {
+      "topic": "Work done in blowing a soap bubble",
+      "marks": 4,
+      "q": "A soap bubble is blown from zero to a radius of 1 cm. If the surface tension of the soap solution is 0.03 N/m, find the work done. (Take pi = 3.14.)",
+      "steps": [
+        "Given: r = 1 cm = 0.01 m, T = 0.03 N/m. A soap bubble has two free surfaces.",
+        "Formula: W = T x (total increase in area) = T x 2 x 4*pi*r^2, since initial area is zero.",
+        "Substitution: W = 0.03 x 2 x 4 x 3.14 x (0.01)^2.",
+        "Calculation: 4 x 3.14 = 12.56; (0.01)^2 = 1x10^-4; 12.56 x 1x10^-4 = 1.256x10^-3.",
+        "W = 0.03 x 2 x 1.256x10^-3 = 0.06 x 1.256x10^-3 = 7.536x10^-5 J.",
+        "Answer: W = 7.54 x 10^-5 J (approx)."
+      ],
+      "ans": "7.54 x 10^-5 J"
+    },
+    {
+      "topic": "Stokes' law - viscous drag force",
+      "marks": 2,
+      "q": "A small steel ball of radius 1 mm falls through castor oil of viscosity 0.5 Pa s with a velocity of 0.02 m/s. Calculate the viscous force acting on the ball. (Take pi = 3.14.)",
+      "steps": [
+        "Given: r = 1 mm = 1x10^-3 m, eta = 0.5 Pa s, v = 0.02 m/s.",
+        "Formula (Stokes' law): F = 6*pi*eta*r*v.",
+        "Substitution: F = 6 x 3.14 x 0.5 x 1x10^-3 x 0.02.",
+        "Calculation: 6 x 3.14 = 18.84; 18.84 x 0.5 = 9.42; 9.42 x 1x10^-3 = 9.42x10^-3; 9.42x10^-3 x 0.02 = 1.884x10^-4.",
+        "Answer: F = 1.884 x 10^-4 N."
+      ],
+      "ans": "1.884 x 10^-4 N"
+    },
+    {
+      "topic": "Terminal velocity of a sphere in a viscous fluid",
+      "marks": 4,
+      "q": "A steel ball of radius 1 mm and density 7800 kg/m^3 falls through oil of density 900 kg/m^3 and viscosity 0.5 Pa s. Find its terminal velocity. (Take g = 9.8 m/s^2.)",
+      "steps": [
+        "Given: r = 1 mm = 1x10^-3 m, rho = 7800 kg/m^3, sigma = 900 kg/m^3, eta = 0.5 Pa s, g = 9.8 m/s^2.",
+        "At terminal velocity, weight = upthrust + viscous drag, which gives v = 2 r^2 g (rho - sigma) / (9 eta).",
+        "Substitution: v = 2 x (1x10^-3)^2 x 9.8 x (7800 - 900) / (9 x 0.5).",
+        "Calculation: (1x10^-3)^2 = 1x10^-6; 2 x 1x10^-6 = 2x10^-6; (7800-900) = 6900.",
+        "Numerator: 2x10^-6 x 9.8 x 6900 = 2x10^-6 x 67620 = 0.13524.",
+        "Denominator: 9 x 0.5 = 4.5. v = 0.13524 / 4.5 = 0.03005 m/s.",
+        "Answer: v = 3.0 x 10^-2 m/s (approx)."
+      ],
+      "ans": "approx 0.030 m/s (3.0 x 10^-2 m/s)"
+    },
+    {
+      "topic": "Equation of continuity",
+      "marks": 2,
+      "q": "Water flows through a horizontal pipe whose cross-sectional area reduces from 4 cm^2 to 1 cm^2. If water enters the wide section at 2 m/s, find its speed in the narrow section.",
+      "steps": [
+        "Given: A1 = 4 cm^2, v1 = 2 m/s, A2 = 1 cm^2.",
+        "Formula (equation of continuity): A1 v1 = A2 v2, so v2 = A1 v1 / A2.",
+        "Substitution: v2 = (4 x 2) / 1.",
+        "Calculation: v2 = 8 / 1 = 8 m/s.",
+        "Answer: v2 = 8 m/s."
+      ],
+      "ans": "8 m/s"
+    },
+    {
+      "topic": "Bernoulli's equation - pressure difference in a venturimeter",
+      "marks": 4,
+      "q": "Water flows through a horizontal venturimeter whose cross-section narrows from 4 cm^2 to 1 cm^2. Water enters the wide section at 2 m/s with density 1000 kg/m^3. Find the pressure difference between the wide and narrow sections.",
+      "steps": [
+        "Given: A1 = 4 cm^2, v1 = 2 m/s, A2 = 1 cm^2, rho = 1000 kg/m^3; pipe is horizontal so height terms cancel.",
+        "First use continuity to find v2: A1 v1 = A2 v2, so v2 = (4 x 2)/1 = 8 m/s.",
+        "Bernoulli's equation (horizontal, so rho*g*h terms are equal and cancel): P1 + (1/2)rho v1^2 = P2 + (1/2)rho v2^2.",
+        "So P1 - P2 = (1/2) rho (v2^2 - v1^2).",
+        "Substitution: P1 - P2 = (1/2) x 1000 x (8^2 - 2^2) = 500 x (64 - 4) = 500 x 60.",
+        "Calculation: P1 - P2 = 30000 Pa.",
+        "Answer: pressure difference = 3.0 x 10^4 Pa (wide section is at higher pressure, as predicted by Bernoulli's principle)."
+      ],
+      "ans": "3.0 x 10^4 Pa (30000 Pa)"
+    },
+    {
+      "topic": "Reynolds number and type of flow",
+      "marks": 2,
+      "q": "Water of density 1000 kg/m^3 and viscosity 0.001 Pa s flows through a pipe of diameter 2 cm with a speed of 0.5 m/s. Find the Reynolds number and state the type of flow.",
+      "steps": [
+        "Given: rho = 1000 kg/m^3, v = 0.5 m/s, d = 2 cm = 0.02 m, eta = 0.001 Pa s.",
+        "Formula: Re = rho v d / eta.",
+        "Substitution: Re = (1000 x 0.5 x 0.02) / 0.001.",
+        "Calculation: 1000 x 0.5 = 500; 500 x 0.02 = 10; 10 / 0.001 = 10000.",
+        "Since Re = 10000 is well above 3000, the flow is turbulent.",
+        "Answer: Re = 1.0 x 10^4; flow is turbulent."
+      ],
+      "ans": "Re = 1.0 x 10^4 (turbulent flow)"
+    }
+  ],
+  "practice": [
+    {
+      "topic": "Capillary fall of mercury",
+      "q": "Mercury (density 13600 kg/m^3, surface tension 0.465 N/m, angle of contact 120 degrees) is in contact with a glass capillary of radius 1 mm. Find the depression (fall) of mercury in the tube. (g = 9.8 m/s^2; cos 120 degrees = -0.5.)",
+      "hint": "Use h = 2T cos(theta) / (r rho g); a negative h means depression instead of rise.",
+      "ans": "approx 3.49 x 10^-3 m depression (3.49 mm fall)"
+    },
+    {
+      "topic": "Excess pressure - finding surface tension",
+      "q": "The excess pressure inside a soap bubble of radius 3 mm is 20 Pa. Find the surface tension of the soap solution.",
+      "hint": "Use excess pressure in a bubble: deltaP = 4T/r, so T = deltaP x r / 4.",
+      "ans": "0.015 N/m"
+    },
+    {
+      "topic": "Terminal velocity in glycerine",
+      "q": "A small lead ball of radius 0.5 mm and density 11300 kg/m^3 falls through glycerine of density 1000 kg/m^3 and viscosity 1.5 Pa s. Find its terminal velocity. (g = 9.8 m/s^2.)",
+      "hint": "Use v = 2 r^2 g (rho - sigma) / (9 eta).",
+      "ans": "approx 3.74 x 10^-3 m/s"
+    },
+    {
+      "topic": "Equation of continuity - finding wide-section speed",
+      "q": "Water flows through a pipe whose area increases from 2 cm^2 to 6 cm^2. If the speed in the narrow section is 12 m/s, find the speed in the wide section.",
+      "hint": "Use A1 v1 = A2 v2, solve for the speed in the wider section.",
+      "ans": "4 m/s"
+    },
+    {
+      "topic": "Critical velocity using Reynolds number",
+      "q": "Water (density 1000 kg/m^3, viscosity 0.001 Pa s) flows through a pipe of diameter 1 cm. Find the critical velocity at which the flow changes from laminar to turbulent, taking the critical Reynolds number as 2000.",
+      "hint": "Use Re = rho v d / eta, solve for v with Re = 2000.",
+      "ans": "0.2 m/s"
+    },
+    {
+      "topic": "Work done when a soap bubble grows further",
+      "q": "A soap bubble of radius 1 cm (surface tension 0.03 N/m) is blown further until its radius becomes 2 cm. Find the extra work done.",
+      "hint": "Use W = 2T x 4*pi x (r2^2 - r1^2), since the bubble has two surfaces.",
+      "ans": "approx 2.26 x 10^-4 J"
+    }
+  ]
+}

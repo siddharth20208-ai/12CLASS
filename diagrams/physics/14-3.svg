@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="white"/>
+  <defs>
+    <marker id="arrowF" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="black"/>
+    </marker>
+  </defs>
+  <text x="320" y="20" font-size="16" text-anchor="middle" fill="black">Binding Energy per Nucleon vs Mass Number</text>
+
+  <line x1="70" y1="330" x2="70" y2="60" stroke="black" stroke-width="2" marker-end="url(#arrowF)"/>
+  <line x1="70" y1="330" x2="590" y2="330" stroke="black" stroke-width="2" marker-end="url(#arrowF)"/>
+  <text x="20" y="65" font-size="14" fill="black">BE/A (MeV)</text>
+  <text x="580" y="352" font-size="14" fill="black">A</text>
+  <text x="55" y="345" font-size="13" fill="black">1</text>
+  <text x="560" y="345" font-size="13" fill="black">240</text>
+
+  <path d="M 75 320 C 110 180 160 110 220 95 C 280 85 320 83 340 85 C 420 95 480 180 580 300"
+        stroke="#1e8449" stroke-width="2.5" fill="none"/>
+
+  <circle cx="330" cy="84" r="3" fill="#1e8449"/>
+  <text x="340" y="75" font-size="14" fill="black">Fe, most stable (A=56)</text>
+
+  <line x1="330" y1="84" x2="330" y2="330" stroke="black" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <line x1="150" y1="280" x2="260" y2="150" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowF)"/>
+  <text x="95" y="290" font-size="14" fill="#c0392b">fusion</text>
+
+  <line x1="500" y1="260" x2="400" y2="150" stroke="#2874a6" stroke-width="2" marker-end="url(#arrowF)"/>
+  <text x="480" y="280" font-size="14" fill="#2874a6">fission</text>
+</svg>

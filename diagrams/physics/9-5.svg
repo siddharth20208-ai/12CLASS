@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="640" height="400" fill="white"/>
+<defs>
+<marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="black"/>
+</marker>
+</defs>
+
+<text x="140" y="40" font-size="16" text-anchor="middle">Ammeter (Shunt in parallel)</text>
+
+<!-- Left: Galvanometer + shunt S parallel -->
+<circle cx="140" cy="130" r="30" stroke="black" stroke-width="2" fill="none"/>
+<text x="140" y="135" font-size="16" text-anchor="middle">G</text>
+
+<path d="M60,130 L110,130" stroke="black" stroke-width="2" fill="none"/>
+<path d="M170,130 L220,130" stroke="black" stroke-width="2" fill="none"/>
+
+<!-- shunt branch below -->
+<path d="M60,130 L60,210 L220,210 L220,130" stroke="#1a5276" stroke-width="2" fill="none"/>
+<rect x="110" y="202" width="60" height="16" fill="none" stroke="#1a5276" stroke-width="2"/>
+<text x="140" y="238" font-size="16" text-anchor="middle" fill="#1a5276">S (shunt)</text>
+
+<line x1="40" y1="130" x2="60" y2="130" stroke="black" stroke-width="2" marker-end="url(#arr)"/>
+<text x="20" y="150" font-size="14">I</text>
+<line x1="220" y1="130" x2="245" y2="130" stroke="black" stroke-width="2" marker-end="url(#arr)"/>
+<text x="230" y="150" font-size="14">I</text>
+
+<!-- Right: Galvanometer + series R, voltmeter -->
+<text x="470" y="40" font-size="16" text-anchor="middle">Voltmeter (R in series)</text>
+
+<circle cx="430" cy="130" r="30" stroke="black" stroke-width="2" fill="none"/>
+<text x="430" y="135" font-size="16" text-anchor="middle">G</text>
+
+<path d="M380,130 L400,130" stroke="black" stroke-width="2" fill="none"/>
+<path d="M460,130 L480,130" stroke="black" stroke-width="2" fill="none"/>
+<rect x="480" y="122" width="60" height="16" fill="none" stroke="#c0392b" stroke-width="2"/>
+<text x="510" y="112" font-size="16" text-anchor="middle" fill="#c0392b">R</text>
+<path d="M540,130 L580,130" stroke="black" stroke-width="2" fill="none"/>
+
+<line x1="360" y1="130" x2="380" y2="130" stroke="black" stroke-width="2" marker-end="url(#arr)"/>
+<text x="345" y="150" font-size="14">+</text>
+<line x1="580" y1="130" x2="600" y2="130" stroke="black" stroke-width="2" marker-end="url(#arr)"/>
+<text x="590" y="150" font-size="14">-</text>
+
+<text x="140" y="280" font-size="14" text-anchor="middle">Most current bypasses G through low-resistance S</text>
+<text x="430" y="280" font-size="14" text-anchor="middle">High R in series limits current through G</text>
+
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="white"/>
+  <defs>
+    <marker id="c1" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="black"/>
+    </marker>
+    <marker id="c2" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2980b9"/>
+    </marker>
+  </defs>
+  <!-- Jar -->
+  <path d="M 220 60 L 220 360 L 420 360 L 420 60" fill="#eaf4fb" stroke="black" stroke-width="2"/>
+  <text x="320" y="45" font-size="15" text-anchor="middle">Tall jar of viscous liquid</text>
+
+  <!-- Sphere -->
+  <circle cx="320" cy="200" r="22" fill="#888" stroke="black" stroke-width="2"/>
+
+  <!-- weight mg down -->
+  <line x1="320" y1="222" x2="320" y2="300" stroke="black" stroke-width="2" marker-end="url(#c1)"/>
+  <text x="330" y="280" font-size="15">mg (weight)</text>
+
+  <!-- upthrust up -->
+  <line x1="300" y1="178" x2="300" y2="110" stroke="#2980b9" stroke-width="2" marker-end="url(#c2)"/>
+  <text x="200" y="130" font-size="14" fill="#2980b9">Upthrust</text>
+
+  <!-- viscous drag up -->
+  <line x1="340" y1="178" x2="340" y2="110" stroke="#c0392b" stroke-width="2" marker-end="url(#c1)"/>
+  <text x="350" y="130" font-size="14" fill="#c0392b">Viscous drag F</text>
+
+  <text x="320" y="390" font-size="15" text-anchor="middle">At terminal velocity: mg = Upthrust + F</text>
+</svg>

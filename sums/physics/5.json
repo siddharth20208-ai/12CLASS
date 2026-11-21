@@ -3,11 +3,12 @@
     {
       "topic": "Fundamental frequency of a stretched string",
       "marks": 3,
-      "q": "A string of length 0.5 m and linear density (mass per unit length) 0.01 kg/m is stretched with a tension of 100 N. Find the fundamental frequency of vibration.",
+      "q": "A string of length 0.5 m and mass per unit length 0.01 kg/m is stretched with a tension of 100 N. Find its fundamental frequency of vibration.",
       "steps": [
-        "Given: L = 0.5 m, m = 0.01 kg/m, T = 100 N.",
-        "Formula: n = (1/2L) x sqrt(T/m).",
-        "sqrt(T/m) = sqrt(100/0.01) = sqrt(10000) = 100.",
+        "Given: L = 0.5 m, m (mass/length) = 0.01 kg/m, T = 100 N.",
+        "Formula: n = (1/2L) sqrt(T/m).",
+        "T/m = 100/0.01 = 10000.",
+        "sqrt(T/m) = sqrt(10000) = 100.",
         "n = (1/(2 x 0.5)) x 100 = (1/1) x 100.",
         "n = 100 Hz."
       ],
@@ -15,133 +16,133 @@
     },
     {
       "topic": "Harmonics of a stretched string",
+      "marks": 3,
+      "q": "A stretched string of length 1 m has mass per unit length 0.01 kg/m under tension 64 N. Find (i) the fundamental frequency and (ii) the frequency of the third harmonic.",
+      "steps": [
+        "Given: L = 1 m, m = 0.01 kg/m, T = 64 N.",
+        "Formula: n = (1/2L) sqrt(T/m).",
+        "T/m = 64/0.01 = 6400, sqrt(6400) = 80.",
+        "n (fundamental) = (1/(2x1)) x 80 = 40 Hz.",
+        "Third harmonic frequency = 3 x n = 3 x 40.",
+        "Third harmonic = 120 Hz."
+      ],
+      "ans": "Fundamental = 40 Hz; third harmonic = 120 Hz"
+    },
+    {
+      "topic": "Effect of tension change on string frequency",
       "marks": 2,
-      "q": "The fundamental frequency of a stretched string is 120 Hz. Find the frequency of its third harmonic.",
+      "q": "A stretched string vibrates with a fundamental frequency of 300 Hz when the tension is 400 N. Find the new fundamental frequency if the tension is increased to 900 N, keeping length and mass per unit length unchanged.",
       "steps": [
-        "Given: fundamental frequency n = 120 Hz.",
-        "Formula: harmonics of a string are n, 2n, 3n, ... (all integer multiples).",
-        "Third harmonic = 3 x n.",
-        "3 x 120 = 360.",
-        "Third harmonic frequency = 360 Hz."
+        "Given: n1 = 300 Hz, T1 = 400 N, T2 = 900 N.",
+        "Since n is proportional to sqrt(T) (L, m constant): n2/n1 = sqrt(T2/T1).",
+        "T2/T1 = 900/400 = 9/4, sqrt(9/4) = 3/2.",
+        "n2 = n1 x (3/2) = 300 x 1.5.",
+        "n2 = 450 Hz."
       ],
-      "ans": "360 Hz"
+      "ans": "450 Hz"
     },
     {
-      "topic": "Vibrations in an open pipe",
+      "topic": "Fundamental frequency of an open pipe",
       "marks": 3,
-      "q": "An open organ pipe of length 0.66 m resonates in its fundamental mode. If the speed of sound in air is 330 m/s, find the fundamental frequency.",
+      "q": "Find the length of an open organ pipe whose fundamental frequency is 425 Hz. Take speed of sound in air as 340 m/s.",
       "steps": [
-        "Given: L = 0.66 m, v = 330 m/s.",
-        "In an open pipe, fundamental: L = lambda/2, so lambda = 2L.",
-        "Formula: n = v/lambda = v/(2L).",
-        "n = 330/(2 x 0.66) = 330/1.32.",
-        "n = 250 Hz."
+        "Given: n = 425 Hz, v = 340 m/s, pipe is open at both ends.",
+        "Formula for open pipe: n = v/2L, so L = v/2n.",
+        "L = 340/(2 x 425) = 340/850.",
+        "L = 0.4 m."
       ],
-      "ans": "250 Hz"
+      "ans": "0.4 m"
     },
     {
-      "topic": "Vibrations in a closed pipe",
-      "marks": 3,
-      "q": "A closed organ pipe has a fundamental frequency of 170 Hz. Taking the speed of sound in air as 340 m/s, find the length of the pipe.",
+      "topic": "Fundamental frequency of a closed pipe",
+      "marks": 2,
+      "q": "A pipe closed at one end has length 0.25 m. Find its fundamental frequency of vibration. (speed of sound v = 340 m/s)",
       "steps": [
-        "Given: n = 170 Hz, v = 340 m/s.",
-        "In a closed pipe, fundamental: L = lambda/4, so lambda = 4L.",
-        "Formula: n = v/lambda = v/(4L), so L = v/(4n).",
+        "Given: L = 0.25 m, v = 340 m/s, pipe closed at one end.",
+        "Formula for closed pipe: n = v/4L.",
+        "n = 340/(4 x 0.25) = 340/1.",
+        "n = 340 Hz."
+      ],
+      "ans": "340 Hz"
+    },
+    {
+      "topic": "Length of closed pipe from a given harmonic",
+      "marks": 4,
+      "q": "The third harmonic of a closed organ pipe has a frequency of 510 Hz. Find the length of the pipe. (speed of sound v = 340 m/s)",
+      "steps": [
+        "Given: closed pipe supports only odd harmonics n, 3n, 5n, ...; third harmonic frequency = 510 Hz.",
+        "So fundamental frequency n = 510/3.",
+        "n = 170 Hz.",
+        "Formula: n = v/4L, so L = v/4n.",
         "L = 340/(4 x 170) = 340/680.",
         "L = 0.5 m."
       ],
       "ans": "0.5 m"
     },
     {
-      "topic": "Beats",
+      "topic": "Beat frequency of two tuning forks",
       "marks": 2,
-      "q": "Two tuning forks of frequencies 256 Hz and 254 Hz are sounded together. Find the beat frequency and the time interval between two successive beats.",
+      "q": "Two tuning forks of frequencies 256 Hz and 260 Hz are sounded together. Find the beat frequency and the time interval between two successive beats.",
       "steps": [
-        "Given: n1 = 256 Hz, n2 = 254 Hz.",
+        "Given: n1 = 256 Hz, n2 = 260 Hz.",
         "Formula: beat frequency = |n1 - n2|.",
-        "Beat frequency = |256 - 254| = 2.",
-        "Time interval between successive beats = 1/(beat frequency) = 1/2.",
-        "Beat frequency = 2 Hz; time interval = 0.5 s."
+        "Beat frequency = |256 - 260| = 4.",
+        "Time interval between successive beats = 1/(beat frequency) = 1/4.",
+        "Beat frequency = 4 Hz; time interval = 0.25 s."
       ],
-      "ans": "Beat frequency = 2 Hz, time interval = 0.5 s"
+      "ans": "4 Hz; interval 0.25 s"
     },
     {
-      "topic": "Effect of tension on frequency of a string",
-      "marks": 3,
-      "q": "A stretched string vibrates with a fundamental frequency of 100 Hz under a tension T. Find the new fundamental frequency if the tension is doubled, keeping length and mass per unit length constant.",
-      "steps": [
-        "Given: n1 = 100 Hz, T2 = 2 x T1, L and m constant.",
-        "Formula: n is proportional to sqrt(T), since n = (1/2L)sqrt(T/m).",
-        "n2/n1 = sqrt(T2/T1) = sqrt(2).",
-        "n2 = 100 x sqrt(2) = 100 x 1.414 (using sqrt(2) = 1.414 from tables).",
-        "n2 = 141.4 Hz."
-      ],
-      "ans": "141.4 Hz"
-    },
-    {
-      "topic": "End correction using resonance tube",
+      "topic": "Resonance tube method for speed of sound",
       "marks": 4,
-      "q": "In a resonance tube experiment, the first and second resonance lengths of an air column are found to be 0.17 m and 0.52 m respectively for a tuning fork. Find the wavelength of sound and the end correction of the tube.",
+      "q": "In a resonance tube experiment, the first and second resonance lengths of the air column are found to be 0.17 m and 0.52 m respectively, using a tuning fork of frequency 512 Hz. Find the speed of sound in air.",
       "steps": [
-        "Given: l1 = 0.17 m, l2 = 0.52 m.",
-        "Formula: for successive resonances, l2 - l1 = lambda/2, so lambda = 2(l2 - l1).",
-        "lambda = 2 x (0.52 - 0.17) = 2 x 0.35 = 0.70 m.",
-        "Formula for end correction: e = (l2 - 3*l1)/2.",
-        "e = (0.52 - 3 x 0.17)/2 = (0.52 - 0.51)/2 = 0.01/2.",
-        "lambda = 0.70 m, end correction e = 0.005 m."
+        "Given: L1 = 0.17 m, L2 = 0.52 m, fork frequency n = 512 Hz.",
+        "Since successive resonances in a closed pipe occur at odd harmonics, L2 - L1 = lambda/2.",
+        "Formula: v = n x lambda = 2n(L2 - L1).",
+        "L2 - L1 = 0.52 - 0.17 = 0.35 m.",
+        "v = 2 x 512 x 0.35 = 1024 x 0.35.",
+        "v = 358.4 m/s."
       ],
-      "ans": "lambda = 0.70 m, end correction = 0.005 m (0.5 cm)"
-    },
-    {
-      "topic": "Harmonics of a closed pipe",
-      "marks": 2,
-      "q": "The fundamental frequency of a closed organ pipe is 100 Hz. State and calculate the frequencies of the next two harmonics present in this pipe.",
-      "steps": [
-        "Given: fundamental frequency n = 100 Hz for a closed pipe.",
-        "Rule: a closed pipe (closed at one end) supports only odd harmonics: n, 3n, 5n, ...",
-        "Next harmonic after fundamental is the 3rd harmonic: 3 x 100 = 300.",
-        "Harmonic after that is the 5th harmonic: 5 x 100 = 500.",
-        "Next two harmonics present = 300 Hz and 500 Hz (the 2nd and 4th harmonics are absent)."
-      ],
-      "ans": "300 Hz and 500 Hz"
+      "ans": "358.4 m/s"
     }
   ],
   "practice": [
     {
-      "topic": "Fundamental frequency and length of string",
-      "q": "A string vibrating with a fundamental frequency of 100 Hz has its length halved while the tension is kept unchanged. Find the new fundamental frequency.",
-      "hint": "n = (1/2L)sqrt(T/m); n is inversely proportional to L, so halving L doubles n.",
+      "topic": "Fundamental frequency of a string",
+      "q": "A string of length 0.6 m and mass per unit length 0.004 kg/m is stretched with a tension of 90 N. Find its fundamental frequency.",
+      "hint": "Use n = (1/2L) sqrt(T/m).",
+      "ans": "125 Hz"
+    },
+    {
+      "topic": "Harmonics of a string",
+      "q": "A string has a fundamental frequency of 50 Hz. Find the frequency of its second overtone.",
+      "hint": "Second overtone is the third harmonic: frequency = 3n.",
+      "ans": "150 Hz"
+    },
+    {
+      "topic": "Open pipe fundamental frequency",
+      "q": "Find the fundamental frequency of an open pipe of length 0.85 m. (v = 340 m/s)",
+      "hint": "Use n = v/2L for an open pipe.",
       "ans": "200 Hz"
     },
     {
-      "topic": "Harmonics of an open pipe",
-      "q": "An open pipe of length 0.5 m resonates with air. Taking the speed of sound as 340 m/s, find the frequency of the second harmonic of this pipe.",
-      "hint": "For an open pipe, n_p = p*v/(2L); second harmonic means p = 2.",
-      "ans": "680 Hz"
-    },
-    {
-      "topic": "Fundamental frequency of closed pipe",
-      "q": "A closed pipe has length 0.25 m. Taking the speed of sound in air as 340 m/s, find its fundamental frequency.",
-      "hint": "For a closed pipe, fundamental n = v/(4L).",
-      "ans": "340 Hz"
+      "topic": "Closed pipe length",
+      "q": "Find the length of a closed pipe whose fundamental frequency is 425 Hz. (v = 340 m/s)",
+      "hint": "Use n = v/4L for a closed pipe, solve for L.",
+      "ans": "0.2 m"
     },
     {
       "topic": "Beat frequency",
-      "q": "Two sound waves of frequencies 300 Hz and 295 Hz are produced simultaneously. Find the beat frequency and the number of beats heard in 10 seconds.",
-      "hint": "Beat frequency = |n1 - n2|; beats in time t = (beat frequency) x t.",
-      "ans": "Beat frequency = 5 Hz, beats in 10 s = 50"
+      "q": "Two tuning forks produce 5 beats per second. If one fork has a frequency of 512 Hz, find the possible frequency of the other fork.",
+      "hint": "Beat frequency = |n1 - n2|; the unknown fork can be either n1 + 5 or n1 - 5.",
+      "ans": "507 Hz or 517 Hz"
     },
     {
-      "topic": "Effect of tension on string frequency",
-      "q": "A stretched string has a fundamental frequency of 50 Hz under tension T. Find the new fundamental frequency if the tension is made 4 times the original value, with length and mass per unit length unchanged.",
-      "hint": "n is proportional to sqrt(T); find n2/n1 = sqrt(T2/T1).",
-      "ans": "100 Hz"
-    },
-    {
-      "topic": "Stationary waves - node spacing",
-      "q": "A stationary wave is formed with wavelength 0.8 m. Find the distance between two consecutive nodes and between a node and the next antinode.",
-      "hint": "Distance between consecutive nodes = lambda/2; distance between a node and adjacent antinode = lambda/4.",
-      "ans": "Node-node = 0.4 m, node-antinode = 0.2 m"
+      "topic": "Ratio of open and closed pipe fundamentals",
+      "q": "An open pipe and a closed pipe of the same length have fundamental frequencies n_open and n_closed. Find the ratio n_open : n_closed.",
+      "hint": "n_open = v/2L and n_closed = v/4L for the same L.",
+      "ans": "2 : 1"
     }
   ]
 }

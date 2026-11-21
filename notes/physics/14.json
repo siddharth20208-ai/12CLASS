@@ -11,7 +11,8 @@
     ],
     "formula": "L = m v r = n h / (2 pi);  h v = Ei - Ef",
     "diagram": {
-      "draw": "Draw a small nucleus at the centre. Draw three concentric circular orbits around it labelled n=1, n=2, n=3. Show an electron on orbit n=3 with an arrow jumping inward to orbit n=1, and label the emitted photon arrow 'hv'."
+      "draw": "Draw a small nucleus at the centre. Draw three concentric circular orbits around it labelled n=1, n=2, n=3. Show an electron on orbit n=3 with an arrow jumping inward to orbit n=1, and label the emitted photon arrow 'hv'.",
+      "svg": "diagrams/physics/14-0.svg"
     },
     "example": "For hydrogen in n=1 orbit, angular momentum L = h/(2 pi) = 1.05 x 10^-34 kg m^2/s.",
     "tip": "List all four postulates in order — this is a standard 'state Bohr's postulates' question worth full marks for correct sequencing."
@@ -29,7 +30,8 @@
     ],
     "formula": "En = -13.6/n^2 eV;  1/lambda = R (1/nf^2 - 1/ni^2)",
     "diagram": {
-      "draw": "Draw horizontal lines stacked with increasing spacing getting closer together, labelled n=1 (bottom) up to n=infinity (top). Draw downward arrows between levels showing transitions to n=1 labelled 'Lyman series' and transitions to n=2 labelled 'Balmer series'."
+      "draw": "Draw horizontal lines stacked with increasing spacing getting closer together, labelled n=1 (bottom) up to n=infinity (top). Draw downward arrows between levels showing transitions to n=1 labelled 'Lyman series' and transitions to n=2 labelled 'Balmer series'.",
+      "svg": "diagrams/physics/14-1.svg"
     },
     "example": "Energy of n=2 level: E2 = -13.6/4 = -3.4 eV. Transition from n=3 to n=2 releases energy = (-1.51) - (-3.4) = 1.89 eV, a Balmer line.",
     "tip": "Remember the series names in order (Lyman, Balmer, Paschen) with their final energy level — a common one-mark question."
@@ -65,7 +67,8 @@
     ],
     "formula": "Binding energy per nucleon = (delta m c^2) / A",
     "diagram": {
-      "draw": "Draw a graph with mass number A on the x-axis and binding energy per nucleon (MeV) on the y-axis. Show the curve rising steeply from A=1, peaking around A=56 (label 'Fe, most stable'), then gradually decreasing towards A=240. Mark arrows showing 'fusion' region on the left and 'fission' region on the right, both pointing towards the peak."
+      "draw": "Draw a graph with mass number A on the x-axis and binding energy per nucleon (MeV) on the y-axis. Show the curve rising steeply from A=1, peaking around A=56 (label 'Fe, most stable'), then gradually decreasing towards A=240. Mark arrows showing 'fusion' region on the left and 'fission' region on the right, both pointing towards the peak.",
+      "svg": "diagrams/physics/14-3.svg"
     },
     "example": "Iron-56 has binding energy per nucleon about 8.8 MeV, near the maximum, which is why iron nuclei are extremely stable.",
     "tip": "Draw the BE/A vs A graph with the peak at A=56 clearly marked — this diagram is asked very frequently."
@@ -83,7 +86,8 @@
     ],
     "formula": "N = N0 e^(-lambda t);  T1/2 = 0.693/lambda;  N = N0 (1/2)^(t/T1/2)",
     "diagram": {
-      "draw": "Draw a graph with time t on the x-axis and number of undecayed nuclei N on the y-axis. Draw a smooth curve starting at N0 and decreasing exponentially, never touching the x-axis. Mark the time T1/2 on the x-axis where N falls to N0/2, and 2T1/2 where it falls to N0/4."
+      "draw": "Draw a graph with time t on the x-axis and number of undecayed nuclei N on the y-axis. Draw a smooth curve starting at N0 and decreasing exponentially, never touching the x-axis. Mark the time T1/2 on the x-axis where N falls to N0/2, and 2T1/2 where it falls to N0/4.",
+      "svg": "diagrams/physics/14-4.svg"
     },
     "example": "A sample with N0 = 1000 nuclei and half-life 10 days: after 30 days (3 half-lives), N = 1000 x (1/2)^3 = 125 nuclei remaining.",
     "tip": "For numericals, use N = N0 (1/2)^(t/T) when t is a whole multiple of half-life; otherwise use the exponential form with lambda."

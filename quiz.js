@@ -9,25 +9,31 @@ window.loadQuiz = async function (el, s, i) {
     el.innerHTML = `<p class="lead">The MCQ test for this chapter is being prepared. Check back soon.</p>`;
     return;
   }
+  window.renderMcqs(el, qs, (right) => showScore(el, s, i, right, qs.length));
+};
+
+// Shared MCQ UI: tap an option -> instant right/wrong + reason. onDone(right, perQuestionOk[]) when all answered.
+window.renderMcqs = function (el, qs, onDone) {
   let answered = 0, right = 0;
+  const okList = [];
   el.innerHTML = qs.map((x, n) => `
     <div class="unit mcq" data-n="${n}">
-      <p class="mq"><b>Q${n + 1}.</b> ${fmt(x.q)}</p>
+      <p class="mq"><b>Q${n + 1}.</b> ${fmt(x.q)}${x.from ? ` <span class="src">${fmt(x.from)}</span>` : ""}</p>
       ${x.o.map((o, k) => `<button class="opt" data-k="${k}">${"ABCD"[k]}. ${fmt(o)}</button>`).join("")}
       <div class="why" hidden></div>
     </div>`).join("") + `<div class="unit score" hidden></div>`;
-
   el.querySelectorAll(".mcq").forEach((box) => box.addEventListener("click", (e) => {
     const btn = e.target.closest(".opt");
     if (!btn || box.dataset.done) return;
     box.dataset.done = "1";
-    const x = qs[box.dataset.n], k = +btn.dataset.k, ok = k === x.a;
+    const n = +box.dataset.n, x = qs[n], k = +btn.dataset.k, ok = k === x.a;
+    okList[n] = ok;
     box.querySelectorAll(".opt")[x.a].classList.add("ok");
     if (ok) right++; else btn.classList.add("bad");
     const why = box.querySelector(".why");
     why.hidden = false;
     why.innerHTML = `<b>${ok ? "Correct!" : "Wrong."}</b> ${fmt(x.why)}`;
-    if (++answered === qs.length) showScore(el, s, i, right, qs.length);
+    if (++answered === qs.length) onDone(right, okList);
   }));
 };
 

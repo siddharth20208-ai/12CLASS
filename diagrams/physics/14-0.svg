@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="white"/>
+  <defs>
+    <marker id="arrowB" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#b7950b"/>
+    </marker>
+  </defs>
+  <text x="320" y="20" font-size="16" text-anchor="middle" fill="black">Bohr's Atomic Model</text>
+
+  <circle cx="320" cy="210" r="8" fill="#c0392b"/>
+  <text x="330" y="205" font-size="13" fill="black">nucleus</text>
+
+  <circle cx="320" cy="210" r="50" fill="none" stroke="black" stroke-width="1.5"/>
+  <circle cx="320" cy="210" r="95" fill="none" stroke="black" stroke-width="1.5"/>
+  <circle cx="320" cy="210" r="140" fill="none" stroke="black" stroke-width="1.5"/>
+
+  <text x="325" y="265" font-size="14" fill="black">n=1</text>
+  <text x="325" y="320" font-size="14" fill="black">n=2</text>
+  <text x="325" y="356" font-size="14" fill="black">n=3</text>
+
+  <!-- electron on n=3 -->
+  <circle cx="460" cy="210" r="5" fill="#2874a6"/>
+  <text x="465" y="200" font-size="13" fill="#2874a6">electron</text>
+
+  <!-- jump arrow from n=3 to n=1 -->
+  <path d="M 452 215 Q 400 260 370 215" stroke="#b7950b" stroke-width="2" fill="none" marker-end="url(#arrowB)"/>
+  <text x="380" y="255" font-size="14" fill="#b7950b">hv (photon)</text>
+</svg>

@@ -29,7 +29,8 @@
     ],
     "formula": "I = Ic + M h²",
     "diagram": {
-      "draw": "Draw a rod horizontally. Draw a vertical dashed line through its middle and label it 'Axis through CM (Ic)'. Draw a second vertical dashed line at the left end, label it 'Parallel axis (I)'. Mark the gap between them with an arrow labelled 'h'."
+      "draw": "Draw a rod horizontally. Draw a vertical dashed line through its middle and label it 'Axis through CM (Ic)'. Draw a second vertical dashed line at the left end, label it 'Parallel axis (I)'. Mark the gap between them with an arrow labelled 'h'.",
+      "svg": "diagrams/physics/0-1.svg"
     },
     "example": "Uniform rod, mass M, length L. About the centre Ic = ML^2/12. About one end, h = L/2: I = ML^2/12 + M(L/2)^2 = ML^2/12 + ML^2/4 = ML^2/3.",
     "tip": "The rod-about-end result ML²/3 is the most common application — practise deriving it in 3 lines."
@@ -46,7 +47,8 @@
     ],
     "formula": "Iz = Ix + Iy",
     "diagram": {
-      "draw": "Draw a flat disc. Draw X and Y axes crossing at its centre in the plane of the disc. Draw the Z axis coming straight out of the centre (perpendicular to the page). Label Ix, Iy, Iz."
+      "draw": "Draw a flat disc. Draw X and Y axes crossing at its centre in the plane of the disc. Draw the Z axis coming straight out of the centre (perpendicular to the page). Label Ix, Iy, Iz.",
+      "svg": "diagrams/physics/0-2.svg"
     },
     "example": "Disc about its central perpendicular axis: Iz = MR^2/2. Since Ix = Iy, Ix = Iz/2 = MR^2/4 (moment of inertia about a diameter).",
     "tip": "Clearly state 'valid only for a plane lamina' — examiners deduct marks if this condition is missing."
@@ -80,7 +82,8 @@
     ],
     "formula": "tan θ = v² / (r g)     v = √(r g tan θ)",
     "diagram": {
-      "draw": "Draw an inclined line (road) at angle θ. Place a box (car) on it. Draw mg straight down, N perpendicular to the road surface. Resolve N into N cos θ (up) and N sin θ (towards the centre of the curve). Label θ."
+      "draw": "Draw an inclined line (road) at angle θ. Place a box (car) on it. Draw mg straight down, N perpendicular to the road surface. Resolve N into N cos θ (up) and N sin θ (towards the centre of the curve). Label θ.",
+      "svg": "diagrams/physics/0-4.svg"
     },
     "example": "Curve radius r = 50 m, banking θ = 15° (tan 15° ≈ 0.268), g = 9.8: v = sqrt(50 x 9.8 x 0.268) = sqrt(131.3) ≈ 11.5 m/s.",
     "tip": "The force diagram carries 1–2 marks by itself — draw it neatly with all components labelled."

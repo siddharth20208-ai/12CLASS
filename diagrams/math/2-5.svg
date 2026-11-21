@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <rect width="640" height="400" fill="#ffffff"/>
+  <polygon points="200,80 120,340 460,340" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="200" y="65" font-family="Arial, sans-serif" font-size="16" fill="#222222" text-anchor="middle">A</text>
+  <text x="105" y="355" font-family="Arial, sans-serif" font-size="16" fill="#222222" text-anchor="middle">B</text>
+  <text x="475" y="355" font-family="Arial, sans-serif" font-size="16" fill="#222222" text-anchor="middle">C</text>
+
+  <text x="140" y="215" font-family="Arial, sans-serif" font-size="15" fill="#1565c0" transform="rotate(-72 140 215)">c</text>
+  <text x="340" y="215" font-family="Arial, sans-serif" font-size="15" fill="#c62828">b</text>
+
+  <path d="M 185 110 A 28 28 0 0 1 220 120" fill="none" stroke="#2e7d32" stroke-width="2"/>
+  <text x="200" y="100" font-family="Arial, sans-serif" font-size="14" fill="#2e7d32" text-anchor="middle">A</text>
+</svg>

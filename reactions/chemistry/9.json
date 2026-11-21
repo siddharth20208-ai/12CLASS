@@ -1,0 +1,122 @@
+{
+  "named": [
+    {
+      "name": "Preparation of alkyl halide from alcohol using thionyl chloride",
+      "eq": "CH3CH2OH + SOCl2 -> CH3CH2Cl + SO2 + HCl",
+      "cond": "SOCl2, warm, (pyridine sometimes added)",
+      "tip": "Best lab method because SO2 and HCl escape as gases, leaving pure alkyl chloride; examiners ask 'why is this the best method'."
+    },
+    {
+      "name": "Finkelstein reaction",
+      "eq": "CH3CH2Br + NaI -> CH3CH2I + NaBr",
+      "cond": "dry acetone, NaI",
+      "tip": "NaBr/NaCl formed is insoluble in dry acetone, driving equilibrium forward; a common fill-in-the-blank question."
+    },
+    {
+      "name": "Swarts reaction",
+      "eq": "CH3Br + AgF -> CH3F + AgBr",
+      "cond": "AgF or Hg2F2 or CoF2 or SbF3",
+      "tip": "Used specifically to prepare alkyl fluorides; students often confuse it with Finkelstein (iodide) reaction."
+    },
+    {
+      "name": "Wurtz reaction",
+      "eq": "2CH3CH2Br + 2Na -> CH3CH2CH2CH3 + 2NaBr",
+      "cond": "dry ether, Na metal",
+      "tip": "Gives symmetrical alkane with double the carbon atoms; fails to give good yield for unsymmetrical products, mention 'dry ether' condition."
+    },
+    {
+      "name": "Wurtz-Fittig reaction",
+      "eq": "C6H5Br + CH3CH2Br + 2Na -> C6H5CH2CH3 + 2NaBr",
+      "cond": "dry ether, Na metal",
+      "tip": "Used to attach an alkyl group to benzene ring; distinguish from Fittig reaction (only aryl halides, gives biphenyl type product)."
+    },
+    {
+      "name": "Fittig reaction",
+      "eq": "2C6H5Br + 2Na -> C6H5-C6H5 + 2NaBr",
+      "cond": "dry ether, Na metal",
+      "tip": "Only aryl halides used, product is diphenyl (biphenyl); common confusion with Wurtz-Fittig."
+    },
+    {
+      "name": "Williamson synthesis (ether formation from haloalkane)",
+      "eq": "CH3CH2Br + CH3CH2ONa -> CH3CH2OCH2CH3 + NaBr",
+      "cond": "sodium alkoxide, SN2 mechanism",
+      "tip": "Works best with primary alkyl halides; tertiary halides give elimination (alkene) instead due to steric hindrance - frequently tested."
+    },
+    {
+      "name": "Dehydrohalogenation (elimination) of alkyl halide",
+      "eq": "CH3CH2Br + KOH(alc) -> CH2=CH2 + KBr + H2O",
+      "cond": "alcoholic KOH, heat",
+      "tip": "Alcoholic KOH gives elimination (alkene) while aqueous KOH gives substitution (alcohol) - a classic exam distinction."
+    },
+    {
+      "name": "Nitration of chlorobenzene (electrophilic substitution)",
+      "eq": "2C6H5Cl + 2HNO3 -> o-ClC6H4NO2 + p-ClC6H4NO2 + 2H2O",
+      "cond": "conc. HNO3 + conc. H2SO4, 60 C",
+      "tip": "Cl is o,p-directing but deactivating due to -I effect dominating over +R effect; explain this duality when asked."
+    },
+    {
+      "name": "Hydrolysis of chlorobenzene to phenol (Dow process)",
+      "eq": "C6H5Cl + NaOH -> C6H5OH + NaCl",
+      "cond": "NaOH, 623 K, 300 atm pressure",
+      "tip": "Needs high temperature and pressure because aryl halides resist nucleophilic substitution (C-Cl bond strengthened by resonance); common HOTS question."
+    }
+  ],
+  "conversions": [
+    {
+      "q": "Convert ethanol to ethyl chloride (HSC style)",
+      "steps": [
+        "step 1: CH3CH2OH + SOCl2 -> CH3CH2Cl + SO2 + HCl (SOCl2, warm)"
+      ],
+      "ans": "Ethanol + SOCl2 gives ethyl chloride directly (best method, pure product)."
+    },
+    {
+      "q": "Convert ethyl bromide to butane",
+      "steps": [
+        "step 1: 2CH3CH2Br + 2Na -> CH3CH2CH2CH3 + 2NaBr (dry ether, Wurtz reaction)"
+      ],
+      "ans": "Wurtz reaction on ethyl bromide gives n-butane."
+    },
+    {
+      "q": "Convert ethyl bromide to ethyl iodide",
+      "steps": [
+        "step 1: CH3CH2Br + NaI -> CH3CH2I + NaBr (dry acetone, Finkelstein reaction)"
+      ],
+      "ans": "Treat ethyl bromide with NaI in dry acetone (Finkelstein reaction) to get ethyl iodide."
+    },
+    {
+      "q": "Convert methyl bromide to methyl fluoride",
+      "steps": [
+        "step 1: CH3Br + AgF -> CH3F + AgBr (Swarts reaction)"
+      ],
+      "ans": "Treat methyl bromide with AgF (Swarts reaction) to get methyl fluoride."
+    },
+    {
+      "q": "Convert ethyl bromide to ethanol",
+      "steps": [
+        "step 1: CH3CH2Br + KOH(aq) -> CH3CH2OH + KBr (aqueous KOH, SN2 substitution)"
+      ],
+      "ans": "Aqueous KOH substitutes bromide to give ethanol."
+    },
+    {
+      "q": "Convert ethyl bromide to ethene",
+      "steps": [
+        "step 1: CH3CH2Br + KOH(alc) -> CH2=CH2 + KBr + H2O (alcoholic KOH, dehydrohalogenation)"
+      ],
+      "ans": "Alcoholic KOH causes elimination of HBr to give ethene."
+    },
+    {
+      "q": "Convert chlorobenzene to phenol",
+      "steps": [
+        "step 1: C6H5Cl + NaOH -> C6H5OH + NaCl (623 K, 300 atm, Dow process)"
+      ],
+      "ans": "Hydrolyse chlorobenzene with NaOH under high temperature and pressure (Dow process) to get phenol."
+    },
+    {
+      "q": "Convert bromobenzene and bromoethane to ethylbenzene",
+      "steps": [
+        "step 1: C6H5Br + CH3CH2Br + 2Na -> C6H5CH2CH3 + 2NaBr (dry ether, Wurtz-Fittig reaction)"
+      ],
+      "ans": "Wurtz-Fittig reaction of bromobenzene with ethyl bromide and Na gives ethylbenzene."
+    }
+  ]
+}

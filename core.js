@@ -7,7 +7,7 @@ const isHsc = () => board === "hsc";
 
 function head(key, title, backHref, backLabel) {
   return `<a class="back" href="${backHref}">← ${backLabel}</a>
-    <div class="subhead"><span class="dot b-${key}" style="width:16px;height:16px"></span><h1 class="c-${key}">${title}</h1></div>`;
+    <div class="subhead"><h1 class="c-${key}">${title}</h1></div>`;
 }
 
 function progressBar(key, s) {

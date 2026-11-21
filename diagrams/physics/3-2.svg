@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="white"/>
+  <defs>
+    <marker id="f1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="black"/>
+    </marker>
+  </defs>
+  <!-- Axes -->
+  <line x1="80" y1="340" x2="580" y2="340" stroke="black" stroke-width="2" marker-end="url(#f1)"/>
+  <line x1="80" y1="340" x2="80" y2="50" stroke="black" stroke-width="2" marker-end="url(#f1)"/>
+  <text x="600" y="345" font-size="16">V</text>
+  <text x="65" y="45" font-size="16">P</text>
+
+  <!-- Curve from A to B -->
+  <path d="M 180 110 Q 320 150 460 230" fill="none" stroke="#2980b9" stroke-width="2.5"/>
+  <circle cx="180" cy="110" r="4" fill="black"/>
+  <circle cx="460" cy="230" r="4" fill="black"/>
+  <text x="170" y="95" font-size="15">A (P1,V1)</text>
+  <text x="470" y="225" font-size="15">B (P2,V2)</text>
+
+  <!-- Shaded area under curve -->
+  <path d="M 180 110 Q 320 150 460 230 L 460 340 L 180 340 Z" fill="#cfe8fb" opacity="0.7"/>
+  <text x="300" y="300" font-size="15" text-anchor="middle">work done = shaded area</text>
+
+  <!-- V1, V2 labels -->
+  <line x1="180" y1="340" x2="180" y2="345" stroke="black" stroke-width="1"/>
+  <text x="180" y="358" font-size="14" text-anchor="middle">V1</text>
+  <line x1="460" y1="340" x2="460" y2="345" stroke="black" stroke-width="1"/>
+  <text x="460" y="358" font-size="14" text-anchor="middle">V2</text>
+</svg>

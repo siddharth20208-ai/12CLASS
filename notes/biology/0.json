@@ -10,7 +10,9 @@
       "In grafting, a scion (desired shoot) is joined on to a stock (rooted plant) of a different variety.",
       "This method is fast and keeps desirable traits of the parent unchanged, unlike seed propagation."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Vegetative part of parent\"] --> B[\"Cutting Layering or Grafting\"]\n  B --> C[\"Develops roots or shoots\"]\n  C --> D[\"New plant genetically identical to parent\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Vegetative part of parent\"] --> B[\"Cutting Layering or Grafting\"]\n  B --> C[\"Develops roots or shoots\"]\n  C --> D[\"New plant genetically identical to parent\"]"
+    },
     "example": "Potato tuber has 'eyes' (buds); each eye planted in soil can sprout into a full new potato plant, identical to the parent plant.",
     "tip": "Give one natural and one artificial example with the plant name; examiners award separate marks for each correct example."
   },
@@ -25,7 +27,9 @@
       "Biotic agents: insects (entomophily), birds (ornithophily) and bats (chiropterophily) carry pollen while visiting flowers for nectar.",
       "Cross-pollinated flowers usually show adaptations like bright colour, scent, nectar or large pollen output to attract or compensate loss."
     ],
-    "diagram": { "mermaid": "flowchart TD\n  A[\"Pollination\"] --> B[\"Self pollination\"]\n  A --> C[\"Cross pollination\"]\n  B --> D[\"Autogamy and Geitonogamy\"]\n  C --> E[\"Xenogamy\"]\n  C --> F[\"Agents: wind water insects birds\"]" },
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Pollination\"] --> B[\"Self pollination\"]\n  A --> C[\"Cross pollination\"]\n  B --> D[\"Autogamy and Geitonogamy\"]\n  C --> E[\"Xenogamy\"]\n  C --> F[\"Agents: wind water insects birds\"]"
+    },
     "example": "Maize is wind-pollinated (anemophily): it produces huge amounts of light, dry pollen that is carried by wind to the feathery stigma of another plant.",
     "tip": "State the type, the agent and one plant example together — partial answers without an example lose marks."
   },
@@ -41,7 +45,10 @@
       "The ovule is attached to the ovary wall by a stalk called the funiculus, meeting at a point called the hilum."
     ],
     "formula": "4 microsporangia per anther; embryo sac = 1 egg + 2 synergids + 3 antipodals + 2 polar nuclei (8 nuclei, 7 cells)",
-    "diagram": { "draw": "Draw a bilobed anther in T.S. showing 4 pollen sacs filled with pollen grains, label epidermis, endothecium, tapetum. Separately draw an ovule: label funiculus, hilum, micropyle, integument, nucellus, and embryo sac with egg cell, synergids, polar nuclei and antipodal cells." },
+    "diagram": {
+      "draw": "Draw a bilobed anther in T.S. showing 4 pollen sacs filled with pollen grains, label epidermis, endothecium, tapetum. Separately draw an ovule: label funiculus, hilum, micropyle, integument, nucellus, and embryo sac with egg cell, synergids, polar nuclei and antipodal cells.",
+      "svg": "diagrams/biology/0-2.svg"
+    },
     "example": "In the embryo sac, the egg cell plus two synergids form the egg apparatus near the micropylar end, which is where the pollen tube enters during fertilization.",
     "tip": "Labelled diagrams of anther T.S. and embryo sac are asked almost every year — practise drawing them neatly within 2 minutes."
   },
@@ -56,7 +63,9 @@
       "Because both syngamy and triple fusion occur in the same embryo sac, the process is called double fertilization.",
       "The zygote develops into the embryo, and the PEN develops into the nutritive endosperm tissue."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Pollen tube enters via micropyle\"] --> B[\"Releases 2 male gametes\"]\n  B --> C[\"Male gamete + egg cell = Zygote\"]\n  B --> D[\"Male gamete + 2 polar nuclei = PEN\"]\n  C --> E[\"Embryo\"]\n  D --> F[\"Endosperm\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Pollen tube enters via micropyle\"] --> B[\"Releases 2 male gametes\"]\n  B --> C[\"Male gamete + egg cell = Zygote\"]\n  B --> D[\"Male gamete + 2 polar nuclei = PEN\"]\n  C --> E[\"Embryo\"]\n  D --> F[\"Endosperm\"]"
+    },
     "example": "In maize, after double fertilization, the zygote becomes the embryo and the large triploid endosperm stores starch that we eat as corn kernels.",
     "tip": "Clearly separate syngamy (2n zygote) from triple fusion (3n PEN) — examiners check the ploidy numbers specifically."
   },
@@ -71,7 +80,9 @@
       "Commercially seen in Citrus and mango seeds, which often give rise to more than one seedling.",
       "Both apomixis and polyembryony are of great use in producing uniform hybrid seeds without loss of hybrid vigor in later generations."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Ovule cells (diploid)\"] --> B[\"No meiosis no fertilization\"]\n  B --> C[\"Apomictic embryo (clone of mother)\"]\n  A --> D[\"Extra nucellar cells also form embryos\"]\n  D --> E[\"Polyembryony: many embryos in one seed\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Ovule cells (diploid)\"] --> B[\"No meiosis no fertilization\"]\n  B --> C[\"Apomictic embryo (clone of mother)\"]\n  A --> D[\"Extra nucellar cells also form embryos\"]\n  D --> E[\"Polyembryony: many embryos in one seed\"]"
+    },
     "example": "A single Citrus seed can produce two or more seedlings because the zygotic embryo plus extra nucellar embryos develop together — this is polyembryony.",
     "tip": "Mention the agricultural importance: apomixis fixes hybrid vigor so farmers do not need to buy new hybrid seed every year — this is a common 2-mark add-on."
   },
@@ -86,7 +97,9 @@
       "If a fruit develops without fertilization, it is seedless and is called a parthenocarpic fruit (e.g. banana).",
       "Fruits help in seed protection and dispersal by wind, water or animals."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Zygote\"] --> B[\"Embryo\"]\n  C[\"PEN\"] --> D[\"Endosperm\"]\n  E[\"Integument\"] --> F[\"Seed coat\"]\n  G[\"Ovary wall\"] --> H[\"Pericarp (fruit)\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Zygote\"] --> B[\"Embryo\"]\n  C[\"PEN\"] --> D[\"Endosperm\"]\n  E[\"Integument\"] --> F[\"Seed coat\"]\n  G[\"Ovary wall\"] --> H[\"Pericarp (fruit)\"]"
+    },
     "example": "In banana, auxin-like hormones are applied to the ovary without pollination, producing a seedless (parthenocarpic) fruit that we eat.",
     "tip": "Give the part-to-part mapping (zygote to embryo, PEN to endosperm, integument to seed coat, ovary wall to pericarp) as a quick table for full marks."
   }

@@ -1,0 +1,147 @@
+{
+  "solved": [
+    {
+      "topic": "Hess's law - enthalpy of formation from combustion data",
+      "marks": 3,
+      "q": "Calculate the standard enthalpy of formation of methane, CH4(g), given: C(s) + O2(g) -> CO2(g), dH1 = -394 kJ/mol; H2(g) + 1/2 O2(g) -> H2O(l), dH2 = -286 kJ/mol; CH4(g) + 2O2(g) -> CO2(g) + 2H2O(l), dH3 = -890 kJ/mol.",
+      "steps": [
+        "Given: dH1 = -394 kJ/mol, dH2 = -286 kJ/mol, dH3 = -890 kJ/mol.",
+        "Target reaction: C(s) + 2H2(g) -> CH4(g), so dHf(CH4) = dH1 + 2(dH2) - dH3 (by Hess's law, adding reactions 1 and twice reaction 2, then subtracting reaction 3 to cancel CO2 and H2O).",
+        "Substitution: dHf(CH4) = (-394) + 2(-286) - (-890) kJ/mol.",
+        "Calculation: -394 - 572 + 890 = -76 kJ/mol.",
+        "Answer: dHf(CH4) = -76 kJ/mol."
+      ],
+      "ans": "dHf(CH4) = -76 kJ/mol"
+    },
+    {
+      "topic": "Gibbs free energy and spontaneity",
+      "marks": 2,
+      "q": "For a reaction, dH = +50 kJ/mol and dS = +100 J/K/mol at T = 400 K. Calculate dG and state whether the reaction is spontaneous.",
+      "steps": [
+        "Given: dH = 50 kJ/mol = 50000 J/mol, dS = 100 J/K/mol, T = 400 K.",
+        "Formula: dG = dH - T dS.",
+        "Substitution: dG = 50000 - 400 x 100 = 50000 - 40000 J/mol.",
+        "Calculation: dG = +10000 J/mol = +10 kJ/mol.",
+        "Answer: dG = +10 kJ/mol; since dG > 0, the reaction is non-spontaneous at 400 K."
+      ],
+      "ans": "dG = +10 kJ/mol; non-spontaneous"
+    },
+    {
+      "topic": "Temperature at which a reaction becomes spontaneous",
+      "marks": 3,
+      "q": "A reaction has dH = +60 kJ/mol and dS = +150 J/K/mol. Find the minimum temperature above which the reaction becomes spontaneous.",
+      "steps": [
+        "Given: dH = 60 kJ/mol = 60000 J/mol, dS = 150 J/K/mol.",
+        "At the point the reaction just becomes spontaneous, dG = 0, so dH = T dS.",
+        "Formula: T = dH / dS.",
+        "Substitution: T = 60000 / 150.",
+        "Calculation: T = 400 K.",
+        "Answer: the reaction becomes spontaneous for T > 400 K."
+      ],
+      "ans": "T = 400 K (spontaneous above this temperature)"
+    },
+    {
+      "topic": "Entropy change during a phase transition",
+      "marks": 2,
+      "q": "A solid melts at 273 K absorbing 5460 J/mol of heat. Calculate the entropy change of fusion, dSfus.",
+      "steps": [
+        "Given: dHfus = 5460 J/mol, T = 273 K (melting is a reversible, constant-T, constant-P process).",
+        "Formula: dSfus = dHfus / T.",
+        "Substitution: dSfus = 5460 / 273.",
+        "Calculation: dSfus = 20 J/K/mol.",
+        "Answer: dSfus = 20 J/K/mol."
+      ],
+      "ans": "dSfus = 20 J/K/mol"
+    },
+    {
+      "topic": "First law of thermodynamics (dU = q + w)",
+      "marks": 2,
+      "q": "A system absorbs 500 J of heat from the surroundings while the surroundings do 200 J of work on the system. Calculate the change in internal energy, dU.",
+      "steps": [
+        "Given: q = +500 J (heat absorbed by system, positive), w = +200 J (work done on the system, positive by sign convention).",
+        "Formula: dU = q + w.",
+        "Substitution: dU = 500 + 200.",
+        "Calculation: dU = 700 J.",
+        "Answer: dU = +700 J (internal energy increases)."
+      ],
+      "ans": "dU = +700 J"
+    },
+    {
+      "topic": "Gibbs free energy from equilibrium constant (dG = -2.303RT log K)",
+      "marks": 3,
+      "q": "Calculate the standard Gibbs free energy change, dG, for a reaction at 300 K whose equilibrium constant K = 100. (R = 8.314 J/mol K)",
+      "steps": [
+        "Given: K = 100, so log10(K) = 2; T = 300 K; R = 8.314 J/mol K.",
+        "Formula: dG = -2.303 R T log K.",
+        "Substitution: dG = -2.303 x 8.314 x 300 x 2.",
+        "Calculation: 2.303 x 8.314 = 19.15 (approx); 19.15 x 300 = 5745; 5745 x 2 = 11490 J/mol.",
+        "Answer: dG = -11490 J/mol = -11.49 kJ/mol (negative, confirming K > 1 means the reaction is spontaneous)."
+      ],
+      "ans": "dG = -11.49 kJ/mol"
+    },
+    {
+      "topic": "Enthalpy of reaction from bond enthalpies",
+      "marks": 3,
+      "q": "Using bond enthalpy data, calculate dH for the reaction H2(g) + Cl2(g) -> 2HCl(g). Given bond enthalpies: H-H = 432 kJ/mol, Cl-Cl = 242 kJ/mol, H-Cl = 431 kJ/mol.",
+      "steps": [
+        "Given: bonds broken: 1 mol H-H (432 kJ) + 1 mol Cl-Cl (242 kJ); bonds formed: 2 mol H-Cl (2 x 431 kJ).",
+        "Formula: dH = (sum of bond enthalpies of reactants broken) - (sum of bond enthalpies of products formed).",
+        "Substitution: dH = (432 + 242) - (2 x 431).",
+        "Calculation: dH = 674 - 862 = -188 kJ/mol.",
+        "Answer: dH = -188 kJ/mol."
+      ],
+      "ans": "dH = -188 kJ/mol"
+    },
+    {
+      "topic": "Entropy change from dH and dG",
+      "marks": 3,
+      "q": "For a reaction at 400 K, dH = -184 kJ/mol and dG = -196 kJ/mol. Calculate the entropy change, dS, of the reaction.",
+      "steps": [
+        "Given: dH = -184 kJ/mol = -184000 J/mol, dG = -196 kJ/mol = -196000 J/mol, T = 400 K.",
+        "Formula: dG = dH - T dS, rearranged as dS = (dH - dG) / T.",
+        "Substitution: dS = (-184000 - (-196000)) / 400.",
+        "Calculation: dS = 12000 / 400 = 30 J/K/mol.",
+        "Answer: dS = 30 J/K/mol."
+      ],
+      "ans": "dS = 30 J/K/mol"
+    }
+  ],
+  "practice": [
+    {
+      "topic": "Hess's law - enthalpy of formation of acetylene",
+      "q": "Calculate dHf of C2H2(g) given: C(s) + O2(g) -> CO2(g), dH = -394 kJ/mol; H2(g) + 1/2 O2(g) -> H2O(l), dH = -286 kJ/mol; C2H2(g) + 5/2 O2(g) -> 2CO2(g) + H2O(l), dH = -1300 kJ/mol.",
+      "hint": "dHf(C2H2) = 2(dH of C combustion) + (dH of H2 combustion) - (dH of C2H2 combustion)",
+      "ans": "dHf(C2H2) = +226 kJ/mol"
+    },
+    {
+      "topic": "Gibbs free energy and spontaneity",
+      "q": "For a reaction dH = -20 kJ/mol and dS = -50 J/K/mol at T = 250 K. Calculate dG and comment on spontaneity.",
+      "hint": "dG = dH - T dS (convert dH to J or dS to kJ, keep units consistent)",
+      "ans": "dG = -7.5 kJ/mol; spontaneous"
+    },
+    {
+      "topic": "Entropy of vaporization",
+      "q": "A liquid boils at 406 K absorbing 40600 J/mol of heat. Calculate dSvap.",
+      "hint": "dSvap = dHvap / Tb",
+      "ans": "dSvap = 100 J/K/mol"
+    },
+    {
+      "topic": "First law of thermodynamics",
+      "q": "A gas releases 300 J of heat to the surroundings while 100 J of work is done on the gas during compression. Find dU.",
+      "hint": "dU = q + w, with q negative (heat released) and w positive (work done on system)",
+      "ans": "dU = -200 J"
+    },
+    {
+      "topic": "Enthalpy of reaction from bond enthalpies",
+      "q": "Calculate dH for N2(g) + 3H2(g) -> 2NH3(g) given bond enthalpies: N-N (triple) = 945 kJ/mol, H-H = 436 kJ/mol, N-H = 391 kJ/mol.",
+      "hint": "dH = (bonds broken) - (bonds formed) = (945 + 3x436) - (6x391)",
+      "ans": "dH = -93 kJ/mol"
+    },
+    {
+      "topic": "Temperature at which a reaction becomes spontaneous",
+      "q": "A reaction has dH = +45 kJ/mol and dS = +90 J/K/mol. Find the temperature above which it becomes spontaneous.",
+      "hint": "T = dH / dS (set dG = 0)",
+      "ans": "T = 500 K"
+    }
+  ]
+}

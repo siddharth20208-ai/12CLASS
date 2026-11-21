@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="640" height="400" fill="white"/>
+<defs>
+<marker id="ar" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="black"/></marker>
+<marker id="arF" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#c0392b"/></marker>
+</defs>
+<!-- conductor -->
+<line x1="150" y1="220" x2="450" y2="220" stroke="black" stroke-width="3" marker-end="url(#ar)"/>
+<text x="280" y="245" font-size="16">I (Current)</text>
+
+<!-- field into page: crosses -->
+<g stroke="black" stroke-width="1.5">
+<g transform="translate(200,120)"><line x1="-6" y1="-6" x2="6" y2="6"/><line x1="-6" y1="6" x2="6" y2="-6"/></g>
+<g transform="translate(260,120)"><line x1="-6" y1="-6" x2="6" y2="6"/><line x1="-6" y1="6" x2="6" y2="-6"/></g>
+<g transform="translate(320,120)"><line x1="-6" y1="-6" x2="6" y2="6"/><line x1="-6" y1="6" x2="6" y2="-6"/></g>
+<g transform="translate(380,120)"><line x1="-6" y1="-6" x2="6" y2="6"/><line x1="-6" y1="6" x2="6" y2="-6"/></g>
+<g transform="translate(230,170)"><line x1="-6" y1="-6" x2="6" y2="6"/><line x1="-6" y1="6" x2="6" y2="-6"/></g>
+<g transform="translate(290,170)"><line x1="-6" y1="-6" x2="6" y2="6"/><line x1="-6" y1="6" x2="6" y2="-6"/></g>
+<g transform="translate(350,170)"><line x1="-6" y1="-6" x2="6" y2="6"/><line x1="-6" y1="6" x2="6" y2="-6"/></g>
+</g>
+<text x="440" y="110" font-size="16" fill="black">B (into page)</text>
+
+<!-- Force upward at centre of wire -->
+<line x1="300" y1="220" x2="300" y2="100" stroke="#c0392b" stroke-width="3" marker-end="url(#arF)"/>
+<text x="310" y="95" font-size="16" fill="#c0392b">F (Force)</text>
+
+<!-- Fleming's left hand rule explanation -->
+<text x="140" y="310" font-size="15">Fleming's Left-Hand Rule:</text>
+<text x="140" y="332" font-size="14">Forefinger = Field (B)</text>
+<text x="140" y="352" font-size="14">Middle finger = Current (I)</text>
+<text x="140" y="372" font-size="14">Thumb = Motion/Force (F)</text>
+</svg>

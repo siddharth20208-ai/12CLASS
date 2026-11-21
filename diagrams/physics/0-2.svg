@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="white"/>
+  <defs>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="black"/>
+    </marker>
+    <marker id="arrow3" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2980b9"/>
+    </marker>
+  </defs>
+  <!-- Disc -->
+  <ellipse cx="320" cy="220" rx="150" ry="80" fill="#eef" stroke="black" stroke-width="2"/>
+
+  <!-- X axis -->
+  <line x1="140" y1="220" x2="500" y2="220" stroke="black" stroke-width="2" marker-end="url(#arrow2)"/>
+  <text x="510" y="225" font-size="16">X</text>
+  <text x="470" y="245" font-size="15">Ix</text>
+
+  <!-- Y axis -->
+  <line x1="320" y1="320" x2="320" y2="120" stroke="black" stroke-width="2" marker-end="url(#arrow2)"/>
+  <text x="330" y="115" font-size="16">Y</text>
+  <text x="340" y="150" font-size="15">Iy</text>
+
+  <!-- Z axis perpendicular to plane, coming out of the centre -->
+  <line x1="320" y1="220" x2="320" y2="60" stroke="#2980b9" stroke-width="2" marker-end="url(#arrow3)"/>
+  <text x="330" y="60" font-size="16" fill="#2980b9">Z</text>
+  <text x="340" y="90" font-size="15" fill="#2980b9">Iz</text>
+  <text x="200" y="370" font-size="14" text-anchor="middle">Disc (plane lamina)</text>
+</svg>

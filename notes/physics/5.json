@@ -30,7 +30,8 @@
     ],
     "formula": "y = 2A cos(ωt) sin(kx)     distance between nodes = λ/2",
     "diagram": {
-      "draw": "Draw a horizontal line (string) with a wavy stationary-wave pattern showing 2 full loops. Mark the points where the curve crosses the axis as 'Node (N)' and the points of maximum bulge as 'Antinode (A)'. Label the distance between two consecutive nodes as lambda/2."
+      "draw": "Draw a horizontal line (string) with a wavy stationary-wave pattern showing 2 full loops. Mark the points where the curve crosses the axis as 'Node (N)' and the points of maximum bulge as 'Antinode (A)'. Label the distance between two consecutive nodes as lambda/2.",
+      "svg": "diagrams/physics/5-1.svg"
     },
     "example": "A string vibrates with nodes 0.25 m apart: wavelength λ = 2 x 0.25 = 0.5 m.",
     "tip": "Clearly distinguish stationary waves (no energy transport, fixed nodes) from travelling waves (energy transport) — common differentiate-type question."

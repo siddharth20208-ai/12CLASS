@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+<defs>
+  <marker id="arrow84a" markerWidth="8" markerHeight="8" refX="4" refY="2" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L4,2 L0,4 Z" fill="#c0392b"/>
+  </marker>
+  <marker id="arrow84b" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,4 L4,2 L0,0 Z" fill="#c0392b"/>
+  </marker>
+</defs>
+<rect x="0" y="0" width="640" height="400" fill="white"/>
+<text x="320" y="30" font-size="18" text-anchor="middle" font-weight="bold">Crystal Field Splitting (Octahedral)</text>
+
+<!-- average energy dashed line -->
+<line x1="100" y1="220" x2="540" y2="220" stroke="black" stroke-width="2" stroke-dasharray="6,4"/>
+<text x="150" y="212" font-size="14">average energy of d orbitals</text>
+
+<!-- eg upper level -->
+<line x1="150" y1="130" x2="250" y2="130" stroke="black" stroke-width="2"/>
+<line x1="280" y1="130" x2="380" y2="130" stroke="black" stroke-width="2"/>
+<text x="260" y="105" font-size="14" text-anchor="middle">eg</text>
+
+<!-- t2g lower level: 3 boxes -->
+<line x1="150" y1="300" x2="230" y2="300" stroke="black" stroke-width="2"/>
+<line x1="250" y1="300" x2="330" y2="300" stroke="black" stroke-width="2"/>
+<line x1="350" y1="300" x2="430" y2="300" stroke="black" stroke-width="2"/>
+<text x="290" y="325" font-size="14" text-anchor="middle">t2g</text>
+
+<!-- delta-o arrow -->
+<line x1="480" y1="300" x2="480" y2="130" stroke="#c0392b" stroke-width="2" marker-start="url(#arrow84b)" marker-end="url(#arrow84a)"/>
+<text x="490" y="220" font-size="14" fill="#c0392b">&#916;o</text>
+</svg>

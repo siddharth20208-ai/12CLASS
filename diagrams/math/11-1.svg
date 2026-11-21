@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow1" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#222222"/>
+    </marker>
+  </defs>
+
+  <line x1="60" y1="330" x2="580" y2="330" stroke="#222222" stroke-width="2" marker-end="url(#arrow1)"/>
+  <line x1="60" y1="330" x2="60" y2="40" stroke="#222222" stroke-width="2" marker-end="url(#arrow1)"/>
+  <text x="590" y="335" font-size="16">x</text>
+  <text x="45" y="35" font-size="16">y</text>
+  <text x="40" y="345" font-size="14">O</text>
+
+  <!-- Curve touching x-axis at a and b, hump between -->
+  <path d="M 200 330 Q 360 150 520 330 Z" fill="#1f6fd1" fill-opacity="0.3" stroke="#222222" stroke-width="2"/>
+
+  <line x1="200" y1="330" x2="200" y2="320" stroke="#222222" stroke-width="2"/>
+  <line x1="520" y1="330" x2="520" y2="320" stroke="#222222" stroke-width="2"/>
+
+  <text x="195" y="350" font-size="14">a</text>
+  <text x="515" y="350" font-size="14">b</text>
+  <text x="300" y="300" font-size="16" fill="#1f6fd1">Enclosed region</text>
+</svg>

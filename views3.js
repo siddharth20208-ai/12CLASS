@@ -10,7 +10,7 @@ function todayCard() {
     ...t.due.map((c) => task("Revise", "t-due", `#/${c.key}/quiz/${c.i}`, `Re-test: ${chLabel(c)}`)),
     ...t.weak.map((c) => task("Weak", "t-weak", `#/${c.key}/practice/${c.i}`, `Revise, then retake test: ${chLabel(c)}`)),
     ...t.learn.map((c) => task("Learn", "t-learn", `#/${c.key}/practice/${c.i}`, chLabel(c))),
-    ...(t.paper ? [task("Paper", "t-paper", `#/${t.paper}/pyq`, `Solve a ${esc(subs[t.paper].name)} past paper under exam timing (3 hours)`)] : []),
+    ...(t.paper ? [task("Paper", "t-paper", isHsc() ? `#/${t.paper}/mock` : `#/${t.paper}/pyq`, `Solve a full ${esc(subs[t.paper].name)} paper under exam timing (3 hours)`)] : []),
   ];
   return `<div class="unit today">
     <div class="todayhead"><h2>📅 Today's plan</h2>
@@ -50,7 +50,7 @@ function planPage() {
   const days = sch.days.map((d, n) => `<div class="dayrow${n === 0 ? " now" : ""}">
     <div class="daydate">${n === 0 ? "Today" : fmtDate(d.date)}</div>
     <div class="daytasks">${d.learn.map((c) => task(window.PLAN.priority(c.s, c.u), "t-learn", `#/${c.key}/practice/${c.i}`, chLabel(c))).join("")}
-      ${d.paper ? task("Paper", "t-paper", `#/${d.paper}/pyq`, `${esc(subs[d.paper].name)} past paper + formula sheet revision`) : ""}
+      ${d.paper ? task("Paper", "t-paper", isHsc() ? `#/${d.paper}/mock` : `#/${d.paper}/pyq`, `${esc(subs[d.paper].name)} full paper (3 hours) + formula sheet revision`) : ""}
       ${!d.learn.length && !d.paper ? `<span class="pnote">Buffer day — catch up or revise weak chapters</span>` : ""}</div>
   </div>`).join("");
   return `${head("physics", "My Study Plan", "#/", "Home")}${form}${rules}<div class="unit">${days}</div>`;

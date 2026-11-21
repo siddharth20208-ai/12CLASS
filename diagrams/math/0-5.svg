@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="640" height="400" fill="white"/>
+<text x="320" y="24" font-size="16" text-anchor="middle" fill="#000">Series (p ^ q)</text>
+<!-- battery -->
+<line x1="60" y1="60" x2="60" y2="100" stroke="#000" stroke-width="2"/>
+<line x1="70" y1="50" x2="70" y2="110" stroke="#000" stroke-width="2"/>
+<text x="40" y="85" font-size="14">+</text>
+<line x1="60" y1="80" x2="20" y2="80" stroke="#000" stroke-width="2"/>
+<line x1="20" y1="80" x2="20" y2="150" stroke="#000" stroke-width="2"/>
+<line x1="70" y1="80" x2="150" y2="80" stroke="#000" stroke-width="2"/>
+<!-- switch p -->
+<circle cx="150" cy="80" r="3" fill="#000"/>
+<line x1="150" y1="80" x2="190" y2="60" stroke="#000" stroke-width="2"/>
+<circle cx="190" cy="80" r="3" fill="#000"/>
+<text x="165" y="50" font-size="15" fill="#1a5fb4">p</text>
+<line x1="190" y1="80" x2="230" y2="80" stroke="#000" stroke-width="2"/>
+<!-- switch q -->
+<circle cx="230" cy="80" r="3" fill="#000"/>
+<line x1="230" y1="80" x2="270" y2="60" stroke="#000" stroke-width="2"/>
+<circle cx="270" cy="80" r="3" fill="#000"/>
+<text x="245" y="50" font-size="15" fill="#c64600">q</text>
+<line x1="270" y1="80" x2="300" y2="80" stroke="#000" stroke-width="2"/>
+<line x1="300" y1="80" x2="300" y2="150" stroke="#000" stroke-width="2"/>
+<!-- bulb -->
+<circle cx="20" cy="165" r="15" stroke="#000" stroke-width="2" fill="none"/>
+<line x1="9" y1="154" x2="31" y2="176" stroke="#000" stroke-width="2"/>
+<line x1="9" y1="176" x2="31" y2="154" stroke="#000" stroke-width="2"/>
+<line x1="20" y1="150" x2="300" y2="150" stroke="#000" stroke-width="2"/>
+<text x="0" y="200" font-size="14">Bulb</text>
+<text x="25" y="40" font-size="14">Battery</text>
+
+<text x="320" y="240" font-size="16" text-anchor="middle" fill="#000">Parallel (p v q)</text>
+<line x1="60" y1="280" x2="60" y2="320" stroke="#000" stroke-width="2"/>
+<line x1="70" y1="270" x2="70" y2="330" stroke="#000" stroke-width="2"/>
+<line x1="60" y1="300" x2="20" y2="300" stroke="#000" stroke-width="2"/>
+<line x1="20" y1="300" x2="20" y2="260" stroke="#000" stroke-width="2"/>
+<line x1="20" y1="260" x2="150" y2="260" stroke="#000" stroke-width="2"/>
+<line x1="20" y1="300" x2="20" y2="340" stroke="#000" stroke-width="2"/>
+<line x1="20" y1="340" x2="150" y2="340" stroke="#000" stroke-width="2"/>
+<!-- branch p (top) -->
+<circle cx="150" cy="260" r="3" fill="#000"/>
+<line x1="150" y1="260" x2="190" y2="240" stroke="#000" stroke-width="2"/>
+<circle cx="190" cy="260" r="3" fill="#000"/>
+<text x="165" y="230" font-size="15" fill="#1a5fb4">p</text>
+<line x1="190" y1="260" x2="320" y2="260" stroke="#000" stroke-width="2"/>
+<!-- branch q (bottom) -->
+<circle cx="150" cy="340" r="3" fill="#000"/>
+<line x1="150" y1="340" x2="190" y2="320" stroke="#000" stroke-width="2"/>
+<circle cx="190" cy="340" r="3" fill="#000"/>
+<text x="165" y="365" font-size="15" fill="#c64600">q</text>
+<line x1="190" y1="340" x2="320" y2="340" stroke="#000" stroke-width="2"/>
+<!-- meeting at bulb -->
+<line x1="320" y1="260" x2="320" y2="290" stroke="#000" stroke-width="2"/>
+<line x1="320" y1="340" x2="320" y2="310" stroke="#000" stroke-width="2"/>
+<circle cx="320" cy="300" r="15" stroke="#000" stroke-width="2" fill="none"/>
+<line x1="309" y1="289" x2="331" y2="311" stroke="#000" stroke-width="2"/>
+<line x1="309" y1="311" x2="331" y2="289" stroke="#000" stroke-width="2"/>
+<text x="340" y="305" font-size="14">Bulb</text>
+<text x="25" y="255" font-size="14">Battery</text>
+</svg>

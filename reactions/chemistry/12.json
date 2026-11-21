@@ -1,0 +1,129 @@
+{
+  "named": [
+    {
+      "name": "Ammonolysis of alkyl halides",
+      "eq": "CH3Br + excess NH3 -> CH3NH2 + HBr (further gives (CH3)2NH, (CH3)3N, (CH3)4NBr)",
+      "cond": "Alkyl halide with excess ammonia, sealed tube, heat",
+      "tip": "Examiners expect you to mention it gives a MIXTURE of primary, secondary, tertiary amine and quaternary ammonium salt, not just a clean primary amine."
+    },
+    {
+      "name": "Reduction of nitro compounds",
+      "eq": "C6H5NO2 + 3H2 -> C6H5NH2 + 2H2O",
+      "cond": "H2/Pd or H2/Ni (catalytic hydrogenation) or Sn/HCl followed by NaOH",
+      "tip": "If Sn/HCl or Fe/HCl is used, remember a basification step with NaOH is needed afterward to liberate the free amine from its salt."
+    },
+    {
+      "name": "Reduction of nitriles",
+      "eq": "CH3CN + 4[H] -> CH3CH2NH2",
+      "cond": "H2/Ni (catalytic hydrogenation) or LiAlH4",
+      "tip": "Common mistake: writing the product with the same number of carbons as nitrile is correct here (CN carbon retained), unlike Hoffmann degradation."
+    },
+    {
+      "name": "Reduction of amides (Mendius reaction)",
+      "eq": "CH3CONH2 + 4[H] -> CH3CH2NH2 + H2O",
+      "cond": "LiAlH4, dry ether",
+      "tip": "Distinguish from Hoffmann bromamide degradation: LiAlH4 reduction of amide keeps the same carbon count, Hoffmann reduces carbon count by one."
+    },
+    {
+      "name": "Gabriel phthalimide synthesis",
+      "eq": "Phthalimide + KOH -> potassium phthalimide; + R-X -> N-alkylphthalimide; + hydrolysis (NaOH/H2O or H2NNH2) -> R-NH2",
+      "cond": "KOH then alkyl halide, then hydrolysis (acid/alkaline hydrolysis)",
+      "tip": "Key exam point: this method gives ONLY pure primary amine with no secondary/tertiary contamination; aromatic primary amines (Ar-NH2) CANNOT be prepared by this method."
+    },
+    {
+      "name": "Hoffmann bromamide degradation",
+      "eq": "CH3CONH2 + Br2 + 4NaOH -> CH3NH2 + Na2CO3 + 2NaBr + 2H2O",
+      "cond": "Br2 and excess NaOH (aqueous)",
+      "tip": "Product amine has ONE carbon LESS than the starting amide; this is frequently tested with a mechanism-based MCQ about migration of R group to nitrogen."
+    },
+    {
+      "name": "Diazotisation",
+      "eq": "C6H5NH2 + NaNO2 + 2HCl -> C6H5N2Cl + NaCl + 2H2O",
+      "cond": "NaNO2 + dil. HCl (or H2SO4), 273-278 K (0-5 degree C)",
+      "tip": "Always state the low temperature 273-278 K; above this the diazonium salt decomposes to phenol and N2."
+    },
+    {
+      "name": "Coupling reaction (azo dye formation)",
+      "eq": "C6H5N2Cl + C6H5NH2 -> C6H5-N=N-C6H4-NH2 (p-aminoazobenzene) + HCl",
+      "cond": "Weakly acidic/alkaline medium, cold, with aniline or phenol",
+      "tip": "Azo coupling occurs mainly at the para position; with phenol the product is p-hydroxyazobenzene formed in weakly alkaline medium."
+    },
+    {
+      "name": "Carbylamine (isocyanide) reaction",
+      "eq": "C2H5NH2 + CHCl3 + 3KOH(alc) -> C2H5NC + 3KCl + 3H2O",
+      "cond": "Chloroform + alcoholic KOH, heat",
+      "tip": "Positive test (foul smell) is given ONLY by primary amines (1 degree); secondary and tertiary amines give no reaction."
+    },
+    {
+      "name": "Hinsberg test reaction",
+      "eq": "RNH2 + C6H5SO2Cl -> RNHSO2C6H5 + HCl (soluble in KOH); R2NH + C6H5SO2Cl -> R2NSO2C6H5 + HCl (insoluble in KOH)",
+      "cond": "Benzenesulphonyl chloride + KOH",
+      "tip": "Explain the reason for solubility difference: primary amine product retains an acidic N-H (forms soluble K-salt), secondary amine product has no acidic N-H left."
+    }
+  ],
+  "conversions": [
+    {
+      "q": "Convert nitrobenzene to aniline (HSC style)",
+      "steps": [
+        "Step 1: C6H5NO2 + 3H2 --(H2/Pd or H2/Ni)--> C6H5NH2 + 2H2O",
+        "Alternative: C6H5NO2 + 3Sn/6HCl -> C6H5NH3+Cl- (then NaOH to liberate free amine)"
+      ],
+      "ans": "Catalytic hydrogenation (H2/Ni) or Sn/HCl followed by NaOH"
+    },
+    {
+      "q": "Convert ethanamide (CH3CONH2) to ethanamine (CH3CH2NH2)",
+      "steps": [
+        "Step 1: CH3CONH2 + 4[H] --(LiAlH4)--> CH3CH2NH2 + H2O"
+      ],
+      "ans": "Reduce the amide with LiAlH4 (same carbon count retained)"
+    },
+    {
+      "q": "Convert ethanamide (CH3CONH2) to methanamine (CH3NH2)",
+      "steps": [
+        "Step 1: CH3CONH2 + Br2 + 4NaOH --(Hoffmann bromamide degradation)--> CH3NH2 + Na2CO3 + 2NaBr + 2H2O"
+      ],
+      "ans": "Hoffmann bromamide degradation (loses one carbon as CO2/carbonate)"
+    },
+    {
+      "q": "Convert ethyl bromide (CH3CH2Br) to pure ethanamine (CH3CH2NH2) without secondary/tertiary contamination",
+      "steps": [
+        "Step 1: Phthalimide + KOH -> potassium phthalimide",
+        "Step 2: Potassium phthalimide + CH3CH2Br -> N-ethylphthalimide + KBr",
+        "Step 3: N-ethylphthalimide + NaOH/H2O (hydrolysis) -> CH3CH2NH2 + phthalate salt"
+      ],
+      "ans": "Gabriel phthalimide synthesis gives pure primary amine, no over-alkylation"
+    },
+    {
+      "q": "Convert aniline (C6H5NH2) to phenol (C6H5OH)",
+      "steps": [
+        "Step 1: C6H5NH2 + NaNO2 + 2HCl --(273-278 K)--> C6H5N2Cl + NaCl + 2H2O (diazotisation)",
+        "Step 2: C6H5N2Cl + H2O --(warm, hydrolysis)--> C6H5OH + N2 + HCl"
+      ],
+      "ans": "Diazotise aniline at 0-5 degree C, then hydrolyse the diazonium salt by warming with water"
+    },
+    {
+      "q": "Convert aniline (C6H5NH2) to benzene (C6H6)",
+      "steps": [
+        "Step 1: C6H5NH2 + NaNO2 + 2HCl --(273-278 K)--> C6H5N2Cl + NaCl + 2H2O",
+        "Step 2: C6H5N2Cl + H3PO2 + H2O --(reduction, deamination)--> C6H6 + N2 + H3PO3 + HCl"
+      ],
+      "ans": "Diazotise then reduce with H3PO2/H2O to remove the amino group (deamination)"
+    },
+    {
+      "q": "Convert aniline (C6H5NH2) to an azo dye (p-hydroxyazobenzene) using phenol",
+      "steps": [
+        "Step 1: C6H5NH2 + NaNO2 + 2HCl --(273-278 K)--> C6H5N2Cl + NaCl + 2H2O",
+        "Step 2: C6H5N2Cl + C6H5OH --(weakly alkaline, cold)--> p-HO-C6H4-N=N-C6H5 + HCl"
+      ],
+      "ans": "Diazotise aniline, then couple with phenol in weakly alkaline solution at low temperature"
+    },
+    {
+      "q": "Convert methyl bromide (CH3Br) to ethanamine (CH3CH2NH2) (one-carbon chain extension)",
+      "steps": [
+        "Step 1: CH3Br + KCN -> CH3CN + KBr (nucleophilic substitution)",
+        "Step 2: CH3CN + 4[H] --(H2/Ni or LiAlH4)--> CH3CH2NH2 (reduction of nitrile)"
+      ],
+      "ans": "Convert the halide to nitrile with KCN, then reduce the nitrile (H2/Ni or LiAlH4) to get an amine with one more carbon"
+    }
+  ]
+}

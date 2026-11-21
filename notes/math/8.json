@@ -12,7 +12,8 @@
     ],
     "formula": "Tangent: y - y1 = (dy/dx)(x - x1)     Normal: y - y1 = -1/(dy/dx) (x - x1)",
     "diagram": {
-      "draw": "Draw a smooth curve. Mark point P(x1, y1) on it. Draw a straight line just touching the curve at P, label it 'Tangent'. Draw another straight line through P at right angle to the tangent, label it 'Normal'."
+      "draw": "Draw a smooth curve. Mark point P(x1, y1) on it. Draw a straight line just touching the curve at P, label it 'Tangent'. Draw another straight line through P at right angle to the tangent, label it 'Normal'.",
+      "svg": "diagrams/math/8-0.svg"
     },
     "example": "Curve y = x^2 at (1,1): dy/dx = 2x = 2. Tangent: y - 1 = 2(x - 1) i.e. y = 2x - 1. Normal: y - 1 = -1/2(x - 1) i.e. x + 2y = 3.",
     "tip": "Always substitute the point into dy/dx first to get a numeric slope before writing the line equations."

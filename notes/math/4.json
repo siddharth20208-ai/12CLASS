@@ -11,7 +11,10 @@
       "a.b = 0 means vectors are perpendicular; a x b = 0 means vectors are parallel."
     ],
     "formula": "a.b = |a||b|cos(theta)     a x b = |a||b|sin(theta) n-hat",
-    "diagram": { "draw": "Draw two vectors a and b starting from the same point, with the angle theta marked between them. For cross product, draw a third vector perpendicular to the plane of a and b using the right-hand rule." },
+    "diagram": {
+      "draw": "Draw two vectors a and b starting from the same point, with the angle theta marked between them. For cross product, draw a third vector perpendicular to the plane of a and b using the right-hand rule.",
+      "svg": "diagrams/math/4-0.svg"
+    },
     "example": "a=i+2j+3k, b=3i-2j+k: a x b = i(2*1-3*(-2)) - j(1*1-3*3) + k(1*(-2)-2*3) = 8i+8j-8k.",
     "tip": "Set up the determinant carefully with i, j, k on top row and a, b components below — sign errors in the j term are common."
   },
@@ -27,7 +30,9 @@
       "Order of vectors in the determinant can change the sign but not whether it is zero."
     ],
     "formula": "[a b c] = determinant of a,b,c components; coplanar if [a b c]=0",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Write a, b, c as rows\"] --> B[\"Compute 3x3 determinant\"]\n  B --> C{\"Value is zero\"}\n  C -->|\"yes\"| D[\"Vectors coplanar\"]\n  C -->|\"no\"| E[\"Not coplanar, forms volume\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Write a, b, c as rows\"] --> B[\"Compute 3x3 determinant\"]\n  B --> C{\"Value is zero\"}\n  C -->|\"yes\"| D[\"Vectors coplanar\"]\n  C -->|\"no\"| E[\"Not coplanar, forms volume\"]"
+    },
     "example": "a=i+2j+3k,b=2i+3j+4k,c=3i+4j+5k: determinant = 1(15-16)-2(10-12)+3(8-9) = -1+4-3=0, so coplanar.",
     "tip": "Expand the determinant along the first row consistently; keep signs (+,-,+) in order to avoid errors."
   },
@@ -43,7 +48,10 @@
       "Always express points as position vectors from a common origin before applying the formula."
     ],
     "formula": "Section formula: (m*b+n*a)/(m+n)     Midpoint: (a+b)/2",
-    "diagram": { "draw": "Draw a line segment from point A to point B. Mark point P between them dividing AB in ratio m:n, with m on the A side and n on the B side." },
+    "diagram": {
+      "draw": "Draw a line segment from point A to point B. Mark point P between them dividing AB in ratio m:n, with m on the A side and n on the B side.",
+      "svg": "diagrams/math/4-2.svg"
+    },
     "example": "A=(1,2,3), B=(4,5,6), P divides AB in ratio 2:1: P = (2*(4,5,6)+1*(1,2,3))/3 = (9,12,15)/3 = (3,4,5).",
     "tip": "Clearly state which end the ratio m:n starts from (A to B) — reversing it gives a wrong point."
   },
@@ -59,7 +67,10 @@
       "Always simplify the final angle using inverse cosine if an exact value is not standard."
     ],
     "formula": "cos(theta)=(a.b)/(|a||b|)     Projection of a on b = (a.b)/|b|",
-    "diagram": { "draw": "Draw vector b along a horizontal line. Draw vector a starting from the same point at an angle. Drop a perpendicular from the tip of a onto line b, marking the projected length on b." },
+    "diagram": {
+      "draw": "Draw vector b along a horizontal line. Draw vector a starting from the same point at an angle. Drop a perpendicular from the tip of a onto line b, marking the projected length on b.",
+      "svg": "diagrams/math/4-3.svg"
+    },
     "example": "a=(1,0,0), b=(1,1,0): a.b=1, |a|=1, |b|=sqrt2. cos(theta)=1/sqrt2, so theta=45 degrees.",
     "tip": "Do not confuse scalar projection (a number) with vector projection (a vector) — state which one is asked."
   },
@@ -75,7 +86,10 @@
       "Units of area are always squared units."
     ],
     "formula": "Parallelogram area = |a x b|     Triangle area = (1/2)|a x b|",
-    "diagram": { "draw": "Draw a parallelogram with two adjacent sides as vectors a and b from the same vertex. Draw the diagonal to show the triangle is exactly half the parallelogram." },
+    "diagram": {
+      "draw": "Draw a parallelogram with two adjacent sides as vectors a and b from the same vertex. Draw the diagonal to show the triangle is exactly half the parallelogram.",
+      "svg": "diagrams/math/4-4.svg"
+    },
     "example": "a=i+2j+3k, b=3i-2j+k: a x b = 8i+8j-8k, |a x b| = sqrt(64+64+64) = 8sqrt3. Parallelogram area = 8sqrt3, triangle area = 4sqrt3.",
     "tip": "Remember the factor of 1/2 for triangle area — a very common point lost by forgetting it."
   },
@@ -91,7 +105,9 @@
       "Many geometry proofs (medians, diagonals) become simple algebra using position vectors."
     ],
     "formula": "r = a + t*b (vector equation of a line)",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Point A with position vector a\"] --> B[\"Add t times direction vector b\"]\n  B --> C[\"Get general point r on line\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Point A with position vector a\"] --> B[\"Add t times direction vector b\"]\n  B --> C[\"Get general point r on line\"]"
+    },
     "example": "Line through (1,0,0) with direction (2,1,1): r = (1,0,0) + t(2,1,1) = (1+2t, t, t).",
     "tip": "Always define the parameter (commonly t or lambda) explicitly when writing the vector equation."
   }

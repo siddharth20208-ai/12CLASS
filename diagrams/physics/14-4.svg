@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="white"/>
+  <defs>
+    <marker id="arrowG" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="black"/>
+    </marker>
+  </defs>
+  <text x="320" y="20" font-size="16" text-anchor="middle" fill="black">Radioactive Decay Law</text>
+
+  <line x1="80" y1="340" x2="80" y2="60" stroke="black" stroke-width="2" marker-end="url(#arrowG)"/>
+  <line x1="80" y1="340" x2="580" y2="340" stroke="black" stroke-width="2" marker-end="url(#arrowG)"/>
+  <text x="45" y="65" font-size="14" fill="black">N</text>
+  <text x="570" y="362" font-size="14" fill="black">t</text>
+
+  <path d="M 80 90 C 150 100 180 160 220 200 C 280 255 350 290 480 320 C 520 326 550 330 575 333"
+        stroke="#2874a6" stroke-width="2.5" fill="none"/>
+
+  <text x="50" y="85" font-size="14" fill="black">N0</text>
+  <line x1="80" y1="90" x2="90" y2="90" stroke="black" stroke-width="2"/>
+
+  <!-- T1/2: N0/2 point -->
+  <line x1="80" y1="215" x2="575" y2="215" stroke="black" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="40" y="219" font-size="13" fill="black">N0/2</text>
+  <line x1="200" y1="215" x2="200" y2="340" stroke="black" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="185" y="358" font-size="13" fill="black">T1/2</text>
+
+  <!-- 2T1/2: N0/4 point -->
+  <line x1="80" y1="277" x2="575" y2="277" stroke="black" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="40" y="281" font-size="13" fill="black">N0/4</text>
+  <line x1="340" y1="277" x2="340" y2="340" stroke="black" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="315" y="358" font-size="13" fill="black">2T1/2</text>
+</svg>

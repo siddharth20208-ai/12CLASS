@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#222222"/>
+    </marker>
+    <clipPath id="clip2">
+      <path d="M 200 290 Q 360 150 520 230 Q 360 330 200 290 Z"/>
+    </clipPath>
+  </defs>
+
+  <line x1="60" y1="330" x2="580" y2="330" stroke="#222222" stroke-width="2" marker-end="url(#arrow2)"/>
+  <line x1="60" y1="330" x2="60" y2="40" stroke="#222222" stroke-width="2" marker-end="url(#arrow2)"/>
+  <text x="590" y="335" font-size="16">x</text>
+  <text x="45" y="35" font-size="16">y</text>
+  <text x="40" y="345" font-size="14">O</text>
+
+  <!-- Lens-shaped shaded region where curves overlap -->
+  <path d="M 200 290 Q 360 150 520 230 Q 360 330 200 290 Z" fill="#8e44ad" fill-opacity="0.3" stroke="none"/>
+
+  <!-- Upper curve -->
+  <path d="M 150 320 Q 360 100 560 200" fill="none" stroke="#1f6fd1" stroke-width="2"/>
+  <!-- Lower curve -->
+  <path d="M 150 250 Q 360 360 560 260" fill="none" stroke="#c0392b" stroke-width="2"/>
+
+  <!-- Intersection points -->
+  <circle cx="200" cy="290" r="4" fill="#222222"/>
+  <circle cx="520" cy="230" r="4" fill="#222222"/>
+  <text x="180" y="315" font-size="14">x=a</text>
+  <text x="500" y="215" font-size="14">x=b</text>
+
+  <text x="420" y="130" font-size="15" fill="#1f6fd1">Upper curve</text>
+  <text x="400" y="375" font-size="15" fill="#c0392b">Lower curve</text>
+</svg>

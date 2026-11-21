@@ -9,6 +9,7 @@ const q = encodeURIComponent;
 window.LINKS = {
   papers: (s) => `${SH}/search-question-papers/${SH_COURSE}?subjects=${SH_SUBJ[s]}`,
   important: (s) => `${SH}/search-important-solutions/${SH_COURSE}?subjects=${SH_SUBJ[s]}`,
+  textbook: (s) => `${SH}/search-textbook-solutions/${SH_COURSE}?subjects=${SH_SUBJ[s]}`, // Balbharati solutions, checked 2026-11-21
   bank: (s) => `${SH}/search-question-bank-solutions/${SH_COURSE}?subjects=${SH_SUBJ[s]}`,
   video: (topic, s) => `https://www.youtube.com/results?search_query=${q(`${topic} ${s === "math" ? "maths" : s} class 12 maharashtra board`)}`,
   shaalaaSearch: (text) => `https://www.google.com/search?q=${q(`site:shaalaa.com ${String(text).slice(0, 120)}`)}`,

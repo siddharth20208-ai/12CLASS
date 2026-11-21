@@ -11,7 +11,10 @@
       "Choose the rule based on which sides/angles are already known."
     ],
     "formula": "a/sinA = b/sinB = c/sinC    cosA = (b^2+c^2-a^2)/(2bc)",
-    "diagram": { "draw": "Draw triangle ABC with vertices labelled A, B, C. Label the sides opposite to each vertex as a (opposite A), b (opposite B), c (opposite C)." },
+    "diagram": {
+      "draw": "Draw triangle ABC with vertices labelled A, B, C. Label the sides opposite to each vertex as a (opposite A), b (opposite B), c (opposite C).",
+      "svg": "diagrams/math/2-0.svg"
+    },
     "example": "a=7,b=8,c=5: cos C = (49+64-25)/(2*7*8) = 88/112 = 11/14, so C = cos^-1(11/14) approx 38 degrees.",
     "tip": "Write which rule you are using by name before applying it — this shows clear method to the examiner."
   },
@@ -27,7 +30,9 @@
       "Always check the sign and range before stating the final answer."
     ],
     "formula": "sin^-1: [-pi/2,pi/2]  cos^-1: [0,pi]  tan^-1: (-pi/2,pi/2)",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Given ratio value\"] --> B[\"Check function domain\"]\n  B --> C[\"Pick angle in principal range\"]\n  C --> D[\"State principal value\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Given ratio value\"] --> B[\"Check function domain\"]\n  B --> C[\"Pick angle in principal range\"]\n  C --> D[\"State principal value\"]"
+    },
     "example": "sin^-1(1/2) = pi/6, not 5pi/6, because pi/6 lies in the principal range [-pi/2, pi/2].",
     "tip": "Always mention 'principal value' in your final answer line to show you checked the range."
   },
@@ -43,7 +48,9 @@
       "Use substitution x = tan theta or x = sin theta to simplify complex expressions."
     ],
     "formula": "tan^-1 x + tan^-1 y = tan^-1((x+y)/(1-xy))",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Identify identity needed\"] --> B[\"Apply formula\"]\n  B --> C[\"Check xy less than 1 condition\"]\n  C --> D[\"Add pi if needed\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Identify identity needed\"] --> B[\"Apply formula\"]\n  B --> C[\"Check xy less than 1 condition\"]\n  C --> D[\"Add pi if needed\"]"
+    },
     "example": "tan^-1 2 + tan^-1 3, xy=6>1: sum = pi + tan^-1((5)/(-5)) = pi + tan^-1(-1) = pi - pi/4 = 3pi/4.",
     "tip": "Always check the xy<1 or xy>1 condition before using the addition formula; this is a common mistake examiners penalize."
   },
@@ -59,7 +66,10 @@
       "State all final values clearly with correct units (degrees)."
     ],
     "formula": "A + B + C = 180 degrees",
-    "diagram": { "draw": "Draw triangle ABC with given sides/angles labelled clearly, mark unknowns with a question mark to show what must be found." },
+    "diagram": {
+      "draw": "Draw triangle ABC with given sides/angles labelled clearly, mark unknowns with a question mark to show what must be found.",
+      "svg": "diagrams/math/2-3.svg"
+    },
     "example": "a=5,b=6,angle C=60°: c^2 = 25+36-2(5)(6)cos60 = 61-30 = 31, so c = sqrt(31).",
     "tip": "Always double check angle sum equals 180 degrees at the end to catch calculation errors."
   },
@@ -75,7 +85,9 @@
       "n is any integer; include it explicitly in the final answer."
     ],
     "formula": "sinx=sina: x=n*pi+(-1)^n a   cosx=cosa: x=2n*pi +- a   tanx=tana: x=n*pi+a",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Reduce to sin, cos or tan form\"] --> B[\"Find basic angle a\"]\n  B --> C[\"Apply general solution formula\"]\n  C --> D[\"Write answer with n integer\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Reduce to sin, cos or tan form\"] --> B[\"Find basic angle a\"]\n  B --> C[\"Apply general solution formula\"]\n  C --> D[\"Write answer with n integer\"]"
+    },
     "example": "sin x = 1/2: basic angle a = pi/6, general solution x = n*pi + (-1)^n (pi/6).",
     "tip": "Always write 'where n is an integer' with the general solution — missing this loses a mark."
   },
@@ -91,7 +103,10 @@
       "Units of area are always squared (like cm^2 or m^2)."
     ],
     "formula": "Area = (1/2) b c sinA",
-    "diagram": { "draw": "Draw triangle ABC, mark sides b and c meeting at vertex A, and mark the included angle A between them." },
+    "diagram": {
+      "draw": "Draw triangle ABC, mark sides b and c meeting at vertex A, and mark the included angle A between them.",
+      "svg": "diagrams/math/2-5.svg"
+    },
     "example": "b=6, c=8, angle A=30°: Area = (1/2)(6)(8)sin30 = (1/2)(48)(0.5) = 12 square units.",
     "tip": "Always pick the angle that is included BETWEEN the two given sides, not any random angle."
   }

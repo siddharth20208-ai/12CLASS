@@ -11,7 +11,9 @@
       "The final formulation has: objective function + constraints + non-negativity conditions."
     ],
     "formula": "Z = c1*x + c2*y (objective), subject to a*x+b*y <= k (constraints)",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Read word problem\"] --> B[\"Define decision variables\"]\n  B --> C[\"Write objective function Z\"]\n  B --> D[\"Write constraint inequalities\"]\n  C --> E[\"Add non-negativity x,y>=0\"]\n  D --> E" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Read word problem\"] --> B[\"Define decision variables\"]\n  B --> C[\"Write objective function Z\"]\n  B --> D[\"Write constraint inequalities\"]\n  C --> E[\"Add non-negativity x,y>=0\"]\n  D --> E"
+    },
     "example": "A factory makes x chairs and y tables, profit Z=20x+30y, limited to 40 hours: 2x+3y<=40, x>=0,y>=0.",
     "tip": "Always write the non-negativity constraints explicitly — many students forget this 1-mark part."
   },
@@ -27,7 +29,10 @@
       "Include the non-negativity constraints, keeping the region in the first quadrant."
     ],
     "formula": "Test point (0,0) in each inequality to find the correct shaded side",
-    "diagram": { "draw": "Draw x and y axes. Draw each constraint line with its intercepts marked. Shade the region satisfying each inequality, and clearly mark the overlapping feasible region (often shaded darker or with hatching)." },
+    "diagram": {
+      "draw": "Draw x and y axes. Draw each constraint line with its intercepts marked. Shade the region satisfying each inequality, and clearly mark the overlapping feasible region (often shaded darker or with hatching).",
+      "svg": "diagrams/math/6-1.svg"
+    },
     "example": "For x+y<=4 with (0,0) test: 0<=4 true, so shade the side of the line containing the origin.",
     "tip": "Always test (0,0) unless the line passes through origin — then pick another easy point like (1,0)."
   },
@@ -43,7 +48,9 @@
       "The corner giving the best Z value is the optimal solution, stated with its x,y values."
     ],
     "formula": "Evaluate Z at every corner point; pick max or min as required",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Feasible region\"] --> B[\"Find all corner points\"]\n  B --> C[\"Compute Z at each corner\"]\n  C --> D[\"Compare values\"]\n  D --> E[\"Pick max or min\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Feasible region\"] --> B[\"Find all corner points\"]\n  B --> C[\"Compute Z at each corner\"]\n  C --> D[\"Compare values\"]\n  D --> E[\"Pick max or min\"]"
+    },
     "example": "Corners (0,0),(4,0),(0,4) for Z=5x+3y: Z values 0, 20, 12. Maximum Z=20 at (4,0).",
     "tip": "Always make a table listing each corner point with its Z value — this organized presentation itself earns marks."
   },
@@ -59,7 +66,10 @@
       "Always mention clearly in the solution whether the region is bounded or unbounded."
     ],
     "formula": "Bounded: optimum guaranteed; Unbounded: optimum may not exist in one direction",
-    "diagram": { "draw": "Draw one closed (bounded) feasible region as a complete polygon. Beside it, draw an open (unbounded) feasible region where shading continues off the edge of the graph in one direction, with an arrow showing it extends infinitely." },
+    "diagram": {
+      "draw": "Draw one closed (bounded) feasible region as a complete polygon. Beside it, draw an open (unbounded) feasible region where shading continues off the edge of the graph in one direction, with an arrow showing it extends infinitely.",
+      "svg": "diagrams/math/6-3.svg"
+    },
     "example": "For x+y>=2, x,y>=0, the feasible region is unbounded (extends to infinity away from origin), so Z=3x+2y has a minimum at a corner but no maximum.",
     "tip": "Explicitly write 'the feasible region is bounded/unbounded' as a sentence in your answer for a dedicated mark."
   },
@@ -75,7 +85,9 @@
       "Always list constraints and non-negativity separately for clarity in your answer."
     ],
     "formula": "x >= 0, y >= 0 (standard non-negativity constraints)",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Word phrase at most\"] --> B[\"Use less than or equal to\"]\n  A2[\"Word phrase at least\"] --> C[\"Use greater than or equal to\"]\n  D[\"Add x>=0, y>=0\"] --> E[\"Restrict to first quadrant\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Word phrase at most\"] --> B[\"Use less than or equal to\"]\n  A2[\"Word phrase at least\"] --> C[\"Use greater than or equal to\"]\n  D[\"Add x>=0, y>=0\"] --> E[\"Restrict to first quadrant\"]"
+    },
     "example": "'At most 40 hours of machine time' becomes the constraint 2x+3y<=40; variables x,y>=0 since production cannot be negative.",
     "tip": "Translate 'at most' and 'at least' correctly into <= and >= — reversing these is a very common mistake."
   },
@@ -91,7 +103,9 @@
       "State the final answer with both the optimal Z value and the corresponding x, y values."
     ],
     "formula": "Max: pick largest Z value; Min: pick smallest Z value among corners",
-    "diagram": { "mermaid": "flowchart TD\n  A[\"Read problem type\"] --> B{\"Maximize or minimize\"}\n  B -->|\"maximize\"| C[\"Pick largest Z at corners\"]\n  B -->|\"minimize\"| D[\"Pick smallest Z at corners\"]" },
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Read problem type\"] --> B{\"Maximize or minimize\"}\n  B -->|\"maximize\"| C[\"Pick largest Z at corners\"]\n  B -->|\"minimize\"| D[\"Pick smallest Z at corners\"]"
+    },
     "example": "Minimize Z=3x+2y with corners (2,0),(0,2): Z values 6 and 4. Minimum Z=4 at (0,2).",
     "tip": "Always re-read the question to confirm max or min is asked — the method is identical but picking the wrong one loses all marks."
   }

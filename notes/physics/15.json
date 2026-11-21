@@ -30,7 +30,8 @@
     ],
     "formula": "Forward bias: low resistance, large current;  Reverse bias: high resistance, negligible current",
     "diagram": {
-      "draw": "Draw a p-n junction diode symbol (triangle with a bar). For forward bias, show the battery's positive terminal connected to the p-side (triangle end) and negative to n-side (bar end), with current flowing through. For reverse bias, draw the connections swapped. Label 'depletion region', 'p-side', 'n-side', 'forward bias', 'reverse bias'."
+      "draw": "Draw a p-n junction diode symbol (triangle with a bar). For forward bias, show the battery's positive terminal connected to the p-side (triangle end) and negative to n-side (bar end), with current flowing through. For reverse bias, draw the connections swapped. Label 'depletion region', 'p-side', 'n-side', 'forward bias', 'reverse bias'.",
+      "svg": "diagrams/physics/15-1.svg"
     },
     "example": "A silicon diode in forward bias with applied voltage above 0.7 V conducts strongly; the same diode in reverse bias conducts almost no current even at several volts.",
     "tip": "Draw both the forward-bias and reverse-bias circuit diagrams with correct polarity — polarity mistakes are the most common error."
@@ -48,7 +49,8 @@
     ],
     "formula": "Half-wave: output only for half the AC cycle; Full-wave: output for the complete AC cycle",
     "diagram": {
-      "draw": "Draw a centre-tapped transformer secondary connected to two diodes D1 and D2, both feeding into a common load resistor RL, with the centre tap grounded. Below it, draw the AC input waveform (sine wave) and the resulting full-wave rectified output waveform (all positive humps) on the load."
+      "draw": "Draw a centre-tapped transformer secondary connected to two diodes D1 and D2, both feeding into a common load resistor RL, with the centre tap grounded. Below it, draw the AC input waveform (sine wave) and the resulting full-wave rectified output waveform (all positive humps) on the load.",
+      "svg": "diagrams/physics/15-2.svg"
     },
     "example": "For 50 Hz AC input, a half-wave rectifier gives output pulses at 50 Hz, while a full-wave rectifier gives output pulses at 100 Hz (twice the input frequency), which is smoother.",
     "tip": "Always draw the input and output waveforms side by side — examiners award separate marks for correct waveform shapes."
@@ -66,7 +68,8 @@
     ],
     "formula": "Output voltage across load = Vz (constant), as long as input voltage stays above Vz",
     "diagram": {
-      "draw": "Draw an unregulated DC input source connected through a series resistor Rs to a Zener diode and a load resistor RL connected in parallel, with the Zener diode in reverse bias (cathode to positive side). Label 'input voltage', 'Rs', 'Zener diode Vz', 'load RL', and show output voltage taken across RL."
+      "draw": "Draw an unregulated DC input source connected through a series resistor Rs to a Zener diode and a load resistor RL connected in parallel, with the Zener diode in reverse bias (cathode to positive side). Label 'input voltage', 'Rs', 'Zener diode Vz', 'load RL', and show output voltage taken across RL.",
+      "svg": "diagrams/physics/15-3.svg"
     },
     "example": "A 6 V Zener diode keeps the output at 6 V even when the unregulated input varies between 9 V and 12 V, because the series resistor absorbs the extra voltage drop.",
     "tip": "Remember the Zener diode is used in reverse bias (opposite to a normal diode application) — this is a frequently confused point."
@@ -84,7 +87,8 @@
     ],
     "formula": "IE = IB + IC;  beta = IC / IB (current amplification factor, CE mode)",
     "diagram": {
-      "draw": "Draw an n-p-n transistor symbol with emitter (arrow pointing out), base, and collector terminals labelled. Show the emitter-base junction forward biased with a battery and the base-collector junction reverse biased with another battery, in common emitter configuration, with input signal applied at base and output taken at collector through a load resistor."
+      "draw": "Draw an n-p-n transistor symbol with emitter (arrow pointing out), base, and collector terminals labelled. Show the emitter-base junction forward biased with a battery and the base-collector junction reverse biased with another battery, in common emitter configuration, with input signal applied at base and output taken at collector through a load resistor.",
+      "svg": "diagrams/physics/15-4.svg"
     },
     "example": "If IB = 0.1 mA and beta = 100, then IC = beta x IB = 10 mA, and IE = IB + IC = 10.1 mA.",
     "tip": "Clearly state the biasing condition (emitter-base forward, base-collector reverse) — this is essential and often missed."

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="white"/>
+  <defs>
+    <marker id="arrow2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="black"/>
+    </marker>
+    <marker id="arrowR" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#c0392b"/>
+    </marker>
+  </defs>
+  <text x="320" y="20" font-size="16" text-anchor="middle" fill="black">Phasor Diagram: Series LCR circuit</text>
+
+  <!-- origin -->
+  <g>
+    <circle cx="320" cy="280" r="2" fill="black"/>
+    <!-- I and VR along horizontal -->
+    <line x1="320" y1="280" x2="470" y2="280" stroke="black" stroke-width="2" marker-end="url(#arrow2)"/>
+    <text x="475" y="285" font-size="14" fill="black">I, VR</text>
+
+    <!-- VL up -->
+    <line x1="320" y1="280" x2="320" y2="120" stroke="#2874a6" stroke-width="2" marker-end="url(#arrow2)"/>
+    <text x="330" y="115" font-size="14" fill="#2874a6">VL</text>
+
+    <!-- VC down -->
+    <line x1="320" y1="280" x2="320" y2="340" stroke="#1e8449" stroke-width="2" marker-end="url(#arrow2)"/>
+    <text x="330" y="355" font-size="14" fill="#1e8449">VC</text>
+
+    <!-- net VL - VC up, assume VL > VC -->
+    <line x1="320" y1="280" x2="320" y2="180" stroke="black" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <text x="250" y="200" font-size="13" fill="black">(VL - VC)</text>
+
+    <!-- Resultant V -->
+    <line x1="320" y1="280" x2="440" y2="180" stroke="#c0392b" stroke-width="2.5" marker-end="url(#arrowR)"/>
+    <text x="445" y="175" font-size="14" fill="#c0392b">V (resultant)</text>
+
+    <!-- angle phi arc -->
+    <path d="M 360 280 A 40 40 0 0 0 350 248" stroke="black" stroke-width="1.5" fill="none"/>
+    <text x="365" y="260" font-size="14" fill="black">phi</text>
+  </g>
+
+  <text x="320" y="380" font-size="14" text-anchor="middle" fill="black">V is resultant of VR and (VL - VC); phi is phase angle between V and I</text>
+</svg>

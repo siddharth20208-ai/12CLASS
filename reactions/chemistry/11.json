@@ -1,0 +1,127 @@
+{
+  "named": [
+    {
+      "name": "Rosenmund reduction",
+      "eq": "R-COCl + H2 -> R-CHO + HCl",
+      "cond": "H2 gas, Pd catalyst poisoned with BaSO4 (or S/quinoline), in xylene",
+      "tip": "Poisoned Pd is essential to stop reduction at the aldehyde stage; forgetting BaSO4 poisoning is a common mistake."
+    },
+    {
+      "name": "Etard reaction",
+      "eq": "C6H5CH3 + CrO2Cl2 -> C6H5CH(OCrOHCl2)2 -> (hydrolysis) -> C6H5CHO",
+      "cond": "Chromyl chloride (CrO2Cl2) in CS2/CCl4, then hydrolysis with water",
+      "tip": "Used to convert toluene directly to benzaldehyde; examiners ask for both steps - chromyl chloride addition then hydrolysis."
+    },
+    {
+      "name": "Stephen reaction",
+      "eq": "R-CN + SnCl2/HCl -> R-CH=NH.HCl -> (hydrolysis) -> R-CHO + NH4Cl",
+      "cond": "SnCl2 and HCl gas, followed by hydrolysis",
+      "tip": "Converts nitriles to aldehydes; mention the imine (aldimine) salt intermediate before hydrolysis."
+    },
+    {
+      "name": "Nucleophilic addition of HCN (cyanohydrin formation)",
+      "eq": "CH3CHO + HCN -> CH3CH(OH)CN",
+      "cond": "Dilute base (KOH/KCN) as catalyst, low temperature",
+      "tip": "Product is called a cyanohydrin; state that reaction is nucleophilic addition at polar C=O carbon."
+    },
+    {
+      "name": "Aldol condensation",
+      "eq": "2 CH3CHO -> CH3-CH(OH)-CH2-CHO -> (heat, -H2O) -> CH3-CH=CH-CHO",
+      "cond": "Dilute NaOH (cold) for aldol, then heat for dehydration",
+      "tip": "Must have alpha-hydrogen; show both the aldol (beta-hydroxy aldehyde) and the final crotonaldehyde after dehydration."
+    },
+    {
+      "name": "Cannizzaro reaction",
+      "eq": "2 HCHO + NaOH -> CH3OH + HCOONa",
+      "cond": "Concentrated NaOH/KOH, aldehyde must have NO alpha-hydrogen",
+      "tip": "Disproportionation: one molecule reduced to alcohol, other oxidised to carboxylate salt; only non-alpha-H aldehydes (HCHO, C6H5CHO) undergo this."
+    },
+    {
+      "name": "Tollens' test",
+      "eq": "R-CHO + 2[Ag(NH3)2]OH -> R-COONH4 + 2Ag + 3NH3 + H2O",
+      "cond": "Ammoniacal silver nitrate (Tollens' reagent), warm gently",
+      "tip": "Bright silver mirror confirms aldehyde; ketones give no reaction - a frequently asked distinguishing test."
+    },
+    {
+      "name": "Fehling's test",
+      "eq": "R-CHO + 2CuSO4 + 4NaOH -> R-COONa + Cu2O + 2Na2SO4 + 3H2O",
+      "cond": "Fehling's solution (alkaline CuSO4 with sodium potassium tartrate), heat",
+      "tip": "Brick-red Cu2O precipitate confirms aliphatic aldehyde; aromatic aldehydes (benzaldehyde) give negative Fehling's test."
+    },
+    {
+      "name": "Iodoform test",
+      "eq": "CH3-CO-R + 3I2 + 4NaOH -> CHI3 + R-COONa + 3NaI + 3H2O",
+      "cond": "I2 and NaOH (or I2/KI with Na2CO3)",
+      "tip": "Positive for methyl ketones, ethanol and acetaldehyde (CH3-CH(OH)- or CH3-CO- pattern); yellow CHI3 precipitate is the identifying result."
+    },
+    {
+      "name": "Hell-Volhard-Zelinsky (HVZ) reaction",
+      "eq": "CH3COOH + Cl2 -> ClCH2COOH + HCl",
+      "cond": "Cl2 or Br2 with catalytic red phosphorus",
+      "tip": "Halogenation occurs only at the alpha-carbon and only if an alpha-hydrogen is present; name the catalyst (red P) for full marks."
+    }
+  ],
+  "conversions": [
+    {
+      "q": "Convert ethanol to ethanal (acetaldehyde) (HSC style)",
+      "steps": [
+        "step 1: CH3CH2OH + PCC (pyridinium chlorochromate) -> CH3CHO (mild/controlled oxidation stops at aldehyde)"
+      ],
+      "ans": "CH3CH2OH --PCC--> CH3CHO"
+    },
+    {
+      "q": "Convert ethanoic acid (acetic acid) to ethanal (HSC style)",
+      "steps": [
+        "step 1: CH3COOH + reduce to CH3CH2OH is not direct; instead CH3COOH -> CH3COCl using PCl5/SOCl2",
+        "step 2: CH3COCl + H2/Pd-BaSO4 (Rosenmund reduction) -> CH3CHO + HCl"
+      ],
+      "ans": "CH3COOH --PCl5--> CH3COCl --H2/Pd-BaSO4 (Rosenmund)--> CH3CHO"
+    },
+    {
+      "q": "Convert benzene to benzaldehyde using the Etard reaction route (HSC style)",
+      "steps": [
+        "step 1: C6H6 + CH3Cl/anhyd. AlCl3 (Friedel-Crafts alkylation) -> C6H5CH3 (toluene)",
+        "step 2: C6H5CH3 + CrO2Cl2 (chromyl chloride) in CS2 -> chromium complex, then hydrolyse with water -> C6H5CHO (Etard reaction)"
+      ],
+      "ans": "C6H6 --CH3Cl/AlCl3--> C6H5CH3 --CrO2Cl2, then H2O (Etard)--> C6H5CHO"
+    },
+    {
+      "q": "Convert methyl cyanide (acetonitrile) to ethanal using the Stephen reaction (HSC style)",
+      "steps": [
+        "step 1: CH3CN + SnCl2/HCl (gas) -> CH3CH=NH.HCl (aldimine hydrochloride, Stephen reaction)",
+        "step 2: CH3CH=NH.HCl + H2O (hydrolysis) -> CH3CHO + NH4Cl"
+      ],
+      "ans": "CH3CN --SnCl2/HCl--> CH3CH=NH.HCl --hydrolysis--> CH3CHO"
+    },
+    {
+      "q": "Convert ethanal to ethanoic acid (HSC style)",
+      "steps": [
+        "step 1: CH3CHO + KMnO4 (acidic/alkaline, strong oxidant) -> CH3COOH (oxidation of aldehyde to acid)"
+      ],
+      "ans": "CH3CHO --KMnO4 (oxidation)--> CH3COOH"
+    },
+    {
+      "q": "Convert methanal (formaldehyde) to methanol and sodium formate (HSC style, Cannizzaro)",
+      "steps": [
+        "step 1: 2 HCHO + conc. NaOH (Cannizzaro reaction, HCHO has no alpha-H) -> CH3OH + HCOONa (disproportionation: one reduced to alcohol, one oxidised to salt)"
+      ],
+      "ans": "2 HCHO --conc. NaOH (Cannizzaro)--> CH3OH + HCOONa"
+    },
+    {
+      "q": "Convert propanone (acetone) to mesityl oxide via aldol-type condensation and dehydration (HSC style)",
+      "steps": [
+        "step 1: 2 CH3COCH3 + dil. NaOH (aldol condensation, ketone alpha-H) -> (CH3)2C(OH)-CH2-CO-CH3 (diacetone alcohol)",
+        "step 2: (CH3)2C(OH)-CH2-CO-CH3 + heat (-H2O, dehydration) -> (CH3)2C=CH-CO-CH3 (mesityl oxide, an alpha,beta-unsaturated ketone)"
+      ],
+      "ans": "2 CH3COCH3 --dil. NaOH--> diacetone alcohol --heat, -H2O--> mesityl oxide"
+    },
+    {
+      "q": "Convert acetic acid to glycine (aminoacetic acid) via chloroacetic acid using the HVZ reaction (HSC style)",
+      "steps": [
+        "step 1: CH3COOH + Cl2/red P (HVZ reaction) -> ClCH2COOH + HCl",
+        "step 2: ClCH2COOH + NH3 (excess, nucleophilic substitution) -> NH2CH2COOH (glycine) + HCl"
+      ],
+      "ans": "CH3COOH --Cl2/red P (HVZ)--> ClCH2COOH --NH3--> NH2CH2COOH (glycine)"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="640" height="400" fill="white"/>
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#333333"/>
+</marker>
+</defs>
+<!-- gas chamber (large, top) -->
+<ellipse cx="300" cy="90" rx="150" ry="60" fill="none" stroke="#333333" stroke-width="2"/>
+<text x="300" y="60" font-size="14" text-anchor="middle">Gas chamber (CH4, NH3, H2)</text>
+<!-- electrodes with spark -->
+<line x1="260" y1="75" x2="260" y2="110" stroke="#c0392b" stroke-width="2"/>
+<line x1="340" y1="75" x2="340" y2="110" stroke="#c0392b" stroke-width="2"/>
+<path d="M260,92 L280,85 L270,95 L300,88" stroke="#e67e22" stroke-width="2" fill="none"/>
+<text x="300" y="115" font-size="14" text-anchor="middle">Electrodes (spark)</text>
+<!-- condenser -->
+<rect x="420" y="70" width="40" height="110" fill="none" stroke="#333333" stroke-width="2"/>
+<text x="440" y="60" font-size="14" text-anchor="middle">Condenser</text>
+<line x1="450" y1="90" x2="430" y2="90" stroke="#333333" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="450" y1="170" x2="430" y2="170" stroke="#333333" stroke-width="2" marker-end="url(#arrow)"/>
+<!-- tube from chamber to condenser -->
+<line x1="450" y1="90" x2="450" y2="105" stroke="#333333" stroke-width="2"/>
+<path d="M440,105 Q460,120 440,135 Q420,150 440,165" stroke="#333333" stroke-width="2" fill="none"/>
+<!-- trap -->
+<ellipse cx="440" cy="260" rx="50" ry="35" fill="none" stroke="#333333" stroke-width="2"/>
+<text x="440" y="255" font-size="14" text-anchor="middle">Trap</text>
+<line x1="440" y1="180" x2="440" y2="225" stroke="#333333" stroke-width="2" marker-end="url(#arrow)"/>
+<!-- water flask at bottom, heated -->
+<circle cx="150" cy="290" r="55" fill="none" stroke="#333333" stroke-width="2"/>
+<text x="150" y="295" font-size="14" text-anchor="middle">Water flask</text>
+<path d="M120,350 L130,330 L140,350 L150,330 L160,350 L170,330 L180,350" stroke="#e67e22" stroke-width="2" fill="none"/>
+<text x="150" y="370" font-size="14" text-anchor="middle">Heat</text>
+<!-- tube from flask up to chamber -->
+<line x1="150" y1="235" x2="150" y2="150" stroke="#333333" stroke-width="2"/>
+<path d="M150,150 Q150,120 200,110" stroke="#333333" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+</svg>

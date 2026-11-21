@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="white"/>
+  <defs>
+    <marker id="arrowE" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="black"/>
+    </marker>
+  </defs>
+  <text x="320" y="20" font-size="16" text-anchor="middle" fill="black">Energy Levels and Spectral Series of Hydrogen</text>
+
+  <!-- levels, bottom n=1 to top n=infinity, spacing increasing upward -->
+  <line x1="100" y1="360" x2="560" y2="360" stroke="black" stroke-width="2"/>
+  <text x="565" y="364" font-size="14" fill="black">n=1</text>
+
+  <line x1="100" y1="300" x2="560" y2="300" stroke="black" stroke-width="2"/>
+  <text x="565" y="304" font-size="14" fill="black">n=2</text>
+
+  <line x1="100" y1="255" x2="560" y2="255" stroke="black" stroke-width="2"/>
+  <text x="565" y="259" font-size="14" fill="black">n=3</text>
+
+  <line x1="100" y1="225" x2="560" y2="225" stroke="black" stroke-width="2"/>
+  <text x="565" y="229" font-size="14" fill="black">n=4</text>
+
+  <line x1="100" y1="205" x2="560" y2="205" stroke="black" stroke-width="2"/>
+  <text x="565" y="209" font-size="14" fill="black">n=5</text>
+
+  <line x1="100" y1="185" x2="560" y2="185" stroke="black" stroke-width="2"/>
+  <text x="565" y="189" font-size="14" fill="black">n=infinity</text>
+
+  <!-- Lyman series: transitions to n=1 -->
+  <line x1="150" y1="300" x2="150" y2="358" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowE)"/>
+  <line x1="170" y1="255" x2="170" y2="358" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowE)"/>
+  <line x1="190" y1="225" x2="190" y2="358" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowE)"/>
+  <text x="130" y="178" font-size="14" fill="#c0392b">Lyman series</text>
+
+  <!-- Balmer series: transitions to n=2 -->
+  <line x1="320" y1="255" x2="320" y2="298" stroke="#2874a6" stroke-width="2" marker-end="url(#arrowE)"/>
+  <line x1="350" y1="225" x2="350" y2="298" stroke="#2874a6" stroke-width="2" marker-end="url(#arrowE)"/>
+  <line x1="380" y1="205" x2="380" y2="298" stroke="#2874a6" stroke-width="2" marker-end="url(#arrowE)"/>
+  <text x="330" y="150" font-size="14" fill="#2874a6">Balmer series</text>
+</svg>

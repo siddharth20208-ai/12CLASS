@@ -12,7 +12,9 @@
       "Common coordination numbers are 4 (tetrahedral/square planar) and 6 (octahedral)."
     ],
     "formula": "CN = number of donor atoms bonded to central metal",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Ligand type\"] --> B[\"Unidentate - one donor atom\"]\n  A --> C[\"Bidentate - two donor atoms\"]\n  A --> D[\"Polydentate - many donor atoms\"]\n  A --> E[\"Ambidentate - two possible donor atoms\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Ligand type\"] --> B[\"Unidentate - one donor atom\"]\n  A --> C[\"Bidentate - two donor atoms\"]\n  A --> D[\"Polydentate - many donor atoms\"]\n  A --> E[\"Ambidentate - two possible donor atoms\"]"
+    },
     "example": "[Ni(CO)4]: Ni is central metal, CO is unidentate ligand, coordination number = 4 (tetrahedral geometry).",
     "tip": "State the definition, give one example of each ligand type, and clearly write the coordination number with geometry for full marks."
   },
@@ -28,7 +30,9 @@
       "Cation is named before anion in the full compound name, just like simple salts."
     ],
     "formula": "Name = (ligands alphabetically) + (metal) + (oxidation state in Roman numerals)",
-    "diagram": { "mermaid": "flowchart TD\n  A[\"Write ligands alphabetically\"] --> B[\"Add prefix for number of ligands\"]\n  B --> C[\"Write metal name\"]\n  C --> D[\"Add -ate if complex is anion\"]\n  D --> E[\"Write oxidation state in brackets\"]" },
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Write ligands alphabetically\"] --> B[\"Add prefix for number of ligands\"]\n  B --> C[\"Write metal name\"]\n  C --> D[\"Add -ate if complex is anion\"]\n  D --> E[\"Write oxidation state in brackets\"]"
+    },
     "example": "[Co(NH3)4Cl2]Cl is named tetraamminedichloridocobalt(III) chloride.",
     "tip": "Practice naming 5-6 standard complexes both ways (formula to name and name to formula) - this is asked almost every year."
   },
@@ -43,7 +47,9 @@
       "Optical isomerism occurs when a complex and its mirror image are non-superimposable (chiral), common in octahedral complexes with bidentate ligands.",
       "Geometrical isomers differ in physical/chemical properties even though bonds are the same, only arrangement differs."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Isomerism\"] --> B[\"Structural - ionisation, linkage, coordination\"]\n  A --> C[\"Stereoisomerism\"]\n  C --> D[\"Geometrical - cis and trans\"]\n  C --> E[\"Optical - mirror images\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Isomerism\"] --> B[\"Structural - ionisation, linkage, coordination\"]\n  A --> C[\"Stereoisomerism\"]\n  C --> D[\"Geometrical - cis and trans\"]\n  C --> E[\"Optical - mirror images\"]"
+    },
     "example": "[Pt(NH3)2Cl2] square planar complex has cis form (two Cl adjacent) and trans form (two Cl opposite) as geometrical isomers.",
     "tip": "Draw the cis and trans structures clearly with labels - diagram-based questions on this topic carry good marks."
   },
@@ -59,7 +65,9 @@
       "Geometry is decided by the type of hybridisation: sp3 gives tetrahedral, dsp2 gives square planar, sp3d2/d2sp3 give octahedral."
     ],
     "formula": "Hybridisation types: sp3 (tetrahedral), dsp2 (square planar), sp3d2 or d2sp3 (octahedral)",
-    "diagram": { "mermaid": "flowchart TD\n  A[\"Metal ion orbitals\"] --> B[\"Hybridise with ligand lone pairs\"]\n  B --> C[\"Inner d orbitals used - low spin\"]\n  B --> D[\"Outer d orbitals used - high spin\"]\n  C --> E[\"Often diamagnetic\"]\n  D --> F[\"Often paramagnetic\"]" },
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Metal ion orbitals\"] --> B[\"Hybridise with ligand lone pairs\"]\n  B --> C[\"Inner d orbitals used - low spin\"]\n  B --> D[\"Outer d orbitals used - high spin\"]\n  C --> E[\"Often diamagnetic\"]\n  D --> F[\"Often paramagnetic\"]"
+    },
     "example": "[Ni(CN)4]2-: Ni2+ uses dsp2 hybridisation, square planar, diamagnetic (all electrons paired due to strong CN- field).",
     "tip": "Always connect hybridisation to geometry AND magnetic behaviour in your answer - examiners look for all three."
   },
@@ -75,7 +83,10 @@
       "Electrons fill according to Hund's rule balanced against the crystal field splitting energy (pairing energy vs delta-o)."
     ],
     "formula": "Octahedral splitting: delta-o separates t2g (lower) and eg (higher) orbitals",
-    "diagram": { "draw": "Draw two horizontal energy levels. Draw a dashed horizontal line below both labelled 'average energy of d orbitals'. Draw the lower level with 3 small boxes labelled t2g below the dashed line. Draw the upper level with 2 small boxes labelled eg above the dashed line. Mark the vertical gap between them with an arrow labelled delta-o." },
+    "diagram": {
+      "draw": "Draw two horizontal energy levels. Draw a dashed horizontal line below both labelled 'average energy of d orbitals'. Draw the lower level with 3 small boxes labelled t2g below the dashed line. Draw the upper level with 2 small boxes labelled eg above the dashed line. Mark the vertical gap between them with an arrow labelled delta-o.",
+      "svg": "diagrams/chemistry/8-4.svg"
+    },
     "example": "[CoF6]3-: F- is weak field ligand, small delta-o, electrons spread out (high spin), 4 unpaired electrons, paramagnetic.",
     "tip": "Draw the t2g-eg splitting diagram neatly with delta-o marked - this diagram alone often fetches 1-2 marks."
   },
@@ -90,7 +101,9 @@
       "Coordination compounds like cisplatin [Pt(NH3)2Cl2] (cis isomer) are used as anti-cancer drugs.",
       "Electroplating uses complex ions to get smooth, uniform metal deposits."
     ],
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Coordination compounds\"] --> B[\"Analysis - Ni-DMG test\"]\n  A --> C[\"Metal extraction - Ag and Au cyanide complex\"]\n  A --> D[\"Biology - haemoglobin, chlorophyll\"]\n  A --> E[\"Medicine - cisplatin anti-cancer drug\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Coordination compounds\"] --> B[\"Analysis - Ni-DMG test\"]\n  A --> C[\"Metal extraction - Ag and Au cyanide complex\"]\n  A --> D[\"Biology - haemoglobin, chlorophyll\"]\n  A --> E[\"Medicine - cisplatin anti-cancer drug\"]"
+    },
     "example": "Hardness of water is estimated by titrating Ca2+ and Mg2+ ions against EDTA solution using an indicator.",
     "tip": "List at least 4 different application areas with one specific example each - breadth of answer earns more marks than depth on one point."
   }

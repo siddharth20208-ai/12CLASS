@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="640" height="400" fill="white"/>
+<text x="320" y="24" font-size="18" text-anchor="middle" font-weight="bold">DNA Double Helix (schematic)</text>
+
+<!-- two parallel curved backbones -->
+<path d="M80,350 C160,250 160,150 80,60" stroke="#2980b9" stroke-width="2.5" fill="none"/>
+<path d="M560,350 C480,250 480,150 560,60" stroke="#2980b9" stroke-width="2.5" fill="none"/>
+
+<!-- rungs connecting the strands -->
+<line x1="95" y1="330" x2="545" y2="330" stroke="black" stroke-width="2"/>
+<text x="320" y="325" font-size="12" text-anchor="middle">A-T</text>
+
+<line x1="115" y1="270" x2="525" y2="270" stroke="black" stroke-width="2"/>
+<text x="320" y="265" font-size="12" text-anchor="middle">G-C</text>
+
+<line x1="115" y1="200" x2="525" y2="200" stroke="black" stroke-width="2"/>
+<text x="320" y="195" font-size="12" text-anchor="middle">A-T</text>
+
+<line x1="115" y1="130" x2="525" y2="130" stroke="black" stroke-width="2"/>
+<text x="320" y="125" font-size="12" text-anchor="middle">G-C</text>
+
+<line x1="95" y1="75" x2="545" y2="75" stroke="black" stroke-width="2"/>
+<text x="320" y="70" font-size="12" text-anchor="middle">A-T</text>
+
+<text x="40" y="200" font-size="13" fill="#2980b9">sugar-phosphate</text>
+<text x="40" y="216" font-size="13" fill="#2980b9">backbone</text>
+
+<text x="320" y="375" font-size="14" text-anchor="middle">rungs = hydrogen bonds between base pairs</text>
+</svg>

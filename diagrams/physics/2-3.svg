@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="white"/>
+  <defs>
+    <marker id="d1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#c0392b"/>
+    </marker>
+  </defs>
+  <!-- Hollow sphere cavity -->
+  <circle cx="320" cy="210" r="140" fill="#eee" stroke="black" stroke-width="2"/>
+  <circle cx="320" cy="210" r="120" fill="white" stroke="black" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- small hole -->
+  <rect x="172" y="200" width="16" height="20" fill="white" stroke="black" stroke-width="2"/>
+  <text x="140" y="245" font-size="14" text-anchor="middle">small hole</text>
+
+  <!-- incoming ray -->
+  <line x1="60" y1="180" x2="178" y2="205" stroke="#c0392b" stroke-width="2" marker-end="url(#d1)"/>
+
+  <!-- internal reflections -->
+  <line x1="190" y1="208" x2="380" y2="140" stroke="#c0392b" stroke-width="1.5" marker-end="url(#d1)"/>
+  <line x1="380" y1="140" x2="300" y2="320" stroke="#c0392b" stroke-width="1.5" marker-end="url(#d1)"/>
+  <line x1="300" y1="320" x2="420" y2="260" stroke="#c0392b" stroke-width="1.5" marker-end="url(#d1)"/>
+  <line x1="420" y1="260" x2="250" y2="130" stroke="#c0392b" stroke-width="1.5" marker-end="url(#d1)"/>
+
+  <text x="320" y="40" font-size="16" text-anchor="middle">Ferry's blackbody</text>
+  <text x="320" y="380" font-size="14" text-anchor="middle">small hole acts as nearly perfect blackbody</text>
+</svg>

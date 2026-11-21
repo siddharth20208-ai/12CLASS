@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="white"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#c0392b"/>
+    </marker>
+  </defs>
+  <!-- Rod -->
+  <rect x="100" y="190" width="400" height="20" fill="#555" stroke="black" stroke-width="2"/>
+  <text x="450" y="175" font-size="15" text-anchor="middle">Rod</text>
+
+  <!-- Axis through CM -->
+  <line x1="300" y1="100" x2="300" y2="300" stroke="black" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="300" y="90" font-size="14" text-anchor="middle">Axis through CM (Ic)</text>
+
+  <!-- Parallel axis at left end -->
+  <line x1="100" y1="100" x2="100" y2="300" stroke="black" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="100" y="90" font-size="14" text-anchor="middle">Parallel axis (I)</text>
+
+  <!-- h arrow -->
+  <line x1="100" y1="330" x2="300" y2="330" stroke="#c0392b" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="200" y="350" font-size="16" text-anchor="middle" fill="#c0392b">h</text>
+</svg>

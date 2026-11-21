@@ -48,7 +48,8 @@
     ],
     "formula": "Zero order: [A] = [A]0 - kt     First order: k = (2.303/t) log([A]0/[A])",
     "diagram": {
-      "draw": "Draw two graphs side by side. Left graph: x-axis time, y-axis [A], a straight descending line labelled 'Zero order, slope = -k'. Right graph: x-axis time, y-axis log[A], a straight descending line labelled 'First order, slope = -k/2.303'."
+      "draw": "Draw two graphs side by side. Left graph: x-axis time, y-axis [A], a straight descending line labelled 'Zero order, slope = -k'. Right graph: x-axis time, y-axis log[A], a straight descending line labelled 'First order, slope = -k/2.303'.",
+      "svg": "diagrams/chemistry/5-2.svg"
     },
     "example": "First order decomposition: [A]0 = 0.8 M, [A] after 10 min = 0.4 M. k = (2.303/10) log(0.8/0.4) = (2.303/10)(0.301) = 0.0693 min^-1.",
     "tip": "Memorise both integrated equations and the graph shapes exactly — numericals and graph-identification questions are very common."
@@ -83,7 +84,8 @@
     ],
     "formula": "k = A e^(-Ea/RT)     log(k2/k1) = (Ea/2.303R)(1/T1 - 1/T2)",
     "diagram": {
-      "draw": "Draw a graph with x-axis as reaction coordinate and y-axis as energy. Show reactants at a lower energy level on the left, a hump (peak) in the middle labelled 'activated complex', and products at a lower level on the right. Mark the vertical gap from reactants to the peak as 'Ea (activation energy)'."
+      "draw": "Draw a graph with x-axis as reaction coordinate and y-axis as energy. Show reactants at a lower energy level on the left, a hump (peak) in the middle labelled 'activated complex', and products at a lower level on the right. Mark the vertical gap from reactants to the peak as 'Ea (activation energy)'.",
+      "svg": "diagrams/chemistry/5-4.svg"
     },
     "example": "If k2/k1 = 4 for a temperature rise from 300 K to 310 K, use log4 = (Ea/2.303R)(1/300 - 1/310) to solve for Ea.",
     "tip": "Draw the energy profile diagram with Ea clearly marked — this diagram alone often fetches 1-2 marks."

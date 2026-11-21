@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="white"/>
+  <defs>
+    <marker id="arrowD" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="black"/>
+    </marker>
+  </defs>
+  <text x="320" y="20" font-size="16" text-anchor="middle" fill="black">Davisson-Germer Experiment</text>
+
+  <!-- electron gun -->
+  <rect x="50" y="170" width="90" height="40" fill="none" stroke="black" stroke-width="2"/>
+  <text x="55" y="230" font-size="14" fill="black">electron gun</text>
+
+  <!-- electron beam -->
+  <line x1="140" y1="190" x2="300" y2="190" stroke="#2874a6" stroke-width="2" marker-end="url(#arrowD)"/>
+
+  <!-- nickel crystal target -->
+  <circle cx="320" cy="190" r="30" fill="#aed6f1" stroke="black" stroke-width="2"/>
+  <text x="275" y="235" font-size="14" fill="black">nickel crystal</text>
+
+  <!-- movable circular scale -->
+  <circle cx="320" cy="190" r="120" fill="none" stroke="black" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+  <!-- detector on scale at angle theta -->
+  <line x1="320" y1="190" x2="430" y2="110" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowD)"/>
+  <rect x="425" y="95" width="40" height="25" fill="none" stroke="black" stroke-width="2" transform="rotate(-35 445 107)"/>
+  <text x="470" y="100" font-size="14" fill="black">detector</text>
+
+  <!-- angle theta arc -->
+  <path d="M 370 190 A 50 50 0 0 0 360 150" stroke="black" stroke-width="1.5" fill="none"/>
+  <text x="365" y="170" font-size="14" fill="black">theta</text>
+
+  <!-- galvanometer -->
+  <line x1="465" y1="107" x2="520" y2="150" stroke="black" stroke-width="2"/>
+  <circle cx="540" cy="170" r="18" fill="white" stroke="black" stroke-width="2"/>
+  <text x="533" y="175" font-size="13" fill="black">G</text>
+  <text x="505" y="200" font-size="14" fill="black">galvanometer</text>
+</svg>

@@ -12,7 +12,8 @@
     ],
     "formula": "Photoelectric current proportional to intensity I; KEmax depends only on frequency v",
     "diagram": {
-      "draw": "Draw an evacuated glass tube. Inside, show a metal plate C (cathode/emitter) on the left and a collector plate A (anode) on the right. Show light rays falling on C. Connect both plates to a battery with a variable voltage and a microammeter in series to measure photoelectric current. Label 'incident light', 'photoelectrons', 'battery', 'microammeter'."
+      "draw": "Draw an evacuated glass tube. Inside, show a metal plate C (cathode/emitter) on the left and a collector plate A (anode) on the right. Show light rays falling on C. Connect both plates to a battery with a variable voltage and a microammeter in series to measure photoelectric current. Label 'incident light', 'photoelectrons', 'battery', 'microammeter'.",
+      "svg": "diagrams/physics/13-0.svg"
     },
     "example": "Sodium has threshold frequency 5 x 10^14 Hz. Light of frequency 4 x 10^14 Hz (below threshold) causes no emission however intense it is; light of 6 x 10^14 Hz causes emission even if dim.",
     "tip": "State all four laws clearly and mention that intensity affects only photocurrent, never KEmax — this distinction is commonly tested."
@@ -66,7 +67,8 @@
     ],
     "formula": "e V0 = h v - phi0, so V0 = (h/e) v - (phi0/e)",
     "diagram": {
-      "draw": "Draw a graph with frequency v on the x-axis and stopping potential V0 on the y-axis. Draw a straight line with positive slope that cuts the x-axis at v0 (threshold frequency) and has slope equal to h/e. Label the line, the slope and the x-intercept v0."
+      "draw": "Draw a graph with frequency v on the x-axis and stopping potential V0 on the y-axis. Draw a straight line with positive slope that cuts the x-axis at v0 (threshold frequency) and has slope equal to h/e. Label the line, the slope and the x-intercept v0.",
+      "svg": "diagrams/physics/13-3.svg"
     },
     "example": "If V0 = 1.2 V at frequency 7 x 10^14 Hz, then KEmax = e V0 = 1.2 eV = 1.92 x 10^-19 J.",
     "tip": "Draw the V0 vs v graph correctly with the x-intercept labelled v0 — this diagram alone is worth marks in board exams."
@@ -102,7 +104,8 @@
     ],
     "formula": "Bragg-like condition used to find wavelength; matches lambda = h / sqrt(2 m e V)",
     "diagram": {
-      "draw": "Draw an electron gun on the left emitting an electron beam towards a nickel crystal target in the centre. Draw a detector mounted on a movable circular scale around the crystal, able to rotate to measure intensity of scattered electrons at angle theta. Label 'electron gun', 'nickel crystal', 'detector', 'angle theta', 'galvanometer'."
+      "draw": "Draw an electron gun on the left emitting an electron beam towards a nickel crystal target in the centre. Draw a detector mounted on a movable circular scale around the crystal, able to rotate to measure intensity of scattered electrons at angle theta. Label 'electron gun', 'nickel crystal', 'detector', 'angle theta', 'galvanometer'.",
+      "svg": "diagrams/physics/13-5.svg"
     },
     "example": "At accelerating voltage 54 V, a strong diffraction peak was observed at 50 degrees, giving an experimental wavelength that agreed with the de Broglie value of about 1.65 x 10^-10 m.",
     "tip": "Mention that the experimental wavelength matching the de Broglie value is the key conclusion — examiners look for this exact statement."

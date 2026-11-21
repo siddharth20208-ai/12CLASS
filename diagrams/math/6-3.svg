@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="white"/>
+  <defs>
+    <marker id="arrow3" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#222"/>
+    </marker>
+  </defs>
+
+  <!-- Left: bounded region -->
+  <line x1="40" y1="330" x2="280" y2="330" stroke="#222" stroke-width="2" marker-end="url(#arrow3)"/>
+  <line x1="40" y1="330" x2="40" y2="60" stroke="#222" stroke-width="2" marker-end="url(#arrow3)"/>
+  <text x="260" y="325" font-size="14">x</text>
+  <text x="25" y="65" font-size="14">y</text>
+  <polygon points="40,330 220,330 170,180 40,100" fill="#2e8b57" fill-opacity="0.35" stroke="#1a66cc" stroke-width="2"/>
+  <text x="80" y="260" font-size="16" font-weight="bold">Bounded</text>
+  <text x="60" y="360" font-size="15">Closed polygon region</text>
+
+  <!-- Right: unbounded region -->
+  <line x1="360" y1="330" x2="600" y2="330" stroke="#222" stroke-width="2" marker-end="url(#arrow3)"/>
+  <line x1="360" y1="330" x2="360" y2="60" stroke="#222" stroke-width="2" marker-end="url(#arrow3)"/>
+  <text x="580" y="325" font-size="14">x</text>
+  <text x="345" y="65" font-size="14">y</text>
+
+  <!-- unbounded feasible region extends off top and right edges -->
+  <polygon points="360,330 600,330 600,40 480,40 420,180 360,230" fill="#cc3333" fill-opacity="0.3" stroke="#cc3333" stroke-width="2"/>
+  <line x1="600" y1="40" x2="620" y2="20" stroke="#cc3333" stroke-width="2" marker-end="url(#arrow3)"/>
+  <text x="430" y="260" font-size="16" font-weight="bold">Unbounded</text>
+  <text x="400" y="360" font-size="15">Region extends to infinity</text>
+</svg>

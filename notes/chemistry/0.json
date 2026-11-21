@@ -29,7 +29,8 @@
     ],
     "formula": "Z(SCC) = 1, Z(BCC) = 2, Z(FCC) = 4",
     "diagram": {
-      "draw": "Draw three cubes side by side. First cube: dots only at the 8 corners, label 'SCC, Z=1'. Second cube: dots at corners plus one dot in the middle, label 'BCC, Z=2'. Third cube: dots at corners plus one dot on the centre of each of the 6 faces, label 'FCC, Z=4'."
+      "draw": "Draw three cubes side by side. First cube: dots only at the 8 corners, label 'SCC, Z=1'. Second cube: dots at corners plus one dot in the middle, label 'BCC, Z=2'. Third cube: dots at corners plus one dot on the centre of each of the 6 faces, label 'FCC, Z=4'.",
+      "svg": "diagrams/chemistry/0-1.svg"
     },
     "example": "Polonium crystallizes in SCC lattice, so each unit cell contains exactly 1 atom of Po.",
     "tip": "Draw all three cells quickly with correct dot positions and write Z and coordination number under each — this is a guaranteed 2-mark diagram question."

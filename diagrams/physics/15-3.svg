@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="white"/>
+  <defs>
+    <marker id="arrow15-3" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1a3c8c"/>
+    </marker>
+  </defs>
+  <!-- Input source -->
+  <circle cx="90" cy="200" r="30" fill="none" stroke="#333" stroke-width="2"/>
+  <line x1="90" y1="170" x2="90" y2="178" stroke="#333" stroke-width="2"/>
+  <line x1="78" y1="190" x2="102" y2="210" stroke="#333" stroke-width="2"/>
+  <line x1="102" y1="190" x2="78" y2="210" stroke="#333" stroke-width="2"/>
+  <text x="90" y="250" font-size="15" text-anchor="middle">input voltage</text>
+
+  <!-- top wire -->
+  <line x1="90" y1="170" x2="90" y2="80" stroke="#333" stroke-width="2"/>
+  <line x1="90" y1="80" x2="250" y2="80" stroke="#333" stroke-width="2"/>
+
+  <!-- Series resistor Rs -->
+  <polyline points="250,80 262,65 274,95 286,65 298,95 310,65 322,80" fill="none" stroke="#333" stroke-width="2"/>
+  <text x="286" y="50" font-size="15" text-anchor="middle">Rs</text>
+  <line x1="322" y1="80" x2="400" y2="80" stroke="#333" stroke-width="2"/>
+
+  <!-- node to zener branch -->
+  <circle cx="400" cy="80" r="3" fill="#333"/>
+  <line x1="400" y1="80" x2="400" y2="140" stroke="#333" stroke-width="2"/>
+  <!-- Zener diode symbol: triangle + bent bar (cathode toward positive/top) -->
+  <polygon points="385,140 415,140 400,170" fill="none" stroke="#b02a2a" stroke-width="2"/>
+  <line x1="385" y1="170" x2="415" y2="170" stroke="#b02a2a" stroke-width="2"/>
+  <line x1="385" y1="170" x2="391" y2="178" stroke="#b02a2a" stroke-width="2"/>
+  <line x1="415" y1="170" x2="409" y2="162" stroke="#b02a2a" stroke-width="2"/>
+  <text x="400" y="200" font-size="15" fill="#b02a2a" text-anchor="middle">Zener diode Vz</text>
+  <line x1="400" y1="170" x2="400" y2="320" stroke="#333" stroke-width="2"/>
+
+  <!-- node to RL branch -->
+  <circle cx="480" cy="80" r="3" fill="#333"/>
+  <line x1="400" y1="80" x2="480" y2="80" stroke="#333" stroke-width="2"/>
+  <line x1="480" y1="80" x2="480" y2="140" stroke="#333" stroke-width="2"/>
+  <rect x="465" y="140" width="30" height="60" fill="none" stroke="#1a3c8c" stroke-width="2"/>
+  <text x="480" y="225" font-size="15" fill="#1a3c8c" text-anchor="middle">load RL</text>
+  <line x1="480" y1="200" x2="480" y2="320" stroke="#333" stroke-width="2"/>
+
+  <!-- bottom wire common -->
+  <line x1="90" y1="230" x2="90" y2="320" stroke="#333" stroke-width="2"/>
+  <line x1="90" y1="320" x2="480" y2="320" stroke="#333" stroke-width="2"/>
+
+  <!-- output voltage arrows across RL -->
+  <line x1="555" y1="140" x2="555" y2="200" stroke="#2a8c4a" stroke-width="2" marker-start="url(#arrow15-3)" marker-end="url(#arrow15-3)"/>
+  <text x="605" y="160" font-size="15" fill="#2a8c4a" text-anchor="middle">output</text>
+  <text x="605" y="178" font-size="15" fill="#2a8c4a" text-anchor="middle">voltage</text>
+
+  <text x="320" y="370" font-size="16" text-anchor="middle">Zener Voltage Regulator</text>
+</svg>

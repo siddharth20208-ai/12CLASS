@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="white"/>
+  <!-- Pipe outline: wide-narrow-wide (venturi) -->
+  <path d="M 60 180 L 220 180 L 280 220 L 360 220 L 420 180 L 580 180
+           L 580 260 L 420 260 L 360 220
+           L 280 220 L 220 260 L 60 260 Z"
+        fill="#cfe8fb" stroke="black" stroke-width="2"/>
+
+  <!-- Manometer tube 1 (wide section) -->
+  <rect x="130" y="80" width="14" height="100" fill="#eef" stroke="black" stroke-width="2"/>
+  <rect x="133" y="150" width="8" height="30" fill="#2980b9"/>
+  <!-- Manometer tube 2 (narrow section) -->
+  <rect x="313" y="80" width="14" height="140" fill="#eef" stroke="black" stroke-width="2"/>
+  <rect x="316" y="195" width="8" height="25" fill="#2980b9"/>
+
+  <text x="140" y="70" font-size="14" text-anchor="middle">manometer</text>
+  <text x="320" y="70" font-size="14" text-anchor="middle">manometer</text>
+
+  <text x="140" y="300" font-size="15" text-anchor="middle">A1, v1 (slow)</text>
+  <text x="140" y="320" font-size="14" text-anchor="middle">high pressure</text>
+
+  <text x="320" y="300" font-size="15" text-anchor="middle">A2, v2 (fast)</text>
+  <text x="320" y="320" font-size="14" text-anchor="middle">low pressure</text>
+
+  <text x="500" y="300" font-size="15" text-anchor="middle">A1, v1 (slow)</text>
+  <text x="500" y="320" font-size="14" text-anchor="middle">high pressure</text>
+
+  <text x="320" y="40" font-size="16" text-anchor="middle">Venturi tube</text>
+</svg>

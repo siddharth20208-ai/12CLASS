@@ -1,0 +1,150 @@
+{
+  "solved": [
+    {
+      "topic": "EMF of a galvanic cell",
+      "marks": 2,
+      "q": "Calculate the EMF of the Daniel cell Zn | Zn2+ || Cu2+ | Cu, given E°(Zn2+/Zn) = -0.76 V and E°(Cu2+/Cu) = +0.34 V.",
+      "steps": [
+        "Given: E°(Zn2+/Zn) = -0.76 V (anode), E°(Cu2+/Cu) = +0.34 V (cathode).",
+        "Formula: EMF = E°(cathode) - E°(anode).",
+        "Substitution: EMF = 0.34 - (-0.76).",
+        "Calculation: EMF = 0.34 + 0.76 = 1.10 V.",
+        "Answer: EMF of the cell = 1.10 V."
+      ],
+      "ans": "1.10 V"
+    },
+    {
+      "topic": "Nernst equation - cell EMF at non-standard concentration",
+      "marks": 4,
+      "q": "For the cell Zn | Zn2+(0.1 M) || Cu2+(1 M) | Cu, calculate the EMF at 298 K given E°cell = 1.10 V. (n = 2)",
+      "steps": [
+        "Given: E°cell = 1.10 V, [Zn2+] = 0.1 M, [Cu2+] = 1 M, n = 2, T = 298 K.",
+        "Formula: Ecell = E°cell - (0.0591/n) log Q, where Q = [Zn2+]/[Cu2+] for the cell reaction Zn + Cu2+ -> Zn2+ + Cu.",
+        "Substitution: Q = 0.1/1 = 0.1, so log Q = log(10^-1) = -1.",
+        "Calculation: Ecell = 1.10 - (0.0591/2)(-1) = 1.10 + 0.02955.",
+        "Calculation: Ecell = 1.12955 V ≈ 1.1296 V.",
+        "Answer: Ecell ≈ 1.13 V."
+      ],
+      "ans": "1.13 V (1.1296 V)"
+    },
+    {
+      "topic": "Nernst equation - single electrode potential",
+      "marks": 3,
+      "q": "Calculate the electrode potential of Cu2+/Cu electrode when [Cu2+] = 0.01 M, given E°(Cu2+/Cu) = 0.34 V. (n = 2)",
+      "steps": [
+        "Given: E° = 0.34 V, [Cu2+] = 0.01 M = 10^-2 M, n = 2.",
+        "Formula: E = E° - (0.0591/n) log(1/[Cu2+]).",
+        "Substitution: 1/[Cu2+] = 1/10^-2 = 10^2, so log(10^2) = 2.",
+        "Calculation: E = 0.34 - (0.0591/2)(2) = 0.34 - 0.0591.",
+        "Calculation: E = 0.2809 V.",
+        "Answer: Electrode potential = 0.2809 V ≈ 0.281 V."
+      ],
+      "ans": "0.281 V"
+    },
+    {
+      "topic": "Specific conductance to molar conductivity",
+      "marks": 2,
+      "q": "The specific conductance of 0.5 M solution of an electrolyte is 1.3 x 10^-2 S/cm. Calculate its molar conductivity.",
+      "steps": [
+        "Given: kappa = 1.3 x 10^-2 S/cm, C = 0.5 mol/L.",
+        "Formula: Lambda(m) = kappa x 1000 / C.",
+        "Substitution: Lambda(m) = (1.3 x 10^-2 x 1000) / 0.5.",
+        "Calculation: Lambda(m) = 13 / 0.5 = 26 S cm^2 mol^-1.",
+        "Answer: Molar conductivity = 26 S cm^2 mol^-1."
+      ],
+      "ans": "26 S cm^2 mol^-1"
+    },
+    {
+      "topic": "Kohlrausch's law - limiting molar conductivity of weak electrolyte",
+      "marks": 3,
+      "q": "Calculate the limiting molar conductivity of CH3COOH given Lambda°(CH3COONa) = 91.0, Lambda°(HCl) = 426.2 and Lambda°(NaCl) = 126.5 S cm^2 mol^-1.",
+      "steps": [
+        "Given: Lambda°(CH3COONa) = 91.0, Lambda°(HCl) = 426.2, Lambda°(NaCl) = 126.5 (all S cm^2 mol^-1).",
+        "Formula: Lambda°(CH3COOH) = Lambda°(CH3COONa) + Lambda°(HCl) - Lambda°(NaCl) (Kohlrausch's law of independent migration).",
+        "Substitution: Lambda°(CH3COOH) = 91.0 + 426.2 - 126.5.",
+        "Calculation: Lambda°(CH3COOH) = 517.2 - 126.5 = 390.7 S cm^2 mol^-1.",
+        "Answer: Lambda°(CH3COOH) = 390.7 S cm^2 mol^-1."
+      ],
+      "ans": "390.7 S cm^2 mol^-1"
+    },
+    {
+      "topic": "Degree of dissociation of a weak electrolyte",
+      "marks": 3,
+      "q": "At a given concentration, the molar conductivity of CH3COOH is 48.15 S cm^2 mol^-1 and its limiting molar conductivity is 390.7 S cm^2 mol^-1. Calculate the degree of dissociation.",
+      "steps": [
+        "Given: Lambda(m) = 48.15 S cm^2 mol^-1, Lambda°(m) = 390.7 S cm^2 mol^-1.",
+        "Formula: alpha = Lambda(m) / Lambda°(m).",
+        "Substitution: alpha = 48.15 / 390.7.",
+        "Calculation: alpha = 0.1233.",
+        "Answer: Degree of dissociation alpha = 0.1233 (i.e. 12.33%)."
+      ],
+      "ans": "alpha = 0.1233 (12.33%)"
+    },
+    {
+      "topic": "Faraday's law - mass deposited",
+      "marks": 3,
+      "q": "A current of 5 A is passed through molten AgNO3 for 1930 seconds. Calculate the mass of silver deposited at the cathode (Ag = 108, F = 96500 C/mol).",
+      "steps": [
+        "Given: I = 5 A, t = 1930 s, M(Ag) = 108 g/mol, n = 1 (Ag+ + e- -> Ag), F = 96500 C/mol.",
+        "Formula: Q = I x t; moles of electrons = Q/F; mass = (moles of electrons / n) x M.",
+        "Substitution: Q = 5 x 1930 = 9650 C.",
+        "Calculation: moles of electrons = 9650/96500 = 0.1 mol.",
+        "Calculation: moles of Ag = 0.1/1 = 0.1 mol; mass = 0.1 x 108 = 10.8 g.",
+        "Answer: Mass of silver deposited = 10.8 g."
+      ],
+      "ans": "10.8 g"
+    },
+    {
+      "topic": "Faraday's law - time required for electrolysis",
+      "marks": 4,
+      "q": "Calculate the time required to deposit 10.8 g of silver from AgNO3 solution using a current of 0.5 A (Ag = 108, F = 96500 C/mol).",
+      "steps": [
+        "Given: mass = 10.8 g, M(Ag) = 108 g/mol, n = 1, I = 0.5 A, F = 96500 C/mol.",
+        "Formula: moles of Ag = mass/M; moles of electrons = n x moles of Ag; Q = moles of electrons x F; t = Q/I.",
+        "Substitution: moles of Ag = 10.8/108 = 0.1 mol.",
+        "Calculation: moles of electrons = 1 x 0.1 = 0.1 mol; Q = 0.1 x 96500 = 9650 C.",
+        "Calculation: t = Q/I = 9650/0.5 = 19300 s.",
+        "Answer: t = 19300 s = 5 hours 21 minutes 40 seconds (≈5.36 hours)."
+      ],
+      "ans": "19300 s (≈5.36 hours)"
+    }
+  ],
+  "practice": [
+    {
+      "topic": "EMF of a galvanic cell",
+      "q": "Calculate the EMF of the cell Mg | Mg2+ || Ag+ | Ag given E°(Mg2+/Mg) = -2.37 V and E°(Ag+/Ag) = +0.80 V.",
+      "hint": "EMF = E°(cathode) - E°(anode).",
+      "ans": "3.17 V"
+    },
+    {
+      "topic": "Nernst equation - cell EMF",
+      "q": "For the cell Ni | Ni2+(0.01 M) || Ag+(1 M) | Ag with E°cell = 1.05 V, calculate Ecell at 298 K (n = 2) given log Q = -2.",
+      "hint": "Ecell = E°cell - (0.0591/n) log Q.",
+      "ans": "1.1091 V"
+    },
+    {
+      "topic": "Single electrode potential (Nernst equation)",
+      "q": "Calculate the electrode potential of Zn2+/Zn electrode when [Zn2+] = 0.001 M, given E°(Zn2+/Zn) = -0.76 V (n = 2).",
+      "hint": "E = E° - (0.0591/n) log(1/[Zn2+]); log(1/0.001) = 3.",
+      "ans": "-0.8487 V"
+    },
+    {
+      "topic": "Specific conductance to molar conductivity",
+      "q": "The specific conductance of a 0.2 M solution is 2.4 x 10^-2 S/cm. Calculate its molar conductivity.",
+      "hint": "Lambda(m) = kappa x 1000 / C.",
+      "ans": "120 S cm^2 mol^-1"
+    },
+    {
+      "topic": "Kohlrausch's law",
+      "q": "Calculate Lambda°(NH4OH) given Lambda°(NH4Cl) = 129.8, Lambda°(NaOH) = 248.1 and Lambda°(NaCl) = 126.5 (S cm^2 mol^-1).",
+      "hint": "Lambda°(NH4OH) = Lambda°(NH4Cl) + Lambda°(NaOH) - Lambda°(NaCl).",
+      "ans": "251.4 S cm^2 mol^-1"
+    },
+    {
+      "topic": "Faraday's law - mass deposited",
+      "q": "A current of 2 A is passed through CuSO4 solution for 9650 seconds. Calculate the mass of copper deposited (Cu = 63.5, n = 2, F = 96500 C/mol).",
+      "hint": "Q = I x t; moles electrons = Q/F; mass = (moles electrons/n) x M.",
+      "ans": "6.35 g"
+    }
+  ]
+}

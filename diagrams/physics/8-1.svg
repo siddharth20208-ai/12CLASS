@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="640" height="400" fill="white"/>
+<!-- diamond vertices: top(320,60) right(500,200) bottom(320,340) left(140,200) -->
+<line x1="320" y1="60" x2="500" y2="200" stroke="black" stroke-width="2"/>
+<line x1="500" y1="200" x2="320" y2="340" stroke="black" stroke-width="2"/>
+<line x1="320" y1="340" x2="140" y2="200" stroke="black" stroke-width="2"/>
+<line x1="140" y1="200" x2="320" y2="60" stroke="black" stroke-width="2"/>
+
+<text x="390" y="115" font-size="16">P</text>
+<text x="390" y="290" font-size="16">Q</text>
+<text x="235" y="290" font-size="16">R</text>
+<text x="235" y="115" font-size="16">S</text>
+
+<!-- battery across top-bottom diagonal -->
+<line x1="320" y1="20" x2="320" y2="60" stroke="black" stroke-width="2"/>
+<line x1="320" y1="340" x2="320" y2="380" stroke="black" stroke-width="2"/>
+<line x1="305" y1="20" x2="335" y2="20" stroke="black" stroke-width="4"/>
+<line x1="312" y1="30" x2="328" y2="30" stroke="black" stroke-width="2"/>
+<text x="340" y="25" font-size="14">Battery</text>
+
+<!-- galvanometer across left-right diagonal -->
+<line x1="100" y1="200" x2="140" y2="200" stroke="black" stroke-width="2"/>
+<line x1="500" y1="200" x2="540" y2="200" stroke="black" stroke-width="2"/>
+<circle cx="80" cy="200" r="20" fill="none" stroke="black" stroke-width="2"/>
+<text x="72" y="205" font-size="16">G</text>
+<line x1="60" y1="200" x2="100" y2="200" stroke="black" stroke-width="2"/>
+<line x1="540" y1="200" x2="560" y2="200" stroke="black" stroke-width="2"/>
+
+<text x="250" y="395" font-size="16">Wheatstone Bridge</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="640" height="400" fill="white"/>
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#333333"/>
+</marker>
+</defs>
+<!-- baseline -->
+<line x1="50" y1="220" x2="590" y2="220" stroke="#333333" stroke-width="2"/>
+<!-- P wave: small rounded bump -->
+<path d="M90,220 Q120,180 150,220" stroke="#2e5fa3" stroke-width="2" fill="none"/>
+<text x="120" y="165" font-size="14" text-anchor="middle">P wave</text>
+<!-- QRS complex: small dip, tall peak, small dip -->
+<path d="M150,220 L185,230 L210,60 L235,240 L270,220" stroke="#c0392b" stroke-width="2" fill="none"/>
+<text x="210" y="45" font-size="14" text-anchor="middle">QRS complex</text>
+<!-- T wave: rounded bump -->
+<path d="M320,220 Q360,170 400,220" stroke="#2e5fa3" stroke-width="2" fill="none"/>
+<text x="360" y="150" font-size="14" text-anchor="middle">T wave</text>
+<!-- one cardiac cycle bracket -->
+<line x1="90" y1="280" x2="400" y2="280" stroke="#333333" stroke-width="1"/>
+<line x1="90" y1="272" x2="90" y2="280" stroke="#333333" stroke-width="1"/>
+<line x1="400" y1="272" x2="400" y2="280" stroke="#333333" stroke-width="1"/>
+<text x="245" y="300" font-size="14" text-anchor="middle">One cardiac cycle</text>
+</svg>

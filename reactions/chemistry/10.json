@@ -1,0 +1,118 @@
+{
+  "named": [
+    {
+      "name": "Cumene process (industrial preparation of phenol)",
+      "eq": "C6H5-CH(CH3)2 + O2 -> C6H5-C(CH3)2-OOH ; C6H5-C(CH3)2-OOH + H2O(dil. H2SO4) -> C6H5OH + CH3COCH3",
+      "cond": "Step 1: air oxidation. Step 2: dilute acid hydrolysis",
+      "tip": "Write both steps; name acetone as the useful by-product, not just phenol."
+    },
+    {
+      "name": "Dow's process (phenol from chlorobenzene)",
+      "eq": "C6H5Cl + 2NaOH -> C6H5-O-Na + NaCl + H2O ; C6H5-O-Na + HCl -> C6H5OH + NaCl",
+      "cond": "fused with NaOH at 623 K and 300 atm, then acidified",
+      "tip": "Mention high temperature and pressure; product obtained as sodium phenoxide first, then acidified to phenol."
+    },
+    {
+      "name": "Phenol from diazonium salt (hydrolysis)",
+      "eq": "C6H5-N2+ Cl- + H2O -> C6H5OH + N2 + HCl",
+      "cond": "warm with water",
+      "tip": "Byproduct is N2 gas, commonly forgotten in balancing."
+    },
+    {
+      "name": "Williamson's synthesis (ether formation)",
+      "eq": "R-O-Na + R'-X -> R-O-R' + NaX",
+      "cond": "SN2 mechanism, works best with primary R'-X",
+      "tip": "Use a primary halide; tertiary halide gives elimination (alkene) instead of ether - common trap question."
+    },
+    {
+      "name": "Fischer esterification",
+      "eq": "R-OH + R'COOH -> R'COOR + H2O",
+      "cond": "conc. H2SO4 catalyst, reflux",
+      "tip": "Reaction is reversible; excess acid/alcohol and removing water drives equilibrium to ester side."
+    },
+    {
+      "name": "Dehydration of alcohol to alkene",
+      "eq": "CH3CH2OH -> CH2=CH2 + H2O",
+      "cond": "conc. H2SO4, 443 K (intramolecular dehydration)",
+      "tip": "Follows Saytzeff's rule for unsymmetrical alcohols; tertiary > secondary > primary in ease of dehydration."
+    },
+    {
+      "name": "Dehydration of alcohol to ether",
+      "eq": "2CH3CH2OH -> CH3CH2-O-CH2CH3 + H2O",
+      "cond": "conc. H2SO4, 413 K, excess alcohol (intermolecular dehydration)",
+      "tip": "Low temperature with excess alcohol gives ether; high temperature gives alkene - do not mix up the two conditions."
+    },
+    {
+      "name": "Lucas test",
+      "eq": "R-OH + HCl -> R-Cl + H2O",
+      "cond": "conc. HCl + anhydrous ZnCl2 (Lucas reagent), room temperature",
+      "tip": "Tertiary gives turbidity instantly, secondary in about 5 min, primary needs heating - examiners check exact timing."
+    },
+    {
+      "name": "Oxidation of alcohols (to aldehyde/ketone/acid)",
+      "eq": "CH3CH2OH --(PCC or mild KMnO4)--> CH3CHO --(KMnO4/K2Cr2O7)--> CH3COOH",
+      "cond": "PCC for mild oxidation (stops at aldehyde); hot acidic KMnO4/K2Cr2O7 for full oxidation to acid",
+      "tip": "Secondary alcohol oxidises only to ketone (no further oxidation); tertiary alcohol resists oxidation."
+    }
+  ],
+  "conversions": [
+    {
+      "q": "Convert ethanol to ethene (HSC style)",
+      "steps": [
+        "step 1: CH3CH2OH + conc. H2SO4, heat at 443 K -> CH2=CH2 + H2O (intramolecular dehydration)"
+      ],
+      "ans": "Ethanol heated with conc. H2SO4 at 443 K undergoes dehydration to give ethene."
+    },
+    {
+      "q": "Convert ethanol to diethyl ether",
+      "steps": [
+        "step 1: CH3CH2OH + conc. H2SO4 (excess alcohol), 413 K -> CH3CH2-O-CH2CH3 + H2O (intermolecular dehydration)"
+      ],
+      "ans": "Two molecules of ethanol combine on heating with conc. H2SO4 at 413 K with excess alcohol to give diethyl ether."
+    },
+    {
+      "q": "Convert ethanol to ethyl chloride (ethyl halide)",
+      "steps": [
+        "step 1: CH3CH2OH + HCl (anhydrous ZnCl2, Lucas reagent) -> CH3CH2Cl + H2O"
+      ],
+      "ans": "Treat ethanol with Lucas reagent (conc. HCl + anhydrous ZnCl2) to directly get ethyl chloride."
+    },
+    {
+      "q": "Convert phenol to anisole (methoxybenzene)",
+      "steps": [
+        "step 1: C6H5OH + NaOH -> C6H5-O-Na + H2O (sodium phenoxide formation)",
+        "step 2: C6H5-O-Na + CH3I -> C6H5-O-CH3 + NaI (Williamson's synthesis)"
+      ],
+      "ans": "Convert phenol to sodium phenoxide with NaOH, then react with methyl iodide (Williamson's synthesis) to get anisole."
+    },
+    {
+      "q": "Convert chlorobenzene to phenol",
+      "steps": [
+        "step 1: C6H5Cl + NaOH (fused, 623 K, 300 atm) -> C6H5-O-Na + NaCl + H2O (Dow's process)",
+        "step 2: C6H5-O-Na + HCl (dilute) -> C6H5OH + NaCl"
+      ],
+      "ans": "Chlorobenzene is fused with NaOH under high temperature/pressure (Dow's process) to give sodium phenoxide, which is acidified to phenol."
+    },
+    {
+      "q": "Convert ethanol to acetic acid (ethanoic acid)",
+      "steps": [
+        "step 1: CH3CH2OH + KMnO4/H+ (hot, acidic) -> CH3COOH + H2O"
+      ],
+      "ans": "Hot acidified KMnO4 (or K2Cr2O7) oxidises ethanol completely through acetaldehyde to acetic acid."
+    },
+    {
+      "q": "Convert ethanol to ethyl acetate (ester)",
+      "steps": [
+        "step 1: CH3COOH (from oxidation of ethanol) + CH3CH2OH + conc. H2SO4, reflux -> CH3COOC2H5 + H2O (Fischer esterification)"
+      ],
+      "ans": "Part of ethanol is oxidised to acetic acid, which is then esterified with remaining ethanol using conc. H2SO4 to give ethyl acetate."
+    },
+    {
+      "q": "Convert propan-2-ol (isopropyl alcohol) to propene",
+      "steps": [
+        "step 1: (CH3)2CH-OH + conc. H2SO4, heat at 443 K -> CH3-CH=CH2 + H2O (dehydration, follows Saytzeff's rule)"
+      ],
+      "ans": "Secondary alcohol propan-2-ol dehydrates readily on heating with conc. H2SO4 at 443 K to give propene."
+    }
+  ]
+}

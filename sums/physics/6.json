@@ -1,146 +1,153 @@
 {
   "solved": [
     {
-      "topic": "Fringe width in YDSE (find w)",
-      "marks": 3,
-      "q": "In Young's double slit experiment, two slits are separated by d = 0.3 mm and the screen is placed D = 1.5 m away. If light of wavelength lambda = 6000 Angstrom = 6 x 10^-7 m is used, find the fringe width.",
+      "topic": "YDSE - fringe width",
+      "marks": 2,
+      "q": "In Young's double slit experiment, the slits are separated by d = 2 mm and the screen is placed D = 1.5 m away. Light of wavelength 5890 Angstrom is used. Find the fringe width.",
       "steps": [
-        "Given: d = 0.3 mm = 3 x 10^-4 m, D = 1.5 m, lambda = 6 x 10^-7 m.",
+        "Given: d = 2 x 10^-3 m, D = 1.5 m, lambda = 5890 x 10^-10 m.",
         "Formula: fringe width w = lambda D / d.",
-        "Substitute: w = (6 x 10^-7 x 1.5) / (3 x 10^-4).",
-        "Numerator = 9 x 10^-7. w = 9 x 10^-7 / 3 x 10^-4 = 3 x 10^-3 m.",
-        "w = 3 x 10^-3 m = 3 mm."
+        "Substitution: w = (5890 x 10^-10 x 1.5) / (2 x 10^-3).",
+        "Numerator = 8835 x 10^-10 m.",
+        "w = 8835 x 10^-10 / 2 x 10^-3 = 4417.5 x 10^-7 m = 4.4175 x 10^-4 m.",
+        "Answer: w = 4.4175 x 10^-4 m = 0.44175 mm."
       ],
-      "ans": "w = 3 x 10^-3 m = 3 mm"
+      "ans": "w = 4.4175 x 10^-4 m (approx 0.44 mm)"
     },
     {
-      "topic": "Fringe width with different wavelength and slit separation",
+      "topic": "YDSE - wavelength from fringe width",
       "marks": 3,
-      "q": "In a double slit experiment, d = 1 mm, D = 1 m. Light of wavelength 5890 Angstrom is used. Calculate the fringe width.",
+      "q": "In a double slit experiment, the slits are 2 mm apart and the screen is 1.2 m away. The fringe width is observed to be 0.3 mm. Find the wavelength of light used.",
       "steps": [
-        "Given: d = 1 x 10^-3 m, D = 1 m, lambda = 5890 x 10^-10 m = 5.89 x 10^-7 m.",
-        "Formula: w = lambda D / d.",
-        "Substitute: w = (5.89 x 10^-7 x 1) / (1 x 10^-3).",
-        "Calculation: w = 5.89 x 10^-4 m.",
-        "w = 5.89 x 10^-4 m = 0.589 mm."
-      ],
-      "ans": "w = 5.89 x 10^-4 m (0.589 mm)"
-    },
-    {
-      "topic": "Finding wavelength from measured fringe width",
-      "marks": 4,
-      "q": "In a YDSE arrangement, the slit separation is d = 2 mm, the screen distance is D = 2 m, and the observed fringe width is w = 4 x 10^-4 m. Find the wavelength of light used.",
-      "steps": [
-        "Given: d = 2 x 10^-3 m, D = 2 m, w = 4 x 10^-4 m.",
+        "Given: d = 2 x 10^-3 m, D = 1.2 m, w = 0.3 x 10^-3 m.",
         "Formula: w = lambda D / d, so lambda = w d / D.",
-        "Substitute: lambda = (4 x 10^-4 x 2 x 10^-3) / 2.",
-        "Numerator = 8 x 10^-7. lambda = 8 x 10^-7 / 2 = 4 x 10^-7 m.",
-        "lambda = 4 x 10^-7 m = 4000 Angstrom (visible light)."
+        "Substitution: lambda = (0.3 x 10^-3 x 2 x 10^-3) / 1.2.",
+        "Numerator = 0.6 x 10^-6.",
+        "lambda = 0.6 x 10^-6 / 1.2 = 0.5 x 10^-6 m = 5 x 10^-7 m.",
+        "Answer: lambda = 5 x 10^-7 m = 500 nm."
       ],
-      "ans": "lambda = 4 x 10^-7 m = 4000 Angstrom"
+      "ans": "lambda = 5 x 10^-7 m = 500 nm"
     },
     {
-      "topic": "Angular fringe width",
-      "marks": 2,
-      "q": "In a double slit experiment, lambda = 600 nm and the slits are separated by d = 0.6 mm. Find the angular fringe width.",
-      "steps": [
-        "Given: lambda = 600 x 10^-9 m = 6 x 10^-7 m, d = 0.6 x 10^-3 m = 6 x 10^-4 m.",
-        "Formula: angular fringe width theta = lambda / d (since w = lambda D/d and theta = w/D).",
-        "Substitute: theta = (6 x 10^-7) / (6 x 10^-4).",
-        "Calculation: theta = 1 x 10^-3 rad.",
-        "theta = 10^-3 rad."
-      ],
-      "ans": "theta = 1 x 10^-3 rad"
-    },
-    {
-      "topic": "Distance of nth bright fringe from central maximum",
-      "marks": 4,
-      "q": "In YDSE, d = 1 mm, D = 1 m and lambda = 5000 Angstrom. Find the distance of the 4th bright fringe from the central bright fringe.",
-      "steps": [
-        "Given: d = 1 x 10^-3 m, D = 1 m, lambda = 5 x 10^-7 m, n = 4.",
-        "Formula: distance of nth bright fringe x_n = n lambda D / d.",
-        "Substitute: x4 = (4 x 5 x 10^-7 x 1) / (1 x 10^-3).",
-        "Numerator = 2 x 10^-6. x4 = 2 x 10^-6 / 10^-3 = 2 x 10^-3 m.",
-        "x4 = 2 x 10^-3 m = 2 mm."
-      ],
-      "ans": "x4 = 2 x 10^-3 m = 2 mm"
-    },
-    {
-      "topic": "Single slit diffraction - first minimum angle",
+      "topic": "YDSE - slit separation from fringe width",
       "marks": 3,
-      "q": "Light of wavelength 6000 Angstrom falls normally on a single slit of width a = 0.3 mm. Find the angle of the first minimum of the diffraction pattern.",
+      "q": "Two slits in a double slit experiment are illuminated by light of wavelength 6000 Angstrom. If the screen is 1 m away and the fringe width is 0.3 mm, find the separation between the slits.",
       "steps": [
-        "Given: lambda = 6 x 10^-7 m, a = 0.3 x 10^-3 m = 3 x 10^-4 m.",
-        "Formula for first minimum: a sin(theta) = lambda, so sin(theta) = lambda/a.",
-        "Substitute: sin(theta) = (6 x 10^-7) / (3 x 10^-4).",
-        "Calculation: sin(theta) = 2 x 10^-3.",
-        "Since theta is small, theta approx = 2 x 10^-3 rad (sin theta approx theta in radians)."
+        "Given: lambda = 6000 x 10^-10 m, D = 1 m, w = 0.3 x 10^-3 m.",
+        "Formula: w = lambda D / d, so d = lambda D / w.",
+        "Substitution: d = (6000 x 10^-10 x 1) / (0.3 x 10^-3).",
+        "Numerator = 6000 x 10^-10 = 6 x 10^-7.",
+        "d = 6 x 10^-7 / 3 x 10^-4 = 2 x 10^-3 m.",
+        "Answer: d = 2 x 10^-3 m = 2 mm."
       ],
-      "ans": "theta approx 2 x 10^-3 rad"
+      "ans": "d = 2 x 10^-3 m = 2 mm"
     },
     {
-      "topic": "Width of central maximum in single slit diffraction",
+      "topic": "YDSE - position of nth bright fringe",
       "marks": 4,
-      "q": "A single slit of width a = 0.1 mm is illuminated by light of wavelength 5000 Angstrom. If the screen is placed D = 2 m away, find the width of the central maximum.",
+      "q": "In Young's double slit experiment, slits are 1 mm apart and the screen is 1 m away. Using light of wavelength 5000 Angstrom, find the distance of the 4th bright fringe from the central bright fringe.",
       "steps": [
-        "Given: a = 0.1 x 10^-3 m = 1 x 10^-4 m, lambda = 5 x 10^-7 m, D = 2 m.",
-        "Formula: width of central maximum = 2 x (distance to first minimum) = 2 lambda D / a.",
-        "Substitute: width = (2 x 5 x 10^-7 x 2) / (1 x 10^-4).",
-        "Numerator = 2 x 10^-6. width = 2 x 10^-6 / 10^-4 = 2 x 10^-2 m.",
-        "width = 2 x 10^-2 m = 2 cm."
+        "Given: n = 4, lambda = 5000 x 10^-10 m, D = 1 m, d = 1 x 10^-3 m.",
+        "Formula: for bright fringe, path difference = n lambda, so position x_n = n lambda D / d.",
+        "Substitution: x_4 = (4 x 5000 x 10^-10 x 1) / (1 x 10^-3).",
+        "Numerator = 20000 x 10^-10 = 2 x 10^-6.",
+        "x_4 = 2 x 10^-6 / 1 x 10^-3 = 2 x 10^-3 m.",
+        "Answer: x_4 = 2 x 10^-3 m = 2 mm from the central bright fringe."
       ],
-      "ans": "width = 2 x 10^-2 m = 2 cm"
+      "ans": "x_4 = 2 x 10^-3 m = 2 mm"
     },
     {
-      "topic": "Brewster's angle",
+      "topic": "Brewster's law - polarizing angle",
       "marks": 2,
-      "q": "Light is incident on a glass surface of refractive index n = sqrt(3). Find the Brewster's angle (polarizing angle) for this surface.",
+      "q": "Light is incident on a water surface of refractive index n = 1.33. Find the Brewster angle (polarizing angle) for this surface.",
       "steps": [
-        "Given: refractive index n = sqrt(3) = 1.732 (approx).",
+        "Given: refractive index n = 1.33.",
         "Formula: Brewster's law, tan(theta_B) = n.",
-        "Substitute: tan(theta_B) = sqrt(3).",
-        "We know tan(60 degrees) = sqrt(3), so theta_B = 60 degrees.",
-        "theta_B = 60 degrees, and the refracted ray makes 30 degrees with the normal (since reflected and refracted rays are perpendicular)."
+        "Substitution: tan(theta_B) = 1.33.",
+        "theta_B = tan^-1(1.33).",
+        "Using tables, tan^-1(1.33) is approximately 53.06 degrees.",
+        "Answer: theta_B is approximately 53.1 degrees."
       ],
-      "ans": "theta_B = 60 degrees"
+      "ans": "theta_B is approximately 53.1 degrees"
+    },
+    {
+      "topic": "Single slit diffraction - width of central maximum",
+      "marks": 4,
+      "q": "A single slit of width 0.3 mm is illuminated by light of wavelength 6000 Angstrom, and the diffraction pattern is observed on a screen 1.5 m away. Find the distance of the first minimum from the center and the width of the central maximum.",
+      "steps": [
+        "Given: a = 0.3 x 10^-3 m, lambda = 6000 x 10^-10 m, D = 1.5 m.",
+        "Formula: first minimum condition, a sin(theta) = lambda; for small theta, sin(theta) approx theta = lambda/a, and y = theta D.",
+        "Substitution: theta = (6000 x 10^-10) / (0.3 x 10^-3) = 20000 x 10^-7 = 2 x 10^-3 rad.",
+        "y (distance of first minimum from center) = theta x D = 2 x 10^-3 x 1.5 = 3 x 10^-3 m.",
+        "Width of central maximum = 2y = 2 x 3 x 10^-3 = 6 x 10^-3 m.",
+        "Answer: first minimum at 3 mm from center; width of central maximum = 6 mm."
+      ],
+      "ans": "First minimum at y = 3 x 10^-3 m (3 mm); width of central maximum = 6 x 10^-3 m (6 mm)"
+    },
+    {
+      "topic": "Interference - order of bright fringe from path difference",
+      "marks": 2,
+      "q": "In an interference experiment with light of wavelength 5000 Angstrom, the path difference between two waves at a point on the screen is 1.5 x 10^-6 m. Determine whether the point is bright or dark, and find the order.",
+      "steps": [
+        "Given: lambda = 5000 x 10^-10 m = 5 x 10^-7 m, path difference delta = 1.5 x 10^-6 m.",
+        "Formula: bright fringe when delta = n lambda; find n = delta / lambda.",
+        "Substitution: n = (1.5 x 10^-6) / (5 x 10^-7) = 3.",
+        "Since n = 3 is a whole number, the condition delta = n lambda (constructive interference) is satisfied.",
+        "Answer: the point is bright, corresponding to the 3rd order bright fringe."
+      ],
+      "ans": "n = 3 (whole number), so the point is the 3rd order bright fringe"
+    },
+    {
+      "topic": "Resolving power of a telescope",
+      "marks": 3,
+      "q": "A telescope has an objective lens of aperture (diameter) 10 cm and is used to observe light of wavelength 550 nm. Find the minimum angle that can be resolved by the telescope.",
+      "steps": [
+        "Given: D = 10 cm = 0.1 m, lambda = 550 x 10^-9 m.",
+        "Formula: minimum resolvable angle (Rayleigh criterion) theta = 1.22 lambda / D.",
+        "Substitution: theta = (1.22 x 550 x 10^-9) / 0.1.",
+        "Numerator = 1.22 x 550 = 671, so numerator = 671 x 10^-9.",
+        "theta = 671 x 10^-9 / 0.1 = 6710 x 10^-9 = 6.71 x 10^-6 rad.",
+        "Answer: theta is approximately 6.71 x 10^-6 radian."
+      ],
+      "ans": "theta is approximately 6.71 x 10^-6 rad"
     }
   ],
   "practice": [
     {
-      "topic": "Fringe width - find D",
-      "q": "In a double slit experiment, lambda = 5000 Angstrom, d = 1 mm and the fringe width observed is 0.5 mm. Find the distance D between the slits and the screen.",
-      "hint": "Use w = lambda D/d, rearrange to D = w d / lambda.",
-      "ans": "D = 1 m"
+      "topic": "YDSE - position of dark fringe",
+      "q": "In a double slit experiment, d = 1 mm, D = 1 m, lambda = 6000 Angstrom. Find the distance of the 3rd dark fringe from the central bright fringe.",
+      "hint": "Dark fringe position x = (2n-1) lambda D / (2d), with n = 3 for the 3rd dark fringe.",
+      "ans": "x = 1.5 x 10^-3 m (1.5 mm)"
     },
     {
-      "topic": "Fringe width - find d",
-      "q": "In YDSE, lambda = 6000 Angstrom, D = 1 m and fringe width is found to be 2 mm. Find the slit separation d.",
-      "hint": "Use w = lambda D/d, rearrange to d = lambda D / w.",
-      "ans": "d = 3 x 10^-4 m = 0.3 mm"
+      "topic": "Single slit diffraction - position of second minimum",
+      "q": "A slit of width 0.2 mm is illuminated by light of wavelength 5000 Angstrom. Find the angle for the second minimum of the diffraction pattern.",
+      "hint": "nth minimum: a sin(theta) = n lambda; take n = 2 and use small angle sin(theta) approx theta.",
+      "ans": "theta = 5 x 10^-3 rad"
     },
     {
-      "topic": "Distance of dark fringe from central maximum",
-      "q": "In YDSE with d = 1 mm, D = 1 m and lambda = 6000 Angstrom, find the distance of the 2nd dark fringe from the central bright fringe.",
-      "hint": "Use x_dark = (n - 1/2) lambda D/d with n = 2 for the 2nd dark fringe.",
-      "ans": "x = 9 x 10^-4 m = 0.9 mm"
+      "topic": "Brewster's law for a denser medium",
+      "q": "Find the Brewster (polarizing) angle for diamond, which has refractive index 2.42.",
+      "hint": "Use tan(theta_B) = n and take inverse tangent.",
+      "ans": "theta_B is approximately 67.5 degrees"
     },
     {
-      "topic": "Single slit diffraction - find slit width",
-      "q": "Light of wavelength 5890 Angstrom falls on a single slit, and the first minimum is observed at an angle where sin(theta) = 2.945 x 10^-3. Find the slit width.",
-      "hint": "Use a sin(theta) = lambda, rearrange to a = lambda / sin(theta).",
-      "ans": "a = 2 x 10^-4 m = 0.2 mm"
+      "topic": "YDSE fringe width in a liquid medium",
+      "q": "In a double slit experiment using light of wavelength 6600 Angstrom in air, the slit separation is 1 mm and the screen distance is 1 m. If the whole apparatus is immersed in water of refractive index 4/3, find the new fringe width.",
+      "hint": "Wavelength in medium lambda_medium = lambda_air / n; then use w = lambda_medium D / d.",
+      "ans": "w = 4.95 x 10^-4 m (0.495 mm)"
     },
     {
-      "topic": "Brewster's angle for water",
-      "q": "Find the Brewster's angle (polarizing angle) for light incident on a water surface of refractive index n = 1.33.",
-      "hint": "Use tan(theta_B) = n and find theta_B using tan^-1.",
-      "ans": "theta_B approx 53 degrees"
+      "topic": "Interference - checking for dark fringe",
+      "q": "Two coherent waves of wavelength 5500 Angstrom produce a path difference of 2.75 x 10^-6 m at a point on the screen. Determine whether the point is bright or dark.",
+      "hint": "Find n = delta/lambda; if n is a whole number it is bright, if n is a half-integer it is dark.",
+      "ans": "n = 5 (whole number), so the point is a bright fringe (5th order)"
     },
     {
-      "topic": "Resolving power of telescope",
-      "q": "A telescope has an objective lens of diameter D = 0.1 m. Find the minimum angular separation it can resolve for light of wavelength lambda = 5500 Angstrom.",
-      "hint": "Use Rayleigh criterion: theta = 1.22 lambda / D.",
-      "ans": "theta approx 6.71 x 10^-6 rad"
+      "topic": "Resolving power with smaller aperture",
+      "q": "A telescope aperture is reduced to 5 cm while using the same light of wavelength 550 nm as before. Find the new minimum resolvable angle and compare with an aperture of 10 cm.",
+      "hint": "Use theta = 1.22 lambda / D; halving D doubles theta (resolving power becomes half).",
+      "ans": "theta is approximately 1.342 x 10^-5 rad, which is double the angle for the 10 cm aperture (resolving power is halved)"
     }
   ]
 }

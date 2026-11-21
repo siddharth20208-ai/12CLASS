@@ -3,54 +3,57 @@
     {
       "topic": "Coulomb's law",
       "marks": 2,
-      "q": "Two point charges q1 = 2 microC and q2 = 4 microC are placed 0.3 m apart in air. Find the force between them.",
+      "q": "Two point charges q1 = 2 microC and q2 = 3 microC are placed 0.3 m apart in air. Find the force between them.",
       "steps": [
-        "Given: q1 = 2 x 10^-6 C, q2 = 4 x 10^-6 C, r = 0.3 m, k = 9 x 10^9 N m^2/C^2.",
+        "Given: q1 = 2 x 10^-6 C, q2 = 3 x 10^-6 C, r = 0.3 m, k = 9 x 10^9 N m^2/C^2.",
         "Formula: F = k q1 q2 / r^2.",
-        "Substitution: F = (9x10^9 x 2x10^-6 x 4x10^-6) / (0.3)^2.",
-        "Calculation: numerator = 9x10^9 x 8x10^-12 = 7.2x10^-2; r^2 = 0.09.",
-        "F = 7.2x10^-2 / 0.09 = 0.8 N."
+        "Substitution: F = (9 x 10^9 x 2 x 10^-6 x 3 x 10^-6) / (0.3)^2.",
+        "Calculation: numerator = 9 x 10^9 x 6 x 10^-12 = 5.4 x 10^-2; r^2 = 0.09.",
+        "F = 5.4 x 10^-2 / 0.09 = 0.6 N.",
+        "Answer: F = 0.6 N (repulsive, since both charges are positive)."
       ],
-      "ans": "F = 0.8 N (repulsive, since both charges are positive)."
+      "ans": "0.6 N, repulsive"
     },
     {
       "topic": "Electric field due to a point charge",
       "marks": 2,
-      "q": "Find the electric field at a point 0.1 m from a point charge of 5 microC placed in air.",
+      "q": "Find the electric field at a point 0.2 m from a point charge of 4 microC placed in air.",
       "steps": [
-        "Given: Q = 5 x 10^-6 C, r = 0.1 m, k = 9 x 10^9 N m^2/C^2.",
+        "Given: Q = 4 x 10^-6 C, r = 0.2 m, k = 9 x 10^9 N m^2/C^2.",
         "Formula: E = k Q / r^2.",
-        "Substitution: E = (9x10^9 x 5x10^-6) / (0.1)^2.",
-        "Calculation: numerator = 4.5x10^4; r^2 = 0.01.",
-        "E = 4.5x10^4 / 0.01 = 4.5 x 10^6 N/C."
+        "Substitution: E = (9 x 10^9 x 4 x 10^-6) / (0.2)^2.",
+        "Calculation: numerator = 3.6 x 10^4; r^2 = 0.04.",
+        "E = 3.6 x 10^4 / 0.04 = 9 x 10^5 N/C.",
+        "Answer: E = 9 x 10^5 N/C, directed away from the charge."
       ],
-      "ans": "E = 4.5 x 10^6 N/C, directed away from the charge."
+      "ans": "9 x 10^5 N/C"
     },
     {
-      "topic": "Gauss's law - flux through a sphere",
-      "marks": 3,
-      "q": "A charge of 2 microC is placed at the centre of a sphere of radius 0.2 m. Find the total electric flux through the sphere (epsilon0 = 8.85 x 10^-12 C^2/N m^2).",
+      "topic": "Gauss's law - flux through a closed surface",
+      "marks": 2,
+      "q": "A charge of 2 microC is enclosed by a spherical Gaussian surface. Find the total electric flux through the surface. (epsilon0 = 8.85 x 10^-12 C^2/N m^2)",
       "steps": [
-        "Given: Q = 2 x 10^-6 C, epsilon0 = 8.85 x 10^-12 C^2/N m^2 (radius is not needed, by Gauss's law).",
-        "Formula: flux = Q / epsilon0.",
-        "Substitution: flux = (2x10^-6) / (8.85x10^-12).",
-        "Calculation: flux = (2/8.85) x 10^6 = 0.2260 x 10^6.",
-        "flux = 2.26 x 10^5 N m^2/C."
+        "Given: Q = 2 x 10^-6 C, epsilon0 = 8.85 x 10^-12 C^2/N m^2.",
+        "Formula: Flux = Q / epsilon0 (by Gauss's law, independent of the size/shape of the surface).",
+        "Substitution: Flux = (2 x 10^-6) / (8.85 x 10^-12).",
+        "Calculation: Flux = 0.2260 x 10^6 = 2.26 x 10^5 N m^2/C.",
+        "Answer: Flux = 2.26 x 10^5 N m^2/C."
       ],
-      "ans": "flux = 2.26 x 10^5 N m^2/C, independent of the radius of the sphere."
+      "ans": "2.26 x 10^5 N m^2/C"
     },
     {
-      "topic": "Gauss's law - field of an infinite line charge",
+      "topic": "Field due to an infinite charged plane sheet",
       "marks": 3,
-      "q": "An infinitely long straight wire has linear charge density lambda = 5 microC/m. Find the electric field at a point 0.1 m from the wire.",
+      "q": "An infinite plane sheet has a uniform surface charge density of 4 microC/m^2. Find the electric field at a point near the sheet. (epsilon0 = 8.85 x 10^-12 C^2/N m^2)",
       "steps": [
-        "Given: lambda = 5 x 10^-6 C/m, r = 0.1 m, k = 1/(4 pi epsilon0) = 9 x 10^9 N m^2/C^2.",
-        "Formula: E = lambda / (2 pi epsilon0 r) = 2 k lambda / r.",
-        "Substitution: E = (2 x 9x10^9 x 5x10^-6) / 0.1.",
-        "Calculation: 2k lambda = 2 x 9x10^9 x 5x10^-6 = 9x10^4.",
-        "E = 9x10^4 / 0.1 = 9 x 10^5 N/C."
+        "Given: sigma = 4 x 10^-6 C/m^2, epsilon0 = 8.85 x 10^-12 C^2/N m^2.",
+        "Formula (from Gauss's law applied to a sheet): E = sigma / (2 epsilon0).",
+        "Substitution: E = (4 x 10^-6) / (2 x 8.85 x 10^-12).",
+        "Calculation: denominator = 1.77 x 10^-11; E = (4 x 10^-6) / (1.77 x 10^-11).",
+        "E = 2.26 x 10^5 N/C.",
+        "Answer: E = 2.26 x 10^5 N/C, directed perpendicular to the sheet, same magnitude at all distances from it."
       ],
-      "ans": "E = 9 x 10^5 N/C, directed radially outward from the wire."
+      "ans": "2.26 x 10^5 N/C"
     },
     {
       "topic": "Electric potential due to a point charge",
@@ -59,91 +62,93 @@
       "steps": [
         "Given: Q = 6 x 10^-6 C, r = 0.3 m, k = 9 x 10^9 N m^2/C^2.",
         "Formula: V = k Q / r.",
-        "Substitution: V = (9x10^9 x 6x10^-6) / 0.3.",
-        "Calculation: numerator = 5.4x10^4; V = 5.4x10^4 / 0.3.",
-        "V = 1.8 x 10^5 V."
+        "Substitution: V = (9 x 10^9 x 6 x 10^-6) / 0.3.",
+        "Calculation: numerator = 5.4 x 10^4; V = 5.4 x 10^4 / 0.3.",
+        "V = 1.8 x 10^5 V.",
+        "Answer: V = 1.8 x 10^5 V."
       ],
-      "ans": "V = 1.8 x 10^5 V."
+      "ans": "1.8 x 10^5 V"
     },
     {
-      "topic": "Parallel plate capacitor",
+      "topic": "Potential energy of a system of two point charges",
       "marks": 3,
-      "q": "A parallel plate capacitor has plate area 0.04 m^2 and plate separation 2 mm, with air between the plates. Find its capacitance (epsilon0 = 8.85 x 10^-12 C^2/N m^2).",
+      "q": "Two charges q1 = 2 microC and q2 = 3 microC are separated by 0.1 m in air. Find the electric potential energy of the system.",
       "steps": [
-        "Given: A = 0.04 m^2, d = 2 mm = 2 x 10^-3 m, epsilon0 = 8.85 x 10^-12 C^2/N m^2.",
-        "Formula: C = epsilon0 A / d.",
-        "Substitution: C = (8.85x10^-12 x 0.04) / (2x10^-3).",
-        "Calculation: numerator = 3.54x10^-13; C = 3.54x10^-13 / 2x10^-3.",
-        "C = 1.77 x 10^-10 F = 177 pF."
+        "Given: q1 = 2 x 10^-6 C, q2 = 3 x 10^-6 C, r = 0.1 m, k = 9 x 10^9 N m^2/C^2.",
+        "Formula: U = k q1 q2 / r.",
+        "Substitution: U = (9 x 10^9 x 2 x 10^-6 x 3 x 10^-6) / 0.1.",
+        "Calculation: numerator = 9 x 10^9 x 6 x 10^-12 = 5.4 x 10^-2.",
+        "U = 5.4 x 10^-2 / 0.1 = 0.54 J.",
+        "Answer: U = 0.54 J (positive, since both charges are like and work is done against repulsion)."
       ],
-      "ans": "C = 1.77 x 10^-10 F (177 pF)."
+      "ans": "0.54 J"
     },
     {
-      "topic": "Series combination of capacitors and energy stored",
+      "topic": "Capacitors in series and energy stored",
       "marks": 4,
-      "q": "Two capacitors of 3 microF and 6 microF are connected in series across a 90 V supply. Find the equivalent capacitance and the energy stored in the combination.",
+      "q": "Two capacitors of 4 microF and 6 microF are connected in series across a 100 V battery. Find the equivalent capacitance and the total energy stored.",
       "steps": [
-        "Given: C1 = 3 microF, C2 = 6 microF, V = 90 V.",
-        "Formula (series): 1/Ceq = 1/C1 + 1/C2.",
-        "Substitution: 1/Ceq = 1/3 + 1/6 = 2/6 + 1/6 = 3/6 = 1/2, so Ceq = 2 microF.",
-        "Formula for energy: U = (1/2) Ceq V^2.",
-        "Substitution: U = (1/2) x 2x10^-6 x (90)^2 = 1x10^-6 x 8100.",
-        "U = 8.1 x 10^-3 J."
+        "Given: C1 = 4 microF, C2 = 6 microF, V = 100 V.",
+        "Formula (series): 1/C_eq = 1/C1 + 1/C2; Energy: U = (1/2) C_eq V^2.",
+        "Substitution: 1/C_eq = 1/4 + 1/6 = 3/12 + 2/12 = 5/12, so C_eq = 12/5 = 2.4 microF = 2.4 x 10^-6 F.",
+        "Substitution for energy: U = (1/2) x 2.4 x 10^-6 x (100)^2.",
+        "Calculation: U = 0.5 x 2.4 x 10^-6 x 10^4 = 0.5 x 2.4 x 10^-2 = 1.2 x 10^-2 J.",
+        "Answer: C_eq = 2.4 microF and U = 1.2 x 10^-2 J = 12 mJ."
       ],
-      "ans": "Ceq = 2 microF, U = 8.1 x 10^-3 J (8.1 mJ)."
+      "ans": "C_eq = 2.4 microF, U = 1.2 x 10^-2 J (12 mJ)"
     },
     {
-      "topic": "Dielectric inserted with charge kept constant",
+      "topic": "Parallel plate capacitor with dielectric - capacitance and energy",
       "marks": 4,
-      "q": "A capacitor of capacitance 2 microF is charged to a potential difference of 200 V and then disconnected from the battery. A dielectric slab of dielectric constant K = 5 is now inserted between its plates. Find the new capacitance, new voltage and the energy stored before and after inserting the dielectric.",
+      "q": "A parallel plate capacitor has plate area 0.04 m^2 and plate separation 2 mm, with a dielectric slab of dielectric constant K = 5 filling the gap. If a potential difference of 200 V is applied, find the capacitance and the energy stored. (epsilon0 = 8.85 x 10^-12 C^2/N m^2)",
       "steps": [
-        "Given: C0 = 2 x 10^-6 F, V0 = 200 V, K = 5; charge Q0 remains constant after disconnecting the battery.",
-        "Charge: Q0 = C0 V0 = 2x10^-6 x 200 = 4 x 10^-4 C.",
-        "New capacitance: Cnew = K C0 = 5 x 2x10^-6 = 1 x 10^-5 F.",
-        "New voltage: Vnew = Q0 / Cnew = 4x10^-4 / 1x10^-5 = 40 V.",
-        "Energy before: U0 = (1/2) C0 V0^2 = 0.5 x 2x10^-6 x 200^2 = 0.5 x 2x10^-6 x 4x10^4 = 4 x 10^-2 J.",
-        "Energy after: Unew = Q0^2 / (2 Cnew) = (4x10^-4)^2 / (2 x 1x10^-5) = 1.6x10^-7 / 2x10^-5.",
-        "Unew = 8 x 10^-3 J (energy decreases since charge is constant)."
+        "Given: A = 0.04 m^2, d = 2 x 10^-3 m, K = 5, V = 200 V, epsilon0 = 8.85 x 10^-12 C^2/N m^2.",
+        "Formula: C = K epsilon0 A / d; Energy: U = (1/2) C V^2.",
+        "Substitution: C = (5 x 8.85 x 10^-12 x 0.04) / (2 x 10^-3).",
+        "Calculation: numerator = 5 x 8.85 x 10^-12 x 0.04 = 1.77 x 10^-12; C = 1.77 x 10^-12 / 2 x 10^-3 = 8.85 x 10^-10 F.",
+        "Substitution for energy: U = (1/2) x 8.85 x 10^-10 x (200)^2 = 0.5 x 8.85 x 10^-10 x 4 x 10^4.",
+        "Calculation: U = 0.5 x 3.54 x 10^-5 = 1.77 x 10^-5 J.",
+        "Answer: C = 8.85 x 10^-10 F (0.885 nF), U = 1.77 x 10^-5 J."
       ],
-      "ans": "Cnew = 1 x 10^-5 F (10 microF), Vnew = 40 V, U0 = 4 x 10^-2 J, Unew = 8 x 10^-3 J."
+      "ans": "C = 8.85 x 10^-10 F, U = 1.77 x 10^-5 J"
     }
   ],
   "practice": [
     {
-      "topic": "Coulomb's law",
-      "q": "Two point charges of 3 microC and 2 microC are placed 0.1 m apart in air. Find the force between them.",
-      "hint": "F = k q1 q2 / r^2, with k = 9 x 10^9 N m^2/C^2.",
-      "ans": "F = 5.4 N (repulsive)."
+      "topic": "Capacitors in parallel",
+      "q": "Two capacitors of 2 microF and 3 microF are connected in parallel across a battery. Find the equivalent capacitance.",
+      "hint": "Use C_eq = C1 + C2 for parallel combination.",
+      "ans": "5 microF"
     },
     {
-      "topic": "Electric field - variation with distance",
-      "q": "A point charge of 4 microC produces an electric field at a point 0.2 m away. Find the field there, and also find the field at a point 0.4 m away (twice the distance).",
-      "hint": "E = k Q / r^2; doubling r reduces E by a factor of 4 (inverse square law).",
-      "ans": "E at 0.2 m = 9 x 10^5 N/C; E at 0.4 m = 2.25 x 10^5 N/C."
+      "topic": "Field due to an infinite line charge",
+      "q": "An infinitely long charged wire has linear charge density 4 x 10^-9 C/m. Find the electric field at a point 0.02 m from the wire. (epsilon0 = 8.85 x 10^-12 C^2/N m^2)",
+      "hint": "Use E = lambda / (2 pi epsilon0 r), applying Gauss's law to a cylindrical surface.",
+      "ans": "approx 3.6 x 10^3 N/C"
     },
     {
-      "topic": "Gauss's law - flux independent of shape",
-      "q": "A charge of 3 microC is enclosed by a cubical Gaussian surface. Find the total electric flux through the cube (epsilon0 = 8.85 x 10^-12 C^2/N m^2).",
-      "hint": "flux = Q_enclosed / epsilon0, independent of the shape of the Gaussian surface.",
-      "ans": "flux = 3.39 x 10^5 N m^2/C."
+      "topic": "Work done moving a charge between two potentials",
+      "q": "A charge of 2 microC is moved from a point at potential 100 V to a point at potential 40 V. Find the work done by the electric field.",
+      "hint": "Use W = q(V_initial - V_final), since work done by the field equals loss in potential energy.",
+      "ans": "1.2 x 10^-4 J"
     },
     {
-      "topic": "Electric potential energy of two charges",
-      "q": "Find the potential energy of a system of two point charges q1 = 2 microC and q2 = -3 microC separated by 0.5 m.",
-      "hint": "U = k q1 q2 / r; the sign of U shows attraction (negative) or repulsion (positive).",
-      "ans": "U = -0.108 J (attractive system)."
+      "topic": "Energy density of the electric field",
+      "q": "The electric field between the plates of a parallel plate capacitor (air) is 1 x 10^5 N/C. Find the energy density stored in the field. (epsilon0 = 8.85 x 10^-12 C^2/N m^2)",
+      "hint": "Use energy density u = (1/2) epsilon0 E^2.",
+      "ans": "approx 4.43 x 10^-2 J/m^3"
     },
     {
-      "topic": "Parallel combination of capacitors",
-      "q": "Two capacitors of 4 microF and 6 microF are connected in parallel. Find the equivalent capacitance.",
-      "hint": "For parallel combination, Ceq = C1 + C2.",
-      "ans": "Ceq = 10 microF."
+      "topic": "Capacitance of an isolated sphere",
+      "q": "Find the capacitance of an isolated conducting sphere of radius 9 cm placed in air. (epsilon0 = 8.85 x 10^-12 C^2/N m^2)",
+      "hint": "Use C = 4 pi epsilon0 R for an isolated sphere.",
+      "ans": "approx 1 x 10^-11 F (10 pF)"
     },
     {
-      "topic": "Energy density in an electric field",
-      "q": "Find the energy density of the electric field at a point in air where the electric field is 1 x 10^5 N/C (epsilon0 = 8.85 x 10^-12 C^2/N m^2).",
-      "hint": "Energy density u = (1/2) epsilon0 E^2.",
-      "ans": "u = 0.04425 J/m^3."
+      "topic": "Effect of dielectric at constant voltage",
+      "q": "A parallel plate capacitor of capacitance 2 microF is connected to a battery; a dielectric slab of K = 4 is then inserted while the battery stays connected. Find the new capacitance.",
+      "hint": "At constant V, inserting a dielectric gives C_new = K C_old.",
+      "ans": "8 microF"
     }
   ]
 }

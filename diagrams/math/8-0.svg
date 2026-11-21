@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="white"/>
+  <defs>
+    <marker id="arrow8" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#222"/>
+    </marker>
+  </defs>
+
+  <!-- axes -->
+  <line x1="60" y1="350" x2="600" y2="350" stroke="#222" stroke-width="2" marker-end="url(#arrow8)"/>
+  <line x1="60" y1="350" x2="60" y2="30" stroke="#222" stroke-width="2" marker-end="url(#arrow8)"/>
+  <text x="608" y="355" font-size="14">x</text>
+  <text x="45" y="28" font-size="14">y</text>
+
+  <!-- smooth curve y = (x-280)^2/150 + 130, drawn as quadratic bezier approximating parabola -->
+  <path d="M 100 330 Q 320 30 540 330" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
+
+  <!-- point P on curve, near vertex-ish for clean tangent -->
+  <circle cx="400" cy="140" r="4" fill="#111"/>
+  <text x="408" y="135" font-size="15">P(x1, y1)</text>
+
+  <!-- tangent line: touches curve only at P, slope matches curve's slope there -->
+  <line x1="270" y1="230" x2="500" y2="75" stroke="#1a66cc" stroke-width="2.2"/>
+  <text x="500" y="65" font-size="15" fill="#1a66cc">Tangent</text>
+
+  <!-- normal line: perpendicular to tangent at P -->
+  <line x1="320" y1="40" x2="470" y2="290" stroke="#cc3333" stroke-width="2.2"/>
+  <text x="430" y="300" font-size="15" fill="#cc3333">Normal</text>
+
+  <!-- right angle marker between tangent and normal at P -->
+  <path d="M 410 128 L 418 136 L 410 144" fill="none" stroke="#333" stroke-width="1.5"/>
+</svg>

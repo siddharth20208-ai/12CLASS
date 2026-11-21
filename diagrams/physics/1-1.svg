@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="white"/>
+  <defs>
+    <marker id="b1" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#c0392b"/>
+    </marker>
+  </defs>
+  <!-- Beaker -->
+  <path d="M 150 220 L 150 340 L 450 340 L 450 220" fill="none" stroke="black" stroke-width="2"/>
+  <!-- water in beaker -->
+  <rect x="150" y="260" width="300" height="80" fill="#cfe8fb" stroke="none"/>
+  <line x1="150" y1="260" x2="450" y2="260" stroke="#2980b9" stroke-width="2"/>
+  <text x="460" y="264" font-size="14" fill="#2980b9">beaker water level</text>
+
+  <!-- Capillary tube -->
+  <rect x="285" y="80" width="20" height="260" fill="#eef" stroke="black" stroke-width="2"/>
+  <!-- water inside tube risen -->
+  <rect x="287" y="190" width="16" height="150" fill="#cfe8fb"/>
+  <!-- meniscus concave -->
+  <path d="M 287 190 Q 295 200 303 190" fill="none" stroke="#2980b9" stroke-width="2"/>
+
+  <!-- h arrow -->
+  <line x1="320" y1="190" x2="320" y2="260" stroke="#c0392b" stroke-width="2" marker-start="url(#b1)" marker-end="url(#b1)"/>
+  <text x="330" y="230" font-size="16" fill="#c0392b">h</text>
+
+  <!-- r label -->
+  <line x1="285" y1="100" x2="305" y2="100" stroke="black" stroke-width="1"/>
+  <text x="310" y="95" font-size="14">r</text>
+
+  <!-- theta label at wall -->
+  <text x="235" y="200" font-size="14">theta</text>
+  <text x="300" y="60" font-size="15" text-anchor="middle">Capillary tube</text>
+</svg>

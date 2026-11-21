@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <rect width="640" height="400" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow44" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#222222"/>
+    </marker>
+  </defs>
+  <polygon points="150,320 440,320 500,140 210,140" fill="none" stroke="#222222" stroke-width="2"/>
+
+  <line x1="150" y1="320" x2="440" y2="320" stroke="#1565c0" stroke-width="2" marker-end="url(#arrow44)"/>
+  <text x="290" y="345" font-family="Arial, sans-serif" font-size="16" fill="#1565c0" text-anchor="middle">a</text>
+
+  <line x1="150" y1="320" x2="210" y2="140" stroke="#c62828" stroke-width="2" marker-end="url(#arrow44)"/>
+  <text x="165" y="225" font-family="Arial, sans-serif" font-size="16" fill="#c62828">b</text>
+
+  <line x1="150" y1="320" x2="500" y2="140" stroke="#2e7d32" stroke-width="2" marker-end="url(#arrow44)"/>
+  <text x="330" y="215" font-family="Arial, sans-serif" font-size="16" fill="#2e7d32">a + b (diagonal)</text>
+
+  <text x="135" y="335" font-family="Arial, sans-serif" font-size="14" fill="#222222">O</text>
+  <text x="450" y="340" font-family="Arial, sans-serif" font-size="14" fill="#222222">C</text>
+  <text x="200" y="130" font-family="Arial, sans-serif" font-size="14" fill="#222222">D</text>
+  <text x="510" y="130" font-family="Arial, sans-serif" font-size="14" fill="#222222">B</text>
+
+  <text x="300" y="380" font-family="Arial, sans-serif" font-size="14" fill="#222222" text-anchor="middle">Triangle OCB = half of parallelogram OCBD</text>
+</svg>

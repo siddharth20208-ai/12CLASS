@@ -10,7 +10,9 @@
       "Understanding each element alone is the base for analysing a series LCR circuit with all three together."
     ],
     "formula": "Resistor: v, i in phase.   Inductor: i lags v by 90 deg.   Capacitor: i leads v by 90 deg",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Pure Resistor\"] --> B[\"Current in phase with voltage\"]\n  C[\"Pure Inductor\"] --> D[\"Current lags voltage by 90 degrees\"]\n  E[\"Pure Capacitor\"] --> F[\"Current leads voltage by 90 degrees\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Pure Resistor\"] --> B[\"Current in phase with voltage\"]\n  C[\"Pure Inductor\"] --> D[\"Current lags voltage by 90 degrees\"]\n  E[\"Pure Capacitor\"] --> F[\"Current leads voltage by 90 degrees\"]"
+    },
     "example": "If v = v0 sin(wt) is applied to a pure capacitor, current is i = i0 sin(wt + pi/2), reaching its peak a quarter cycle before voltage.",
     "tip": "Remember the mnemonic 'CIVIL': in Capacitor, I leads V; in Inductor, V leads I. This one line secures the phase-direction mark."
   },
@@ -26,7 +28,10 @@
       "Unlike pure resistance, reactive elements store and release energy rather than dissipating it as heat."
     ],
     "formula": "XL = 2 pi f L     XC = 1/(2 pi f C)     Z = sqrt(R^2 + (XL-XC)^2)",
-    "diagram": { "draw": "Draw two graphs side by side: one showing XL rising linearly with frequency f, another showing XC falling as a curve with increasing f. Label axes clearly as Reactance vs Frequency." },
+    "diagram": {
+      "draw": "Draw two graphs side by side: one showing XL rising linearly with frequency f, another showing XC falling as a curve with increasing f. Label axes clearly as Reactance vs Frequency.",
+      "svg": "diagrams/physics/12-1.svg"
+    },
     "example": "For L = 0.1 H, f = 50 Hz: XL = 2 pi x 50 x 0.1 = 31.4 ohm.",
     "tip": "State units are ohms for reactance/impedance, same as resistance — students often forget this in their final answer."
   },
@@ -42,7 +47,10 @@
       "This phasor method gives impedance Z and phase angle phi used in power and resonance calculations."
     ],
     "formula": "V = sqrt(VR^2 + (VL - VC)^2)     tan(phi) = (XL - XC)/R",
-    "diagram": { "draw": "Draw a phasor diagram with current I along the horizontal axis. Draw VR along the same direction as I. Draw VL pointing straight up (90 degrees ahead), and VC pointing straight down (90 degrees behind). Draw the resultant V as a vector combining VR and (VL - VC), label the angle phi between V and I." },
+    "diagram": {
+      "draw": "Draw a phasor diagram with current I along the horizontal axis. Draw VR along the same direction as I. Draw VL pointing straight up (90 degrees ahead), and VC pointing straight down (90 degrees behind). Draw the resultant V as a vector combining VR and (VL - VC), label the angle phi between V and I.",
+      "svg": "diagrams/physics/12-2.svg"
+    },
     "example": "If VR = 30 V, VL = 80 V, VC = 40 V, then V = sqrt(30^2 + (80-40)^2) = sqrt(900+1600) = sqrt(2500) = 50 V.",
     "tip": "Draw the phasor diagram neatly with VL up, VC down, VR along I — this diagram alone is worth marks in long-answer questions."
   },
@@ -58,7 +66,10 @@
       "This is used in radio/TV tuning circuits to select a desired frequency and reject others."
     ],
     "formula": "f0 = 1 / (2 pi sqrt(LC))",
-    "diagram": { "draw": "Draw a graph with frequency f on the x-axis and current I on the y-axis. Draw a peak-shaped curve that rises to a maximum at f0 (resonant frequency) and falls on either side. Label the peak point as resonance, I = V/R." },
+    "diagram": {
+      "draw": "Draw a graph with frequency f on the x-axis and current I on the y-axis. Draw a peak-shaped curve that rises to a maximum at f0 (resonant frequency) and falls on either side. Label the peak point as resonance, I = V/R.",
+      "svg": "diagrams/physics/12-3.svg"
+    },
     "example": "For L = 2 H, C = 8 microfarad: f0 = 1/(2 pi sqrt(2 x 8e-6)) = 1/(2 pi x 4e-3) ≈ 39.8 Hz.",
     "tip": "Always mention that at resonance Z = R (minimum) and current is maximum — this is the key conceptual line examiners look for."
   },
@@ -74,7 +85,9 @@
       "Industries use capacitor banks to improve the power factor of inductive loads like motors."
     ],
     "formula": "Pavg = Vrms Irms cos(phi)",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Phase angle phi between V and I\"] --> B[\"Power factor = cos phi\"]\n  B --> C[\"Pavg = Vrms Irms cos phi\"]\n  C --> D[\"phi = 0: max power. phi = 90: zero power\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Phase angle phi between V and I\"] --> B[\"Power factor = cos phi\"]\n  B --> C[\"Pavg = Vrms Irms cos phi\"]\n  C --> D[\"phi = 0: max power. phi = 90: zero power\"]"
+    },
     "example": "If Vrms = 200 V, Irms = 5 A, phi = 60 degrees, Pavg = 200 x 5 x cos60 = 1000 x 0.5 = 500 W.",
     "tip": "Give a real reason for power factor correction (reduces current and transmission losses) — this real-world line earns bonus marks."
   },
@@ -90,7 +103,10 @@
       "Power formula Pavg = Vrms Irms cos(phi) uses RMS values, not peak values."
     ],
     "formula": "Irms = i0 / sqrt(2)     Vrms = v0 / sqrt(2)",
-    "diagram": { "draw": "Draw a sine wave of current vs time. Mark the peak value i0 at the top of the curve. Draw a horizontal dashed line at Irms = 0.707 i0, showing it is lower than the peak, labelling both clearly on the same graph." },
+    "diagram": {
+      "draw": "Draw a sine wave of current vs time. Mark the peak value i0 at the top of the curve. Draw a horizontal dashed line at Irms = 0.707 i0, showing it is lower than the peak, labelling both clearly on the same graph.",
+      "svg": "diagrams/physics/12-5.svg"
+    },
     "example": "If peak voltage v0 = 325 V (typical mains), Vrms = 325/sqrt(2) ≈ 230 V, matching the stated mains voltage.",
     "tip": "Always connect this topic to the real 230 V mains example — examiners like seeing the practical link."
   }

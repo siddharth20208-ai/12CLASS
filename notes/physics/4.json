@@ -66,7 +66,8 @@
     ],
     "formula": "Pendulum: T = 2π√(L/g)     Spring-mass: T = 2π√(m/k)",
     "diagram": {
-      "draw": "Draw two setups side by side. Left: a pendulum — a string of length L fixed at top, with a bob at the bottom shown displaced through small angle θ from the vertical, restoring force arrow shown. Right: a mass hanging from a vertical spring of constant k, displaced by x from equilibrium, with restoring force arrow pointing back toward equilibrium."
+      "draw": "Draw two setups side by side. Left: a pendulum — a string of length L fixed at top, with a bob at the bottom shown displaced through small angle θ from the vertical, restoring force arrow shown. Right: a mass hanging from a vertical spring of constant k, displaced by x from equilibrium, with restoring force arrow pointing back toward equilibrium.",
+      "svg": "diagrams/physics/4-3.svg"
     },
     "example": "A pendulum of length 1 m on Earth (g=9.8): T = 2π sqrt(1/9.8) = 2π x 0.319 = 2.01 s.",
     "tip": "State clearly that pendulum period is independent of mass and amplitude (for small angles) — this is a frequently asked conceptual point."

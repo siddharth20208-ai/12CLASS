@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+<defs>
+  <marker id="arrow52" markerWidth="8" markerHeight="8" refX="4" refY="2" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L4,2 L0,4 Z" fill="black"/>
+  </marker>
+</defs>
+<rect x="0" y="0" width="640" height="400" fill="white"/>
+<text x="320" y="30" font-size="18" text-anchor="middle" font-weight="bold">Integrated Rate Law Plots</text>
+
+<!-- Left graph: Zero order -->
+<g>
+  <line x1="60" y1="330" x2="60" y2="70" stroke="black" stroke-width="2" marker-end="url(#arrow52)"/>
+  <line x1="60" y1="330" x2="290" y2="330" stroke="black" stroke-width="2" marker-end="url(#arrow52)"/>
+  <text x="30" y="80" font-size="14">[A]</text>
+  <text x="275" y="355" font-size="14">time</text>
+  <line x1="75" y1="100" x2="270" y2="310" stroke="#c0392b" stroke-width="2"/>
+  <text x="150" y="150" font-size="14" fill="#c0392b">Zero order</text>
+  <text x="150" y="170" font-size="14" fill="#c0392b">slope = -k</text>
+</g>
+
+<!-- Right graph: First order -->
+<g>
+  <line x1="380" y1="330" x2="380" y2="70" stroke="black" stroke-width="2" marker-end="url(#arrow52)"/>
+  <line x1="380" y1="330" x2="610" y2="330" stroke="black" stroke-width="2" marker-end="url(#arrow52)"/>
+  <text x="340" y="80" font-size="14">log[A]</text>
+  <text x="595" y="355" font-size="14">time</text>
+  <line x1="395" y1="100" x2="590" y2="310" stroke="#2980b9" stroke-width="2"/>
+  <text x="480" y="150" font-size="14" fill="#2980b9">First order</text>
+  <text x="480" y="170" font-size="14" fill="#2980b9">slope = -k/2.303</text>
+</g>
+</svg>

@@ -1,0 +1,147 @@
+{
+  "solved": [
+    {
+      "topic": "Molarity",
+      "marks": 2,
+      "q": "4 g of NaOH is dissolved in water and the solution is made up to 250 mL. Calculate the molarity of the solution. (Molar mass of NaOH = 40 g/mol)",
+      "steps": [
+        "Given: mass of NaOH w = 4 g, molar mass M = 40 g/mol, volume V = 250 mL = 0.250 L.",
+        "Formula: Molarity M = moles of solute / volume of solution in litres = (w/M)/V.",
+        "Moles of NaOH = w/M = 4/40 = 0.1 mol.",
+        "Molarity = 0.1 mol / 0.250 L = 0.4 mol/L."
+      ],
+      "ans": "Molarity = 0.4 mol/L (0.4 M)"
+    },
+    {
+      "topic": "Molality and mole fraction",
+      "marks": 3,
+      "q": "1.8 g of glucose (M = 180 g/mol) is dissolved in 90 g of water. Calculate (i) the molality and (ii) the mole fraction of glucose in the solution.",
+      "steps": [
+        "Given: w2 = 1.8 g, M2 = 180 g/mol, w1 = 90 g = 0.090 kg water, M1 = 18 g/mol.",
+        "Moles of glucose n2 = w2/M2 = 1.8/180 = 0.01 mol.",
+        "Formula: Molality m = n2 / (mass of solvent in kg) = n2/w1(kg).",
+        "Molality = 0.01/0.090 = 0.1111 mol/kg.",
+        "Moles of water n1 = w1/M1 = 90/18 = 5 mol.",
+        "Formula: Mole fraction x2 = n2/(n1+n2).",
+        "x2 = 0.01/(5+0.01) = 0.01/5.01 = 1.996 x 10^-3."
+      ],
+      "ans": "Molality = 0.111 mol/kg; mole fraction of glucose x2 = 1.996 x 10^-3"
+    },
+    {
+      "topic": "Raoult's law - two volatile liquids",
+      "marks": 3,
+      "q": "At a certain temperature, the vapour pressures of pure liquids A and B are 100 mmHg and 200 mmHg respectively. A solution is prepared with mole fraction of A = 0.4 and mole fraction of B = 0.6. Calculate the total vapour pressure of the solution assuming ideal behaviour.",
+      "steps": [
+        "Given: pA° = 100 mmHg, pB° = 200 mmHg, xA = 0.4, xB = 0.6.",
+        "Formula (Raoult's law for two volatile liquids): pA = pA° xA, pB = pB° xB, ptotal = pA + pB.",
+        "pA = 100 x 0.4 = 40 mmHg.",
+        "pB = 200 x 0.6 = 120 mmHg.",
+        "ptotal = pA + pB = 40 + 120 = 160 mmHg."
+      ],
+      "ans": "Total vapour pressure = 160 mmHg"
+    },
+    {
+      "topic": "Raoult's law - relative lowering of vapour pressure (molar mass)",
+      "marks": 4,
+      "q": "60 g of urea is dissolved in 900 g of water at 25 degree C. The vapour pressure of pure water at this temperature is 40.00 mmHg and the vapour pressure of the solution is found to be 39.2 mmHg. Using the relation for relative lowering of vapour pressure (taking n1 >> n2), calculate the molar mass of urea.",
+      "steps": [
+        "Given: w1 = 900 g water (M1 = 18 g/mol), w2 = 60 g urea, p0 = 40.00 mmHg, p = 39.2 mmHg.",
+        "Moles of water n1 = w1/M1 = 900/18 = 50 mol.",
+        "Formula: (p0 - p)/p0 = x2 = n2/(n1+n2), and since n1 >> n2, x2 ~ n2/n1.",
+        "Relative lowering = (40.00 - 39.2)/40.00 = 0.8/40.00 = 0.02.",
+        "n2 = x2 x n1 = 0.02 x 50 = 1.0 mol.",
+        "Molar mass M2 = w2/n2 = 60/1.0 = 60 g/mol."
+      ],
+      "ans": "Molar mass of urea = 60 g/mol"
+    },
+    {
+      "topic": "Elevation in boiling point (molar mass)",
+      "marks": 4,
+      "q": "6 g of a non-volatile, non-electrolyte solute is dissolved in 250 g of water. The solution boils at 100.104 degree C at 1 atm pressure. Calculate the molar mass of the solute. (Kb for water = 0.52 K kg/mol, boiling point of pure water = 100 degree C)",
+      "steps": [
+        "Given: ΔTb = 100.104 - 100 = 0.104 K, Kb = 0.52 K kg/mol, w2 = 6 g, w1 = 250 g = 0.250 kg.",
+        "Formula: ΔTb = Kb x m, where molality m = n2/w1(kg) = (w2/M2)/w1(kg).",
+        "Molality m = ΔTb/Kb = 0.104/0.52 = 0.20 mol/kg.",
+        "Moles of solute n2 = m x w1(kg) = 0.20 x 0.250 = 0.05 mol.",
+        "Molar mass M2 = w2/n2 = 6/0.05 = 120 g/mol."
+      ],
+      "ans": "Molar mass of solute = 120 g/mol"
+    },
+    {
+      "topic": "Depression in freezing point (molar mass)",
+      "marks": 4,
+      "q": "1.00 g of a non-volatile solute, when dissolved in 50 g of benzene, lowers the freezing point of benzene by 0.40 K. Calculate the molar mass of the solute. (Kf for benzene = 5.12 K kg/mol)",
+      "steps": [
+        "Given: ΔTf = 0.40 K, Kf = 5.12 K kg/mol, w2 = 1.00 g, w1 = 50 g = 0.050 kg.",
+        "Formula: ΔTf = Kf x m, where molality m = (w2/M2)/w1(kg).",
+        "Molality m = ΔTf/Kf = 0.40/5.12 = 0.078125 mol/kg.",
+        "Moles of solute n2 = m x w1(kg) = 0.078125 x 0.050 = 3.90625 x 10^-3 mol.",
+        "Molar mass M2 = w2/n2 = 1.00/(3.90625 x 10^-3) = 256 g/mol."
+      ],
+      "ans": "Molar mass of solute = 256 g/mol"
+    },
+    {
+      "topic": "Osmotic pressure",
+      "marks": 3,
+      "q": "1.80 g of glucose (M = 180 g/mol) is dissolved to make 500 mL of solution at 300 K. Calculate the osmotic pressure of the solution. (R = 0.0821 L atm/mol K)",
+      "steps": [
+        "Given: w2 = 1.80 g, M2 = 180 g/mol, V = 500 mL = 0.500 L, T = 300 K, R = 0.0821 L atm/mol K.",
+        "Moles of glucose n2 = w2/M2 = 1.80/180 = 0.01 mol.",
+        "Formula: Osmotic pressure π = CRT, where C = n2/V.",
+        "C = 0.01/0.500 = 0.02 mol/L.",
+        "π = CRT = 0.02 x 0.0821 x 300 = 0.4926 atm."
+      ],
+      "ans": "Osmotic pressure ≈ 0.4926 atm"
+    },
+    {
+      "topic": "Van't Hoff factor and degree of dissociation",
+      "marks": 3,
+      "q": "For a 0.1 molal aqueous solution of KCl, the observed Van't Hoff factor i is found to be 1.85. Calculate the degree of dissociation of KCl in the solution.",
+      "steps": [
+        "Given: i = 1.85. KCl dissociates as KCl -> K+ + Cl-, so number of particles formed n = 2.",
+        "Formula for dissociation: α = (i - 1)/(n - 1).",
+        "Substitute: α = (1.85 - 1)/(2 - 1) = 0.85/1.",
+        "α = 0.85."
+      ],
+      "ans": "Degree of dissociation α = 0.85 (i.e. 85%)"
+    }
+  ],
+  "practice": [
+    {
+      "topic": "Molarity",
+      "q": "9.8 g of H2SO4 (M = 98 g/mol) is dissolved in water and the solution is made up to 500 mL. Calculate the molarity of the solution.",
+      "hint": "Molarity = (w/M)/V(L); find moles first, then divide by volume in litres.",
+      "ans": "0.2 mol/L"
+    },
+    {
+      "topic": "Mole fraction",
+      "q": "A solution contains 5 mol of ethanol and 15 mol of water. Calculate the mole fraction of ethanol and of water.",
+      "hint": "x(component) = moles of component / total moles of all components.",
+      "ans": "x(ethanol) = 0.25, x(water) = 0.75"
+    },
+    {
+      "topic": "Raoult's law - two volatile liquids",
+      "q": "Pure liquids X and Y have vapour pressures 150 mmHg and 50 mmHg respectively at a given temperature. In a solution, xX = 0.5 and xY = 0.5. Calculate the total vapour pressure.",
+      "hint": "ptotal = pX° xX + pY° xY.",
+      "ans": "100 mmHg"
+    },
+    {
+      "topic": "Relative lowering of vapour pressure",
+      "q": "18 g of glucose (M = 180 g/mol) is dissolved in 1000 g of water (M = 18 g/mol) whose vapour pressure is 20 mmHg. Calculate the vapour pressure of the solution (use n1 >> n2 approximation).",
+      "hint": "x2 = n2/n1 approximately; (p0-p)/p0 = x2, so p = p0(1 - x2).",
+      "ans": "p ≈ 19.964 mmHg (lowering ≈ 0.036 mmHg)"
+    },
+    {
+      "topic": "Elevation in boiling point",
+      "q": "3.0 g of a non-volatile solute dissolved in 100 g of water raises the boiling point by 0.052 K. Calculate the molar mass of the solute. (Kb = 0.52 K kg/mol)",
+      "hint": "ΔTb = Kb x m; m = (w2/M2)/w1(kg); solve for M2.",
+      "ans": "300 g/mol"
+    },
+    {
+      "topic": "Van't Hoff factor",
+      "q": "For a 1 molal aqueous solution of CaCl2, the observed Van't Hoff factor i = 2.47. Calculate the degree of dissociation of CaCl2. (CaCl2 gives 3 ions on complete dissociation)",
+      "hint": "α = (i-1)/(n-1) with n = 3 for CaCl2 -> Ca2+ + 2Cl-.",
+      "ans": "α = 0.735 (73.5%)"
+    }
+  ]
+}

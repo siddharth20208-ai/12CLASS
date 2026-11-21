@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="640" height="400" fill="white"/>
+<!-- potentiometer wire AB -->
+<line x1="80" y1="120" x2="560" y2="120" stroke="black" stroke-width="3"/>
+<text x="65" y="115" font-size="16">A</text>
+<text x="565" y="115" font-size="16">B</text>
+
+<!-- driver battery and rheostat circuit -->
+<line x1="80" y1="120" x2="80" y2="60" stroke="black" stroke-width="2"/>
+<line x1="560" y1="120" x2="560" y2="60" stroke="black" stroke-width="2"/>
+<line x1="80" y1="60" x2="220" y2="60" stroke="black" stroke-width="2"/>
+<line x1="235" y1="60" x2="400" y2="60" stroke="black" stroke-width="2"/>
+<line x1="400" y1="60" x2="560" y2="60" stroke="black" stroke-width="2"/>
+<!-- battery symbol -->
+<line x1="220" y1="45" x2="220" y2="75" stroke="black" stroke-width="4"/>
+<line x1="235" y1="50" x2="235" y2="70" stroke="black" stroke-width="2"/>
+<text x="210" y="35" font-size="14">Driver cell</text>
+<!-- rheostat -->
+<rect x="300" y="52" width="60" height="16" fill="none" stroke="black" stroke-width="2"/>
+<line x1="330" y1="45" x2="330" y2="38" stroke="black" stroke-width="2"/>
+<text x="295" y="38" font-size="14">Rheostat</text>
+
+<!-- EMF cell branch through galvanometer to jockey -->
+<line x1="150" y1="120" x2="150" y2="200" stroke="black" stroke-width="2"/>
+<line x1="150" y1="200" x2="150" y2="240" stroke="black" stroke-width="2"/>
+<line x1="150" y1="200" x2="300" y2="200" stroke="black" stroke-width="2"/>
+<line x1="138" y1="215" x2="138" y2="235" stroke="black" stroke-width="4"/>
+<line x1="126" y1="221" x2="126" y2="229" stroke="black" stroke-width="2"/>
+<text x="90" y="260" font-size="14">Cell (EMF)</text>
+
+<circle cx="330" cy="200" r="20" fill="none" stroke="black" stroke-width="2"/>
+<text x="323" y="205" font-size="16">G</text>
+<line x1="350" y1="200" x2="420" y2="200" stroke="black" stroke-width="2"/>
+<line x1="420" y1="200" x2="420" y2="130" stroke="black" stroke-width="2"/>
+<!-- jockey -->
+<line x1="420" y1="120" x2="420" y2="130" stroke="#c0392b" stroke-width="3"/>
+<circle cx="420" cy="120" r="3" fill="#c0392b"/>
+<text x="400" y="105" font-size="14" fill="#c0392b">Jockey at J</text>
+
+<path d="M80,160 L420,160" stroke="#1a5276" stroke-width="1.5"/>
+<text x="230" y="155" font-size="14" fill="#1a5276">L (AJ)</text>
+
+<text x="20" y="300" font-size="14">Balance point = J, Length AJ = L</text>
+</svg>

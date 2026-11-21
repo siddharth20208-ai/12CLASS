@@ -1,0 +1,153 @@
+{
+  "solved": [
+    {
+      "topic": "Ka-Kb relation for conjugate pair",
+      "marks": 2,
+      "q": "The ionization constant (Ka) of a weak acid HA is 1x10^-5. Calculate the Kb of its conjugate base A- at 298K.",
+      "steps": [
+        "Given: Ka = 1x10^-5, Kw = 1x10^-14 (at 298K).",
+        "Formula: Ka x Kb = Kw, so Kb = Kw / Ka.",
+        "Substitution: Kb = (1x10^-14) / (1x10^-5).",
+        "Calculation: Kb = 1x10^-9.",
+        "Answer: Kb = 1x10^-9."
+      ],
+      "ans": "Kb = 1x10^-9"
+    },
+    {
+      "topic": "pH of strong acid",
+      "marks": 2,
+      "q": "Calculate the pH of 0.005 M HCl solution (assume complete ionization).",
+      "steps": [
+        "Given: C(HCl) = 0.005 M = 5x10^-3 M.",
+        "Formula: for strong acid, [H+] = C, pH = -log[H+].",
+        "Substitution: pH = -log(5x10^-3) = -(log5 + log10^-3) = -(0.699 - 3).",
+        "Calculation: pH = 3 - 0.699 = 2.301.",
+        "Answer: pH = 2.301."
+      ],
+      "ans": "pH ≈ 2.30"
+    },
+    {
+      "topic": "pH and pOH of strong base",
+      "marks": 2,
+      "q": "Calculate the pOH and pH of 0.001 M NaOH solution at 298K.",
+      "steps": [
+        "Given: C(NaOH) = 0.001 M = 1x10^-3 M.",
+        "Formula: for strong base, [OH-] = C, pOH = -log[OH-], pH + pOH = 14.",
+        "Substitution: pOH = -log(1x10^-3) = 3.",
+        "Calculation: pH = 14 - pOH = 14 - 3 = 11.",
+        "Answer: pOH = 3, pH = 11."
+      ],
+      "ans": "pOH = 3, pH = 11"
+    },
+    {
+      "topic": "pH of weak acid using sqrt(Ka.C)",
+      "marks": 3,
+      "q": "Calculate the pH of 0.2 M HCOOH (formic acid) solution. Given Ka = 1.8x10^-4.",
+      "steps": [
+        "Given: C = 0.2 M, Ka = 1.8x10^-4.",
+        "Formula: for weak acid, [H+] = sqrt(Ka x C).",
+        "Substitution: [H+] = sqrt(1.8x10^-4 x 0.2) = sqrt(3.6x10^-5).",
+        "Calculation: [H+] = sqrt(36x10^-6) = 6x10^-3 M.",
+        "pH = -log(6x10^-3) = -(log6 - 3) = 3 - 0.778 = 2.222.",
+        "Answer: pH = 2.222."
+      ],
+      "ans": "pH ≈ 2.22"
+    },
+    {
+      "topic": "pH of weak base using sqrt(Kb.C)",
+      "marks": 3,
+      "q": "Calculate the pH of 0.01 M NH4OH solution. Given Kb = 1.8x10^-5.",
+      "steps": [
+        "Given: C = 0.01 M, Kb = 1.8x10^-5.",
+        "Formula: for weak base, [OH-] = sqrt(Kb x C).",
+        "Substitution: [OH-] = sqrt(1.8x10^-5 x 0.01) = sqrt(1.8x10^-7).",
+        "Calculation: [OH-] = 4.24x10^-4 M.",
+        "pOH = -log(4.24x10^-4) = 4 - log(4.24) = 4 - 0.628 = 3.37.",
+        "pH = 14 - pOH = 14 - 3.37 = 10.63.",
+        "Answer: pH = 10.63."
+      ],
+      "ans": "pH ≈ 10.63"
+    },
+    {
+      "topic": "Buffer pH using Henderson-Hasselbalch equation",
+      "marks": 3,
+      "q": "A buffer solution contains 0.1 M CH3COOH and 1.0 M CH3COONa. Calculate its pH. Given Ka of CH3COOH = 1.8x10^-5.",
+      "steps": [
+        "Given: [acid] = 0.1 M, [salt] = 1.0 M, Ka = 1.8x10^-5.",
+        "Formula: pH = pKa + log([salt]/[acid]), where pKa = -log Ka.",
+        "pKa = -log(1.8x10^-5) = 5 - log1.8 = 5 - 0.2553 = 4.7447.",
+        "Substitution: pH = 4.7447 + log(1.0/0.1) = 4.7447 + log(10).",
+        "Calculation: pH = 4.7447 + 1 = 5.7447.",
+        "Answer: pH = 5.74."
+      ],
+      "ans": "pH ≈ 5.74"
+    },
+    {
+      "topic": "Common ion effect on ionization of weak acid",
+      "marks": 4,
+      "q": "0.1 M acetic acid (Ka = 1.8x10^-5) also contains 0.01 M HCl which supplies a common H+ ion. Calculate [CH3COO-] in this solution (assume [CH3COOH] remains almost 0.1 M and [H+] is fixed by HCl).",
+      "steps": [
+        "Given: [CH3COOH] = 0.1 M, [H+] (from strong acid HCl) = 0.01 M, Ka = 1.8x10^-5.",
+        "Formula: Ka = [H+][CH3COO-] / [CH3COOH].",
+        "Rearrange: [CH3COO-] = Ka x [CH3COOH] / [H+].",
+        "Substitution: [CH3COO-] = (1.8x10^-5 x 0.1) / (0.01).",
+        "Calculation: [CH3COO-] = (1.8x10^-6) / (10^-2) = 1.8x10^-4 M.",
+        "Compare: without common ion, [CH3COO-] ≈ [H+] = sqrt(Ka.C) = sqrt(1.8x10^-6) = 1.34x10^-3 M, which is much higher.",
+        "Answer: [CH3COO-] = 1.8x10^-4 M, showing the common ion (H+ from HCl) suppresses ionization of acetic acid."
+      ],
+      "ans": "[CH3COO-] = 1.8x10^-4 M (ionization is suppressed by the common H+ ion)"
+    },
+    {
+      "topic": "Solubility from Ksp (AB2 type salt)",
+      "marks": 3,
+      "q": "The solubility product (Ksp) of Mg(OH)2 is 4x10^-9. Calculate its molar solubility in water.",
+      "steps": [
+        "Given: Ksp of Mg(OH)2 = 4x10^-9.",
+        "Dissociation: Mg(OH)2 -> Mg2+ + 2OH-; if solubility = s, [Mg2+] = s, [OH-] = 2s.",
+        "Formula: Ksp = [Mg2+][OH-]^2 = s x (2s)^2 = 4s^3.",
+        "Substitution: 4s^3 = 4x10^-9, so s^3 = 1x10^-9.",
+        "Calculation: s = cube root of 1x10^-9 = 1x10^-3 M.",
+        "Answer: molar solubility of Mg(OH)2 = 1x10^-3 mol/L."
+      ],
+      "ans": "s = 1x10^-3 mol/L"
+    }
+  ],
+  "practice": [
+    {
+      "topic": "pH after dilution of strong acid",
+      "q": "10 mL of 0.1 M HCl is diluted to 100 mL with water. Calculate the pH of the resulting solution.",
+      "hint": "Use C1V1 = C2V2 to find new concentration, then pH = -log[H+].",
+      "ans": "New C = 0.01 M, pH = 2"
+    },
+    {
+      "topic": "pKb from Kb",
+      "q": "The Kb of a weak base is 1x10^-4. Calculate its pKb.",
+      "hint": "pKb = -log Kb.",
+      "ans": "pKb = 4"
+    },
+    {
+      "topic": "Buffer pH with equal salt and acid concentration",
+      "q": "A buffer has equal concentrations of CH3COOH and CH3COONa, with Ka = 1.8x10^-5. Find its pH.",
+      "hint": "pH = pKa + log([salt]/[acid]); here the log term is log(1) = 0.",
+      "ans": "pH = pKa = 4.74"
+    },
+    {
+      "topic": "Common ion effect on solubility",
+      "q": "Calculate the solubility of AgCl in 0.1 M NaCl solution. Given Ksp of AgCl = 1.8x10^-10.",
+      "hint": "[Cl-] is fixed at 0.1 M by NaCl; solubility s = Ksp/[Cl-].",
+      "ans": "s = 1.8x10^-9 mol/L"
+    },
+    {
+      "topic": "Ksp from solubility (AB2 type salt)",
+      "q": "The molar solubility of PbI2 in water is 1.5x10^-3 mol/L. Calculate its Ksp.",
+      "hint": "PbI2 -> Pb2+ + 2I-; Ksp = s x (2s)^2 = 4s^3.",
+      "ans": "Ksp = 1.35x10^-8"
+    },
+    {
+      "topic": "pH of weak acid using sqrt(Ka.C)",
+      "q": "Calculate the pH of 0.4 M weak acid HA with Ka = 1x10^-5.",
+      "hint": "[H+] = sqrt(Ka x C), then pH = -log[H+].",
+      "ans": "pH ≈ 2.70"
+    }
+  ]
+}

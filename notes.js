@@ -13,7 +13,8 @@ function noteHtml(n, i, subject) {
   const d = n.diagram || {};
   const diagram = d.mermaid
     ? `<pre class="mermaid">${rawEsc(d.mermaid)}</pre>`
-    : d.draw ? `<div class="draw">How to draw: ${nEsc(d.draw)}</div>` : "";
+    : (d.svg ? `<img class="dia" src="${d.svg}" alt="${rawEsc(n.t)} diagram" loading="lazy">` : "")
+      + (d.draw ? `<div class="draw">How to draw in the exam: ${nEsc(d.draw)}</div>` : "");
   return `
     <details class="q note">
       <summary><span class="qn">${i + 1}</span> ${nEsc(n.t)}</summary>

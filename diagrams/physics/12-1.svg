@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="white"/>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="black"/>
+    </marker>
+  </defs>
+  <text x="320" y="20" font-size="16" text-anchor="middle" fill="black">Reactance vs Frequency</text>
+
+  <!-- Left graph: XL rising linearly -->
+  <line x1="60" y1="180" x2="60" y2="30" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="60" y1="180" x2="280" y2="180" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="30" y="35" font-size="14" fill="black">XL</text>
+  <text x="270" y="200" font-size="14" fill="black">f</text>
+  <line x1="60" y1="180" x2="270" y2="40" stroke="#c0392b" stroke-width="2"/>
+  <text x="150" y="90" font-size="14" fill="#c0392b">XL = 2 pi f L</text>
+  <text x="130" y="220" font-size="15" text-anchor="middle" fill="black">Inductive reactance</text>
+
+  <!-- Right graph: XC falling curve -->
+  <line x1="380" y1="180" x2="380" y2="30" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="380" y1="180" x2="600" y2="180" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="350" y="35" font-size="14" fill="black">XC</text>
+  <text x="590" y="200" font-size="14" fill="black">f</text>
+  <path d="M 395 45 C 450 60 480 120 595 175" stroke="#2874a6" stroke-width="2" fill="none"/>
+  <text x="420" y="145" font-size="14" fill="#2874a6">XC = 1/(2 pi f C)</text>
+  <text x="450" y="220" font-size="15" text-anchor="middle" fill="black">Capacitive reactance</text>
+</svg>

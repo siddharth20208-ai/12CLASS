@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="640" height="400" fill="white"/>
+<text x="320" y="24" font-size="18" text-anchor="middle" font-weight="bold">Open-chain Glucose and Fructose</text>
+
+<!-- Glucose zig-zag: C1..C6 -->
+<g>
+  <text x="40" y="100" font-size="14" font-weight="bold">Glucose</text>
+  <polyline points="90,110 140,70 190,110 240,70 290,110 340,70" stroke="black" stroke-width="2" fill="none"/>
+  <text x="85" y="60" font-size="13">CHO (C1)</text>
+  <text x="140" y="130" font-size="12">C2 OH</text>
+  <text x="190" y="60" font-size="12">C3 OH</text>
+  <text x="240" y="130" font-size="12">C4 OH</text>
+  <text x="290" y="60" font-size="12">C5 OH</text>
+  <text x="330" y="100" font-size="13">CH2OH (C6)</text>
+</g>
+
+<!-- Fructose zig-zag: C1..C6 -->
+<g>
+  <text x="40" y="250" font-size="14" font-weight="bold">Fructose</text>
+  <polyline points="90,260 140,220 190,260 240,220 290,260 340,220" stroke="black" stroke-width="2" fill="none"/>
+  <text x="80" y="285" font-size="13">CH2OH (C1)</text>
+  <text x="140" y="210" font-size="12">C=O (C2)</text>
+  <text x="190" y="285" font-size="12">C3 OH</text>
+  <text x="240" y="210" font-size="12">C4 OH</text>
+  <text x="290" y="285" font-size="12">C5 OH</text>
+  <text x="330" y="250" font-size="13">CH2OH (C6)</text>
+</g>
+</svg>

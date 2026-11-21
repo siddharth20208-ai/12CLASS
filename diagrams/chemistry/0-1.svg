@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="640" height="400" fill="white"/>
+<!-- Cube drawing helper: isometric-ish cube using parallelogram top -->
+<!-- SCC Cube 1 -->
+<g stroke="black" stroke-width="2" fill="none">
+  <!-- front face -->
+  <polygon points="60,160 160,160 160,260 60,260" />
+  <!-- top face -->
+  <polygon points="60,160 110,120 210,120 160,160" />
+  <!-- right face -->
+  <polygon points="160,160 210,120 210,220 160,260" />
+</g>
+<!-- SCC corner dots -->
+<g fill="#c0392b">
+  <circle cx="60" cy="160" r="4"/><circle cx="160" cy="160" r="4"/><circle cx="60" cy="260" r="4"/><circle cx="160" cy="260" r="4"/>
+  <circle cx="110" cy="120" r="4"/><circle cx="210" cy="120" r="4"/><circle cx="210" cy="220" r="4"/><circle cx="160" cy="160" r="4"/>
+</g>
+<text x="135" y="300" font-size="15" text-anchor="middle">SCC, Z=1</text>
+
+<!-- BCC Cube 2 -->
+<g stroke="black" stroke-width="2" fill="none">
+  <polygon points="280,160 380,160 380,260 280,260" />
+  <polygon points="280,160 330,120 430,120 380,160" />
+  <polygon points="380,160 430,120 430,220 380,260" />
+</g>
+<g fill="#c0392b">
+  <circle cx="280" cy="160" r="4"/><circle cx="380" cy="160" r="4"/><circle cx="280" cy="260" r="4"/><circle cx="380" cy="260" r="4"/>
+  <circle cx="330" cy="120" r="4"/><circle cx="430" cy="120" r="4"/><circle cx="430" cy="220" r="4"/>
+</g>
+<circle cx="340" cy="190" r="5" fill="#2980b9"/>
+<text x="355" y="300" font-size="15" text-anchor="middle">BCC, Z=2</text>
+
+<!-- FCC Cube 3 -->
+<g stroke="black" stroke-width="2" fill="none">
+  <polygon points="470,160 570,160 570,260 470,260" />
+  <polygon points="470,160 520,120 620,120 570,160" />
+  <polygon points="570,160 620,120 620,220 570,260" />
+</g>
+<g fill="#c0392b">
+  <circle cx="470" cy="160" r="4"/><circle cx="570" cy="160" r="4"/><circle cx="470" cy="260" r="4"/><circle cx="570" cy="260" r="4"/>
+  <circle cx="520" cy="120" r="4"/><circle cx="620" cy="120" r="4"/><circle cx="620" cy="220" r="4"/>
+</g>
+<!-- face centres -->
+<g fill="#27ae60">
+  <circle cx="520" cy="210" r="4"/> <!-- front face centre -->
+  <circle cx="545" cy="140" r="4"/> <!-- top face centre -->
+  <circle cx="590" cy="190" r="4"/> <!-- right face centre -->
+</g>
+<text x="545" y="300" font-size="15" text-anchor="middle">FCC, Z=4</text>
+
+<text x="320" y="40" font-size="18" text-anchor="middle" font-weight="bold">Unit Cells: SCC, BCC, FCC</text>
+</svg>

@@ -12,7 +12,8 @@
     ],
     "formula": "EMF = E(cathode) - E(anode)",
     "diagram": {
-      "draw": "Draw two beakers connected by a U-tube (salt bridge) filled with KCl solution. Left beaker: Zn rod in ZnSO4 solution, label 'Anode, oxidation'. Right beaker: Cu rod in CuSO4 solution, label 'Cathode, reduction'. Connect the two rods with a wire through a voltmeter on top. Show electron flow arrow from Zn to Cu through the wire."
+      "draw": "Draw two beakers connected by a U-tube (salt bridge) filled with KCl solution. Left beaker: Zn rod in ZnSO4 solution, label 'Anode, oxidation'. Right beaker: Cu rod in CuSO4 solution, label 'Cathode, reduction'. Connect the two rods with a wire through a voltmeter on top. Show electron flow arrow from Zn to Cu through the wire.",
+      "svg": "diagrams/chemistry/4-0.svg"
     },
     "example": "Daniel cell: Zn | Zn2+ || Cu2+ | Cu. EMF = E°Cu - E°Zn = 0.34 - (-0.76) = 1.10 V.",
     "tip": "Draw the full labelled cell diagram with salt bridge, electrodes and electron flow direction — this is a guaranteed diagram question."

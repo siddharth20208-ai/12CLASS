@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="white"/>
+
+  <text x="320" y="40" font-size="16" text-anchor="middle" font-weight="bold">Stationary Wave on a String (2 loops)</text>
+
+  <!-- axis / mean string line -->
+  <line x1="80" y1="200" x2="560" y2="200" stroke="black" stroke-width="2"/>
+
+  <!-- two loops: sine shape y = A sin(2*pi*x/L), zero at x=80,200,320,440,560; peaks alternate sign -->
+  <path d="M80,200
+           C140,120 140,120 200,200
+           C260,280 260,280 320,200
+           C380,120 380,120 440,200
+           C500,280 500,280 560,200"
+        fill="none" stroke="#2980b9" stroke-width="2.5"/>
+
+  <!-- Nodes at x = 80, 200, 320, 440, 560 -->
+  <circle cx="80" cy="200" r="5" fill="#c0392b"/>
+  <circle cx="200" cy="200" r="5" fill="#c0392b"/>
+  <circle cx="320" cy="200" r="5" fill="#c0392b"/>
+  <circle cx="440" cy="200" r="5" fill="#c0392b"/>
+  <circle cx="560" cy="200" r="5" fill="#c0392b"/>
+
+  <text x="80" y="225" font-size="13" text-anchor="middle">N</text>
+  <text x="200" y="225" font-size="13" text-anchor="middle">N</text>
+  <text x="320" y="225" font-size="13" text-anchor="middle">N</text>
+  <text x="440" y="225" font-size="13" text-anchor="middle">N</text>
+  <text x="560" y="225" font-size="13" text-anchor="middle">N</text>
+
+  <!-- Antinodes at peaks -->
+  <text x="140" y="110" font-size="13" text-anchor="middle">A</text>
+  <text x="260" y="300" font-size="13" text-anchor="middle">A</text>
+  <text x="380" y="110" font-size="13" text-anchor="middle">A</text>
+  <text x="500" y="300" font-size="13" text-anchor="middle">A</text>
+
+  <!-- legend labels -->
+  <text x="80" y="245" font-size="13" text-anchor="middle" fill="#c0392b">Node (N)</text>
+  <text x="140" y="90" font-size="13" text-anchor="middle" fill="#2980b9">Antinode (A)</text>
+
+  <!-- distance between consecutive nodes = lambda/2, between node 80 and node 200 -->
+  <line x1="80" y1="340" x2="200" y2="340" stroke="black" stroke-width="1"/>
+  <line x1="80" y1="332" x2="80" y2="348" stroke="black" stroke-width="1"/>
+  <line x1="200" y1="332" x2="200" y2="348" stroke="black" stroke-width="1"/>
+  <text x="140" y="365" font-size="14" text-anchor="middle">lambda/2</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="640" height="400" fill="white"/>
+  <text x="320" y="26" font-size="16" text-anchor="middle" font-weight="bold">Open Pipe vs Closed Pipe (Fundamental Mode)</text>
+
+  <!-- LEFT: open pipe, open-open -->
+  <text x="170" y="55" font-size="15" text-anchor="middle">Open Pipe (both ends open)</text>
+  <line x1="110" y1="80" x2="110" y2="340" stroke="black" stroke-width="2"/>
+  <line x1="230" y1="80" x2="230" y2="340" stroke="black" stroke-width="2"/>
+  <!-- centerline -->
+  <line x1="170" y1="80" x2="170" y2="340" stroke="black" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- stationary wave loop (one full loop, antinodes at both ends, node in middle) -->
+  <path d="M110,100 Q145,100 170,210 Q195,320 230,320" fill="none" stroke="#2980b9" stroke-width="2.5"/>
+  <path d="M110,320 Q145,320 170,210 Q195,100 230,100" fill="none" stroke="#2980b9" stroke-width="2.5" stroke-dasharray="5,4"/>
+  <circle cx="170" cy="210" r="4" fill="#c0392b"/>
+  <text x="110" y="70" font-size="13" text-anchor="middle" fill="#2980b9">A</text>
+  <text x="230" y="70" font-size="13" text-anchor="middle" fill="#2980b9">A</text>
+  <text x="170" y="230" font-size="13" text-anchor="middle">N</text>
+
+  <!-- RIGHT: closed pipe, closed at bottom -->
+  <text x="470" y="55" font-size="15" text-anchor="middle">Closed Pipe (closed at bottom)</text>
+  <line x1="410" y1="80" x2="410" y2="340" stroke="black" stroke-width="2"/>
+  <line x1="530" y1="80" x2="530" y2="340" stroke="black" stroke-width="2"/>
+  <!-- closed bottom end cap -->
+  <line x1="400" y1="340" x2="540" y2="340" stroke="black" stroke-width="4"/>
+  <!-- quarter wave: node at bottom, antinode at top -->
+  <path d="M470,340 Q415,260 470,80" fill="none" stroke="#2980b9" stroke-width="2.5"/>
+  <circle cx="470" cy="340" r="4" fill="#c0392b"/>
+  <text x="470" y="365" font-size="13" text-anchor="middle">N</text>
+  <text x="470" y="68" font-size="13" text-anchor="middle" fill="#2980b9">A</text>
+  <text x="560" y="344" font-size="13" text-anchor="start">closed end</text>
+  <text x="560" y="84" font-size="13" text-anchor="start">open end</text>
+</svg>

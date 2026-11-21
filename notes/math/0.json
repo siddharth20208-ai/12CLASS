@@ -12,7 +12,9 @@
       "For n statements, a truth table has 2^n rows."
     ],
     "formula": "p -> q is false only when p = T and q = F",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"List all T F combos\"] --> B[\"Apply connective\"]\n  B --> C[\"Fill result column\"]\n  C --> D[\"Read truth values row by row\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"List all T F combos\"] --> B[\"Apply connective\"]\n  B --> C[\"Fill result column\"]\n  C --> D[\"Read truth values row by row\"]"
+    },
     "example": "For p = T, q = F: p^q = F, p v q = T, ~p = F, p -> q = F, p <-> q = F.",
     "tip": "Always write the full table with all rows; examiners give marks for each correct row, not just the final answer."
   },
@@ -28,7 +30,9 @@
       "Tautologies are useful to prove logical laws are always valid."
     ],
     "formula": "All T = tautology; all F = contradiction; mixed = contingency",
-    "diagram": { "mermaid": "flowchart TD\n  A[\"Final column of truth table\"] --> B[\"All T\"]\n  A --> C[\"All F\"]\n  A --> D[\"Mixed T and F\"]\n  B --> E[\"Tautology\"]\n  C --> F[\"Contradiction\"]\n  D --> G[\"Contingency\"]" },
+    "diagram": {
+      "mermaid": "flowchart TD\n  A[\"Final column of truth table\"] --> B[\"All T\"]\n  A --> C[\"All F\"]\n  A --> D[\"Mixed T and F\"]\n  B --> E[\"Tautology\"]\n  C --> F[\"Contradiction\"]\n  D --> G[\"Contingency\"]"
+    },
     "example": "p v ~p: for p=T, ~p=F, p v ~p=T. For p=F, ~p=T, p v ~p=T. All T, so it is a tautology.",
     "tip": "State the name clearly (tautology/contradiction/contingency) in your final line — this is a separate mark."
   },
@@ -44,7 +48,9 @@
       "These laws let you simplify complicated negated statements."
     ],
     "formula": "~(p^q) = ~p v ~q     ~(p v q) = ~p ^ ~q",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"Statement 1 table\"] --> C[\"Compare columns\"]\n  B[\"Statement 2 table\"] --> C\n  C --> D[\"Match every row\"]\n  D --> E[\"Logically equivalent\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"Statement 1 table\"] --> C[\"Compare columns\"]\n  B[\"Statement 2 table\"] --> C\n  C --> D[\"Match every row\"]\n  D --> E[\"Logically equivalent\"]"
+    },
     "example": "Check ~(p^q) and ~p v ~q for p=T,q=F: p^q=F so ~(p^q)=T. ~p=F, ~q=T so ~p v ~q=T. Both T, matches De Morgan's law.",
     "tip": "Write out both tables fully side by side before concluding equivalence — partial checking loses marks."
   },
@@ -60,7 +66,9 @@
       "The converse and inverse are logically equivalent to each other but not to the original."
     ],
     "formula": "p -> q  ;  converse q -> p  ;  inverse ~p -> ~q  ;  contrapositive ~q -> ~p",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"p implies q\"] --> B[\"Converse: q implies p\"]\n  A --> C[\"Inverse: not p implies not q\"]\n  A --> D[\"Contrapositive: not q implies not p\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"p implies q\"] --> B[\"Converse: q implies p\"]\n  A --> C[\"Inverse: not p implies not q\"]\n  A --> D[\"Contrapositive: not q implies not p\"]"
+    },
     "example": "p: it rains, q: ground is wet. Converse: if ground is wet, it rains. Inverse: if it does not rain, ground is not wet. Contrapositive: if ground is not wet, it did not rain.",
     "tip": "Clearly label each of the three statements separately — this is a standard 2-mark question."
   },
@@ -76,7 +84,9 @@
       "Duality is used to quickly derive a related true statement."
     ],
     "formula": "~(for all x, p(x)) = there exists x, ~p(x)",
-    "diagram": { "mermaid": "flowchart LR\n  A[\"For all x p of x\"] -->|negate| B[\"There exists x not p of x\"]\n  C[\"There exists x p of x\"] -->|negate| D[\"For all x not p of x\"]" },
+    "diagram": {
+      "mermaid": "flowchart LR\n  A[\"For all x p of x\"] -->|negate| B[\"There exists x not p of x\"]\n  C[\"There exists x p of x\"] -->|negate| D[\"For all x not p of x\"]"
+    },
     "example": "Negate 'for all x in N, x > 0': result is 'there exists x in N such that x is not greater than 0' i.e. x <= 0.",
     "tip": "Remember quantifier negation flips the quantifier type AND negates the inner statement, both steps are needed for marks."
   },
@@ -92,7 +102,10 @@
       "The simplified expression tells you the minimum switches needed."
     ],
     "formula": "Series = p ^ q (AND)     Parallel = p v q (OR)",
-    "diagram": { "draw": "Draw a battery on the left connected by wires. For series: draw two switches p and q one after another on a single wire path to the bulb. For parallel: draw two separate wire branches, each with one switch (p and q), both branches meeting at the bulb." },
+    "diagram": {
+      "draw": "Draw a battery on the left connected by wires. For series: draw two switches p and q one after another on a single wire path to the bulb. For parallel: draw two separate wire branches, each with one switch (p and q), both branches meeting at the bulb.",
+      "svg": "diagrams/math/0-5.svg"
+    },
     "example": "Circuit with switches p, (p ^ q) v (p ^ ~q) simplifies using distributive law to p ^ (q v ~q) = p ^ T = p, meaning only switch p is needed.",
     "tip": "Draw the circuit diagram neatly with labelled switches — the diagram itself usually carries a separate mark."
   }

@@ -1,0 +1,152 @@
+{
+  "solved": [
+    {
+      "topic": "Packing efficiency - BCC derivation",
+      "marks": 4,
+      "q": "Derive the packing efficiency of a body-centred cubic (BCC) unit cell.",
+      "steps": [
+        "Given: BCC unit cell, Z = 2 atoms per cell, atoms touch along the body diagonal.",
+        "Formula: body diagonal = 4r, and body diagonal = sqrt(3)*a, so a = 4r/sqrt(3).",
+        "Volume occupied by atoms = Z*(4/3)*pi*r^3 = 2*(4/3)*pi*r^3 = (8/3)*pi*r^3.",
+        "Volume of unit cell = a^3 = (4r/sqrt(3))^3 = 64*r^3/(3*sqrt(3)).",
+        "Packing efficiency = [(8/3)*pi*r^3] / [64*r^3/(3*sqrt(3))] * 100 = [8*pi*sqrt(3)/64]*100.",
+        "Calculation = (8*3.1416*1.732/64)*100 = (43.53/64)*100 = 68.0.",
+        "Answer: Packing efficiency of BCC = 68%."
+      ],
+      "ans": "68% (approx)"
+    },
+    {
+      "topic": "Radius from edge length (FCC)",
+      "marks": 2,
+      "q": "A metal crystallizes in FCC lattice with edge length a = 400 pm. Calculate the radius of the metal atom.",
+      "steps": [
+        "Given: FCC lattice, a = 400 pm.",
+        "Formula: for FCC, atoms touch along the face diagonal, a = 2*sqrt(2)*r, so r = a/(2*sqrt(2)).",
+        "Substitution: r = 400/(2*1.414) = 400/2.828.",
+        "Calculation: r = 141.4 pm.",
+        "Answer: radius of metal atom = 141.4 pm."
+      ],
+      "ans": "r = 141.4 pm"
+    },
+    {
+      "topic": "Density of unit cell from edge length",
+      "marks": 3,
+      "q": "Copper crystallizes in FCC lattice with edge length a = 361 pm. Calculate the density of copper. (Molar mass of Cu = 63.5 g/mol, N_A = 6.022x10^23 /mol)",
+      "steps": [
+        "Given: FCC so Z = 4, M = 63.5 g/mol, a = 361 pm = 3.61x10^-8 cm.",
+        "Formula: d = Z*M / (a^3 * N_A).",
+        "a^3 = (3.61x10^-8)^3 = 4.705x10^-23 cm^3.",
+        "Substitution: d = (4*63.5) / (4.705x10^-23 * 6.022x10^23) = 254 / 28.33.",
+        "Calculation: d = 8.965 g/cm^3.",
+        "Answer: density of copper = 8.97 g/cm^3 (close to actual value)."
+      ],
+      "ans": "d = 8.97 g/cm^3"
+    },
+    {
+      "topic": "Edge length from density (BCC)",
+      "marks": 3,
+      "q": "Chromium crystallizes in a BCC lattice with density 7.2 g/cm^3 and molar mass 52 g/mol. Calculate the edge length of the unit cell. (N_A = 6.022x10^23 /mol)",
+      "steps": [
+        "Given: BCC so Z = 2, d = 7.2 g/cm^3, M = 52 g/mol.",
+        "Formula: d = Z*M/(a^3*N_A), rearranged a^3 = Z*M/(d*N_A).",
+        "Substitution: a^3 = (2*52) / (7.2 * 6.022x10^23) = 104 / 4.336x10^24.",
+        "Calculation: a^3 = 2.399x10^-23 cm^3, so a = (2.399x10^-23)^(1/3).",
+        "a = 2.884x10^-8 cm = 288.4 pm.",
+        "Answer: edge length a = 288.4 pm."
+      ],
+      "ans": "a = 288.4 pm"
+    },
+    {
+      "topic": "Molar mass from density and edge length (FCC)",
+      "marks": 3,
+      "q": "An element crystallizes in FCC lattice with edge length a = 600 pm and density 3.0 g/cm^3. Calculate its molar mass. (N_A = 6.022x10^23 /mol)",
+      "steps": [
+        "Given: FCC so Z = 4, a = 600 pm = 6.00x10^-8 cm, d = 3.0 g/cm^3.",
+        "Formula: d = Z*M/(a^3*N_A), rearranged M = d*a^3*N_A/Z.",
+        "a^3 = (6.00x10^-8)^3 = 2.16x10^-22 cm^3.",
+        "Substitution: M = (3.0 * 2.16x10^-22 * 6.022x10^23) / 4.",
+        "Calculation: M = (3.0*130.1)/4 = 390.2/4 = 97.6.",
+        "Answer: molar mass of the element = 97.6 g/mol."
+      ],
+      "ans": "M = 97.6 g/mol"
+    },
+    {
+      "topic": "Number of atoms from mass (using unit cell data)",
+      "marks": 4,
+      "q": "Copper (molar mass 63.5 g/mol) crystallizes in FCC lattice. Calculate the number of atoms present in 12.7 g of copper. (N_A = 6.022x10^23 /mol)",
+      "steps": [
+        "Given: mass of Cu = 12.7 g, M = 63.5 g/mol, N_A = 6.022x10^23 /mol.",
+        "Formula: number of moles n = mass/M, number of atoms = n*N_A.",
+        "Substitution: n = 12.7/63.5 = 0.200 mol.",
+        "Calculation: number of atoms = 0.200 * 6.022x10^23.",
+        "atoms = 1.2044x10^23.",
+        "Answer: number of atoms in 12.7 g Cu = 1.2044x10^23 atoms."
+      ],
+      "ans": "1.2044 x 10^23 atoms"
+    },
+    {
+      "topic": "Schottky defect - percentage of missing ion pairs",
+      "marks": 2,
+      "q": "The theoretical (ideal) density of NaCl is 2.165 g/cm^3, but due to Schottky defects its actual measured density is 2.150 g/cm^3. Calculate the percentage of missing Na+Cl- ion pairs (Schottky defects).",
+      "steps": [
+        "Given: ideal density = 2.165 g/cm^3, actual density = 2.150 g/cm^3.",
+        "Formula: % Schottky defect = [(d(ideal) - d(actual)) / d(ideal)] * 100.",
+        "Substitution: % defect = [(2.165 - 2.150)/2.165]*100.",
+        "Calculation: % defect = (0.015/2.165)*100 = 0.693.",
+        "Answer: about 0.69% of NaCl ion pairs are missing due to Schottky defects."
+      ],
+      "ans": "approx 0.69%"
+    },
+    {
+      "topic": "Z and formula from lattice positions (CsCl type)",
+      "marks": 2,
+      "q": "In a cubic unit cell, Cs+ ions occupy all 8 corners and a Cl- ion occupies the body centre. Find the number of Cs+ and Cl- ions per unit cell and hence the simplest formula of the compound.",
+      "steps": [
+        "Given: Cs+ at 8 corners (each corner shared by 8 cells), Cl- at 1 body centre (not shared).",
+        "Formula: contribution per corner atom = 1/8, per body-centre atom = 1 (whole).",
+        "Substitution: number of Cs+ per cell = 8 * 1/8 = 1. Number of Cl- per cell = 1.",
+        "Calculation: ratio of Cs+ : Cl- = 1 : 1.",
+        "Answer: the simplest formula of the compound is CsCl."
+      ],
+      "ans": "1 Cs+ : 1 Cl- per cell, formula = CsCl"
+    }
+  ],
+  "practice": [
+    {
+      "topic": "Packing efficiency - SCC",
+      "q": "Derive and state the packing efficiency of a simple cubic unit cell.",
+      "hint": "Atoms touch along the edge, a = 2r; packing efficiency = (1*(4/3)pi r^3 / a^3)*100.",
+      "ans": "52.4%"
+    },
+    {
+      "topic": "Density from unit cell data",
+      "q": "Polonium crystallizes in SCC lattice with edge length a = 336 pm and molar mass 209 g/mol. Calculate its density. (N_A = 6.022x10^23 /mol)",
+      "hint": "Use d = Z*M/(a^3*N_A) with Z = 1 for SCC; convert a to cm first.",
+      "ans": "d = 9.15 g/cm^3"
+    },
+    {
+      "topic": "Finding Z (type of lattice) from density",
+      "q": "A metal has density 1.55 g/cm^3, molar mass 40 g/mol and edge length 556 pm. Find Z and identify the type of unit cell.",
+      "hint": "Rearrange d = Z*M/(a^3*N_A) to get Z = d*a^3*N_A/M; convert a to cm.",
+      "ans": "Z approx 4, FCC lattice"
+    },
+    {
+      "topic": "Edge length from radius (BCC)",
+      "q": "An atom of radius 124 pm forms a BCC unit cell. Calculate the edge length of the unit cell.",
+      "hint": "For BCC, a = 4r/sqrt(3).",
+      "ans": "a = 286.4 pm"
+    },
+    {
+      "topic": "Frenkel defect - density effect",
+      "q": "AgBr shows Frenkel defect. Explain, with reasoning (no density change), why the measured density of AgBr matches the theoretical density calculated from its unit cell data.",
+      "hint": "In a Frenkel defect no ion leaves the crystal, it only moves to an interstitial site, so total mass and volume stay the same.",
+      "ans": "Density remains unchanged because ions are displaced within the crystal, not lost from it."
+    },
+    {
+      "topic": "Number of unit cells from mass",
+      "q": "Gold (molar mass 197 g/mol) crystallizes in FCC lattice. Calculate the number of unit cells present in 1 g of gold. (N_A = 6.022x10^23 /mol)",
+      "hint": "Find moles, then atoms using N_A, then divide atoms by Z = 4 to get number of unit cells.",
+      "ans": "approx 7.64 x 10^20 unit cells"
+    }
+  ]
+}

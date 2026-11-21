@@ -29,7 +29,8 @@
     ],
     "formula": "SO2 + H2O -> H2SO3     SO3 + H2O -> H2SO4",
     "diagram": {
-      "draw": "Draw the sulfuric acid molecule: a central S atom. Draw two double bonds going up to two O atoms labelled '=O'. Draw two single bonds going down-left and down-right to two OH groups. Label the shape as tetrahedral around sulfur."
+      "draw": "Draw the sulfuric acid molecule: a central S atom. Draw two double bonds going up to two O atoms labelled '=O'. Draw two single bonds going down-left and down-right to two OH groups. Label the shape as tetrahedral around sulfur.",
+      "svg": "diagrams/chemistry/6-1.svg"
     },
     "example": "Dilution of oleum: H2S2O7 + H2O -> 2H2SO4, done carefully by adding acid to water to control the large heat release.",
     "tip": "Draw the structure of H2SO4 clearly with S=O and S-OH bonds shown — structure questions carry easy marks."
@@ -100,7 +101,8 @@
     ],
     "formula": "Xe + F2 --(Ni vessel, heat)--> XeF2     Xe + 2F2 -> XeF4     Xe + 3F2 -> XeF6",
     "diagram": {
-      "draw": "Draw three separate xenon fluoride structures. XeF2: a straight line F-Xe-F (linear). XeF4: a square with Xe at the centre and F atoms at the four corners (square planar). XeF6: Xe at the centre with six F atoms around it in a slightly distorted octahedral arrangement. Label each shape below the drawing."
+      "draw": "Draw three separate xenon fluoride structures. XeF2: a straight line F-Xe-F (linear). XeF4: a square with Xe at the centre and F atoms at the four corners (square planar). XeF6: Xe at the centre with six F atoms around it in a slightly distorted octahedral arrangement. Label each shape below the drawing.",
+      "svg": "diagrams/chemistry/6-5.svg"
     },
     "example": "Varying the ratio of Xe to F2 and reaction conditions (temperature, pressure) controls which xenon fluoride (XeF2, XeF4 or XeF6) is the major product.",
     "tip": "State the exact mole ratio of Xe to F2 for each fluoride and its shape — this exact-ratio detail is often tested."
